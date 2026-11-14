@@ -42,6 +42,6 @@
  ],
  "call": "result = Solution().getIntersectionNode(headA, headB)\nprint(\"Intersected at '\" + str(result.val) + \"'\" if result else \"No intersection\")",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

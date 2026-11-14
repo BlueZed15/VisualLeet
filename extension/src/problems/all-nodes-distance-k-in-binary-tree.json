@@ -31,6 +31,6 @@
  ],
  "call": "result = Solution().distanceK(root, target, k)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

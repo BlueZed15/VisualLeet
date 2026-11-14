@@ -23,6 +23,6 @@
  ],
  "call": "result = Solution().flatten(head)\nprint(leet_str(list_values(result)))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

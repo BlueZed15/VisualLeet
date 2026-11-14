@@ -26,5 +26,5 @@
  "call": "result = Solution().minSubArrayLen(target, nums)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

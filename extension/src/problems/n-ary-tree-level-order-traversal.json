@@ -23,6 +23,6 @@
  ],
  "call": "result = Solution().levelOrder(root)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

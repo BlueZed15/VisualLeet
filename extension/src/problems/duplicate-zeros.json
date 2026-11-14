@@ -21,5 +21,5 @@
  "call": "Solution().duplicateZeros(arr)\nprint(leet_str(arr))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

@@ -30,6 +30,6 @@
  ],
  "call": "result = Solution().carFleet(target, position, speed)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

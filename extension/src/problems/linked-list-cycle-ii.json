@@ -28,6 +28,6 @@
  ],
  "call": "result = Solution().detectCycle(head)\nprint(\"no cycle\" if result is None else \"tail connects to node index \" + str(node_index(head, result)))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

@@ -23,6 +23,6 @@
  ],
  "call": "result = Solution().connect(root)\nprint(next_values_str(result))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

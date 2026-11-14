@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().findWords(board, words)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

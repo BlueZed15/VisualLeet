@@ -26,5 +26,5 @@
  "call": "result = Solution().validateStackSequences(pushed, popped)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

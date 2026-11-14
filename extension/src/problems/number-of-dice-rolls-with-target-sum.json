@@ -31,5 +31,5 @@
  "call": "result = Solution().numRollsToTarget(n, k, target)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

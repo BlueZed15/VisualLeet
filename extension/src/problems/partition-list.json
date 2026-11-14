@@ -28,5 +28,5 @@
  "call": "result = Solution().partition(head, x)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

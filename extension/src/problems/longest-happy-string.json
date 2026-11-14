@@ -31,5 +31,5 @@
  "call": "result = Solution().longestDiverseString(a, b, c)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

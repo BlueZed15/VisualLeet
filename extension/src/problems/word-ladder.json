@@ -30,6 +30,6 @@
  ],
  "call": "result = Solution().ladderLength(beginWord, endWord, wordList)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

@@ -20,6 +20,6 @@
  ],
  "call": "result = Solution().averageOfSubtree(root)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

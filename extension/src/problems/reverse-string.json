@@ -21,5 +21,5 @@
  "call": "Solution().reverseString(s)\nprint(leet_str(s))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

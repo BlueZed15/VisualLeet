@@ -22,6 +22,6 @@
  ],
  "call": "it, out = NestedIterator(nestedList), []\nwhile it.hasNext():\n    out.append(it.next())\nprint(leet_str(out))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

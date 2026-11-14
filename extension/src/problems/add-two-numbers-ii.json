@@ -28,5 +28,5 @@
  "call": "result = Solution().addTwoNumbers(l1, l2)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

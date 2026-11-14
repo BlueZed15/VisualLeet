@@ -24,6 +24,6 @@
  ],
  "call": "result = Solution().copyRandomList(head)\nprint(leet_str(random_list_values(result)))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

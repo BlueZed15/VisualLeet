@@ -22,6 +22,6 @@
  ],
  "call": "result = Solution().construct(grid)\nprint(leet_str(quad_values(result)))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

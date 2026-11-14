@@ -31,5 +31,5 @@
  "call": "result = Solution().maxSumTwoNoOverlap(nums, firstLen, secondLen)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

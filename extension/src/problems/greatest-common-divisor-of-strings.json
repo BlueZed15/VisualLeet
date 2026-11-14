@@ -26,5 +26,5 @@
  "call": "result = Solution().gcdOfStrings(str1, str2)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

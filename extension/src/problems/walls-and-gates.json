@@ -21,6 +21,6 @@
  ],
  "call": "Solution().wallsAndGates(rooms)\nprint(leet_str(rooms))",
  "source": "hand-written",
- "verified": false,
- "checked": "none"
+ "verified": true,
+ "checked": "solution"
 }

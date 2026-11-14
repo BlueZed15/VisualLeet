@@ -26,5 +26,5 @@
  "call": "result = Solution().maxConsecutiveAnswers(answerKey, k)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

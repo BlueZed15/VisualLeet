@@ -26,5 +26,5 @@
  "call": "Solution().rotate(nums, k)\nprint(leet_str(nums))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

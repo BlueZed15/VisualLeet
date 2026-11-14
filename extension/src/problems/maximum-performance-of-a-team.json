@@ -36,5 +36,5 @@
  "call": "result = Solution().maxPerformance(n, speed, efficiency, k)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

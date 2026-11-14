@@ -26,5 +26,5 @@
  "call": "result = Solution().sum(num1, num2)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }

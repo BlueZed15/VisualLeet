@@ -23,5 +23,5 @@
  "call": "result = Solution().lcaDeepestLeaves(root)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "none"
+ "checked": "inputs"
 }
