@@ -18,7 +18,7 @@
 //    (the selected one is not "bg-transparent"); the selected case shows one
 //    contenteditable box per argument, labelled "name ="; a CodeMirror
 //    (.cm-content) holds every case as raw lines.
-export function readLeetCodePage() {
+export async function readLeetCodePage() {
   const out = { ok: false };
   const host = location.hostname;
   if (!/(^|\.)leetcode\.(com|cn)$/.test(host)) { out.reason = "not-leetcode"; return out; }
@@ -90,36 +90,49 @@ export function readLeetCodePage() {
     if (model) { out.code = model.getValue(); out.language = model.getLanguageId(); }
   }
 
-  // ---- the selected test case ----
-  const tabs = Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-tag"]'));
-  if (tabs.length) {
-    out.caseCount = tabs.length;
-    out.selectedIndex = tabs.findIndex((b) => !/\bbg-transparent\b/.test(b.className));
-  }
-  // Read structure, not rendered text: when the panel isn't shown (collapsed,
-  // or "Test Result" is the active tab after a Run), innerText falls back to
-  // textContent and runs "nums =" into the value, and lines into each other.
+  // ---- the test cases in LeetCode's Testcase panel ----
+  // Read structure, not rendered text: the panel may be collapsed, or behind
+  // "Test Result" after a Run; it's still in the page then, but innerText
+  // runs "nums =" into the value and the raw lines into each other.
+  // LeetCode builds the panel after the editor: wait for it briefly.
+  const findTabs = () => Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-tag"]'));
+  const findBoxes = () => Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-input"]'));
+  for (let i = 0; i < 15 && !findTabs().length && !findBoxes().length; i++) await new Promise((r) => setTimeout(r, 100));
+  const tabs = findTabs();
+  out.caseCount = tabs.length;
+  out.selectedIndex = tabs.length ? tabs.findIndex((b) => !/\bbg-transparent\b/.test(b.className)) : -1;
+  if (tabs.length === 1) out.selectedIndex = 0;
+
+  // the panel that holds the case tabs/boxes: only look for its raw editor in there
+  // (a signed-in page can have other CodeMirror editors, e.g. Notes)
+  const anchor = tabs[0] || findBoxes()[0] || null;
+  let panel = anchor;
+  while (panel && panel.parentElement && !panel.querySelector(".cm-content") && !/flexlayout__(tab|layout)\b/.test(panel.className || "")) panel = panel.parentElement;
   const textOf = (el) => (el.offsetParent !== null ? el.innerText : el.textContent) || "";
+
+  // the selected case: one box per input, in order; the "name =" label is optional
+  // (design problems have none)
   const fields = [];
-  const marked = document.querySelectorAll('[data-e2e-locator="console-testcase-input"]');
-  for (const box of Array.from(marked.length ? marked : document.querySelectorAll('[contenteditable="true"]'))) {
-    if (box.closest(".cm-editor") || box.closest(".monaco-editor")) continue;
+  let boxes = findBoxes();
+  if (!boxes.length && panel) boxes = Array.from(panel.querySelectorAll('[contenteditable="true"]')).filter((b) => !b.closest(".cm-editor"));
+  for (const box of boxes) {
     const holder = box.parentElement && box.parentElement.parentElement;
-    if (!holder) continue;
-    // the label is the holder's text before the box: "nums ="
-    const labelEl = Array.from(holder.children).find((c) => !c.contains(box));
+    const labelEl = holder ? Array.from(holder.children).find((c) => !c.contains(box)) : null;
     const label = /^\s*([A-Za-z_]\w*)\s*=\s*$/.exec(labelEl ? labelEl.textContent : "");
-    if (!label) continue;
     const lines = box.querySelectorAll("div, p");
     const text = lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(box);
-    fields.push({ name: label[1], text: text.replace(/\xa0/g, " ").replace(/\n+$/, "") });
+    fields.push({ name: label ? label[1] : "", text: text.replace(/\xa0/g, " ").replace(/\n+$/, "") });
   }
   if (fields.length) out.selectedCase = fields;
-  const raw = document.querySelector(".cm-content");
+
+  // every case as raw lines (one line per input), from the panel's own editor
+  const raw = (panel && panel.querySelector(".cm-content")) || (document.querySelectorAll(".cm-content").length === 1 ? document.querySelector(".cm-content") : null);
   if (raw) {
     const lines = raw.querySelectorAll(".cm-line");
     out.rawCases = (lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(raw)).replace(/\xa0/g, " ");
   }
+  // what was found, for the message if the case can't be matched to the inputs
+  out.testcaseFound = { tabs: tabs.length, boxes: fields.length, rawLines: raw ? out.rawCases.split("\n").filter((l) => l.trim()).length : 0 };
 
   out.ok = true;
   return out;

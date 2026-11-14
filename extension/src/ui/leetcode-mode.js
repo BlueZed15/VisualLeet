@@ -43,26 +43,35 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     }).filter(Boolean);
     const yours = saved && saved.cases ? saved.cases.filter((c) => c.source === "yours") : [];
 
-    // the case selected in LeetCode's Testcase panel
-    let lc = null;
+    // every case in LeetCode's Testcase panel (one raw line per input); the
+    // ones that aren't examples become "LeetCode n" cases
     const names = entry.boxes.map((x) => x.name);
+    const lcAll = r.rawCases ? splitCases(entry, r.rawCases) : [];
+    const cases = [...examples];
+    lcAll.forEach((texts, i) => {
+      if (!examples.some((e) => sameTexts(entry, e.texts, texts))) cases.push({ id: "lc" + (i + 1), label: `LeetCode ${i + 1}`, source: "leetcode", texts });
+    });
+
+    // the case selected there: its boxes (by name, or in order when they have
+    // no labels, as in design problems), else its raw lines
+    let lc = null;
     const fields = r.selectedCase || [];
     if (fields.length === names.length) {
       lc = {};
       const byName = names.every((n) => fields.some((f) => f.name === n));
       names.forEach((n, i) => { lc[n] = byName ? fields.find((f) => f.name === n).text : fields[i].text; });
-    } else if (r.rawCases && r.selectedIndex >= 0) {
-      lc = splitCases(entry, r.rawCases)[r.selectedIndex] || null;
+    } else if (r.selectedIndex >= 0 && lcAll[r.selectedIndex]) {
+      lc = lcAll[r.selectedIndex];
     }
-    const cases = [...examples];
     let selectedId = examples.length ? examples[0].id : null;
     let note = "";
     if (lc) {
-      const ex = examples.find((e) => sameTexts(entry, e.texts, lc));
-      if (ex) selectedId = ex.id;
+      const same = cases.find((c) => sameTexts(entry, c.texts, lc));
+      if (same) selectedId = same.id;
       else { cases.push({ id: "lc", label: "From LeetCode", source: "leetcode", texts: lc }); selectedId = "lc"; }
     } else {
-      note = "Couldn't read LeetCode's Testcase panel (is it open?), so the first example is selected.";
+      const f = r.testcaseFound || {};
+      note = `Couldn't find your selected test case on LeetCode (found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${names.length} input${names.length === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines), so the first example is selected.`;
     }
     cases.push(...yours);
     if (!cases.length) cases.push({ id: "c" + counter++, label: "Case 1", source: "yours", texts: Object.fromEntries(names.map((n) => [n, ""])) });
@@ -197,7 +206,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       if (!p.callOverride) el.call.value = "# Fix the test-case values to see the call.";
     }
     el.callReset.hidden = !p.callOverride;
-    el.callNote.textContent = p.callOverride ? "Edited: your version runs." : "Generated from the problem's signature. Edit to change what runs.";
+    el.callNote.textContent = p.callOverride ? "Edited: your version runs." : "From LeetScope's database. Edit it to change what runs.";
     return g;
   }
 

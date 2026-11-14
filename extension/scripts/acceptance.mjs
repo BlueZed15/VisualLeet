@@ -73,7 +73,7 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
   const question = { titleSlug: slug, questionFrontendId: p.id, questionTitle: p.title, isPaidOnly: false, metaData: JSON.stringify(p.meta), exampleTestcaseList: p.examples.map(([i]) => i), content };
   const stale = { titleSlug: "some-other-problem", metaData: "{}", exampleTestcaseList: [] };
   const tabs = all.map((_, i) => `<button data-e2e-locator="console-testcase-tag" class="tab ${i === selected ? "bg-fill-3" : "bg-transparent"}">Case ${i + 1}</button>`).join("");
-  const boxes = names.map((n, j) => `<div class="flex flex-col"><div>${n} =</div><div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
+  const boxes = names.map((n, j) => `<div class="flex flex-col">${p.meta.systemdesign ? "" : `<div>${n} =</div>`}<div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
   return `<!doctype html><html><head><title>${p.title} - LeetCode</title></head><body>
 <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { question: stale } } })}</script>
 <div class="text-title-large">${p.id}. ${p.title}</div>
@@ -448,7 +448,8 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     // a case the user added on LeetCode (not an example): no expected output
     const r2 = await open(`/problems/two-sum/?case=3&custom=${encodeURIComponent(JSON.stringify(["[1,5,9]", "10"]))}`);
     const s2 = await state();
-    check("leetcode", "Custom LeetCode case copied as \"From LeetCode\" and run; no verdict without an expected output", s2.selected === "From LeetCode" && /\[0,2\]\n$/.test(r2.stdout) && s2.verdict && s2.verdict.kind === "output", { selected: s2.selected, stdout: r2.stdout, verdict: s2.verdict });
+    const s2cases = await ev(() => visualleet.leetcode.problem.cases.map((c) => c.label));
+    check("leetcode", "All LeetCode cases imported (examples once, the custom one as \"LeetCode 4\"); the selected one runs; no verdict without an expected output", s2.selected === "LeetCode 4" && JSON.stringify(s2cases) === JSON.stringify(["Example 1", "Example 2", "Example 3", "LeetCode 4"]) && /\[0,2\]\n$/.test(r2.stdout) && s2.verdict && s2.verdict.kind === "output", { selected: s2.selected, cases: s2cases, stdout: r2.stdout, verdict: s2.verdict });
 
     // a bad value is caught per box before running
     const bad = await ev(async () => {

@@ -7,6 +7,24 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
+- **2026-11-15, on `merge_1` (user decisions):** LeetScope is LeetCode-only in
+  the normal build. Paste mode, the examples, "Import selection",
+  "Import from LeetCode" and the Editing/Playing header row are gone; restart
+  and diagnostics are icons in the top bar. The code card has tabs **Your
+  code / Call / Setup**; the bottom panel is only the test cases. With no
+  problem loaded, an empty state explains how to start. Problems not in the
+  database get a message (the database is meant to grow to all problems).
+  **Dev build** (`npm run build:extension-dev` → `dist/extension-dev`, named
+  "LeetScope (DEV)") and the test build keep examples, Import selection and
+  paste mode (the acceptance checks and `shoot-states.mjs` use them);
+  detected in `ui.js` by the manifest name.
+- Test-case reading hardened after the user hit "Couldn't read LeetCode's
+  Testcase panel": design problems' boxes have no "name =" labels (now read
+  in order), the raw-case editor is looked up inside the Testcase panel only
+  (a signed-in page can have other CodeMirror editors), the reader waits up
+  to 1.5 s for the panel, all of the user's LeetCode cases are imported
+  ("LeetCode n", examples not repeated), and a failure says what was found.
+
 - **Branch `merge_1`** (2026-11-15) combines this work with the collaborator's
   `origin/feat/UI-Improvement`: product renamed **LeetScope** (icons, logo,
   title), their player UI (edit / playing modes, play + transport + scrubber

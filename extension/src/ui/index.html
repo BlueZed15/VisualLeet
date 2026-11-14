@@ -43,50 +43,60 @@
       <span>Leet<b>Scope</b></span>
     </span>
     <span class="sep" aria-hidden="true"></span>
-    <button id="import-leetcode" class="btn btn-sm btn-ghost" type="button" title="Read the code and the selected test case from the LeetCode tab again (or click Visualize on LeetCode, the LeetScope icon, or Alt+V)"><svg aria-hidden="true"><use href="#i-import"/></svg>Import from LeetCode</button>
-    <button id="import-selection" class="btn btn-sm btn-ghost" type="button" title="Copy the text you have selected on that page into the code editor (paste mode)"><svg aria-hidden="true"><use href="#i-select"/></svg>Import selection</button>
     <span id="source-tab" class="source-chip" title="Page to import from"></span>
-    <button id="mode-toggle" class="btn btn-sm btn-ghost mode-toggle" type="button" hidden></button>
+    <!-- dev/test builds only: examples, selection import, paste mode -->
+    <select id="example" class="select dev-only" aria-label="Load an example"><option value="">Load example…</option></select>
+    <button id="import-selection" class="btn btn-sm btn-ghost dev-only" type="button" title="Copy the text you have selected on that page into the code editor (paste mode)"><svg aria-hidden="true"><use href="#i-select"/></svg>Import selection</button>
+    <button id="mode-toggle" class="btn btn-sm btn-ghost mode-toggle dev-only" type="button" hidden></button>
     <span id="status" class="status" data-state="not-initialized" role="status">Not started</span>
+    <button id="reset" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Restart the Python runtime" aria-label="Restart the Python runtime"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
+    <button id="diag-toggle" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Show diagnostics" aria-label="Show diagnostics" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pulse"/></svg></button>
   </header>
 
   <main class="workspace">
     <!-- The player: edit the code, then watch it run like a video -->
     <section class="panel viz-panel" aria-label="Code and visualization">
-      <div class="tabs">
-        <span id="mode-chip" class="mode-chip" data-mode="edit"><svg aria-hidden="true"><use href="#i-code"/></svg><span>Editing</span></span>
-        <select id="example" class="select" aria-label="Load an example"><option value="">Load example…</option></select>
-        <span class="spacer"></span>
-        <button id="reset" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Restart the Python runtime" aria-label="Restart the Python runtime"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
-        <button id="diag-toggle" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Show diagnostics" aria-label="Show diagnostics" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pulse"/></svg></button>
-      </div>
-
       <div class="viz-body">
         <div id="message" class="message" aria-live="polite" hidden></div>
+        <!-- no problem yet (LeetCode mode): how to start -->
+        <div id="lc-empty" class="placeholder lc-empty" data-kind="empty" hidden>
+          <div class="ph-icon" aria-hidden="true"></div>
+          <div class="ph-title">Open a problem on LeetCode</div>
+          <div class="ph-body">Pick a test case in LeetCode's Testcase panel, then click <b>Visualize</b> in LeetCode's top bar (or the LeetScope icon, or Alt+V). Your code and that case open here and play step by step.</div>
+        </div>
         <!-- edit mode: the code editor beside the test input -->
         <div id="edit-area" class="edit-area">
         <div id="edit-left" class="edit-left">
-        <div id="code-editor" class="code-editor">
-          <pre class="gutter" aria-hidden="true">1</pre>
-          <textarea id="solution" class="editor" spellcheck="false" wrap="off" aria-label="Solution code" placeholder="Paste your Python solution here, import it from LeetCode, or load an example."></textarea>
-        </div>
-        <!-- LeetCode mode: the test case, under the code (moves under the code card while playing) -->
-        <section id="lc-cases" class="panel lc-panel lc-only" aria-label="Test case">
-          <div class="tabs lc-head">
-            <span class="problem-line"><span id="lc-title" class="problem-title"></span><span id="lc-badge" class="badge"></span></span>
+        <div class="code-card">
+          <!-- LeetCode mode: your code, and the call and hidden setup that run it -->
+          <div class="tabs code-tabs lc-only" role="tablist" aria-label="Code views">
+            <button class="tab" role="tab" type="button" data-codeview="code" aria-selected="true"><svg aria-hidden="true"><use href="#i-code"/></svg>Your code</button>
+            <button class="tab" role="tab" type="button" data-codeview="call" aria-selected="false" title="The call that runs your code (editable)"><svg aria-hidden="true"><use href="#i-flask"/></svg>Call</button>
+            <button class="tab" role="tab" type="button" data-codeview="setup" aria-selected="false" title="Hidden setup: builds the inputs, never traced"><svg aria-hidden="true"><use href="#i-wrench"/></svg>Setup</button>
             <span class="spacer"></span>
-            <span class="lc-views" role="tablist" aria-label="Test case views">
-              <button class="tab" role="tab" type="button" data-lcview="case" aria-selected="true">Test case</button>
-              <button class="tab" role="tab" type="button" data-lcview="call" aria-selected="false" title="The call that runs your code (editable)">Call</button>
-              <button class="tab" role="tab" type="button" data-lcview="setup" aria-selected="false" title="Hidden setup: builds the inputs, never traced">Setup</button>
-            </span>
+            <span class="problem-line"><span id="lc-title" class="problem-title"></span><span id="lc-badge" class="badge"></span></span>
+          </div>
+          <div id="code-editor" class="code-editor" data-codepanel="code">
+            <pre class="gutter" aria-hidden="true">1</pre>
+            <textarea id="solution" class="editor" spellcheck="false" wrap="off" aria-label="Solution code" placeholder="Your code from LeetCode appears here."></textarea>
+          </div>
+          <div class="code-alt lc-only" data-codepanel="call" hidden>
+            <textarea id="lc-call" class="editor" spellcheck="false" aria-label="The call that runs your code (editable)"></textarea>
+            <div class="panel-foot"><span id="lc-call-note"></span><button id="lc-call-reset" class="btn btn-sm btn-ghost" type="button" hidden>Reset to the database version</button></div>
+          </div>
+          <div class="code-alt lc-only" data-codepanel="setup" hidden>
+            <textarea id="lc-setup" class="editor" spellcheck="false" readonly aria-label="Hidden setup code (read-only)"></textarea>
+            <div class="panel-foot"><span>Runs before your code without being traced. Only the inputs show in the visualization.</span></div>
+          </div>
+        </div>
+        <!-- LeetCode mode: the test cases, under the code (moves under the code card while playing) -->
+        <section id="lc-cases" class="panel lc-panel lc-only" aria-label="Test cases">
+          <div class="tabs case-tabs">
+            <div id="case-tabs" class="case-tab-list" role="tablist" aria-label="Test cases"></div>
+            <button id="case-add" class="tab case-add" type="button" title="Add a test case (a copy of the selected one)" aria-label="Add a test case">+</button>
           </div>
           <div class="lc-body">
-            <div class="lc-view" data-lcpanel="case">
-              <div class="case-tabs">
-                <div id="case-tabs" class="case-tab-list" role="tablist" aria-label="Test cases"></div>
-                <button id="case-add" class="tab case-add" type="button" title="Add a test case (a copy of the selected one)" aria-label="Add a test case">+</button>
-              </div>
+            <div class="lc-view">
               <div id="case-fields" class="case-fields"></div>
               <div id="case-expected" class="case-expected" hidden></div>
               <div id="case-verdict" class="verdict" role="status" hidden></div>
@@ -96,14 +106,6 @@
                 <button id="case-delete" class="btn btn-sm btn-ghost" type="button">Delete case</button>
                 <button id="case-run" class="btn btn-sm btn-run" type="button" title="Run this case (Ctrl+Enter)"><svg aria-hidden="true"><use href="#i-play"/></svg>Run case</button>
               </div>
-            </div>
-            <div class="lc-view with-foot" data-lcpanel="call" hidden>
-              <textarea id="lc-call" class="editor" spellcheck="false" aria-label="The call that runs your code (editable)"></textarea>
-              <div class="panel-foot"><span id="lc-call-note"></span><button id="lc-call-reset" class="btn btn-sm btn-ghost" type="button" hidden>Reset to the database version</button></div>
-            </div>
-            <div class="lc-view with-foot" data-lcpanel="setup" hidden>
-              <textarea id="lc-setup" class="editor" spellcheck="false" readonly aria-label="Hidden setup code (read-only)"></textarea>
-              <div class="panel-foot"><span>Runs before your code without being traced. Only the inputs show in the visualization.</span></div>
             </div>
           </div>
         </section>

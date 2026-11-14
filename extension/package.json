@@ -8,7 +8,8 @@
     "build:baseline": "node scripts/build-renderer.mjs --baseline",
     "build:extension": "node scripts/build-extension.mjs",
     "spike:check": "node scripts/spike-check.mjs",
-    "build:extension-test": "node scripts/build-extension.mjs --test"
+    "build:extension-test": "node scripts/build-extension.mjs --test",
+    "build:extension-dev": "node scripts/build-extension.mjs --dev"
   },
   "author": "",
   "license": "ISC",

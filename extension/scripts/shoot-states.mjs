@@ -4,7 +4,7 @@
 // input, syntax error, running, stopped, timed out, an error notice over a
 // trace, diagnostics, and a narrow window.
 //
-//   npm run build:extension
+//   npm run build:extension-dev
 //   node scripts/shoot-states.mjs [--out <dir>] [--only state,state]
 import puppeteer from "puppeteer-core";
 import { mkdtemp, mkdir } from "node:fs/promises";
@@ -28,7 +28,7 @@ const LONG = "x = sum(range(10**10))\nprint(x)\n";     // a native loop: only St
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 try {
-  const id = await browser.installExtension(path.join(root, "dist", "extension"));
+  const id = await browser.installExtension(path.join(root, "dist", "extension-dev"));
   const page = await browser.newPage();
   page.on("pageerror", (e) => console.log("[pageerror]", e.message));
   const ev = (fn, ...a) => page.evaluate(fn, ...a);

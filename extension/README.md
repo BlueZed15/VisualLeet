@@ -44,19 +44,15 @@ each problem comes from LeetScope's database (`src/problems/`): all 150
 NeetCode problems, each checked against LeetCode's examples. Other problems
 open in paste mode with a drafted test call.
 
-### Paste mode (any Python)
+### Dev build: examples and paste mode
 
-**Paste mode** (top right) has the Solution / Test call / Setup / input()
-editors: paste, use **Import selection** (copies what you selected on any
-page you opened LeetScope from) or pick an Example, then **Visualize**
-(Ctrl+Enter). **Stop** ends a long run; **Reset** restarts Python.
+`npm run build:extension-dev` builds `dist/extension-dev` ("LeetScope (DEV)"):
+the same extension plus developer tools in the page: built-in examples,
+**Import selection**, and paste mode (Solution / Test call / Setup / input()
+editors; what runs is exactly Setup + Solution + Test call, and the
+visualizer shows that combined program). The normal build is LeetCode-only.
 
-In paste mode what runs is exactly Setup + Solution + Test call, joined in
-that order, and the visualizer shows that combined program. Code that only
-defines things gets a prompt to add a test call instead of running. `input()`
-reads lines from the input() tab.
-
-Limits (both modes): 1,000 steps, 5 s, 64 KiB printed output, 10 MiB trace, 256 KiB
+Limits: 1,000 steps, 5 s, 64 KiB printed output, 10 MiB trace, 256 KiB
 source. Hitting one is reported ("limit reached" / "timed out"); a partial
 result is never shown as complete.
 

@@ -151,6 +151,8 @@ async function readLeetCode(tabId) {
           .map((f) => ({ name: f.name.slice(0, 60), text: f.text.slice(0, MAX_TEXT) }))
       : [],
     rawCases: str(r.rawCases, 1024 * 1024),
+    testcaseFound: r.testcaseFound && typeof r.testcaseFound === "object"
+      ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0 } : null,
   };
   if (!out.slug) return { ok: false, error: "That page's problem name looks wrong." };
   if (typeof r.code === "string") {

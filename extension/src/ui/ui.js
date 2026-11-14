@@ -30,17 +30,20 @@ const el = {
   status: $("status"), message: $("message"), diag: $("diag"), sourceTab: $("source-tab"),
   setup: $("setup"), solution: $("solution"), call: $("call"), inputs: $("inputs"),
   visualize: $("visualize"), stop: $("stop"), reset: $("reset"),
-  importLeetcode: $("import-leetcode"), importSelection: $("import-selection"),
+  importSelection: $("import-selection"),
   example: $("example"), helper: $("helper"), empty: $("empty"),
   viz: $("viz"), vizBody: document.querySelector(".viz-body"), stepMeter: $("step-meter"), diagToggle: $("diag-toggle"),
   vizPanel: document.querySelector(".viz-panel"), codeEditor: $("code-editor"), gutter: document.querySelector("#code-editor .gutter"),
-  edit: $("edit"), modeChip: $("mode-chip"), editArea: $("edit-area"),
+  edit: $("edit"), editArea: $("edit-area"),
   modeToggle: $("mode-toggle"), lcCases: $("lc-cases"), editLeft: $("edit-left"),
 };
 
 // ---------- LeetCode mode: a problem from LeetScope's database + its test cases ----------
 // (paste mode is everything else: the code editor + Test call / Setup / input())
 const LC_MODE_KEY = "visualleet.mode";
+// dev/test builds ("LeetScope (DEV)", "(TEST BUILD)"): examples, Import selection and paste mode
+const DEV = /\((DEV|TEST BUILD)\)/.test(chrome.runtime.getManifest().name);
+document.body.classList.toggle("dev", DEV);
 const PENDING_MAX_AGE_MS = 2 * 60 * 1000;
 let lcMode = false;
 let dbIndex = { problems: {} };
@@ -105,9 +108,6 @@ function setStatus(s, message = "", kind = "error") {
 function setMode(m) {
   mode = m;
   el.vizPanel.dataset.mode = m;
-  el.modeChip.dataset.mode = m;
-  el.modeChip.querySelector("span").textContent = m === "edit" ? "Editing" : "Playing";
-  el.modeChip.querySelector("use").setAttribute("href", m === "edit" ? "#i-code" : "#i-eye");
 }
 
 /** Back to the code: stop any run, drop the trace, so the next run starts at step 1. */
@@ -1197,7 +1197,7 @@ function visualizeCase(opts = {}) {
   if (!lc.problem) { showMessage("Click Visualize on a LeetCode problem (or the LeetScope icon there) first.", "info"); return Promise.resolve({ status: "rejected" }); }
   const g = lc.program();
   if (!g.ok) {
-    showLcView("case");
+    showCodeView("code");
     showMessage("Fix the highlighted test-case values first.", "error");
     return Promise.resolve({ status: "rejected", reason: "case", errors: g.errors });
   }
@@ -1299,9 +1299,13 @@ async function requestImport(mode) {
 // ---------- LeetCode mode ----------
 
 function setLcMode(on) {
-  lcMode = !!on && !!lc.problem;
+  // production: always LeetCode mode (an empty state until a problem is opened)
+  lcMode = DEV ? !!on && !!lc.problem : true;
   document.body.classList.toggle("mode-lc", lcMode);
-  el.modeToggle.hidden = !lc.problem;
+  const empty = lcMode && !lc.problem;
+  document.body.classList.toggle("no-problem", empty);
+  $("lc-empty").hidden = !empty;
+  el.modeToggle.hidden = !DEV || !lc.problem;
   el.modeToggle.textContent = lcMode ? "Paste mode" : "LeetCode mode";
   el.modeToggle.title = lcMode ? "Paste or type any Python program instead" : "Back to the LeetCode problem and its test cases";
   try { localStorage.setItem(LC_MODE_KEY, lcMode ? "lc" : "manual"); } catch {}
@@ -1313,10 +1317,11 @@ function setLcMode(on) {
   updateGutter();
 }
 
-// Test case / Call / Setup views of the test-case panel
-function showLcView(name) {
-  for (const t of document.querySelectorAll("[data-lcview]")) t.setAttribute("aria-selected", String(t.dataset.lcview === name));
-  for (const p of document.querySelectorAll("[data-lcpanel]")) p.hidden = p.dataset.lcpanel !== name;
+// Your code / Call / Setup: the views of the code card (LeetCode mode)
+function showCodeView(name) {
+  for (const t of document.querySelectorAll("[data-codeview]")) t.setAttribute("aria-selected", String(t.dataset.codeview === name));
+  for (const p of document.querySelectorAll("[data-codepanel]")) p.hidden = p.dataset.codepanel !== name;
+  if (name === "code") updateGutter();
 }
 
 /**
@@ -1331,8 +1336,12 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   }
   const entry = await loadEntry(res.slug);
   const lang = describeLanguage(res.language || "");
+  if (!entry && !DEV) {
+    showMessage(`"${res.title || res.slug}" isn't in LeetScope's problem database yet. The database covers the NeetCode 150 for now and is growing.`, "info");
+    return { ok: false, reason: "not-in-db", slug: res.slug };
+  }
   if (!entry) {
-    // not in LeetScope's database: paste mode with a drafted test call
+    // dev/test builds: paste mode with a drafted test call
     setLcMode(false);
     if (res.code && lang.ok) {
       const draft = draftForSolution(res.code, []);
@@ -1348,7 +1357,7 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   }
   const loaded = lc.loadFromPage(res, entry);
   setLcMode(true);
-  showLcView("case");
+  showCodeView("code");
   const notes = [loaded.note];
   let runnable = true;
   // never run older code in place of what the click was meant to show
@@ -1468,12 +1477,11 @@ for (const ta of [el.setup, el.solution, el.call, el.inputs]) {
 el.visualize.addEventListener("click", visualize);
 el.stop.addEventListener("click", stop);
 el.reset.addEventListener("click", resetRuntime);
-el.importLeetcode.addEventListener("click", () => requestImport("leetcode"));
 el.importSelection.addEventListener("click", () => requestImport("selection"));
 window.addEventListener("pagehide", () => { if (iframe) iframe.remove(); clearVisualization(); });
 
 el.modeToggle.addEventListener("click", () => setLcMode(!lcMode));
-for (const t of document.querySelectorAll("[data-lcview]")) t.addEventListener("click", () => showLcView(t.dataset.lcview));
+for (const t of document.querySelectorAll("[data-codeview]")) t.addEventListener("click", () => showCodeView(t.dataset.codeview));
 $("case-run").addEventListener("click", () => visualize());
 
 const draft = loadDraft();

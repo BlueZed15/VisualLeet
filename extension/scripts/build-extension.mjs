@@ -13,7 +13,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 // automated checks can import from a local fixture page without a real
 // toolbar click (activeTab can't be granted by automation). Never ship it.
 const testBuild = process.argv.includes("--test");
-const out = path.join(root, "dist", testBuild ? "extension-test" : "extension");
+// --dev: the normal extension plus the developer tools in the page (examples,
+// Import selection, paste mode), named "LeetScope (DEV)". The test build has them too.
+const devBuild = process.argv.includes("--dev");
+const out = path.join(root, "dist", testBuild ? "extension-test" : devBuild ? "extension-dev" : "extension");
 const src = (...p) => path.join(root, "src", ...p);
 
 // Only the core runtime files; no optional packages.
@@ -26,6 +29,7 @@ for (const dir of ["background", "content", "ui", "runner", "python", "problems"
   await cp(src(dir), path.join(out, dir), { recursive: true });
 }
 const manifest = JSON.parse(await readFile(src("manifest.json"), "utf8"));
+if (devBuild && !testBuild) manifest.name += " (DEV)";
 if (testBuild) {
   manifest.name += " (TEST BUILD)";
   // leetcode.com is mapped to a local fixture server by the checks (--host-resolver-rules)
