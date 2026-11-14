@@ -3,7 +3,7 @@
 // renderer. It never executes Python and never acts on runner messages
 // beyond displaying their results.
 
-import { EXAMPLES, HELPERS } from "./examples.js";
+import { EXAMPLES, SHOWCASE_EXAMPLES, ERROR_EXAMPLES, HELPERS } from "./examples.js";
 import { composeSource, hasTopLevelCode, describeLanguage, draftForSolution } from "./prepare.js";
 
 const PROTOCOL = 1;
@@ -31,7 +31,13 @@ const el = {
   importLeetcode: $("import-leetcode"), importSelection: $("import-selection"),
   example: $("example"), helper: $("helper"), empty: $("empty"),
   viz: $("viz"), vizBody: document.querySelector(".viz-body"), stepMeter: $("step-meter"), diagToggle: $("diag-toggle"),
+  vizPanel: document.querySelector(".viz-panel"), codeEditor: $("code-editor"), gutter: document.querySelector("#code-editor .gutter"),
+  edit: $("edit"), modeChip: $("mode-chip"), editArea: $("edit-area"),
 };
+
+// "edit": the code editor fills the panel. "watch": the run plays like a video.
+let mode = "edit";
+let lastErrorLine = null;   // line (in the combined program) of the last run's error
 
 let iframe = null;
 let assetCache = null;
@@ -56,15 +62,79 @@ const STATUS_LABEL = {
   stopped: "Stopped", failed: "Error", "needs input": "Needs input",
 };
 let msgKind = "info";
+let runCrashed = false;   // the last run ended in an uncaught exception (status stays "complete")
 
 function setStatus(s, message = "", kind = "error") {
   status = s;
-  el.status.textContent = STATUS_LABEL[s] || s;
-  el.status.dataset.state = s.replace(/\s+/g, "-");
+  const crashed = runCrashed && s === "complete";
+  el.status.textContent = crashed ? "Error" : STATUS_LABEL[s] || s;
+  el.status.dataset.state = crashed ? "failed" : s.replace(/\s+/g, "-");
   showMessage(message, kind);
   const busy = s === "running" || s === "preparing visualization";
   el.visualize.disabled = busy || !runtimeInfo;
   el.stop.disabled = !busy || s !== "running";
+  el.stop.hidden = s !== "running";
+}
+
+// ---------- modes: edit the code / watch it run ----------
+
+function setMode(m) {
+  mode = m;
+  el.vizPanel.dataset.mode = m;
+  el.modeChip.dataset.mode = m;
+  el.modeChip.querySelector("span").textContent = m === "edit" ? "Editing" : "Playing";
+  el.modeChip.querySelector("use").setAttribute("href", m === "edit" ? "#i-code" : "#i-eye");
+}
+
+/** Back to the code: stop any run, drop the trace, so the next run starts at step 1. */
+function enterEdit({ focus = false } = {}) {
+  if (current && current.kind === "run") stop();
+  setPlaying(false);
+  if (rendered) { rendered.destroy(); rendered = null; prevSnap = null; }
+  setMode("edit");
+  // in the editor, keep only the headline of an error/warning ("Line 6: IndexError...");
+  // the rest was about stepping through the run
+  if (msgKind === "error" || msgKind === "warn") showMessage(el.message.textContent.split("\n")[0], msgKind);
+  updateView();
+  updateGutter();
+  if (focus) {
+    el.solution.focus();
+    // put the cursor on the line that failed, when it is in the solution
+    const line = solutionLineOf(lastErrorLine);
+    if (line) selectLine(el.solution, line);
+  }
+}
+
+function enterWatch() {
+  setMode("watch");
+  updateView();
+}
+
+// The combined program is setup + "\n\n" + solution + ...: map one of its line numbers to the solution's.
+function solutionLineOf(programLine) {
+  if (!programLine) return null;
+  const setup = el.setup.value.replace(/\s+$/, "");
+  const offset = setup.trim() ? setup.split("\n").length + 2 : 0;
+  const n = programLine - offset;
+  return n >= 1 && n <= el.solution.value.split("\n").length ? n : null;
+}
+function selectLine(ta, n) {
+  const lines = ta.value.split("\n");
+  const start = lines.slice(0, n - 1).reduce((a, l) => a + l.length + 1, 0);
+  ta.setSelectionRange(start, start + lines[n - 1].length);
+  const lh = parseFloat(getComputedStyle(ta).lineHeight) || 20;
+  ta.scrollTop = Math.max(0, (n - 4) * lh);
+  el.gutter.scrollTop = ta.scrollTop;
+}
+
+// line numbers beside the editor
+function updateGutter() {
+  const n = Math.max(1, el.solution.value.split("\n").length);
+  if (el.gutter.dataset.n !== String(n)) {
+    el.gutter.dataset.n = String(n);
+    el.gutter.textContent = Array.from({ length: n }, (_, i) => i + 1).join("\n");
+  }
+  el.gutter.scrollTop = el.solution.scrollTop;
 }
 
 function showMessage(text, kind = "error") {
@@ -101,8 +171,11 @@ function updateView() {
   if (!el.vizBody) return;
   const busy = status === "running" || status === "preparing visualization";
   el.vizBody.classList.toggle("busy", busy && !!rendered);
+  const editing = mode === "edit";
+  el.editArea.hidden = !editing;
+  el.viz.hidden = editing;
   let eaten = false;
-  if (rendered) {
+  if (editing || rendered) {
     el.empty.hidden = true;
   } else {
     const ph = placeholderFor();
@@ -131,6 +204,16 @@ function updateView() {
   el.message.hidden = !showMsg;
   if ((showMsg ? el.message.offsetHeight : 0) !== h) redrawArrows();   // the banner moved the trace
   if (!rendered) el.stepMeter.hidden = $("player").hidden = true;
+  updateLayoutAttr();
+}
+
+// side-by-side cards (with the control bar docked under the right one) only while a trace is shown
+function updateLayoutAttr() {
+  const wide = mode === "watch" && rendered && rendered.wide;
+  if ((el.vizPanel.dataset.layout === "wide") !== !!wide) {
+    el.vizPanel.dataset.layout = wide ? "wide" : "";
+    redrawArrows();
+  }
 }
 
 function redrawArrows() {
@@ -145,6 +228,60 @@ function updateStepMeter(viz) {
   el.stepMeter.querySelector("b").textContent = cur;
   el.stepMeter.querySelector(".total").textContent = total;
   el.stepMeter.style.setProperty("--p", (total ? (100 * cur) / total : 0).toFixed(1) + "%");
+  const bar = el.stepMeter.querySelector(".bar");
+  bar.setAttribute("aria-valuenow", cur);
+  bar.setAttribute("aria-valuemax", total);
+  const atStart = viz.curInstr <= 0, atEnd = viz.curInstr >= viz.curTrace.length - 1;
+  $("nav-first").disabled = $("nav-prev").disabled = atStart;
+  $("nav-next").disabled = $("nav-last").disabled = atEnd;
+}
+
+// ---------- step navigation (header transport, keys, scrubber) ----------
+
+function goStep(where) {
+  if (!rendered) return;
+  const v = rendered.viz, last = v.curTrace.length - 1;
+  if (where === "first") v.renderStep(0);
+  else if (where === "last") v.renderStep(last);
+  else if (where === "prev") v.stepBack();
+  else if (where === "next") v.stepForward();
+  else v.renderStep(Math.max(0, Math.min(last, where)));
+}
+function userStep(where) { setPlaying(false); goStep(where); }
+
+function initStepControls() {
+  for (const [id, where] of [["nav-first", "first"], ["nav-prev", "prev"], ["nav-next", "next"], ["nav-last", "last"]]) {
+    $(id).addEventListener("click", () => userStep(where));
+  }
+  // scrubber: click or drag the step meter's bar
+  const bar = el.stepMeter.querySelector(".bar");
+  const stepAt = (x) => {
+    const r = bar.getBoundingClientRect();
+    const f = Math.min(1, Math.max(0, (x - r.left) / r.width));
+    return Math.round(f * (rendered.viz.curTrace.length - 1));
+  };
+  bar.addEventListener("pointerdown", (e) => {
+    if (!rendered) return;
+    e.preventDefault();
+    bar.setPointerCapture(e.pointerId);
+    bar.classList.add("dragging");
+    setPlaying(false);
+    goStep(stepAt(e.clientX));
+  });
+  bar.addEventListener("pointermove", (e) => {
+    if (!rendered || !bar.hasPointerCapture(e.pointerId)) return;
+    const s = stepAt(e.clientX);
+    if (s !== rendered.viz.curInstr) goStep(s);
+  });
+  const end = (e) => { if (bar.hasPointerCapture(e.pointerId)) bar.releasePointerCapture(e.pointerId); bar.classList.remove("dragging"); };
+  bar.addEventListener("pointerup", end);
+  bar.addEventListener("pointercancel", end);
+  bar.addEventListener("keydown", (e) => {
+    const map = e.shiftKey ? { ArrowLeft: "first", ArrowRight: "last" }
+      : { ArrowLeft: "prev", ArrowDown: "prev", ArrowRight: "next", ArrowUp: "next", Home: "first", End: "last" };
+    if (e.key === " ") { e.preventDefault(); e.stopPropagation(); setPlaying(!playTimer); return; }
+    if (map[e.key]) { e.preventDefault(); e.stopPropagation(); userStep(map[e.key]); }
+  });
 }
 
 // ---------- step animation ----------
@@ -182,7 +319,16 @@ function snapshotStep(viz) {
     });
   }
   const arrows = new Set([...ptr].map(([s, t]) => s + ">" + t));
-  return { values, boxes, arrows, step: viz.curInstr };
+  // a signature per heap object (its cell values, pointers included) to tell
+  // which objects changed on this step
+  const objSig = new Map();
+  for (const [k, { v }] of values) {
+    if (!k.startsWith("h:")) continue;
+    const id = k.slice(2, k.indexOf("|"));
+    objSig.set(id, (objSig.get(id) || "") + "\u0001" + k + "=" + v);
+  }
+  for (const k of boxes.keys()) if (k.startsWith("o:") && !objSig.has(k.slice(2))) objSig.set(k.slice(2), "");
+  return { values, boxes, arrows, objSig, step: viz.curInstr };
 }
 
 function retrigger(els, cls) {
@@ -194,40 +340,69 @@ function retrigger(els, cls) {
 
 function animateStep(viz) {
   markCurrentLine(viz);
+  // drop the archive's "(see UNSUPPORTED FEATURES)" pointer from error text
+  const eo = viz.domRoot && viz.domRoot[0].querySelector("#errorOutput");
+  if (eo && /\(see\b/.test(eo.textContent)) eo.textContent = eo.textContent.replace(/\s*\(see[\s\S]*?\)\s*$/, "");
   const out = viz.domRoot && viz.domRoot[0].querySelector("#progOutputs");
-  if (out) out.classList.toggle("vlEmpty", !(viz.curTrace[viz.curInstr] || {}).stdout);
+  if (out) {
+    const empty = !(viz.curTrace[viz.curInstr] || {}).stdout;
+    // the renderer has already drawn this step's arrows; showing/hiding the
+    // output box moves the data under them, so draw them again
+    if (out.classList.contains("vlEmpty") !== empty) { out.classList.toggle("vlEmpty", empty); redrawArrows(); }
+  }
   const snap = snapshotStep(viz);
   const prev = prevSnap;
   prevSnap = snap;
-  if (!snap || !prev || snap.step === prev.step || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!snap) return;
+  // marks describe ONE step: clear the previous step's (the renderer may reuse those cells)
+  for (const e of viz.domRoot[0].querySelectorAll(".vlChanged, .vlNew")) e.classList.remove("vlChanged", "vlNew");
+  // only mark what one step changed: after a jump (End, Home, scrubbing) everything
+  // would look "changed", which tells you nothing
+  if (!prev || Math.abs(snap.step - prev.step) !== 1) return;
   const changed = [], fresh = [];
   for (const [k, cur] of snap.values) {
     const old = prev.values.get(k);
-    // a value in a brand-new frame/object isn't flashed: the whole box animates in
+    // a value in a brand-new frame/object isn't marked: the whole box animates in
     const boxKey = (k[0] === "v" ? "f:" : "o:") + k.slice(2, k.indexOf("|"));
     if (old ? old.v !== cur.v : prev.boxes.has(boxKey)) changed.push(cur.el);
   }
   for (const [k, box] of snap.boxes) if (!prev.boxes.has(k)) fresh.push(box);
   retrigger(changed, "vlChanged");
   retrigger(fresh, "vlNew");
-  const newArrows = [...snap.arrows].filter((a) => !prev.arrows.has(a));
-  if (newArrows.length) {
-    // arrows are drawn on the next frame; tag the new ones once they exist
+  // objects that are new or whose contents changed on this step
+  const touched = new Set();
+  for (const [id, sig] of snap.objSig) if (prev.objSig.get(id) !== sig) touched.add(id);
+  // highlight a pointer that is new or re-pointed (its cell changed value, or it sits in a
+  // brand-new frame/object), or that points at an object that changed. Not judged by
+  // arrow ids: arrows starting inside objects are numbered in render order, so their
+  // ids shift whenever the layout does.
+  const changedCells = new Set(changed);
+  const hot = (c) => {
+    if (touched.has(c.targetId)) return true;
+    const src = document.getElementById(c.sourceId);
+    if (!src) return false;
+    const cell = src.closest("td");
+    return (cell && changedCells.has(cell)) || fresh.some((box) => box.contains(src));
+  };
+  const layer = viz.dataViz && viz.dataViz.jsPlumbInstance;
+  if ((layer && layer.conns || []).some(hot)) {
+    // arrows are drawn on the next frame; tag them once they exist
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      const layer = viz.dataViz && viz.dataViz.jsPlumbInstance;
-      for (const c of (layer && layer.conns) || []) {
-        if (!newArrows.includes(c.sourceId + ">" + c.targetId)) continue;
-        const p = c.canvas.querySelector("path");
-        if (p) p.setAttribute("pathLength", "1");     // lets CSS draw it in; gone on the next redraw
-        retrigger([c.canvas], "vlNewArrow");
-      }
+      if (!rendered || rendered.viz !== viz || viz.curInstr !== snap.step) return;   // already moved on
+      retrigger(((layer && layer.conns) || []).filter(hot).map((c) => c.canvas), "vlNewArrow");
     }));
   }
 }
 
 function markCurrentLine(viz) {
   const rows = viz.domRoot ? viz.domRoot[0].querySelectorAll("#pyCodeOutput td.cod") : [];
-  rows.forEach((td, i) => td.parentElement.classList.toggle("vlCurLine", i + 1 === viz.curLineNumber));
+  const entry = viz.curTrace[viz.curInstr] || {};
+  // the line an exception was raised on (also for a syntax error's single step)
+  const errLine = /exception/.test(entry.event || "") ? entry.line : null;
+  rows.forEach((td, i) => {
+    td.parentElement.classList.toggle("vlCurLine", i + 1 === viz.curLineNumber && i + 1 !== errLine);
+    td.parentElement.classList.toggle("vlErrLine", i + 1 === errLine);
+  });
 }
 
 // ---------- autoplay ----------
@@ -387,23 +562,35 @@ function onResult(m) {
   const last = trace.trace[steps - 1] || {};
   clearVisualization();
 
-  // The program never started (e.g. a syntax error): report it instead of
-  // opening the visualizer, as the original Python Tutor frontend does.
+  // The program never started (e.g. a syntax error): still open the
+  // visualizer so the code is shown with the offending line marked.
   if (steps === 1 && last.event === "uncaught_exception") {
-    setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg);
+    // that single entry has no frames or heap, which the renderer needs
+    trace.trace[0] = Object.assign({ func_name: "<module>", globals: {}, ordered_globals: [], stack_to_render: [], heap: {}, stdout: "" }, last);
+    try { el.empty.hidden = true; renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("VisualLeet: could not show the code", err); clearVisualization(); }
+    lastErrorLine = last.line || null;
+    setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg + "\nThe program didn't start. Press Edit to fix the marked line, then Visualize again.");
     finishJob({ status: "failed", steps, exception: last.exception_msg, line: last.line });
     return;
   }
+  // A runtime error: open at the step where it failed, so the state that
+  // caused it is on screen; stepping back shows how it got there.
+  // (the tracer ends such a run with an "exception" or "uncaught_exception" entry)
+  const crashed = /exception/.test(last.event || "") && !!last.exception_msg;
+  // the exception is recorded again in each frame it unwinds through; open at
+  // the first of those steps, where it was raised, not where it surfaced
+  // (each unwound frame adds a "return" then an "exception" entry)
+  let failStep = steps - 1;
+  for (let j = steps - 1; crashed && j > 0; j--) {
+    const prev = trace.trace[j - 1];
+    if (prev.event === "exception" && prev.exception_msg === last.exception_msg) failStep = j - 1;
+    else if (prev.event !== "return") break;
+  }
+  const failEntry = trace.trace[failStep] || last;
   const tr = performance.now();
   try {
     el.empty.hidden = true;
-    rendered = VisualLeetRenderer.renderTrace("viz", trace, {
-      startingInstruction: 0, verticalStack: true, codeDivHeight: 230, updateOutputCallback: updateStepMeter,
-    });
-    prevSnap = null;
-    rendered.viz.add_pytutor_hook("end_updateOutput", (a) => { animateStep(a.myViz); return [false]; });
-    animateStep(rendered.viz);          // baseline for the first step (nothing animates)
-    updateStepMeter(rendered.viz);
+    renderView(trace, crashed ? failStep : 0);
     document.body.offsetHeight;
   } catch (err) {
     setStatus("failed", "Could not display this trace: " + err.message);
@@ -418,9 +605,17 @@ function onResult(m) {
   };
   renderDiag();
   let final = "complete", msg = "", kind = "info";
-  if (last.event === "instruction_limit_reached") {
+  if (crashed) {
+    runCrashed = true;
+    lastErrorLine = failEntry.line || null;
+    const where = failEntry.line ? ` on line ${failEntry.line}` : "";
+    msg = `${(failEntry.exception_msg || last.exception_msg || "Error").split("\n")[0]}${where}, at step ${Math.min(failStep + 1, Math.max(steps - 1, 1))}.\nShowing the moment it failed. Press ← or drag the step bar to see how it got there.`;
+    kind = "error";
+  } else if (last.event === "instruction_limit_reached") {
     final = "limit reached";
-    msg = "Incomplete: " + (last.exception_msg || "the program hit a limit").split("\n")[0] + " Showing the steps recorded so far.";
+    // the archive's text continues "Please shorten your code, since Python Tutor is not designed..."
+    const why = (last.exception_msg || "the program hit a limit").split("\n")[0].replace(/\s*Please shorten your code.*$/i, "");
+    msg = "Incomplete: " + why + " Showing the steps recorded so far: look for the loop or recursion that never ends.";
     kind = "warn";
   } else if (last.event === "raw_input") {
     final = "needs input";
@@ -430,6 +625,62 @@ function onResult(m) {
   }
   setStatus(final, msg, kind);
   finishJob({ status: final, steps, lastEvent: last.event, stdout: last.stdout, exception: last.exception_msg, metrics: lastRun });
+}
+
+// Wide panel: code on the left, frames/objects on the right, so the data is
+// never below the fold. Narrow panel: code stacked above the data.
+const WIDE_MIN = 860;
+const isWide = () => el.vizBody.clientWidth >= WIDE_MIN;
+// the code column's width for the current panel size (the renderer takes it in px)
+const codeWidth = () => Math.round(Math.min(680, Math.max(360, el.vizBody.clientWidth * 0.45)));
+
+function renderView(trace, step) {
+  const wide = isWide();
+  el.viz.classList.toggle("vlWide", wide);
+  el.viz.classList.toggle("vlStacked", !wide);
+  el.viz.classList.remove("vlNoRun");
+  const opts = { startingInstruction: step, updateOutputCallback: updateStepMeter };
+  const codeH = Math.max(240, el.vizBody.clientHeight - 40);
+  if (wide) Object.assign(opts, { verticalStack: false, codeDivWidth: codeWidth(), codeDivHeight: codeH });
+  else Object.assign(opts, { verticalStack: true, codeDivHeight: 230 });
+  rendered = VisualLeetRenderer.renderTrace("viz", trace, opts);
+  rendered.wide = wide;
+  rendered.codeW = wide ? codeWidth() : 0;
+  rendered.trace = trace;
+  if (wide) {
+    // use the left column fully: the code card runs down the column, with the
+    // program's output under it (rather than above the frames and objects)
+    const root = rendered.viz.domRoot[0];
+    const out = root.querySelector("#progOutputs");
+    const left = root.querySelector("#vizLayoutTdFirst");
+    if (out && left && rendered.viz.outputBox) {
+      left.appendChild(out);
+      rendered.viz.outputBox.domRoot = window.jQuery(left);   // it looks itself up under its own root
+    }
+  }
+  el.vizPanel.style.setProperty("--code-w", (wide ? codeWidth() : 0) + "px");
+  updateLayoutAttr();
+  prevSnap = null;
+  rendered.viz.add_pytutor_hook("end_updateOutput", (a) => { animateStep(a.myViz); return [false]; });
+  animateStep(rendered.viz);          // baseline for the first step (nothing animates)
+  updateStepMeter(rendered.viz);
+}
+
+// switch layouts when the panel crosses the threshold, keeping the current step
+let relayoutTimer = 0;
+// (also when the code column's width would change a lot)
+const layoutStale = () => rendered && (rendered.wide !== isWide() || (rendered.wide && Math.abs(rendered.codeW - codeWidth()) > 40));
+function maybeRelayout() {
+  if (!layoutStale()) return;
+  clearTimeout(relayoutTimer);
+  relayoutTimer = setTimeout(() => {
+    if (!layoutStale()) return;
+    const { trace } = rendered, step = rendered.viz.curInstr, playing = !!playTimer;
+    setPlaying(false);
+    rendered.destroy();
+    renderView(trace, step);
+    if (playing) setPlaying(true);
+  }, 150);
 }
 
 function clearVisualization() {
@@ -446,6 +697,7 @@ function startJob(kind, extra = {}) {
   }
   const runId = crypto.randomUUID();
   setPlaying(false);
+  runCrashed = false;
   return new Promise((resolve) => {
     current = {
       runId, kind, resolve, tClick: performance.now(),
@@ -482,6 +734,8 @@ function visualize() {
     return Promise.resolve({ status: "rejected", reason: "no-call" });
   }
   const inputs = el.inputs.value === "" ? [] : el.inputs.value.replace(/\r/g, "").split("\n");
+  // switch to the player only when the run will actually start (startJob explains otherwise)
+  if (IDLE.has(status) && runtimeInfo) { lastErrorLine = null; enterWatch(); }
   return startJob("run", { source, inputs });
 }
 
@@ -499,6 +753,7 @@ function setProgram({ setup, solution, call, inputs }) {
   if (call !== undefined) el.call.value = call;
   if (inputs !== undefined) el.inputs.value = inputs;
   saveDraft();
+  enterEdit();            // new code: back to the editor; the next run starts from step 1
 }
 
 // ---------- tabs (Test call / Setup / input()) ----------
@@ -541,6 +796,7 @@ async function requestImport(mode) {
   if (mode === "selection") {
     el.solution.value = res.text;
     saveDraft();
+    enterEdit();
     showMessage(`Imported ${res.text.split("\n").length} lines from the selection into Solution. Review it, add a test call if needed, then Visualize.`, "ok");
     return res;
   }
@@ -569,12 +825,22 @@ function showSourceTab(title, url) {
 
 // ---------- wiring ----------
 
-for (const name of Object.keys(EXAMPLES)) el.example.add(new Option(name, name));
+const ALL_EXAMPLES = Object.assign({}, EXAMPLES, SHOWCASE_EXAMPLES, ERROR_EXAMPLES);
+for (const [label, set] of [["Examples", EXAMPLES], ["Diagram showcase", SHOWCASE_EXAMPLES], ["Errors & bugs", ERROR_EXAMPLES]]) {
+  const group = document.createElement("optgroup");
+  group.label = label;
+  for (const name of Object.keys(set)) group.append(new Option(name, name));
+  el.example.append(group);
+}
 for (const name of Object.keys(HELPERS)) el.helper.add(new Option(name, name));
 
 el.example.addEventListener("change", () => {
-  const ex = EXAMPLES[el.example.value];
-  if (ex) setProgram({ setup: ex.setup, solution: ex.solution, call: ex.call, inputs: ex.inputs || "" });
+  const ex = ALL_EXAMPLES[el.example.value];
+  if (ex) {
+    setProgram({ setup: ex.setup, solution: ex.solution, call: ex.call, inputs: ex.inputs || "" });
+    selectTab(ex.inputs ? "stdin" : "call");
+    showMessage("", "info");
+  }
   el.example.value = "";
 });
 el.helper.addEventListener("change", () => {
@@ -589,7 +855,7 @@ el.helper.addEventListener("change", () => {
 
 for (const t of tabs) t.addEventListener("click", () => selectTab(t.dataset.tab));
 // arrows are drawn once per step; redraw them when the visualizer panel changes size
-new ResizeObserver(redrawArrows).observe(el.vizBody);
+new ResizeObserver(() => { redrawArrows(); maybeRelayout(); }).observe(el.vizBody);
 el.diagToggle.addEventListener("click", () => {
   const on = el.diag.hidden;
   el.diag.hidden = !on;
@@ -598,11 +864,25 @@ el.diagToggle.addEventListener("click", () => {
 });
 $("play").addEventListener("click", () => setPlaying(!playTimer));
 $("speed").addEventListener("change", () => { if (playTimer) setPlaying(true); });
+el.edit.addEventListener("click", () => enterEdit({ focus: true }));
+el.solution.addEventListener("input", updateGutter);
+el.solution.addEventListener("scroll", () => { el.gutter.scrollTop = el.solution.scrollTop; });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!el.visualize.disabled) visualize(); return; }
-  // Space plays/pauses when you're not typing or on a control
-  if (e.key === " " && rendered && !e.target.closest("textarea, input, select, button, a")) { e.preventDefault(); setPlaying(!playTimer); }
+  // Esc while watching: back to the code
+  if (e.key === "Escape" && mode === "watch" && !e.target.closest("select")) { e.preventDefault(); enterEdit({ focus: true }); return; }
+  // Player keys (like a video player): Space play/pause, ← → one step, Shift+← Shift+→ start/end.
+  // Active unless you're typing, or on a control that isn't part of the player.
+  if (!rendered || mode !== "watch" || e.ctrlKey || e.metaKey || e.altKey) return;
+  const t = e.target;
+  const onPlayer = t.closest && t.closest("#player, #step-meter");
+  if (t.closest && t.closest("textarea, input, select, a, [role=slider]")) return;
+  if (t.closest && t.closest("button") && !onPlayer) return;
+  const steps = e.shiftKey ? { ArrowLeft: "first", ArrowRight: "last" } : { ArrowLeft: "prev", ArrowRight: "next", Home: "first", End: "last" };
+  if (e.key === " ") { e.preventDefault(); setPlaying(!playTimer); }      // preventDefault also stops the button's own click
+  else if (steps[e.key]) { e.preventDefault(); userStep(steps[e.key]); }
 });
+initStepControls();
 if (/Mac/.test(navigator.platform)) document.querySelector("#visualize .kbd").textContent = "⌘ ↵";
 
 for (const ta of [el.setup, el.solution, el.call, el.inputs]) {

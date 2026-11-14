@@ -47,7 +47,6 @@ code { font-family: var(--font-code); }
 .source-chip { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   font-size: var(--fs-sm); color: var(--text-3); padding: 2px 10px; border: 1px solid var(--line); border-radius: var(--r-pill); }
 .source-chip:empty { display: none; }
-
 /* ---------- status pill ---------- */
 .status { margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px;
   border-radius: var(--r-pill); font-size: var(--fs-sm); font-weight: 600; background: var(--bg-2); color: var(--text-2); white-space: nowrap; }
@@ -84,8 +83,8 @@ code { font-family: var(--font-code); }
 .select:hover { border-color: var(--line-strong); }
 
 /* ---------- layout ---------- */
-.workspace { display: grid; grid-template-columns: minmax(340px, 38%) minmax(0, 1fr); gap: var(--gap); padding: var(--gap); min-height: 0; }
-.left-col { display: grid; grid-template-rows: minmax(160px, 1fr) minmax(130px, 34%) auto; gap: var(--gap); min-height: 0; }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr); padding: var(--gap); min-height: 0; }
+.viz-panel { grid-template-rows: 36px minmax(0, 1fr) auto; }
 .panel { display: grid; grid-template-rows: 36px minmax(0, 1fr); min-height: 0; overflow: hidden; container-type: inline-size;
   background: var(--bg-1); border: 1px solid var(--line); border-radius: var(--r-md); }
 /* tight panels: drop tab icons so the tabs and the picker still fit */
@@ -98,7 +97,6 @@ code { font-family: var(--font-code); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 .panel:focus-within:not(.viz-panel) { border-color: var(--line-strong); }
 .tab-panel { min-height: 0; }
-.actions { display: flex; align-items: center; gap: 8px; padding: 8px; background: var(--bg-1); border: 1px solid var(--line); border-radius: var(--r-md); }
 .spacer { flex: 1; }
 
 /* ---------- tabs ---------- */
@@ -148,16 +146,83 @@ button.tab:hover { color: var(--text-1); background: var(--bg-2); }
 .ph-steps b { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font: 700 10px var(--font-code); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-.player { display: inline-flex; align-items: center; gap: 6px; margin-right: 12px; }
-.player .select { min-width: 0; width: 58px; }
-.btn-play { background: var(--brand-soft); color: var(--brand); border-color: rgba(255,161,22,.3); }
-.btn-play:hover:not(:disabled) { background: rgba(255,161,22,.24); }
-.btn-play[aria-pressed="true"] { background: var(--brand); color: #1a1a1a; box-shadow: 0 0 14px rgba(255,161,22,.45); }
-@container (max-width: 560px) { .btn-play span { display: none; } .btn-play { width: 28px; padding: 0; } .step-meter .bar { width: 60px; } }
-.step-meter { display: inline-flex; align-items: center; gap: 8px; font: 600 var(--fs-sm) var(--font-code); color: var(--text-2); white-space: nowrap; }
-.step-meter b { color: var(--brand); }
-.step-meter .bar { width: 120px; height: 6px; border-radius: var(--r-pill); background: var(--bg-2); overflow: hidden; }
-.step-meter .bar i { display: block; height: 100%; width: var(--p, 0%); border-radius: inherit; background: linear-gradient(90deg, var(--brand), #ffcf5c); transition: width .15s; }
+/* ---------- player panel: header chip, code editor, video-style control bar ---------- */
+.mode-chip { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px 0 8px; margin-right: 8px; flex: none;
+  border-radius: var(--r-pill); font: 700 var(--fs-xs) var(--font-ui); letter-spacing: .06em; text-transform: uppercase; }
+.mode-chip svg { width: 13px; height: 13px; }
+.mode-chip[data-mode="edit"] { background: var(--info-soft); color: #8ec5ff; }
+.mode-chip[data-mode="watch"] { background: var(--brand-soft); color: var(--brand); }
+.btn-icon-sm { width: 28px; padding: 0; }
+.btn-icon-sm svg { width: 15px; height: 15px; }
+
+/* edit mode: the code editor on the left, the test input (call / setup / input()) on the right */
+.edit-area { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr); gap: 12px; }
+.test-panel { background: var(--bg-0); }
+.test-panel .tabs { background: var(--bg-1); }
+.test-panel .editor { background: transparent; }
+@container (max-width: 720px) { .edit-area { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(220px, 1fr) minmax(160px, 40%); } }
+
+/* the code editor (edit mode): line numbers + textarea */
+.code-editor { min-height: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); overflow: hidden;
+  background: var(--bg-0); border: 1px solid var(--line); border-radius: var(--r-md); }
+.code-editor:focus-within { border-color: var(--line-strong); }
+.code-editor .gutter { margin: 0; padding: 12px 10px 12px 14px; overflow: hidden; user-select: none; text-align: right;
+  font: var(--fs-md)/1.6 var(--font-code); color: #5f646c; border-right: 1px solid var(--line); }
+.code-editor .editor { background: transparent; padding: 12px 16px; }
+.viz-panel[data-mode="edit"] .viz-body { overflow: hidden; }
+
+/* side-by-side playback: the control bar docks under the visualization card (the
+   right column), so the frames/objects and their controls read as one player.
+   --code-w (the code column's width) is set by ui.js. */
+.viz-panel { position: relative; }
+.viz-panel[data-layout="wide"] .viz-body { overflow: hidden; }   /* each card scrolls on its own */
+.viz-panel[data-layout="wide"] .player-bar { position: absolute; z-index: 6; height: var(--bar-h);
+  left: calc(var(--code-w) + 25px); right: 13px; bottom: 13px; padding: 0 12px;
+  border: 1px solid var(--line); border-radius: 0 0 var(--r-md) var(--r-md); background: var(--bg-1); }
+.viz-panel { --bar-h: 62px; }
+
+/* the control bar */
+.player-bar { display: flex; align-items: center; min-width: 0; padding: 10px 12px; border-top: 1px solid var(--line);
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.28)), var(--bg-1); }
+.bar-edit, .bar-watch { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
+.viz-panel[data-mode="edit"] .bar-watch, .viz-panel:not([data-mode="edit"]) .bar-edit { display: none; }
+/* the scrubber takes the free width; the spacer only matters when there's no trace (Edit stays right) */
+.bar-watch .spacer { flex: 0 0 0; }
+.bar-watch #step-meter[hidden] ~ .spacer { flex: 1; }
+.bar-hint { color: var(--text-3); font-size: var(--fs-sm); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.player { display: inline-flex; align-items: center; gap: 6px; flex: none; }
+.transport { display: inline-flex; align-items: center; gap: 0; }
+/* the big round play/pause button */
+.btn-play { width: 40px; height: 40px; padding: 0; border-radius: 50%; background: var(--brand); color: #1a1a1a;
+  box-shadow: 0 4px 14px rgba(255,161,22,.35); }
+.btn-play svg { width: 16px; height: 16px; }
+.btn-play span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }   /* label for screen readers */
+.btn-play:hover:not(:disabled) { background: #ffb340; box-shadow: 0 6px 20px rgba(255,161,22,.5); }
+/* playing: same orange button, the icon becomes a pause sign (like a video player) */
+.btn-play[aria-pressed="true"] { color: #1a1a1a; }
+.btn-edit { background: transparent; border-color: var(--line-strong); color: var(--text-1); }
+.btn-edit:hover:not(:disabled) { background: var(--info-soft); border-color: rgba(60,156,255,.5); color: #a7d1ff; }
+.btn-edit svg { width: 14px; height: 14px; }
+
+/* the scrubber: fills the bar, thickens on hover like a video timeline */
+.step-meter { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 120px; font: 600 var(--fs-sm) var(--font-code); color: var(--text-2); white-space: nowrap; }
+.step-meter b { color: var(--text-1); }
+.step-meter .count { min-width: 7ch; text-align: right; }
+.step-meter .select { width: 58px; min-width: 0; }
+@container (max-width: 640px) { #nav-first, #nav-last, .bar-hint { display: none; } .step-meter .select { display: none; } }
+@container (max-width: 460px) { .btn-edit span, .step-meter .count { display: none; } }
+/* the bar is a scrubber: a tall invisible hit area around a thin track */
+.step-meter .bar { position: relative; flex: 1; min-width: 60px; height: 22px; cursor: pointer; touch-action: none; border-radius: var(--r-pill); }
+.step-meter .bar::before { content: ""; position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: var(--r-pill); background: var(--bg-3); transition: top .12s, height .12s; }
+.step-meter .bar:hover::before, .step-meter .bar.dragging::before { top: 8px; height: 6px; }
+.step-meter .bar:hover i, .step-meter .bar.dragging i { top: 8px; height: 6px; }
+.step-meter .bar i { position: absolute; left: 0; top: 9px; height: 4px; width: var(--p, 0%); border-radius: var(--r-pill);
+  background: linear-gradient(90deg, var(--brand), #ffcf5c); transition: width .15s; }
+.step-meter .bar .knob { position: absolute; top: 4px; left: var(--p, 0%); width: 12px; height: 12px; margin-left: -6px; border-radius: 50%;
+  background: #ffcf5c; box-shadow: 0 0 0 3px rgba(255,161,22,.25); opacity: 0; transition: opacity .15s, left .15s; }
+.step-meter .bar:hover .knob, .step-meter .bar:focus-visible .knob, .step-meter .bar.dragging .knob { opacity: 1; }
+.step-meter .bar.dragging i, .step-meter .bar.dragging .knob { transition: none; }
+.step-meter .bar:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
 .diag { flex: none; margin: 0; padding: 8px 10px; font: var(--fs-xs)/1.6 var(--font-code); color: var(--text-3);
   background: var(--bg-0); border: 1px solid var(--line); border-radius: var(--r-sm); white-space: pre-wrap; }
@@ -166,13 +231,10 @@ button.tab:hover { color: var(--text-1); background: var(--bg-2); }
 /* ---------- narrow windows ---------- */
 @media (max-width: 1000px) {
   body { height: auto; min-height: 100%; }
-  .workspace { grid-template-columns: minmax(0, 1fr); }
-  .left-col { grid-template-rows: 320px 200px auto; }
-  .viz-panel { min-height: 600px; }
+  .viz-panel { min-height: 680px; }
   .topbar .btn-sm { padding: 0 8px; }
   .source-chip { display: none; }
 }
 @media (max-width: 640px) {
   .topbar .btn-sm { width: 28px; padding: 0; font-size: 0; gap: 0; }
-  .step-meter .bar { width: 60px; }
 }
