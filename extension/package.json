@@ -1,0 +1,22 @@
+{
+  "name": "visualleet-extension",
+  "version": "1.0.0",
+  "description": "VisualLeet Chrome extension prototype",
+  "scripts": {
+    "build:renderer": "node scripts/build-renderer.mjs",
+    "bench:serve": "node scripts/serve-bench.mjs",
+    "build:baseline": "node scripts/build-renderer.mjs --baseline",
+    "build:extension": "node scripts/build-extension.mjs",
+    "spike:check": "node scripts/spike-check.mjs",
+    "build:extension-test": "node scripts/build-extension.mjs --test"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "puppeteer-core": "25.17.0",
+    "pyodide": "314.0.8"
+  },
+  "private": true
+}

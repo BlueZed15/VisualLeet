@@ -1,0 +1,8 @@
+/* VisualLeet additions to the Python Tutor renderer styles. */
+.vlCollapsedNote { color: #888; font-weight: normal; }
+.vlExpandCollection, .vlCollapseCollection {
+  font: inherit; font-size: 9pt; padding: 1px 6px; cursor: pointer;
+  border: 1px solid #bbb; border-radius: 3px; background: #f5f5f5; color: #333; white-space: nowrap;
+}
+.vlExpandCollection:hover, .vlCollapseCollection:hover { background: #e8e8e8; }
+.vlGapHeader { color: #888; }

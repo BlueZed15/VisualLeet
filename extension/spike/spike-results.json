@@ -1,0 +1,248 @@
+{
+  "environment": {
+    "chrome": "Chrome/157.0.8103.78",
+    "headless": true,
+    "platform": "Windows_NT 10.0.26300",
+    "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
+    "date": "2026-11-14T06:29:38.747Z",
+    "pyodide": "314.0.8",
+    "python": "3.14.2"
+  },
+  "checks": [
+    {
+      "name": "Packaged Pyodide starts inside the sandboxed worker",
+      "pass": true,
+      "detail": "Python 3.14.2, Pyodide 314.0.8, page load → ready 2417 ms (worker: 2026 ms)"
+    },
+    {
+      "name": "BFS traces and prints A,B,C,D",
+      "pass": true,
+      "detail": {
+        "status": "complete",
+        "steps": 58,
+        "stdout": "['A', 'B', 'C', 'D']\n"
+      }
+    },
+    {
+      "name": "Sliding window prints 3",
+      "pass": true,
+      "detail": {
+        "steps": 71,
+        "stdout": "3\n"
+      }
+    },
+    {
+      "name": "Recursive factorial prints 120",
+      "pass": true,
+      "detail": {
+        "steps": 23
+      }
+    },
+    {
+      "name": "collections/heapq/bisect/functools work under the tracer",
+      "pass": true,
+      "detail": {
+        "stdout": "[('a', 5)] [0, 1, 2, 3] 1 [1, 3, 4, 5] 55\n"
+      }
+    },
+    {
+      "name": "Runtime error is reported with its message",
+      "pass": true,
+      "detail": {
+        "exception": "IndexError: list index out of range"
+      }
+    },
+    {
+      "name": "Syntax error is reported",
+      "pass": true,
+      "detail": {
+        "exception": "SyntaxError: invalid syntax (<string>, line 1)"
+      }
+    },
+    {
+      "name": "Run A then run B: no globals carried over",
+      "pass": true,
+      "detail": {
+        "stdout": "False\n"
+      }
+    },
+    {
+      "name": "Visualizer shows code, frames, objects and arrows; Next steps through history",
+      "pass": true,
+      "detail": {
+        "codeRows": 22,
+        "stepText": "Step 21 of 57",
+        "frames": 2,
+        "heapObjects": 9,
+        "arrows": 6
+      }
+    },
+    {
+      "name": "Code panel marks the current and previous line",
+      "pass": true,
+      "detail": {
+        "curVisible": true,
+        "prevVisible": true,
+        "curTransform": "translate(0,204.546875)"
+      }
+    },
+    {
+      "name": "HTML in user output renders as text (no elements, no script)",
+      "pass": true,
+      "detail": {
+        "injectedElements": 0,
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Infinite loop stops at the step limit and is labeled incomplete",
+      "pass": true,
+      "detail": {
+        "status": "limit reached",
+        "steps": 1001
+      }
+    },
+    {
+      "name": "Native busy loop (few trace events) is killed by the 5 s watchdog; next run works",
+      "pass": true,
+      "detail": {
+        "status": "timed out",
+        "killedAfterMs": 5033,
+        "rebuildMs": 2432
+      }
+    },
+    {
+      "name": "Stop terminates a running job quickly; next run works",
+      "pass": true,
+      "detail": {
+        "stopToStoppedMs": 18,
+        "next": "complete"
+      }
+    },
+    {
+      "name": "Stopped run cannot overwrite the next run's result",
+      "pass": true,
+      "detail": {
+        "r1": "stopped",
+        "r2": "complete",
+        "r2out": "second\n"
+      }
+    },
+    {
+      "name": "Python's JS bridge has no extension APIs",
+      "pass": true,
+      "detail": {
+        "typeof chrome": "undefined",
+        "chrome.runtime.id": "unavailable",
+        "typeof document": "undefined",
+        "origin": "null"
+      }
+    },
+    {
+      "name": "Python's JS bridge cannot reach the network",
+      "pass": true,
+      "detail": {
+        "typeof chrome": "undefined",
+        "chrome.runtime.id": "unavailable",
+        "typeof document": "undefined",
+        "self.origin": "null",
+        "indexedDB.open": "blocked: SecurityError",
+        "sync XHR to example.com": "blocked: NetworkError",
+        "original fetch to example.com": "blocked: TypeError",
+        "importScripts from example.com": "blocked: NetworkError",
+        "WebSocket to example.com": "failed to connect",
+        "CSP violations reported in worker": "[\"script-src-elem data\",\"script-src-elem data\",\"connect-src https://example.com/\",\"connect-src https://example.com/\",\"connect-src https://example.com/\",\"connect-src https://example.com/\",\"script-src-elem https://example.com/x.js\",\"script-src-elem https://example.com/x.js\",\"connect-src wss://example.com/\",\"connect-src wss://example.com/\"]",
+        "forged messages posted": "3"
+      }
+    },
+    {
+      "name": "Sandbox drops forged/unknown runner messages",
+      "pass": true,
+      "detail": {
+        "dropped": 3,
+        "stale": 0,
+        "restarts": 4
+      }
+    },
+    {
+      "name": "Tracer's import guard also refuses `import js` in user code",
+      "pass": true,
+      "detail": {
+        "exception": "ImportError: js not found or not supported\nOnly these modules can be imported:\n  __future__, abc, array, bisect, calendar, cmath,\n  collections, copy, datetime, decimal, doctest, fractions,\n  functools, hashlib, heapq, io, itertools, json,\n  locale, math, operator, pickle, pprint, random,\n  re, string, time, types, typing, unittest\n\nYou can also try \"Python 3.6 with Anaconda (experimental)\",\nwhich is slower but lets you import many more modules.\n"
+      }
+    },
+    {
+      "name": "No network requests from the UI page or sandbox frame during the session",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Works with the network disabled",
+      "pass": true,
+      "detail": {
+        "initMs": 3278
+      }
+    }
+  ],
+  "timings": {
+    "coldInitMs": 2417,
+    "watchdogKillMs": 5033,
+    "restartAfterKillMs": 2432,
+    "stopToStoppedMs": 18,
+    "bfs": {
+      "execMs": {
+        "median": 16.3,
+        "worst": 20.3
+      },
+      "transferMs": {
+        "median": 3.3,
+        "worst": 4.1
+      },
+      "parseMs": {
+        "median": 0.2,
+        "worst": 0.3
+      },
+      "renderMs": {
+        "median": 10.9,
+        "worst": 13.4
+      },
+      "firstViewMs": {
+        "median": 31.9,
+        "worst": 34.4
+      },
+      "steps": 58,
+      "traceKiB": 46
+    },
+    "sliding": {
+      "execMs": {
+        "median": 12.3,
+        "worst": 12.9
+      },
+      "transferMs": {
+        "median": 3.3,
+        "worst": 3.6
+      },
+      "parseMs": {
+        "median": 0.2,
+        "worst": 0.2
+      },
+      "renderMs": {
+        "median": 11,
+        "worst": 13.3
+      },
+      "firstViewMs": {
+        "median": 26.5,
+        "worst": 29
+      },
+      "steps": 71,
+      "traceKiB": 45
+    },
+    "stepNavigation": {
+      "medianMs": 3.3,
+      "worstMs": 8.3
+    },
+    "secondPageLoadInitMs": 3139
+  },
+  "passed": 21,
+  "total": 21
+}

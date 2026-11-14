@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Renderer bench</title>
+  <script>
+    // ?build=baseline loads the frozen, unmodified renderer for A/B comparison.
+    window.BUILD = new URLSearchParams(location.search).get("build") || "visualizer";
+    document.write('<link rel="stylesheet" href="../dist/' + BUILD + '/renderer.css">');
+  </script>
+  <style>body { background: #fff; font-family: sans-serif; } #results { font: 12px monospace; white-space: pre; }</style>
+</head>
+<body>
+  <pre id="results"></pre>
+  <div id="visualizerDiv"></div>
+  <script>document.write('<script src="../dist/' + BUILD + '/renderer.js"><\/script>');</script>
+  <script src="bench.js"></script>
+</body>
+</html>

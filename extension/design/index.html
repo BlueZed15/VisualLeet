@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VisualLeet design</title>
+  <link rel="stylesheet" href="_shared/renderer.css">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="renderer-dark.css">
+  <link rel="stylesheet" href="_shared/proto.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-play" viewBox="0 0 16 16"><path fill="currentColor" d="M4 2.8v10.4c0 .6.6.9 1.1.6l8.2-5.2a.7.7 0 0 0 0-1.2L5.1 2.2C4.6 1.9 4 2.2 4 2.8z"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 16 16"><rect fill="currentColor" x="3.5" y="3.5" width="9" height="9" rx="1.5"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 8a5 5 0 1 0 1.5-3.5M3 2.5v2.8h2.8"/></symbol>
+    <symbol id="i-code" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5.5 4.5 2 8l3.5 3.5M10.5 4.5 14 8l-3.5 3.5"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M6 2h4M6.7 2v4L3 13a1 1 0 0 0 .9 1.5h8.2A1 1 0 0 0 13 13L9.3 6V2"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M10.5 2.2a3.5 3.5 0 0 0-4.2 4.6L2.4 10.7a1.2 1.2 0 0 0 1.7 1.7l3.9-3.9a3.5 3.5 0 0 0 4.6-4.2l-2 2-1.7-.3-.3-1.7z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M1.5 8S4 3.5 8 3.5 14.5 8 14.5 8 12 12.5 8 12.5 1.5 8 1.5 8z"/><circle fill="currentColor" cx="8" cy="8" r="2"/></symbol>
+    <symbol id="i-select" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M2 3h8M2 6.5h12M2 10h6M10 9v5m-2-5h4m-4 5h4"/></symbol>
+    <symbol id="i-import" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 2v8m-3-3 3 3 3-3M3 12.5v1h10v-1"/></symbol>
+  </svg>
+
+  <header class="dash-top">
+    <span class="logo"><span class="logo-mark">&lt;/&gt;</span><span>Visual<b>Leet</b></span></span>
+    <nav><a href="#workspace">Workspace</a><a href="#tokens">Tokens</a><a href="#components">Components</a><a href="#states">States</a></nav>
+    <span class="dash-tag">Design dashboard · dark v0.1</span>
+  </header>
+
+  <main class="dash">
+
+    <!-- ===================== WORKSPACE ===================== -->
+    <section id="workspace">
+      <h2>Workspace</h2>
+      <p class="lede">LeetCode's layout language: a slim top bar, rounded panels on charcoal, tabs on each panel. Solution editor on top left, a "testcase"-style panel below it for the test call and setup, the visualizer on the right. Use the switcher (bottom right) to see every state.</p>
+
+      <div class="ws-wrap">
+        <div class="ws">
+          <div class="ws-top">
+            <span class="logo"><span class="logo-mark">&lt;/&gt;</span><span>Visual<b>Leet</b></span></span>
+            <span class="sep"></span>
+            <button id="importLeetcode" class="btn btn-sm btn-ghost" type="button"><svg><use href="#i-import"/></svg>Import LeetCode editor</button>
+            <button id="importSelection" class="btn btn-sm btn-ghost" type="button"><svg><use href="#i-select"/></svg>Import selection</button>
+            <div class="right">
+              <span id="status" class="status" data-state="ready">Ready</span>
+            </div>
+          </div>
+
+          <div class="ws-body">
+            <div class="left-col">
+              <div class="panel">
+                <div class="tabs">
+                  <button class="tab" aria-selected="true" type="button"><svg><use href="#i-code"/></svg>Solution</button>
+                  <span class="spacer"></span>
+                  <select id="example" class="select" aria-label="Example"></select>
+                </div>
+                <textarea id="solution" class="editor" spellcheck="false" aria-label="Solution"></textarea>
+              </div>
+
+              <div class="panel" data-tabs>
+                <div class="tabs">
+                  <button class="tab" data-tab="call" aria-selected="true" type="button"><svg><use href="#i-flask"/></svg>Test call</button>
+                  <button class="tab" data-tab="setup" aria-selected="false" type="button"><svg><use href="#i-wrench"/></svg>Setup</button>
+                  <button class="tab" data-tab="stdin" aria-selected="false" type="button"><svg><use href="#i-select"/></svg>input()</button>
+                  <span class="spacer"></span>
+                  <select class="select" aria-label="Add helper"><option>+ Add helper</option><option>ListNode</option><option>TreeNode</option><option>NestedInteger</option></select>
+                </div>
+                <div data-panel="call"><textarea id="call" class="editor" spellcheck="false" aria-label="Test call" placeholder="print(Solution().twoSum([2, 7, 11, 15], 9))"></textarea></div>
+                <div data-panel="stdin" hidden><textarea class="editor" spellcheck="false" aria-label="Input lines" placeholder="One line per input() call"></textarea></div>
+                <div data-panel="setup" hidden><textarea id="setup" class="editor" spellcheck="false" aria-label="Setup code" placeholder="Imports, ListNode / TreeNode helpers, input builders"></textarea></div>
+              </div>
+
+              <div class="actions">
+                <button id="visualize" class="btn btn-run" type="button"><svg><use href="#i-play"/></svg>Visualize<span class="kbd">Ctrl ↵</span></button>
+                <button id="stop" class="btn btn-stop" type="button" disabled><svg><use href="#i-stop"/></svg>Stop</button>
+                <button id="reset" class="btn btn-ghost" type="button" title="Restart the Python runtime"><svg><use href="#i-reset"/></svg>Reset</button>
+                <button class="btn btn-sm btn-ghost diag-toggle" type="button" data-toggle="show-diag">Diagnostics</button>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="tabs">
+                <button class="tab" aria-selected="true" type="button"><svg><use href="#i-eye"/></svg>Visualizer</button>
+                <span class="spacer"></span>
+                <span class="step-meter" aria-hidden="true"><span class="count">step <b>21</b>/<span class="total">57</span></span><span class="bar"><i></i></span></span>
+              </div>
+              <div class="viz-body">
+                <div id="message" class="message" hidden></div>
+                <div id="banner" class="banner" hidden></div>
+                <div id="placeholder" class="placeholder" hidden></div>
+                <div id="viz" data-options='{"verticalStack": true, "codeDivHeight": 250}'></div>
+                <pre id="diag" class="diag diag-panel"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOKENS ===================== -->
+    <section id="tokens">
+      <h2>Tokens</h2>
+      <p class="lede">Charcoal surfaces stepping up in lightness, LeetCode's orange as the brand, its green for "go", yellow and red for warnings and errors. Values live in <code>tokens.css</code>.</p>
+      <h3>Surfaces &amp; text</h3>
+      <div class="grid swatches">
+        <div class="swatch" style="--c: var(--bg-0)"><i></i><div>bg-0 · page<span>#1a1a1a</span></div></div>
+        <div class="swatch" style="--c: var(--bg-1)"><i></i><div>bg-1 · panel<span>#262626</span></div></div>
+        <div class="swatch" style="--c: var(--bg-2)"><i></i><div>bg-2 · input<span>#303030</span></div></div>
+        <div class="swatch" style="--c: var(--bg-3)"><i></i><div>bg-3 · hover<span>#3d3d3d</span></div></div>
+        <div class="swatch" style="--c: var(--line)"><i></i><div>line<span>#3a3a3a</span></div></div>
+        <div class="swatch" style="--c: var(--text-1)"><i></i><div>text-1<span>#eff1f6</span></div></div>
+        <div class="swatch" style="--c: var(--text-2)"><i></i><div>text-2<span>#b6bac2</span></div></div>
+        <div class="swatch" style="--c: var(--text-3)"><i></i><div>text-3<span>#8a8f98</span></div></div>
+      </div>
+      <h3>Brand &amp; semantic</h3>
+      <div class="grid swatches">
+        <div class="swatch" style="--c: var(--brand)"><i></i><div>brand<span>#ffa116</span></div></div>
+        <div class="swatch" style="--c: var(--run)"><i></i><div>run · success<span>#2cbb5d</span></div></div>
+        <div class="swatch" style="--c: var(--warn)"><i></i><div>warn<span>#ffc01e</span></div></div>
+        <div class="swatch" style="--c: var(--error)"><i></i><div>error<span>#ef4743</span></div></div>
+        <div class="swatch" style="--c: var(--info)"><i></i><div>info · links<span>#3c9cff</span></div></div>
+        <div class="swatch" style="--c: var(--teal)"><i></i><div>teal (spare)<span>#00b8a3</span></div></div>
+      </div>
+      <h3>Visualization</h3>
+      <div class="grid swatches">
+        <div class="swatch" style="--c: var(--frame-active)"><i></i><div>active frame<span>#2f2a20</span></div></div>
+        <div class="swatch" style="--c: var(--obj)"><i></i><div>object<span>#2e2b25</span></div></div>
+        <div class="swatch" style="--c: var(--arrow)"><i></i><div>arrow<span>#6cb6ff</span></div></div>
+        <div class="swatch" style="--c: var(--val-str)"><i></i><div>string value<span>#7ee2a8</span></div></div>
+        <div class="swatch" style="--c: var(--val-num)"><i></i><div>number value<span>#79b8ff</span></div></div>
+        <div class="swatch" style="--c: var(--val-kw)"><i></i><div>None / bool<span>#d2a8ff</span></div></div>
+      </div>
+      <h3>Type</h3>
+      <div class="card type-sample">
+        <span class="meta">20 / 700 UI</span><span style="font-size:20px;font-weight:700">Visualize your solution</span>
+        <span class="meta">15 / 600 UI</span><span style="font-size:15px;font-weight:600">Panel title</span>
+        <span class="meta">13 / 400 UI</span><span>Body text, labels and buttons.</span>
+        <span class="meta">12 / 500 UI</span><span style="font-size:12px;color:var(--text-2)">Secondary text, status, messages.</span>
+        <span class="meta">13 / mono</span><span class="mono">seen = {start}  # code &amp; values</span>
+      </div>
+    </section>
+
+    <!-- ===================== COMPONENTS ===================== -->
+    <section id="components">
+      <h2>Components</h2>
+      <h3>Buttons</h3>
+      <div class="card row">
+        <button class="btn btn-run" type="button"><svg><use href="#i-play"/></svg>Visualize<span class="kbd">Ctrl ↵</span></button>
+        <button class="btn btn-run" type="button" disabled><svg><use href="#i-play"/></svg>Visualize</button>
+        <button class="btn btn-stop" type="button"><svg><use href="#i-stop"/></svg>Stop</button>
+        <button class="btn" type="button"><svg><use href="#i-reset"/></svg>Reset runtime</button>
+        <button class="btn btn-ghost" type="button"><svg><use href="#i-import"/></svg>Import LeetCode editor</button>
+        <button class="btn btn-sm btn-ghost" type="button"><svg><use href="#i-select"/></svg>Import selection</button>
+      </div>
+      <h3>Status</h3>
+      <div class="card row">
+        <span class="status" data-state="not-initialized">Not initialized</span>
+        <span class="status" data-state="initializing">Starting Python…</span>
+        <span class="status" data-state="ready">Ready</span>
+        <span class="status" data-state="running">Running…</span>
+        <span class="status" data-state="preparing">Preparing visualization…</span>
+        <span class="status" data-state="complete">Complete</span>
+        <span class="status" data-state="limit-reached">Limit reached</span>
+        <span class="status" data-state="timed-out">Timed out</span>
+        <span class="status" data-state="stopped">Stopped</span>
+        <span class="status" data-state="failed">Error</span>
+      </div>
+      <h3>Tabs &amp; step meter</h3>
+      <div class="card" style="padding:0;overflow:hidden">
+        <div class="tabs">
+          <button class="tab" aria-selected="true" type="button"><svg><use href="#i-flask"/></svg>Test call</button>
+          <button class="tab" aria-selected="false" type="button"><svg><use href="#i-wrench"/></svg>Setup</button>
+          <span class="spacer"></span>
+          <span class="step-meter"><span class="count">step <b>21</b>/<span class="total">57</span></span><span class="bar"><i></i></span></span>
+        </div>
+      </div>
+      <h3>Messages &amp; banners</h3>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="message" data-kind="ok">Imported 9 lines of Python from the LeetCode editor into Solution.</div>
+        <div class="message" data-kind="error">Couldn't read the LeetCode editor on this page. Select the code and use Import selection, or paste it.</div>
+        <div class="banner" data-kind="warn"><strong>Incomplete trace.</strong> The program hit the 1,000-step limit. Showing the steps recorded so far.</div>
+        <div class="banner" data-kind="info"><strong>No test call.</strong> Your solution defines <code>twoSum</code> but nothing calls it. Add a line in Test call.</div>
+      </div>
+    </section>
+
+    <!-- ===================== STATES ===================== -->
+    <section id="states">
+      <h2>States</h2>
+      <p class="lede">Placeholders take over the visualizer area; banners sit above a trace that is still shown. Live versions: pick a state with the switcher in the bottom-right corner.</p>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="placeholder" data-kind="empty"><div class="ph-icon"></div><div class="ph-title">Nothing to show yet</div><div class="ph-body">Paste or import a solution, add a test call, then press Visualize.</div></div>
+        <div class="placeholder" data-kind="loading"><div class="ph-icon"></div><div class="ph-title">Starting Python…</div><div class="ph-body">Loading the bundled runtime. Once per tab, about 2 s.</div></div>
+        <div class="placeholder" data-kind="error"><div class="ph-icon"></div><div class="ph-title">Line 4: SyntaxError: invalid syntax</div><div class="ph-body">The program didn't start. Fix the line and press Visualize.</div></div>
+        <div class="placeholder" data-kind="error"><div class="ph-icon"></div><div class="ph-title">Stopped after 5 seconds</div><div class="ph-body">The program ran too long. Python is restarting — try a smaller input.</div></div>
+        <div class="placeholder" data-kind="info"><div class="ph-icon"></div><div class="ph-title">Run stopped</div><div class="ph-body">Your code is unchanged. Press Visualize to run it again.</div></div>
+        <div class="placeholder" data-kind="loading"><div class="ph-icon"></div><div class="ph-title">Running your code…</div><div class="ph-body">Recording each step. Press Stop if it takes too long.</div></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="_shared/renderer.js"></script>
+  <script src="_shared/proto.js"></script>
+</body>
+</html>

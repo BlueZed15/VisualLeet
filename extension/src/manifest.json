@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VisualLeet",
+  "version": "0.1.0",
+  "description": "Step through your Python DSA solutions with a Python Tutor-style visualization. Runs entirely in your browser.",
+  "minimum_chrome_version": "120",
+  "action": { "default_title": "Open VisualLeet (imports from this page)" },
+  "background": { "service_worker": "background/background.js" },
+  "permissions": ["activeTab", "scripting"],
+  "sandbox": { "pages": ["runner/sandbox.html"] },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts; default-src 'none'; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval' blob:; worker-src blob:; connect-src 'none'; style-src 'self'"
+  }
+}

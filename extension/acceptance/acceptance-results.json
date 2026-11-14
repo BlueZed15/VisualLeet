@@ -1,0 +1,511 @@
+{
+  "environment": {
+    "chrome": "Chrome/157.0.8103.78",
+    "headless": true,
+    "platform": "Windows_NT 10.0.26300",
+    "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
+    "date": "2026-11-14T08:40:52.753Z",
+    "python": "3.14.2",
+    "pyodide": "314.0.8"
+  },
+  "checks": [
+    {
+      "group": "runtime",
+      "name": "Packaged Python starts",
+      "pass": true,
+      "detail": {
+        "python": "3.14.2",
+        "ms": 2319,
+        "wasmCompiledOnceMs": 19.199999999953434
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Two Sum: [0, 1]; the dict grows step by step",
+      "pass": true,
+      "detail": {
+        "stdout": "[0, 1]\n",
+        "dictSizes": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "BFS: order A,B,C,D; queue/seen visible in the frame",
+      "pass": true,
+      "detail": {
+        "stdout": "['A', 'B', 'C', 'D']\n",
+        "stepsWithQueueAndSeen": 47
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Sliding window: 3; left/right move",
+      "pass": true,
+      "detail": {
+        "stdout": "3\n",
+        "leftValues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Factorial: 120; five distinct nested frames and returns",
+      "pass": true,
+      "detail": {
+        "depth": 5,
+        "returns": 5
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Reverse a 3-node linked list: [3, 2, 1]",
+      "pass": true,
+      "detail": {
+        "stdout": "[3, 2, 1]\n",
+        "steps": 65
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Binary tree in-order traversal",
+      "pass": true,
+      "detail": {
+        "stdout": "[1, 2, 3, 4, 5, 6, 7]\n"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "NestedInteger [1,[4,[6]]] flattens to [1, 4, 6]",
+      "pass": true,
+      "detail": {
+        "stdout": "[1, 4, 6]\n"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "DP table: 13; earlier steps keep their historical values",
+      "pass": true,
+      "detail": {
+        "first": "[0,0,0,0,0,0,0]",
+        "last": "[1,1,2,3,5,8,13]"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Aliasing: a and b are one shared list",
+      "pass": true,
+      "detail": {
+        "a": [
+          "REF",
+          1
+        ],
+        "b": [
+          "REF",
+          1
+        ]
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Cyclic list renders without recursion failure",
+      "pass": true,
+      "detail": {
+        "list": [
+          "LIST",
+          [
+            "REF",
+            1
+          ]
+        ],
+        "arrows": 0
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Counter / deque / defaultdict / heapq / bisect / lru_cache",
+      "pass": true,
+      "detail": {
+        "stdout": "[('a', 5)] [0, 1, 2, 3] {'k': [1]} 1 [1, 3, 4, 5] 55\n",
+        "encodedAs": {
+          "c": "INSTANCE_PPRINT",
+          "q": "INSTANCE_PPRINT",
+          "dd": "INSTANCE_PPRINT"
+        }
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Syntax error: status failed, message has the line",
+      "pass": true,
+      "detail": {
+        "msg": "Line 1: SyntaxError: invalid syntax (<string>, line 1)"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Caught exception: tracing continues",
+      "pass": true,
+      "detail": {
+        "stdout": "caught\n"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Uncaught exception: shown at its line",
+      "pass": true,
+      "detail": {
+        "exception": "IndexError: list index out of range"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Recovers after errors",
+      "pass": true
+    },
+    {
+      "group": "fixtures",
+      "name": "Run A then run B: no globals, module or output carried over",
+      "pass": true,
+      "detail": {
+        "stdout": "False False\n",
+        "interpreterRun": 1
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "input(): supplied lines are used; running out says so",
+      "pass": true,
+      "detail": {
+        "ok": "name? Ada\nhi Ada\n",
+        "missing": "needs input"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Definitions without a call prompt for a test call (not run)",
+      "pass": true,
+      "detail": {
+        "msg": "Your code only defines functions or classes, so nothing would run. Add a test call, e.g. print(Solution().twoSum([2, 7, 11, 15], 9))"
+      }
+    },
+    {
+      "group": "fixtures",
+      "name": "Visualizer shows the exact combined program (setup + solution + call)",
+      "pass": true,
+      "detail": {
+        "lines": 11,
+        "firstLine": "from typing import List, Optional, Dict, Set, Tuple",
+        "unused": true
+      }
+    },
+    {
+      "group": "safety",
+      "name": "HTML in output and strings is text only",
+      "pass": true,
+      "detail": {
+        "injected": 0,
+        "dialogs": []
+      }
+    },
+    {
+      "group": "safety",
+      "name": "Python's JS bridge: no extension APIs, no network",
+      "pass": true,
+      "detail": {
+        "chrome": "undefined",
+        "ws": "failed to connect",
+        "csp": "[\"script-src-elem data\",\"script-src-elem data\",\"connect-src https://example.com/\",\"connect-src https://example.com/\",\"co"
+      }
+    },
+    {
+      "group": "safety",
+      "name": "Runner can't reach extension messaging; forged messages dropped",
+      "pass": true,
+      "detail": {
+        "dropped": 3,
+        "sandboxHasNoMessaging": true
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Infinite loop ends at the step limit, labeled incomplete; next run works",
+      "pass": true,
+      "detail": {
+        "status": "limit reached",
+        "steps": 1001
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Native loop killed by the 5 s watchdog; spare takes over at once",
+      "pass": true,
+      "detail": {
+        "killedAfterMs": 5018,
+        "readyAgainMs": 2
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Stop: acknowledged fast, ready again immediately",
+      "pass": true,
+      "detail": {
+        "res": "stopped",
+        "stoppedMs": 3.5999999998603016,
+        "readyMs": 0.10000000009313226
+      }
+    },
+    {
+      "group": "limits",
+      "name": "A stopped run's result never replaces the newer one",
+      "pass": true,
+      "detail": {
+        "r1": "stopped",
+        "r2": "complete",
+        "shownStdout": "second\n"
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Large list: runs, display collapsed with a label",
+      "pass": true,
+      "detail": {
+        "steps": 4,
+        "cells": 61,
+        "note": "(showing 60 of 5000)"
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Large output stops with an explicit output limit",
+      "pass": true,
+      "detail": {
+        "msg": "Incomplete: Stopped: the program printed more than 64 KiB of output. Showing the steps recorded so f"
+      }
+    },
+    {
+      "group": "limits",
+      "name": "Trace over 10 MiB is refused with an explanation",
+      "pass": true,
+      "detail": {
+        "msg": "Trace is 49.5 MiB, over the 10 MiB limit."
+      }
+    },
+    {
+      "group": "lifecycle",
+      "name": "Repeated runs replace the view (no accumulating DOM, frames or arrow layers)",
+      "pass": true,
+      "detail": {
+        "before": {
+          "iframes": 1,
+          "arrowLayers": 1
+        },
+        "after": {
+          "iframes": 1,
+          "arrowLayers": 1,
+          "vizChildren": 1
+        },
+        "domNodesBfs": [
+          133,
+          133
+        ],
+        "domNodesTree": [
+          181,
+          181
+        ]
+      }
+    },
+    {
+      "group": "lifecycle",
+      "name": "Burst runs reuse the interpreter; after a pause the next run is fresh",
+      "pass": true,
+      "detail": {
+        "burstRunsOnOneInterpreter": 12,
+        "swappedAfterMs": 1038,
+        "nextRunInterpreterRun": 1,
+        "spareInitErrors": 0
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Selected text imports with line breaks intact",
+      "pass": true,
+      "detail": {
+        "solution": "def add(a, b):\n    return a + b\n\nprint(add(2, 3))"
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Imported selection runs",
+      "pass": true,
+      "detail": {
+        "stdout": "5\n"
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Empty selection: helpful message, edits kept",
+      "pass": true,
+      "detail": {
+        "error": "Nothing is selected on that page. Select your code there first (or paste it here). Your current code was kept."
+      }
+    },
+    {
+      "group": "imports",
+      "name": "LeetCode editor: whole model imported, including lines out of view",
+      "pass": true,
+      "detail": {
+        "lines": 77,
+        "language": "python3",
+        "title": "1. Two Sum"
+      }
+    },
+    {
+      "group": "imports",
+      "name": "LeetCode editor: test call drafted from Example 1, typing helper added",
+      "pass": true,
+      "detail": {
+        "call": "nums = [2,7,11,15]\ntarget = 9\nprint(Solution().twoSum(nums, target))"
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Imported LeetCode solution runs",
+      "pass": true,
+      "detail": {
+        "stdout": "[0, 1]\n"
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Non-Python editor: explained, nothing converted, edits kept",
+      "pass": true,
+      "detail": {
+        "msg": "The LeetCode editor is set to cpp. VisualLeet only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept."
+      }
+    },
+    {
+      "group": "imports",
+      "name": "LeetCode page without an editor: fallback offered",
+      "pass": true,
+      "detail": {
+        "error": "Couldn't find LeetCode's code editor on that page (it may still be loading). Try again, use Import selection, or paste your code."
+      }
+    },
+    {
+      "group": "imports",
+      "name": "Protected chrome:// page: graceful refusal, edits kept",
+      "pass": true,
+      "detail": {
+        "error": "VisualLeet can't read that page. Pages like chrome:// and the Chrome Web Store are protected, and access ends when the page navigates. Click the VisualLeet toolbar button again on the page you want, or paste your code instead."
+      }
+    },
+    {
+      "group": "offline",
+      "name": "Packaged examples run and render with the network off",
+      "pass": true,
+      "detail": {
+        "initMs": 1766
+      }
+    },
+    {
+      "group": "lifecycle",
+      "name": "Closing the VisualLeet tab disposes its Python workers",
+      "pass": true,
+      "detail": {
+        "workersBefore": 0,
+        "workersAfter": 0
+      }
+    }
+  ],
+  "timings": {
+    "coldStartMs": 2319,
+    "watchdogKillMs": 5018,
+    "readyAfterTimeoutMs": 2,
+    "stopMs": 4,
+    "readyAfterStopMs": 0,
+    "BFS": {
+      "execMs": {
+        "median": 12.8,
+        "worst": 16.6
+      },
+      "transferMs": {
+        "median": 5,
+        "worst": 6.8
+      },
+      "parseMs": {
+        "median": 0.2,
+        "worst": 0.4
+      },
+      "renderMs": {
+        "median": 10.4,
+        "worst": 20.1
+      },
+      "firstViewMs": {
+        "median": 29.3,
+        "worst": 40.3
+      }
+    },
+    "Sliding window": {
+      "execMs": {
+        "median": 7.8,
+        "worst": 8.8
+      },
+      "transferMs": {
+        "median": 4.7,
+        "worst": 6.3
+      },
+      "parseMs": {
+        "median": 0.1,
+        "worst": 0.2
+      },
+      "renderMs": {
+        "median": 8.6,
+        "worst": 14.3
+      },
+      "firstViewMs": {
+        "median": 22.5,
+        "worst": 27.6
+      }
+    },
+    "Two Sum": {
+      "execMs": {
+        "median": 32.1,
+        "worst": 37.8
+      },
+      "transferMs": {
+        "median": 7.5,
+        "worst": 8.1
+      },
+      "parseMs": {
+        "median": 0.6,
+        "worst": 2.5
+      },
+      "renderMs": {
+        "median": 7.7,
+        "worst": 11
+      },
+      "firstViewMs": {
+        "median": 47.6,
+        "worst": 56.9
+      }
+    },
+    "stepNavigation": {
+      "medianMs": 0,
+      "worstMs": 50.1
+    },
+    "reloadStartMs": 2339
+  },
+  "passed": 43,
+  "total": 43
+}

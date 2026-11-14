@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VisualLeet</title>
+  <link rel="stylesheet" href="../visualizer/renderer.css">
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">VisualLeet</span>
+    <span id="source-tab" class="source-tab" title="Page to import from"></span>
+    <span id="status" class="status" role="status">not initialized</span>
+  </header>
+
+  <main class="workspace">
+    <section class="inputs" aria-label="Program">
+      <div class="row">
+        <button id="import-leetcode" type="button">Import LeetCode editor</button>
+        <button id="import-selection" type="button">Import selection</button>
+      </div>
+      <div class="row">
+        <label class="inline">Example
+          <select id="example"><option value="">Choose…</option></select>
+        </label>
+        <label class="inline">Add helper
+          <select id="helper"><option value="">Choose…</option></select>
+        </label>
+      </div>
+
+      <label for="setup" class="area-label">Setup <span class="hint">imports, helper classes</span></label>
+      <textarea id="setup" class="code" rows="6" spellcheck="false"></textarea>
+
+      <label for="solution" class="area-label">Solution</label>
+      <textarea id="solution" class="code" rows="14" spellcheck="false"></textarea>
+
+      <label for="call" class="area-label">Test call <span class="hint">build the input and call your code</span></label>
+      <textarea id="call" class="code" rows="5" spellcheck="false"></textarea>
+
+      <details id="inputs-box">
+        <summary>Input lines for <code>input()</code></summary>
+        <textarea id="inputs" class="code" rows="3" spellcheck="false" aria-label="One input line per row"></textarea>
+      </details>
+
+      <div class="row actions">
+        <button id="visualize" type="button" class="primary" title="Ctrl+Enter">Visualize</button>
+        <button id="stop" type="button">Stop</button>
+        <button id="reset" type="button">Reset runtime</button>
+      </div>
+      <div id="message" class="message" aria-live="polite"></div>
+      <details class="diag-box">
+        <summary>Diagnostics</summary>
+        <pre id="diag" class="diag"></pre>
+      </details>
+    </section>
+
+    <section class="output" aria-label="Visualization">
+      <div id="empty" class="empty">Pick an example or import your code, then press <strong>Visualize</strong>.</div>
+      <div id="viz"></div>
+    </section>
+  </main>
+
+  <script src="../visualizer/renderer.js"></script>
+  <script type="module" src="ui.js"></script>
+</body>
+</html>
