@@ -1,0 +1,24 @@
+{
+ "slug": "non-overlapping-intervals",
+ "frontendId": "435",
+ "title": "Non-overlapping Intervals",
+ "category": "Intervals",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}",
+ "visible": [
+  "intervals"
+ ],
+ "call": "result = Solution().eraseOverlapIntervals(intervals)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

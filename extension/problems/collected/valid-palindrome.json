@@ -1,0 +1,30 @@
+{
+ "slug": "valid-palindrome",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "125",
+ "title": "Valid Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "isPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"A man, a plan, a canal: Panama\"",
+  "\"race a car\"",
+  "\" \""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

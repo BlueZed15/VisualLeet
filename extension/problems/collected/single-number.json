@@ -1,0 +1,30 @@
+{
+ "slug": "single-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "136",
+ "title": "Single Number",
+ "premium": false,
+ "meta": {
+  "name": "singleNumber",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,1]",
+  "[4,1,2,1,2]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

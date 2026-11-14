@@ -1,0 +1,29 @@
+{
+ "slug": "subtree-of-another-tree",
+ "frontendId": "572",
+ "title": "Subtree of Another Tree",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "subRoot",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nsubRoot = {subRoot}",
+ "visible": [
+  "root",
+  "subRoot"
+ ],
+ "call": "result = Solution().isSubtree(root, subRoot)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

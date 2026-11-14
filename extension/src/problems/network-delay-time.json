@@ -1,0 +1,34 @@
+{
+ "slug": "network-delay-time",
+ "frontendId": "743",
+ "title": "Network Delay Time",
+ "category": "Advanced Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "times",
+   "type": "integer[][]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "times = {times}\nn = {n}\nk = {k}",
+ "visible": [
+  "times",
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().networkDelayTime(times, n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

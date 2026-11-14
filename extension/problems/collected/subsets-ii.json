@@ -1,0 +1,29 @@
+{
+ "slug": "subsets-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "90",
+ "title": "Subsets II",
+ "premium": false,
+ "meta": {
+  "name": "subsetsWithDup",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "[[],[1],[1,2],[1,2,2],[2],[2,2]]",
+  "[[],[0]]"
+ ],
+ "anyOrder": true
+}

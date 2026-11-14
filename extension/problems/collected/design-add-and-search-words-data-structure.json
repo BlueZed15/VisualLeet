@@ -1,0 +1,50 @@
+{
+ "slug": "design-add-and-search-words-data-structure",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "211",
+ "title": "Design Add and Search Words Data Structure",
+ "premium": false,
+ "meta": {
+  "classname": "WordDictionary",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word"
+     }
+    ],
+    "name": "addWord",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word"
+     }
+    ],
+    "name": "search",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,null,null,false,true,true,true]"
+ ],
+ "anyOrder": false
+}

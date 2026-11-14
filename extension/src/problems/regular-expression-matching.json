@@ -1,0 +1,29 @@
+{
+ "slug": "regular-expression-matching",
+ "frontendId": "10",
+ "title": "Regular Expression Matching",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "p",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\np = {p}",
+ "visible": [
+  "s",
+  "p"
+ ],
+ "call": "result = Solution().isMatch(s, p)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

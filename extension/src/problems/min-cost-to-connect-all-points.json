@@ -1,0 +1,24 @@
+{
+ "slug": "min-cost-to-connect-all-points",
+ "frontendId": "1584",
+ "title": "Min Cost to Connect All Points",
+ "category": "Advanced Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().minCostConnectPoints(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

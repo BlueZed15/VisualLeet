@@ -1,0 +1,24 @@
+{
+ "slug": "longest-increasing-path-in-a-matrix",
+ "frontendId": "329",
+ "title": "Longest Increasing Path in a Matrix",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "result = Solution().longestIncreasingPath(matrix)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "largest-rectangle-in-histogram",
+ "frontendId": "84",
+ "title": "Largest Rectangle in Histogram",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}",
+ "visible": [
+  "heights"
+ ],
+ "call": "result = Solution().largestRectangleArea(heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

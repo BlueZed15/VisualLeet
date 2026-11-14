@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-interval-to-include-each-query",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1851",
+ "title": "Minimum Interval to Include Each Query",
+ "premium": false,
+ "meta": {
+  "name": "minInterval",
+  "params": [
+   {
+    "name": "intervals",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,4],[2,4],[3,6],[4,4]]\n[2,3,4,5]",
+  "[[2,3],[2,5],[1,8],[20,25]]\n[2,19,5,22]"
+ ],
+ "exampleOutputs": [
+  "[3,3,1,4]",
+  "[2,-1,4,6]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "plus-one",
+ "frontendId": "66",
+ "title": "Plus One",
+ "category": "Math & Geometry",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "digits",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "digits = {digits}",
+ "visible": [
+  "digits"
+ ],
+ "call": "result = Solution().plusOne(digits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

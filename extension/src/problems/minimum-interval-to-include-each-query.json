@@ -1,0 +1,29 @@
+{
+ "slug": "minimum-interval-to-include-each-query",
+ "frontendId": "1851",
+ "title": "Minimum Interval to Include Each Query",
+ "category": "Intervals",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}\nqueries = {queries}",
+ "visible": [
+  "intervals",
+  "queries"
+ ],
+ "call": "result = Solution().minInterval(intervals, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

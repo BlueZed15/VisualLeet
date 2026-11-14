@@ -32,13 +32,16 @@ import json, sys
 sys.path.insert(0, "/home/pyodide/visualleet")
 import pg_logger
 
-_OPTIONS = json.dumps({"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False})
-
-def visualleet_run(source, inputs_json):
+def visualleet_run(source, inputs_json, setup, visible_json):
     out = {}
     def finalizer(code, trace):
         out["json"] = json.dumps({"code": code, "trace": trace})
-    pg_logger.exec_script_str(source, inputs_json, _OPTIONS, finalizer)
+    options = {"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False}
+    if setup:
+        # hidden setup (LeetCode problems): runs untraced; only the inputs are shown
+        options["visualleet_setup"] = setup
+        options["visualleet_setup_visible"] = json.loads(visible_json)
+    pg_logger.exec_script_str(source, inputs_json, json.dumps(options), finalizer)
     return out["json"]
 `;
 
@@ -129,13 +132,13 @@ self.onmessage = async (e) => {
       await init(m);
     } else if (m.type === "run") {
       const maxBytes = Number(m.limits && m.limits.maxTraceBytes) || 10 * 1024 * 1024;
-      if (new TextEncoder().encode(m.source).length > 256 * 1024) {
+      if (new TextEncoder().encode(m.source + (m.setup || "")).length > 256 * 1024) {
         postMessage({ type: "error", runId: m.runId, code: "source-too-large", message: "Source is larger than 256 KiB." });
         return;
       }
       const t0 = performance.now();
       const inputs = Array.isArray(m.inputs) && m.inputs.length ? JSON.stringify(m.inputs) : null;
-      const traceJson = runPython(m.source, inputs);
+      const traceJson = runPython(m.source, inputs, m.setup || "", JSON.stringify(m.setupVisible || []));
       const t1 = performance.now();
       if (traceJson.length > maxBytes) {
         postMessage({ type: "error", runId: m.runId, code: "trace-too-large",

@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-product-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "152",
+ "title": "Maximum Product Subarray",
+ "premium": false,
+ "meta": {
+  "name": "maxProduct",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,-2,4]",
+  "[-2,0,-1]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

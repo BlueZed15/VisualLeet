@@ -22,14 +22,14 @@ const PYODIDE_FILES = ["pyodide.mjs", "pyodide.asm.mjs", "pyodide.asm.wasm", "py
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 
-for (const dir of ["background", "ui", "runner", "python"]) {
+for (const dir of ["background", "content", "ui", "runner", "python", "problems"]) {
   await cp(src(dir), path.join(out, dir), { recursive: true });
 }
 const manifest = JSON.parse(await readFile(src("manifest.json"), "utf8"));
 if (testBuild) {
   manifest.name += " (TEST BUILD)";
   // leetcode.com is mapped to a local fixture server by the checks (--host-resolver-rules)
-  manifest.host_permissions = ["http://127.0.0.1/*", "https://leetcode.com/*"];
+  manifest.host_permissions = [...new Set([...(manifest.host_permissions || []), "http://127.0.0.1/*", "https://leetcode.com/*"])];
 }
 await writeFile(path.join(out, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 

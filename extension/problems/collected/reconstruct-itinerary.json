@@ -1,0 +1,28 @@
+{
+ "slug": "reconstruct-itinerary",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "332",
+ "title": "Reconstruct Itinerary",
+ "premium": false,
+ "meta": {
+  "name": "findItinerary",
+  "params": [
+   {
+    "name": "tickets",
+    "type": "list<list<string>>"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+  "[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]"
+ ],
+ "exampleOutputs": [
+  "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]",
+  "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"
+ ],
+ "anyOrder": false
+}

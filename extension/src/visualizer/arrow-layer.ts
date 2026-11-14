@@ -125,6 +125,7 @@ export class ArrowLayer {
   private conns: Connection[] = [];
   private dirty = false;
   private rafId = 0;
+  private resizeObserver: ResizeObserver | null = null;
 
   constructor(defaults: ArrowDefaults) {
     this.defaults = { ...defaults };
@@ -133,10 +134,35 @@ export class ArrowLayer {
     this.svg = document.createElementNS(SVG_NS, "svg");
     this.svg.setAttribute("class", "vlArrowLayer");
     // Zero-size, overflow visible: arrows are positioned relative to this
-    // element's own on-screen position, so the container's CSS positioning
-    // does not matter.
+    // element's own on-screen position at draw time. The container is made
+    // its containing block (see attach), so the arrows then move and scroll
+    // together with the elements they connect.
     this.svg.setAttribute("style",
       "position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;pointer-events:none;z-index:5");
+  }
+
+  // VisualLeet fix for arrows drifting off their objects. Arrows are drawn
+  // once per step. Before, the SVG had no positioned ancestor, so it stayed
+  // put when a scrolling ancestor scrolled or content above the visualizer
+  // changed height, while the objects moved (measured: 113 px off after a
+  // sideways scroll, 918 px in a stacked narrow layout). Now:
+  //  - the container becomes the SVG's containing block, so arrows move and
+  //    scroll with the objects (positioning a static table cell changes no
+  //    layout; nothing else inside it is absolutely positioned);
+  //  - arrows are redrawn when the container or one of its children changes
+  //    size (window resize, print-output box resized, panel resized), which
+  //    can move objects inside it.
+  private attach() {
+    const host = this.container;
+    if (getComputedStyle(host).position === "static") host.style.position = "relative";
+    host.appendChild(this.svg);
+    if (!this.resizeObserver && typeof ResizeObserver === "function") {
+      // Runs after layout, before paint: redraw in the same frame. Drawing
+      // only rewrites the SVG, which has no size, so it can't re-trigger this.
+      this.resizeObserver = new ResizeObserver(() => { if (this.conns.length) this.flush(); });
+      this.resizeObserver.observe(host);
+      for (const child of Array.from(host.children)) if (child !== this.svg) this.resizeObserver.observe(child);
+    }
   }
 
   importDefaults(d: ArrowDefaults) {
@@ -187,7 +213,7 @@ export class ArrowLayer {
   flush() {
     this.dirty = false;
     if (!this.container) return;
-    if (this.svg.parentNode !== this.container) this.container.appendChild(this.svg);
+    if (this.svg.parentNode !== this.container) this.attach();
 
     // ---- read phase (one layout) ----
     const origin = this.svg.getBoundingClientRect();
@@ -275,6 +301,8 @@ export class ArrowLayer {
   destroy() {
     if (this.rafId) cancelAnimationFrame(this.rafId);
     this.rafId = 0;
+    this.resizeObserver?.disconnect();
+    this.resizeObserver = null;
     this.reset();
     this.svg.remove();
   }

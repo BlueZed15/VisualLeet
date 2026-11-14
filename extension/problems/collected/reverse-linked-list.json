@@ -1,0 +1,32 @@
+{
+ "slug": "reverse-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "206",
+ "title": "Reverse Linked List",
+ "premium": false,
+ "meta": {
+  "name": "reverseList",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode",
+    "dealloc": false
+   }
+  ],
+  "return": {
+   "type": "ListNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]",
+  "[1,2]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[5,4,3,2,1]",
+  "[2,1]",
+  "[]"
+ ],
+ "anyOrder": false
+}

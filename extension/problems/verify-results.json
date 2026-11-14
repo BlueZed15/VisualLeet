@@ -1,0 +1,762 @@
+{
+ "date": "2026-11-14",
+ "python": "Python 3.15.2",
+ "counts": {
+  "verified": 150
+ },
+ "problems": {
+  "contains-duplicate": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-anagram": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "two-sum": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "group-anagrams": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "top-k-frequent-elements": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "encode-and-decode-strings": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "product-of-array-except-self": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "valid-sudoku": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-consecutive-sequence": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-palindrome": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "two-sum-ii-input-array-is-sorted": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "3sum": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "container-with-most-water": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "trapping-rain-water": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "best-time-to-buy-and-sell-stock": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-substring-without-repeating-characters": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-repeating-character-replacement": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "permutation-in-string": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-window-substring": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "sliding-window-maximum": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "valid-parentheses": {
+   "status": "verified",
+   "examples": 5,
+   "problems": []
+  },
+  "min-stack": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "evaluate-reverse-polish-notation": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "generate-parentheses": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "daily-temperatures": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "car-fleet": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-rectangle-in-histogram": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "binary-search": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "search-a-2d-matrix": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "koko-eating-bananas": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "find-minimum-in-rotated-sorted-array": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "search-in-rotated-sorted-array": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "time-based-key-value-store": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "median-of-two-sorted-arrays": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "reverse-linked-list": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "merge-two-sorted-lists": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "linked-list-cycle": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "reorder-list": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "remove-nth-node-from-end-of-list": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "copy-list-with-random-pointer": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "add-two-numbers": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-duplicate-number": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "lru-cache": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "merge-k-sorted-lists": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "reverse-nodes-in-k-group": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "invert-binary-tree": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-depth-of-binary-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "diameter-of-binary-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "balanced-binary-tree": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "same-tree": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "subtree-of-another-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "lowest-common-ancestor-of-a-binary-search-tree": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "binary-tree-level-order-traversal": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "binary-tree-right-side-view": {
+   "status": "verified",
+   "examples": 4,
+   "problems": []
+  },
+  "count-good-nodes-in-binary-tree": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "validate-binary-search-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "kth-smallest-element-in-a-bst": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-binary-tree-from-preorder-and-inorder-traversal": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "binary-tree-maximum-path-sum": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "serialize-and-deserialize-binary-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "implement-trie-prefix-tree": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "design-add-and-search-words-data-structure": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "word-search-ii": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "kth-largest-element-in-a-stream": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "last-stone-weight": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "k-closest-points-to-origin": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "kth-largest-element-in-an-array": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "task-scheduler": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "design-twitter": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "find-median-from-data-stream": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "subsets": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "combination-sum": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "combination-sum-ii": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "permutations": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "subsets-ii": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "word-search": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "palindrome-partitioning": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "letter-combinations-of-a-phone-number": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "n-queens": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-islands": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "max-area-of-island": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "clone-graph": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "walls-and-gates": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "rotting-oranges": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "pacific-atlantic-water-flow": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "surrounded-regions": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "course-schedule": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "course-schedule-ii": {
+   "status": "verified",
+   "examples": 3,
+   "problems": [],
+   "notes": [
+    "example 2: got [0,1,2,3], statement shows [0,2,1,3] (several answers accepted)"
+   ]
+  },
+  "graph-valid-tree": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-connected-components-in-an-undirected-graph": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "redundant-connection": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "word-ladder": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "reconstruct-itinerary": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "min-cost-to-connect-all-points": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "network-delay-time": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "swim-in-rising-water": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "alien-dictionary": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "cheapest-flights-within-k-stops": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "climbing-stairs": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "min-cost-climbing-stairs": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "house-robber": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "house-robber-ii": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-palindromic-substring": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "palindromic-substrings": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "decode-ways": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "coin-change": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-product-subarray": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "word-break": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-increasing-subsequence": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "partition-equal-subset-sum": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "unique-paths": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-common-subsequence": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "best-time-to-buy-and-sell-stock-with-cooldown": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "coin-change-ii": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "target-sum": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "interleaving-string": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-increasing-path-in-a-matrix": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "distinct-subsequences": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "edit-distance": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "burst-balloons": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "regular-expression-matching": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-subarray": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "jump-game": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "jump-game-ii": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "gas-station": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "hand-of-straights": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "merge-triplets-to-form-target-triplet": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "partition-labels": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "valid-parenthesis-string": {
+   "status": "verified",
+   "examples": 4,
+   "problems": []
+  },
+  "insert-interval": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "merge-intervals": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "non-overlapping-intervals": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "meeting-rooms": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "meeting-rooms-ii": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-interval-to-include-each-query": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "rotate-image": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "spiral-matrix": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "set-matrix-zeroes": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "happy-number": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "plus-one": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "powx-n": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "multiply-strings": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "detect-squares": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "single-number": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-1-bits": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "counting-bits": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "reverse-bits": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "missing-number": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-two-integers": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "reverse-integer": {
+   "status": "verified",
+   "examples": 3,
+   "problems": []
+  }
+ }
+}

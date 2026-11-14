@@ -1,0 +1,24 @@
+{
+ "slug": "generate-parentheses",
+ "frontendId": "22",
+ "title": "Generate Parentheses",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().generateParenthesis(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

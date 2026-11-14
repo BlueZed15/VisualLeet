@@ -29,25 +29,64 @@ const LONG_SOLUTION = ["class Solution:", "    def twoSum(self, nums: List[int],
   .concat(Array.from({ length: 70 }, (_, i) => `        # filler line ${i + 1} so the editor has lines out of view`))
   .concat(["        for i, n in enumerate(nums):", "            if target - n in seen:", "                return [seen[target - n], i]", "            seen[n] = i"]).join("\n");
 
-function fakeLeetCode(language, code) {
-  // Mimics what the live site exposes (checked on leetcode.com, 2026-11-14):
-  // window.monaco with a code model and a plaintext test-case model; the
-  // editor only renders a few visible lines.
-  return `<!doctype html><html><head><title>Two Sum - LeetCode</title></head><body>
-<div class="text-title-large"><a href="/problems/two-sum/">1. Two Sum</a></div>
-<div data-track-load="description_content"><p>Given an array...</p>
-<p><strong class="example">Example 1:</strong></p>
-<pre><strong>Input:</strong> nums = [2,7,11,15], target = 9
-<strong>Output:</strong> [0,1]</pre>
-<p><strong class="example">Example 2:</strong></p>
-<pre><strong>Input:</strong> nums = [3,2,4], target = 6
-<strong>Output:</strong> [1,2]</pre>
-</div>
+// Fake LeetCode problem pages with the structure the live site has
+// (checked on leetcode.com, 2026-11-14): the problem's data object in
+// window.next.router.components (window.__NEXT_DATA__ is stale after in-app
+// navigation, so here it describes another problem), window.monaco with the
+// code model (the editor only renders a few lines), and the Testcase panel:
+// case tabs (button[data-e2e-locator=console-testcase-tag], the selected one
+// not "bg-transparent"), one contenteditable box per argument under a
+// "name =" label, and a CodeMirror holding every case as raw lines.
+const PROBLEMS = {
+  "two-sum": {
+    title: "Two Sum", id: "1",
+    meta: { name: "twoSum", params: [{ name: "nums", type: "integer[]" }, { name: "target", type: "integer" }], return: { type: "integer[]" } },
+    examples: [["[2,7,11,15]\n9", "[0,1]"], ["[3,2,4]\n6", "[1,2]"], ["[3,3]\n6", "[0,1]"]],
+    code: LONG_SOLUTION, anyOrder: true,
+  },
+  "reverse-linked-list": {
+    title: "Reverse Linked List", id: "206",
+    meta: { name: "reverseList", params: [{ name: "head", type: "ListNode" }], return: { type: "ListNode" } },
+    examples: [["[1,2,3,4,5]", "[5,4,3,2,1]"], ["[1,2]", "[2,1]"], ["[]", "[]"]],
+    code: "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        prev = None\n        while head:\n            nxt = head.next\n            head.next = prev\n            prev = head\n            head = nxt\n        return prev",
+  },
+  "lru-cache": {
+    title: "LRU Cache", id: "146",
+    meta: { classname: "LRUCache", constructor: { params: [{ type: "integer", name: "capacity" }] }, methods: [{ name: "get", params: [{ type: "integer", name: "key" }], return: { type: "integer" } }, { name: "put", params: [{ type: "integer", name: "key" }, { type: "integer", name: "value" }], return: { type: "void" } }], systemdesign: true },
+    examples: [['["LRUCache","put","put","get","put","get","put","get","get","get"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]', "[null,null,null,1,null,-1,null,-1,3,4]"]],
+    code: "class LRUCache:\n    def __init__(self, capacity: int):\n        self.cap = capacity\n        self.data = OrderedDict()\n\n    def get(self, key: int) -> int:\n        if key not in self.data:\n            return -1\n        self.data.move_to_end(key)\n        return self.data[key]\n\n    def put(self, key: int, value: int) -> None:\n        self.data[key] = value\n        self.data.move_to_end(key)\n        if len(self.data) > self.cap:\n            self.data.popitem(last=False)",
+  },
+  "not-in-the-database": {
+    title: "Not In The Database", id: "9999",
+    meta: { name: "f", params: [{ name: "x", type: "integer" }], return: { type: "integer" } },
+    examples: [["3", "6"]],
+    code: "class Solution:\n    def f(self, x: int) -> int:\n        return 2 * x",
+  },
+};
+
+function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false } = {}) {
+  const p = PROBLEMS[slug];
+  const names = p.meta.systemdesign ? ["operations", "arguments"] : p.meta.params.map((x) => x.name);
+  const all = cases || p.examples.map(([input]) => input.split("\n"));
+  const content = "<p>Problem statement.</p>\n" + p.examples.map(([input, output], i) =>
+    `<p><strong class="example">Example ${i + 1}:</strong></p>\n<pre><strong>Input:</strong> ${input.replace(/\n/g, ", ")}\n<strong>Output:</strong> ${output}\n<strong>Explanation:</strong> because.\n</pre>\n`).join("");
+  const question = { titleSlug: slug, questionFrontendId: p.id, questionTitle: p.title, isPaidOnly: false, metaData: JSON.stringify(p.meta), exampleTestcaseList: p.examples.map(([i]) => i), content };
+  const stale = { titleSlug: "some-other-problem", metaData: "{}", exampleTestcaseList: [] };
+  const tabs = all.map((_, i) => `<button data-e2e-locator="console-testcase-tag" class="tab ${i === selected ? "bg-fill-3" : "bg-transparent"}">Case ${i + 1}</button>`).join("");
+  const boxes = names.map((n, j) => `<div class="flex flex-col"><div>${n} =</div><div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
+  return `<!doctype html><html><head><title>${p.title} - LeetCode</title></head><body>
+<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { question: stale } } })}</script>
+<div class="text-title-large">${p.id}. ${p.title}</div>
+<div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
 <div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)</div>
+<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
+<div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>
 <script>
-  const code = ${JSON.stringify(code)};
+  window.__NEXT_DATA__ = JSON.parse(document.getElementById("__NEXT_DATA__").textContent);
+  window.next = ${JSON.stringify({ router: { components: { "/problems/[slug]/[[...tab]]": { props: { pageProps: { dehydratedState: { queries: [{ state: { data: { question } } }] } } } } } } })};
+  const code = ${JSON.stringify(code || p.code)};
   const mk = (lang, value) => ({ getLanguageId: () => lang, getValue: () => value, getValueLength: () => value.length, isDisposed: () => false });
-  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", "[2,7,11,15]\\n9");
+  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", "");
   const node = document.getElementById("editor");
   window.monaco = { editor: {
     getModels: () => [codeModel, testModel],
@@ -63,13 +102,23 @@ const PAGES = {
     return a + b
 
 print(add(2, 3))</pre></body></html>`,
-  "/problems/two-sum/": fakeLeetCode("python3", LONG_SOLUTION),
-  "/problems/cpp-problem/": fakeLeetCode("cpp", "class Solution {\npublic:\n};"),
   "/problems/no-editor/": "<!doctype html><title>Loading - LeetCode</title><p>loading…</p>",
 };
 
+// /problems/<slug>/?case=<i>&custom=<json lines>&lang=<id>
+function problemPage(url) {
+  const m = /^\/problems\/([a-z0-9-]+)\/$/.exec(url.pathname);
+  if (!m || !PROBLEMS[m[1]]) return null;
+  const q = url.searchParams;
+  const p = PROBLEMS[m[1]];
+  let cases = p.examples.map(([input]) => input.split("\n"));
+  if (q.get("custom")) cases = cases.concat([JSON.parse(q.get("custom"))]);
+  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1" });
+}
+
 const serve = (req, res) => {
-  const body = PAGES[new URL(req.url, "http://x").pathname];
+  const url = new URL(req.url, "http://x");
+  const body = PAGES[url.pathname] || problemPage(url);
   res.writeHead(body ? 200 : 404, { "content-type": "text/html; charset=utf-8" });
   res.end(body || "not found");
 };
@@ -370,27 +419,112 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
   }
   {
     const lc = await browser.newPage();
-    await lc.goto("https://leetcode.com/problems/two-sum/");
-    const tabId = await tabIdFor("https://leetcode.com/*");
-    await page.bringToFront();
-    const res = await ev((t) => visualleet.importFrom("leetcode", t), tabId);
-    const prog = await ev(() => visualleet.program());
-    check("imports", "LeetCode editor: whole model imported, including lines out of view", res.ok && prog.solution.split("\n").length === LONG_SOLUTION.split("\n").length && prog.solution === LONG_SOLUTION, { lines: prog.solution.split("\n").length, language: res.language, title: res.title });
-    check("imports", "LeetCode editor: test call drafted from Example 1, typing helper added", prog.call === "nums = [2,7,11,15]\ntarget = 9\nprint(Solution().twoSum(nums, target))" && /from typing import List/.test(prog.setup), { call: prog.call });
-    const r = await ev(() => visualleet.visualize());
-    check("imports", "Imported LeetCode solution runs", r.stdout === "[0, 1]\n", { stdout: r.stdout });
+    const open = async (pathAndQuery) => {
+      await lc.goto("https://leetcode.com" + pathAndQuery);
+      await page.bringToFront();
+      return ev((t) => visualleet.importFrom("leetcode", t), await tabIdFor("https://leetcode.com/*"));
+    };
+    const state = () => ev(() => ({
+      mode: visualleet.mode(), status: visualleet.status(), message: visualleet.message(), verdict: visualleet.verdict(),
+      problem: visualleet.leetcode.problem && visualleet.leetcode.problem.slug, title: document.getElementById("lc-title").textContent,
+      selected: visualleet.leetcode.currentCase() && visualleet.leetcode.currentCase().label, solution: visualleet.program().solution,
+      badge: document.getElementById("lc-badge").textContent,
+    }));
+    const globalsSeen = (trace) => [...new Set(trace.trace.flatMap((s) => Object.keys(s.globals || {})))];
 
-    await lc.goto("https://leetcode.com/problems/cpp-problem/");
-    await page.bringToFront();
-    const before = await ev(() => visualleet.program());
-    const cpp = await ev((t) => visualleet.importFrom("leetcode", t), tabId);
-    const after = await ev(() => visualleet.program());
-    check("imports", "Non-Python editor: explained, nothing converted, edits kept", !cpp.ok && cpp.reason === "language" && JSON.stringify(before) === JSON.stringify(after), { msg: await ev(() => visualleet.message()) });
+    // one click: code + the case selected in LeetCode's Testcase panel, visualized at once
+    const r1 = await open("/problems/two-sum/?case=1");
+    const s1 = await state();
+    check("leetcode", "One click: the selected LeetCode case runs at once, in LeetCode mode", s1.mode === "lc" && r1.status === "complete" && s1.selected === "Example 2" && /\[1,2\]\n$/.test(r1.stdout), { status: r1.status, selected: s1.selected, stdout: r1.stdout });
+    check("leetcode", "Problem found by its name (stale __NEXT_DATA__ ignored), checked database entry", s1.problem === "two-sum" && s1.title === "1. Two Sum" && /checked/.test(s1.badge), { title: s1.title, badge: s1.badge });
+    check("leetcode", "Whole editor model read, including lines out of view", s1.solution === LONG_SOLUTION, { lines: s1.solution.split("\n").length });
+    check("leetcode", "Example case: output compared with the expected output (✓)", s1.verdict && s1.verdict.kind === "match", s1.verdict);
+    const t1 = await ev(() => visualleet.lastTrace());
+    const g1 = globalsSeen(t1);
+    check("leetcode", "Setup is hidden: inputs shown, helpers and imports not, no setup steps",
+      g1.includes("nums") && g1.includes("target") && !g1.some((n) => ["leet_str", "deque", "List", "build_list", "Counter"].includes(n)) &&
+      t1.code.endsWith("result = Solution().twoSum(nums, target)\nprint(leet_str(result))\n") && t1.code.startsWith(LONG_SOLUTION), { globals: g1, steps: t1.trace.length });
 
-    await lc.goto("https://leetcode.com/problems/no-editor/");
-    await page.bringToFront();
-    const none = await ev((t) => visualleet.importFrom("leetcode", t), tabId);
-    check("imports", "LeetCode page without an editor: fallback offered", !none.ok && /Import selection|paste/.test(none.error), { error: none.error });
+    // a case the user added on LeetCode (not an example): no expected output
+    const r2 = await open(`/problems/two-sum/?case=3&custom=${encodeURIComponent(JSON.stringify(["[1,5,9]", "10"]))}`);
+    const s2 = await state();
+    check("leetcode", "Custom LeetCode case copied as \"From LeetCode\" and run; no verdict without an expected output", s2.selected === "From LeetCode" && /\[0,2\]\n$/.test(r2.stdout) && s2.verdict && s2.verdict.kind === "output", { selected: s2.selected, stdout: r2.stdout, verdict: s2.verdict });
+
+    // a bad value is caught per box before running
+    const bad = await ev(async () => {
+      const box = document.querySelector("#case-fields textarea");
+      box.value = "[1,5,";
+      box.dispatchEvent(new Event("input"));
+      const r = await visualleet.visualize();
+      return { status: r.status, reason: r.reason, error: document.querySelector("#case-fields .field-error").textContent };
+    });
+    check("leetcode", "Invalid test-case value: explained under its box, not run", bad.status === "rejected" && bad.reason === "case" && /Missing/.test(bad.error), bad);
+
+    // linked list: inputs built by hidden setup, output printed like LeetCode
+    const r3 = await open("/problems/reverse-linked-list/?case=1");
+    const s3 = await state();
+    const t3 = await ev(() => visualleet.lastTrace());
+    const codeLines = t3.code.split("\n").length;
+    check("leetcode", "Linked list: [1,2] built hidden, reversed output [2,1] ✓, ListNode helpers not shown",
+      /\[2,1\]\n$/.test(r3.stdout) && s3.verdict && s3.verdict.kind === "match" && !globalsSeen(t3).includes("build_list") && !globalsSeen(t3).includes("ListNode") &&
+      t3.trace[0].globals.head && t3.trace[0].globals.head[0] === "REF" && t3.trace.every((s) => !s.line || s.line <= codeLines), { stdout: r3.stdout, verdict: s3.verdict, globals: globalsSeen(t3) });
+
+    // design problem: operations + arguments
+    const r4 = await open("/problems/lru-cache/");
+    const s4 = await state();
+    check("leetcode", "Design problem (LRU Cache): operations run on the user's class, output ✓", /\[null,null,null,1,null,-1,null,-1,3,4\]\n$/.test(r4.stdout) && s4.verdict && s4.verdict.kind === "match", { stdout: r4.stdout, verdict: s4.verdict });
+
+    // the editor isn't set to Python: explained, nothing run, code kept
+    const before = (await state()).solution;
+    const cpp = await open("/problems/two-sum/?lang=cpp");
+    const s5 = await state();
+    check("leetcode", "Non-Python editor: explained, nothing run, code here kept", cpp.ok && cpp.ran === false && /Python3/.test(s5.message) && s5.solution === before, { message: s5.message.slice(0, 160) });
+
+    // not in VisualLeet's database: paste mode with a drafted call, explained
+    const nd = await open("/problems/not-in-the-database/");
+    const s6 = await state();
+    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't in VisualLeet's problem database/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
+
+    const none = await open("/problems/no-editor/");
+    const s7 = await state();
+    check("leetcode", "LeetCode page without data or editor: explained, nothing run", !none.ok && /Couldn't read the code editor|isn't in/.test(s7.message), { message: s7.message.slice(0, 160) });
+
+    // cases are kept per problem; the icon click's hand-off reaches a freshly opened tab
+    await open("/problems/two-sum/?case=0");
+    await ev(() => { visualleet.leetcode.addCase(); const box = document.querySelector("#case-fields textarea"); box.value = "[4,4]"; box.dispatchEvent(new Event("input")); });
+    const readBack = await ev((t) => chrome.runtime.sendMessage({ type: "import", mode: "leetcode", tabId: t }), await tabIdFor("https://leetcode.com/*"));
+    await ev((r) => chrome.storage.session.set({ pending: { id: "test", at: Date.now(), tabId: 0, url: "", result: r } }), readBack);
+    await page.reload();
+    const handoff = await ev(async () => { const r = await visualleet.started(); return { r, cases: visualleet.leetcode.problem.cases.map((c) => [c.label, c.source]), left: (await chrome.storage.session.get("pending")).pending || null }; });
+    check("leetcode", "Icon click hand-off: a new VisualLeet tab takes the case once and visualizes it", handoff.r && handoff.r.status === "complete" && /\[0,1\]\n$/.test(handoff.r.stdout) && handoff.left === null, { status: handoff.r && handoff.r.status, left: handoff.left });
+    check("leetcode", "The user's own cases are kept per problem across reloads", handoff.cases.some(([label, source]) => source === "yours"), { cases: handoff.cases });
+
+    // after a Run, LeetCode shows "Test Result" and the Testcase panel isn't rendered
+    const r8 = await open("/problems/two-sum/?case=1&hidden=1");
+    const s8 = await state();
+    check("leetcode", "Selected case read while LeetCode's Testcase panel is hidden (Test Result shown)", r8.status === "complete" && s8.selected === "Example 2", { status: r8.status, selected: s8.selected, message: s8.message.slice(0, 100) });
+
+    // the Visualize button in LeetCode's top bar updates the open VisualLeet tab in place
+    await ev(() => { window.__notReloaded = true; });
+    await lc.bringToFront();
+    await lc.goto("https://leetcode.com/problems/two-sum/?case=2");
+    const button = await lc.waitForSelector("#ide-top-btns #visualleet-top-button", { timeout: 5000 }).catch(() => null);
+    const tabsBefore = (await browser.pages()).length;
+    if (button) await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
+    const viaButton = await ev(async () => {
+      for (let i = 0; i < 100; i++) {
+        const c = visualleet.leetcode.currentCase();
+        if (c && c.label === "Example 3" && visualleet.status() === "complete") break;
+        await new Promise((r) => setTimeout(r, 100));
+      }
+      return { selected: visualleet.leetcode.currentCase().label, status: visualleet.status(), sameTab: window.__notReloaded === true, verdict: visualleet.verdict() };
+    });
+    const tabsAfter = (await browser.pages()).length;
+    check("leetcode", "LeetCode top bar has a Visualize button", !!button);
+    check("leetcode", "Top-bar button: the open VisualLeet tab is updated in place (no new tab, no reload)",
+      viaButton.selected === "Example 3" && viaButton.status === "complete" && viaButton.sameTab && tabsAfter === tabsBefore && viaButton.verdict && viaButton.verdict.kind === "match",
+      Object.assign({ tabsBefore, tabsAfter }, viaButton));
+    await ev(() => visualleet.setMode("manual"));
     await lc.close();
   }
   {
@@ -423,6 +557,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const pick = (k) => ms.map((m) => m[k]);
     results.timings[name] = Object.fromEntries(["execMs", "transferMs", "parseMs", "renderMs", "firstViewMs"].map((k) => [k, { median: +median(pick(k)).toFixed(1), worst: +Math.max(...pick(k)).toFixed(1) }]));
   }
+  await example("BFS");     // 58 steps: enough for 40 real "Next" steps (Two Sum ends early, so clicks did nothing)
   results.timings.stepNavigation = await ev(() => {
     const btn = (re) => [...document.querySelectorAll("#viz button")].find((b) => re.test(b.textContent));
     btn(/First/).click();

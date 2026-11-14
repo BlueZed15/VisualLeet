@@ -1,0 +1,59 @@
+{
+ "slug": "min-stack",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "155",
+ "title": "Min Stack",
+ "premium": false,
+ "meta": {
+  "classname": "MinStack",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "push"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "void"
+    },
+    "name": "pop"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "top"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "getMin"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,null,null,-3,null,0,-2]"
+ ],
+ "anyOrder": false
+}

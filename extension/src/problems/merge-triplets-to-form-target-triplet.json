@@ -1,0 +1,29 @@
+{
+ "slug": "merge-triplets-to-form-target-triplet",
+ "frontendId": "1899",
+ "title": "Merge Triplets to Form Target Triplet",
+ "category": "Greedy",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "triplets",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "triplets = {triplets}\ntarget = {target}",
+ "visible": [
+  "triplets",
+  "target"
+ ],
+ "call": "result = Solution().mergeTriplets(triplets, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

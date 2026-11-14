@@ -1,0 +1,45 @@
+{
+ "slug": "find-median-from-data-stream",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "295",
+ "title": "Find Median from Data Stream",
+ "premium": false,
+ "meta": {
+  "classname": "MedianFinder",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "addNum",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "findMedian",
+    "return": {
+     "type": "double"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, 1.5, null, 2.0]"
+ ],
+ "anyOrder": false
+}

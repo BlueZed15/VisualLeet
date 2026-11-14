@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-islands",
+ "frontendId": "200",
+ "title": "Number of Islands",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().numIslands(grid)\nprint(leet_str(result))",
+ "note": "LeetCode marks it manual (for other languages); in Python the input is the parameter.",
+ "source": "hand-written",
+ "verified": true
+}

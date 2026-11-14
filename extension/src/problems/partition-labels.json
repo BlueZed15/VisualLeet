@@ -1,0 +1,24 @@
+{
+ "slug": "partition-labels",
+ "frontendId": "763",
+ "title": "Partition Labels",
+ "category": "Greedy",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().partitionLabels(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

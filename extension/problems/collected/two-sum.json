@@ -1,0 +1,36 @@
+{
+ "slug": "two-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1",
+ "title": "Two Sum",
+ "premium": false,
+ "meta": {
+  "name": "twoSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]",
+   "size": 2
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[2,7,11,15]\n9",
+  "[3,2,4]\n6",
+  "[3,3]\n6"
+ ],
+ "exampleOutputs": [
+  "[0,1]",
+  "[1,2]",
+  "[0,1]"
+ ],
+ "anyOrder": true
+}

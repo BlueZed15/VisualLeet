@@ -1,0 +1,36 @@
+{
+ "slug": "remove-nth-node-from-end-of-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "19",
+ "title": "Remove Nth Node From End of List",
+ "premium": false,
+ "meta": {
+  "name": "removeNthFromEnd",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode",
+    "dealloc": false
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2",
+  "[1]\n1",
+  "[1,2]\n1"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,5]",
+  "[]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

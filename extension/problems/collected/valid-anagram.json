@@ -1,0 +1,32 @@
+{
+ "slug": "valid-anagram",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "242",
+ "title": "Valid Anagram",
+ "premium": false,
+ "meta": {
+  "name": "isAnagram",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"anagram\"\n\"nagaram\"",
+  "\"rat\"\n\"car\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

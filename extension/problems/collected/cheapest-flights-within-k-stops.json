@@ -1,0 +1,46 @@
+{
+ "slug": "cheapest-flights-within-k-stops",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "787",
+ "title": "Cheapest Flights Within K Stops",
+ "premium": false,
+ "meta": {
+  "name": "findCheapestPrice",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "flights",
+    "type": "integer[][]"
+   },
+   {
+    "name": "src",
+    "type": "integer"
+   },
+   {
+    "name": "dst",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1",
+  "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n1",
+  "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n0"
+ ],
+ "exampleOutputs": [
+  "700",
+  "200",
+  "500"
+ ],
+ "anyOrder": false
+}

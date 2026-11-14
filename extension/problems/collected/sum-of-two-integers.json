@@ -1,0 +1,32 @@
+{
+ "slug": "sum-of-two-integers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "371",
+ "title": "Sum of Two Integers",
+ "premium": false,
+ "meta": {
+  "name": "getSum",
+  "params": [
+   {
+    "name": "a",
+    "type": "integer"
+   },
+   {
+    "name": "b",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n2",
+  "2\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

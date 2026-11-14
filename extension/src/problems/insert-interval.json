@@ -1,0 +1,29 @@
+{
+ "slug": "insert-interval",
+ "frontendId": "57",
+ "title": "Insert Interval",
+ "category": "Intervals",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  },
+  {
+   "name": "newInterval",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}\nnewInterval = {newInterval}",
+ "visible": [
+  "intervals",
+  "newInterval"
+ ],
+ "call": "result = Solution().insert(intervals, newInterval)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

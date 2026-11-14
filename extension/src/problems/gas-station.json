@@ -1,0 +1,29 @@
+{
+ "slug": "gas-station",
+ "frontendId": "134",
+ "title": "Gas Station",
+ "category": "Greedy",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "gas",
+   "type": "integer[]"
+  },
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "gas = {gas}\ncost = {cost}",
+ "visible": [
+  "gas",
+  "cost"
+ ],
+ "call": "result = Solution().canCompleteCircuit(gas, cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

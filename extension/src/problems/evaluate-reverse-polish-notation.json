@@ -1,0 +1,24 @@
+{
+ "slug": "evaluate-reverse-polish-notation",
+ "frontendId": "150",
+ "title": "Evaluate Reverse Polish Notation",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tokens",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "tokens = {tokens}",
+ "visible": [
+  "tokens"
+ ],
+ "call": "result = Solution().evalRPN(tokens)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

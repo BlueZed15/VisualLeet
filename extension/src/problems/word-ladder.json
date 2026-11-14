@@ -1,0 +1,34 @@
+{
+ "slug": "word-ladder",
+ "frontendId": "127",
+ "title": "Word Ladder",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "beginWord",
+   "type": "string"
+  },
+  {
+   "name": "endWord",
+   "type": "string"
+  },
+  {
+   "name": "wordList",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "beginWord = {beginWord}\nendWord = {endWord}\nwordList = {wordList}",
+ "visible": [
+  "beginWord",
+  "endWord",
+  "wordList"
+ ],
+ "call": "result = Solution().ladderLength(beginWord, endWord, wordList)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

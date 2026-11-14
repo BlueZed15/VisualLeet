@@ -1,0 +1,30 @@
+{
+ "slug": "daily-temperatures",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "739",
+ "title": "Daily Temperatures",
+ "premium": false,
+ "meta": {
+  "name": "dailyTemperatures",
+  "params": [
+   {
+    "name": "temperatures",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[73,74,75,71,69,72,76,73]",
+  "[30,40,50,60]",
+  "[30,60,90]"
+ ],
+ "exampleOutputs": [
+  "[1,1,4,2,1,1,0,0]",
+  "[1,1,1,0]",
+  "[1,1,0]"
+ ],
+ "anyOrder": false
+}

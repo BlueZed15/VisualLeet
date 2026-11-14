@@ -1,0 +1,62 @@
+{
+ "slug": "time-based-key-value-store",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "981",
+ "title": "Time Based Key-Value Store",
+ "premium": false,
+ "meta": {
+  "classname": "TimeMap",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "key"
+     },
+     {
+      "type": "string",
+      "name": "value"
+     },
+     {
+      "type": "integer",
+      "name": "timestamp"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "set"
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "key"
+     },
+     {
+      "type": "integer",
+      "name": "timestamp"
+     }
+    ],
+    "return": {
+     "type": "string"
+    },
+    "name": "get"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"TimeMap\",\"set\",\"get\",\"get\",\"set\",\"get\",\"get\"]\n[[],[\"foo\",\"bar\",1],[\"foo\",1],[\"foo\",3],[\"foo\",\"bar2\",4],[\"foo\",4],[\"foo\",5]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, \"bar\", \"bar\", null, \"bar2\", \"bar2\"]"
+ ],
+ "anyOrder": false
+}

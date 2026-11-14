@@ -25,7 +25,11 @@
 # VisualLeet fork of OnlinePythonTutor-Backup/v5-unity/pg_logger.py (nested
 # repo commit 473848d). Changes: raw-string regex (no SyntaxWarning), and a
 # printed-output limit (MAX_STDOUT_BYTES) that ends the trace with the same
-# 'instruction_limit_reached' event as the step limit.
+# 'instruction_limit_reached' event as the step limit, and untraced setup
+# code (options 'visualleet_setup' / 'visualleet_setup_visible'): it runs
+# before tracing starts, in its own module, and the names it defines are
+# hidden from the Global frame unless listed as visible (the test inputs).
+# Without those options the tracer behaves exactly like the original.
 
 
 # This is the meat of the Online Python Tutor back-end.  It implements a
@@ -504,8 +508,13 @@ class PGLogger(bdb.Bdb):
     # for each module rather than all stdout going to a single stream
     def __init__(self, cumulative_mode, heap_primitives, show_only_outputs, finalizer_func,
                  disable_security_checks=False, allow_all_modules=False, crazy_mode=False,
-                 custom_modules=None, separate_stdout_by_module=False, probe_exprs=None):
+                 custom_modules=None, separate_stdout_by_module=False, probe_exprs=None,
+                 setup_code=None, setup_visible=()):
         bdb.Bdb.__init__(self)
+        # VisualLeet: untraced setup code; name -> object it defined and hides
+        self.setup_code = setup_code
+        self.setup_visible = set(setup_visible or ())
+        self.setup_hidden = {}
         self.mainpyfile = ''
         self._wait_for_mainpyfile = 0
 
@@ -1162,6 +1171,9 @@ class PGLogger(bdb.Bdb):
         for (k, v) in cur_globals_dict.items():
           if self.should_hide_var(k):
             continue
+          # VisualLeet: hide setup helpers, unless the user rebound the name
+          if k in self.setup_hidden and self.setup_hidden[k] is v:
+            continue
 
           encoded_val = self.encoder.encode(v, self.get_parent_of_function)
           encoded_globals[k] = encoded_val
@@ -1463,6 +1475,24 @@ class PGLogger(bdb.Bdb):
                 exec(self.custom_modules[mn], new_m.__dict__) # exec in custom globals
                 user_globals.update(new_m.__dict__)
 
+        # VisualLeet: run the setup code untraced (its module isn't in
+        # modules_to_trace, so its functions are never stepped through either),
+        # then expose what it defined to the user's script.
+        if self.setup_code:
+            setup_m = types.ModuleType('visualleet_setup')
+            try:
+                exec(compile(self.setup_code, '<visualleet setup>', 'exec'), setup_m.__dict__)
+            except Exception as e:
+                self.trace.append(dict(event='uncaught_exception',
+                                       exception_msg='Error in the generated setup code: ' + type(e).__name__ + ': ' + str(e)))
+                raise bdb.BdbQuit
+            for (k, v) in setup_m.__dict__.items():
+                if k.startswith('__'):
+                    continue
+                user_globals[k] = v
+                if k not in self.setup_visible:
+                    self.setup_hidden[k] = v
+
         # important: do this LAST to get precedence over values in custom_modules
         user_globals.update({"__name__"    : "__main__",
                              "__builtins__" : user_builtins})
@@ -1664,7 +1694,9 @@ def exec_script_str(script_str, raw_input_lst_json, options_json, finalizer_func
   py_crazy_mode = ('py_crazy_mode' in options and options['py_crazy_mode'])
 
   logger = PGLogger(options['cumulative_mode'], options['heap_primitives'], options['show_only_outputs'], finalizer_func,
-                    crazy_mode=py_crazy_mode)
+                    crazy_mode=py_crazy_mode,
+                    setup_code=options.get('visualleet_setup'),
+                    setup_visible=options.get('visualleet_setup_visible', ()))
 
   # TODO: refactor these NOT to be globals
   global input_string_queue

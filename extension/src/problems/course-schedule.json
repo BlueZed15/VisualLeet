@@ -1,0 +1,29 @@
+{
+ "slug": "course-schedule",
+ "frontendId": "207",
+ "title": "Course Schedule",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numCourses",
+   "type": "integer"
+  },
+  {
+   "name": "prerequisites",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "numCourses = {numCourses}\nprerequisites = {prerequisites}",
+ "visible": [
+  "numCourses",
+  "prerequisites"
+ ],
+ "call": "result = Solution().canFinish(numCourses, prerequisites)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

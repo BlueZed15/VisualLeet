@@ -1,0 +1,29 @@
+{
+ "slug": "multiply-strings",
+ "frontendId": "43",
+ "title": "Multiply Strings",
+ "category": "Math & Geometry",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num1",
+   "type": "string"
+  },
+  {
+   "name": "num2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "num1 = {num1}\nnum2 = {num2}",
+ "visible": [
+  "num1",
+  "num2"
+ ],
+ "call": "result = Solution().multiply(num1, num2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "binary-tree-right-side-view",
+ "frontendId": "199",
+ "title": "Binary Tree Right Side View",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().rightSideView(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

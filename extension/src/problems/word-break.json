@@ -1,0 +1,29 @@
+{
+ "slug": "word-break",
+ "frontendId": "139",
+ "title": "Word Break",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "wordDict",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nwordDict = {wordDict}",
+ "visible": [
+  "s",
+  "wordDict"
+ ],
+ "call": "result = Solution().wordBreak(s, wordDict)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "3sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "15",
+ "title": "3Sum",
+ "premium": false,
+ "meta": {
+  "name": "threeSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "colsize": 3,
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[-1,0,1,2,-1,-4]",
+  "[0,1,1]",
+  "[0,0,0]"
+ ],
+ "exampleOutputs": [
+  "[[-1,-1,2],[-1,0,1]]",
+  "[]",
+  "[[0,0,0]]"
+ ],
+ "anyOrder": false
+}

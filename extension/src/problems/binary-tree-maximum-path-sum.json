@@ -1,0 +1,24 @@
+{
+ "slug": "binary-tree-maximum-path-sum",
+ "frontendId": "124",
+ "title": "Binary Tree Maximum Path Sum",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().maxPathSum(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

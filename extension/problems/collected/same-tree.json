@@ -1,0 +1,34 @@
+{
+ "slug": "same-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "100",
+ "title": "Same Tree",
+ "premium": false,
+ "meta": {
+  "name": "isSameTree",
+  "params": [
+   {
+    "name": "p",
+    "type": "TreeNode"
+   },
+   {
+    "name": "q",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n[1,2,3]",
+  "[1,2]\n[1,null,2]",
+  "[1,2,1]\n[1,1,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

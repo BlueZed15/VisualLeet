@@ -1,0 +1,29 @@
+{
+ "slug": "coin-change-ii",
+ "frontendId": "518",
+ "title": "Coin Change II",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "amount",
+   "type": "integer"
+  },
+  {
+   "name": "coins",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "amount = {amount}\ncoins = {coins}",
+ "visible": [
+  "amount",
+  "coins"
+ ],
+ "call": "result = Solution().change(amount, coins)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

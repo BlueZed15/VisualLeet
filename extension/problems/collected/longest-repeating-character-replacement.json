@@ -1,0 +1,32 @@
+{
+ "slug": "longest-repeating-character-replacement",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "424",
+ "title": "Longest Repeating Character Replacement",
+ "premium": false,
+ "meta": {
+  "name": "characterReplacement",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ABAB\"\n2",
+  "\"AABABBA\"\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

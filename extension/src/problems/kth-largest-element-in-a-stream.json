@@ -1,0 +1,49 @@
+{
+ "slug": "kth-largest-element-in-a-stream",
+ "frontendId": "703",
+ "title": "Kth Largest Element in a Stream",
+ "category": "Heap / Priority Queue",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "KthLargest",
+ "methods": {
+  "KthLargest": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "add": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = KthLargest(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

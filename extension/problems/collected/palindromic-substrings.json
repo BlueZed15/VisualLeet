@@ -1,0 +1,28 @@
+{
+ "slug": "palindromic-substrings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "647",
+ "title": "Palindromic Substrings",
+ "premium": false,
+ "meta": {
+  "name": "countSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"",
+  "\"aaa\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

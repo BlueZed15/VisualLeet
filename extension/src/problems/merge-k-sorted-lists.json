@@ -1,0 +1,26 @@
+{
+ "slug": "merge-k-sorted-lists",
+ "frontendId": "23",
+ "title": "Merge k Sorted Lists",
+ "category": "Linked List",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "lists",
+   "type": "ListNode[]"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "lists = {lists}",
+ "visible": [
+  "lists"
+ ],
+ "call": "result = Solution().mergeKLists(lists)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

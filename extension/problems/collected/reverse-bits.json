@@ -1,0 +1,29 @@
+{
+ "slug": "reverse-bits",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "190",
+ "title": "Reverse Bits",
+ "premium": false,
+ "meta": {
+  "name": "reverseBits",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "43261596",
+  "2147483644"
+ ],
+ "exampleOutputs": [
+  "964176192",
+  "1073741822"
+ ],
+ "anyOrder": false
+}

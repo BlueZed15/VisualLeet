@@ -1,0 +1,28 @@
+{
+ "slug": "container-with-most-water",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "11",
+ "title": "Container With Most Water",
+ "premium": false,
+ "meta": {
+  "name": "maxArea",
+  "params": [
+   {
+    "name": "height",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,8,6,2,5,4,8,3,7]",
+  "[1,1]"
+ ],
+ "exampleOutputs": [
+  "49",
+  "1"
+ ],
+ "anyOrder": false
+}

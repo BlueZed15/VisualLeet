@@ -1,0 +1,30 @@
+{
+ "slug": "n-queens",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "51",
+ "title": "N-Queens",
+ "premium": false,
+ "meta": {
+  "name": "solveNQueens",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>",
+   "colsize": "param_1",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]",
+  "[[\"Q\"]]"
+ ],
+ "anyOrder": true
+}

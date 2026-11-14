@@ -1,0 +1,29 @@
+{
+ "slug": "serialize-and-deserialize-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "297",
+ "title": "Serialize and Deserialize Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "Codec",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "string"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[1,2,3,null,null,4,5]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,null,null,4,5]",
+  "[]"
+ ],
+ "anyOrder": false
+}

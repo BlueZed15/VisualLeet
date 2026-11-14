@@ -1,0 +1,28 @@
+{
+ "slug": "binary-tree-maximum-path-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "124",
+ "title": "Binary Tree Maximum Path Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxPathSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[-10,9,20,null,null,15,7]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "42"
+ ],
+ "anyOrder": false
+}

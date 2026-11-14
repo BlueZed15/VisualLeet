@@ -1,0 +1,29 @@
+{
+ "slug": "word-search-ii",
+ "frontendId": "212",
+ "title": "Word Search II",
+ "category": "Tries",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}\nwords = {words}",
+ "visible": [
+  "board",
+  "words"
+ ],
+ "call": "result = Solution().findWords(board, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

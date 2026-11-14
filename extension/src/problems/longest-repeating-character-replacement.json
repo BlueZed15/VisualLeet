@@ -1,0 +1,29 @@
+{
+ "slug": "longest-repeating-character-replacement",
+ "frontendId": "424",
+ "title": "Longest Repeating Character Replacement",
+ "category": "Sliding Window",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().characterReplacement(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

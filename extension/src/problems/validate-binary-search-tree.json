@@ -1,0 +1,24 @@
+{
+ "slug": "validate-binary-search-tree",
+ "frontendId": "98",
+ "title": "Validate Binary Search Tree",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().isValidBST(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

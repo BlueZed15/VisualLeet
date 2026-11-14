@@ -1,0 +1,86 @@
+{
+ "slug": "design-twitter",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "355",
+ "title": "Design Twitter",
+ "premium": false,
+ "meta": {
+  "classname": "Twitter",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "userId"
+     },
+     {
+      "type": "integer",
+      "name": "tweetId"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "postTweet"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "userId"
+     }
+    ],
+    "return": {
+     "type": "list<integer>"
+    },
+    "name": "getNewsFeed"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "followerId"
+     },
+     {
+      "type": "integer",
+      "name": "followeeId"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "follow"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "followerId"
+     },
+     {
+      "type": "integer",
+      "name": "followeeId"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "unfollow"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"postTweet\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, [5], null, null, [6, 5], null, [5]]"
+ ],
+ "anyOrder": false
+}

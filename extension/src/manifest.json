@@ -1,12 +1,23 @@
 {
   "manifest_version": 3,
   "name": "VisualLeet",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Step through your Python DSA solutions with a Python Tutor-style visualization. Runs entirely in your browser.",
   "minimum_chrome_version": "120",
-  "action": { "default_title": "Open VisualLeet (imports from this page)" },
-  "background": { "service_worker": "background/background.js" },
-  "permissions": ["activeTab", "scripting"],
+  "action": { "default_title": "VisualLeet: visualize this LeetCode test case (Alt+V)" },
+  "commands": {
+    "_execute_action": { "suggested_key": { "default": "Alt+V" }, "description": "Visualize the selected LeetCode test case" }
+  },
+  "background": { "service_worker": "background/background.js", "type": "module" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://leetcode.com/*", "https://leetcode.cn/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*", "https://leetcode.cn/*"],
+      "js": ["content/leetcode-button.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "sandbox": { "pages": ["runner/sandbox.html"] },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'",

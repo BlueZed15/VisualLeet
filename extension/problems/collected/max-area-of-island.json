@@ -1,0 +1,28 @@
+{
+ "slug": "max-area-of-island",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "695",
+ "title": "Max Area of Island",
+ "premium": false,
+ "meta": {
+  "name": "maxAreaOfIsland",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]",
+  "[[0,0,0,0,0,0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

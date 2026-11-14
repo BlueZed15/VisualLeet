@@ -1,0 +1,24 @@
+{
+ "slug": "pacific-atlantic-water-flow",
+ "frontendId": "417",
+ "title": "Pacific Atlantic Water Flow",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}",
+ "visible": [
+  "heights"
+ ],
+ "call": "result = Solution().pacificAtlantic(heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "clone-graph",
+ "frontendId": "133",
+ "title": "Clone Graph",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "adjList",
+   "type": "integer[][]",
+   "label": "adjList",
+   "hint": "neighbors of node 1, 2, 3, …"
+  }
+ ],
+ "helpers": [
+  "Graph"
+ ],
+ "setup": "node = build_graph({adjList})",
+ "visible": [
+  "node"
+ ],
+ "call": "result = Solution().cloneGraph(node)\nprint(leet_str(graph_values(result)))",
+ "source": "hand-written",
+ "verified": true
+}

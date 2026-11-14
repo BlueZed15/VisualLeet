@@ -1,0 +1,24 @@
+{
+ "slug": "meeting-rooms",
+ "frontendId": "252",
+ "title": "Meeting Rooms",
+ "category": "Intervals",
+ "premium": true,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}",
+ "visible": [
+  "intervals"
+ ],
+ "call": "result = Solution().canAttendMeetings(intervals)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true
+}

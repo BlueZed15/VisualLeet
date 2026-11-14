@@ -1,0 +1,29 @@
+{
+ "slug": "two-sum-ii-input-array-is-sorted",
+ "frontendId": "167",
+ "title": "Two Sum II - Input Array Is Sorted",
+ "category": "Two Pointers",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numbers",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "numbers = {numbers}\ntarget = {target}",
+ "visible": [
+  "numbers",
+  "target"
+ ],
+ "call": "result = Solution().twoSum(numbers, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

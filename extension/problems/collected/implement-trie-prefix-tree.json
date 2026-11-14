@@ -1,0 +1,62 @@
+{
+ "slug": "implement-trie-prefix-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "208",
+ "title": "Implement Trie (Prefix Tree)",
+ "premium": false,
+ "meta": {
+  "classname": "Trie",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word"
+     }
+    ],
+    "name": "insert",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word"
+     }
+    ],
+    "name": "search",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "prefix"
+     }
+    ],
+    "name": "startsWith",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, true, false, true, null, true]"
+ ],
+ "anyOrder": false
+}

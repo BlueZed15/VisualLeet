@@ -1,0 +1,24 @@
+{
+ "slug": "daily-temperatures",
+ "frontendId": "739",
+ "title": "Daily Temperatures",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "temperatures",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "temperatures = {temperatures}",
+ "visible": [
+  "temperatures"
+ ],
+ "call": "result = Solution().dailyTemperatures(temperatures)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

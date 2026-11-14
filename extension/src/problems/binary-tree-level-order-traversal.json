@@ -1,0 +1,24 @@
+{
+ "slug": "binary-tree-level-order-traversal",
+ "frontendId": "102",
+ "title": "Binary Tree Level Order Traversal",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().levelOrder(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

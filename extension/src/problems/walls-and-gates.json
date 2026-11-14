@@ -1,0 +1,25 @@
+{
+ "slug": "walls-and-gates",
+ "frontendId": "286",
+ "title": "Walls and Gates",
+ "category": "Graphs",
+ "premium": true,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rooms",
+   "type": "integer[][]",
+   "hint": "-1 wall, 0 gate, 2147483647 empty room"
+  }
+ ],
+ "helpers": [],
+ "setup": "rooms = {rooms}",
+ "visible": [
+  "rooms"
+ ],
+ "call": "Solution().wallsAndGates(rooms)\nprint(leet_str(rooms))",
+ "source": "hand-written",
+ "verified": true
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "permutation-in-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "567",
+ "title": "Permutation in String",
+ "premium": false,
+ "meta": {
+  "name": "checkInclusion",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"ab\"\n\"eidbaooo\"",
+  "\"ab\"\n\"eidboaoo\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

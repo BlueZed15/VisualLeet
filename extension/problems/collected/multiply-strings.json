@@ -1,0 +1,32 @@
+{
+ "slug": "multiply-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "43",
+ "title": "Multiply Strings",
+ "premium": false,
+ "meta": {
+  "name": "multiply",
+  "params": [
+   {
+    "name": "num1",
+    "type": "string"
+   },
+   {
+    "name": "num2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"2\"\n\"3\"",
+  "\"123\"\n\"456\""
+ ],
+ "exampleOutputs": [
+  "\"6\"",
+  "\"56088\""
+ ],
+ "anyOrder": false
+}

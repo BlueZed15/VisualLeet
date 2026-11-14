@@ -1,0 +1,48 @@
+{
+ "slug": "clone-graph",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "133",
+ "title": "Clone Graph",
+ "premium": false,
+ "meta": {
+  "name": "cloneGraph",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "csharp",
+   "javascript",
+   "python3",
+   "golang",
+   "swift",
+   "kotlin",
+   "ruby",
+   "c",
+   "scala",
+   "php",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class _Node {\n    val: number\n    neighbors: _Node[]\n\n    constructor(val?: number, neighbors?: _Node[]) {\n        this.val = (val===undefined ? 0 : val)\n        this.neighbors = (neighbors===undefined ? [] : neighbors)\n    }\n}\n"
+ },
+ "exampleInputs": [
+  "[[2,4],[1,3],[2,4],[1,3]]",
+  "[[]]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[[2,4],[1,3],[2,4],[1,3]]",
+  "[[]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

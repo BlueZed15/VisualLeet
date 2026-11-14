@@ -1,0 +1,29 @@
+{
+ "slug": "number-of-islands",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "200",
+ "title": "Number of Islands",
+ "premium": false,
+ "meta": {
+  "name": "numIslands",
+  "params": [
+   {
+    "name": "grid",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+  "[[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

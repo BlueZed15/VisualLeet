@@ -1,0 +1,24 @@
+{
+ "slug": "meeting-rooms-ii",
+ "frontendId": "253",
+ "title": "Meeting Rooms II",
+ "category": "Intervals",
+ "premium": true,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}",
+ "visible": [
+  "intervals"
+ ],
+ "call": "result = Solution().minMeetingRooms(intervals)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true
+}

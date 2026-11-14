@@ -1,0 +1,29 @@
+{
+ "slug": "coin-change",
+ "frontendId": "322",
+ "title": "Coin Change",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[]"
+  },
+  {
+   "name": "amount",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}\namount = {amount}",
+ "visible": [
+  "coins",
+  "amount"
+ ],
+ "call": "result = Solution().coinChange(coins, amount)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

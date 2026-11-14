@@ -1,0 +1,24 @@
+{
+ "slug": "subsets",
+ "frontendId": "78",
+ "title": "Subsets",
+ "category": "Backtracking",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().subsets(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

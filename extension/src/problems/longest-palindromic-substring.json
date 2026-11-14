@@ -1,0 +1,24 @@
+{
+ "slug": "longest-palindromic-substring",
+ "frontendId": "5",
+ "title": "Longest Palindromic Substring",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": true,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().longestPalindrome(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "kth-largest-element-in-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "215",
+ "title": "Kth Largest Element in an Array",
+ "premium": false,
+ "meta": {
+  "name": "findKthLargest",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,1,5,6,4]\n2",
+  "[3,2,3,1,2,4,5,5,6]\n4"
+ ],
+ "exampleOutputs": [
+  "5",
+  "4"
+ ],
+ "anyOrder": false
+}

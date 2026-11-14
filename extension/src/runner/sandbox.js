@@ -130,7 +130,10 @@
       active.worker.postMessage({ type: "probe", runId });
     } else {
       const inputs = Array.isArray(msg.inputs) ? msg.inputs.map(String).slice(0, 1000) : [];
-      active.worker.postMessage({ type: "run", runId, source: msg.source, inputs, limits: msg.limits });
+      // optional hidden setup (LeetCode problems): runs untraced before the source
+      const setup = typeof msg.setup === "string" ? msg.setup : "";
+      const setupVisible = Array.isArray(msg.setupVisible) ? msg.setupVisible.map(String).slice(0, 100) : [];
+      active.worker.postMessage({ type: "run", runId, source: msg.source, inputs, setup, setupVisible, limits: msg.limits });
     }
   }
 

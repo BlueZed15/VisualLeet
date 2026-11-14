@@ -1,0 +1,31 @@
+{
+ "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+ "frontendId": "105",
+ "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "preorder",
+   "type": "integer[]"
+  },
+  {
+   "name": "inorder",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "preorder = {preorder}\ninorder = {inorder}",
+ "visible": [
+  "preorder",
+  "inorder"
+ ],
+ "call": "result = Solution().buildTree(preorder, inorder)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

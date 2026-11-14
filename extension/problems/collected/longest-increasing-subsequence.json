@@ -1,0 +1,30 @@
+{
+ "slug": "longest-increasing-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "300",
+ "title": "Longest Increasing Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "lengthOfLIS",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,9,2,5,3,7,101,18]",
+  "[0,1,0,3,2,3]",
+  "[7,7,7,7,7,7,7]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

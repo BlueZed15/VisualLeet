@@ -1,0 +1,28 @@
+{
+ "slug": "partition-labels",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "763",
+ "title": "Partition Labels",
+ "premium": false,
+ "meta": {
+  "name": "partitionLabels",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "\"ababcbacadefegdehijhklij\"",
+  "\"eccbbbbdec\""
+ ],
+ "exampleOutputs": [
+  "[9,7,8]",
+  "[10]"
+ ],
+ "anyOrder": false
+}

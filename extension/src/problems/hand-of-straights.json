@@ -1,0 +1,29 @@
+{
+ "slug": "hand-of-straights",
+ "frontendId": "846",
+ "title": "Hand of Straights",
+ "category": "Greedy",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hand",
+   "type": "integer[]"
+  },
+  {
+   "name": "groupSize",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "hand = {hand}\ngroupSize = {groupSize}",
+ "visible": [
+  "hand",
+  "groupSize"
+ ],
+ "call": "result = Solution().isNStraightHand(hand, groupSize)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -34,6 +34,8 @@
 #    discarded for builtin containers (see _BUILTIN_CONTAINERS).
 # Display change: classes no longer show Python 3.13+'s __firstlineno__ and
 # __static_attributes__ (interpreter bookkeeping, like __qualname__).
+# Robustness: a function whose annotations can't be evaluated (legal since
+# Python 3.14) no longer aborts the trace (see _vl_argspec).
 
 
 # Given an arbitrary piece of Python data, encode it in such a manner
@@ -146,6 +148,32 @@ _BUILTIN_CONTAINERS = (list, tuple, dict, set)
 _PRIMITIVE_TYPE_SET = frozenset(PRIMITIVE_TYPES)
 
 _EXCLUDED_DICT_KEYS = ('__module__', '__return__', '__locals__')
+
+
+def _vl_argspec(fn):
+    """inspect.getfullargspec, without failing on annotations.
+
+    VisualLeet: since Python 3.14 annotations are evaluated lazily, so a
+    program may legally annotate with a name that doesn't exist (e.g.
+    `-> Optional[TreeNode]` without a TreeNode class). getfullargspec then
+    raises, which used to abort the whole trace. Only the argument names
+    and defaults are used here, so read them from the code object instead.
+    Normal functions take the first branch: output unchanged.
+    """
+    try:
+        return inspect.getfullargspec(fn)
+    except Exception:
+        f = getattr(fn, '__func__', fn)
+        code = f.__code__
+        n, k = code.co_argcount, code.co_kwonlyargcount
+        names = code.co_varnames
+        i = n + k
+        varargs = names[i] if code.co_flags & inspect.CO_VARARGS else None
+        if varargs:
+            i += 1
+        varkw = names[i] if code.co_flags & inspect.CO_VARKEYWORDS else None
+        return inspect.FullArgSpec(list(names[:n]), varargs, varkw, f.__defaults__,
+                                   list(names[n:n + k]), f.__kwdefaults__, {})
 
 
 def _get_path(obj, path):
@@ -564,7 +592,7 @@ class ObjectEncoder:
             new_obj.append([self.encode(k, get_parent), self.encode(v, get_parent)])
       elif typ in (types.FunctionType, types.MethodType):
         if is_python3:
-          argspec = inspect.getfullargspec(dat)
+          argspec = _vl_argspec(dat)   # VisualLeet: see _vl_argspec
         else:
           argspec = inspect.getargspec(dat)
 

@@ -1,0 +1,33 @@
+{
+ "slug": "combination-sum-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "40",
+ "title": "Combination Sum II",
+ "premium": false,
+ "meta": {
+  "name": "combinationSum2",
+  "params": [
+   {
+    "name": "candidates",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[10,1,2,7,6,1,5]\n8",
+  "[2,5,2,1,2]\n5"
+ ],
+ "exampleOutputs": [
+  "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+  "[[1,2,2],[5]]"
+ ],
+ "anyOrder": false
+}

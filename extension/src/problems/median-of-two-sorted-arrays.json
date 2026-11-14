@@ -1,0 +1,29 @@
+{
+ "slug": "median-of-two-sorted-arrays",
+ "frontendId": "4",
+ "title": "Median of Two Sorted Arrays",
+ "category": "Binary Search",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}",
+ "visible": [
+  "nums1",
+  "nums2"
+ ],
+ "call": "result = Solution().findMedianSortedArrays(nums1, nums2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

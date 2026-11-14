@@ -1,0 +1,30 @@
+{
+ "slug": "decode-ways",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "91",
+ "title": "Decode Ways",
+ "premium": false,
+ "meta": {
+  "name": "numDecodings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"12\"",
+  "\"226\"",
+  "\"06\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "powx-n",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "50",
+ "title": "Pow(x, n)",
+ "premium": false,
+ "meta": {
+  "name": "myPow",
+  "params": [
+   {
+    "name": "x",
+    "type": "double"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "2.00000\n10",
+  "2.10000\n3",
+  "2.00000\n-2"
+ ],
+ "exampleOutputs": [
+  "1024.00000",
+  "9.26100",
+  "0.25000"
+ ],
+ "anyOrder": false
+}

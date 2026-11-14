@@ -1,0 +1,24 @@
+{
+ "slug": "product-of-array-except-self",
+ "frontendId": "238",
+ "title": "Product of Array Except Self",
+ "category": "Arrays & Hashing",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().productExceptSelf(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

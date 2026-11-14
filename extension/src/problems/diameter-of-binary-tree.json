@@ -1,0 +1,24 @@
+{
+ "slug": "diameter-of-binary-tree",
+ "frontendId": "543",
+ "title": "Diameter of Binary Tree",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().diameterOfBinaryTree(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

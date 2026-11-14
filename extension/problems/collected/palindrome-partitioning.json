@@ -1,0 +1,29 @@
+{
+ "slug": "palindrome-partitioning",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "131",
+ "title": "Palindrome Partitioning",
+ "premium": false,
+ "meta": {
+  "name": "partition",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "\"aab\"",
+  "\"a\""
+ ],
+ "exampleOutputs": [
+  "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]",
+  "[[\"a\"]]"
+ ],
+ "anyOrder": false
+}

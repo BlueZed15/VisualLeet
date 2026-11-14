@@ -1,0 +1,34 @@
+{
+ "slug": "interleaving-string",
+ "frontendId": "97",
+ "title": "Interleaving String",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "s3",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}\ns3 = {s3}",
+ "visible": [
+  "s1",
+  "s2",
+  "s3"
+ ],
+ "call": "result = Solution().isInterleave(s1, s2, s3)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

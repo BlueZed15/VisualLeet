@@ -1,0 +1,24 @@
+{
+ "slug": "reconstruct-itinerary",
+ "frontendId": "332",
+ "title": "Reconstruct Itinerary",
+ "category": "Advanced Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tickets",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "tickets = {tickets}",
+ "visible": [
+  "tickets"
+ ],
+ "call": "result = Solution().findItinerary(tickets)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

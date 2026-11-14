@@ -1,0 +1,32 @@
+{
+ "slug": "edit-distance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "72",
+ "title": "Edit Distance",
+ "premium": false,
+ "meta": {
+  "name": "minDistance",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "name": "word2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"horse\"\n\"ros\"",
+  "\"intention\"\n\"execution\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

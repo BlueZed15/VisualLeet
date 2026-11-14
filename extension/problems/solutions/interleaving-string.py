@@ -1,0 +1,13 @@
+class Solution:
+    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
+        if len(s1) + len(s2) != len(s3):
+            return False
+
+        @cache
+        def go(i, j):
+            if i == len(s1) and j == len(s2):
+                return True
+            k = i + j
+            return (i < len(s1) and s1[i] == s3[k] and go(i + 1, j)) or (j < len(s2) and s2[j] == s3[k] and go(i, j + 1))
+
+        return go(0, 0)

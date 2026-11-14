@@ -1,0 +1,41 @@
+{
+ "slug": "find-median-from-data-stream",
+ "frontendId": "295",
+ "title": "Find Median from Data Stream",
+ "category": "Heap / Priority Queue",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MedianFinder",
+ "methods": {
+  "MedianFinder": [],
+  "addNum": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "findMedian": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MedianFinder(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

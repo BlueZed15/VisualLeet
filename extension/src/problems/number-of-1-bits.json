@@ -1,0 +1,24 @@
+{
+ "slug": "number-of-1-bits",
+ "frontendId": "191",
+ "title": "Number of 1 Bits",
+ "category": "Bit Manipulation",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().hammingWeight(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

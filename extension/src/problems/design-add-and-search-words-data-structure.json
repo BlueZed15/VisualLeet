@@ -1,0 +1,46 @@
+{
+ "slug": "design-add-and-search-words-data-structure",
+ "frontendId": "211",
+ "title": "Design Add and Search Words Data Structure",
+ "category": "Tries",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "WordDictionary",
+ "methods": {
+  "WordDictionary": [],
+  "addWord": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "search": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = WordDictionary(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

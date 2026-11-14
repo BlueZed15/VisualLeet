@@ -1,0 +1,30 @@
+{
+ "slug": "missing-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "268",
+ "title": "Missing Number",
+ "premium": false,
+ "meta": {
+  "name": "missingNumber",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,0,1]",
+  "[0,1]",
+  "[9,6,4,2,3,5,7,0,1]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "8"
+ ],
+ "anyOrder": false
+}

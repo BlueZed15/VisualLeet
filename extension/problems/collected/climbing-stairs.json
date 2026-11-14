@@ -1,0 +1,28 @@
+{
+ "slug": "climbing-stairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "70",
+ "title": "Climbing Stairs",
+ "premium": false,
+ "meta": {
+  "name": "climbStairs",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "combination-sum",
+ "frontendId": "39",
+ "title": "Combination Sum",
+ "category": "Backtracking",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candidates",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "candidates = {candidates}\ntarget = {target}",
+ "visible": [
+  "candidates",
+  "target"
+ ],
+ "call": "result = Solution().combinationSum(candidates, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

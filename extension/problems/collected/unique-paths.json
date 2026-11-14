@@ -1,0 +1,32 @@
+{
+ "slug": "unique-paths",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "62",
+ "title": "Unique Paths",
+ "premium": false,
+ "meta": {
+  "name": "uniquePaths",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n7",
+  "3\n2"
+ ],
+ "exampleOutputs": [
+  "28",
+  "3"
+ ],
+ "anyOrder": false
+}

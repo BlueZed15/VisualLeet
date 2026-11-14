@@ -1,0 +1,29 @@
+{
+ "slug": "longest-common-subsequence",
+ "frontendId": "1143",
+ "title": "Longest Common Subsequence",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text1",
+   "type": "string"
+  },
+  {
+   "name": "text2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text1 = {text1}\ntext2 = {text2}",
+ "visible": [
+  "text1",
+  "text2"
+ ],
+ "call": "result = Solution().longestCommonSubsequence(text1, text2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

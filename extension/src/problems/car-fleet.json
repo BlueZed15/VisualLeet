@@ -1,0 +1,34 @@
+{
+ "slug": "car-fleet",
+ "frontendId": "853",
+ "title": "Car Fleet",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "position",
+   "type": "integer[]"
+  },
+  {
+   "name": "speed",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\nposition = {position}\nspeed = {speed}",
+ "visible": [
+  "target",
+  "position",
+  "speed"
+ ],
+ "call": "result = Solution().carFleet(target, position, speed)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

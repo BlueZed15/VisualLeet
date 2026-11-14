@@ -1,0 +1,32 @@
+{
+ "slug": "word-search-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "212",
+ "title": "Word Search II",
+ "premium": false,
+ "meta": {
+  "name": "findWords",
+  "params": [
+   {
+    "name": "board",
+    "type": "character[][]"
+   },
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]\n[\"oath\",\"pea\",\"eat\",\"rain\"]",
+  "[[\"a\",\"b\"],[\"c\",\"d\"]]\n[\"abcb\"]"
+ ],
+ "exampleOutputs": [
+  "[\"eat\",\"oath\"]",
+  "[]"
+ ],
+ "anyOrder": false
+}

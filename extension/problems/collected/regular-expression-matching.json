@@ -1,0 +1,34 @@
+{
+ "slug": "regular-expression-matching",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "10",
+ "title": "Regular Expression Matching",
+ "premium": false,
+ "meta": {
+  "name": "isMatch",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "p",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"aa\"\n\"a\"",
+  "\"aa\"\n\"a*\"",
+  "\"ab\"\n\".*\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

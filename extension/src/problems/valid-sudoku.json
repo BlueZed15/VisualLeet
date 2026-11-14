@@ -1,0 +1,24 @@
+{
+ "slug": "valid-sudoku",
+ "frontendId": "36",
+ "title": "Valid Sudoku",
+ "category": "Arrays & Hashing",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "result = Solution().isValidSudoku(board)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

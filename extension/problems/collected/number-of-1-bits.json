@@ -1,0 +1,31 @@
+{
+ "slug": "number-of-1-bits",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "191",
+ "title": "Number of 1 Bits",
+ "premium": false,
+ "meta": {
+  "name": "hammingWeight",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "11",
+  "128",
+  "2147483645"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "30"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "course-schedule",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "207",
+ "title": "Course Schedule",
+ "premium": false,
+ "meta": {
+  "name": "canFinish",
+  "params": [
+   {
+    "name": "numCourses",
+    "type": "integer"
+   },
+   {
+    "name": "prerequisites",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "2\n[[1,0]]",
+  "2\n[[1,0],[0,1]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

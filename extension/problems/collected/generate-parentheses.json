@@ -1,0 +1,28 @@
+{
+ "slug": "generate-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "22",
+ "title": "Generate Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "generateParenthesis",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]",
+  "[\"()\"]"
+ ],
+ "anyOrder": false
+}

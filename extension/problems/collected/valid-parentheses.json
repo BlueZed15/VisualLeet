@@ -1,0 +1,34 @@
+{
+ "slug": "valid-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "20",
+ "title": "Valid Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "isValid",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"()\"",
+  "\"()[]{}\"",
+  "\"(]\"",
+  "\"([])\"",
+  "\"([)]\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "min-cost-climbing-stairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "746",
+ "title": "Min Cost Climbing Stairs",
+ "premium": false,
+ "meta": {
+  "name": "minCostClimbingStairs",
+  "params": [
+   {
+    "name": "cost",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,15,20]",
+  "[1,100,1,1,1,100,1,1,100,1]"
+ ],
+ "exampleOutputs": [
+  "15",
+  "6"
+ ],
+ "anyOrder": false
+}

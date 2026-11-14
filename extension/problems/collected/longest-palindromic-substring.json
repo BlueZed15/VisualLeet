@@ -1,0 +1,28 @@
+{
+ "slug": "longest-palindromic-substring",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "5",
+ "title": "Longest Palindromic Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"babad\"",
+  "\"cbbd\""
+ ],
+ "exampleOutputs": [
+  "\"bab\"",
+  "\"bb\""
+ ],
+ "anyOrder": false
+}

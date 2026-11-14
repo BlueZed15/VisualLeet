@@ -1,0 +1,24 @@
+{
+ "slug": "min-cost-climbing-stairs",
+ "frontendId": "746",
+ "title": "Min Cost Climbing Stairs",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cost = {cost}",
+ "visible": [
+  "cost"
+ ],
+ "call": "result = Solution().minCostClimbingStairs(cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

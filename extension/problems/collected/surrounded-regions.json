@@ -1,0 +1,31 @@
+{
+ "slug": "surrounded-regions",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "130",
+ "title": "Surrounded Regions",
+ "premium": false,
+ "meta": {
+  "name": "solve",
+  "params": [
+   {
+    "name": "board",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+  "[[\"X\"]]"
+ ],
+ "exampleOutputs": [
+  "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+  "[[\"X\"]]"
+ ],
+ "anyOrder": false
+}

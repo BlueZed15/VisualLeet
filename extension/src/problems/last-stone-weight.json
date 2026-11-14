@@ -1,0 +1,24 @@
+{
+ "slug": "last-stone-weight",
+ "frontendId": "1046",
+ "title": "Last Stone Weight",
+ "category": "Heap / Priority Queue",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().lastStoneWeight(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

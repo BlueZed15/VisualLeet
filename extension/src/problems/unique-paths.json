@@ -1,0 +1,29 @@
+{
+ "slug": "unique-paths",
+ "frontendId": "62",
+ "title": "Unique Paths",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}",
+ "visible": [
+  "m",
+  "n"
+ ],
+ "call": "result = Solution().uniquePaths(m, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

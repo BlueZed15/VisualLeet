@@ -1,0 +1,28 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "121",
+ "title": "Best Time to Buy and Sell Stock",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[7,1,5,3,6,4]",
+  "[7,6,4,3,1]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

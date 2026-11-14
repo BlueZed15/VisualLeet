@@ -1,0 +1,28 @@
+{
+ "slug": "house-robber",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "198",
+ "title": "House Robber",
+ "premium": false,
+ "meta": {
+  "name": "rob",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,1]",
+  "[2,7,9,3,1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "12"
+ ],
+ "anyOrder": false
+}

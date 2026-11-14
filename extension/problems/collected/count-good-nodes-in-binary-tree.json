@@ -1,0 +1,30 @@
+{
+ "slug": "count-good-nodes-in-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1448",
+ "title": "Count Good Nodes in Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "goodNodes",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,4,3,null,1,5]",
+  "[3,3,null,4,2]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

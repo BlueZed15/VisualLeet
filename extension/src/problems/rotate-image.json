@@ -1,0 +1,24 @@
+{
+ "slug": "rotate-image",
+ "frontendId": "48",
+ "title": "Rotate Image",
+ "category": "Math & Geometry",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "Solution().rotate(matrix)\nprint(leet_str(matrix))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

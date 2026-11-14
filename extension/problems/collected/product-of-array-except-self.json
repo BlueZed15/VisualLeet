@@ -1,0 +1,28 @@
+{
+ "slug": "product-of-array-except-self",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "238",
+ "title": "Product of Array Except Self",
+ "premium": false,
+ "meta": {
+  "name": "productExceptSelf",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[-1,1,0,-3,3]"
+ ],
+ "exampleOutputs": [
+  "[24,12,8,6]",
+  "[0,0,9,0,0]"
+ ],
+ "anyOrder": false
+}

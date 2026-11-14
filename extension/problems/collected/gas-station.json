@@ -1,0 +1,32 @@
+{
+ "slug": "gas-station",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "134",
+ "title": "Gas Station",
+ "premium": false,
+ "meta": {
+  "name": "canCompleteCircuit",
+  "params": [
+   {
+    "name": "gas",
+    "type": "integer[]"
+   },
+   {
+    "name": "cost",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n[3,4,5,1,2]",
+  "[2,3,4]\n[3,4,3]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

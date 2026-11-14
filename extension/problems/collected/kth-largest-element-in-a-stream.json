@@ -1,0 +1,67 @@
+{
+ "slug": "kth-largest-element-in-a-stream",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "703",
+ "title": "Kth Largest Element in a Stream",
+ "premium": false,
+ "meta": {
+  "classname": "KthLargest",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "k"
+    },
+    {
+     "type": "integer[]",
+     "name": "nums"
+    },
+    {
+     "type": "integer",
+     "name": "numsSize",
+     "lang": "c",
+     "value": "size_2"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "add",
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "starts",
+    "type": "integer[]"
+   },
+   {
+    "name": "ends",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>",
+   "dealloc": true
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
+  "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\"]\n[[4,[7,7,7,7,8,3]],[2],[10],[9],[9]]"
+ ],
+ "exampleOutputs": [
+  "[null, 4, 5, 5, 8, 8]",
+  "[null, 7, 7, 7, 8]"
+ ],
+ "anyOrder": false
+}

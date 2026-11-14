@@ -1,0 +1,28 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "309",
+ "title": "Best Time to Buy and Sell Stock with Cooldown",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,0,2]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

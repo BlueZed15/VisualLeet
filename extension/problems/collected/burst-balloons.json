@@ -1,0 +1,28 @@
+{
+ "slug": "burst-balloons",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "312",
+ "title": "Burst Balloons",
+ "premium": false,
+ "meta": {
+  "name": "maxCoins",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,5,8]",
+  "[1,5]"
+ ],
+ "exampleOutputs": [
+  "167",
+  "10"
+ ],
+ "anyOrder": false
+}

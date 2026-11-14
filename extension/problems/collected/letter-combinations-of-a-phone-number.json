@@ -1,0 +1,28 @@
+{
+ "slug": "letter-combinations-of-a-phone-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "17",
+ "title": "Letter Combinations of a Phone Number",
+ "premium": false,
+ "meta": {
+  "name": "letterCombinations",
+  "params": [
+   {
+    "name": "digits",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"23\"",
+  "\"2\""
+ ],
+ "exampleOutputs": [
+  "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]",
+  "[\"a\",\"b\",\"c\"]"
+ ],
+ "anyOrder": true
+}

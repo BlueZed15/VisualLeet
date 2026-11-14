@@ -1,0 +1,31 @@
+{
+ "slug": "remove-nth-node-from-end-of-list",
+ "frontendId": "19",
+ "title": "Remove Nth Node From End of List",
+ "category": "Linked List",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}\nn = {n}",
+ "visible": [
+  "head",
+  "n"
+ ],
+ "call": "result = Solution().removeNthFromEnd(head, n)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

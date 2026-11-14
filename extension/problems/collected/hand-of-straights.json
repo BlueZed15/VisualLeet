@@ -1,0 +1,32 @@
+{
+ "slug": "hand-of-straights",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "846",
+ "title": "Hand of Straights",
+ "premium": false,
+ "meta": {
+  "name": "isNStraightHand",
+  "params": [
+   {
+    "name": "hand",
+    "type": "integer[]"
+   },
+   {
+    "name": "groupSize",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,6,2,3,4,7,8]\n3",
+  "[1,2,3,4,5]\n4"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

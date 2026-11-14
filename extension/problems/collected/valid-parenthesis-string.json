@@ -1,0 +1,32 @@
+{
+ "slug": "valid-parenthesis-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "678",
+ "title": "Valid Parenthesis String",
+ "premium": false,
+ "meta": {
+  "name": "checkValidString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"()\"",
+  "\"(*)\"",
+  "\"(*))\"",
+  "\"(\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

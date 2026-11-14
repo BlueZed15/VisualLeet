@@ -1,0 +1,29 @@
+{
+ "slug": "number-of-connected-components-in-an-undirected-graph",
+ "frontendId": "323",
+ "title": "Number of Connected Components in an Undirected Graph",
+ "category": "Graphs",
+ "premium": true,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().countComponents(n, edges)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true
+}

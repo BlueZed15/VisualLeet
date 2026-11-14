@@ -1,0 +1,24 @@
+{
+ "slug": "palindromic-substrings",
+ "frontendId": "647",
+ "title": "Palindromic Substrings",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().countSubstrings(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

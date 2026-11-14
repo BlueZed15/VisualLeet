@@ -1,0 +1,39 @@
+{
+ "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "235",
+ "title": "Lowest Common Ancestor of a Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "lowestCommonAncestor",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "p",
+    "type": "integer"
+   },
+   {
+    "name": "q",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8",
+  "[6,2,8,0,4,7,9,null,null,3,5]\n2\n4",
+  "[2,1]\n2\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

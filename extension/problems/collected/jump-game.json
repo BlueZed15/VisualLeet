@@ -1,0 +1,28 @@
+{
+ "slug": "jump-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "55",
+ "title": "Jump Game",
+ "premium": false,
+ "meta": {
+  "name": "canJump",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,1,4]",
+  "[3,2,1,0,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

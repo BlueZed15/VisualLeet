@@ -1,0 +1,29 @@
+{
+ "slug": "k-closest-points-to-origin",
+ "frontendId": "973",
+ "title": "K Closest Points to Origin",
+ "category": "Heap / Priority Queue",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}\nk = {k}",
+ "visible": [
+  "points",
+  "k"
+ ],
+ "call": "result = Solution().kClosest(points, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

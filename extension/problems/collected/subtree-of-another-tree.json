@@ -1,0 +1,32 @@
+{
+ "slug": "subtree-of-another-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "572",
+ "title": "Subtree of Another Tree",
+ "premium": false,
+ "meta": {
+  "name": "isSubtree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "subRoot",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[3,4,5,1,2]\n[4,1,2]",
+  "[3,4,5,1,2,null,null,null,null,0]\n[4,1,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

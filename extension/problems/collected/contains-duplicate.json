@@ -1,0 +1,30 @@
+{
+ "slug": "contains-duplicate",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "217",
+ "title": "Contains Duplicate",
+ "premium": false,
+ "meta": {
+  "name": "containsDuplicate",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,1]",
+  "[1,2,3,4]",
+  "[1,1,1,3,3,4,3,2,4,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

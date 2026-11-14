@@ -1,0 +1,24 @@
+{
+ "slug": "swim-in-rising-water",
+ "frontendId": "778",
+ "title": "Swim in Rising Water",
+ "category": "Advanced Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().swimInWater(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

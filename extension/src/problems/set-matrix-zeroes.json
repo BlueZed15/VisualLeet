@@ -1,0 +1,24 @@
+{
+ "slug": "set-matrix-zeroes",
+ "frontendId": "73",
+ "title": "Set Matrix Zeroes",
+ "category": "Math & Geometry",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "Solution().setZeroes(matrix)\nprint(leet_str(matrix))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "reverse-integer",
+ "frontendId": "7",
+ "title": "Reverse Integer",
+ "category": "Bit Manipulation",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}",
+ "visible": [
+  "x"
+ ],
+ "call": "result = Solution().reverse(x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

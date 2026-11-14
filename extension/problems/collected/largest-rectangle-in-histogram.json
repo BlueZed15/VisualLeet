@@ -1,0 +1,28 @@
+{
+ "slug": "largest-rectangle-in-histogram",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "84",
+ "title": "Largest Rectangle in Histogram",
+ "premium": false,
+ "meta": {
+  "name": "largestRectangleArea",
+  "params": [
+   {
+    "name": "heights",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,5,6,2,3]",
+  "[2,4]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "4"
+ ],
+ "anyOrder": false
+}

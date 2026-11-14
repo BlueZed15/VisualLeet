@@ -1,0 +1,24 @@
+{
+ "slug": "longest-increasing-subsequence",
+ "frontendId": "300",
+ "title": "Longest Increasing Subsequence",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().lengthOfLIS(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

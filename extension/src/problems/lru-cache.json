@@ -1,0 +1,55 @@
+{
+ "slug": "lru-cache",
+ "frontendId": "146",
+ "title": "LRU Cache",
+ "category": "Linked List",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "LRUCache",
+ "methods": {
+  "LRUCache": [
+   {
+    "name": "capacity",
+    "type": "integer"
+   }
+  ],
+  "get": [
+   {
+    "name": "key",
+    "type": "integer"
+   }
+  ],
+  "put": [
+   {
+    "name": "key",
+    "type": "integer"
+   },
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = LRUCache(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

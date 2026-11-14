@@ -1,0 +1,28 @@
+{
+ "slug": "jump-game-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "45",
+ "title": "Jump Game II",
+ "premium": false,
+ "meta": {
+  "name": "jump",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,1,4]",
+  "[2,3,0,1,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

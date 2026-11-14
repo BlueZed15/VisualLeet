@@ -1,0 +1,32 @@
+{
+ "slug": "target-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "494",
+ "title": "Target Sum",
+ "premium": false,
+ "meta": {
+  "name": "findTargetSumWays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,1,1]\n3",
+  "[1]\n1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

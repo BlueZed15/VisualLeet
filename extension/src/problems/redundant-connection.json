@@ -1,0 +1,24 @@
+{
+ "slug": "redundant-connection",
+ "frontendId": "684",
+ "title": "Redundant Connection",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}",
+ "visible": [
+  "edges"
+ ],
+ "call": "result = Solution().findRedundantConnection(edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

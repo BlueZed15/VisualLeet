@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-window-substring",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "76",
+ "title": "Minimum Window Substring",
+ "premium": false,
+ "meta": {
+  "name": "minWindow",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"ADOBECODEBANC\"\n\"ABC\"",
+  "\"a\"\n\"a\"",
+  "\"a\"\n\"aa\""
+ ],
+ "exampleOutputs": [
+  "\"BANC\"",
+  "\"a\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

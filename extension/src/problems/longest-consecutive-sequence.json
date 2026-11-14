@@ -1,0 +1,24 @@
+{
+ "slug": "longest-consecutive-sequence",
+ "frontendId": "128",
+ "title": "Longest Consecutive Sequence",
+ "category": "Arrays & Hashing",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().longestConsecutive(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

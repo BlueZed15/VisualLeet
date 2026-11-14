@@ -1,0 +1,24 @@
+{
+ "slug": "alien-dictionary",
+ "frontendId": "269",
+ "title": "Alien Dictionary",
+ "category": "Advanced Graphs",
+ "premium": true,
+ "anyOrder": false,
+ "multipleAnswers": true,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}",
+ "visible": [
+  "words"
+ ],
+ "call": "result = Solution().alienOrder(words)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true
+}

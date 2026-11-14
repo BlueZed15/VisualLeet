@@ -1,0 +1,43 @@
+{
+ "slug": "min-stack",
+ "frontendId": "155",
+ "title": "Min Stack",
+ "category": "Stack",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MinStack",
+ "methods": {
+  "MinStack": [],
+  "push": [
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ],
+  "pop": [],
+  "top": [],
+  "getMin": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MinStack(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

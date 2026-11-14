@@ -1,0 +1,50 @@
+{
+ "slug": "detect-squares",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2013",
+ "title": "Detect Squares",
+ "premium": false,
+ "meta": {
+  "classname": "DetectSquares",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer[]",
+      "name": "point"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer[]",
+      "name": "point"
+     }
+    ],
+    "name": "count",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"DetectSquares\",\"add\",\"add\",\"add\",\"count\",\"count\",\"add\",\"count\"]\n[[],[[3,10]],[[11,2]],[[3,2]],[[11,10]],[[14,8]],[[11,2]],[[11,10]]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, 1, 0, null, 2]"
+ ],
+ "anyOrder": false
+}

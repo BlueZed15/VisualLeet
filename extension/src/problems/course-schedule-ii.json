@@ -1,0 +1,29 @@
+{
+ "slug": "course-schedule-ii",
+ "frontendId": "210",
+ "title": "Course Schedule II",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": true,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numCourses",
+   "type": "integer"
+  },
+  {
+   "name": "prerequisites",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "numCourses = {numCourses}\nprerequisites = {prerequisites}",
+ "visible": [
+  "numCourses",
+  "prerequisites"
+ ],
+ "call": "result = Solution().findOrder(numCourses, prerequisites)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

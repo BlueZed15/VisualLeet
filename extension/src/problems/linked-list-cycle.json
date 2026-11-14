@@ -1,0 +1,33 @@
+{
+ "slug": "linked-list-cycle",
+ "frontendId": "141",
+ "title": "Linked List Cycle",
+ "category": "Linked List",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "integer[]",
+   "label": "head"
+  },
+  {
+   "name": "pos",
+   "type": "integer",
+   "label": "pos",
+   "hint": "index the tail links back to; -1 means no cycle"
+  }
+ ],
+ "helpers": [
+  "CycleList"
+ ],
+ "setup": "head = build_cycle_list({head}, {pos})",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().hasCycle(head)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true
+}

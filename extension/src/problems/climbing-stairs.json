@@ -1,0 +1,24 @@
+{
+ "slug": "climbing-stairs",
+ "frontendId": "70",
+ "title": "Climbing Stairs",
+ "category": "1-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().climbStairs(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

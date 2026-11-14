@@ -1,0 +1,34 @@
+{
+ "slug": "longest-common-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1143",
+ "title": "Longest Common Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "longestCommonSubsequence",
+  "params": [
+   {
+    "name": "text1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "text2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcde\"\n\"ace\"",
+  "\"abc\"\n\"abc\"",
+  "\"abc\"\n\"def\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -2,8 +2,11 @@
 
 A Chrome (MV3) extension that runs your Python DSA solution entirely in the
 browser and shows a Python Tutor-style step-by-step visualization. Spec:
-`../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with a basic
-design; acceptance results in [`acceptance/`](acceptance/) (43/43 automated checks).
+`../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with the dark
+v0.1 design from [`design/`](design/), one-click visualization of LeetCode
+test cases backed by a checked problem database (all NeetCode 150);
+acceptance results in [`acceptance/`](acceptance/) (55/55 automated checks),
+screenshots of every UI state in [`acceptance/states/`](acceptance/states/).
 Picking up the work? Start with [`HANDOVER.md`](HANDOVER.md).
 
 The archive in `../OnlinePythonTutor-Backup/` is **not modified**; the desktop
@@ -20,27 +23,68 @@ npm run build:extension
 Chrome → `chrome://extensions` → Developer mode → **Load unpacked** →
 `extension/dist/extension`. Pin the VisualLeet icon.
 
-1. On a LeetCode problem (editor set to **Python3**), click the VisualLeet icon.
-   That lets VisualLeet read that tab, and opens (or focuses) the VisualLeet tab.
-2. **Import LeetCode editor** copies the whole solution, adds the helpers it
-   needs to Setup (typing, `ListNode` / `TreeNode` / `NestedInteger` builders),
-   and drafts a Test call from the problem's first example. Check and edit it.
-   **Import selection** copies what you selected on any normal web page.
-   Or paste into the boxes, or pick an Example.
-3. **Visualize** (Ctrl+Enter), then step with the slider or First / Prev /
-   Next / Last. **Stop** ends a long run; **Reset runtime** restarts Python.
+### On LeetCode: one click
 
-What runs is exactly Setup + Solution + Test call, joined in that order, and
-the visualizer shows that combined program. Code that only defines things gets
-a prompt to add a test call instead of running. `input()` reads from "Input
-lines". Limits: 1,000 steps, 5 s, 64 KiB printed output, 10 MiB trace, 256 KiB
+1. On a LeetCode problem (editor set to **Python3**), pick the case you want
+   in LeetCode's **Testcase** panel (an example, one you added, or edited
+   values; a failing case from a submission works too).
+2. Click **Visualize** in LeetCode's top bar (next to Submit), the VisualLeet icon, or press **Alt+V**. VisualLeet copies your
+   code and that case, switches to the open VisualLeet tab (or opens one) and visualizes it there.
+3. The left column is the **test case**: tabs for the examples, the case from
+   LeetCode and your own (**+** adds one; they're kept per problem), one box
+   per input (checked as you type), the expected output for examples and a
+   ✓/✗ verdict after the run. Below: **Your code**, the **Call** that runs it
+   (editable) and the hidden **Setup**. Step with the slider or First / Prev /
+   Next / Last. **From LeetCode tab** reads that tab again.
+
+What runs: hidden setup (LeetCode's usual imports, `ListNode`/`TreeNode`
+classes, your inputs) without being traced, then your code + the call. The
+visualization shows only your code, the call and the inputs. The setup for
+each problem comes from VisualLeet's database (`src/problems/`): all 150
+NeetCode problems, each checked against LeetCode's examples. Other problems
+open in paste mode with a drafted test call.
+
+### Paste mode (any Python)
+
+**Paste mode** (top right) has the Solution / Test call / Setup / input()
+editors: paste, use **Import selection** (copies what you selected on any
+page you opened VisualLeet from) or pick an Example, then **Visualize**
+(Ctrl+Enter). **Stop** ends a long run; **Reset** restarts Python.
+
+In paste mode what runs is exactly Setup + Solution + Test call, joined in
+that order, and the visualizer shows that combined program. Code that only
+defines things gets a prompt to add a test call instead of running. `input()`
+reads lines from the input() tab.
+
+Limits (both modes): 1,000 steps, 5 s, 64 KiB printed output, 10 MiB trace, 256 KiB
 source. Hitting one is reported ("limit reached" / "timed out"); a partial
 result is never shown as complete.
 
-Imports are best-effort. If the page can't be read (protected `chrome://`
+Reading pages is best-effort. If a page can't be read (protected `chrome://`
 pages, a tab that navigated since you clicked the icon, a LeetCode page whose
-editor hasn't loaded, a non-Python editor) you get an explanation, and your
-current code is left alone.
+editor hasn't loaded, a non-Python editor, the Testcase panel closed) you get
+an explanation, nothing older is run in its place, and your current code is
+left alone.
+
+## Problem database
+
+`src/problems/<slug>.json` (shipped, ~105 KB for 150 files) + `index.json`.
+Each file holds the problem's input boxes (names and LeetCode types), the
+hidden setup and the call, with `{box}` slots the extension fills with the
+case. Files can be edited by hand. They are made and checked by:
+
+```powershell
+node scripts/collect-problems.mjs   # facts from leetcode.com -> problems/collected/ (dev only)
+node scripts/build-db.mjs           # -> src/problems/*.json
+node scripts/verify-db.mjs          # known-good solutions (problems/solutions/) on LeetCode's
+                                    # examples, through the real tracer; stamps "verified"
+```
+
+Hand-written entries (`problems/handwritten.json`) cover problems whose test
+input doesn't match the function (Linked List Cycle's `pos`, random pointers,
+Clone Graph, LCA by value, Codec problems) and the 7 Premium ones.
+`problems/overrides.json` lists problems that accept any order or several
+answers. Verified 2026-11-15: 150/150.
 
 ## Architecture
 
@@ -66,17 +110,19 @@ blob: workers  (Pyodide 314.0.8 / Python 3.14.2 + forked tracer; fetch served fr
   through Pyodide's JS bridge that tries `chrome`, XHR, fetch (including the
   original `fetch`), `importScripts`, WebSocket and IndexedDB: all blocked,
   with CSP violation reports. User code can't `import js` at all (tracer allowlist).
-- Permissions: `activeTab`, `scripting`. No host permissions.
+- Permissions: `activeTab`, `scripting`, `storage` (hand-off to the VisualLeet tab), and access to leetcode.com / leetcode.cn (for the Visualize button in LeetCode's top bar; Chrome shows "Read and change your data on leetcode.com"). Shortcut: Alt+V.
 
 ## Tests
 
 ```powershell
 cd extension
-node --test tests/                       # program assembly + LeetCode test-call drafting (11)
+node --test tests/                       # program assembly, LeetCode values/types, database entries (21)
 npm run build:extension-test             # real extension + host access to 127.0.0.1 and leetcode.com
-node scripts/acceptance.mjs              # 43 checks in headless Chrome -> acceptance/
+node scripts/acceptance.mjs              # 55 checks in headless Chrome -> acceptance/
+npm run build:extension
+node scripts/shoot-states.mjs            # screenshot every UI state -> acceptance/states/
 cd ..
-.venv\Scripts\python.exe -m unittest discover -s extension\tests -p "test_*.py"   # tracer (7)
+.venv\Scripts\python.exe -m unittest discover -s extension\tests -p "test_*.py"   # tracer (14)
 ```
 
 The test build exists because automation can't click the toolbar icon to grant
@@ -120,8 +166,9 @@ measured in the spike: 3.3 ms median.
   its functions appear in the Global frame.
 - A return value that is a tree prints as a node object; step through the
   visualization to see its structure.
-- The design is intentionally plain; visual design is being explored
-  separately in `design/`.
+- Design: dark v0.1 only (no light mode yet). The visualizer's own controls
+  (First/Prev/Next/Last, slider, legend) are restyled, not replaced.
+  `acceptance/ui-*.png` show the earlier plain design.
 
 ## Development layout
 
@@ -130,7 +177,8 @@ measured in the spike: 3.3 ms median.
 | --- | --- |
 | `src/manifest.json` | MV3 manifest: background worker, sandbox page, CSPs |
 | `src/background/background.js` | Toolbar button, source tab, selection and LeetCode importers |
-| `src/ui/` | Extension page: `ui.js` controller, `prepare.js` program assembly and LeetCode drafts, `examples.js` |
+| `src/ui/` | Extension page: `ui.js` controller, `prepare.js` program assembly and LeetCode drafts, `examples.js`; styles `ui.css`, `tokens.css`, `renderer-dark.css` (ported from `design/`) |
+| `scripts/shoot-states.mjs` | Screenshots of the real extension in every UI state -> `acceptance/states/` |
 | `src/runner/sandbox.*` | Sandboxed runner host: active + spare workers, watchdog, message checks |
 | `src/runner/worker.js` | Python worker: loads Pyodide from in-memory assets, runs the tracer |
 | `scripts/build-extension.mjs` | Builds `dist/extension` (or `dist/extension-test` with `--test`) |
@@ -217,6 +265,13 @@ See the diff:
    it back. The choice persists across steps for that object.
    Hidden items are not drawn, so arrows from hidden items are not shown
    until expanded.
+5. **Arrows stay attached when the page moves** (`arrow-layer.ts`): the
+   arrow SVG's containing block is now the data container, so arrows scroll
+   and move with the objects, and a ResizeObserver redraws them when the
+   container or its children change size. Before, scrolling the visualizer
+   sideways left arrows 113 px off, and the narrow stacked layout 918 px;
+   after, ≤0.1 px in every case measured. The compare page is still
+   identical on all 12 traces.
 
 ## Tracer changes (`src/python/pg_encoder.py`)
 

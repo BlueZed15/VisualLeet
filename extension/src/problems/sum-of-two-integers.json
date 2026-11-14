@@ -1,0 +1,29 @@
+{
+ "slug": "sum-of-two-integers",
+ "frontendId": "371",
+ "title": "Sum of Two Integers",
+ "category": "Bit Manipulation",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}",
+ "visible": [
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().getSum(a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

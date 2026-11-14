@@ -1,0 +1,29 @@
+{
+ "slug": "edit-distance",
+ "frontendId": "72",
+ "title": "Edit Distance",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word1",
+   "type": "string"
+  },
+  {
+   "name": "word2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word1 = {word1}\nword2 = {word2}",
+ "visible": [
+  "word1",
+  "word2"
+ ],
+ "call": "result = Solution().minDistance(word1, word2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

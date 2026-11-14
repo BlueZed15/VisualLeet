@@ -1,0 +1,30 @@
+{
+ "slug": "merge-intervals",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "56",
+ "title": "Merge Intervals",
+ "premium": false,
+ "meta": {
+  "name": "merge",
+  "params": [
+   {
+    "name": "intervals",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,3],[2,6],[8,10],[15,18]]",
+  "[[1,4],[4,5]]",
+  "[[4,7],[1,4]]"
+ ],
+ "exampleOutputs": [
+  "[[1,6],[8,10],[15,18]]",
+  "[[1,5]]",
+  "[[1,7]]"
+ ],
+ "anyOrder": false
+}

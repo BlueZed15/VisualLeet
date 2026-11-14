@@ -4,7 +4,7 @@
     "headless": true,
     "platform": "Windows_NT 10.0.26300",
     "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
-    "date": "2026-11-14T08:40:52.753Z",
+    "date": "2026-11-14T13:31:04.302Z",
     "python": "3.14.2",
     "pyodide": "314.0.8"
   },
@@ -15,8 +15,8 @@
       "pass": true,
       "detail": {
         "python": "3.14.2",
-        "ms": 2319,
-        "wasmCompiledOnceMs": 19.199999999953434
+        "ms": 2635,
+        "wasmCompiledOnceMs": 20.5
       }
     },
     {
@@ -149,7 +149,7 @@
       "name": "Syntax error: status failed, message has the line",
       "pass": true,
       "detail": {
-        "msg": "Line 1: SyntaxError: invalid syntax (<string>, line 1)"
+        "msg": "Line 1: SyntaxError: invalid syntax (<string>, line 1)\nThe program didn't start. Fix the line and press Visualize."
       }
     },
     {
@@ -196,7 +196,7 @@
       "name": "Definitions without a call prompt for a test call (not run)",
       "pass": true,
       "detail": {
-        "msg": "Your code only defines functions or classes, so nothing would run. Add a test call, e.g. print(Solution().twoSum([2, 7, 11, 15], 9))"
+        "msg": "Your code only defines functions or classes, so nothing would run. Add a test call, e.g. print(Solution().twoSum([2, 7, 11, 15], 9))\nNeeds input. The program called input(\"second? \") but there are no more input lines. Add a line in the input() tab and visualize again."
       }
     },
     {
@@ -251,8 +251,8 @@
       "name": "Native loop killed by the 5 s watchdog; spare takes over at once",
       "pass": true,
       "detail": {
-        "killedAfterMs": 5018,
-        "readyAgainMs": 2
+        "killedAfterMs": 5014,
+        "readyAgainMs": 1
       }
     },
     {
@@ -261,8 +261,8 @@
       "pass": true,
       "detail": {
         "res": "stopped",
-        "stoppedMs": 3.5999999998603016,
-        "readyMs": 0.10000000009313226
+        "stoppedMs": 6.399999998509884,
+        "readyMs": 0.10000000149011612
       }
     },
     {
@@ -290,7 +290,7 @@
       "name": "Large output stops with an explicit output limit",
       "pass": true,
       "detail": {
-        "msg": "Incomplete: Stopped: the program printed more than 64 KiB of output. Showing the steps recorded so f"
+        "msg": "Incomplete trace. Stopped: the program printed more than 64 KiB of output. Showing the steps recorde"
       }
     },
     {
@@ -298,7 +298,7 @@
       "name": "Trace over 10 MiB is refused with an explanation",
       "pass": true,
       "detail": {
-        "msg": "Trace is 49.5 MiB, over the 10 MiB limit."
+        "msg": "Couldn't visualize this run\nTrace is 49.5 MiB, over the 10 MiB limit."
       }
     },
     {
@@ -308,7 +308,7 @@
       "detail": {
         "before": {
           "iframes": 1,
-          "arrowLayers": 1
+          "arrowLayers": 0
         },
         "after": {
           "iframes": 1,
@@ -316,12 +316,12 @@
           "vizChildren": 1
         },
         "domNodesBfs": [
-          133,
-          133
+          134,
+          134
         ],
         "domNodesTree": [
-          181,
-          181
+          182,
+          182
         ]
       }
     },
@@ -331,7 +331,7 @@
       "pass": true,
       "detail": {
         "burstRunsOnOneInterpreter": 12,
-        "swappedAfterMs": 1038,
+        "swappedAfterMs": 952,
         "nextRunInterpreterRun": 1,
         "spareInitErrors": 0
       }
@@ -361,45 +361,195 @@
       }
     },
     {
-      "group": "imports",
-      "name": "LeetCode editor: whole model imported, including lines out of view",
+      "group": "leetcode",
+      "name": "One click: the selected LeetCode case runs at once, in LeetCode mode",
       "pass": true,
       "detail": {
-        "lines": 77,
-        "language": "python3",
-        "title": "1. Two Sum"
+        "status": "complete",
+        "selected": "Example 2",
+        "stdout": "[1,2]\n"
       }
     },
     {
-      "group": "imports",
-      "name": "LeetCode editor: test call drafted from Example 1, typing helper added",
+      "group": "leetcode",
+      "name": "Problem found by its name (stale __NEXT_DATA__ ignored), checked database entry",
       "pass": true,
       "detail": {
-        "call": "nums = [2,7,11,15]\ntarget = 9\nprint(Solution().twoSum(nums, target))"
+        "title": "1. Two Sum",
+        "badge": "✓ checked setup"
       }
     },
     {
-      "group": "imports",
-      "name": "Imported LeetCode solution runs",
+      "group": "leetcode",
+      "name": "Whole editor model read, including lines out of view",
       "pass": true,
       "detail": {
-        "stdout": "[0, 1]\n"
+        "lines": 77
       }
     },
     {
-      "group": "imports",
-      "name": "Non-Python editor: explained, nothing converted, edits kept",
+      "group": "leetcode",
+      "name": "Example case: output compared with the expected output (✓)",
       "pass": true,
       "detail": {
-        "msg": "The LeetCode editor is set to cpp. VisualLeet only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept."
+        "kind": "match",
+        "text": "✓ Output [1,2] matches the expected output."
       }
     },
     {
-      "group": "imports",
-      "name": "LeetCode page without an editor: fallback offered",
+      "group": "leetcode",
+      "name": "Setup is hidden: inputs shown, helpers and imports not, no setup steps",
       "pass": true,
       "detail": {
-        "error": "Couldn't find LeetCode's code editor on that page (it may still be loading). Try again, use Import selection, or paste your code."
+        "globals": [
+          "nums",
+          "target",
+          "Solution",
+          "result"
+        ],
+        "steps": 16
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Custom LeetCode case copied as \"From LeetCode\" and run; no verdict without an expected output",
+      "pass": true,
+      "detail": {
+        "selected": "From LeetCode",
+        "stdout": "[0,2]\n",
+        "verdict": {
+          "kind": "output",
+          "text": "Output [0,2]"
+        }
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Invalid test-case value: explained under its box, not run",
+      "pass": true,
+      "detail": {
+        "status": "rejected",
+        "reason": "case",
+        "error": "Missing a value"
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Linked list: [1,2] built hidden, reversed output [2,1] ✓, ListNode helpers not shown",
+      "pass": true,
+      "detail": {
+        "stdout": "[2,1]\n",
+        "verdict": {
+          "kind": "match",
+          "text": "✓ Output [2,1] matches the expected output."
+        },
+        "globals": [
+          "head",
+          "Solution",
+          "result"
+        ]
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Design problem (LRU Cache): operations run on the user's class, output ✓",
+      "pass": true,
+      "detail": {
+        "stdout": "[null,null,null,1,null,-1,null,-1,3,4]\n",
+        "verdict": {
+          "kind": "match",
+          "text": "✓ Output [null,null,null,1,null,-1,null,-1,3,4] matches the expected output."
+        }
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Non-Python editor: explained, nothing run, code here kept",
+      "pass": true,
+      "detail": {
+        "message": "The LeetCode editor is set to cpp. VisualLeet only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept."
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Problem not in the database: paste mode, code imported, explained",
+      "pass": true,
+      "detail": {
+        "mode": "manual",
+        "message": "\"Not In The Database\" isn't in VisualLeet's problem database yet, so you're in paste mode: check the drafted test call.\n"
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "LeetCode page without data or editor: explained, nothing run",
+      "pass": true,
+      "detail": {
+        "message": "\"Loading\" isn't in VisualLeet's problem database yet. Couldn't read the code editor either (is the page still loading?)."
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Icon click hand-off: a new VisualLeet tab takes the case once and visualizes it",
+      "pass": true,
+      "detail": {
+        "status": "complete",
+        "left": null
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "The user's own cases are kept per problem across reloads",
+      "pass": true,
+      "detail": {
+        "cases": [
+          [
+            "Example 1",
+            "example"
+          ],
+          [
+            "Example 2",
+            "example"
+          ],
+          [
+            "Example 3",
+            "example"
+          ],
+          [
+            "Case 1",
+            "yours"
+          ]
+        ]
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "Selected case read while LeetCode's Testcase panel is hidden (Test Result shown)",
+      "pass": true,
+      "detail": {
+        "status": "complete",
+        "selected": "Example 2",
+        "message": ""
+      }
+    },
+    {
+      "group": "leetcode",
+      "name": "LeetCode top bar has a Visualize button",
+      "pass": true
+    },
+    {
+      "group": "leetcode",
+      "name": "Top-bar button: the open VisualLeet tab is updated in place (no new tab, no reload)",
+      "pass": true,
+      "detail": {
+        "tabsBefore": 3,
+        "tabsAfter": 3,
+        "selected": "Example 3",
+        "status": "complete",
+        "sameTab": true,
+        "verdict": {
+          "kind": "match",
+          "text": "✓ Output [0,1] matches the expected output."
+        }
       }
     },
     {
@@ -407,7 +557,7 @@
       "name": "Protected chrome:// page: graceful refusal, edits kept",
       "pass": true,
       "detail": {
-        "error": "VisualLeet can't read that page. Pages like chrome:// and the Chrome Web Store are protected, and access ends when the page navigates. Click the VisualLeet toolbar button again on the page you want, or paste your code instead."
+        "error": "VisualLeet can't read that page right now. Access lasts until the page reloads or navigates: click the VisualLeet icon (or press Alt+V) on that page again."
       }
     },
     {
@@ -415,7 +565,7 @@
       "name": "Packaged examples run and render with the network off",
       "pass": true,
       "detail": {
-        "initMs": 1766
+        "initMs": 2129
       }
     },
     {
@@ -429,83 +579,83 @@
     }
   ],
   "timings": {
-    "coldStartMs": 2319,
-    "watchdogKillMs": 5018,
-    "readyAfterTimeoutMs": 2,
-    "stopMs": 4,
+    "coldStartMs": 2635,
+    "watchdogKillMs": 5014,
+    "readyAfterTimeoutMs": 1,
+    "stopMs": 6,
     "readyAfterStopMs": 0,
     "BFS": {
       "execMs": {
-        "median": 12.8,
-        "worst": 16.6
+        "median": 12,
+        "worst": 15.7
       },
       "transferMs": {
-        "median": 5,
-        "worst": 6.8
+        "median": 3.9,
+        "worst": 7.1
       },
       "parseMs": {
         "median": 0.2,
-        "worst": 0.4
+        "worst": 0.3
       },
       "renderMs": {
-        "median": 10.4,
-        "worst": 20.1
+        "median": 10.6,
+        "worst": 23.9
       },
       "firstViewMs": {
-        "median": 29.3,
+        "median": 28.7,
         "worst": 40.3
       }
     },
     "Sliding window": {
       "execMs": {
-        "median": 7.8,
-        "worst": 8.8
+        "median": 8.1,
+        "worst": 9.9
       },
       "transferMs": {
-        "median": 4.7,
-        "worst": 6.3
+        "median": 3.9,
+        "worst": 5.5
       },
       "parseMs": {
         "median": 0.1,
         "worst": 0.2
       },
       "renderMs": {
-        "median": 8.6,
+        "median": 9.1,
         "worst": 14.3
       },
       "firstViewMs": {
-        "median": 22.5,
-        "worst": 27.6
+        "median": 21.8,
+        "worst": 26.5
       }
     },
     "Two Sum": {
       "execMs": {
-        "median": 32.1,
-        "worst": 37.8
+        "median": 25.9,
+        "worst": 37.5
       },
       "transferMs": {
-        "median": 7.5,
-        "worst": 8.1
+        "median": 5.5,
+        "worst": 7.6
       },
       "parseMs": {
-        "median": 0.6,
-        "worst": 2.5
+        "median": 0.7,
+        "worst": 2.4
       },
       "renderMs": {
-        "median": 7.7,
-        "worst": 11
+        "median": 10.5,
+        "worst": 12
       },
       "firstViewMs": {
-        "median": 47.6,
-        "worst": 56.9
+        "median": 45,
+        "worst": 53.9
       }
     },
     "stepNavigation": {
-      "medianMs": 0,
-      "worstMs": 50.1
+      "medianMs": 5,
+      "worstMs": 9.5
     },
-    "reloadStartMs": 2339
+    "reloadStartMs": 2165
   },
-  "passed": 43,
-  "total": 43
+  "passed": 55,
+  "total": 55
 }

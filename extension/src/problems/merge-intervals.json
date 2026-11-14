@@ -1,0 +1,24 @@
+{
+ "slug": "merge-intervals",
+ "frontendId": "56",
+ "title": "Merge Intervals",
+ "category": "Intervals",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}",
+ "visible": [
+  "intervals"
+ ],
+ "call": "result = Solution().merge(intervals)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

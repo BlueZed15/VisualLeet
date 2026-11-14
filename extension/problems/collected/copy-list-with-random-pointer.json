@@ -1,0 +1,48 @@
+{
+ "slug": "copy-list-with-random-pointer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "138",
+ "title": "Copy List with Random Pointer",
+ "premium": false,
+ "meta": {
+  "name": "copyRandomList",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "csharp",
+   "javascript",
+   "python3",
+   "golang",
+   "swift",
+   "kotlin",
+   "ruby",
+   "c",
+   "scala",
+   "php",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class _Node {\n    val: number\n    next: _Node | null\n    random: _Node | null\n\n    constructor(val?: number, next?: _Node, random?: _Node) {\n        this.val = (val===undefined ? 0 : val)\n        this.next = (next===undefined ? null : next)\n        this.random = (random===undefined ? null : random)\n    }\n}\n"
+ },
+ "exampleInputs": [
+  "[[7,null],[13,0],[11,4],[10,2],[1,0]]",
+  "[[1,1],[2,1]]",
+  "[[3,null],[3,0],[3,null]]"
+ ],
+ "exampleOutputs": [
+  "[[7,null],[13,0],[11,4],[10,2],[1,0]]",
+  "[[1,1],[2,1]]",
+  "[[3,null],[3,0],[3,null]]"
+ ],
+ "anyOrder": false
+}

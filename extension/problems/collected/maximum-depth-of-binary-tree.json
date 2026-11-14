@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-depth-of-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "104",
+ "title": "Maximum Depth of Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "maxDepth",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[1,null,2]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

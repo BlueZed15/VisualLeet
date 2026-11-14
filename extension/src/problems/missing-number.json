@@ -1,0 +1,24 @@
+{
+ "slug": "missing-number",
+ "frontendId": "268",
+ "title": "Missing Number",
+ "category": "Bit Manipulation",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().missingNumber(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

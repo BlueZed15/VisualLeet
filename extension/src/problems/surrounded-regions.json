@@ -1,0 +1,24 @@
+{
+ "slug": "surrounded-regions",
+ "frontendId": "130",
+ "title": "Surrounded Regions",
+ "category": "Graphs",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "Solution().solve(board)\nprint(leet_str(board))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

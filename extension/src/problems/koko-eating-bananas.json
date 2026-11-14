@@ -1,0 +1,29 @@
+{
+ "slug": "koko-eating-bananas",
+ "frontendId": "875",
+ "title": "Koko Eating Bananas",
+ "category": "Binary Search",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "integer[]"
+  },
+  {
+   "name": "h",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}\nh = {h}",
+ "visible": [
+  "piles",
+  "h"
+ ],
+ "call": "result = Solution().minEatingSpeed(piles, h)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

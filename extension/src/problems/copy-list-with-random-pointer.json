@@ -1,0 +1,28 @@
+{
+ "slug": "copy-list-with-random-pointer",
+ "frontendId": "138",
+ "title": "Copy List with Random Pointer",
+ "category": "Linked List",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "list<list<integer?>>",
+   "label": "head",
+   "hint": "[value, index of the random node or null] per node"
+  }
+ ],
+ "helpers": [
+  "RandomList"
+ ],
+ "setup": "head = build_random_list({head})",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().copyRandomList(head)\nprint(leet_str(random_list_values(result)))",
+ "source": "hand-written",
+ "verified": true
+}

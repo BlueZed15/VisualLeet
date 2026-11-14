@@ -1,0 +1,58 @@
+{
+ "slug": "time-based-key-value-store",
+ "frontendId": "981",
+ "title": "Time Based Key-Value Store",
+ "category": "Binary Search",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "TimeMap",
+ "methods": {
+  "TimeMap": [],
+  "set": [
+   {
+    "name": "key",
+    "type": "string"
+   },
+   {
+    "name": "value",
+    "type": "string"
+   },
+   {
+    "name": "timestamp",
+    "type": "integer"
+   }
+  ],
+  "get": [
+   {
+    "name": "key",
+    "type": "string"
+   },
+   {
+    "name": "timestamp",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = TimeMap(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

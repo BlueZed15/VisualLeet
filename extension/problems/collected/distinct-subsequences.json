@@ -1,0 +1,32 @@
+{
+ "slug": "distinct-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "115",
+ "title": "Distinct Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "numDistinct",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"rabbbit\"\n\"rabbit\"",
+  "\"babgbag\"\n\"bag\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

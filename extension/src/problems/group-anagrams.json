@@ -1,0 +1,24 @@
+{
+ "slug": "group-anagrams",
+ "frontendId": "49",
+ "title": "Group Anagrams",
+ "category": "Arrays & Hashing",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "strs = {strs}",
+ "visible": [
+  "strs"
+ ],
+ "call": "result = Solution().groupAnagrams(strs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

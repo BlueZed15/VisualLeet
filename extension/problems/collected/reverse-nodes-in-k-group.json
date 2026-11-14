@@ -1,0 +1,32 @@
+{
+ "slug": "reverse-nodes-in-k-group",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "25",
+ "title": "Reverse Nodes in k-Group",
+ "premium": false,
+ "meta": {
+  "name": "reverseKGroup",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2",
+  "[1,2,3,4,5]\n3"
+ ],
+ "exampleOutputs": [
+  "[2,1,4,3,5]",
+  "[3,2,1,4,5]"
+ ],
+ "anyOrder": false
+}

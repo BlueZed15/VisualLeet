@@ -1,0 +1,24 @@
+{
+ "slug": "trapping-rain-water",
+ "frontendId": "42",
+ "title": "Trapping Rain Water",
+ "category": "Two Pointers",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "height",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "height = {height}",
+ "visible": [
+  "height"
+ ],
+ "call": "result = Solution().trap(height)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

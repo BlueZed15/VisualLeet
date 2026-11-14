@@ -1,0 +1,39 @@
+{
+ "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+ "frontendId": "235",
+ "title": "Lowest Common Ancestor of a Binary Search Tree",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode",
+   "label": "root"
+  },
+  {
+   "name": "p",
+   "type": "integer",
+   "label": "p",
+   "hint": "value of a node in the tree"
+  },
+  {
+   "name": "q",
+   "type": "integer",
+   "label": "q",
+   "hint": "value of a node in the tree"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\np = find_node(root, {p})\nq = find_node(root, {q})",
+ "visible": [
+  "root",
+  "p",
+  "q"
+ ],
+ "call": "result = Solution().lowestCommonAncestor(root, p, q)\nprint(leet_str(result.val if result else None))",
+ "source": "hand-written",
+ "verified": true
+}

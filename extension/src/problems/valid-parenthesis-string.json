@@ -1,0 +1,24 @@
+{
+ "slug": "valid-parenthesis-string",
+ "frontendId": "678",
+ "title": "Valid Parenthesis String",
+ "category": "Greedy",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().checkValidString(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,51 @@
+/* Ported from design/tokens.css (dark v0.1). Keep in sync when the design changes. */
+/* VisualLeet design tokens — dark first, LeetCode-adjacent. */
+:root {
+  /* surfaces (darkest → raised) */
+  --bg-0: #1a1a1a;      /* page */
+  --bg-1: #262626;      /* panels */
+  --bg-2: #303030;      /* inputs, raised cards */
+  --bg-3: #3d3d3d;      /* hover */
+  --line: #3a3a3a;      /* hairlines */
+  --line-strong: #4a4a4a;
+
+  /* text */
+  --text-1: #eff1f6;
+  --text-2: #b6bac2;
+  --text-3: #8a8f98;
+
+  /* brand + semantic (LeetCode family) */
+  --brand: #ffa116;      /* VisualLeet orange */
+  --brand-soft: rgba(255, 161, 22, .14);
+  --run: #2cbb5d;        /* Visualize / success */
+  --run-soft: rgba(44, 187, 93, .14);
+  --teal: #00b8a3;
+  --warn: #ffc01e;
+  --warn-soft: rgba(255, 192, 30, .12);
+  --error: #ef4743;
+  --error-soft: rgba(239, 71, 67, .12);
+  --info: #3c9cff;
+  --info-soft: rgba(60, 156, 255, .12);
+
+  /* visualization */
+  --frame: #2c2c2c;
+  --frame-active: #2f2a20;
+  --obj: #2e2b25;
+  --obj-line: #57503f;
+  --obj-key: #37322a;
+  --arrow: #6cb6ff;
+  --arrow-dim: #5a5a5a;
+  --val-str: #7ee2a8;
+  --val-num: #79b8ff;
+  --val-kw: #d2a8ff;
+
+  /* type */
+  --font-ui: -apple-system, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-code: "JetBrains Mono", "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+  --fs-xs: 11px; --fs-sm: 12px; --fs-md: 13px; --fs-lg: 15px; --fs-xl: 20px; --fs-2xl: 28px;
+
+  /* shape + space */
+  --r-sm: 5px; --r-md: 8px; --r-lg: 12px; --r-pill: 999px;
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px;
+  --shadow: 0 6px 24px rgba(0, 0, 0, .35);
+}

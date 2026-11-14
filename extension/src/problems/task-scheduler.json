@@ -1,0 +1,29 @@
+{
+ "slug": "task-scheduler",
+ "frontendId": "621",
+ "title": "Task Scheduler",
+ "category": "Heap / Priority Queue",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "character[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}\nn = {n}",
+ "visible": [
+  "tasks",
+  "n"
+ ],
+ "call": "result = Solution().leastInterval(tasks, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

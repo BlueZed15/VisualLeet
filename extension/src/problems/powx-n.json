@@ -1,0 +1,29 @@
+{
+ "slug": "powx-n",
+ "frontendId": "50",
+ "title": "Pow(x, n)",
+ "category": "Math & Geometry",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "double"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\nn = {n}",
+ "visible": [
+  "x",
+  "n"
+ ],
+ "call": "result = Solution().myPow(x, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "top-k-frequent-elements",
+ "frontendId": "347",
+ "title": "Top K Frequent Elements",
+ "category": "Arrays & Hashing",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}",
+ "visible": [
+  "nums",
+  "k"
+ ],
+ "call": "result = Solution().topKFrequent(nums, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

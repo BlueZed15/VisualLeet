@@ -1,0 +1,30 @@
+{
+ "slug": "longest-substring-without-repeating-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "3",
+ "title": "Longest Substring Without Repeating Characters",
+ "premium": false,
+ "meta": {
+  "name": "lengthOfLongestSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcabcbb\"",
+  "\"bbbbb\"",
+  "\"pwwkew\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

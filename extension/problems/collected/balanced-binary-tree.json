@@ -1,0 +1,30 @@
+{
+ "slug": "balanced-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "110",
+ "title": "Balanced Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "isBalanced",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[1,2,2,3,3,null,null,4,4]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

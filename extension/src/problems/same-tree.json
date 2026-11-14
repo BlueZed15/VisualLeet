@@ -1,0 +1,29 @@
+{
+ "slug": "same-tree",
+ "frontendId": "100",
+ "title": "Same Tree",
+ "category": "Trees",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "p",
+   "type": "TreeNode"
+  },
+  {
+   "name": "q",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "p = {p}\nq = {q}",
+ "visible": [
+  "p",
+  "q"
+ ],
+ "call": "result = Solution().isSameTree(p, q)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

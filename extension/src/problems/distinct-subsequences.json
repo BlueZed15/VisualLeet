@@ -1,0 +1,29 @@
+{
+ "slug": "distinct-subsequences",
+ "frontendId": "115",
+ "title": "Distinct Subsequences",
+ "category": "2-D Dynamic Programming",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}",
+ "visible": [
+  "s",
+  "t"
+ ],
+ "call": "result = Solution().numDistinct(s, t)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": true
+}

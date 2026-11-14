@@ -1,0 +1,28 @@
+{
+ "slug": "diameter-of-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "543",
+ "title": "Diameter of Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "diameterOfBinaryTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]",
+  "[1,2]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "evaluate-reverse-polish-notation",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "150",
+ "title": "Evaluate Reverse Polish Notation",
+ "premium": false,
+ "meta": {
+  "name": "evalRPN",
+  "params": [
+   {
+    "name": "tokens",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"2\",\"1\",\"+\",\"3\",\"*\"]",
+  "[\"4\",\"13\",\"5\",\"/\",\"+\"]",
+  "[\"10\",\"6\",\"9\",\"3\",\"+\",\"-11\",\"*\",\"/\",\"*\",\"17\",\"+\",\"5\",\"+\"]"
+ ],
+ "exampleOutputs": [
+  "9",
+  "6",
+  "22"
+ ],
+ "anyOrder": false
+}

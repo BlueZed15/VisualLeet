@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-integer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "7",
+ "title": "Reverse Integer",
+ "premium": false,
+ "meta": {
+  "name": "reverse",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "123",
+  "-123",
+  "120"
+ ],
+ "exampleOutputs": [
+  "321",
+  "-321",
+  "21"
+ ],
+ "anyOrder": false
+}

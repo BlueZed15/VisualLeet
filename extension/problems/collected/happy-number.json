@@ -1,0 +1,28 @@
+{
+ "slug": "happy-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "202",
+ "title": "Happy Number",
+ "premium": false,
+ "meta": {
+  "name": "isHappy",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "19",
+  "2"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

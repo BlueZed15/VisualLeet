@@ -1,0 +1,28 @@
+{
+ "slug": "min-cost-to-connect-all-points",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1584",
+ "title": "Min Cost to Connect All Points",
+ "premium": false,
+ "meta": {
+  "name": "minCostConnectPoints",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0],[2,2],[3,10],[5,2],[7,0]]",
+  "[[3,12],[-2,5],[-4,1]]"
+ ],
+ "exampleOutputs": [
+  "20",
+  "18"
+ ],
+ "anyOrder": false
+}
