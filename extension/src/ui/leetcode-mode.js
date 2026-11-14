@@ -24,7 +24,7 @@ const sameTexts = (entry, a, b) => !!a && !!b && entry.boxes.every((x) => sameVa
 
 const badgeFor = (entry) => (entry.verified ? ["verified", "✓ checked setup"] : ["unchecked", "setup not checked yet"]);
 
-export function createLeetCodeMode(el, { onChange = () => {} } = {}) {
+export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {} } = {}) {
   let p = null;          // { slug, title, frontendId, anyOrder, cases: [], selectedId, callOverride }
   let entry = null;      // the problem's database file
   let counter = 1;
@@ -100,8 +100,8 @@ export function createLeetCodeMode(el, { onChange = () => {} } = {}) {
     el.badge.textContent = badge[1];
     el.badge.dataset.kind = badge[0];
     el.badge.title = badge[0] === "verified"
-      ? "This problem's setup in VisualLeet's database was checked against LeetCode's examples."
-      : "This problem's setup in VisualLeet's database hasn't been checked yet. If the result looks wrong, look at the Call and Setup tabs.";
+      ? "This problem's setup in LeetScope's database was checked against LeetCode's examples."
+      : "This problem's setup in LeetScope's database hasn't been checked yet. If the result looks wrong, look at the Call and Setup tabs.";
     renderTabs();
     renderCase();
   }
@@ -118,7 +118,7 @@ export function createLeetCodeMode(el, { onChange = () => {} } = {}) {
       b.tabIndex = c.id === p.selectedId ? 0 : -1;
       b.textContent = c.label;
       if (c.source === "leetcode") b.title = "The case that was selected in LeetCode's Testcase panel";
-      b.addEventListener("click", () => select(c.id));
+      b.addEventListener("click", () => { const changed = c.id !== p.selectedId; select(c.id); if (changed) onSelect(c.id); });
       return b;
     }));
   }

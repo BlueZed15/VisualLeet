@@ -1,48 +1,100 @@
-/* Ported from design/renderer-dark.css (dark v0.1), with additions marked "VisualLeet UI".
-   CSS only: the renderer source is unchanged. */
+/* Dark, tidy restyle of the Python Tutor renderer (overrides only; renderer source untouched).
+   Animations here never use transforms on anything an arrow attaches to: arrows
+   are measured once per step, so moving boxes would leave them pointing at air. */
+
 #viz div.ExecutionVisualizer { font-family: var(--font-ui); color: var(--text-1); background: transparent; }
+#viz a { color: var(--info); }
 
-/* code panel */
-#viz table#pyCodeOutput { font-family: var(--font-code); font-size: 13px; line-height: 1.55; border-color: var(--line) !important; background: var(--bg-0); }
-#viz table#pyCodeOutput .lineNo { color: var(--text-3); }
-#viz table#pyCodeOutput .cod { color: var(--text-1); }
-#viz #curLineArrow { fill: var(--brand) !important; }
+/* legacy chrome the extension replaces (step meter, input() tab, its own help text) */
+#viz #editCodeLinkDiv, #viz #rawUserInputDiv, #viz #printOutputDocs, #viz #uiControlsPane, #viz #legendDiv,
+#viz #codeFooterDocs, #viz #curInstr, #viz #executionSliderCaption, #viz .ui-resizable-handle,
+/* step controls live in the panel header now (the buttons stay in the DOM, hidden) */
+#viz #vcrControls, #viz #executionSlider, #viz #executionSliderFooter { display: none !important; }
+
+/* ---------- layout ---------- */
+#viz table.visualizer { width: 100%; border-spacing: 0; }
+#viz td.vizLayoutTd { vertical-align: top; padding: 0; }
+#viz div#codeDisplayDiv, #viz #pyCodeOutputDiv, #viz #progOutputs .ui-wrapper { width: 100% !important; }
+#viz div#dataViz { width: 100%; }
+#viz.vlNoRun div#dataViz, #viz.vlNoRun #progOutputs { display: none !important; }   /* syntax error: nothing ran */
+/* stacked (narrow panel): code card on top, data below */
+#viz.vlStacked #codAndNav { width: 100% !important; }
+/* wide panel: two cards side by side, each scrolling on its own.
+   Left: the code (full height) with the output under it. Right: frames and objects,
+   with the player's control bar docked under it (see ui.css). The arrow layer lives
+   in the right column, so making that column the scroller keeps arrows attached. */
+#viz.vlWide { flex: 1; min-height: 0; display: flex; }
+#viz.vlWide > div.ExecutionVisualizer { flex: 1; min-height: 0; min-width: 0; display: flex; }
+#viz.vlWide table.visualizer { display: flex; flex: 1; min-height: 0; min-width: 0; }
+/* only the layout table's own row (child selectors: the code table's rows must stay rows) */
+#viz.vlWide table.visualizer > tbody, #viz.vlWide table.visualizer > tbody > tr, #viz.vlWide table.visualizer > tr { display: contents; }
+#viz.vlWide td#vizLayoutTdFirst { display: flex; flex-direction: column; flex: none; min-height: 0; overflow-y: auto; overflow-x: hidden; }
+#viz.vlWide #codAndNav { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+#viz.vlWide div#codeDisplayDiv { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+#viz.vlWide div#pyCodeOutputDiv { flex: 1; min-height: 0; max-height: none !important; overflow: auto; }
+#viz.vlWide #progOutputs { flex: none; margin-top: 12px; }
+#viz.vlWide td#vizLayoutTdSecond { display: block; position: relative; flex: 1; min-width: 0; min-height: 0; overflow: auto;
+  margin: 0 0 var(--bar-h, 62px) 12px; padding: 4px 18px 18px;
+  background: var(--bg-0); border: 1px solid var(--line); border-bottom: 0; border-radius: var(--r-md) var(--r-md) 0 0; }
+#viz.vlWide div#stackHeader, #viz.vlWide div#heapHeader { margin-top: 10px; }
+
+#viz div#pyCodeOutputDiv { background: var(--bg-0); border: 1px solid var(--line); border-radius: var(--r-md); overflow-x: auto; }
+#viz table#pyCodeOutput td.cod { white-space: pre; }
+#viz table#pyCodeOutput { width: 100%; border: 0 !important; background: transparent; border-collapse: collapse;
+  font-family: var(--font-code); font-size: 13px; line-height: 1.6; }
+#viz table#pyCodeOutput td#gutterTD, #viz table#pyCodeOutput td.lineNo { width: 1%; white-space: nowrap; }
+#viz table#pyCodeOutput td.lineNo { color: #5f646c; padding-right: 10px; text-align: right; }
+#viz table#pyCodeOutput td.cod { width: 100%; color: var(--text-1); padding-right: 12px; transition: background-color .25s ease, box-shadow .25s ease; }
+#viz table#pyCodeOutput tr.vlCurLine td.cod { background: rgba(255,161,22,.11); box-shadow: inset 2px 0 0 var(--brand); }
+#viz table#pyCodeOutput tr.vlCurLine td.lineNo { color: var(--brand); font-weight: 700; }
+#viz table#pyCodeOutput tr.vlErrLine td.cod { background: rgba(239,71,67,.16); box-shadow: inset 2px 0 0 var(--error);
+  text-decoration: underline wavy rgba(239,71,67,.8); text-underline-offset: 4px; text-decoration-skip-ink: none; }
+#viz table#pyCodeOutput tr.vlErrLine td.lineNo { color: var(--error); font-weight: 700; }
+#viz #curLineArrow { fill: var(--brand) !important; filter: drop-shadow(0 0 3px rgba(255,161,22,.6)); }
 #viz #prevLineArrow { fill: #4f8a63 !important; }
-#viz #legendDiv, #viz #executionSliderCaption, #viz #printOutputDocs, #viz #codeFooterDocs { color: var(--text-3); }
-#viz #errorOutput { color: var(--error); }
-#viz #editCodeLinkDiv a, #viz a { color: var(--info); }
 
-/* step controls */
-#viz #vcrControls button {
-  font: 600 var(--fs-sm) var(--font-ui); color: var(--text-1); background: var(--bg-2);
-  border: 1px solid var(--line); border-radius: var(--r-sm); padding: 4px 10px; cursor: pointer;
-}
-#viz #vcrControls button:hover:not(:disabled) { background: var(--bg-3); }
-#viz #vcrControls button:disabled { opacity: .4; cursor: default; }
-#viz #curInstr { color: var(--text-2); font-size: var(--fs-sm); }
-#viz .ui-slider { background: var(--bg-2); border: 1px solid var(--line); height: 6px; border-radius: var(--r-pill); }
-#viz .ui-slider .ui-slider-handle { background: var(--brand); border: 2px solid var(--bg-0); border-radius: 50%; width: 14px !important; height: 14px !important; top: -5px; cursor: grab; }
+#viz #errorOutput { color: #ff9e9b; font-family: var(--font-code); font-size: var(--fs-sm); margin-top: 8px; white-space: pre-wrap; }
+#viz #errorOutput:not(:empty) { padding: 8px 10px; background: var(--error-soft); border: 1px solid rgba(239,71,67,.35); border-radius: var(--r-sm); }
+#viz #errorOutput a { display: none; }   /* the archive's "see UNSUPPORTED FEATURES" link */
 
-/* printed output */
-#viz #pyStdout { background: var(--bg-0); color: var(--text-1); border: 1px solid var(--line); border-radius: var(--r-sm); font-family: var(--font-code); }
+/* printed output (hidden by ui.js while there is none). The renderer sizes this
+   box at 25px per line (content box), so keep content-box sizing or text clips. */
+#viz #progOutputs { margin-top: 14px; }
+#viz #progOutputs.vlEmpty { display: none !important; }   /* the renderer sets an inline display:block on each step */
+#viz #progOutputs::before { content: "Output"; display: block; margin: 0 0 4px; color: var(--text-3); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .08em; }
+#viz #progOutputs .ui-wrapper { height: auto !important; padding: 0 !important; }
+#viz #pyStdout { box-sizing: content-box; width: calc(100% - 22px) !important; min-height: 20px; padding: 6px 10px; resize: none;
+  background: var(--bg-0); color: var(--val-str); border: 1px solid var(--line); border-radius: var(--r-sm);
+  font: var(--fs-md)/20px var(--font-code); overflow: auto; }
 
-/* frames */
-#viz div#stackHeader, #viz div#heapHeader { color: var(--text-2); font-weight: 600; font-size: var(--fs-md); }
-#viz div.stackFrame { background: var(--frame); border-left: 2px solid var(--line-strong); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+/* ---------- frames ---------- */
+#viz div#stackHeader, #viz div#heapHeader { margin: 18px 0 8px; text-align: left !important; text-transform: uppercase; letter-spacing: .1em;
+  font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); }
+#viz div.stackFrame, #viz div.zombieStackFrame { margin-bottom: 8px; padding: 6px 10px 8px; border-radius: 0 var(--r-md) var(--r-md) 0; }
+#viz div.stackFrame { background: var(--frame); border-left: 2px solid var(--line-strong); }
 #viz div.highlightedStackFrame { background: var(--frame-active); border-left: 2px solid var(--brand); }
-#viz div.zombieStackFrame { background: transparent; color: var(--text-3); border-left: 1px dotted var(--line-strong); }
-#viz div.stackFrameHeader { color: var(--text-2); font-family: var(--font-code); }
-#viz td.stackFrameVar { color: var(--text-2); font-family: var(--font-code); }
-#viz td.stackFrameValue { border-color: var(--line-strong) !important; color: var(--text-1); font-family: var(--font-code); }
+#viz div.zombieStackFrame { background: transparent; color: var(--text-3); border-left: 1px dashed var(--line-strong); }
+#viz div.stackFrameHeader { font-family: var(--font-code); font-weight: 700; color: var(--text-2); padding-bottom: 4px; }
+#viz div.highlightedStackFrame div.stackFrameHeader { color: var(--brand); }
+#viz table.stackFrameVarTable { border-spacing: 0; }
+#viz td.stackFrameVar { color: var(--text-2); font-family: var(--font-code); padding: 3px 8px 3px 0; text-align: right; }
+#viz td.stackFrameValue { color: var(--text-1); font-family: var(--font-code); padding: 3px 8px; min-width: 22px;
+  border: 0 !important; border-left: 1px solid var(--line-strong) !important; border-bottom: 1px solid var(--line) !important; }
 #viz .retval { color: var(--brand) !important; }
 
-/* objects */
-#viz .typeLabel { color: var(--text-3); font-size: var(--fs-xs); letter-spacing: .02em; }
+/* functions, classes, typing names and imports, drawn inline in tidy mode */
+#viz .importedObj { display: inline-block; padding: 0 6px; border-radius: 4px; background: var(--bg-2); color: var(--text-3);
+  font: var(--fs-xs)/18px var(--font-code); white-space: nowrap; }
+
+/* ---------- objects ---------- */
+#viz .heapObject { margin-bottom: 6px; }
+#viz .typeLabel { color: #a79a7f; font: var(--fs-xs) var(--font-code); margin-bottom: 2px; }
 #viz table.listTbl, #viz table.tupleTbl, #viz table.setTbl, #viz table.dictTbl, #viz table.instTbl, #viz table.classTbl, #viz table.funcTbl, #viz table.customObjTbl {
-  background: var(--obj) !important; color: var(--text-1); border-color: var(--obj-line) !important; font-family: var(--font-code);
+  background: var(--obj) !important; color: var(--text-1); border-color: var(--obj-line) !important; font-family: var(--font-code); border-spacing: 0;
 }
 #viz table.listTbl td, #viz table.tupleTbl td, #viz table.setTbl td, #viz table.dictTbl td, #viz table.instTbl td, #viz table.classTbl td { border-color: var(--obj-line) !important; }
-#viz td.listHeader, #viz td.tupleHeader { color: var(--text-3) !important; }
+#viz td.dictVal, #viz td.listElt, #viz td.tupleElt, #viz td.setElt, #viz td.instVal, #viz td.classVal { background: var(--obj) !important; }
+#viz td.listHeader, #viz td.tupleHeader { color: #7d7563 !important; font-size: 10px; }
 #viz td.dictKey, #viz td.instKey, #viz td.classKey { background: var(--obj-key) !important; color: var(--text-2); }
 #viz td.funcCod { background: var(--obj) !important; }
 #viz .funcObj { font-family: var(--font-code); color: var(--text-1); }
@@ -50,40 +102,70 @@
 #viz .numberObj { color: var(--val-num); }
 #viz .boolObj, #viz .nullObj { color: var(--val-kw); }
 #viz .keyObj { color: var(--text-2); }
+#viz .vlExpandCollection, #viz .vlCollapseCollection { background: var(--bg-2); color: var(--text-1); border-color: var(--line-strong); }
+#viz .vlExpandCollection:hover, #viz .vlCollapseCollection:hover { background: var(--bg-3); }
+#viz .vlCollapsedNote, #viz .vlGapHeader { color: var(--text-3); }
 
-/* arrows (the arrow layer writes stroke/fill attributes; CSS wins over attributes) */
+/* ---------- arrows (the arrow layer writes stroke/fill attributes; CSS wins) ---------- */
+/* pointers: solid blue; dim grey for frames that aren't running right now */
+#viz .vlArrowLayer path { stroke-linecap: round; }
 #viz .vlArrowLayer [stroke="#005583"] { stroke: var(--arrow); }
 #viz .vlArrowLayer [fill="#005583"] { fill: var(--arrow); }
+#viz .vlArrowLayer path[stroke="#005583"] { stroke-width: 1.5px; }
 #viz .vlArrowLayer [stroke="#cccccc"] { stroke: var(--arrow-dim); }
 #viz .vlArrowLayer [fill="#cccccc"] { fill: var(--arrow-dim); }
 
-/* collapse controls */
-#viz .vlExpandCollection, #viz .vlCollapseCollection { background: var(--bg-2); color: var(--text-1); border-color: var(--line-strong); }
+/* a pointer created on THIS step (ui.js tags it vlNewArrow; arrows are rebuilt
+   every step, so it's blue again on the next step if it's unchanged):
+   orange, with dashes flowing from the variable to the object */
+#viz .vlArrowLayer g.vlNewArrow path { stroke: var(--brand); stroke-width: 1.8px; stroke-dasharray: 6 4;
+  animation: vlFlare .6s ease-out, vlFlow 1.2s linear infinite; filter: drop-shadow(0 0 3px rgba(255,161,22,.5)); }
+#viz .vlArrowLayer g.vlNewArrow polygon, #viz .vlArrowLayer g.vlNewArrow circle { fill: var(--brand); stroke: var(--brand); }
+@keyframes vlFlow { to { stroke-dashoffset: -10; } }
+@keyframes vlFlare { 0% { stroke: #ffd98f; stroke-width: 2.6px; } 100% { stroke-width: 1.8px; } }
 
-/* vertical stack: code on top, data below, inside the right panel */
-#viz div#codeDisplayDiv { width: 100%; }
-#viz div#pyCodeOutputDiv { border-radius: var(--r-sm); }
-#viz table.visualizer, #viz div#dataViz { width: 100%; }
+/* ---------- stage: zoom/pan/drag, hover, inspect (classes added by ui.js) ---------- */
+#viz td#vizLayoutTdSecond { cursor: grab; }
+#viz td#vizLayoutTdSecond.panning { cursor: grabbing; }
+#viz td#vizLayoutTdSecond.dragging-box, #viz td#vizLayoutTdSecond.dragging-box * { cursor: grabbing !important; }
+#viz .toplevelHeapObject, #viz div.stackFrame, #viz div.zombieStackFrame { cursor: move; }
+#viz td.stackFrameValue, #viz td.stackFrameVar, #viz .heapObject td { cursor: pointer; }
+#viz td#vizLayoutTdSecond.panning *, #viz td#vizLayoutTdSecond.dragging-box * { user-select: none; }
 
-/* layout fixes for a side panel */
-#viz #codAndNav { width: 100% !important; }
-#viz #pyCodeOutputDiv { width: 100% !important; }
-#viz table#pyCodeOutput { width: 100%; }
-#viz .ui-resizable-handle { display: none !important; }
-#viz .ui-wrapper { width: 100% !important; }
-/* VisualLeet UI: the renderer sizes the output box for content-box (25px per
-   line up to 3 lines, else 75px) and jQuery UI's resizable wrapper then
-   recomputes it; with this page's border-box it ended up 9px tall (clipped). */
-#viz #pyStdout { box-sizing: content-box; width: calc(100% - 8px) !important; resize: none; }
-#viz #progOutputs .ui-wrapper { height: auto !important; padding: 0 !important; }
-/* VisualLeet UI: the renderer adds "(see UNSUPPORTED FEATURES)", a link to
-   Python Tutor's site, under every error; VisualLeet's limits differ. */
-#viz #errorOutput > div { display: none; }
-#viz #uiControlsPane { display: none; }               /* legacy "Customize visualization (NEW!)" */
-#viz td.dictVal, #viz td.listElt, #viz td.tupleElt, #viz td.setElt, #viz td.instVal, #viz td.classVal { background: var(--obj) !important; }
-#viz #prevLegendArrowSVG polygon { fill: #4f8a63 !important; }
-#viz #curLegendArrowSVG polygon { fill: var(--brand) !important; }
-#viz table#pyCodeOutput td#gutterTD, #viz table#pyCodeOutput td.lineNo { width: 1%; white-space: nowrap; }
-#viz table#pyCodeOutput td.cod { width: 100%; }
-#viz #printOutputDocs { display: none; }
-#viz #progOutputs::before { content: "Output"; display: block; margin: 0 0 4px; color: var(--text-3); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .08em; }
+/* zoom toolbar in the card's top-right corner (stays put while the card scrolls) */
+#viz .stage-bar { position: sticky; top: 6px; float: right; z-index: 7; display: flex; align-items: center; gap: 2px; margin: 6px -8px 0 8px;
+  padding: 3px; border-radius: var(--r-md); background: rgba(38,38,38,.92); border: 1px solid var(--line); backdrop-filter: blur(4px); cursor: default; }
+#viz .stage-bar button { height: 24px; min-width: 26px; padding: 0 7px; border: 0; border-radius: var(--r-sm); background: transparent;
+  color: var(--text-2); font: 700 var(--fs-md)/1 var(--font-ui); cursor: pointer; }
+#viz .stage-bar button:hover { background: var(--bg-3); color: var(--text-1); }
+#viz .stage-bar button.reset { font-size: var(--fs-xs); font-weight: 600; margin-left: 4px; border-left: 1px solid var(--line); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+#viz .stage-bar #zoom-level { min-width: 40px; text-align: center; font: 600 var(--fs-xs) var(--font-code); color: var(--text-3); }
+
+/* arrows: an invisible wide twin under each arrow takes the hover */
+#viz .vlArrowLayer path.vlHit { stroke: transparent !important; stroke-width: 12px !important; fill: none !important; stroke-dasharray: none !important;
+  animation: none !important; filter: none !important; pointer-events: stroke; cursor: pointer; }
+#viz .vlArrowLayer g.vlHover path:not(.vlHit) { stroke: #ffe3a1 !important; stroke-width: 2.8px !important; filter: drop-shadow(0 0 5px rgba(255,214,128,.85)) !important; }
+#viz .vlArrowLayer g.vlHover polygon, #viz .vlArrowLayer g.vlHover circle { fill: #ffe3a1 !important; stroke: #ffe3a1 !important; }
+#viz td.vlHover, #viz .heapObject.vlHover > table { outline: 2px solid rgba(255,214,128,.75); outline-offset: 1px; }
+
+/* the inspected variable/object, and its uses in the code */
+#viz tr.vlInspected td { box-shadow: inset 0 0 0 999px rgba(60,156,255,.16); }
+#viz .heapObject.vlInspected > table { outline: 2px solid var(--info); outline-offset: 2px; }
+#viz mark.vlMark { background: rgba(60,156,255,.3); color: inherit; border-radius: 3px; box-shadow: 0 0 0 1px rgba(60,156,255,.55); }
+
+/* ---------- step animations (classes added by ui.js) ---------- */
+
+/* a value that changed on this step: orange text for the whole step, plus a
+   short flash (box-shadow, since cell backgrounds are !important) */
+#viz .vlChanged { animation: vlFlash 1s ease-out; }
+#viz .vlChanged, #viz .vlChanged .numberObj, #viz .vlChanged .stringObj, #viz .vlChanged .boolObj,
+#viz .vlChanged .nullObj, #viz .vlChanged .importedObj { color: var(--brand) !important; font-weight: 700; }
+@keyframes vlFlash {
+  0%   { box-shadow: inset 0 0 0 999px rgba(255,161,22,.38); }
+  100% { box-shadow: inset 0 0 0 999px rgba(255,161,22,0); }
+}
+/* a new object or frame fades in with a brief outline glow (no movement) */
+#viz .heapObject.vlNew > table, #viz .heapObject.vlNew > .typeLabel, #viz div.stackFrame.vlNew { animation: vlFadeIn .45s ease-out; }
+#viz .heapObject.vlNew > table { animation: vlFadeIn .45s ease-out, vlGlow 1.1s ease-out; }
+@keyframes vlFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes vlGlow { 0% { outline: 2px solid rgba(255,161,22,.7); outline-offset: 2px; } 100% { outline: 2px solid rgba(255,161,22,0); outline-offset: 2px; } }

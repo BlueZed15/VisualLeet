@@ -1,9 +1,9 @@
-# VisualLeet extension
+# LeetScope extension (formerly VisualLeet)
 
 A Chrome (MV3) extension that runs your Python DSA solution entirely in the
 browser and shows a Python Tutor-style step-by-step visualization. Spec:
-`../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with the dark
-v0.1 design from [`design/`](design/), one-click visualization of LeetCode
+`../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with the LeetScope
+player UI (edit / playing modes, animated steps, zoom and drag), one-click visualization of LeetCode
 test cases backed by a checked problem database (all NeetCode 150);
 acceptance results in [`acceptance/`](acceptance/) (55/55 automated checks),
 screenshots of every UI state in [`acceptance/states/`](acceptance/states/).
@@ -21,15 +21,15 @@ npm run build:extension
 ```
 
 Chrome → `chrome://extensions` → Developer mode → **Load unpacked** →
-`extension/dist/extension`. Pin the VisualLeet icon.
+`extension/dist/extension`. Pin the LeetScope icon.
 
 ### On LeetCode: one click
 
 1. On a LeetCode problem (editor set to **Python3**), pick the case you want
    in LeetCode's **Testcase** panel (an example, one you added, or edited
    values; a failing case from a submission works too).
-2. Click **Visualize** in LeetCode's top bar (next to Submit), the VisualLeet icon, or press **Alt+V**. VisualLeet copies your
-   code and that case, switches to the open VisualLeet tab (or opens one) and visualizes it there.
+2. Click **Visualize** in LeetCode's top bar (next to Submit), the LeetScope icon, or press **Alt+V**. LeetScope copies your
+   code and that case, switches to the open LeetScope tab (or opens one) and opens it straight into playing.
 3. The left column is the **test case**: tabs for the examples, the case from
    LeetCode and your own (**+** adds one; they're kept per problem), one box
    per input (checked as you type), the expected output for examples and a
@@ -40,7 +40,7 @@ Chrome → `chrome://extensions` → Developer mode → **Load unpacked** →
 What runs: hidden setup (LeetCode's usual imports, `ListNode`/`TreeNode`
 classes, your inputs) without being traced, then your code + the call. The
 visualization shows only your code, the call and the inputs. The setup for
-each problem comes from VisualLeet's database (`src/problems/`): all 150
+each problem comes from LeetScope's database (`src/problems/`): all 150
 NeetCode problems, each checked against LeetCode's examples. Other problems
 open in paste mode with a drafted test call.
 
@@ -48,7 +48,7 @@ open in paste mode with a drafted test call.
 
 **Paste mode** (top right) has the Solution / Test call / Setup / input()
 editors: paste, use **Import selection** (copies what you selected on any
-page you opened VisualLeet from) or pick an Example, then **Visualize**
+page you opened LeetScope from) or pick an Example, then **Visualize**
 (Ctrl+Enter). **Stop** ends a long run; **Reset** restarts Python.
 
 In paste mode what runs is exactly Setup + Solution + Test call, joined in
@@ -110,7 +110,7 @@ blob: workers  (Pyodide 314.0.8 / Python 3.14.2 + forked tracer; fetch served fr
   through Pyodide's JS bridge that tries `chrome`, XHR, fetch (including the
   original `fetch`), `importScripts`, WebSocket and IndexedDB: all blocked,
   with CSP violation reports. User code can't `import js` at all (tracer allowlist).
-- Permissions: `activeTab`, `scripting`, `storage` (hand-off to the VisualLeet tab), and access to leetcode.com / leetcode.cn (for the Visualize button in LeetCode's top bar; Chrome shows "Read and change your data on leetcode.com"). Shortcut: Alt+V.
+- Permissions: `activeTab`, `scripting`, `storage` (hand-off to the LeetScope tab), and access to leetcode.com / leetcode.cn (for the Visualize button in LeetCode's top bar; Chrome shows "Read and change your data on leetcode.com"). Shortcut: Alt+V.
 
 ## Tests
 

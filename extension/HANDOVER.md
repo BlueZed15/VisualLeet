@@ -7,6 +7,20 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
+- **Branch `merge_1`** (2026-11-15) combines this work with the collaborator's
+  `origin/feat/UI-Improvement`: product renamed **LeetScope** (icons, logo,
+  title), their player UI (edit / playing modes, play + transport + scrubber
+  + speed, step animation, zoom/pan/drag, hover arrows, value inspector,
+  wide layout, "tidy" labels for typing names/functions/classes in the
+  tracer, ~20 more examples). Their `ui.js`/`ui.css`/`index.html`/
+  `renderer-dark.css` are the base; LeetCode mode was ported into them:
+  code on the left (editable; the stepping code view while playing), the
+  test-case panel under it (Call/Setup as tabs there), the visualization on
+  the right; a click on LeetCode opens straight into playing; picking another
+  case while playing reruns it. Paste mode is their UI unchanged. Internal
+  names (`window.visualleet`, storage keys, tracer option names) still say
+  visualleet on purpose (tests and saved cases depend on them).
+
 - A working MV3 extension: `npm run build:extension` → `dist/extension`, loaded
   unpacked in Chrome. Python 3.14.2 (Pyodide 314.0.8) runs the archived Python
   Tutor tracer inside a sandboxed worker; the forked Python Tutor renderer draws it.

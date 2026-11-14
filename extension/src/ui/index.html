@@ -3,123 +3,173 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VisualLeet</title>
+  <title>LeetScope</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32.png">
+  <link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
   <link rel="stylesheet" href="../visualizer/renderer.css">
-  <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="ui.css">
   <link rel="stylesheet" href="renderer-dark.css">
 </head>
 <body>
-  <!-- Icon sprite (design/index.html, dark v0.1) -->
-  <svg class="sprite" aria-hidden="true">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-play" viewBox="0 0 16 16"><path fill="currentColor" d="M4 2.8v10.4c0 .6.6.9 1.1.6l8.2-5.2a.7.7 0 0 0 0-1.2L5.1 2.2C4.6 1.9 4 2.2 4 2.8z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><rect fill="currentColor" x="4" y="3" width="3" height="10" rx="1"/><rect fill="currentColor" x="9" y="3" width="3" height="10" rx="1"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M10 3.5 5.5 8l4.5 4.5"/></symbol>
+    <symbol id="i-next" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m6 3.5 4.5 4.5L6 12.5"/></symbol>
+    <symbol id="i-first" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M11.5 3.5 7 8l4.5 4.5M4 3.5v9"/></symbol>
+    <symbol id="i-last" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4.5 3.5 9 8l-4.5 4.5M12 3.5v9"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M10.5 2.5l3 3L6 13H3v-3z M9 4l3 3"/></symbol>
     <symbol id="i-stop" viewBox="0 0 16 16"><rect fill="currentColor" x="3.5" y="3.5" width="9" height="9" rx="1.5"/></symbol>
     <symbol id="i-reset" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 8a5 5 0 1 0 1.5-3.5M3 2.5v2.8h2.8"/></symbol>
     <symbol id="i-code" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5.5 4.5 2 8l3.5 3.5M10.5 4.5 14 8l-3.5 3.5"/></symbol>
     <symbol id="i-flask" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M6 2h4M6.7 2v4L3 13a1 1 0 0 0 .9 1.5h8.2A1 1 0 0 0 13 13L9.3 6V2"/></symbol>
     <symbol id="i-wrench" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M10.5 2.2a3.5 3.5 0 0 0-4.2 4.6L2.4 10.7a1.2 1.2 0 0 0 1.7 1.7l3.9-3.9a3.5 3.5 0 0 0 4.6-4.2l-2 2-1.7-.3-.3-1.7z"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 16 16"><rect fill="none" stroke="currentColor" stroke-width="1.4" x="1.5" y="4" width="13" height="8.5" rx="1.5"/><path stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M4.5 10h7M4.5 7h.01M7 7h.01M9.5 7h.01M12 7h.01"/></symbol>
     <symbol id="i-eye" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M1.5 8S4 3.5 8 3.5 14.5 8 14.5 8 12 12.5 8 12.5 1.5 8 1.5 8z"/><circle fill="currentColor" cx="8" cy="8" r="2"/></symbol>
     <symbol id="i-select" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M2 3h8M2 6.5h12M2 10h6M10 9v5m-2-5h4m-4 5h4"/></symbol>
     <symbol id="i-import" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 2v8m-3-3 3 3 3-3M3 12.5v1h10v-1"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M1.5 8.5h3l1.5-4 3 7 1.5-3h4"/></symbol>
   </svg>
 
   <header class="topbar">
-    <span class="logo"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span><span>Visual<b>Leet</b></span></span>
+    <span class="logo">
+      <svg class="logo-mark" viewBox="0 0 128 128" aria-hidden="true">
+        <defs><linearGradient id="ls-logo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb84d"/><stop offset=".55" stop-color="#ffa116"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient></defs>
+        <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#ls-logo-bg)"/>
+        <circle cx="55" cy="55" r="31" fill="#1a1a1a" fill-opacity=".12" stroke="#1a1a1a" stroke-width="10"/>
+        <path d="M78 78 L103 103" stroke="#1a1a1a" stroke-width="15" stroke-linecap="round"/>
+        <path d="M44 43 L33 55 L44 67 M66 43 L77 55 L66 67 M59 40 L51 70" fill="none" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Leet<b>Scope</b></span>
+    </span>
     <span class="sep" aria-hidden="true"></span>
-    <button id="import-leetcode" class="btn btn-sm btn-ghost" type="button" title="Read the code and the selected test case from the LeetCode tab again (or click the VisualLeet icon there, or press Alt+V)"><svg aria-hidden="true"><use href="#i-import"/></svg>From LeetCode tab</button>
-    <button id="import-selection" class="btn btn-sm btn-ghost" type="button" title="Copy the text selected on the page you opened VisualLeet from (paste mode)"><svg aria-hidden="true"><use href="#i-select"/></svg>Import selection</button>
-    <span id="source-tab" class="source-chip" title="Page to import from" hidden></span>
+    <button id="import-leetcode" class="btn btn-sm btn-ghost" type="button" title="Read the code and the selected test case from the LeetCode tab again (or click Visualize on LeetCode, the LeetScope icon, or Alt+V)"><svg aria-hidden="true"><use href="#i-import"/></svg>Import from LeetCode</button>
+    <button id="import-selection" class="btn btn-sm btn-ghost" type="button" title="Copy the text you have selected on that page into the code editor (paste mode)"><svg aria-hidden="true"><use href="#i-select"/></svg>Import selection</button>
+    <span id="source-tab" class="source-chip" title="Page to import from"></span>
     <button id="mode-toggle" class="btn btn-sm btn-ghost mode-toggle" type="button" hidden></button>
-    <span id="status" class="status" role="status" data-state="not-initialized">Not initialized</span>
+    <span id="status" class="status" data-state="not-initialized" role="status">Not started</span>
   </header>
 
   <main class="workspace">
-    <div class="left-col">
-      <!-- LeetCode mode: the test case is the main input -->
-      <section id="lc-cases" class="panel lc-only cases-panel" aria-label="Test case">
-        <div class="tabs case-tabs">
-          <div id="case-tabs" class="case-tab-list" role="tablist" aria-label="Test cases"></div>
-          <button id="case-add" class="tab" type="button" title="Add a test case (a copy of the selected one)" aria-label="Add a test case">+</button>
-        </div>
-        <div class="case-body">
-          <div class="problem-line">
-            <span id="lc-title" class="problem-title"></span>
-            <span id="lc-badge" class="badge"></span>
-          </div>
-          <div id="case-fields" class="case-fields"></div>
-          <div id="case-expected" class="case-expected" hidden></div>
-          <div id="case-verdict" class="verdict" role="status" hidden></div>
-          <div class="case-foot">
-            <span id="case-source" class="case-source"></span>
-            <button id="case-delete" class="btn btn-sm btn-ghost" type="button">Delete case</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel code-panel" aria-label="Code">
-        <div class="tabs" role="tablist">
-          <button id="tab-solution" class="tab" role="tab" type="button" data-tab="solution" data-group="code" aria-controls="panel-solution" aria-selected="true"><svg aria-hidden="true"><use href="#i-code"/></svg><span class="manual-only">Solution</span><span class="lc-only">Your code</span></button>
-          <button id="tab-lccall" class="tab lc-only" role="tab" type="button" data-tab="lccall" data-group="code" aria-controls="panel-lccall" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#i-flask"/></svg>Call</button>
-          <button id="tab-lcsetup" class="tab lc-only" role="tab" type="button" data-tab="lcsetup" data-group="code" aria-controls="panel-lcsetup" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#i-wrench"/></svg>Setup</button>
-          <span class="spacer"></span>
-          <select id="example" class="select manual-only" aria-label="Load an example"><option value="">Examples…</option></select>
-        </div>
-        <div id="panel-solution" class="tab-panel" role="tabpanel" aria-labelledby="tab-solution">
-          <textarea id="solution" class="editor" spellcheck="false" aria-label="Solution code"
-                    placeholder="Paste or import your solution, e.g. class Solution: …"></textarea>
-        </div>
-        <div id="panel-lccall" class="tab-panel with-foot" role="tabpanel" aria-labelledby="tab-lccall" hidden>
-          <textarea id="lc-call" class="editor" spellcheck="false" aria-label="The call that runs your code (generated; editable)"></textarea>
-          <div class="panel-foot"><span id="lc-call-note"></span><button id="lc-call-reset" class="btn btn-sm btn-ghost" type="button" hidden>Reset to generated</button></div>
-        </div>
-        <div id="panel-lcsetup" class="tab-panel with-foot" role="tabpanel" aria-labelledby="tab-lcsetup" hidden>
-          <textarea id="lc-setup" class="editor" spellcheck="false" readonly aria-label="Hidden setup code (read-only)"></textarea>
-          <div class="panel-foot"><span>Runs before your code without being traced. Only the inputs are shown in the visualization.</span></div>
-        </div>
-      </section>
-
-      <section class="panel manual-only" aria-label="Test call and setup">
-        <div class="tabs" role="tablist">
-          <button id="tab-call" class="tab" role="tab" type="button" data-tab="call" aria-controls="panel-call" aria-selected="true"><svg aria-hidden="true"><use href="#i-flask"/></svg>Test call</button>
-          <button id="tab-setup" class="tab" role="tab" type="button" data-tab="setup" aria-controls="panel-setup" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#i-wrench"/></svg>Setup</button>
-          <button id="tab-inputs" class="tab" role="tab" type="button" data-tab="inputs" aria-controls="panel-inputs" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#i-select"/></svg>input()</button>
-          <span class="spacer"></span>
-          <select id="helper" class="select" aria-label="Add a helper to Setup"><option value="">+ Add helper</option></select>
-        </div>
-        <div id="panel-call" class="tab-panel" role="tabpanel" aria-labelledby="tab-call">
-          <textarea id="call" class="editor" spellcheck="false" aria-label="Test call: build the input and call your code"
-                    placeholder="print(Solution().twoSum([2, 7, 11, 15], 9))"></textarea>
-        </div>
-        <div id="panel-setup" class="tab-panel" role="tabpanel" aria-labelledby="tab-setup" hidden>
-          <textarea id="setup" class="editor" spellcheck="false" aria-label="Setup: imports and helper classes, run before the solution"
-                    placeholder="Imports and helpers (ListNode, TreeNode, input builders). Runs before the solution."></textarea>
-        </div>
-        <div id="panel-inputs" class="tab-panel" role="tabpanel" aria-labelledby="tab-inputs" hidden>
-          <textarea id="inputs" class="editor" spellcheck="false" aria-label="Input lines for input(), one per line"
-                    placeholder="One line per input() call"></textarea>
-        </div>
-      </section>
-
-      <div class="actions">
-        <button id="visualize" class="btn btn-run" type="button" title="Visualize (Ctrl+Enter)"><svg aria-hidden="true"><use href="#i-play"/></svg>Visualize<span class="kbd" aria-hidden="true">Ctrl ↵</span></button>
-        <button id="stop" class="btn btn-stop" type="button" disabled><svg aria-hidden="true"><use href="#i-stop"/></svg>Stop</button>
-        <button id="reset" class="btn btn-ghost" type="button" title="Restart the Python runtime"><svg aria-hidden="true"><use href="#i-reset"/></svg>Reset</button>
-        <button id="diag-toggle" class="btn btn-sm btn-ghost diag-toggle" type="button" aria-pressed="false" aria-controls="diag">Diagnostics</button>
-      </div>
-    </div>
-
-    <section class="panel viz-panel" aria-label="Visualization">
+    <!-- The player: edit the code, then watch it run like a video -->
+    <section class="panel viz-panel" aria-label="Code and visualization">
       <div class="tabs">
-        <span class="tab" aria-selected="true"><svg aria-hidden="true"><use href="#i-eye"/></svg>Visualizer</span>
+        <span id="mode-chip" class="mode-chip" data-mode="edit"><svg aria-hidden="true"><use href="#i-code"/></svg><span>Editing</span></span>
+        <select id="example" class="select" aria-label="Load an example"><option value="">Load example…</option></select>
         <span class="spacer"></span>
-        <span id="step-meter" class="step-meter" hidden><span class="count">step <b>0</b>/<span class="total">0</span></span><span class="bar"><i></i></span></span>
+        <button id="reset" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Restart the Python runtime" aria-label="Restart the Python runtime"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
+        <button id="diag-toggle" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Show diagnostics" aria-label="Show diagnostics" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pulse"/></svg></button>
       </div>
+
       <div class="viz-body">
         <div id="message" class="message" aria-live="polite" hidden></div>
-        <div id="banner" class="banner" aria-live="polite" hidden></div>
-        <div id="placeholder" class="placeholder" aria-live="polite" hidden></div>
+        <!-- edit mode: the code editor beside the test input -->
+        <div id="edit-area" class="edit-area">
+        <div id="edit-left" class="edit-left">
+        <div id="code-editor" class="code-editor">
+          <pre class="gutter" aria-hidden="true">1</pre>
+          <textarea id="solution" class="editor" spellcheck="false" wrap="off" aria-label="Solution code" placeholder="Paste your Python solution here, import it from LeetCode, or load an example."></textarea>
+        </div>
+        <!-- LeetCode mode: the test case, under the code (moves under the code card while playing) -->
+        <section id="lc-cases" class="panel lc-panel lc-only" aria-label="Test case">
+          <div class="tabs lc-head">
+            <span class="problem-line"><span id="lc-title" class="problem-title"></span><span id="lc-badge" class="badge"></span></span>
+            <span class="spacer"></span>
+            <span class="lc-views" role="tablist" aria-label="Test case views">
+              <button class="tab" role="tab" type="button" data-lcview="case" aria-selected="true">Test case</button>
+              <button class="tab" role="tab" type="button" data-lcview="call" aria-selected="false" title="The call that runs your code (editable)">Call</button>
+              <button class="tab" role="tab" type="button" data-lcview="setup" aria-selected="false" title="Hidden setup: builds the inputs, never traced">Setup</button>
+            </span>
+          </div>
+          <div class="lc-body">
+            <div class="lc-view" data-lcpanel="case">
+              <div class="case-tabs">
+                <div id="case-tabs" class="case-tab-list" role="tablist" aria-label="Test cases"></div>
+                <button id="case-add" class="tab case-add" type="button" title="Add a test case (a copy of the selected one)" aria-label="Add a test case">+</button>
+              </div>
+              <div id="case-fields" class="case-fields"></div>
+              <div id="case-expected" class="case-expected" hidden></div>
+              <div id="case-verdict" class="verdict" role="status" hidden></div>
+              <div class="case-foot">
+                <span id="case-source" class="case-source"></span>
+                <span class="spacer"></span>
+                <button id="case-delete" class="btn btn-sm btn-ghost" type="button">Delete case</button>
+                <button id="case-run" class="btn btn-sm btn-run" type="button" title="Run this case (Ctrl+Enter)"><svg aria-hidden="true"><use href="#i-play"/></svg>Run case</button>
+              </div>
+            </div>
+            <div class="lc-view with-foot" data-lcpanel="call" hidden>
+              <textarea id="lc-call" class="editor" spellcheck="false" aria-label="The call that runs your code (editable)"></textarea>
+              <div class="panel-foot"><span id="lc-call-note"></span><button id="lc-call-reset" class="btn btn-sm btn-ghost" type="button" hidden>Reset to the database version</button></div>
+            </div>
+            <div class="lc-view with-foot" data-lcpanel="setup" hidden>
+              <textarea id="lc-setup" class="editor" spellcheck="false" readonly aria-label="Hidden setup code (read-only)"></textarea>
+              <div class="panel-foot"><span>Runs before your code without being traced. Only the inputs show in the visualization.</span></div>
+            </div>
+          </div>
+        </section>
+        </div>
+        <!-- LeetCode mode while editing: the visualization side -->
+        <div id="lc-side" class="placeholder lc-only lc-side" data-kind="empty">
+          <div class="ph-icon" aria-hidden="true"></div>
+          <div class="ph-title">The visualization plays here</div>
+          <div class="ph-body">Press <b>Run case</b> or <b>Visualize</b> (Ctrl+Enter) to run your code on the selected test case.</div>
+        </div>
+      <section class="panel test-panel manual-only" aria-label="Test input" data-tabs>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" data-tab="call" aria-selected="true" type="button"><svg aria-hidden="true"><use href="#i-flask"/></svg>Test call<i class="dot" data-dot="call"></i></button>
+          <button class="tab" role="tab" data-tab="setup" aria-selected="false" type="button"><svg aria-hidden="true"><use href="#i-wrench"/></svg>Setup<i class="dot" data-dot="setup"></i></button>
+          <button class="tab" role="tab" data-tab="stdin" aria-selected="false" type="button"><svg aria-hidden="true"><use href="#i-keyboard"/></svg>input()<i class="dot" data-dot="inputs"></i></button>
+          <span class="spacer"></span>
+          <select id="helper" class="select" aria-label="Add a helper class to Setup"><option value="">+ Add helper</option></select>
+        </div>
+        <div class="tab-panel" data-panel="call">
+          <textarea id="call" class="editor" spellcheck="false" aria-label="Test call" placeholder="print(Solution().twoSum([2, 7, 11, 15], 9))"></textarea>
+        </div>
+        <div class="tab-panel" data-panel="setup" hidden>
+          <textarea id="setup" class="editor" spellcheck="false" aria-label="Setup code" placeholder="Imports and helper classes (ListNode, TreeNode…) that run before your solution."></textarea>
+        </div>
+        <div class="tab-panel" data-panel="stdin" hidden>
+          <textarea id="inputs" class="editor" spellcheck="false" aria-label="Input lines, one per input() call" placeholder="One line per input() call"></textarea>
+        </div>
+      </section>
+        </div>
+        <!-- watch mode: placeholder states and the trace -->
+        <div id="empty" class="placeholder" data-kind="loading" hidden>
+          <div class="ph-icon" aria-hidden="true"></div>
+          <div class="ph-title">Starting Python…</div>
+          <div class="ph-body">Loading the bundled runtime.</div>
+        </div>
         <div id="viz"></div>
         <pre id="diag" class="diag" hidden></pre>
+      </div>
+
+      <!-- the control bar, like a video player's -->
+      <div class="player-bar">
+        <div class="bar-edit">
+          <button id="visualize" class="btn btn-run" type="button" title="Run and visualize (Ctrl+Enter)"><svg aria-hidden="true"><use href="#i-play"/></svg>Visualize<span class="kbd">Ctrl ↵</span></button>
+          <span class="bar-hint">Runs Setup, your code and the Test call, then plays it step by step.</span>
+        </div>
+        <div class="bar-watch">
+          <span id="player" class="player" hidden>
+            <button id="play" class="btn btn-play" type="button" title="Play / pause (Space)" aria-label="Play" aria-pressed="false"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Play</span></button>
+            <span class="transport" role="group" aria-label="Step through the run">
+              <button id="nav-first" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="First step (Shift+←)" aria-label="First step"><svg aria-hidden="true"><use href="#i-first"/></svg></button>
+              <button id="nav-prev" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Previous step (←)" aria-label="Previous step"><svg aria-hidden="true"><use href="#i-prev"/></svg></button>
+              <button id="nav-next" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Next step (→)" aria-label="Next step"><svg aria-hidden="true"><use href="#i-next"/></svg></button>
+              <button id="nav-last" class="btn btn-sm btn-ghost btn-icon-sm" type="button" title="Last step (Shift+→)" aria-label="Last step"><svg aria-hidden="true"><use href="#i-last"/></svg></button>
+            </span>
+          </span>
+          <span id="step-meter" class="step-meter" hidden>
+            <span class="bar" role="slider" tabindex="0" aria-label="Step" aria-valuemin="1" aria-valuenow="1" aria-valuemax="1" title="Drag to scrub through the steps"><i></i><span class="knob"></span></span>
+            <span class="count"><b>0</b> / <span class="total">0</span></span>
+            <select id="speed" class="select" aria-label="Playback speed" title="Playback speed">
+              <option value="1100">0.5×</option><option value="550" selected>1×</option><option value="260">2×</option><option value="110">4×</option>
+            </select>
+          </span>
+          <span class="spacer"></span>
+          <button id="stop" class="btn btn-stop" type="button" disabled hidden><svg aria-hidden="true"><use href="#i-stop"/></svg>Stop</button>
+          <button id="edit" class="btn btn-edit" type="button" title="Back to the code: stops this run (Esc)"><svg aria-hidden="true"><use href="#i-edit"/></svg>Edit</button>
+        </div>
       </div>
     </section>
   </main>

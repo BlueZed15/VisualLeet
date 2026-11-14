@@ -13,8 +13,8 @@
     const b = document.createElement("button");
     b.id = ID;
     b.type = "button";
-    b.title = "Visualize the selected test case in VisualLeet (Alt+V)";
-    b.setAttribute("aria-label", "Visualize in VisualLeet");
+    b.title = "Visualize the selected test case in LeetScope (Alt+V)";
+    b.setAttribute("aria-label", "Visualize in LeetScope");
     const mark = document.createElement("span");
     mark.textContent = "</>";
     const text = document.createElement("span");
@@ -37,7 +37,7 @@
         if (r && r.ok === false && r.error) b.title = r.error;
       } catch (e) {
         // the extension was reloaded: this page's script is orphaned
-        b.title = "VisualLeet was updated: reload this page to use this button.";
+        b.title = "LeetScope was updated: reload this page to use this button.";
       } finally {
         setTimeout(() => { text.textContent = "Visualize"; b.disabled = false; }, 600);
       }

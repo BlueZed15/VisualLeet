@@ -38,7 +38,7 @@ async function showFrom(tab) {
     await chrome.storage.session.set({ pending }).catch(() => {});
   }
 
-  // Reuse the open VisualLeet tab (its runtime stays warm). documentUrls in
+  // Reuse the open LeetScope tab (its runtime stays warm). documentUrls in
   // getContexts matches exact URLs only, and ours carries ?sourceTab=…, so filter here.
   const contexts = await chrome.runtime.getContexts({ contextTypes: ["TAB"] }).catch(() => []);
   const existing = contexts.find((c) => typeof c.tabId === "number" && c.tabId >= 0 && (c.documentUrl || "").startsWith(uiUrl));
@@ -76,10 +76,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 function friendlyError(err) {
   const text = String((err && err.message) || err);
   if (/Cannot access|cannot be scripted|chrome:\/\/|extensions gallery|Missing host permission|permission/i.test(text)) {
-    return "VisualLeet can't read that page right now. Access lasts until the page reloads or navigates: " +
-           "click the VisualLeet icon (or press Alt+V) on that page again.";
+    return "LeetScope can't read that page right now. Pages like chrome:// are protected, and access ends when the page reloads or navigates: " +
+           "click the LeetScope icon (or press Alt+V) on that page again, or paste your code instead.";
   }
-  if (/No tab with id/i.test(text)) return "That page was closed. Open it again and click the VisualLeet icon.";
+  if (/No tab with id/i.test(text)) return "That page was closed. Open it again and click the LeetScope icon.";
   return "Reading the page failed: " + text;
 }
 
@@ -131,7 +131,7 @@ async function readLeetCode(tabId) {
   if (!r.ok) {
     return { ok: false, reason: r.reason, error: {
       "not-leetcode": "That page isn't LeetCode.",
-      "not-problem": "That LeetCode page isn't a problem. Open a problem and click the VisualLeet icon there.",
+      "not-problem": "That LeetCode page isn't a problem. Open a problem and click Visualize or the LeetScope icon there.",
     }[r.reason] || "Couldn't read the LeetCode page." };
   }
   const out = {

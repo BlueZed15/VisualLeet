@@ -126,6 +126,25 @@ def is_instance(dat):
     return type(dat) == types.InstanceType or classRE.match(str(type(dat)))
 
 
+def _tidy_ident(s):
+  # labels are inserted into the page as HTML: keep identifier characters only
+  return re.sub(r'[^\w.]', '', str(s)) or 'object'
+
+def _tidy_label(dat, typing_only=False):
+  """VisualLeet tidy mode: a short label for typing names, functions and classes, else None."""
+  try:
+    if getattr(type(dat), '__module__', '') == 'typing' or (is_class(dat) and getattr(dat, '__module__', '') == 'typing'):
+      return 'typing.' + _tidy_ident(getattr(dat, '_name', None) or getattr(dat, '__name__', None) or 'alias')
+    if typing_only:
+      return None
+    if type(dat) in (types.FunctionType, types.MethodType, types.BuiltinFunctionType, types.BuiltinMethodType):
+      return _tidy_ident(get_name(dat)) + '()'
+    if is_class(dat):
+      return 'class ' + _tidy_ident(get_name(dat))
+  except Exception:
+    pass
+  return None
+
 def get_name(obj):
   """Return the name of an object."""
   return obj.__name__ if hasattr(obj, '__name__') else get_name(type(obj))
@@ -499,6 +518,16 @@ class ObjectEncoder:
           type(dat) not in (types.FunctionType, types.MethodType, types.BuiltinFunctionType, types.BuiltinMethodType) and
           hasattr(dat, '__class__') and (get_name(dat.__class__) != 'ABCMeta')):
         is_externally_defined = False
+
+      # VisualLeet tidy mode (opt-in, options["tidy"]): draw typing names,
+      # functions and classes as short inline labels instead of heap boxes,
+      # so the view shows the data structures. typing aliases (List, Optional)
+      # are *instances*, which the imported-object check above lets through,
+      # so they would otherwise be drawn with all their internals.
+      if getattr(self.parent, 'tidy', False):
+        label = _tidy_label(dat)
+        if label:
+          return ['IMPORTED_FAUX_PRIMITIVE', label]
 
       # if this is an externally-defined object (i.e., from an imported
       # module, don't try to recurse into it since we don't want to see

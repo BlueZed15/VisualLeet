@@ -13,7 +13,7 @@ self.fetch = async (input) => {
   const url = typeof input === "object" && input !== null && "url" in input ? String(input.url) : String(input);
   const name = url.split("?")[0].split("/").pop();
   const a = assets.get(name);
-  if (!a) throw new TypeError("VisualLeet runner has no network access (" + url + ")");
+  if (!a) throw new TypeError("LeetScope runner has no network access (" + url + ")");
   return new Response(a.bytes, { status: 200, headers: { "Content-Type": a.type } });
 };
 
@@ -36,7 +36,7 @@ def visualleet_run(source, inputs_json, setup, visible_json):
     out = {}
     def finalizer(code, trace):
         out["json"] = json.dumps({"code": code, "trace": trace})
-    options = {"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False}
+    options = {"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False, "tidy": True}
     if setup:
         # hidden setup (LeetCode problems): runs untraced; only the inputs are shown
         options["visualleet_setup"] = setup

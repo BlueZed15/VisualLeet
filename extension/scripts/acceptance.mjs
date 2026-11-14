@@ -483,7 +483,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     // not in VisualLeet's database: paste mode with a drafted call, explained
     const nd = await open("/problems/not-in-the-database/");
     const s6 = await state();
-    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't in VisualLeet's problem database/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
+    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't in LeetScope's problem database/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
 
     const none = await open("/problems/no-editor/");
     const s7 = await state();

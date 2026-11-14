@@ -1174,6 +1174,9 @@ class PGLogger(bdb.Bdb):
           # VisualLeet: hide setup helpers, unless the user rebound the name
           if k in self.setup_hidden and self.setup_hidden[k] is v:
             continue
+          # VisualLeet tidy mode: names imported from typing (List, Optional...) are noise
+          if getattr(self, 'tidy', False) and pg_encoder._tidy_label(v, typing_only=True):
+            continue
 
           encoded_val = self.encoder.encode(v, self.get_parent_of_function)
           encoded_globals[k] = encoded_val
@@ -1697,6 +1700,7 @@ def exec_script_str(script_str, raw_input_lst_json, options_json, finalizer_func
                     crazy_mode=py_crazy_mode,
                     setup_code=options.get('visualleet_setup'),
                     setup_visible=options.get('visualleet_setup_visible', ()))
+  logger.tidy = bool(options.get('tidy'))  # VisualLeet: see pg_encoder._tidy_label
 
   # TODO: refactor these NOT to be globals
   global input_string_queue
