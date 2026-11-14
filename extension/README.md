@@ -75,6 +75,9 @@ node scripts/collect-problems.mjs   # facts from leetcode.com -> problems/collec
 node scripts/build-db.mjs           # -> src/problems/*.json
 node scripts/verify-db.mjs          # known-good solutions (problems/solutions/) on LeetCode's
                                     # examples, through the real tracer; stamps "verified"
+                                    # (run it after every build-db, or the stamps reset)
+node scripts/check-calls.mjs        # every file's call against a stub of LeetCode's
+                                    # starter code (method names, argument counts)
 ```
 
 Hand-written entries (`problems/handwritten.json`) cover problems whose test
