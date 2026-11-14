@@ -1,0 +1,32 @@
+{
+ "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+ "frontendId": "106",
+ "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "inorder",
+   "type": "integer[]"
+  },
+  {
+   "name": "postorder",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "inorder = {inorder}\npostorder = {postorder}",
+ "visible": [
+  "inorder",
+  "postorder"
+ ],
+ "call": "result = Solution().buildTree(inorder, postorder)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

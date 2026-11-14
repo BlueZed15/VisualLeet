@@ -1,0 +1,30 @@
+{
+ "slug": "island-perimeter",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "463",
+ "title": "Island Perimeter",
+ "premium": false,
+ "meta": {
+  "name": "islandPerimeter",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]",
+  "[[1]]",
+  "[[1,0]]"
+ ],
+ "exampleOutputs": [
+  "16",
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

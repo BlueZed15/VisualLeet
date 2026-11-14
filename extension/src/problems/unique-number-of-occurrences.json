@@ -1,0 +1,25 @@
+{
+ "slug": "unique-number-of-occurrences",
+ "frontendId": "1207",
+ "title": "Unique Number of Occurrences",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().uniqueOccurrences(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

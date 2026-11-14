@@ -1,0 +1,30 @@
+{
+ "slug": "maximal-rectangle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "85",
+ "title": "Maximal Rectangle",
+ "premium": false,
+ "meta": {
+  "name": "maximalRectangle",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+  "[[\"0\"]]",
+  "[[\"1\"]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "knight-probability-in-chessboard",
+ "frontendId": "688",
+ "title": "Knight Probability in Chessboard",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "row",
+   "type": "integer"
+  },
+  {
+   "name": "column",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}\nrow = {row}\ncolumn = {column}",
+ "visible": [
+  "n",
+  "k",
+  "row",
+  "column"
+ ],
+ "call": "result = Solution().knightProbability(n, k, row, column)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-time-to-collect-all-apples-in-a-tree",
+ "frontendId": "1443",
+ "title": "Minimum Time to Collect All Apples in a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "hasApple",
+   "type": "list<boolean>"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nhasApple = {hasApple}",
+ "visible": [
+  "n",
+  "edges",
+  "hasApple"
+ ],
+ "call": "result = Solution().minTime(n, edges, hasApple)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

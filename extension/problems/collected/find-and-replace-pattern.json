@@ -1,0 +1,32 @@
+{
+ "slug": "find-and-replace-pattern",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "890",
+ "title": "Find and Replace Pattern",
+ "premium": false,
+ "meta": {
+  "name": "findAndReplacePattern",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "name": "pattern",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
+  "[\"a\",\"b\",\"c\"]\n\"a\""
+ ],
+ "exampleOutputs": [
+  "[\"mee\",\"aqq\"]",
+  "[\"a\",\"b\",\"c\"]"
+ ],
+ "anyOrder": true
+}

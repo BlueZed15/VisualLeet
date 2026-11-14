@@ -1,0 +1,34 @@
+{
+ "slug": "text-justification",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "68",
+ "title": "Text Justification",
+ "premium": false,
+ "meta": {
+  "name": "fullJustify",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "name": "maxWidth",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]\n16",
+  "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]\n16",
+  "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]\n20"
+ ],
+ "exampleOutputs": [
+  "[\"This    is    an\",\"example  of text\",\"justification.  \"]",
+  "[\"What   must   be\",\"acknowledgment  \",\"shall be        \"]",
+  "[\"Science  is  what we\",\"understand      well\",\"enough to explain to\",\"a  computer.  Art is\",\"everything  else  we\",\"do                  \"]"
+ ],
+ "anyOrder": false
+}

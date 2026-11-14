@@ -1,0 +1,35 @@
+{
+ "slug": "count-subarrays-with-fixed-bounds",
+ "frontendId": "2444",
+ "title": "Count Subarrays With Fixed Bounds",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "minK",
+   "type": "integer"
+  },
+  {
+   "name": "maxK",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nminK = {minK}\nmaxK = {maxK}",
+ "visible": [
+  "nums",
+  "minK",
+  "maxK"
+ ],
+ "call": "result = Solution().countSubarrays(nums, minK, maxK)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

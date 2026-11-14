@@ -1,0 +1,38 @@
+{
+ "slug": "reverse-linked-list-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "92",
+ "title": "Reverse Linked List II",
+ "premium": false,
+ "meta": {
+  "name": "reverseBetween",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode",
+    "dealloc": false
+   },
+   {
+    "name": "left",
+    "type": "integer"
+   },
+   {
+    "name": "right",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2\n4",
+  "[5]\n1\n1"
+ ],
+ "exampleOutputs": [
+  "[1,4,3,2,5]",
+  "[5]"
+ ],
+ "anyOrder": false
+}

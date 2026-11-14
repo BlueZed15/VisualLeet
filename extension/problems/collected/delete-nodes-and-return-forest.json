@@ -1,0 +1,33 @@
+{
+ "slug": "delete-nodes-and-return-forest",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1110",
+ "title": "Delete Nodes And Return Forest",
+ "premium": false,
+ "meta": {
+  "name": "delNodes",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "type": "integer[]",
+    "name": "to_delete"
+   }
+  ],
+  "return": {
+   "type": "list<TreeNode>"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6,7]\n[3,5]",
+  "[1,2,4,null,3]\n[3]"
+ ],
+ "exampleOutputs": [
+  "[[1,2,null,4],[6],[7]]",
+  "[[1,2,4]]"
+ ],
+ "anyOrder": true
+}

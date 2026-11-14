@@ -1,0 +1,30 @@
+{
+ "slug": "can-place-flowers",
+ "frontendId": "605",
+ "title": "Can Place Flowers",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "flowerbed",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "flowerbed = {flowerbed}\nn = {n}",
+ "visible": [
+  "flowerbed",
+  "n"
+ ],
+ "call": "result = Solution().canPlaceFlowers(flowerbed, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

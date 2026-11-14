@@ -1,0 +1,36 @@
+{
+ "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1334",
+ "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+ "premium": false,
+ "meta": {
+  "name": "findTheCity",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer",
+    "name": "distanceThreshold"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[0,1,3],[1,2,1],[1,3,4],[2,3,1]]\n4",
+  "5\n[[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]]\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

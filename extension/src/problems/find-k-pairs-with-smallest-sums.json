@@ -1,0 +1,35 @@
+{
+ "slug": "find-k-pairs-with-smallest-sums",
+ "frontendId": "373",
+ "title": "Find K Pairs with Smallest Sums",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nk = {k}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "k"
+ ],
+ "call": "result = Solution().kSmallestPairs(nums1, nums2, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

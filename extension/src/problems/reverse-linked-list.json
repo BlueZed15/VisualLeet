@@ -22,5 +22,6 @@
  ],
  "call": "result = Solution().reverseList(head)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

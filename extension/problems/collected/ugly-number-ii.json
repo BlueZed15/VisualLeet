@@ -1,0 +1,28 @@
+{
+ "slug": "ugly-number-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "264",
+ "title": "Ugly Number II",
+ "premium": false,
+ "meta": {
+  "name": "nthUglyNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10",
+  "1"
+ ],
+ "exampleOutputs": [
+  "12",
+  "1"
+ ],
+ "anyOrder": false
+}

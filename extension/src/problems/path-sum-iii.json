@@ -1,0 +1,30 @@
+{
+ "slug": "path-sum-iii",
+ "frontendId": "437",
+ "title": "Path Sum III",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "targetSum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\ntargetSum = {targetSum}",
+ "visible": [
+  "root",
+  "targetSum"
+ ],
+ "call": "result = Solution().pathSum(root, targetSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,59 @@
+{
+ "slug": "implement-stack-using-queues",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "225",
+ "title": "Implement Stack using Queues",
+ "premium": false,
+ "meta": {
+  "classname": "MyStack",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "x"
+     }
+    ],
+    "name": "push",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "pop"
+   },
+   {
+    "params": [],
+    "name": "top",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "empty",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, 2, 2, false]"
+ ],
+ "anyOrder": false
+}

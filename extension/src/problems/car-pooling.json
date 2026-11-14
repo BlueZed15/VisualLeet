@@ -1,0 +1,30 @@
+{
+ "slug": "car-pooling",
+ "frontendId": "1094",
+ "title": "Car Pooling",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "trips",
+   "type": "integer[][]"
+  },
+  {
+   "name": "capacity",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "trips = {trips}\ncapacity = {capacity}",
+ "visible": [
+  "trips",
+  "capacity"
+ ],
+ "call": "result = Solution().carPooling(trips, capacity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

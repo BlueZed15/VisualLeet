@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-submatrices-that-sum-to-target",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1074",
+ "title": "Number of Submatrices That Sum to Target",
+ "premium": false,
+ "meta": {
+  "name": "numSubmatrixSumTarget",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[[0,1,0],[1,1,1],[0,1,0]]\n0",
+  "[[1,-1],[-1,1]]\n0",
+  "[[904]]\n0"
+ ],
+ "exampleOutputs": [
+  "4",
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

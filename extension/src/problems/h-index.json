@@ -1,0 +1,25 @@
+{
+ "slug": "h-index",
+ "frontendId": "274",
+ "title": "H-Index",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "citations",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "citations = {citations}",
+ "visible": [
+  "citations"
+ ],
+ "call": "result = Solution().hIndex(citations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

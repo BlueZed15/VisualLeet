@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-smallest-divisor-given-a-threshold",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1283",
+ "title": "Find the Smallest Divisor Given a Threshold",
+ "premium": false,
+ "meta": {
+  "name": "smallestDivisor",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "threshold"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,5,9]\n6",
+  "[44,22,33,11,1]\n5"
+ ],
+ "exampleOutputs": [
+  "5",
+  "44"
+ ],
+ "anyOrder": false
+}

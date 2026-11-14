@@ -1,0 +1,30 @@
+{
+ "slug": "ransom-note",
+ "frontendId": "383",
+ "title": "Ransom Note",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ransomNote",
+   "type": "string"
+  },
+  {
+   "name": "magazine",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "ransomNote = {ransomNote}\nmagazine = {magazine}",
+ "visible": [
+  "ransomNote",
+  "magazine"
+ ],
+ "call": "result = Solution().canConstruct(ransomNote, magazine)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

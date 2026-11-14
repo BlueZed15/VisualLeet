@@ -1,0 +1,34 @@
+{
+ "slug": "string-compression",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "443",
+ "title": "String Compression",
+ "premium": false,
+ "meta": {
+  "name": "compress",
+  "params": [
+   {
+    "name": "chars",
+    "type": "character[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "output": {
+   "paramindex": 0,
+   "size": "ret"
+  }
+ },
+ "exampleInputs": [
+  "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\",\"c\"]",
+  "[\"a\"]",
+  "[\"a\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\"]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1",
+  "4"
+ ],
+ "anyOrder": false
+}

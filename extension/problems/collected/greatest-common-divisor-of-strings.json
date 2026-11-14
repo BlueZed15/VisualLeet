@@ -1,0 +1,36 @@
+{
+ "slug": "greatest-common-divisor-of-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1071",
+ "title": "Greatest Common Divisor of Strings",
+ "premium": false,
+ "meta": {
+  "name": "gcdOfStrings",
+  "params": [
+   {
+    "name": "str1",
+    "type": "string"
+   },
+   {
+    "name": "str2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"ABCABC\"\n\"ABC\"",
+  "\"ABABAB\"\n\"ABAB\"",
+  "\"LEET\"\n\"CODE\"",
+  "\"AAAAAB\"\n\"AAA\""
+ ],
+ "exampleOutputs": [
+  "\"ABC\"",
+  "\"AB\"",
+  "\"\"",
+  "\"\"​​​​​​​"
+ ],
+ "anyOrder": false
+}

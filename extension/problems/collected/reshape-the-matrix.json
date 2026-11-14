@@ -1,0 +1,36 @@
+{
+ "slug": "reshape-the-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "566",
+ "title": "Reshape the Matrix",
+ "premium": false,
+ "meta": {
+  "name": "matrixReshape",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   },
+   {
+    "name": "r",
+    "type": "integer"
+   },
+   {
+    "name": "c",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[3,4]]\n1\n4",
+  "[[1,2],[3,4]]\n2\n4"
+ ],
+ "exampleOutputs": [
+  "[[1,2,3,4]]",
+  "[[1,2],[3,4]]"
+ ],
+ "anyOrder": false
+}

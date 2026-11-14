@@ -1,0 +1,33 @@
+{
+ "slug": "flatten-binary-tree-to-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "114",
+ "title": "Flatten Binary Tree to Linked List",
+ "premium": false,
+ "meta": {
+  "name": "flatten",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[1,2,5,3,4,null,6]",
+  "[]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "[1,null,2,null,3,null,4,null,5,null,6]",
+  "[]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

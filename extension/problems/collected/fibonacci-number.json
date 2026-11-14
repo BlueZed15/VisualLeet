@@ -1,0 +1,30 @@
+{
+ "slug": "fibonacci-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "509",
+ "title": "Fibonacci Number",
+ "premium": false,
+ "meta": {
+  "name": "fib",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3",
+  "4"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

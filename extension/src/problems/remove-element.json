@@ -1,0 +1,30 @@
+{
+ "slug": "remove-element",
+ "frontendId": "27",
+ "title": "Remove Element",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "val",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nval = {val}",
+ "visible": [
+  "nums",
+  "val"
+ ],
+ "call": "result = Solution().removeElement(nums, val)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

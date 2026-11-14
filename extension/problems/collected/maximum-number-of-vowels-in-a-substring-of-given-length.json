@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1456",
+ "title": "Maximum Number of Vowels in a Substring of Given Length",
+ "premium": false,
+ "meta": {
+  "name": "maxVowels",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abciiidef\"\n3",
+  "\"aeiou\"\n2",
+  "\"leetcode\"\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "palindrome-pairs",
+ "frontendId": "336",
+ "title": "Palindrome Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}",
+ "visible": [
+  "words"
+ ],
+ "call": "result = Solution().palindromePairs(words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

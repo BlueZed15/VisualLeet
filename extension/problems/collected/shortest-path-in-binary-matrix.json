@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-path-in-binary-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1091",
+ "title": "Shortest Path in Binary Matrix",
+ "premium": false,
+ "meta": {
+  "name": "shortestPathBinaryMatrix",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,0]]",
+  "[[0,0,0],[1,1,0],[1,1,0]]",
+  "[[1,0,0],[1,1,0],[1,1,0]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "perfect-squares",
+ "frontendId": "279",
+ "title": "Perfect Squares",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().numSquares(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "restore-ip-addresses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "93",
+ "title": "Restore IP Addresses",
+ "premium": false,
+ "meta": {
+  "name": "restoreIpAddresses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"25525511135\"",
+  "\"0000\"",
+  "\"101023\""
+ ],
+ "exampleOutputs": [
+  "[\"255.255.11.135\",\"255.255.111.35\"]",
+  "[\"0.0.0.0\"]",
+  "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]"
+ ],
+ "anyOrder": true
+}

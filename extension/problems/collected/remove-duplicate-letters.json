@@ -1,0 +1,28 @@
+{
+ "slug": "remove-duplicate-letters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "316",
+ "title": "Remove Duplicate Letters",
+ "premium": false,
+ "meta": {
+  "name": "removeDuplicateLetters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"bcabc\"",
+  "\"cbacdcbc\""
+ ],
+ "exampleOutputs": [
+  "\"abc\"",
+  "\"acdb\""
+ ],
+ "anyOrder": false
+}

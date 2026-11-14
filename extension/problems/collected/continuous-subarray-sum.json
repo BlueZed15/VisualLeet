@@ -1,0 +1,34 @@
+{
+ "slug": "continuous-subarray-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "523",
+ "title": "Continuous Subarray Sum",
+ "premium": false,
+ "meta": {
+  "name": "checkSubarraySum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[23,2,4,6,7]\n6",
+  "[23,2,6,4,7]\n6",
+  "[23,2,6,4,7]\n13"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

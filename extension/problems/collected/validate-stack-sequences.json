@@ -1,0 +1,32 @@
+{
+ "slug": "validate-stack-sequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "946",
+ "title": "Validate Stack Sequences",
+ "premium": false,
+ "meta": {
+  "name": "validateStackSequences",
+  "params": [
+   {
+    "name": "pushed",
+    "type": "integer[]"
+   },
+   {
+    "name": "popped",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n[4,5,3,2,1]",
+  "[1,2,3,4,5]\n[4,3,5,1,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

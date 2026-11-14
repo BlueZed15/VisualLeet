@@ -1,0 +1,28 @@
+{
+ "slug": "squares-of-a-sorted-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "977",
+ "title": "Squares of a Sorted Array",
+ "premium": false,
+ "meta": {
+  "name": "sortedSquares",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[-4,-1,0,3,10]",
+  "[-7,-3,2,3,11]"
+ ],
+ "exampleOutputs": [
+  "[0,1,9,16,100]",
+  "[4,9,9,49,121]"
+ ],
+ "anyOrder": false
+}

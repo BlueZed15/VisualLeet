@@ -1,0 +1,25 @@
+{
+ "slug": "letter-case-permutation",
+ "frontendId": "784",
+ "title": "Letter Case Permutation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().letterCasePermutation(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

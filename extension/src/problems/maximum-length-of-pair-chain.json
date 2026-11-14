@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-length-of-pair-chain",
+ "frontendId": "646",
+ "title": "Maximum Length of Pair Chain",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pairs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "pairs = {pairs}",
+ "visible": [
+  "pairs"
+ ],
+ "call": "result = Solution().findLongestChain(pairs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

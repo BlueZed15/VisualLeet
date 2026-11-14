@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-time-to-make-rope-colorful",
+ "frontendId": "1578",
+ "title": "Minimum Time to Make Rope Colorful",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "colors",
+   "type": "string"
+  },
+  {
+   "name": "neededTime",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "colors = {colors}\nneededTime = {neededTime}",
+ "visible": [
+  "colors",
+  "neededTime"
+ ],
+ "call": "result = Solution().minCost(colors, neededTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

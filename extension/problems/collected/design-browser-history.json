@@ -1,0 +1,67 @@
+{
+ "slug": "design-browser-history",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1472",
+ "title": "Design Browser History",
+ "premium": false,
+ "meta": {
+  "classname": "BrowserHistory",
+  "constructor": {
+   "params": [
+    {
+     "type": "string",
+     "name": "homepage"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "url"
+     }
+    ],
+    "name": "visit",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "steps"
+     }
+    ],
+    "name": "back",
+    "return": {
+     "type": "string"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "steps"
+     }
+    ],
+    "name": "forward",
+    "return": {
+     "type": "string"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"BrowserHistory\",\"visit\",\"visit\",\"visit\",\"back\",\"back\",\"forward\",\"visit\",\"forward\",\"back\",\"back\"]\n[[\"leetcode.com\"],[\"google.com\"],[\"facebook.com\"],[\"youtube.com\"],[1],[1],[1],[\"linkedin.com\"],[2],[2],[7]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,null,null,\"facebook.com\",\"google.com\",\"facebook.com\",null,\"linkedin.com\",\"google.com\",\"leetcode.com\"]"
+ ],
+ "anyOrder": false
+}

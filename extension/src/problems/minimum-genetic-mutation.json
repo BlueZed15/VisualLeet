@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-genetic-mutation",
+ "frontendId": "433",
+ "title": "Minimum Genetic Mutation",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startGene",
+   "type": "string"
+  },
+  {
+   "name": "endGene",
+   "type": "string"
+  },
+  {
+   "name": "bank",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "startGene = {startGene}\nendGene = {endGene}\nbank = {bank}",
+ "visible": [
+  "startGene",
+  "endGene",
+  "bank"
+ ],
+ "call": "result = Solution().minMutation(startGene, endGene, bank)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "reorganize-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "767",
+ "title": "Reorganize String",
+ "premium": false,
+ "meta": {
+  "name": "reorganizeString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"aab\"",
+  "\"aaab\""
+ ],
+ "exampleOutputs": [
+  "\"aba\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

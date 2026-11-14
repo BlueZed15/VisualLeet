@@ -1,0 +1,25 @@
+{
+ "slug": "binary-tree-preorder-traversal",
+ "frontendId": "144",
+ "title": "Binary Tree Preorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().preorderTraversal(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

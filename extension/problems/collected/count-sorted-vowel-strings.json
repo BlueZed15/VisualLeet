@@ -1,0 +1,30 @@
+{
+ "slug": "count-sorted-vowel-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1641",
+ "title": "Count Sorted Vowel Strings",
+ "premium": false,
+ "meta": {
+  "name": "countVowelStrings",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "33"
+ ],
+ "exampleOutputs": [
+  "5",
+  "15",
+  "66045"
+ ],
+ "anyOrder": false
+}

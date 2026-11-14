@@ -1,0 +1,34 @@
+{
+ "slug": "expression-add-operators",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "282",
+ "title": "Expression Add Operators",
+ "premium": false,
+ "meta": {
+  "name": "addOperators",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"123\"\n6",
+  "\"232\"\n8",
+  "\"3456237490\"\n9191"
+ ],
+ "exampleOutputs": [
+  "[\"1*2*3\",\"1+2+3\"]",
+  "[\"2*3+2\",\"2+3*2\"]",
+  "[]"
+ ],
+ "anyOrder": false
+}

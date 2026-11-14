@@ -1,0 +1,52 @@
+{
+ "slug": "delete-node-in-a-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "237",
+ "title": "Delete Node in a Linked List",
+ "premium": false,
+ "meta": {
+  "name": "deleteNode",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   },
+   {
+    "name": "node",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  },
+  "manual": true,
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "ruby",
+   "swift",
+   "golang",
+   "python3",
+   "scala",
+   "kotlin",
+   "php",
+   "typescript"
+  ]
+ },
+ "exampleInputs": [
+  "[4,5,1,9]\n5",
+  "[4,5,1,9]\n1"
+ ],
+ "exampleOutputs": [
+  "[4,1,9]",
+  "[4,5,9]"
+ ],
+ "anyOrder": false
+}

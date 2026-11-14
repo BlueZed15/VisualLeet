@@ -1,0 +1,30 @@
+{
+ "slug": "max-number-of-k-sum-pairs",
+ "frontendId": "1679",
+ "title": "Max Number of K-Sum Pairs",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}",
+ "visible": [
+  "nums",
+  "k"
+ ],
+ "call": "result = Solution().maxOperations(nums, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "flip-string-to-monotone-increasing",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "926",
+ "title": "Flip String to Monotone Increasing",
+ "premium": false,
+ "meta": {
+  "name": "minFlipsMonoIncr",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"00110\"",
+  "\"010110\"",
+  "\"00011000\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,50 @@
+{
+ "slug": "remove-duplicates-from-sorted-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "26",
+ "title": "Remove Duplicates from Sorted Array",
+ "premium": false,
+ "meta": {
+  "name": "removeDuplicates",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "output": {
+   "paramindex": 0,
+   "size": "ret"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "ruby",
+   "swift",
+   "golang",
+   "python3",
+   "scala",
+   "kotlin",
+   "rust",
+   "php",
+   "typescript",
+   "dart"
+  ]
+ },
+ "exampleInputs": [
+  "[1,1,2]",
+  "[0,0,1,1,1,2,2,3,3,4]"
+ ],
+ "exampleOutputs": [
+  "2, nums = [1,2,_]",
+  "5, nums = [0,1,2,3,4,_,_,_,_,_]"
+ ],
+ "anyOrder": false
+}

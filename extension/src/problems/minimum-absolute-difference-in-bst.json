@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-absolute-difference-in-bst",
+ "frontendId": "530",
+ "title": "Minimum Absolute Difference in BST",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().getMinimumDifference(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

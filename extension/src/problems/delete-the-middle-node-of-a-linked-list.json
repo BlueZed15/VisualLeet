@@ -1,0 +1,27 @@
+{
+ "slug": "delete-the-middle-node-of-a-linked-list",
+ "frontendId": "2095",
+ "title": "Delete the Middle Node of a Linked List",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().deleteMiddle(head)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

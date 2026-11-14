@@ -1,0 +1,28 @@
+{
+ "slug": "delete-and-earn",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "740",
+ "title": "Delete and Earn",
+ "premium": false,
+ "meta": {
+  "name": "deleteAndEarn",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,4,2]",
+  "[2,2,3,3,3,4]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "9"
+ ],
+ "anyOrder": false
+}

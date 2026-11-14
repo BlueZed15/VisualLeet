@@ -1,0 +1,45 @@
+{
+ "slug": "smallest-number-in-infinite-set",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2336",
+ "title": "Smallest Number in Infinite Set",
+ "premium": false,
+ "meta": {
+  "classname": "SmallestInfiniteSet",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [],
+    "name": "popSmallest",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "addBack",
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"SmallestInfiniteSet\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\"]\n[[],[2],[],[],[],[1],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, 1, 2, 3, null, 1, 4, 5]"
+ ],
+ "anyOrder": false
+}

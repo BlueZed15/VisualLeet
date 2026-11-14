@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-depth-of-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "111",
+ "title": "Minimum Depth of Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "minDepth",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[2,null,3,null,4,null,5,null,6]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

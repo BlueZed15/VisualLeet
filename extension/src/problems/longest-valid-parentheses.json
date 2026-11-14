@@ -1,0 +1,25 @@
+{
+ "slug": "longest-valid-parentheses",
+ "frontendId": "32",
+ "title": "Longest Valid Parentheses",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().longestValidParentheses(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

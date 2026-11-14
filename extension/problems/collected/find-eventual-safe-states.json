@@ -1,0 +1,28 @@
+{
+ "slug": "find-eventual-safe-states",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "802",
+ "title": "Find Eventual Safe States",
+ "premium": false,
+ "meta": {
+  "name": "eventualSafeNodes",
+  "params": [
+   {
+    "name": "graph",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,3],[5],[0],[5],[],[]]",
+  "[[1,2,3,4],[1,2],[3,4],[0,4],[]]"
+ ],
+ "exampleOutputs": [
+  "[2,4,5,6]",
+  "[4]"
+ ],
+ "anyOrder": false
+}

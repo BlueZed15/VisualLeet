@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-size-subarray-sum",
+ "frontendId": "209",
+ "title": "Minimum Size Subarray Sum",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\nnums = {nums}",
+ "visible": [
+  "target",
+  "nums"
+ ],
+ "call": "result = Solution().minSubArrayLen(target, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

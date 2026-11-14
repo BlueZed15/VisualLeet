@@ -1,0 +1,32 @@
+{
+ "slug": "intersection-of-two-arrays-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "350",
+ "title": "Intersection of Two Arrays II",
+ "premium": false,
+ "meta": {
+  "name": "intersect",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums2",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,1]\n[2,2]",
+  "[4,9,5]\n[9,4,9,8,4]"
+ ],
+ "exampleOutputs": [
+  "[2,2]",
+  "[4,9]"
+ ],
+ "anyOrder": true
+}

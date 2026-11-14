@@ -1,0 +1,37 @@
+{
+ "slug": "trim-a-binary-search-tree",
+ "frontendId": "669",
+ "title": "Trim a Binary Search Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nlow = {low}\nhigh = {high}",
+ "visible": [
+  "root",
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().trimBST(root, low, high)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

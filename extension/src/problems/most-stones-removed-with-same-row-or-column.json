@@ -1,0 +1,25 @@
+{
+ "slug": "most-stones-removed-with-same-row-or-column",
+ "frontendId": "947",
+ "title": "Most Stones Removed with Same Row or Column",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().removeStones(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

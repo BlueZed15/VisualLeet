@@ -1,0 +1,36 @@
+{
+ "slug": "find-k-closest-elements",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "658",
+ "title": "Find K Closest Elements",
+ "premium": false,
+ "meta": {
+  "name": "findClosestElements",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "x",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n4\n3",
+  "[1,1,2,3,4,5]\n4\n-1"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,4]",
+  "[1,1,2,3]"
+ ],
+ "anyOrder": false
+}

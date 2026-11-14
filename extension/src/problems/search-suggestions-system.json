@@ -1,0 +1,30 @@
+{
+ "slug": "search-suggestions-system",
+ "frontendId": "1268",
+ "title": "Search Suggestions System",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "products",
+   "type": "string[]"
+  },
+  {
+   "name": "searchWord",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "products = {products}\nsearchWord = {searchWord}",
+ "visible": [
+  "products",
+  "searchWord"
+ ],
+ "call": "result = Solution().suggestedProducts(products, searchWord)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

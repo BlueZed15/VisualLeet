@@ -1,0 +1,30 @@
+{
+ "slug": "critical-connections-in-a-network",
+ "frontendId": "1192",
+ "title": "Critical Connections in a Network",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "connections",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nconnections = {connections}",
+ "visible": [
+  "n",
+  "connections"
+ ],
+ "call": "result = Solution().criticalConnections(n, connections)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

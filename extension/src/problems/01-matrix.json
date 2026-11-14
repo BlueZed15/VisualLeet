@@ -1,0 +1,25 @@
+{
+ "slug": "01-matrix",
+ "frontendId": "542",
+ "title": "01 Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}",
+ "visible": [
+  "mat"
+ ],
+ "call": "result = Solution().updateMatrix(mat)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

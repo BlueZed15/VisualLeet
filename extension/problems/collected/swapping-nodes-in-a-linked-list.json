@@ -1,0 +1,32 @@
+{
+ "slug": "swapping-nodes-in-a-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1721",
+ "title": "Swapping Nodes in a Linked List",
+ "premium": false,
+ "meta": {
+  "name": "swapNodes",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2",
+  "[7,9,6,6,7,8,3,0,9,5]\n5"
+ ],
+ "exampleOutputs": [
+  "[1,4,3,2,5]",
+  "[7,9,6,6,8,7,3,0,9,5]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "game-of-life",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "289",
+ "title": "Game of Life",
+ "premium": false,
+ "meta": {
+  "name": "gameOfLife",
+  "params": [
+   {
+    "name": "board",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]",
+  "[[1,1],[1,0]]"
+ ],
+ "exampleOutputs": [
+  "[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]",
+  "[[1,1],[1,1]]"
+ ],
+ "anyOrder": false
+}

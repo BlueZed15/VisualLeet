@@ -7,6 +7,18 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
+- **Database: 600 problems** (2026-11-15). NeetCode 150 (each checked with a
+  known-good solution) + 450 more from LeetCode's study plans (LeetCode 75,
+  Top Interview 150, Top 100 Liked) and the most-liked free problems
+  (`problems/batch-2026-11-15.json`, made by `scripts/collect-lists.mjs`).
+  The 450 are **inputs-checked**: every example's inputs are built through
+  the real tracer and printed back exactly (design problems: operations and
+  typed arguments). Files carry `checked: "solution" | "inputs" | "none"`;
+  the badge shows "✓ checked setup" / "inputs checked". User's plan: write
+  solutions for full checks in later batches. 20 skipped (17 LeetCode
+  "manual" problems that need hand-written entries, see
+  `problems/build-skipped.json`; 3 SQL/pandas problems).
+
 - **2026-11-15, later (user requests):** problems at click time are shown on
   the LeetCode page next to the Visualize button (content-script message;
   LeetScope isn't opened): non-Python editor, unreadable code, problem not in

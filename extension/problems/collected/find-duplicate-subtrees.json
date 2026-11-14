@@ -1,0 +1,30 @@
+{
+ "slug": "find-duplicate-subtrees",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "652",
+ "title": "Find Duplicate Subtrees",
+ "premium": false,
+ "meta": {
+  "name": "findDuplicateSubtrees",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<TreeNode>"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,null,2,4,null,null,4]",
+  "[2,1,1]",
+  "[2,2,2,3,null,3,null]"
+ ],
+ "exampleOutputs": [
+  "[[2,4],[4]]",
+  "[[1]]",
+  "[[2,3],[3]]"
+ ],
+ "anyOrder": false
+}

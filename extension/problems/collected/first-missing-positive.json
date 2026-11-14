@@ -1,0 +1,30 @@
+{
+ "slug": "first-missing-positive",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "41",
+ "title": "First Missing Positive",
+ "premium": false,
+ "meta": {
+  "name": "firstMissingPositive",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,0]",
+  "[3,4,-1,1]",
+  "[7,8,9,11,12]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

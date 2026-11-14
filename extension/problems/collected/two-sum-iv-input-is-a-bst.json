@@ -1,0 +1,32 @@
+{
+ "slug": "two-sum-iv-input-is-a-bst",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "653",
+ "title": "Two Sum IV - Input is a BST",
+ "premium": false,
+ "meta": {
+  "name": "findTarget",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,6,2,4,null,7]\n9",
+  "[5,3,6,2,4,null,7]\n28"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

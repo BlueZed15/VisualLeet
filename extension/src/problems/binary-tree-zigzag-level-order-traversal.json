@@ -1,0 +1,25 @@
+{
+ "slug": "binary-tree-zigzag-level-order-traversal",
+ "frontendId": "103",
+ "title": "Binary Tree Zigzag Level Order Traversal",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().zigzagLevelOrder(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

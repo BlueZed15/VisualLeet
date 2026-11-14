@@ -1,0 +1,30 @@
+{
+ "slug": "score-of-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "856",
+ "title": "Score of Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "scoreOfParentheses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"()\"",
+  "\"(())\"",
+  "\"()()\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

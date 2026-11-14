@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-difference",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "389",
+ "title": "Find the Difference",
+ "premium": false,
+ "meta": {
+  "name": "findTheDifference",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "character"
+  }
+ },
+ "exampleInputs": [
+  "\"abcd\"\n\"abcde\"",
+  "\"\"\n\"y\""
+ ],
+ "exampleOutputs": [
+  "\"e\"",
+  "\"y\""
+ ],
+ "anyOrder": false
+}

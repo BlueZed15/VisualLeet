@@ -1,0 +1,57 @@
+{
+ "slug": "insert-delete-getrandom-o1",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "380",
+ "title": "Insert Delete GetRandom O(1)",
+ "premium": false,
+ "meta": {
+  "classname": "RandomizedSet",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "insert",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "remove"
+   },
+   {
+    "params": [],
+    "name": "getRandom",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[1],[2],[2],[],[1],[2],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, false, true, 2, true, false, 2]"
+ ],
+ "anyOrder": false
+}

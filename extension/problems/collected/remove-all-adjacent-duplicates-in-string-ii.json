@@ -1,0 +1,34 @@
+{
+ "slug": "remove-all-adjacent-duplicates-in-string-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1209",
+ "title": "Remove All Adjacent Duplicates in String II",
+ "premium": false,
+ "meta": {
+  "name": "removeDuplicates",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abcd\"\n2",
+  "\"deeedbbcccbdaa\"\n3",
+  "\"pbbcggttciiippooaais\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"abcd\"",
+  "\"aa\"",
+  "\"ps\""
+ ],
+ "anyOrder": false
+}

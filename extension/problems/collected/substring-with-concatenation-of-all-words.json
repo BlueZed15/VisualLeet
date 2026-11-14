@@ -1,0 +1,34 @@
+{
+ "slug": "substring-with-concatenation-of-all-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "30",
+ "title": "Substring with Concatenation of All Words",
+ "premium": false,
+ "meta": {
+  "name": "findSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "\"barfoothefoobarman\"\n[\"foo\",\"bar\"]",
+  "\"wordgoodgoodgoodbestword\"\n[\"word\",\"good\",\"best\",\"word\"]",
+  "\"barfoofoobarthefoobarman\"\n[\"bar\",\"foo\",\"the\"]"
+ ],
+ "exampleOutputs": [
+  "[0,9]",
+  "[]",
+  "[6,9,12]"
+ ],
+ "anyOrder": true
+}

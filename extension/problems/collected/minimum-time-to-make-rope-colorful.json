@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-time-to-make-rope-colorful",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1578",
+ "title": "Minimum Time to Make Rope Colorful",
+ "premium": false,
+ "meta": {
+  "name": "minCost",
+  "params": [
+   {
+    "name": "colors",
+    "type": "string"
+   },
+   {
+    "type": "integer[]",
+    "name": "neededTime"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abaac\"\n[1,2,3,4,5]",
+  "\"abc\"\n[1,2,3]",
+  "\"aabaa\"\n[1,2,3,4,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "2"
+ ],
+ "anyOrder": false
+}

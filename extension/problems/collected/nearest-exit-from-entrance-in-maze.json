@@ -1,0 +1,34 @@
+{
+ "slug": "nearest-exit-from-entrance-in-maze",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1926",
+ "title": "Nearest Exit from Entrance in Maze",
+ "premium": false,
+ "meta": {
+  "name": "nearestExit",
+  "params": [
+   {
+    "name": "maze",
+    "type": "character[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "entrance"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]\n[1,2]",
+  "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]\n[1,0]",
+  "[[\".\",\"+\"]]\n[0,0]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

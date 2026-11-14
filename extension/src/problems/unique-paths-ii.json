@@ -1,0 +1,25 @@
+{
+ "slug": "unique-paths-ii",
+ "frontendId": "63",
+ "title": "Unique Paths II",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "obstacleGrid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "obstacleGrid = {obstacleGrid}",
+ "visible": [
+  "obstacleGrid"
+ ],
+ "call": "result = Solution().uniquePathsWithObstacles(obstacleGrid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

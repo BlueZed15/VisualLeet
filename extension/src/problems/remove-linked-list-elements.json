@@ -1,0 +1,32 @@
+{
+ "slug": "remove-linked-list-elements",
+ "frontendId": "203",
+ "title": "Remove Linked List Elements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "val",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}\nval = {val}",
+ "visible": [
+  "head",
+  "val"
+ ],
+ "call": "result = Solution().removeElements(head, val)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

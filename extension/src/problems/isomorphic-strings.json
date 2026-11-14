@@ -1,0 +1,30 @@
+{
+ "slug": "isomorphic-strings",
+ "frontendId": "205",
+ "title": "Isomorphic Strings",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}",
+ "visible": [
+  "s",
+  "t"
+ ],
+ "call": "result = Solution().isIsomorphic(s, t)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

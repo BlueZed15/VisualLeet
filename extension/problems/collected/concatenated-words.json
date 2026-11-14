@@ -1,0 +1,28 @@
+{
+ "slug": "concatenated-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "472",
+ "title": "Concatenated Words",
+ "premium": false,
+ "meta": {
+  "name": "findAllConcatenatedWordsInADict",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
+  "[\"cat\",\"dog\",\"catdog\"]"
+ ],
+ "exampleOutputs": [
+  "[\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]",
+  "[\"catdog\"]"
+ ],
+ "anyOrder": false
+}

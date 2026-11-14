@@ -1,0 +1,30 @@
+{
+ "slug": "nearest-exit-from-entrance-in-maze",
+ "frontendId": "1926",
+ "title": "Nearest Exit from Entrance in Maze",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "maze",
+   "type": "character[][]"
+  },
+  {
+   "name": "entrance",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "maze = {maze}\nentrance = {entrance}",
+ "visible": [
+  "maze",
+  "entrance"
+ ],
+ "call": "result = Solution().nearestExit(maze, entrance)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

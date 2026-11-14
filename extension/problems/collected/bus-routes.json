@@ -1,0 +1,36 @@
+{
+ "slug": "bus-routes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "815",
+ "title": "Bus Routes",
+ "premium": false,
+ "meta": {
+  "name": "numBusesToDestination",
+  "params": [
+   {
+    "name": "routes",
+    "type": "integer[][]"
+   },
+   {
+    "name": "source",
+    "type": "integer"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,7],[3,6,7]]\n1\n6",
+  "[[7,12],[4,5,15],[6],[15,19],[9,12,13]]\n15\n12"
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

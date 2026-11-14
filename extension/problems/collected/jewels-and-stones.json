@@ -1,0 +1,32 @@
+{
+ "slug": "jewels-and-stones",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "771",
+ "title": "Jewels and Stones",
+ "premium": false,
+ "meta": {
+  "name": "numJewelsInStones",
+  "params": [
+   {
+    "name": "jewels",
+    "type": "string"
+   },
+   {
+    "name": "stones",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aA\"\n\"aAAbbbb\"",
+  "\"z\"\n\"ZZ\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

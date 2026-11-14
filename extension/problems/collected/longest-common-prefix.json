@@ -1,0 +1,28 @@
+{
+ "slug": "longest-common-prefix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "14",
+ "title": "Longest Common Prefix",
+ "premium": false,
+ "meta": {
+  "name": "longestCommonPrefix",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"flower\",\"flow\",\"flight\"]",
+  "[\"dog\",\"racecar\",\"car\"]"
+ ],
+ "exampleOutputs": [
+  "\"fl\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

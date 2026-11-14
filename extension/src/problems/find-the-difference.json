@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-difference",
+ "frontendId": "389",
+ "title": "Find the Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}",
+ "visible": [
+  "s",
+  "t"
+ ],
+ "call": "result = Solution().findTheDifference(s, t)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

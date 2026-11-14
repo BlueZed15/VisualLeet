@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-provinces",
+ "frontendId": "547",
+ "title": "Number of Provinces",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "isConnected",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "isConnected = {isConnected}",
+ "visible": [
+  "isConnected"
+ ],
+ "call": "result = Solution().findCircleNum(isConnected)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

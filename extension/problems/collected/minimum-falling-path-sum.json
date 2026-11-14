@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-falling-path-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "931",
+ "title": "Minimum Falling Path Sum",
+ "premium": false,
+ "meta": {
+  "name": "minFallingPathSum",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2,1,3],[6,5,4],[7,8,9]]",
+  "[[-19,57],[-40,-5]]"
+ ],
+ "exampleOutputs": [
+  "13",
+  "-59"
+ ],
+ "anyOrder": false
+}

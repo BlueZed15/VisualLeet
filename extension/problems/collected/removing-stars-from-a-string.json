@@ -1,0 +1,28 @@
+{
+ "slug": "removing-stars-from-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2390",
+ "title": "Removing Stars From a String",
+ "premium": false,
+ "meta": {
+  "name": "removeStars",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leet**cod*e\"",
+  "\"erase*****\""
+ ],
+ "exampleOutputs": [
+  "\"lecoe\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

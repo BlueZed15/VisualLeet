@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-unsorted-continuous-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "581",
+ "title": "Shortest Unsorted Continuous Subarray",
+ "premium": false,
+ "meta": {
+  "name": "findUnsortedSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,6,4,8,10,9,15]",
+  "[1,2,3,4]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0",
+  "0"
+ ],
+ "anyOrder": false
+}

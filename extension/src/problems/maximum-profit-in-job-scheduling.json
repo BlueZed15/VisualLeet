@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-profit-in-job-scheduling",
+ "frontendId": "1235",
+ "title": "Maximum Profit in Job Scheduling",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "endTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "profit",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "startTime = {startTime}\nendTime = {endTime}\nprofit = {profit}",
+ "visible": [
+  "startTime",
+  "endTime",
+  "profit"
+ ],
+ "call": "result = Solution().jobScheduling(startTime, endTime, profit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

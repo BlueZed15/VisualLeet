@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-arrive-at-destination",
+ "frontendId": "1976",
+ "title": "Number of Ways to Arrive at Destination",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "roads",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nroads = {roads}",
+ "visible": [
+  "n",
+  "roads"
+ ],
+ "call": "result = Solution().countPaths(n, roads)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

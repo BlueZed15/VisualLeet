@@ -1,0 +1,30 @@
+{
+ "slug": "divide-two-integers",
+ "frontendId": "29",
+ "title": "Divide Two Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dividend",
+   "type": "integer"
+  },
+  {
+   "name": "divisor",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "dividend = {dividend}\ndivisor = {divisor}",
+ "visible": [
+  "dividend",
+  "divisor"
+ ],
+ "call": "result = Solution().divide(dividend, divisor)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

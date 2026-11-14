@@ -1,0 +1,40 @@
+{
+ "slug": "4sum-ii",
+ "frontendId": "454",
+ "title": "4Sum II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums3",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums4",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nnums3 = {nums3}\nnums4 = {nums4}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "nums3",
+  "nums4"
+ ],
+ "call": "result = Solution().fourSumCount(nums1, nums2, nums3, nums4)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

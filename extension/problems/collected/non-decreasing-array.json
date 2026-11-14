@@ -1,0 +1,28 @@
+{
+ "slug": "non-decreasing-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "665",
+ "title": "Non-decreasing Array",
+ "premium": false,
+ "meta": {
+  "name": "checkPossibility",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,3]",
+  "[4,2,1]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

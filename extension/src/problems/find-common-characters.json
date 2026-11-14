@@ -1,0 +1,25 @@
+{
+ "slug": "find-common-characters",
+ "frontendId": "1002",
+ "title": "Find Common Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}",
+ "visible": [
+  "words"
+ ],
+ "call": "result = Solution().commonChars(words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

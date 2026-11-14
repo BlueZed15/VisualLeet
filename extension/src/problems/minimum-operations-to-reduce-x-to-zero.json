@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-reduce-x-to-zero",
+ "frontendId": "1658",
+ "title": "Minimum Operations to Reduce X to Zero",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nx = {x}",
+ "visible": [
+  "nums",
+  "x"
+ ],
+ "call": "result = Solution().minOperations(nums, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

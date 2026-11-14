@@ -1,0 +1,34 @@
+{
+ "slug": "partition-array-for-maximum-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1043",
+ "title": "Partition Array for Maximum Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxSumAfterPartitioning",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,15,7,9,2,5,10]\n3",
+  "[1,4,1,5,7,3,6,1,9,9,3]\n4",
+  "[1]\n1"
+ ],
+ "exampleOutputs": [
+  "84",
+  "83",
+  "1"
+ ],
+ "anyOrder": false
+}

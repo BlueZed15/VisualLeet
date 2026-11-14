@@ -1,0 +1,30 @@
+{
+ "slug": "remove-duplicates-from-sorted-list-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "82",
+ "title": "Remove Duplicates from Sorted List II",
+ "premium": false,
+ "meta": {
+  "name": "deleteDuplicates",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode",
+    "dealloc": false
+   }
+  ],
+  "return": {
+   "type": "ListNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,3,4,4,5]",
+  "[1,1,1,2,3]"
+ ],
+ "exampleOutputs": [
+  "[1,2,5]",
+  "[2,3]"
+ ],
+ "anyOrder": false
+}

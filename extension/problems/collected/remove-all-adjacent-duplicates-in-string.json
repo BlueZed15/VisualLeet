@@ -1,0 +1,28 @@
+{
+ "slug": "remove-all-adjacent-duplicates-in-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1047",
+ "title": "Remove All Adjacent Duplicates In String",
+ "premium": false,
+ "meta": {
+  "name": "removeDuplicates",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abbaca\"",
+  "\"azxxzy\""
+ ],
+ "exampleOutputs": [
+  "\"ca\"",
+  "\"ay\""
+ ],
+ "anyOrder": false
+}

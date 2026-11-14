@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-string-with-swaps",
+ "frontendId": "1202",
+ "title": "Smallest String With Swaps",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "pairs",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\npairs = {pairs}",
+ "visible": [
+  "s",
+  "pairs"
+ ],
+ "call": "result = Solution().smallestStringWithSwaps(s, pairs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

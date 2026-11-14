@@ -1,0 +1,28 @@
+{
+ "slug": "flipping-an-image",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "832",
+ "title": "Flipping an Image",
+ "premium": false,
+ "meta": {
+  "name": "flipAndInvertImage",
+  "params": [
+   {
+    "name": "image",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,0],[1,0,1],[0,0,0]]",
+  "[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]"
+ ],
+ "exampleOutputs": [
+  "[[1,0,0],[0,1,0],[1,1,1]]",
+  "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]"
+ ],
+ "anyOrder": false
+}

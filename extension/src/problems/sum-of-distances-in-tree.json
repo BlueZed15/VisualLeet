@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-distances-in-tree",
+ "frontendId": "834",
+ "title": "Sum of Distances in Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().sumOfDistancesInTree(n, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

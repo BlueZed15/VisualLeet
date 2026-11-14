@@ -5,901 +5,4201 @@
    "title": "Contains Duplicate",
    "frontendId": "217",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "valid-anagram": {
    "title": "Valid Anagram",
    "frontendId": "242",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "two-sum": {
    "title": "Two Sum",
    "frontendId": "1",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "group-anagrams": {
    "title": "Group Anagrams",
    "frontendId": "49",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "top-k-frequent-elements": {
    "title": "Top K Frequent Elements",
    "frontendId": "347",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "encode-and-decode-strings": {
    "title": "Encode and Decode Strings",
    "frontendId": "271",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "product-of-array-except-self": {
    "title": "Product of Array Except Self",
    "frontendId": "238",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "valid-sudoku": {
    "title": "Valid Sudoku",
    "frontendId": "36",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-consecutive-sequence": {
    "title": "Longest Consecutive Sequence",
    "frontendId": "128",
    "category": "Arrays & Hashing",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "valid-palindrome": {
    "title": "Valid Palindrome",
    "frontendId": "125",
    "category": "Two Pointers",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "two-sum-ii-input-array-is-sorted": {
    "title": "Two Sum II - Input Array Is Sorted",
    "frontendId": "167",
    "category": "Two Pointers",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "3sum": {
    "title": "3Sum",
    "frontendId": "15",
    "category": "Two Pointers",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "container-with-most-water": {
    "title": "Container With Most Water",
    "frontendId": "11",
    "category": "Two Pointers",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "trapping-rain-water": {
    "title": "Trapping Rain Water",
    "frontendId": "42",
    "category": "Two Pointers",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "best-time-to-buy-and-sell-stock": {
    "title": "Best Time to Buy and Sell Stock",
    "frontendId": "121",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-substring-without-repeating-characters": {
    "title": "Longest Substring Without Repeating Characters",
    "frontendId": "3",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-repeating-character-replacement": {
    "title": "Longest Repeating Character Replacement",
    "frontendId": "424",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "permutation-in-string": {
    "title": "Permutation in String",
    "frontendId": "567",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "minimum-window-substring": {
    "title": "Minimum Window Substring",
    "frontendId": "76",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "sliding-window-maximum": {
    "title": "Sliding Window Maximum",
    "frontendId": "239",
    "category": "Sliding Window",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "valid-parentheses": {
    "title": "Valid Parentheses",
    "frontendId": "20",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "min-stack": {
    "title": "Min Stack",
    "frontendId": "155",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "evaluate-reverse-polish-notation": {
    "title": "Evaluate Reverse Polish Notation",
    "frontendId": "150",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "generate-parentheses": {
    "title": "Generate Parentheses",
    "frontendId": "22",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "daily-temperatures": {
    "title": "Daily Temperatures",
    "frontendId": "739",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "car-fleet": {
    "title": "Car Fleet",
    "frontendId": "853",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "largest-rectangle-in-histogram": {
    "title": "Largest Rectangle in Histogram",
    "frontendId": "84",
    "category": "Stack",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "binary-search": {
    "title": "Binary Search",
    "frontendId": "704",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "search-a-2d-matrix": {
    "title": "Search a 2D Matrix",
    "frontendId": "74",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "koko-eating-bananas": {
    "title": "Koko Eating Bananas",
    "frontendId": "875",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "find-minimum-in-rotated-sorted-array": {
    "title": "Find Minimum in Rotated Sorted Array",
    "frontendId": "153",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "search-in-rotated-sorted-array": {
    "title": "Search in Rotated Sorted Array",
    "frontendId": "33",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "time-based-key-value-store": {
    "title": "Time Based Key-Value Store",
    "frontendId": "981",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "median-of-two-sorted-arrays": {
    "title": "Median of Two Sorted Arrays",
    "frontendId": "4",
    "category": "Binary Search",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reverse-linked-list": {
    "title": "Reverse Linked List",
    "frontendId": "206",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "merge-two-sorted-lists": {
    "title": "Merge Two Sorted Lists",
    "frontendId": "21",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "linked-list-cycle": {
    "title": "Linked List Cycle",
    "frontendId": "141",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reorder-list": {
    "title": "Reorder List",
    "frontendId": "143",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "remove-nth-node-from-end-of-list": {
    "title": "Remove Nth Node From End of List",
    "frontendId": "19",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "copy-list-with-random-pointer": {
    "title": "Copy List with Random Pointer",
    "frontendId": "138",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "add-two-numbers": {
    "title": "Add Two Numbers",
    "frontendId": "2",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "find-the-duplicate-number": {
    "title": "Find the Duplicate Number",
    "frontendId": "287",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "lru-cache": {
    "title": "LRU Cache",
    "frontendId": "146",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "merge-k-sorted-lists": {
    "title": "Merge k Sorted Lists",
    "frontendId": "23",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reverse-nodes-in-k-group": {
    "title": "Reverse Nodes in k-Group",
    "frontendId": "25",
    "category": "Linked List",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "invert-binary-tree": {
    "title": "Invert Binary Tree",
    "frontendId": "226",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "maximum-depth-of-binary-tree": {
    "title": "Maximum Depth of Binary Tree",
    "frontendId": "104",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "diameter-of-binary-tree": {
    "title": "Diameter of Binary Tree",
    "frontendId": "543",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "balanced-binary-tree": {
    "title": "Balanced Binary Tree",
    "frontendId": "110",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "same-tree": {
    "title": "Same Tree",
    "frontendId": "100",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "subtree-of-another-tree": {
    "title": "Subtree of Another Tree",
    "frontendId": "572",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "lowest-common-ancestor-of-a-binary-search-tree": {
    "title": "Lowest Common Ancestor of a Binary Search Tree",
    "frontendId": "235",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "binary-tree-level-order-traversal": {
    "title": "Binary Tree Level Order Traversal",
    "frontendId": "102",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "binary-tree-right-side-view": {
    "title": "Binary Tree Right Side View",
    "frontendId": "199",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "count-good-nodes-in-binary-tree": {
    "title": "Count Good Nodes in Binary Tree",
    "frontendId": "1448",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "validate-binary-search-tree": {
    "title": "Validate Binary Search Tree",
    "frontendId": "98",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "kth-smallest-element-in-a-bst": {
    "title": "Kth Smallest Element in a BST",
    "frontendId": "230",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "construct-binary-tree-from-preorder-and-inorder-traversal": {
    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
    "frontendId": "105",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "binary-tree-maximum-path-sum": {
    "title": "Binary Tree Maximum Path Sum",
    "frontendId": "124",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "serialize-and-deserialize-binary-tree": {
    "title": "Serialize and Deserialize Binary Tree",
    "frontendId": "297",
    "category": "Trees",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "implement-trie-prefix-tree": {
    "title": "Implement Trie (Prefix Tree)",
    "frontendId": "208",
    "category": "Tries",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "design-add-and-search-words-data-structure": {
    "title": "Design Add and Search Words Data Structure",
    "frontendId": "211",
    "category": "Tries",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "word-search-ii": {
    "title": "Word Search II",
    "frontendId": "212",
    "category": "Tries",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "kth-largest-element-in-a-stream": {
    "title": "Kth Largest Element in a Stream",
    "frontendId": "703",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "last-stone-weight": {
    "title": "Last Stone Weight",
    "frontendId": "1046",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "k-closest-points-to-origin": {
    "title": "K Closest Points to Origin",
    "frontendId": "973",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "kth-largest-element-in-an-array": {
    "title": "Kth Largest Element in an Array",
    "frontendId": "215",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "task-scheduler": {
    "title": "Task Scheduler",
    "frontendId": "621",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "design-twitter": {
    "title": "Design Twitter",
    "frontendId": "355",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "find-median-from-data-stream": {
    "title": "Find Median from Data Stream",
    "frontendId": "295",
    "category": "Heap / Priority Queue",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "subsets": {
    "title": "Subsets",
    "frontendId": "78",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "combination-sum": {
    "title": "Combination Sum",
    "frontendId": "39",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "combination-sum-ii": {
    "title": "Combination Sum II",
    "frontendId": "40",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "permutations": {
    "title": "Permutations",
    "frontendId": "46",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "subsets-ii": {
    "title": "Subsets II",
    "frontendId": "90",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "word-search": {
    "title": "Word Search",
    "frontendId": "79",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "palindrome-partitioning": {
    "title": "Palindrome Partitioning",
    "frontendId": "131",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "letter-combinations-of-a-phone-number": {
    "title": "Letter Combinations of a Phone Number",
    "frontendId": "17",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "n-queens": {
    "title": "N-Queens",
    "frontendId": "51",
    "category": "Backtracking",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "number-of-islands": {
    "title": "Number of Islands",
    "frontendId": "200",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "max-area-of-island": {
    "title": "Max Area of Island",
    "frontendId": "695",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "clone-graph": {
    "title": "Clone Graph",
    "frontendId": "133",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "walls-and-gates": {
    "title": "Walls and Gates",
    "frontendId": "286",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "rotting-oranges": {
    "title": "Rotting Oranges",
    "frontendId": "994",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "pacific-atlantic-water-flow": {
    "title": "Pacific Atlantic Water Flow",
    "frontendId": "417",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "surrounded-regions": {
    "title": "Surrounded Regions",
    "frontendId": "130",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "course-schedule": {
    "title": "Course Schedule",
    "frontendId": "207",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "course-schedule-ii": {
    "title": "Course Schedule II",
    "frontendId": "210",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "graph-valid-tree": {
    "title": "Graph Valid Tree",
    "frontendId": "261",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "number-of-connected-components-in-an-undirected-graph": {
    "title": "Number of Connected Components in an Undirected Graph",
    "frontendId": "323",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "redundant-connection": {
    "title": "Redundant Connection",
    "frontendId": "684",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "word-ladder": {
    "title": "Word Ladder",
    "frontendId": "127",
    "category": "Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reconstruct-itinerary": {
    "title": "Reconstruct Itinerary",
    "frontendId": "332",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "min-cost-to-connect-all-points": {
    "title": "Min Cost to Connect All Points",
    "frontendId": "1584",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "network-delay-time": {
    "title": "Network Delay Time",
    "frontendId": "743",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "swim-in-rising-water": {
    "title": "Swim in Rising Water",
    "frontendId": "778",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "alien-dictionary": {
    "title": "Alien Dictionary",
    "frontendId": "269",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "cheapest-flights-within-k-stops": {
    "title": "Cheapest Flights Within K Stops",
    "frontendId": "787",
    "category": "Advanced Graphs",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "climbing-stairs": {
    "title": "Climbing Stairs",
    "frontendId": "70",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "min-cost-climbing-stairs": {
    "title": "Min Cost Climbing Stairs",
    "frontendId": "746",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "house-robber": {
    "title": "House Robber",
    "frontendId": "198",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "house-robber-ii": {
    "title": "House Robber II",
    "frontendId": "213",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-palindromic-substring": {
    "title": "Longest Palindromic Substring",
    "frontendId": "5",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "palindromic-substrings": {
    "title": "Palindromic Substrings",
    "frontendId": "647",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "decode-ways": {
    "title": "Decode Ways",
    "frontendId": "91",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "coin-change": {
    "title": "Coin Change",
    "frontendId": "322",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "maximum-product-subarray": {
    "title": "Maximum Product Subarray",
    "frontendId": "152",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "word-break": {
    "title": "Word Break",
    "frontendId": "139",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-increasing-subsequence": {
    "title": "Longest Increasing Subsequence",
    "frontendId": "300",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "partition-equal-subset-sum": {
    "title": "Partition Equal Subset Sum",
    "frontendId": "416",
    "category": "1-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "unique-paths": {
    "title": "Unique Paths",
    "frontendId": "62",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-common-subsequence": {
    "title": "Longest Common Subsequence",
    "frontendId": "1143",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "best-time-to-buy-and-sell-stock-with-cooldown": {
    "title": "Best Time to Buy and Sell Stock with Cooldown",
    "frontendId": "309",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "coin-change-ii": {
    "title": "Coin Change II",
    "frontendId": "518",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "target-sum": {
    "title": "Target Sum",
    "frontendId": "494",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "interleaving-string": {
    "title": "Interleaving String",
    "frontendId": "97",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "longest-increasing-path-in-a-matrix": {
    "title": "Longest Increasing Path in a Matrix",
    "frontendId": "329",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "distinct-subsequences": {
    "title": "Distinct Subsequences",
    "frontendId": "115",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "edit-distance": {
    "title": "Edit Distance",
    "frontendId": "72",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "burst-balloons": {
    "title": "Burst Balloons",
    "frontendId": "312",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "regular-expression-matching": {
    "title": "Regular Expression Matching",
    "frontendId": "10",
    "category": "2-D Dynamic Programming",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "maximum-subarray": {
    "title": "Maximum Subarray",
    "frontendId": "53",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "jump-game": {
    "title": "Jump Game",
    "frontendId": "55",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "jump-game-ii": {
    "title": "Jump Game II",
    "frontendId": "45",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "gas-station": {
    "title": "Gas Station",
    "frontendId": "134",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "hand-of-straights": {
    "title": "Hand of Straights",
    "frontendId": "846",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "merge-triplets-to-form-target-triplet": {
    "title": "Merge Triplets to Form Target Triplet",
    "frontendId": "1899",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "partition-labels": {
    "title": "Partition Labels",
    "frontendId": "763",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "valid-parenthesis-string": {
    "title": "Valid Parenthesis String",
    "frontendId": "678",
    "category": "Greedy",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "insert-interval": {
    "title": "Insert Interval",
    "frontendId": "57",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "merge-intervals": {
    "title": "Merge Intervals",
    "frontendId": "56",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "non-overlapping-intervals": {
    "title": "Non-overlapping Intervals",
    "frontendId": "435",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "meeting-rooms": {
    "title": "Meeting Rooms",
    "frontendId": "252",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "meeting-rooms-ii": {
    "title": "Meeting Rooms II",
    "frontendId": "253",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "minimum-interval-to-include-each-query": {
    "title": "Minimum Interval to Include Each Query",
    "frontendId": "1851",
    "category": "Intervals",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "rotate-image": {
    "title": "Rotate Image",
    "frontendId": "48",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "spiral-matrix": {
    "title": "Spiral Matrix",
    "frontendId": "54",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "set-matrix-zeroes": {
    "title": "Set Matrix Zeroes",
    "frontendId": "73",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "happy-number": {
    "title": "Happy Number",
    "frontendId": "202",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "plus-one": {
    "title": "Plus One",
    "frontendId": "66",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "powx-n": {
    "title": "Pow(x, n)",
    "frontendId": "50",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "multiply-strings": {
    "title": "Multiply Strings",
    "frontendId": "43",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "detect-squares": {
    "title": "Detect Squares",
    "frontendId": "2013",
    "category": "Math & Geometry",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "single-number": {
    "title": "Single Number",
    "frontendId": "136",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "number-of-1-bits": {
    "title": "Number of 1 Bits",
    "frontendId": "191",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "counting-bits": {
    "title": "Counting Bits",
    "frontendId": "338",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reverse-bits": {
    "title": "Reverse Bits",
    "frontendId": "190",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "missing-number": {
    "title": "Missing Number",
    "frontendId": "268",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "sum-of-two-integers": {
    "title": "Sum of Two Integers",
    "frontendId": "371",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
   },
   "reverse-integer": {
    "title": "Reverse Integer",
    "frontendId": "7",
    "category": "Bit Manipulation",
-   "verified": true
+   "verified": true,
+   "checked": "solution"
+  },
+  "merge-strings-alternately": {
+   "title": "Merge Strings Alternately",
+   "frontendId": "1768",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "greatest-common-divisor-of-strings": {
+   "title": "Greatest Common Divisor of Strings",
+   "frontendId": "1071",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "kids-with-the-greatest-number-of-candies": {
+   "title": "Kids With the Greatest Number of Candies",
+   "frontendId": "1431",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "can-place-flowers": {
+   "title": "Can Place Flowers",
+   "frontendId": "605",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-vowels-of-a-string": {
+   "title": "Reverse Vowels of a String",
+   "frontendId": "345",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-words-in-a-string": {
+   "title": "Reverse Words in a String",
+   "frontendId": "151",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "increasing-triplet-subsequence": {
+   "title": "Increasing Triplet Subsequence",
+   "frontendId": "334",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "string-compression": {
+   "title": "String Compression",
+   "frontendId": "443",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "move-zeroes": {
+   "title": "Move Zeroes",
+   "frontendId": "283",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "is-subsequence": {
+   "title": "Is Subsequence",
+   "frontendId": "392",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-number-of-k-sum-pairs": {
+   "title": "Max Number of K-Sum Pairs",
+   "frontendId": "1679",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-average-subarray-i": {
+   "title": "Maximum Average Subarray I",
+   "frontendId": "643",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-vowels-in-a-substring-of-given-length": {
+   "title": "Maximum Number of Vowels in a Substring of Given Length",
+   "frontendId": "1456",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-consecutive-ones-iii": {
+   "title": "Max Consecutive Ones III",
+   "frontendId": "1004",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-subarray-of-1s-after-deleting-one-element": {
+   "title": "Longest Subarray of 1's After Deleting One Element",
+   "frontendId": "1493",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-highest-altitude": {
+   "title": "Find the Highest Altitude",
+   "frontendId": "1732",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-pivot-index": {
+   "title": "Find Pivot Index",
+   "frontendId": "724",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-difference-of-two-arrays": {
+   "title": "Find the Difference of Two Arrays",
+   "frontendId": "2215",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-number-of-occurrences": {
+   "title": "Unique Number of Occurrences",
+   "frontendId": "1207",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "determine-if-two-strings-are-close": {
+   "title": "Determine if Two Strings Are Close",
+   "frontendId": "1657",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "equal-row-and-column-pairs": {
+   "title": "Equal Row and Column Pairs",
+   "frontendId": "2352",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "removing-stars-from-a-string": {
+   "title": "Removing Stars From a String",
+   "frontendId": "2390",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "asteroid-collision": {
+   "title": "Asteroid Collision",
+   "frontendId": "735",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "decode-string": {
+   "title": "Decode String",
+   "frontendId": "394",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-recent-calls": {
+   "title": "Number of Recent Calls",
+   "frontendId": "933",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "dota2-senate": {
+   "title": "Dota2 Senate",
+   "frontendId": "649",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-the-middle-node-of-a-linked-list": {
+   "title": "Delete the Middle Node of a Linked List",
+   "frontendId": "2095",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "odd-even-linked-list": {
+   "title": "Odd Even Linked List",
+   "frontendId": "328",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-twin-sum-of-a-linked-list": {
+   "title": "Maximum Twin Sum of a Linked List",
+   "frontendId": "2130",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "leaf-similar-trees": {
+   "title": "Leaf-Similar Trees",
+   "frontendId": "872",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-sum-iii": {
+   "title": "Path Sum III",
+   "frontendId": "437",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-zigzag-path-in-a-binary-tree": {
+   "title": "Longest ZigZag Path in a Binary Tree",
+   "frontendId": "1372",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-level-sum-of-a-binary-tree": {
+   "title": "Maximum Level Sum of a Binary Tree",
+   "frontendId": "1161",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "search-in-a-binary-search-tree": {
+   "title": "Search in a Binary Search Tree",
+   "frontendId": "700",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-node-in-a-bst": {
+   "title": "Delete Node in a BST",
+   "frontendId": "450",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "keys-and-rooms": {
+   "title": "Keys and Rooms",
+   "frontendId": "841",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-provinces": {
+   "title": "Number of Provinces",
+   "frontendId": "547",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reorder-routes-to-make-all-paths-lead-to-the-city-zero": {
+   "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+   "frontendId": "1466",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "evaluate-division": {
+   "title": "Evaluate Division",
+   "frontendId": "399",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "nearest-exit-from-entrance-in-maze": {
+   "title": "Nearest Exit from Entrance in Maze",
+   "frontendId": "1926",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-number-in-infinite-set": {
+   "title": "Smallest Number in Infinite Set",
+   "frontendId": "2336",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-subsequence-score": {
+   "title": "Maximum Subsequence Score",
+   "frontendId": "2542",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "total-cost-to-hire-k-workers": {
+   "title": "Total Cost to Hire K Workers",
+   "frontendId": "2462",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "successful-pairs-of-spells-and-potions": {
+   "title": "Successful Pairs of Spells and Potions",
+   "frontendId": "2300",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-peak-element": {
+   "title": "Find Peak Element",
+   "frontendId": "162",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "combination-sum-iii": {
+   "title": "Combination Sum III",
+   "frontendId": "216",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "n-th-tribonacci-number": {
+   "title": "N-th Tribonacci Number",
+   "frontendId": "1137",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "domino-and-tromino-tiling": {
+   "title": "Domino and Tromino Tiling",
+   "frontendId": "790",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-time-to-buy-and-sell-stock-with-transaction-fee": {
+   "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+   "frontendId": "714",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-flips-to-make-a-or-b-equal-to-c": {
+   "title": "Minimum Flips to Make a OR b Equal to c",
+   "frontendId": "1318",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "search-suggestions-system": {
+   "title": "Search Suggestions System",
+   "frontendId": "1268",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-arrows-to-burst-balloons": {
+   "title": "Minimum Number of Arrows to Burst Balloons",
+   "frontendId": "452",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "online-stock-span": {
+   "title": "Online Stock Span",
+   "frontendId": "901",
+   "category": "LeetCode 75",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "merge-sorted-array": {
+   "title": "Merge Sorted Array",
+   "frontendId": "88",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-element": {
+   "title": "Remove Element",
+   "frontendId": "27",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-duplicates-from-sorted-array": {
+   "title": "Remove Duplicates from Sorted Array",
+   "frontendId": "26",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-duplicates-from-sorted-array-ii": {
+   "title": "Remove Duplicates from Sorted Array II",
+   "frontendId": "80",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "majority-element": {
+   "title": "Majority Element",
+   "frontendId": "169",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rotate-array": {
+   "title": "Rotate Array",
+   "frontendId": "189",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-time-to-buy-and-sell-stock-ii": {
+   "title": "Best Time to Buy and Sell Stock II",
+   "frontendId": "122",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "h-index": {
+   "title": "H-Index",
+   "frontendId": "274",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "insert-delete-getrandom-o1": {
+   "title": "Insert Delete GetRandom O(1)",
+   "frontendId": "380",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "candy": {
+   "title": "Candy",
+   "frontendId": "135",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "roman-to-integer": {
+   "title": "Roman to Integer",
+   "frontendId": "13",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "integer-to-roman": {
+   "title": "Integer to Roman",
+   "frontendId": "12",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "length-of-last-word": {
+   "title": "Length of Last Word",
+   "frontendId": "58",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-common-prefix": {
+   "title": "Longest Common Prefix",
+   "frontendId": "14",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "zigzag-conversion": {
+   "title": "Zigzag Conversion",
+   "frontendId": "6",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-index-of-the-first-occurrence-in-a-string": {
+   "title": "Find the Index of the First Occurrence in a String",
+   "frontendId": "28",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "text-justification": {
+   "title": "Text Justification",
+   "frontendId": "68",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-size-subarray-sum": {
+   "title": "Minimum Size Subarray Sum",
+   "frontendId": "209",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "substring-with-concatenation-of-all-words": {
+   "title": "Substring with Concatenation of All Words",
+   "frontendId": "30",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "game-of-life": {
+   "title": "Game of Life",
+   "frontendId": "289",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "ransom-note": {
+   "title": "Ransom Note",
+   "frontendId": "383",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "isomorphic-strings": {
+   "title": "Isomorphic Strings",
+   "frontendId": "205",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "word-pattern": {
+   "title": "Word Pattern",
+   "frontendId": "290",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "contains-duplicate-ii": {
+   "title": "Contains Duplicate II",
+   "frontendId": "219",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "summary-ranges": {
+   "title": "Summary Ranges",
+   "frontendId": "228",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "simplify-path": {
+   "title": "Simplify Path",
+   "frontendId": "71",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "basic-calculator": {
+   "title": "Basic Calculator",
+   "frontendId": "224",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-linked-list-ii": {
+   "title": "Reverse Linked List II",
+   "frontendId": "92",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-duplicates-from-sorted-list-ii": {
+   "title": "Remove Duplicates from Sorted List II",
+   "frontendId": "82",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rotate-list": {
+   "title": "Rotate List",
+   "frontendId": "61",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partition-list": {
+   "title": "Partition List",
+   "frontendId": "86",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "symmetric-tree": {
+   "title": "Symmetric Tree",
+   "frontendId": "101",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "construct-binary-tree-from-inorder-and-postorder-traversal": {
+   "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+   "frontendId": "106",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "flatten-binary-tree-to-linked-list": {
+   "title": "Flatten Binary Tree to Linked List",
+   "frontendId": "114",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-sum": {
+   "title": "Path Sum",
+   "frontendId": "112",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-root-to-leaf-numbers": {
+   "title": "Sum Root to Leaf Numbers",
+   "frontendId": "129",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-search-tree-iterator": {
+   "title": "Binary Search Tree Iterator",
+   "frontendId": "173",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-complete-tree-nodes": {
+   "title": "Count Complete Tree Nodes",
+   "frontendId": "222",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "average-of-levels-in-binary-tree": {
+   "title": "Average of Levels in Binary Tree",
+   "frontendId": "637",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-zigzag-level-order-traversal": {
+   "title": "Binary Tree Zigzag Level Order Traversal",
+   "frontendId": "103",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-absolute-difference-in-bst": {
+   "title": "Minimum Absolute Difference in BST",
+   "frontendId": "530",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "snakes-and-ladders": {
+   "title": "Snakes and Ladders",
+   "frontendId": "909",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-genetic-mutation": {
+   "title": "Minimum Genetic Mutation",
+   "frontendId": "433",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "combinations": {
+   "title": "Combinations",
+   "frontendId": "77",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "n-queens-ii": {
+   "title": "N-Queens II",
+   "frontendId": "52",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "convert-sorted-array-to-binary-search-tree": {
+   "title": "Convert Sorted Array to Binary Search Tree",
+   "frontendId": "108",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-list": {
+   "title": "Sort List",
+   "frontendId": "148",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-sum-circular-subarray": {
+   "title": "Maximum Sum Circular Subarray",
+   "frontendId": "918",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "search-insert-position": {
+   "title": "Search Insert Position",
+   "frontendId": "35",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-first-and-last-position-of-element-in-sorted-array": {
+   "title": "Find First and Last Position of Element in Sorted Array",
+   "frontendId": "34",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "ipo": {
+   "title": "IPO",
+   "frontendId": "502",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-k-pairs-with-smallest-sums": {
+   "title": "Find K Pairs with Smallest Sums",
+   "frontendId": "373",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-binary": {
+   "title": "Add Binary",
+   "frontendId": "67",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "single-number-ii": {
+   "title": "Single Number II",
+   "frontendId": "137",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bitwise-and-of-numbers-range": {
+   "title": "Bitwise AND of Numbers Range",
+   "frontendId": "201",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "palindrome-number": {
+   "title": "Palindrome Number",
+   "frontendId": "9",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "factorial-trailing-zeroes": {
+   "title": "Factorial Trailing Zeroes",
+   "frontendId": "172",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sqrtx": {
+   "title": "Sqrt(x)",
+   "frontendId": "69",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-points-on-a-line": {
+   "title": "Max Points on a Line",
+   "frontendId": "149",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "triangle": {
+   "title": "Triangle",
+   "frontendId": "120",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-path-sum": {
+   "title": "Minimum Path Sum",
+   "frontendId": "64",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-paths-ii": {
+   "title": "Unique Paths II",
+   "frontendId": "63",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-time-to-buy-and-sell-stock-iii": {
+   "title": "Best Time to Buy and Sell Stock III",
+   "frontendId": "123",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-time-to-buy-and-sell-stock-iv": {
+   "title": "Best Time to Buy and Sell Stock IV",
+   "frontendId": "188",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximal-square": {
+   "title": "Maximal Square",
+   "frontendId": "221",
+   "category": "Top Interview 150",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-inorder-traversal": {
+   "title": "Binary Tree Inorder Traversal",
+   "frontendId": "94",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-valid-parentheses": {
+   "title": "Longest Valid Parentheses",
+   "frontendId": "32",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "pascals-triangle": {
+   "title": "Pascal's Triangle",
+   "frontendId": "118",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "perfect-squares": {
+   "title": "Perfect Squares",
+   "frontendId": "279",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "subarray-sum-equals-k": {
+   "title": "Subarray Sum Equals K",
+   "frontendId": "560",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "swap-nodes-in-pairs": {
+   "title": "Swap Nodes in Pairs",
+   "frontendId": "24",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "palindrome-linked-list": {
+   "title": "Palindrome Linked List",
+   "frontendId": "234",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-all-anagrams-in-a-string": {
+   "title": "Find All Anagrams in a String",
+   "frontendId": "438",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "next-permutation": {
+   "title": "Next Permutation",
+   "frontendId": "31",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "first-missing-positive": {
+   "title": "First Missing Positive",
+   "frontendId": "41",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-colors": {
+   "title": "Sort Colors",
+   "frontendId": "75",
+   "category": "Top 100 Liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "middle-of-the-linked-list": {
+   "title": "Middle of the Linked List",
+   "frontendId": "876",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "single-element-in-a-sorted-array": {
+   "title": "Single Element in a Sorted Array",
+   "frontendId": "540",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "4sum": {
+   "title": "4Sum",
+   "frontendId": "18",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximal-rectangle": {
+   "title": "Maximal Rectangle",
+   "frontendId": "85",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "3sum-closest": {
+   "title": "3Sum Closest",
+   "frontendId": "16",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "split-array-largest-sum": {
+   "title": "Split Array Largest Sum",
+   "frontendId": "410",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "capacity-to-ship-packages-within-d-days": {
+   "title": "Capacity To Ship Packages Within D Days",
+   "frontendId": "1011",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sudoku-solver": {
+   "title": "Sudoku Solver",
+   "frontendId": "37",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-all-duplicates-in-an-array": {
+   "title": "Find All Duplicates in an Array",
+   "frontendId": "442",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "majority-element-ii": {
+   "title": "Majority Element II",
+   "frontendId": "229",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-binary-search-trees": {
+   "title": "Unique Binary Search Trees",
+   "frontendId": "96",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "01-matrix": {
+   "title": "01 Matrix",
+   "frontendId": "542",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-k-digits": {
+   "title": "Remove K Digits",
+   "frontendId": "402",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "kth-smallest-element-in-a-sorted-matrix": {
+   "title": "Kth Smallest Element in a Sorted Matrix",
+   "frontendId": "378",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-all-numbers-disappeared-in-an-array": {
+   "title": "Find All Numbers Disappeared in an Array",
+   "frontendId": "448",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "squares-of-a-sorted-array": {
+   "title": "Squares of a Sorted Array",
+   "frontendId": "977",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-palindromic-subsequence": {
+   "title": "Longest Palindromic Subsequence",
+   "frontendId": "516",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "next-greater-element-i": {
+   "title": "Next Greater Element I",
+   "frontendId": "496",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-duplicates-from-sorted-list": {
+   "title": "Remove Duplicates from Sorted List",
+   "frontendId": "83",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "first-unique-character-in-a-string": {
+   "title": "First Unique Character in a String",
+   "frontendId": "387",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-width-of-binary-tree": {
+   "title": "Maximum Width of Binary Tree",
+   "frontendId": "662",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "search-in-rotated-sorted-array-ii": {
+   "title": "Search in Rotated Sorted Array II",
+   "frontendId": "81",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-string": {
+   "title": "Reverse String",
+   "frontendId": "344",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "flood-fill": {
+   "title": "Flood Fill",
+   "frontendId": "733",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fibonacci-number": {
+   "title": "Fibonacci Number",
+   "frontendId": "509",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-number": {
+   "title": "Largest Number",
+   "frontendId": "179",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-subarray-minimums": {
+   "title": "Sum of Subarray Minimums",
+   "frontendId": "907",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-duplicate-letters": {
+   "title": "Remove Duplicate Letters",
+   "frontendId": "316",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "next-greater-element-ii": {
+   "title": "Next Greater Element II",
+   "frontendId": "503",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "is-graph-bipartite": {
+   "title": "Is Graph Bipartite?",
+   "frontendId": "785",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-characters-by-frequency": {
+   "title": "Sort Characters By Frequency",
+   "frontendId": "451",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reorganize-string": {
+   "title": "Reorganize String",
+   "frontendId": "767",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-of-smaller-numbers-after-self": {
+   "title": "Count of Smaller Numbers After Self",
+   "frontendId": "315",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "permutations-ii": {
+   "title": "Permutations II",
+   "frontendId": "47",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "wildcard-matching": {
+   "title": "Wildcard Matching",
+   "frontendId": "44",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-k-closest-elements": {
+   "title": "Find K Closest Elements",
+   "frontendId": "658",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "house-robber-iii": {
+   "title": "House Robber III",
+   "frontendId": "337",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-linked-list-elements": {
+   "title": "Remove Linked List Elements",
+   "frontendId": "203",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "valid-palindrome-ii": {
+   "title": "Valid Palindrome II",
+   "frontendId": "680",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "contiguous-array": {
+   "title": "Contiguous Array",
+   "frontendId": "525",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "merge-two-binary-trees": {
+   "title": "Merge Two Binary Trees",
+   "frontendId": "617",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-preorder-traversal": {
+   "title": "Binary Tree Preorder Traversal",
+   "frontendId": "144",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-height-trees": {
+   "title": "Minimum Height Trees",
+   "frontendId": "310",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-primes": {
+   "title": "Count Primes",
+   "frontendId": "204",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "running-sum-of-1d-array": {
+   "title": "Running Sum of 1d Array",
+   "frontendId": "1480",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-for-tickets": {
+   "title": "Minimum Cost For Tickets",
+   "frontendId": "983",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "vertical-order-traversal-of-a-binary-tree": {
+   "title": "Vertical Order Traversal of a Binary Tree",
+   "frontendId": "987",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "implement-queue-using-stacks": {
+   "title": "Implement Queue using Stacks",
+   "frontendId": "232",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "recover-binary-search-tree": {
+   "title": "Recover Binary Search Tree",
+   "frontendId": "99",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-sum-ii": {
+   "title": "Path Sum II",
+   "frontendId": "113",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "peak-index-in-a-mountain-array": {
+   "title": "Peak Index in a Mountain Array",
+   "frontendId": "852",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "intersection-of-two-arrays-ii": {
+   "title": "Intersection of Two Arrays II",
+   "frontendId": "350",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "power-of-two": {
+   "title": "Power of Two",
+   "frontendId": "231",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "kth-missing-positive-number": {
+   "title": "Kth Missing Positive Number",
+   "frontendId": "1539",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "top-k-frequent-words": {
+   "title": "Top K Frequent Words",
+   "frontendId": "692",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-and-earn": {
+   "title": "Delete and Earn",
+   "frontendId": "740",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-unsorted-continuous-subarray": {
+   "title": "Shortest Unsorted Continuous Subarray",
+   "frontendId": "581",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "subarray-sums-divisible-by-k": {
+   "title": "Subarray Sums Divisible by K",
+   "frontendId": "974",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "backspace-string-compare": {
+   "title": "Backspace String Compare",
+   "frontendId": "844",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-binary-search-trees-ii": {
+   "title": "Unique Binary Search Trees II",
+   "frontendId": "95",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-depth-of-binary-tree": {
+   "title": "Minimum Depth of Binary Tree",
+   "frontendId": "111",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "convert-sorted-list-to-binary-search-tree": {
+   "title": "Convert Sorted List to Binary Search Tree",
+   "frontendId": "109",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-string-chain": {
+   "title": "Longest String Chain",
+   "frontendId": "1048",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-postorder-traversal": {
+   "title": "Binary Tree Postorder Traversal",
+   "frontendId": "145",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "accounts-merge": {
+   "title": "Accounts Merge",
+   "frontendId": "721",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "combination-sum-iv": {
+   "title": "Combination Sum IV",
+   "frontendId": "377",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "subarray-product-less-than-k": {
+   "title": "Subarray Product Less Than K",
+   "frontendId": "713",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "132-pattern": {
+   "title": "132 Pattern",
+   "frontendId": "456",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "all-paths-from-source-to-target": {
+   "title": "All Paths From Source to Target",
+   "frontendId": "797",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partition-to-k-equal-sum-subsets": {
+   "title": "Partition to K Equal Sum Subsets",
+   "frontendId": "698",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-path-in-binary-matrix": {
+   "title": "Shortest Path in Binary Matrix",
+   "frontendId": "1091",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "word-break-ii": {
+   "title": "Word Break II",
+   "frontendId": "140",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-remove-to-make-valid-parentheses": {
+   "title": "Minimum Remove to Make Valid Parentheses",
+   "frontendId": "1249",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-longest-increasing-subsequence": {
+   "title": "Number of Longest Increasing Subsequence",
+   "frontendId": "673",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-profit-in-job-scheduling": {
+   "title": "Maximum Profit in Job Scheduling",
+   "frontendId": "1235",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "two-sum-iv-input-is-a-bst": {
+   "title": "Two Sum IV - Input is a BST",
+   "frontendId": "653",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-an-array": {
+   "title": "Sort an Array",
+   "frontendId": "912",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "island-perimeter": {
+   "title": "Island Perimeter",
+   "frontendId": "463",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-paths": {
+   "title": "Binary Tree Paths",
+   "frontendId": "257",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "permutation-sequence": {
+   "title": "Permutation Sequence",
+   "frontendId": "60",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-points-you-can-obtain-from-cards": {
+   "title": "Maximum Points You Can Obtain from Cards",
+   "frontendId": "1423",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "range-sum-of-bst": {
+   "title": "Range Sum of BST",
+   "frontendId": "938",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "queue-reconstruction-by-height": {
+   "title": "Queue Reconstruction by Height",
+   "frontendId": "406",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-eventual-safe-states": {
+   "title": "Find Eventual Safe States",
+   "frontendId": "802",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-all-adjacent-duplicates-in-string": {
+   "title": "Remove All Adjacent Duplicates In String",
+   "frontendId": "1047",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-pairs": {
+   "title": "Reverse Pairs",
+   "frontendId": "493",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "subarrays-with-k-different-integers": {
+   "title": "Subarrays with K Different Integers",
+   "frontendId": "992",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-consecutive-ones": {
+   "title": "Max Consecutive Ones",
+   "frontendId": "485",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "intersection-of-two-arrays": {
+   "title": "Intersection of Two Arrays",
+   "frontendId": "349",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "continuous-subarray-sum": {
+   "title": "Continuous Subarray Sum",
+   "frontendId": "523",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-length-of-repeated-subarray": {
+   "title": "Maximum Length of Repeated Subarray",
+   "frontendId": "718",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "implement-stack-using-queues": {
+   "title": "Implement Stack using Queues",
+   "frontendId": "225",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "boats-to-save-people": {
+   "title": "Boats to Save People",
+   "frontendId": "881",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-falling-path-sum": {
+   "title": "Minimum Falling Path Sum",
+   "frontendId": "931",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-with-minimum-effort": {
+   "title": "Path With Minimum Effort",
+   "frontendId": "1631",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-town-judge": {
+   "title": "Find the Town Judge",
+   "frontendId": "997",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-divisible-subset": {
+   "title": "Largest Divisible Subset",
+   "frontendId": "368",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "spiral-matrix-ii": {
+   "title": "Spiral Matrix II",
+   "frontendId": "59",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "ugly-number-ii": {
+   "title": "Ugly Number II",
+   "frontendId": "264",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "repeated-substring-pattern": {
+   "title": "Repeated Substring Pattern",
+   "frontendId": "459",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "single-number-iii": {
+   "title": "Single Number III",
+   "frontendId": "260",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "construct-binary-search-tree-from-preorder-traversal": {
+   "title": "Construct Binary Search Tree from Preorder Traversal",
+   "frontendId": "1008",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-substring-with-at-least-k-repeating-characters": {
+   "title": "Longest Substring with At Least K Repeating Characters",
+   "frontendId": "395",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "critical-connections-in-a-network": {
+   "title": "Critical Connections in a Network",
+   "frontendId": "1192",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "word-ladder-ii": {
+   "title": "Word Ladder II",
+   "frontendId": "126",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "basic-calculator-ii": {
+   "title": "Basic Calculator II",
+   "frontendId": "227",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "predict-the-winner": {
+   "title": "Predict the Winner",
+   "frontendId": "486",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shuffle-the-array": {
+   "title": "Shuffle the Array",
+   "frontendId": "1470",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "insert-into-a-binary-search-tree": {
+   "title": "Insert into a Binary Search Tree",
+   "frontendId": "701",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "most-stones-removed-with-same-row-or-column": {
+   "title": "Most Stones Removed with Same Row or Column",
+   "frontendId": "947",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fruit-into-baskets": {
+   "title": "Fruit Into Baskets",
+   "frontendId": "904",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "russian-doll-envelopes": {
+   "title": "Russian Doll Envelopes",
+   "frontendId": "354",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "string-to-integer-atoi": {
+   "title": "String to Integer (atoi)",
+   "frontendId": "8",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lfu-cache": {
+   "title": "LFU Cache",
+   "frontendId": "460",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-palindrome": {
+   "title": "Longest Palindrome",
+   "frontendId": "409",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "different-ways-to-add-parentheses": {
+   "title": "Different Ways to Add Parentheses",
+   "frontendId": "241",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "dungeon-game": {
+   "title": "Dungeon Game",
+   "frontendId": "174",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-invalid-parentheses": {
+   "title": "Remove Invalid Parentheses",
+   "frontendId": "301",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "divide-two-integers": {
+   "title": "Divide Two Integers",
+   "frontendId": "29",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "furthest-building-you-can-reach": {
+   "title": "Furthest Building You Can Reach",
+   "frontendId": "1642",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "the-skyline-problem": {
+   "title": "The Skyline Problem",
+   "frontendId": "218",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-words-in-a-string-iii": {
+   "title": "Reverse Words in a String III",
+   "frontendId": "557",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-operation-for-two-strings": {
+   "title": "Delete Operation for Two Strings",
+   "frontendId": "583",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-two-numbers-ii": {
+   "title": "Add Two Numbers II",
+   "frontendId": "445",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-operations-to-reduce-x-to-zero": {
+   "title": "Minimum Operations to Reduce X to Zero",
+   "frontendId": "1658",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-duplicate-subtrees": {
+   "title": "Find Duplicate Subtrees",
+   "frontendId": "652",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "how-many-numbers-are-smaller-than-the-current-number": {
+   "title": "How Many Numbers Are Smaller Than the Current Number",
+   "frontendId": "1365",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-all-adjacent-duplicates-in-string-ii": {
+   "title": "Remove All Adjacent Duplicates in String II",
+   "frontendId": "1209",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "trim-a-binary-search-tree": {
+   "title": "Trim a Binary Search Tree",
+   "frontendId": "669",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "excel-sheet-column-title": {
+   "title": "Excel Sheet Column Title",
+   "frontendId": "168",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "ones-and-zeroes": {
+   "title": "Ones and Zeroes",
+   "frontendId": "474",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "validate-stack-sequences": {
+   "title": "Validate Stack Sequences",
+   "frontendId": "946",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "distribute-coins-in-binary-tree": {
+   "title": "Distribute Coins in Binary Tree",
+   "frontendId": "979",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-common-supersequence": {
+   "title": "Shortest Common Supersequence ",
+   "frontendId": "1092",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "frog-jump": {
+   "title": "Frog Jump",
+   "frontendId": "403",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "score-of-parentheses": {
+   "title": "Score of Parentheses",
+   "frontendId": "856",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-distances-in-tree": {
+   "title": "Sum of Distances in Tree",
+   "frontendId": "834",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "palindrome-partitioning-ii": {
+   "title": "Palindrome Partitioning II",
+   "frontendId": "132",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-square-submatrices-with-all-ones": {
+   "title": "Count Square Submatrices with All Ones",
+   "frontendId": "1277",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-days-to-make-m-bouquets": {
+   "title": "Minimum Number of Days to Make m Bouquets",
+   "frontendId": "1482",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-xor-of-two-numbers-in-an-array": {
+   "title": "Maximum XOR of Two Numbers in an Array",
+   "frontendId": "421",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "interval-list-intersections": {
+   "title": "Interval List Intersections",
+   "frontendId": "986",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "frequency-of-the-most-frequent-element": {
+   "title": "Frequency of the Most Frequent Element",
+   "frontendId": "1838",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-good-pairs": {
+   "title": "Number of Good Pairs",
+   "frontendId": "1512",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "non-decreasing-array": {
+   "title": "Non-decreasing Array",
+   "frontendId": "665",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-bridge": {
+   "title": "Shortest Bridge",
+   "frontendId": "934",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-matching-subsequences": {
+   "title": "Number of Matching Subsequences",
+   "frontendId": "792",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-left-leaves": {
+   "title": "Sum of Left Leaves",
+   "frontendId": "404",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "swapping-nodes-in-a-linked-list": {
+   "title": "Swapping Nodes in a Linked List",
+   "frontendId": "1721",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-array-by-parity": {
+   "title": "Sort Array By Parity",
+   "frontendId": "905",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "restore-ip-addresses": {
+   "title": "Restore IP Addresses",
+   "frontendId": "93",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-cameras": {
+   "title": "Binary Tree Cameras",
+   "frontendId": "968",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-operations-to-make-network-connected": {
+   "title": "Number of Operations to Make Network Connected",
+   "frontendId": "1319",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-insertion-steps-to-make-a-string-palindrome": {
+   "title": "Minimum Insertion Steps to Make a String Palindrome",
+   "frontendId": "1312",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "arithmetic-slices": {
+   "title": "Arithmetic Slices",
+   "frontendId": "413",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-digits": {
+   "title": "Add Digits",
+   "frontendId": "258",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "set-mismatch": {
+   "title": "Set Mismatch",
+   "frontendId": "645",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-number-of-nice-subarrays": {
+   "title": "Count Number of Nice Subarrays",
+   "frontendId": "1248",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-difference": {
+   "title": "Find the Difference",
+   "frontendId": "389",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-paths-iii": {
+   "title": "Unique Paths III",
+   "frontendId": "980",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-negative-numbers-in-a-sorted-matrix": {
+   "title": "Count Negative Numbers in a Sorted Matrix",
+   "frontendId": "1351",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "jewels-and-stones": {
+   "title": "Jewels and Stones",
+   "frontendId": "771",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-strings": {
+   "title": "Add Strings",
+   "frontendId": "415",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "range-sum-query-2d-immutable": {
+   "title": "Range Sum Query 2D - Immutable",
+   "frontendId": "304",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-hashmap": {
+   "title": "Design HashMap",
+   "frontendId": "706",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-binary-tree": {
+   "title": "Maximum Binary Tree",
+   "frontendId": "654",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "integer-break": {
+   "title": "Integer Break",
+   "frontendId": "343",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "convert-bst-to-greater-tree": {
+   "title": "Convert BST to Greater Tree",
+   "frontendId": "538",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "pascals-triangle-ii": {
+   "title": "Pascal's Triangle II",
+   "frontendId": "119",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-minimum-in-rotated-sorted-array-ii": {
+   "title": "Find Minimum in Rotated Sorted Array II",
+   "frontendId": "154",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-dice-rolls-with-target-sum": {
+   "title": "Number of Dice Rolls With Target Sum",
+   "frontendId": "1155",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "wiggle-subsequence": {
+   "title": "Wiggle Subsequence",
+   "frontendId": "376",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-array-is-sorted-and-rotated": {
+   "title": "Check if Array Is Sorted and Rotated",
+   "frontendId": "1752",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-subarray-with-sum-at-least-k": {
+   "title": "Shortest Subarray with Sum at Least K",
+   "frontendId": "862",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "assign-cookies": {
+   "title": "Assign Cookies",
+   "frontendId": "455",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "all-possible-full-binary-trees": {
+   "title": "All Possible Full Binary Trees",
+   "frontendId": "894",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-add-to-make-parentheses-valid": {
+   "title": "Minimum Add to Make Parentheses Valid",
+   "frontendId": "921",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-and-say": {
+   "title": "Count and Say",
+   "frontendId": "38",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "range-sum-query-mutable": {
+   "title": "Range Sum Query - Mutable",
+   "frontendId": "307",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-level-order-traversal-ii": {
+   "title": "Binary Tree Level Order Traversal II",
+   "frontendId": "107",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-smallest-letter-greater-than-target": {
+   "title": "Find Smallest Letter Greater Than Target",
+   "frontendId": "744",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "open-the-lock": {
+   "title": "Open the Lock",
+   "frontendId": "752",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "making-a-large-island": {
+   "title": "Making A Large Island",
+   "frontendId": "827",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rotate-string": {
+   "title": "Rotate String",
+   "frontendId": "796",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partition-array-for-maximum-sum": {
+   "title": "Partition Array for Maximum Sum",
+   "frontendId": "1043",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "excel-sheet-column-number": {
+   "title": "Excel Sheet Column Number",
+   "frontendId": "171",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-difference-between-node-and-ancestor": {
+   "title": "Maximum Difference Between Node and Ancestor",
+   "frontendId": "1026",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "4sum-ii": {
+   "title": "4Sum II",
+   "frontendId": "454",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "verifying-an-alien-dictionary": {
+   "title": "Verifying an Alien Dictionary",
+   "frontendId": "953",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-subarrays-with-sum": {
+   "title": "Binary Subarrays With Sum",
+   "frontendId": "930",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-deletions-to-make-character-frequencies-unique": {
+   "title": "Minimum Deletions to Make Character Frequencies Unique",
+   "frontendId": "1647",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-closed-islands": {
+   "title": "Number of Closed Islands",
+   "frontendId": "1254",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "trapping-rain-water-ii": {
+   "title": "Trapping Rain Water II",
+   "frontendId": "407",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "richest-customer-wealth": {
+   "title": "Richest Customer Wealth",
+   "frontendId": "1672",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-frequency-stack": {
+   "title": "Maximum Frequency Stack",
+   "frontendId": "895",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-length-of-pair-chain": {
+   "title": "Maximum Length of Pair Chain",
+   "frontendId": "646",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-cut-a-stick": {
+   "title": "Minimum Cost to Cut a Stick",
+   "frontendId": "1547",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "possible-bipartition": {
+   "title": "Possible Bipartition",
+   "frontendId": "886",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-arithmetic-subsequence": {
+   "title": "Longest Arithmetic Subsequence",
+   "frontendId": "1027",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-refueling-stops": {
+   "title": "Minimum Number of Refueling Stops",
+   "frontendId": "871",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-path-in-a-grid-with-obstacles-elimination": {
+   "title": "Shortest Path in a Grid with Obstacles Elimination",
+   "frontendId": "1293",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "two-city-scheduling": {
+   "title": "Two City Scheduling",
+   "frontendId": "1029",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "car-pooling": {
+   "title": "Car Pooling",
+   "frontendId": "1094",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-substrings-containing-all-three-characters": {
+   "title": "Number of Substrings Containing All Three Characters",
+   "frontendId": "1358",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "letter-case-permutation": {
+   "title": "Letter Case Permutation",
+   "frontendId": "784",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "deepest-leaves-sum": {
+   "title": "Deepest Leaves Sum",
+   "frontendId": "1302",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "my-calendar-i": {
+   "title": "My Calendar I",
+   "frontendId": "729",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-product-of-three-numbers": {
+   "title": "Maximum Product of Three Numbers",
+   "frontendId": "628",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bus-routes": {
+   "title": "Bus Routes",
+   "frontendId": "815",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "split-linked-list-in-parts": {
+   "title": "Split Linked List in Parts",
+   "frontendId": "725",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "cherry-pickup": {
+   "title": "Cherry Pickup",
+   "frontendId": "741",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-enclaves": {
+   "title": "Number of Enclaves",
+   "frontendId": "1020",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "valid-perfect-square": {
+   "title": "Valid Perfect Square",
+   "frontendId": "367",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-subsequences-that-satisfy-the-given-sum-condition": {
+   "title": "Number of Subsequences That Satisfy the Given Sum Condition",
+   "frontendId": "1498",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "convert-binary-number-in-a-linked-list-to-integer": {
+   "title": "Convert Binary Number in a Linked List to Integer",
+   "frontendId": "1290",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-path-visiting-all-nodes": {
+   "title": "Shortest Path Visiting All Nodes",
+   "frontendId": "847",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-pruning": {
+   "title": "Binary Tree Pruning",
+   "frontendId": "814",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-binary-substrings": {
+   "title": "Count Binary Substrings",
+   "frontendId": "696",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "palindrome-pairs": {
+   "title": "Palindrome Pairs",
+   "frontendId": "336",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-palindrome": {
+   "title": "Shortest Palindrome",
+   "frontendId": "214",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "cherry-pickup-ii": {
+   "title": "Cherry Pickup II",
+   "frontendId": "1463",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "flip-string-to-monotone-increasing": {
+   "title": "Flip String to Monotone Increasing",
+   "frontendId": "926",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit": {
+   "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+   "frontendId": "1438",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-search-tree-to-greater-sum-tree": {
+   "title": "Binary Search Tree to Greater Sum Tree",
+   "frontendId": "1038",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-completeness-of-a-binary-tree": {
+   "title": "Check Completeness of a Binary Tree",
+   "frontendId": "958",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-length-of-a-concatenated-string-with-unique-characters": {
+   "title": "Maximum Length of a Concatenated String with Unique Characters",
+   "frontendId": "1239",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "split-array-into-consecutive-subsequences": {
+   "title": "Split Array into Consecutive Subsequences",
+   "frontendId": "659",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "jump-game-iii": {
+   "title": "Jump Game III",
+   "frontendId": "1306",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-ascii-delete-sum-for-two-strings": {
+   "title": "Minimum ASCII Delete Sum for Two Strings",
+   "frontendId": "712",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-common-characters": {
+   "title": "Find Common Characters",
+   "frontendId": "1002",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "power-of-four": {
+   "title": "Power of Four",
+   "frontendId": "342",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "increasing-order-search-tree": {
+   "title": "Increasing Order Search Tree",
+   "frontendId": "897",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-univalue-path": {
+   "title": "Longest Univalue Path",
+   "frontendId": "687",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-range-covering-elements-from-k-lists": {
+   "title": "Smallest Range Covering Elements from K Lists",
+   "frontendId": "632",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "valid-triangle-number": {
+   "title": "Valid Triangle Number",
+   "frontendId": "611",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-tree-from-leaf-values": {
+   "title": "Minimum Cost Tree From Leaf Values",
+   "frontendId": "1130",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "2-keys-keyboard": {
+   "title": "2 Keys Keyboard",
+   "frontendId": "650",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-if-path-exists-in-graph": {
+   "title": "Find if Path Exists in Graph",
+   "frontendId": "1971",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "arranging-coins": {
+   "title": "Arranging Coins",
+   "frontendId": "441",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "concatenation-of-array": {
+   "title": "Concatenation of Array",
+   "frontendId": "1929",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "diagonal-traverse": {
+   "title": "Diagonal Traverse",
+   "frontendId": "498",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rearrange-array-elements-by-sign": {
+   "title": "Rearrange Array Elements by Sign",
+   "frontendId": "2149",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "the-k-weakest-rows-in-a-matrix": {
+   "title": "The K Weakest Rows in a Matrix",
+   "frontendId": "1337",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "cousins-in-binary-tree": {
+   "title": "Cousins in Binary Tree",
+   "frontendId": "993",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-steps-to-reduce-a-number-to-zero": {
+   "title": "Number of Steps to Reduce a Number to Zero",
+   "frontendId": "1342",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-time-to-make-rope-colorful": {
+   "title": "Minimum Time to Make Rope Colorful",
+   "frontendId": "1578",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "pairs-of-songs-with-total-durations-divisible-by-60": {
+   "title": "Pairs of Songs With Total Durations Divisible by 60",
+   "frontendId": "1010",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "as-far-from-land-as-possible": {
+   "title": "As Far from Land as Possible",
+   "frontendId": "1162",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-swap": {
+   "title": "Maximum Swap",
+   "frontendId": "670",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "transpose-matrix": {
+   "title": "Transpose Matrix",
+   "frontendId": "867",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "time-needed-to-inform-all-employees": {
+   "title": "Time Needed to Inform All Employees",
+   "frontendId": "1376",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "k-th-symbol-in-grammar": {
+   "title": "K-th Symbol in Grammar",
+   "frontendId": "779",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "balance-a-binary-search-tree": {
+   "title": "Balance a Binary Search Tree",
+   "frontendId": "1382",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "k-diff-pairs-in-an-array": {
+   "title": "K-diff Pairs in an Array",
+   "frontendId": "532",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-browser-history": {
+   "title": "Design Browser History",
+   "frontendId": "1472",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "jump-game-iv": {
+   "title": "Jump Game IV",
+   "frontendId": "1345",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "champagne-tower": {
+   "title": "Champagne Tower",
+   "frontendId": "799",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-winner-of-the-circular-game": {
+   "title": "Find the Winner of the Circular Game",
+   "frontendId": "1823",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-largest-value-in-each-tree-row": {
+   "title": "Find Largest Value in Each Tree Row",
+   "frontendId": "515",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-mode-in-binary-search-tree": {
+   "title": "Find Mode in Binary Search Tree",
+   "frontendId": "501",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-outermost-parentheses": {
+   "title": "Remove Outermost Parentheses",
+   "frontendId": "1021",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "build-array-from-permutation": {
+   "title": "Build Array from Permutation",
+   "frontendId": "1920",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "satisfiability-of-equality-equations": {
+   "title": "Satisfiability of Equality Equations",
+   "frontendId": "990",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "concatenated-words": {
+   "title": "Concatenated Words",
+   "frontendId": "472",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "matchsticks-to-square": {
+   "title": "Matchsticks to Square",
+   "frontendId": "473",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-units-on-a-truck": {
+   "title": "Maximum Units on a Truck",
+   "frontendId": "1710",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-hashset": {
+   "title": "Design HashSet",
+   "frontendId": "705",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-events-that-can-be-attended": {
+   "title": "Maximum Number of Events That Can Be Attended",
+   "frontendId": "1353",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "knight-probability-in-chessboard": {
+   "title": "Knight Probability in Chessboard",
+   "frontendId": "688",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-ways-to-arrive-at-destination": {
+   "title": "Number of Ways to Arrive at Destination",
+   "frontendId": "1976",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "course-schedule-iii": {
+   "title": "Course Schedule III",
+   "frontendId": "630",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "hamming-distance": {
+   "title": "Hamming Distance",
+   "frontendId": "461",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-bottom-left-tree-value": {
+   "title": "Find Bottom Left Tree Value",
+   "frontendId": "513",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-and-replace-pattern": {
+   "title": "Find and Replace Pattern",
+   "frontendId": "890",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "range-sum-query-immutable": {
+   "title": "Range Sum Query - Immutable",
+   "frontendId": "303",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "out-of-boundary-paths": {
+   "title": "Out of Boundary Paths",
+   "frontendId": "576",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "regions-cut-by-slashes": {
+   "title": "Regions Cut By Slashes",
+   "frontendId": "959",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "uncrossed-lines": {
+   "title": "Uncrossed Lines",
+   "frontendId": "1035",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-k-th-smallest-pair-distance": {
+   "title": "Find K-th Smallest Pair Distance",
+   "frontendId": "719",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "next-greater-element-iii": {
+   "title": "Next Greater Element III",
+   "frontendId": "556",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "ugly-number": {
+   "title": "Ugly Number",
+   "frontendId": "263",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "push-dominoes": {
+   "title": "Push Dominoes",
+   "frontendId": "838",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-submatrices-that-sum-to-target": {
+   "title": "Number of Submatrices That Sum to Target",
+   "frontendId": "1074",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "snapshot-array": {
+   "title": "Snapshot Array",
+   "frontendId": "1146",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-string-with-swaps": {
+   "title": "Smallest String With Swaps",
+   "frontendId": "1202",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partition-array-into-two-arrays-to-minimize-sum-difference": {
+   "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+   "frontendId": "2035",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-all-odd-length-subarrays": {
+   "title": "Sum of All Odd Length Subarrays",
+   "frontendId": "1588",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-with-maximum-probability": {
+   "title": "Path with Maximum Probability",
+   "frontendId": "1514",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-sorted-vowel-strings": {
+   "title": "Count Sorted Vowel Strings",
+   "frontendId": "1641",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-circular-queue": {
+   "title": "Design Circular Queue",
+   "frontendId": "622",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-vertices-to-reach-all-nodes": {
+   "title": "Minimum Number of Vertices to Reach All Nodes",
+   "frontendId": "1557",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "stone-game": {
+   "title": "Stone Game",
+   "frontendId": "877",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-time-to-collect-all-apples-in-a-tree": {
+   "title": "Minimum Time to Collect All Apples in a Tree",
+   "frontendId": "1443",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "integer-to-english-words": {
+   "title": "Integer to English Words",
+   "frontendId": "273",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "matrix-diagonal-sum": {
+   "title": "Matrix Diagonal Sum",
+   "frontendId": "1572",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "robot-bounded-in-circle": {
+   "title": "Robot Bounded In Circle",
+   "frontendId": "1041",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "super-egg-drop": {
+   "title": "Super Egg Drop",
+   "frontendId": "887",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "expression-add-operators": {
+   "title": "Expression Add Operators",
+   "frontendId": "282",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "non-decreasing-subsequences": {
+   "title": "Non-decreasing Subsequences",
+   "frontendId": "491",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "custom-sort-string": {
+   "title": "Custom Sort String",
+   "frontendId": "791",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-subarrays-with-fixed-bounds": {
+   "title": "Count Subarrays With Fixed Bounds",
+   "frontendId": "2444",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-root-to-leaf-binary-numbers": {
+   "title": "Sum of Root To Leaf Binary Numbers",
+   "frontendId": "1022",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-moves-to-equal-array-elements-ii": {
+   "title": "Minimum Moves to Equal Array Elements II",
+   "frontendId": "462",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-array-by-increasing-frequency": {
+   "title": "Sort Array by Increasing Frequency",
+   "frontendId": "1636",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "flipping-an-image": {
+   "title": "Flipping an Image",
+   "frontendId": "832",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "power-of-three": {
+   "title": "Power of Three",
+   "frontendId": "326",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "toeplitz-matrix": {
+   "title": "Toeplitz Matrix",
+   "frontendId": "766",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-smallest-divisor-given-a-threshold": {
+   "title": "Find the Smallest Divisor Given a Threshold",
+   "frontendId": "1283",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-path-with-alternating-colors": {
+   "title": "Shortest Path with Alternating Colors",
+   "frontendId": "1129",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reshape-the-matrix": {
+   "title": "Reshape the Matrix",
+   "frontendId": "566",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance": {
+   "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+   "frontendId": "1334",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reveal-cards-in-increasing-order": {
+   "title": "Reveal Cards In Increasing Order",
+   "frontendId": "950",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-to-array-form-of-integer": {
+   "title": "Add to Array-Form of Integer",
+   "frontendId": "989",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "stone-game-ii": {
+   "title": "Stone Game II",
+   "frontendId": "1140",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-distance-between-bst-nodes": {
+   "title": "Minimum Distance Between BST Nodes",
+   "frontendId": "783",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-one-row-to-tree": {
+   "title": "Add One Row to Tree",
+   "frontendId": "623",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "scramble-string": {
+   "title": "Scramble String",
+   "frontendId": "87",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "repeated-dna-sequences": {
+   "title": "Repeated DNA Sequences",
+   "frontendId": "187",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "third-maximum-number": {
+   "title": "Third Maximum Number",
+   "frontendId": "414",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-chunks-to-make-sorted": {
+   "title": "Max Chunks To Make Sorted",
+   "frontendId": "769",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sliding-window-median": {
+   "title": "Sliding Window Median",
+   "frontendId": "480",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
   }
  }
 }

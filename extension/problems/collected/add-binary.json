@@ -1,0 +1,32 @@
+{
+ "slug": "add-binary",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "67",
+ "title": "Add Binary",
+ "premium": false,
+ "meta": {
+  "name": "addBinary",
+  "params": [
+   {
+    "name": "a",
+    "type": "string"
+   },
+   {
+    "name": "b",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"11\"\n\"1\"",
+  "\"1010\"\n\"1011\""
+ ],
+ "exampleOutputs": [
+  "\"100\"",
+  "\"10101\""
+ ],
+ "anyOrder": false
+}

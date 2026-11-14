@@ -1,0 +1,28 @@
+{
+ "slug": "longest-palindrome",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "409",
+ "title": "Longest Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "longestPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abccccdd\"",
+  "\"a\""
+ ],
+ "exampleOutputs": [
+  "7",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "recover-binary-search-tree",
+ "frontendId": "99",
+ "title": "Recover Binary Search Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "Solution().recoverTree(root)\nprint(leet_str(tree_values(root)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

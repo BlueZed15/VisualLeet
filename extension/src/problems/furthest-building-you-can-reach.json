@@ -1,0 +1,35 @@
+{
+ "slug": "furthest-building-you-can-reach",
+ "frontendId": "1642",
+ "title": "Furthest Building You Can Reach",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[]"
+  },
+  {
+   "name": "bricks",
+   "type": "integer"
+  },
+  {
+   "name": "ladders",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}\nbricks = {bricks}\nladders = {ladders}",
+ "visible": [
+  "heights",
+  "bricks",
+  "ladders"
+ ],
+ "call": "result = Solution().furthestBuilding(heights, bricks, ladders)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

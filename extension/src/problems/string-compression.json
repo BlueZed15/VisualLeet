@@ -1,0 +1,25 @@
+{
+ "slug": "string-compression",
+ "frontendId": "443",
+ "title": "String Compression",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "chars",
+   "type": "character[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "chars = {chars}",
+ "visible": [
+  "chars"
+ ],
+ "call": "result = Solution().compress(chars)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

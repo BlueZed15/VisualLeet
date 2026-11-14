@@ -1,0 +1,34 @@
+{
+ "slug": "isomorphic-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "205",
+ "title": "Isomorphic Strings",
+ "premium": false,
+ "meta": {
+  "name": "isIsomorphic",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"egg\"\n\"add\"",
+  "\"foo\"\n\"bar\"",
+  "\"paper\"\n\"title\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

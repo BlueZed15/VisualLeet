@@ -1,0 +1,30 @@
+{
+ "slug": "integer-to-roman",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "12",
+ "title": "Integer to Roman",
+ "premium": false,
+ "meta": {
+  "name": "intToRoman",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "3749",
+  "58",
+  "1994"
+ ],
+ "exampleOutputs": [
+  "\"MMMDCCXLIX\"",
+  "\"LVIII\"",
+  "\"MCMXCIV\""
+ ],
+ "anyOrder": false
+}

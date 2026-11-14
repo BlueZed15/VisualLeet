@@ -1,0 +1,35 @@
+{
+ "slug": "range-sum-of-bst",
+ "frontendId": "938",
+ "title": "Range Sum of BST",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nlow = {low}\nhigh = {high}",
+ "visible": [
+  "root",
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().rangeSumBST(root, low, high)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

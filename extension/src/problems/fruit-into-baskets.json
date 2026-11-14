@@ -1,0 +1,25 @@
+{
+ "slug": "fruit-into-baskets",
+ "frontendId": "904",
+ "title": "Fruit Into Baskets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "fruits",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "fruits = {fruits}",
+ "visible": [
+  "fruits"
+ ],
+ "call": "result = Solution().totalFruit(fruits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-range-covering-elements-from-k-lists",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "632",
+ "title": "Smallest Range Covering Elements from K Lists",
+ "premium": false,
+ "meta": {
+  "name": "smallestRange",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]",
+  "[[1,2,3],[1,2,3],[1,2,3]]"
+ ],
+ "exampleOutputs": [
+  "[20,24]",
+  "[1,1]"
+ ],
+ "anyOrder": false
+}

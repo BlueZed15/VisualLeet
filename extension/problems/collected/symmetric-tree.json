@@ -1,0 +1,28 @@
+{
+ "slug": "symmetric-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "101",
+ "title": "Symmetric Tree",
+ "premium": false,
+ "meta": {
+  "name": "isSymmetric",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,3,4,4,3]",
+  "[1,2,2,null,3,null,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "integer-to-english-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "273",
+ "title": "Integer to English Words",
+ "premium": false,
+ "meta": {
+  "name": "numberToWords",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "123",
+  "12345",
+  "1234567"
+ ],
+ "exampleOutputs": [
+  "\"One Hundred Twenty Three\"",
+  "\"Twelve Thousand Three Hundred Forty Five\"",
+  "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
+ ],
+ "anyOrder": false
+}

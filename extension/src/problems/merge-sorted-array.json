@@ -1,0 +1,40 @@
+{
+ "slug": "merge-sorted-array",
+ "frontendId": "88",
+ "title": "Merge Sorted Array",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nm = {m}\nnums2 = {nums2}\nn = {n}",
+ "visible": [
+  "nums1",
+  "m",
+  "nums2",
+  "n"
+ ],
+ "call": "Solution().merge(nums1, m, nums2, n)\nprint(leet_str(nums1))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

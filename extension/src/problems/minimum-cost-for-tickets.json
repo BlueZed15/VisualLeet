@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-cost-for-tickets",
+ "frontendId": "983",
+ "title": "Minimum Cost For Tickets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "days",
+   "type": "integer[]"
+  },
+  {
+   "name": "costs",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "days = {days}\ncosts = {costs}",
+ "visible": [
+  "days",
+  "costs"
+ ],
+ "call": "result = Solution().mincostTickets(days, costs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

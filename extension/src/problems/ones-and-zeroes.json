@@ -1,0 +1,35 @@
+{
+ "slug": "ones-and-zeroes",
+ "frontendId": "474",
+ "title": "Ones and Zeroes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strs",
+   "type": "string[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "strs = {strs}\nm = {m}\nn = {n}",
+ "visible": [
+  "strs",
+  "m",
+  "n"
+ ],
+ "call": "result = Solution().findMaxForm(strs, m, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

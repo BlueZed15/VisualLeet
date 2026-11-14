@@ -1,0 +1,30 @@
+{
+ "slug": "find-all-anagrams-in-a-string",
+ "frontendId": "438",
+ "title": "Find All Anagrams in a String",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "p",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\np = {p}",
+ "visible": [
+  "s",
+  "p"
+ ],
+ "call": "result = Solution().findAnagrams(s, p)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

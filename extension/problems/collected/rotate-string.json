@@ -1,0 +1,32 @@
+{
+ "slug": "rotate-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "796",
+ "title": "Rotate String",
+ "premium": false,
+ "meta": {
+  "name": "rotateString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "goal",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abcde\"\n\"cdeab\"",
+  "\"abcde\"\n\"abced\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

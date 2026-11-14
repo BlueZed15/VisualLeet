@@ -1,0 +1,40 @@
+{
+ "slug": "knight-probability-in-chessboard",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "688",
+ "title": "Knight Probability in Chessboard",
+ "premium": false,
+ "meta": {
+  "name": "knightProbability",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "row",
+    "type": "integer"
+   },
+   {
+    "name": "column",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "3\n2\n0\n0",
+  "1\n0\n0\n0"
+ ],
+ "exampleOutputs": [
+  "0.06250",
+  "1.00000"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "longest-string-chain",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1048",
+ "title": "Longest String Chain",
+ "premium": false,
+ "meta": {
+  "name": "longestStrChain",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+  "[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]",
+  "[\"abcd\",\"dbqca\"]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

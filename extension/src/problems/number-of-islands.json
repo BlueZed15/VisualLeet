@@ -21,5 +21,6 @@
  "call": "result = Solution().numIslands(grid)\nprint(leet_str(result))",
  "note": "LeetCode marks it manual (for other languages); in Python the input is the parameter.",
  "source": "hand-written",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

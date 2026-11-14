@@ -25,5 +25,6 @@
  ],
  "call": "result = Solution().numDistinct(s, t)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

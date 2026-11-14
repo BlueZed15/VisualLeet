@@ -1,0 +1,25 @@
+{
+ "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+ "frontendId": "1010",
+ "title": "Pairs of Songs With Total Durations Divisible by 60",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "time",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "time = {time}",
+ "visible": [
+  "time"
+ ],
+ "call": "result = Solution().numPairsDivisibleBy60(time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

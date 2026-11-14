@@ -1,0 +1,30 @@
+{
+ "slug": "jump-game-iv",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1345",
+ "title": "Jump Game IV",
+ "premium": false,
+ "meta": {
+  "name": "minJumps",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[100,-23,-23,404,100,23,23,23,3,404]",
+  "[7]",
+  "[7,6,9,6,9,6,9,7]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

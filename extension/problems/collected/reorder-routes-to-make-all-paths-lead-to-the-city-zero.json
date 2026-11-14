@@ -1,0 +1,34 @@
+{
+ "slug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1466",
+ "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+ "premium": false,
+ "meta": {
+  "name": "minReorder",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "connections"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[[0,1],[1,3],[2,3],[4,0],[4,5]]",
+  "5\n[[1,0],[1,2],[3,2],[3,4]]",
+  "3\n[[1,0],[2,0]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

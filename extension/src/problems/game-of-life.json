@@ -1,0 +1,25 @@
+{
+ "slug": "game-of-life",
+ "frontendId": "289",
+ "title": "Game of Life",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "Solution().gameOfLife(board)\nprint(leet_str(board))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

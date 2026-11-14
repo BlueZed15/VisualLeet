@@ -1,0 +1,30 @@
+{
+ "slug": "first-unique-character-in-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "387",
+ "title": "First Unique Character in a String",
+ "premium": false,
+ "meta": {
+  "name": "firstUniqChar",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"leetcode\"",
+  "\"loveleetcode\"",
+  "\"aabb\""
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

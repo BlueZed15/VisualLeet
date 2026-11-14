@@ -1,0 +1,25 @@
+{
+ "slug": "next-greater-element-iii",
+ "frontendId": "556",
+ "title": "Next Greater Element III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().nextGreaterElement(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

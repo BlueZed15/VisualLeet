@@ -1,0 +1,62 @@
+{
+ "slug": "design-hashset",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "705",
+ "title": "Design HashSet",
+ "premium": false,
+ "meta": {
+  "classname": "MyHashSet",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "key"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "key"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "remove"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "key"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "contains"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MyHashSet\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"contains\"]\n[[],[1],[10001],[1],[1],[1],[7],[10007],[7],[7],[7],[123],[10123],[123],[123],[123],[5000],[15000],[5000],[5000],[5000]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, true, false, null, true, null, false]"
+ ],
+ "anyOrder": false
+}

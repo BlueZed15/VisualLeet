@@ -1,0 +1,32 @@
+{
+ "slug": "can-place-flowers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "605",
+ "title": "Can Place Flowers",
+ "premium": false,
+ "meta": {
+  "name": "canPlaceFlowers",
+  "params": [
+   {
+    "name": "flowerbed",
+    "type": "integer[]"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,0,1]\n1",
+  "[1,0,0,0,1]\n2"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

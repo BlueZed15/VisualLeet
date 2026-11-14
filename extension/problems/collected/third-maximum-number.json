@@ -1,0 +1,30 @@
+{
+ "slug": "third-maximum-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "414",
+ "title": "Third Maximum Number",
+ "premium": false,
+ "meta": {
+  "name": "thirdMax",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,1]",
+  "[1,2]",
+  "[2,2,3,1]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

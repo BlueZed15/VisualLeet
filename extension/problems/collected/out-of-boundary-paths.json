@@ -1,0 +1,44 @@
+{
+ "slug": "out-of-boundary-paths",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "576",
+ "title": "Out of Boundary Paths",
+ "premium": false,
+ "meta": {
+  "name": "findPaths",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "maxMove",
+    "type": "integer"
+   },
+   {
+    "name": "startRow",
+    "type": "integer"
+   },
+   {
+    "name": "startColumn",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n2\n2\n0\n0",
+  "1\n3\n3\n0\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "12"
+ ],
+ "anyOrder": false
+}

@@ -31,6 +31,7 @@ const only = arg("--only", "") ? new Set(arg("--only", "").split(",")) : null;
 const P = (...p) => path.join(root, "problems", ...p);
 const DB = (...p) => path.join(root, "src", "problems", ...p);
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
+const trimTreeNulls = (t) => String(t).replace(/(?:,\s*null)+\s*\]\s*$/, "]");
 
 const index = readJson(DB("index.json"));
 const handwritten = readJson(P("handwritten.json")).problems;
@@ -60,6 +61,10 @@ for (const slug of Object.keys(index.problems)) {
     if (echo.length) {
       jobs.push({ id: `${slug}|${i}|inputs`, setup: g.setup, visible: g.visible, source: echo.map(([b, v]) => printExpr(v, b.type)).join("\n") });
       e.echo = echo.map(([b]) => texts[b.name]);
+    } else if (entry.kind === "design") {
+      // the operations and their (typed) arguments, printed back
+      jobs.push({ id: `${slug}|${i}|inputs`, setup: g.setup, visible: g.visible, source: "print(leet_str(ops))\nprint(leet_str(args))" });
+      e.echo = [texts.operations, texts.arguments];
     }
     if (solution) jobs.push({ id: `${slug}|${i}|solution`, setup: g.setup, visible: g.visible, source: solution + "\n\n" + g.code + "\n" });
   });
@@ -80,7 +85,8 @@ for (const [slug, p] of Object.entries(plan)) {
     if (inp) {
       const lines = String(inp.stdout || "").replace(/\s+$/, "").split("\n");
       if (inp.exception || inp.error) problems.push(`example ${i + 1} inputs: ${inp.exception || inp.error}`);
-      else e.echo.forEach((t, j) => { if (compareOutputs(lines[j] || "", t) !== "match") problems.push(`example ${i + 1} box ${j + 1}: built ${lines[j]}, text was ${t}`); });
+      // a level-order tree may end in nulls that mean nothing ([1,2,null,null] is [1,2])
+      else e.echo.forEach((t, j) => { if (compareOutputs(lines[j] || "", t) !== "match" && compareOutputs(lines[j] || "", trimTreeNulls(t)) !== "match") problems.push(`example ${i + 1} box ${j + 1}: built ${lines[j]}, text was ${t}`); });
     }
     const sol = results[`${slug}|${i}|solution`];
     if (sol) {
@@ -98,12 +104,17 @@ for (const [slug, p] of Object.entries(plan)) {
       if (leaked.length) problems.push(`example ${i + 1}: setup names shown: ${leaked.join(", ")}`);
     }
   });
-  const status = problems.length ? "failed" : p.hasSolution ? "verified" : "inputs-ok";
+  // "inputs-ok" only if some input was actually built and compared
+  const echoed = p.examples.some((e) => e.echo && e.echo.length);
+  const status = problems.length ? "failed" : p.hasSolution ? "verified" : echoed ? "inputs-ok" : "unchecked";
   report[slug] = { status, examples: p.examples.length, problems, ...(notes.length ? { notes } : {}) };
   // stamp the file and the index
+  // verified: a known-good solution passed every example; checked: "solution" | "inputs" | "none"
   p.entry.verified = status === "verified";
+  p.entry.checked = status === "verified" ? "solution" : status === "inputs-ok" ? "inputs" : "none";
   writeFileSync(DB(slug + ".json"), JSON.stringify(p.entry, null, 1) + "\n");
   index.problems[slug].verified = p.entry.verified;
+  index.problems[slug].checked = p.entry.checked;
 }
 writeFileSync(DB("index.json"), JSON.stringify(index, null, 1) + "\n");
 

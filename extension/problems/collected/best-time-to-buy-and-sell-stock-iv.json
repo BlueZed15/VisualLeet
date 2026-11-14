@@ -1,0 +1,32 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-iv",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "188",
+ "title": "Best Time to Buy and Sell Stock IV",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n[2,4,1]",
+  "2\n[3,2,6,5,0,3]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "7"
+ ],
+ "anyOrder": false
+}

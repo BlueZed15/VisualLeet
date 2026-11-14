@@ -1,0 +1,28 @@
+{
+ "slug": "count-binary-substrings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "696",
+ "title": "Count Binary Substrings",
+ "premium": false,
+ "meta": {
+  "name": "countBinarySubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"00110011\"",
+  "\"10101\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "4"
+ ],
+ "anyOrder": false
+}

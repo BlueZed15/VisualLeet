@@ -1,0 +1,29 @@
+{
+ "slug": "non-decreasing-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "491",
+ "title": "Non-decreasing Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "findSubsequences",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[4,6,7,7]",
+  "[4,4,3,2,1]"
+ ],
+ "exampleOutputs": [
+  "[[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]",
+  "[[4,4]]"
+ ],
+ "anyOrder": true
+}

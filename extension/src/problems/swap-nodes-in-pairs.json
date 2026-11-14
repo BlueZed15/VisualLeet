@@ -1,0 +1,27 @@
+{
+ "slug": "swap-nodes-in-pairs",
+ "frontendId": "24",
+ "title": "Swap Nodes in Pairs",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().swapPairs(head)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

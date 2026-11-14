@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-twin-sum-of-a-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2130",
+ "title": "Maximum Twin Sum of a Linked List",
+ "premium": false,
+ "meta": {
+  "name": "pairSum",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,4,2,1]",
+  "[4,2,2,3]",
+  "[1,100000]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "7",
+  "100001"
+ ],
+ "anyOrder": false
+}

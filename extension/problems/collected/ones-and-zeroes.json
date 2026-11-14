@@ -1,0 +1,36 @@
+{
+ "slug": "ones-and-zeroes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "474",
+ "title": "Ones and Zeroes",
+ "premium": false,
+ "meta": {
+  "name": "findMaxForm",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   },
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"10\",\"0001\",\"111001\",\"1\",\"0\"]\n5\n3",
+  "[\"10\",\"0\",\"1\"]\n1\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

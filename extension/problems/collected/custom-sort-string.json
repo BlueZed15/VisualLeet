@@ -1,0 +1,32 @@
+{
+ "slug": "custom-sort-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "791",
+ "title": "Custom Sort String",
+ "premium": false,
+ "meta": {
+  "name": "customSortString",
+  "params": [
+   {
+    "name": "order",
+    "type": "string"
+   },
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"cba\"\n\"abcd\"",
+  "\"bcafg\"\n\"abcd\""
+ ],
+ "exampleOutputs": [
+  "\"cbad\"",
+  "\"bcad\""
+ ],
+ "anyOrder": false
+}

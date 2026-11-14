@@ -1,0 +1,35 @@
+{
+ "slug": "successful-pairs-of-spells-and-potions",
+ "frontendId": "2300",
+ "title": "Successful Pairs of Spells and Potions",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "spells",
+   "type": "integer[]"
+  },
+  {
+   "name": "potions",
+   "type": "integer[]"
+  },
+  {
+   "name": "success",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "spells = {spells}\npotions = {potions}\nsuccess = {success}",
+ "visible": [
+  "spells",
+  "potions",
+  "success"
+ ],
+ "call": "result = Solution().successfulPairs(spells, potions, success)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

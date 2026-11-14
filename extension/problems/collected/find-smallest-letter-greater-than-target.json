@@ -1,0 +1,34 @@
+{
+ "slug": "find-smallest-letter-greater-than-target",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "744",
+ "title": "Find Smallest Letter Greater Than Target",
+ "premium": false,
+ "meta": {
+  "name": "nextGreatestLetter",
+  "params": [
+   {
+    "name": "letters",
+    "type": "character[]"
+   },
+   {
+    "name": "target",
+    "type": "character"
+   }
+  ],
+  "return": {
+   "type": "character"
+  }
+ },
+ "exampleInputs": [
+  "[\"c\",\"f\",\"j\"]\n\"a\"",
+  "[\"c\",\"f\",\"j\"]\n\"c\"",
+  "[\"x\",\"x\",\"y\",\"y\"]\n\"z\""
+ ],
+ "exampleOutputs": [
+  "\"c\"",
+  "\"f\"",
+  "\"x\""
+ ],
+ "anyOrder": false
+}

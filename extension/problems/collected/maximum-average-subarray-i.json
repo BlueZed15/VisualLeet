@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-average-subarray-i",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "643",
+ "title": "Maximum Average Subarray I",
+ "premium": false,
+ "meta": {
+  "name": "findMaxAverage",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[1,12,-5,-6,50,3]\n4",
+  "[5]\n1"
+ ],
+ "exampleOutputs": [
+  "12.75000",
+  "5.00000"
+ ],
+ "anyOrder": false
+}

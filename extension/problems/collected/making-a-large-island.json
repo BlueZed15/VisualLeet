@@ -1,0 +1,30 @@
+{
+ "slug": "making-a-large-island",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "827",
+ "title": "Making A Large Island",
+ "premium": false,
+ "meta": {
+  "name": "largestIsland",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0],[0,1]]",
+  "[[1,1],[1,0]]",
+  "[[1,1],[1,1]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

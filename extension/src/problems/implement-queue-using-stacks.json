@@ -1,0 +1,44 @@
+{
+ "slug": "implement-queue-using-stacks",
+ "frontendId": "232",
+ "title": "Implement Queue using Stacks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MyQueue",
+ "methods": {
+  "MyQueue": [],
+  "push": [
+   {
+    "name": "x",
+    "type": "integer"
+   }
+  ],
+  "pop": [],
+  "peek": [],
+  "empty": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MyQueue(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

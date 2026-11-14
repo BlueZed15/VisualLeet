@@ -1,0 +1,25 @@
+{
+ "slug": "path-with-minimum-effort",
+ "frontendId": "1631",
+ "title": "Path With Minimum Effort",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}",
+ "visible": [
+  "heights"
+ ],
+ "call": "result = Solution().minimumEffortPath(heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

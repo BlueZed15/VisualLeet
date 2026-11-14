@@ -1,0 +1,30 @@
+{
+ "slug": "ugly-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "263",
+ "title": "Ugly Number",
+ "premium": false,
+ "meta": {
+  "name": "isUgly",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "6",
+  "1",
+  "14"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "search-in-rotated-sorted-array-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "81",
+ "title": "Search in Rotated Sorted Array II",
+ "premium": false,
+ "meta": {
+  "name": "search",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,5,6,0,0,1,2]\n0",
+  "[2,5,6,0,0,1,2]\n3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

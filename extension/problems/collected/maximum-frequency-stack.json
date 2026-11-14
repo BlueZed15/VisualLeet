@@ -1,0 +1,57 @@
+{
+ "slug": "maximum-frequency-stack",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "895",
+ "title": "Maximum Frequency Stack",
+ "premium": false,
+ "meta": {
+  "classname": "FreqStack",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "name": "push",
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "name": "pop",
+    "params": [],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"FreqStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, null, null, null, 5, 7, 5, 4]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "zigzag-conversion",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "6",
+ "title": "Zigzag Conversion",
+ "premium": false,
+ "meta": {
+  "name": "convert",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "numRows",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"PAYPALISHIRING\"\n3",
+  "\"PAYPALISHIRING\"\n4",
+  "\"A\"\n1"
+ ],
+ "exampleOutputs": [
+  "\"PAHNAPLSIIGYIR\"",
+  "\"PINALSIGYAHRPI\"",
+  "\"A\""
+ ],
+ "anyOrder": false
+}

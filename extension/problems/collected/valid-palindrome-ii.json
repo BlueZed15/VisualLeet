@@ -1,0 +1,30 @@
+{
+ "slug": "valid-palindrome-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "680",
+ "title": "Valid Palindrome II",
+ "premium": false,
+ "meta": {
+  "name": "validPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"aba\"",
+  "\"abca\"",
+  "\"abc\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

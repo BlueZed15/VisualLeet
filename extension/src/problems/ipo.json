@@ -1,0 +1,40 @@
+{
+ "slug": "ipo",
+ "frontendId": "502",
+ "title": "IPO",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "w",
+   "type": "integer"
+  },
+  {
+   "name": "profits",
+   "type": "integer[]"
+  },
+  {
+   "name": "capital",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nw = {w}\nprofits = {profits}\ncapital = {capital}",
+ "visible": [
+  "k",
+  "w",
+  "profits",
+  "capital"
+ ],
+ "call": "result = Solution().findMaximizedCapital(k, w, profits, capital)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

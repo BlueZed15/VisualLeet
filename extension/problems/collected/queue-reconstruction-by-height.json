@@ -1,0 +1,29 @@
+{
+ "slug": "queue-reconstruction-by-height",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "406",
+ "title": "Queue Reconstruction by Height",
+ "premium": false,
+ "meta": {
+  "name": "reconstructQueue",
+  "params": [
+   {
+    "name": "people",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]",
+   "colsize": "2"
+  }
+ },
+ "exampleInputs": [
+  "[[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]",
+  "[[6,0],[5,0],[4,0],[3,2],[2,2],[1,4]]"
+ ],
+ "exampleOutputs": [
+  "[[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]",
+  "[[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]"
+ ],
+ "anyOrder": false
+}

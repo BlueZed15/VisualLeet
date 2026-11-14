@@ -1,0 +1,30 @@
+{
+ "slug": "132-pattern",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "456",
+ "title": "132 Pattern",
+ "premium": false,
+ "meta": {
+  "name": "find132pattern",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[3,1,4,2]",
+  "[-1,3,2,0]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

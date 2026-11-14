@@ -20,5 +20,6 @@
  ],
  "call": "Solution().rotate(matrix)\nprint(leet_str(matrix))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

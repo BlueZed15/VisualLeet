@@ -1,0 +1,28 @@
+{
+ "slug": "n-th-tribonacci-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1137",
+ "title": "N-th Tribonacci Number",
+ "premium": false,
+ "meta": {
+  "name": "tribonacci",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "25"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1389537"
+ ],
+ "anyOrder": false
+}

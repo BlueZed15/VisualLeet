@@ -1,0 +1,35 @@
+{
+ "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+ "frontendId": "1334",
+ "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "distanceThreshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\ndistanceThreshold = {distanceThreshold}",
+ "visible": [
+  "n",
+  "edges",
+  "distanceThreshold"
+ ],
+ "call": "result = Solution().findTheCity(n, edges, distanceThreshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

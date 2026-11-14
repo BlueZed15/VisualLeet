@@ -1,0 +1,27 @@
+{
+ "slug": "construct-binary-search-tree-from-preorder-traversal",
+ "frontendId": "1008",
+ "title": "Construct Binary Search Tree from Preorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "preorder",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "preorder = {preorder}",
+ "visible": [
+  "preorder"
+ ],
+ "call": "result = Solution().bstFromPreorder(preorder)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

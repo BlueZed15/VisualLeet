@@ -1,0 +1,25 @@
+{
+ "slug": "asteroid-collision",
+ "frontendId": "735",
+ "title": "Asteroid Collision",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "asteroids",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "asteroids = {asteroids}",
+ "visible": [
+  "asteroids"
+ ],
+ "call": "result = Solution().asteroidCollision(asteroids)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

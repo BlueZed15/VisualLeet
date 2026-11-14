@@ -1,0 +1,30 @@
+{
+ "slug": "top-k-frequent-words",
+ "frontendId": "692",
+ "title": "Top K Frequent Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nk = {k}",
+ "visible": [
+  "words",
+  "k"
+ ],
+ "call": "result = Solution().topKFrequent(words, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

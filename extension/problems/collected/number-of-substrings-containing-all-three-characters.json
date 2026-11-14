@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-substrings-containing-all-three-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1358",
+ "title": "Number of Substrings Containing All Three Characters",
+ "premium": false,
+ "meta": {
+  "name": "numberOfSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcabc\"",
+  "\"aaacb\"",
+  "\"abc\""
+ ],
+ "exampleOutputs": [
+  "10",
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

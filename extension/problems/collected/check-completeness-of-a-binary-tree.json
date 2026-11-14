@@ -1,0 +1,28 @@
+{
+ "slug": "check-completeness-of-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "958",
+ "title": "Check Completeness of a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "isCompleteTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6]",
+  "[1,2,3,4,5,null,7]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

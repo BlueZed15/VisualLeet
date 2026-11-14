@@ -1,0 +1,34 @@
+{
+ "slug": "find-first-and-last-position-of-element-in-sorted-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "34",
+ "title": "Find First and Last Position of Element in Sorted Array",
+ "premium": false,
+ "meta": {
+  "name": "searchRange",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,7,7,8,8,10]\n8",
+  "[5,7,7,8,8,10]\n6",
+  "[]\n0"
+ ],
+ "exampleOutputs": [
+  "[3,4]",
+  "[-1,-1]",
+  "[-1,-1]"
+ ],
+ "anyOrder": false
+}

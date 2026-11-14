@@ -1,0 +1,34 @@
+{
+ "slug": "ransom-note",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "383",
+ "title": "Ransom Note",
+ "premium": false,
+ "meta": {
+  "name": "canConstruct",
+  "params": [
+   {
+    "name": "ransomNote",
+    "type": "string"
+   },
+   {
+    "name": "magazine",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"a\"\n\"b\"",
+  "\"aa\"\n\"ab\"",
+  "\"aa\"\n\"aab\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

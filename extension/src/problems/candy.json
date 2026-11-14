@@ -1,0 +1,25 @@
+{
+ "slug": "candy",
+ "frontendId": "135",
+ "title": "Candy",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ratings",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ratings = {ratings}",
+ "visible": [
+  "ratings"
+ ],
+ "call": "result = Solution().candy(ratings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

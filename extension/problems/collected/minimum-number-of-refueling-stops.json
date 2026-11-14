@@ -1,0 +1,38 @@
+{
+ "slug": "minimum-number-of-refueling-stops",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "871",
+ "title": "Minimum Number of Refueling Stops",
+ "premium": false,
+ "meta": {
+  "name": "minRefuelStops",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer"
+   },
+   {
+    "name": "startFuel",
+    "type": "integer"
+   },
+   {
+    "name": "stations",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n1\n[]",
+  "100\n1\n[[10,100]]",
+  "100\n10\n[[10,60],[20,30],[30,30],[60,40]]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "-1",
+  "2"
+ ],
+ "anyOrder": false
+}

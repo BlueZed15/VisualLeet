@@ -1,0 +1,25 @@
+{
+ "slug": "flatten-binary-tree-to-linked-list",
+ "frontendId": "114",
+ "title": "Flatten Binary Tree to Linked List",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "Solution().flatten(root)\nprint(leet_str(tree_values(root)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

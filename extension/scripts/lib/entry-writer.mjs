@@ -35,6 +35,7 @@ const forPython = (ps) => (ps || []).filter((p) => !p.lang || /^python/.test(p.l
 
 /** Entry fields for LeetCode metadata, or { error } when it needs a hand-written entry. */
 export function entryFromMeta(m) {
+  if (m.database || m.shell) return { error: "SQL / pandas / shell problem: nothing to visualize" };
   if (m.systemdesign) {
     const methods = { [m.classname]: forPython(m.constructor && m.constructor.params) };
     for (const x of m.methods || []) methods[x.name] = forPython(x.params);

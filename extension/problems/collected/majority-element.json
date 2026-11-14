@@ -1,0 +1,28 @@
+{
+ "slug": "majority-element",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "169",
+ "title": "Majority Element",
+ "premium": false,
+ "meta": {
+  "name": "majorityElement",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,3]",
+  "[2,2,1,1,1,2,2]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

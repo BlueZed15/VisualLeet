@@ -1,0 +1,34 @@
+{
+ "slug": "find-in-mountain-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1095",
+ "title": "Find in Mountain Array",
+ "premium": false,
+ "meta": {
+  "name": "findInMountainArray",
+  "params": [
+   {
+    "name": "mountainArr",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": true,
+  "typescriptCustomType": "class MountainArray {\n    __secret: number[];\n    __N: number;\n    __guesses: number;\n    constructor(secret: number[]) {\n        this.__secret = secret;\n        this.__N = secret.length;\n        this.__guesses = 100;\n    }\n\n    get(index: number): number {\n        this.__guesses -= 1;\n        return this.__secret[index];\n    }\n\n    getGuesses(): number {\n        return this.__guesses;\n    }\n        \n    length(): number {\n        return this.__N;\n    }\n};\n"
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,3,1]\n3",
+  "[0,1,2,4,2,1]\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

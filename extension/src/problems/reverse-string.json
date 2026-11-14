@@ -1,0 +1,25 @@
+{
+ "slug": "reverse-string",
+ "frontendId": "344",
+ "title": "Reverse String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "character[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "Solution().reverseString(s)\nprint(leet_str(s))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

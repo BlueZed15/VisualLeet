@@ -20,5 +20,6 @@
  ],
  "call": "result = Solution().maxAreaOfIsland(grid)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

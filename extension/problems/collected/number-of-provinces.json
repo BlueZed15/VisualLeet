@@ -1,0 +1,29 @@
+{
+ "slug": "number-of-provinces",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "547",
+ "title": "Number of Provinces",
+ "premium": false,
+ "meta": {
+  "name": "findCircleNum",
+  "params": [
+   {
+    "name": "isConnected",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[[1,1,0],[1,1,0],[0,0,1]]",
+  "[[1,0,0],[0,1,0],[0,0,1]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-deletions-to-make-character-frequencies-unique",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1647",
+ "title": "Minimum Deletions to Make Character Frequencies Unique",
+ "premium": false,
+ "meta": {
+  "name": "minDeletions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aab\"",
+  "\"aaabbbcc\"",
+  "\"ceabaacb\""
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

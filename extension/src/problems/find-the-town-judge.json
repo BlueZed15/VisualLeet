@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-town-judge",
+ "frontendId": "997",
+ "title": "Find the Town Judge",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "trust",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ntrust = {trust}",
+ "visible": [
+  "n",
+  "trust"
+ ],
+ "call": "result = Solution().findJudge(n, trust)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

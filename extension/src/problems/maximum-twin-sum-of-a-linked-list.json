@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-twin-sum-of-a-linked-list",
+ "frontendId": "2130",
+ "title": "Maximum Twin Sum of a Linked List",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().pairSum(head)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

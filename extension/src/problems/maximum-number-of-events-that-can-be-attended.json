@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-events-that-can-be-attended",
+ "frontendId": "1353",
+ "title": "Maximum Number of Events That Can Be Attended",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "events",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "events = {events}",
+ "visible": [
+  "events"
+ ],
+ "call": "result = Solution().maxEvents(events)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

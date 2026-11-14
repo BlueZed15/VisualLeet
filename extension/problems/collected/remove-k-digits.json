@@ -1,0 +1,34 @@
+{
+ "slug": "remove-k-digits",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "402",
+ "title": "Remove K Digits",
+ "premium": false,
+ "meta": {
+  "name": "removeKdigits",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1432219\"\n3",
+  "\"10200\"\n1",
+  "\"10\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"1219\"",
+  "\"200\"",
+  "\"0\""
+ ],
+ "anyOrder": false
+}

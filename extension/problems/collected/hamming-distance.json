@@ -1,0 +1,32 @@
+{
+ "slug": "hamming-distance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "461",
+ "title": "Hamming Distance",
+ "premium": false,
+ "meta": {
+  "name": "hammingDistance",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   },
+   {
+    "name": "y",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n4",
+  "3\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

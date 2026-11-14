@@ -1,0 +1,28 @@
+{
+ "slug": "find-common-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1002",
+ "title": "Find Common Characters",
+ "premium": false,
+ "meta": {
+  "name": "commonChars",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"bella\",\"label\",\"roller\"]",
+  "[\"cool\",\"lock\",\"cook\"]"
+ ],
+ "exampleOutputs": [
+  "[\"e\",\"l\",\"l\"]",
+  "[\"c\",\"o\"]"
+ ],
+ "anyOrder": true
+}

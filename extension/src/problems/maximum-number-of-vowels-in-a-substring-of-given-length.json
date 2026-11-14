@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+ "frontendId": "1456",
+ "title": "Maximum Number of Vowels in a Substring of Given Length",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().maxVowels(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

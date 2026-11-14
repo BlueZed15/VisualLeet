@@ -1,0 +1,25 @@
+{
+ "slug": "integer-to-roman",
+ "frontendId": "12",
+ "title": "Integer to Roman",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().intToRoman(num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

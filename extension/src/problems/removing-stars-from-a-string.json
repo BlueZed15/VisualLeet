@@ -1,0 +1,25 @@
+{
+ "slug": "removing-stars-from-a-string",
+ "frontendId": "2390",
+ "title": "Removing Stars From a String",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().removeStars(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

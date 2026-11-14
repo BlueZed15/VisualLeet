@@ -1,0 +1,28 @@
+{
+ "slug": "dota2-senate",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "649",
+ "title": "Dota2 Senate",
+ "premium": false,
+ "meta": {
+  "name": "predictPartyVictory",
+  "params": [
+   {
+    "name": "senate",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"RD\"",
+  "\"RDD\""
+ ],
+ "exampleOutputs": [
+  "\"Radiant\"",
+  "\"Dire\""
+ ],
+ "anyOrder": false
+}

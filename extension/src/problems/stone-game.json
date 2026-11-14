@@ -1,0 +1,25 @@
+{
+ "slug": "stone-game",
+ "frontendId": "877",
+ "title": "Stone Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}",
+ "visible": [
+  "piles"
+ ],
+ "call": "result = Solution().stoneGame(piles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

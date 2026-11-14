@@ -1,0 +1,40 @@
+{
+ "slug": "find-if-path-exists-in-graph",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1971",
+ "title": "Find if Path Exists in Graph",
+ "premium": false,
+ "meta": {
+  "name": "validPath",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer",
+    "name": "source"
+   },
+   {
+    "type": "integer",
+    "name": "destination"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,1],[1,2],[2,0]]\n0\n2",
+  "6\n[[0,1],[0,2],[3,5],[5,4],[4,3]]\n0\n5"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

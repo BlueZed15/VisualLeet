@@ -1,0 +1,27 @@
+{
+ "slug": "convert-sorted-array-to-binary-search-tree",
+ "frontendId": "108",
+ "title": "Convert Sorted Array to Binary Search Tree",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().sortedArrayToBST(nums)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

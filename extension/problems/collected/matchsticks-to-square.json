@@ -1,0 +1,28 @@
+{
+ "slug": "matchsticks-to-square",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "473",
+ "title": "Matchsticks to Square",
+ "premium": false,
+ "meta": {
+  "name": "makesquare",
+  "params": [
+   {
+    "name": "matchsticks",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2,2,2]",
+  "[3,3,3,3,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

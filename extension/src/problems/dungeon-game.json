@@ -1,0 +1,25 @@
+{
+ "slug": "dungeon-game",
+ "frontendId": "174",
+ "title": "Dungeon Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dungeon",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "dungeon = {dungeon}",
+ "visible": [
+  "dungeon"
+ ],
+ "call": "result = Solution().calculateMinimumHP(dungeon)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "remove-all-adjacent-duplicates-in-string-ii",
+ "frontendId": "1209",
+ "title": "Remove All Adjacent Duplicates in String II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().removeDuplicates(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

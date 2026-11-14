@@ -1,0 +1,28 @@
+{
+ "slug": "longest-palindromic-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "516",
+ "title": "Longest Palindromic Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "longestPalindromeSubseq",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"bbbab\"",
+  "\"cbbd\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

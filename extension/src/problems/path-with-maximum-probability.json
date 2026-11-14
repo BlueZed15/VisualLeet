@@ -1,0 +1,45 @@
+{
+ "slug": "path-with-maximum-probability",
+ "frontendId": "1514",
+ "title": "Path with Maximum Probability",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "succProb",
+   "type": "double[]"
+  },
+  {
+   "name": "start_node",
+   "type": "integer"
+  },
+  {
+   "name": "end_node",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nsuccProb = {succProb}\nstart_node = {start_node}\nend_node = {end_node}",
+ "visible": [
+  "n",
+  "edges",
+  "succProb",
+  "start_node",
+  "end_node"
+ ],
+ "call": "result = Solution().maxProbability(n, edges, succProb, start_node, end_node)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

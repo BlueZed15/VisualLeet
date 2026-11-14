@@ -1,0 +1,30 @@
+{
+ "slug": "palindrome-pairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "336",
+ "title": "Palindrome Pairs",
+ "premium": false,
+ "meta": {
+  "name": "palindromePairs",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "[\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]",
+  "[\"bat\",\"tab\",\"cat\"]",
+  "[\"a\",\"\"]"
+ ],
+ "exampleOutputs": [
+  "[[0,1],[1,0],[3,2],[2,4]]",
+  "[[0,1],[1,0]]",
+  "[[0,1],[1,0]]"
+ ],
+ "anyOrder": false
+}

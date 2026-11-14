@@ -1,0 +1,25 @@
+{
+ "slug": "simplify-path",
+ "frontendId": "71",
+ "title": "Simplify Path",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "path",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "path = {path}",
+ "visible": [
+  "path"
+ ],
+ "call": "result = Solution().simplifyPath(path)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

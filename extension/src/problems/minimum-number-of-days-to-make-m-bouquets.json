@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-number-of-days-to-make-m-bouquets",
+ "frontendId": "1482",
+ "title": "Minimum Number of Days to Make m Bouquets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bloomDay",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "bloomDay = {bloomDay}\nm = {m}\nk = {k}",
+ "visible": [
+  "bloomDay",
+  "m",
+  "k"
+ ],
+ "call": "result = Solution().minDays(bloomDay, m, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

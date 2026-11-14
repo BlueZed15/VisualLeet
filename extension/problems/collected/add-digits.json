@@ -1,0 +1,28 @@
+{
+ "slug": "add-digits",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "258",
+ "title": "Add Digits",
+ "premium": false,
+ "meta": {
+  "name": "addDigits",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "38",
+  "0"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

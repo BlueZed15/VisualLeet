@@ -1,0 +1,25 @@
+{
+ "slug": "is-graph-bipartite",
+ "frontendId": "785",
+ "title": "Is Graph Bipartite?",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "graph",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "graph = {graph}",
+ "visible": [
+  "graph"
+ ],
+ "call": "result = Solution().isBipartite(graph)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

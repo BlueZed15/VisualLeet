@@ -1,0 +1,28 @@
+{
+ "slug": "single-number-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "137",
+ "title": "Single Number II",
+ "premium": false,
+ "meta": {
+  "name": "singleNumber",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,3,2]",
+  "[0,1,0,1,0,1,99]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "99"
+ ],
+ "anyOrder": false
+}

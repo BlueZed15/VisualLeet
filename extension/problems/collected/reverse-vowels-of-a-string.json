@@ -1,0 +1,28 @@
+{
+ "slug": "reverse-vowels-of-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "345",
+ "title": "Reverse Vowels of a String",
+ "premium": false,
+ "meta": {
+  "name": "reverseVowels",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"IceCreAm\"",
+  "\"leetcode\""
+ ],
+ "exampleOutputs": [
+  "\"AceCreIm\"",
+  "\"leotcede\""
+ ],
+ "anyOrder": false
+}

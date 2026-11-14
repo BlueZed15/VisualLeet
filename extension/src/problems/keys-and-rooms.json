@@ -1,0 +1,25 @@
+{
+ "slug": "keys-and-rooms",
+ "frontendId": "841",
+ "title": "Keys and Rooms",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rooms",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "rooms = {rooms}",
+ "visible": [
+  "rooms"
+ ],
+ "call": "result = Solution().canVisitAllRooms(rooms)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

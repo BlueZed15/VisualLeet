@@ -1,0 +1,38 @@
+{
+ "slug": "minimum-number-of-days-to-make-m-bouquets",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1482",
+ "title": "Minimum Number of Days to Make m Bouquets",
+ "premium": false,
+ "meta": {
+  "name": "minDays",
+  "params": [
+   {
+    "name": "bloomDay",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,10,3,10,2]\n3\n1",
+  "[1,10,3,10,2]\n3\n2",
+  "[7,7,7,7,12,7,7]\n2\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1",
+  "12"
+ ],
+ "anyOrder": false
+}

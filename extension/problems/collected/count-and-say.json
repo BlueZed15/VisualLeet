@@ -1,0 +1,28 @@
+{
+ "slug": "count-and-say",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "38",
+ "title": "Count and Say",
+ "premium": false,
+ "meta": {
+  "name": "countAndSay",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "4"
+ ],
+ "exampleOutputs": [
+  "\"1211\"",
+  "\"1\""
+ ],
+ "anyOrder": false
+}

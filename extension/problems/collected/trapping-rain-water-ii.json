@@ -1,0 +1,28 @@
+{
+ "slug": "trapping-rain-water-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "407",
+ "title": "Trapping Rain Water II",
+ "premium": false,
+ "meta": {
+  "name": "trapRainWater",
+  "params": [
+   {
+    "name": "heightMap",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]",
+  "[[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "10"
+ ],
+ "anyOrder": false
+}

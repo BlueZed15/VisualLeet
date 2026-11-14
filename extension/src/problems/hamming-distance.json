@@ -1,0 +1,30 @@
+{
+ "slug": "hamming-distance",
+ "frontendId": "461",
+ "title": "Hamming Distance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}",
+ "visible": [
+  "x",
+  "y"
+ ],
+ "call": "result = Solution().hammingDistance(x, y)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

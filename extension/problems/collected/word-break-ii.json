@@ -1,0 +1,35 @@
+{
+ "slug": "word-break-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "140",
+ "title": "Word Break II",
+ "premium": false,
+ "meta": {
+  "name": "wordBreak",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "wordDict",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "list<string>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+  "\"pineapplepenapple\"\n[\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
+  "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]"
+ ],
+ "exampleOutputs": [
+  "[\"cats and dog\",\"cat sand dog\"]",
+  "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]",
+  "[]"
+ ],
+ "anyOrder": true
+}

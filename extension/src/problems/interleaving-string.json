@@ -30,5 +30,6 @@
  ],
  "call": "result = Solution().isInterleave(s1, s2, s3)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

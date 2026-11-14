@@ -1,0 +1,29 @@
+{
+ "slug": "convert-binary-number-in-a-linked-list-to-integer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1290",
+ "title": "Convert Binary Number in a Linked List to Integer",
+ "premium": false,
+ "meta": {
+  "name": "getDecimalValue",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[1,0,1]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

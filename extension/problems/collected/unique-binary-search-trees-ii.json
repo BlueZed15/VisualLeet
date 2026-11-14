@@ -1,0 +1,28 @@
+{
+ "slug": "unique-binary-search-trees-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "95",
+ "title": "Unique Binary Search Trees II",
+ "premium": false,
+ "meta": {
+  "name": "generateTrees",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<TreeNode>"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]",
+  "[[1]]"
+ ],
+ "anyOrder": true
+}

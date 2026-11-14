@@ -1,0 +1,32 @@
+{
+ "slug": "path-sum-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "437",
+ "title": "Path Sum III",
+ "premium": false,
+ "meta": {
+  "name": "pathSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "targetSum",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,5,-3,3,2,null,11,3,-2,null,1]\n8",
+  "[5,4,8,11,null,13,4,7,2,null,null,5,1]\n22"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

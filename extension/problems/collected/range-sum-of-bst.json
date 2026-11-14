@@ -1,0 +1,36 @@
+{
+ "slug": "range-sum-of-bst",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "938",
+ "title": "Range Sum of BST",
+ "premium": false,
+ "meta": {
+  "name": "rangeSumBST",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "name": "high",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,5,15,3,7,null,18]\n7\n15",
+  "[10,5,15,3,7,13,18,1,null,6]\n6\n10"
+ ],
+ "exampleOutputs": [
+  "32",
+  "23"
+ ],
+ "anyOrder": false
+}

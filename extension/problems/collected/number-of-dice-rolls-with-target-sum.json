@@ -1,0 +1,38 @@
+{
+ "slug": "number-of-dice-rolls-with-target-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1155",
+ "title": "Number of Dice Rolls With Target Sum",
+ "premium": false,
+ "meta": {
+  "name": "numRollsToTarget",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n6\n3",
+  "2\n6\n7",
+  "30\n30\n500"
+ ],
+ "exampleOutputs": [
+  "1",
+  "6",
+  "222616187"
+ ],
+ "anyOrder": false
+}

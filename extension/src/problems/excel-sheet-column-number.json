@@ -1,0 +1,25 @@
+{
+ "slug": "excel-sheet-column-number",
+ "frontendId": "171",
+ "title": "Excel Sheet Column Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "columnTitle",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "columnTitle = {columnTitle}",
+ "visible": [
+  "columnTitle"
+ ],
+ "call": "result = Solution().titleToNumber(columnTitle)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "course-schedule-iii",
+ "frontendId": "630",
+ "title": "Course Schedule III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "courses",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "courses = {courses}",
+ "visible": [
+  "courses"
+ ],
+ "call": "result = Solution().scheduleCourse(courses)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

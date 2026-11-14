@@ -1,0 +1,25 @@
+{
+ "slug": "jump-game-iv",
+ "frontendId": "1345",
+ "title": "Jump Game IV",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().minJumps(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

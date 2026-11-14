@@ -1,0 +1,46 @@
+{
+ "slug": "populating-next-right-pointers-in-each-node-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "117",
+ "title": "Populating Next Right Pointers in Each Node II",
+ "premium": false,
+ "meta": {
+  "name": "connect",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "csharp",
+   "javascript",
+   "python3",
+   "golang",
+   "swift",
+   "kotlin",
+   "ruby",
+   "c",
+   "scala",
+   "php",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class _Node {\n    val: number\n    left: _Node | null\n    right: _Node | null\n    next: _Node | null\n\n    constructor(val?: number, left?: _Node, right?: _Node, next?: _Node) {\n        this.val = (val===undefined ? 0 : val)\n        this.left = (left===undefined ? null : left)\n        this.right = (right===undefined ? null : right)\n        this.next = (next===undefined ? null : next)\n    }\n}\n"
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,null,7]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[1,#,2,3,#,4,5,7,#]",
+  "[]"
+ ],
+ "anyOrder": false
+}

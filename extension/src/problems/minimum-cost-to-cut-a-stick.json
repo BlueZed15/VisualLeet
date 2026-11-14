@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-cost-to-cut-a-stick",
+ "frontendId": "1547",
+ "title": "Minimum Cost to Cut a Stick",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "cuts",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ncuts = {cuts}",
+ "visible": [
+  "n",
+  "cuts"
+ ],
+ "call": "result = Solution().minCost(n, cuts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

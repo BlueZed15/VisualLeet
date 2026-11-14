@@ -1,0 +1,30 @@
+{
+ "slug": "custom-sort-string",
+ "frontendId": "791",
+ "title": "Custom Sort String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "order",
+   "type": "string"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "order = {order}\ns = {s}",
+ "visible": [
+  "order",
+  "s"
+ ],
+ "call": "result = Solution().customSortString(order, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

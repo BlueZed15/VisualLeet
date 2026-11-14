@@ -1,0 +1,37 @@
+{
+ "slug": "add-one-row-to-tree",
+ "frontendId": "623",
+ "title": "Add One Row to Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "val",
+   "type": "integer"
+  },
+  {
+   "name": "depth",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nval = {val}\ndepth = {depth}",
+ "visible": [
+  "root",
+  "val",
+  "depth"
+ ],
+ "call": "result = Solution().addOneRow(root, val, depth)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

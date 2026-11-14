@@ -1,0 +1,33 @@
+{
+ "slug": "first-bad-version",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "278",
+ "title": "First Bad Version",
+ "premium": false,
+ "meta": {
+  "name": "firstBadVersion",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "bad",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "5\n4",
+  "1\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

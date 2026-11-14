@@ -1,0 +1,35 @@
+{
+ "slug": "champagne-tower",
+ "frontendId": "799",
+ "title": "Champagne Tower",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "poured",
+   "type": "integer"
+  },
+  {
+   "name": "query_row",
+   "type": "integer"
+  },
+  {
+   "name": "query_glass",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "poured = {poured}\nquery_row = {query_row}\nquery_glass = {query_glass}",
+ "visible": [
+  "poured",
+  "query_row",
+  "query_glass"
+ ],
+ "call": "result = Solution().champagneTower(poured, query_row, query_glass)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

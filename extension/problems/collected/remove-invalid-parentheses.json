@@ -1,0 +1,30 @@
+{
+ "slug": "remove-invalid-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "301",
+ "title": "Remove Invalid Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "removeInvalidParentheses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"()())()\"",
+  "\"(a)())()\"",
+  "\")(\""
+ ],
+ "exampleOutputs": [
+  "[\"(())()\",\"()()()\"]",
+  "[\"(a())()\",\"(a)()()\"]",
+  "[\"\"]"
+ ],
+ "anyOrder": true
+}

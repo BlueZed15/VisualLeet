@@ -1,0 +1,25 @@
+{
+ "slug": "two-city-scheduling",
+ "frontendId": "1029",
+ "title": "Two City Scheduling",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "costs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "costs = {costs}",
+ "visible": [
+  "costs"
+ ],
+ "call": "result = Solution().twoCitySchedCost(costs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

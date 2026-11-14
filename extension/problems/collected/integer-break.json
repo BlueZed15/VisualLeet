@@ -1,0 +1,28 @@
+{
+ "slug": "integer-break",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "343",
+ "title": "Integer Break",
+ "premium": false,
+ "meta": {
+  "name": "integerBreak",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "10"
+ ],
+ "exampleOutputs": [
+  "1",
+  "36"
+ ],
+ "anyOrder": false
+}

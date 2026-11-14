@@ -1,0 +1,30 @@
+{
+ "slug": "add-to-array-form-of-integer",
+ "frontendId": "989",
+ "title": "Add to Array-Form of Integer",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}\nk = {k}",
+ "visible": [
+  "num",
+  "k"
+ ],
+ "call": "result = Solution().addToArrayForm(num, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

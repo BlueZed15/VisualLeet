@@ -1,0 +1,32 @@
+{
+ "slug": "divide-two-integers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "29",
+ "title": "Divide Two Integers",
+ "premium": false,
+ "meta": {
+  "name": "divide",
+  "params": [
+   {
+    "name": "dividend",
+    "type": "integer"
+   },
+   {
+    "name": "divisor",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n3",
+  "7\n-3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-2"
+ ],
+ "anyOrder": false
+}

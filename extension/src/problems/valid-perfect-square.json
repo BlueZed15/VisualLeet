@@ -1,0 +1,25 @@
+{
+ "slug": "valid-perfect-square",
+ "frontendId": "367",
+ "title": "Valid Perfect Square",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().isPerfectSquare(num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

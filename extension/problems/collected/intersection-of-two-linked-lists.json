@@ -1,0 +1,63 @@
+{
+ "slug": "intersection-of-two-linked-lists",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "160",
+ "title": "Intersection of Two Linked Lists",
+ "premium": false,
+ "meta": {
+  "name": "getIntersectionNode",
+  "params": [
+   {
+    "name": "intersectVal",
+    "type": "integer"
+   },
+   {
+    "name": "listA",
+    "type": "ListNode"
+   },
+   {
+    "name": "listB",
+    "type": "ListNode"
+   },
+   {
+    "name": "skipA",
+    "type": "integer"
+   },
+   {
+    "name": "skipB",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "golang",
+   "python3",
+   "swift",
+   "ruby",
+   "kotlin",
+   "scala",
+   "php",
+   "typescript"
+  ],
+  "manual": true
+ },
+ "exampleInputs": [
+  "8\n[4,1,8,4,5]\n[5,6,1,8,4,5]\n2\n3",
+  "2\n[1,9,1,2,4]\n[3,2,4]\n3\n1",
+  "0\n[2,6,4]\n[1,5]\n3\n2"
+ ],
+ "exampleOutputs": [
+  "Intersected at '8'",
+  "Intersected at '2'",
+  "No intersection"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "zigzag-conversion",
+ "frontendId": "6",
+ "title": "Zigzag Conversion",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "numRows",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nnumRows = {numRows}",
+ "visible": [
+  "s",
+  "numRows"
+ ],
+ "call": "result = Solution().convert(s, numRows)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

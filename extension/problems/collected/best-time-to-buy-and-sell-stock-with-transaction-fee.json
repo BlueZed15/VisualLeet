@@ -1,0 +1,32 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "714",
+ "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   },
+   {
+    "name": "fee",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,8,4,9]\n2",
+  "[1,3,7,5,10,3]\n3"
+ ],
+ "exampleOutputs": [
+  "8",
+  "6"
+ ],
+ "anyOrder": false
+}

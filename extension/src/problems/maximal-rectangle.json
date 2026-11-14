@@ -1,0 +1,25 @@
+{
+ "slug": "maximal-rectangle",
+ "frontendId": "85",
+ "title": "Maximal Rectangle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "result = Solution().maximalRectangle(matrix)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

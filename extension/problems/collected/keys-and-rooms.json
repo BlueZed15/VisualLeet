@@ -1,0 +1,28 @@
+{
+ "slug": "keys-and-rooms",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "841",
+ "title": "Keys and Rooms",
+ "premium": false,
+ "meta": {
+  "name": "canVisitAllRooms",
+  "params": [
+   {
+    "name": "rooms",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1],[2],[3],[]]",
+  "[[1,3],[3,0,1],[2],[0]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

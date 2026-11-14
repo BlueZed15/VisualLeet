@@ -20,5 +20,6 @@
  ],
  "call": "result = Solution().minCostConnectPoints(points)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

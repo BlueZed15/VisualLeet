@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-moves-to-equal-array-elements-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "462",
+ "title": "Minimum Moves to Equal Array Elements II",
+ "premium": false,
+ "meta": {
+  "name": "minMoves2",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[1,10,2,9]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "16"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "add-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "415",
+ "title": "Add Strings",
+ "premium": false,
+ "meta": {
+  "name": "addStrings",
+  "params": [
+   {
+    "name": "num1",
+    "type": "string"
+   },
+   {
+    "name": "num2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"11\"\n\"123\"",
+  "\"456\"\n\"77\"",
+  "\"0\"\n\"0\""
+ ],
+ "exampleOutputs": [
+  "\"134\"",
+  "\"533\"",
+  "\"0\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "longest-substring-with-at-least-k-repeating-characters",
+ "frontendId": "395",
+ "title": "Longest Substring with At Least K Repeating Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().longestSubstring(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

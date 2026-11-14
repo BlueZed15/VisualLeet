@@ -1,0 +1,25 @@
+{
+ "slug": "accounts-merge",
+ "frontendId": "721",
+ "title": "Accounts Merge",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "accounts",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "accounts = {accounts}",
+ "visible": [
+  "accounts"
+ ],
+ "call": "result = Solution().accountsMerge(accounts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

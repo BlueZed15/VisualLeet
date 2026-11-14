@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-remove-to-make-valid-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1249",
+ "title": "Minimum Remove to Make Valid Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "minRemoveToMakeValid",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"lee(t(c)o)de)\"",
+  "\"a)b(c)d\"",
+  "\"))((\""
+ ],
+ "exampleOutputs": [
+  "\"lee(t(c)o)de\"",
+  "\"ab(c)d\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "combination-sum-iv",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "377",
+ "title": "Combination Sum IV",
+ "premium": false,
+ "meta": {
+  "name": "combinationSum4",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n4",
+  "[9]\n3"
+ ],
+ "exampleOutputs": [
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

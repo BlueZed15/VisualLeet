@@ -1,0 +1,36 @@
+{
+ "slug": "count-subarrays-with-fixed-bounds",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2444",
+ "title": "Count Subarrays With Fixed Bounds",
+ "premium": false,
+ "meta": {
+  "name": "countSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "minK"
+   },
+   {
+    "type": "integer",
+    "name": "maxK"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,5,2,7,5]\n1\n5",
+  "[1,1,1,1]\n1\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "10"
+ ],
+ "anyOrder": false
+}

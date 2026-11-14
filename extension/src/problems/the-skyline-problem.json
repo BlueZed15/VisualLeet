@@ -1,0 +1,25 @@
+{
+ "slug": "the-skyline-problem",
+ "frontendId": "218",
+ "title": "The Skyline Problem",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "buildings",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "buildings = {buildings}",
+ "visible": [
+  "buildings"
+ ],
+ "call": "result = Solution().getSkyline(buildings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

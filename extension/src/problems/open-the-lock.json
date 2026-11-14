@@ -1,0 +1,30 @@
+{
+ "slug": "open-the-lock",
+ "frontendId": "752",
+ "title": "Open the Lock",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "deadends",
+   "type": "string[]"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "deadends = {deadends}\ntarget = {target}",
+ "visible": [
+  "deadends",
+  "target"
+ ],
+ "call": "result = Solution().openLock(deadends, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-and-replace-pattern",
+ "frontendId": "890",
+ "title": "Find and Replace Pattern",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "pattern",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\npattern = {pattern}",
+ "visible": [
+  "words",
+  "pattern"
+ ],
+ "call": "result = Solution().findAndReplacePattern(words, pattern)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

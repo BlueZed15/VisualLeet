@@ -1,0 +1,30 @@
+{
+ "slug": "palindrome-partitioning-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "132",
+ "title": "Palindrome Partitioning II",
+ "premium": false,
+ "meta": {
+  "name": "minCut",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aab\"",
+  "\"a\"",
+  "\"ab\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

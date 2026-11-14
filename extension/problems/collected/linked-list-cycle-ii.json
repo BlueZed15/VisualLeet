@@ -1,0 +1,51 @@
+{
+ "slug": "linked-list-cycle-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "142",
+ "title": "Linked List Cycle II",
+ "premium": false,
+ "meta": {
+  "name": "detectCycle",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   },
+   {
+    "name": "pos",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "golang",
+   "python3",
+   "swift",
+   "kotlin",
+   "php",
+   "ruby",
+   "scala",
+   "typescript"
+  ],
+  "manual": true
+ },
+ "exampleInputs": [
+  "[3,2,0,-4]\n1",
+  "[1,2]\n0",
+  "[1]\n-1"
+ ],
+ "exampleOutputs": [
+  "tail connects to node index 1",
+  "tail connects to node index 0",
+  "no cycle"
+ ],
+ "anyOrder": false
+}

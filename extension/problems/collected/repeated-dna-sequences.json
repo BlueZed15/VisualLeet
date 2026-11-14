@@ -1,0 +1,28 @@
+{
+ "slug": "repeated-dna-sequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "187",
+ "title": "Repeated DNA Sequences",
+ "premium": false,
+ "meta": {
+  "name": "findRepeatedDnaSequences",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
+  "\"AAAAAAAAAAAAA\""
+ ],
+ "exampleOutputs": [
+  "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]",
+  "[\"AAAAAAAAAA\"]"
+ ],
+ "anyOrder": true
+}

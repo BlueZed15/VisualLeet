@@ -1,0 +1,28 @@
+{
+ "slug": "triangle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "120",
+ "title": "Triangle",
+ "premium": false,
+ "meta": {
+  "name": "minimumTotal",
+  "params": [
+   {
+    "name": "triangle",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2],[3,4],[6,5,7],[4,1,8,3]]",
+  "[[-10]]"
+ ],
+ "exampleOutputs": [
+  "11",
+  "-10"
+ ],
+ "anyOrder": false
+}

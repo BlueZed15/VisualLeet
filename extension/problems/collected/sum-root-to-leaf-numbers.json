@@ -1,0 +1,28 @@
+{
+ "slug": "sum-root-to-leaf-numbers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "129",
+ "title": "Sum Root to Leaf Numbers",
+ "premium": false,
+ "meta": {
+  "name": "sumNumbers",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[4,9,0,5,1]"
+ ],
+ "exampleOutputs": [
+  "25",
+  "1026"
+ ],
+ "anyOrder": false
+}

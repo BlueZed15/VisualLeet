@@ -1,0 +1,30 @@
+{
+ "slug": "expression-add-operators",
+ "frontendId": "282",
+ "title": "Expression Add Operators",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "string"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}\ntarget = {target}",
+ "visible": [
+  "num",
+  "target"
+ ],
+ "call": "result = Solution().addOperators(num, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

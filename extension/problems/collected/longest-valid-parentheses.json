@@ -1,0 +1,30 @@
+{
+ "slug": "longest-valid-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "32",
+ "title": "Longest Valid Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "longestValidParentheses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"(()\"",
+  "\")()())\"",
+  "\"\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

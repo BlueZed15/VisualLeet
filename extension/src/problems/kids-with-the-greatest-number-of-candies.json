@@ -1,0 +1,30 @@
+{
+ "slug": "kids-with-the-greatest-number-of-candies",
+ "frontendId": "1431",
+ "title": "Kids With the Greatest Number of Candies",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candies",
+   "type": "integer[]"
+  },
+  {
+   "name": "extraCandies",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "candies = {candies}\nextraCandies = {extraCandies}",
+ "visible": [
+  "candies",
+  "extraCandies"
+ ],
+ "call": "result = Solution().kidsWithCandies(candies, extraCandies)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "interval-list-intersections",
+ "frontendId": "986",
+ "title": "Interval List Intersections",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "firstList",
+   "type": "integer[][]"
+  },
+  {
+   "name": "secondList",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "firstList = {firstList}\nsecondList = {secondList}",
+ "visible": [
+  "firstList",
+  "secondList"
+ ],
+ "call": "result = Solution().intervalIntersection(firstList, secondList)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

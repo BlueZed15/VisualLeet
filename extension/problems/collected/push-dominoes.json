@@ -1,0 +1,28 @@
+{
+ "slug": "push-dominoes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "838",
+ "title": "Push Dominoes",
+ "premium": false,
+ "meta": {
+  "name": "pushDominoes",
+  "params": [
+   {
+    "name": "dominoes",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"RR.L\"",
+  "\".L.R...LR..L..\""
+ ],
+ "exampleOutputs": [
+  "\"RR.L\"",
+  "\"LL.RR.LLRRLL..\""
+ ],
+ "anyOrder": false
+}

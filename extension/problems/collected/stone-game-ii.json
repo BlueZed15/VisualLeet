@@ -1,0 +1,28 @@
+{
+ "slug": "stone-game-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1140",
+ "title": "Stone Game II",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameII",
+  "params": [
+   {
+    "name": "piles",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,7,9,4,4]",
+  "[1,2,3,4,5,100]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "104"
+ ],
+ "anyOrder": false
+}

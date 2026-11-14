@@ -1,0 +1,29 @@
+{
+ "slug": "convert-sorted-list-to-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "109",
+ "title": "Convert Sorted List to Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "sortedListToBST",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[-10,-3,0,5,9]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[0,-3,9,-10,null,5]",
+  "[]"
+ ],
+ "anyOrder": false
+}

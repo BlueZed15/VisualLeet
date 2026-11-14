@@ -1,0 +1,28 @@
+{
+ "slug": "palindrome-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "234",
+ "title": "Palindrome Linked List",
+ "premium": false,
+ "meta": {
+  "name": "isPalindrome",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,1]",
+  "[1,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

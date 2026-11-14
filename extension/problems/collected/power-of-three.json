@@ -1,0 +1,30 @@
+{
+ "slug": "power-of-three",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "326",
+ "title": "Power of Three",
+ "premium": false,
+ "meta": {
+  "name": "isPowerOfThree",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "27",
+  "0",
+  "-1"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-profit-in-job-scheduling",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1235",
+ "title": "Maximum Profit in Job Scheduling",
+ "premium": false,
+ "meta": {
+  "name": "jobScheduling",
+  "params": [
+   {
+    "name": "startTime",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "endTime"
+   },
+   {
+    "type": "integer[]",
+    "name": "profit"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,3]\n[3,4,5,6]\n[50,10,40,70]",
+  "[1,2,3,4,6]\n[3,5,10,6,9]\n[20,20,100,70,60]",
+  "[1,1,1]\n[2,3,4]\n[5,6,4]"
+ ],
+ "exampleOutputs": [
+  "120",
+  "150",
+  "6"
+ ],
+ "anyOrder": false
+}

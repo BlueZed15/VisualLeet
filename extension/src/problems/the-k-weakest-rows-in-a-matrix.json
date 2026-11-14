@@ -1,0 +1,30 @@
+{
+ "slug": "the-k-weakest-rows-in-a-matrix",
+ "frontendId": "1337",
+ "title": "The K Weakest Rows in a Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\nk = {k}",
+ "visible": [
+  "mat",
+  "k"
+ ],
+ "call": "result = Solution().kWeakestRows(mat, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "word-ladder-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "126",
+ "title": "Word Ladder II",
+ "premium": false,
+ "meta": {
+  "name": "findLadders",
+  "params": [
+   {
+    "name": "beginWord",
+    "type": "string"
+   },
+   {
+    "name": "endWord",
+    "type": "string"
+   },
+   {
+    "name": "wordList",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "\"hit\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+  "\"hit\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]"
+ ],
+ "exampleOutputs": [
+  "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

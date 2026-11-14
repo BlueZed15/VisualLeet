@@ -1,0 +1,35 @@
+{
+ "slug": "cousins-in-binary-tree",
+ "frontendId": "993",
+ "title": "Cousins in Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nx = {x}\ny = {y}",
+ "visible": [
+  "root",
+  "x",
+  "y"
+ ],
+ "call": "result = Solution().isCousins(root, x, y)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

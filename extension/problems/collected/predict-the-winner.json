@@ -1,0 +1,28 @@
+{
+ "slug": "predict-the-winner",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "486",
+ "title": "Predict the Winner",
+ "premium": false,
+ "meta": {
+  "name": "predictTheWinner",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,5,2]",
+  "[1,5,233,7]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

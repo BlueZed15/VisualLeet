@@ -1,0 +1,51 @@
+{
+ "slug": "design-circular-queue",
+ "frontendId": "622",
+ "title": "Design Circular Queue",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MyCircularQueue",
+ "methods": {
+  "MyCircularQueue": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "enQueue": [
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ],
+  "deQueue": [],
+  "Front": [],
+  "Rear": [],
+  "isEmpty": [],
+  "isFull": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MyCircularQueue(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "reveal-cards-in-increasing-order",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "950",
+ "title": "Reveal Cards In Increasing Order",
+ "premium": false,
+ "meta": {
+  "name": "deckRevealedIncreasing",
+  "params": [
+   {
+    "name": "deck",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[17,13,11,2,3,5,7]",
+  "[1,1000]"
+ ],
+ "exampleOutputs": [
+  "[2,13,3,11,5,17,7]",
+  "[1,1000]"
+ ],
+ "anyOrder": true
+}

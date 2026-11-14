@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-winner-of-the-circular-game",
+ "frontendId": "1823",
+ "title": "Find the Winner of the Circular Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}",
+ "visible": [
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().findTheWinner(n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

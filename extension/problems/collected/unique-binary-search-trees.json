@@ -1,0 +1,28 @@
+{
+ "slug": "unique-binary-search-trees",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "96",
+ "title": "Unique Binary Search Trees",
+ "premium": false,
+ "meta": {
+  "name": "numTrees",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

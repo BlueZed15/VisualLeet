@@ -1,0 +1,25 @@
+{
+ "slug": "matrix-diagonal-sum",
+ "frontendId": "1572",
+ "title": "Matrix Diagonal Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}",
+ "visible": [
+  "mat"
+ ],
+ "call": "result = Solution().diagonalSum(mat)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

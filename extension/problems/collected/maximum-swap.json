@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-swap",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "670",
+ "title": "Maximum Swap",
+ "premium": false,
+ "meta": {
+  "name": "maximumSwap",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2736",
+  "9973"
+ ],
+ "exampleOutputs": [
+  "7236",
+  "9973"
+ ],
+ "anyOrder": false
+}

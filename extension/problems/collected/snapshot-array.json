@@ -1,0 +1,82 @@
+{
+ "slug": "snapshot-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1146",
+ "title": "Snapshot Array",
+ "premium": false,
+ "meta": {
+  "classname": "SnapshotArray",
+  "maxbytesperline": 400000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "length"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     },
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "set",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "snap",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     },
+     {
+      "type": "integer",
+      "name": "snap_id"
+     }
+    ],
+    "name": "get",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"SnapshotArray\",\"set\",\"snap\",\"set\",\"get\"]\n[[3],[0,5],[],[0,6],[0,0]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,0,null,5]"
+ ],
+ "anyOrder": false
+}

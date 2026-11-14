@@ -1,0 +1,32 @@
+{
+ "slug": "longest-substring-with-at-least-k-repeating-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "395",
+ "title": "Longest Substring with At Least K Repeating Characters",
+ "premium": false,
+ "meta": {
+  "name": "longestSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aaabb\"\n3",
+  "\"ababbc\"\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

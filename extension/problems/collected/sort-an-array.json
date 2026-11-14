@@ -1,0 +1,28 @@
+{
+ "slug": "sort-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "912",
+ "title": "Sort an Array",
+ "premium": false,
+ "meta": {
+  "name": "sortArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,3,1]",
+  "[5,1,1,2,0,0]"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,5]",
+  "[0,0,1,1,2,5]"
+ ],
+ "anyOrder": false
+}

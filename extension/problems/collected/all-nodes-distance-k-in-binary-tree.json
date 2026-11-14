@@ -1,0 +1,54 @@
+{
+ "slug": "all-nodes-distance-k-in-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "863",
+ "title": "All Nodes Distance K in Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "distanceK",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  },
+  "manual": true,
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "ruby",
+   "swift",
+   "golang",
+   "python3",
+   "scala",
+   "kotlin",
+   "rust",
+   "php",
+   "typescript"
+  ]
+ },
+ "exampleInputs": [
+  "[3,5,1,6,2,0,8,null,null,7,4]\n5\n2",
+  "[1]\n1\n3"
+ ],
+ "exampleOutputs": [
+  "[7,4,1]",
+  "[]"
+ ],
+ "anyOrder": true
+}

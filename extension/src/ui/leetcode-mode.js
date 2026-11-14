@@ -22,7 +22,14 @@ function sameValue(a, b) {
 }
 const sameTexts = (entry, a, b) => !!a && !!b && entry.boxes.every((x) => sameValue(a[x.name] ?? "", b[x.name] ?? ""));
 
-const badgeFor = (entry) => (entry.verified ? ["verified", "✓ checked setup"] : ["unchecked", "setup not checked yet"]);
+// how well this problem's database entry has been checked
+const badgeFor = (entry) => (entry.verified || entry.checked === "solution" ? ["verified", "✓ checked setup"]
+  : entry.checked === "inputs" ? ["inputs", "inputs checked"] : ["unchecked", "setup not checked yet"]);
+const BADGE_TITLE = {
+  verified: "This problem's setup in LeetScope's database was checked: a known-good solution gave LeetCode's expected output on every example.",
+  inputs: "This problem's inputs are built exactly like LeetCode's examples (checked). A full check with a known-good solution comes later; if a result looks wrong, look at the Call and Setup tabs.",
+  unchecked: "This problem's setup in LeetScope's database hasn't been checked yet. If the result looks wrong, look at the Call and Setup tabs.",
+};
 
 export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {} } = {}) {
   let p = null;          // { slug, title, frontendId, anyOrder, cases: [], selectedId, callOverride }
@@ -108,9 +115,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     el.title.textContent = (p.frontendId ? p.frontendId + ". " : "") + (p.title || p.slug);
     el.badge.textContent = badge[1];
     el.badge.dataset.kind = badge[0];
-    el.badge.title = badge[0] === "verified"
-      ? "This problem's setup in LeetScope's database was checked against LeetCode's examples."
-      : "This problem's setup in LeetScope's database hasn't been checked yet. If the result looks wrong, look at the Call and Setup tabs.";
+    el.badge.title = BADGE_TITLE[badge[0]];
     renderTabs();
     renderCase();
   }

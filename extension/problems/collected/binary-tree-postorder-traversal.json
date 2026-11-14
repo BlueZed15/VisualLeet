@@ -1,0 +1,33 @@
+{
+ "slug": "binary-tree-postorder-traversal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "145",
+ "title": "Binary Tree Postorder Traversal",
+ "premium": false,
+ "meta": {
+  "name": "postorderTraversal",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<integer>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,null,2,3]",
+  "[1,2,3,4,5,null,8,null,null,6,7,9]",
+  "[]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[3,2,1]",
+  "[4,6,7,5,2,9,8,3,1]",
+  "[]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

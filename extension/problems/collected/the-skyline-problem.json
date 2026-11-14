@@ -1,0 +1,30 @@
+{
+ "slug": "the-skyline-problem",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "218",
+ "title": "The Skyline Problem",
+ "premium": false,
+ "meta": {
+  "name": "getSkyline",
+  "params": [
+   {
+    "name": "buildings",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "colsize": 2,
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]",
+  "[[0,2,3],[2,5,3]]"
+ ],
+ "exampleOutputs": [
+  "[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]",
+  "[[0,3],[5,0]]"
+ ],
+ "anyOrder": false
+}

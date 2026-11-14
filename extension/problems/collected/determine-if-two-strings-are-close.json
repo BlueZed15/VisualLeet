@@ -1,0 +1,34 @@
+{
+ "slug": "determine-if-two-strings-are-close",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1657",
+ "title": "Determine if Two Strings Are Close",
+ "premium": false,
+ "meta": {
+  "name": "closeStrings",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"bca\"",
+  "\"a\"\n\"aa\"",
+  "\"cabbba\"\n\"abbccc\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

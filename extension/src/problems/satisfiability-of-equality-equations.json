@@ -1,0 +1,25 @@
+{
+ "slug": "satisfiability-of-equality-equations",
+ "frontendId": "990",
+ "title": "Satisfiability of Equality Equations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "equations",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "equations = {equations}",
+ "visible": [
+  "equations"
+ ],
+ "call": "result = Solution().equationsPossible(equations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

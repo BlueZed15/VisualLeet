@@ -1,0 +1,30 @@
+{
+ "slug": "longest-subarray-of-1s-after-deleting-one-element",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1493",
+ "title": "Longest Subarray of 1's After Deleting One Element",
+ "premium": false,
+ "meta": {
+  "name": "longestSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,0,1]",
+  "[0,1,1,1,0,1,1,0,1]",
+  "[1,1,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5",
+  "2"
+ ],
+ "anyOrder": false
+}

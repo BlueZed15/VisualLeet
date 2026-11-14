@@ -1,0 +1,36 @@
+{
+ "slug": "remove-linked-list-elements",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "203",
+ "title": "Remove Linked List Elements",
+ "premium": false,
+ "meta": {
+  "name": "removeElements",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode",
+    "dealloc": false
+   },
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "ListNode",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,6,3,4,5,6]\n6",
+  "[]\n1",
+  "[7,7,7,7]\n7"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,4,5]",
+  "[]",
+  "[]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "subarray-sum-equals-k",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "560",
+ "title": "Subarray Sum Equals K",
+ "premium": false,
+ "meta": {
+  "name": "subarraySum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1]\n2",
+  "[1,2,3]\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

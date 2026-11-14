@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-arrows-to-burst-balloons",
+ "frontendId": "452",
+ "title": "Minimum Number of Arrows to Burst Balloons",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().findMinArrowShots(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

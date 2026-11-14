@@ -1,0 +1,25 @@
+{
+ "slug": "trapping-rain-water-ii",
+ "frontendId": "407",
+ "title": "Trapping Rain Water II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heightMap",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heightMap = {heightMap}",
+ "visible": [
+  "heightMap"
+ ],
+ "call": "result = Solution().trapRainWater(heightMap)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

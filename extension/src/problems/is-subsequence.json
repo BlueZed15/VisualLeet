@@ -1,0 +1,30 @@
+{
+ "slug": "is-subsequence",
+ "frontendId": "392",
+ "title": "Is Subsequence",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}",
+ "visible": [
+  "s",
+  "t"
+ ],
+ "call": "result = Solution().isSubsequence(s, t)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

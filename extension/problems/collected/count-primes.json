@@ -1,0 +1,30 @@
+{
+ "slug": "count-primes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "204",
+ "title": "Count Primes",
+ "premium": false,
+ "meta": {
+  "name": "countPrimes",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "0",
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "0"
+ ],
+ "anyOrder": false
+}

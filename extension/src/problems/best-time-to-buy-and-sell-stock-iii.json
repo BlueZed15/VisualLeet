@@ -1,0 +1,25 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-iii",
+ "frontendId": "123",
+ "title": "Best Time to Buy and Sell Stock III",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}",
+ "visible": [
+  "prices"
+ ],
+ "call": "result = Solution().maxProfit(prices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

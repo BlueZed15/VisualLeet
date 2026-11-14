@@ -1,0 +1,32 @@
+{
+ "slug": "binary-subarrays-with-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "930",
+ "title": "Binary Subarrays With Sum",
+ "premium": false,
+ "meta": {
+  "name": "numSubarraysWithSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "goal",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,1,0,1]\n2",
+  "[0,0,0,0,0]\n0"
+ ],
+ "exampleOutputs": [
+  "4",
+  "15"
+ ],
+ "anyOrder": false
+}

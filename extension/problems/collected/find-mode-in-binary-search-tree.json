@@ -1,0 +1,28 @@
+{
+ "slug": "find-mode-in-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "501",
+ "title": "Find Mode in Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "findMode",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,null,2,2]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "[2]",
+  "[0]"
+ ],
+ "anyOrder": true
+}

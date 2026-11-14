@@ -1,0 +1,40 @@
+{
+ "slug": "time-needed-to-inform-all-employees",
+ "frontendId": "1376",
+ "title": "Time Needed to Inform All Employees",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "headID",
+   "type": "integer"
+  },
+  {
+   "name": "manager",
+   "type": "integer[]"
+  },
+  {
+   "name": "informTime",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nheadID = {headID}\nmanager = {manager}\ninformTime = {informTime}",
+ "visible": [
+  "n",
+  "headID",
+  "manager",
+  "informTime"
+ ],
+ "call": "result = Solution().numOfMinutes(n, headID, manager, informTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

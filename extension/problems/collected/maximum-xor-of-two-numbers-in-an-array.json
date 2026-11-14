@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-xor-of-two-numbers-in-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "421",
+ "title": "Maximum XOR of Two Numbers in an Array",
+ "premium": false,
+ "meta": {
+  "name": "findMaximumXOR",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,10,5,25,2,8]",
+  "[14,70,53,83,49,91,36,80,92,51,66,70]"
+ ],
+ "exampleOutputs": [
+  "28",
+  "127"
+ ],
+ "anyOrder": false
+}

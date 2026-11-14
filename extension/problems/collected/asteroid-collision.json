@@ -1,0 +1,32 @@
+{
+ "slug": "asteroid-collision",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "735",
+ "title": "Asteroid Collision",
+ "premium": false,
+ "meta": {
+  "name": "asteroidCollision",
+  "params": [
+   {
+    "name": "asteroids",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,10,-5]",
+  "[8,-8]",
+  "[10,2,-5]",
+  "[3,5,-6,2,-1,4]"
+ ],
+ "exampleOutputs": [
+  "[5,10]",
+  "[]",
+  "[10]",
+  "[-6,2,4]"
+ ],
+ "anyOrder": false
+}

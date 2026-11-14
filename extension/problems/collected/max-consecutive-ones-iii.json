@@ -1,0 +1,32 @@
+{
+ "slug": "max-consecutive-ones-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1004",
+ "title": "Max Consecutive Ones III",
+ "premium": false,
+ "meta": {
+  "name": "longestOnes",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,0,0,0,1,1,1,1,0]\n2",
+  "[0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1]\n3"
+ ],
+ "exampleOutputs": [
+  "6",
+  "10"
+ ],
+ "anyOrder": false
+}

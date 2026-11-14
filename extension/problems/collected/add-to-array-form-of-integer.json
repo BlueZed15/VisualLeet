@@ -1,0 +1,34 @@
+{
+ "slug": "add-to-array-form-of-integer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "989",
+ "title": "Add to Array-Form of Integer",
+ "premium": false,
+ "meta": {
+  "name": "addToArrayForm",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,0,0]\n34",
+  "[2,7,4]\n181",
+  "[2,1,5]\n806"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,4]",
+  "[4,5,5]",
+  "[1,0,2,1]"
+ ],
+ "anyOrder": false
+}

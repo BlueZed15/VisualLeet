@@ -1,0 +1,32 @@
+{
+ "slug": "subarray-sums-divisible-by-k",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "974",
+ "title": "Subarray Sums Divisible by K",
+ "premium": false,
+ "meta": {
+  "name": "subarraysDivByK",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,5,0,-2,-3,1]\n5",
+  "[5]\n9"
+ ],
+ "exampleOutputs": [
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

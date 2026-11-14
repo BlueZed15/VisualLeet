@@ -1,0 +1,28 @@
+{
+ "slug": "satisfiability-of-equality-equations",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "990",
+ "title": "Satisfiability of Equality Equations",
+ "premium": false,
+ "meta": {
+  "name": "equationsPossible",
+  "params": [
+   {
+    "name": "equations",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[\"a==b\",\"b!=a\"]",
+  "[\"b==a\",\"a==b\"]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

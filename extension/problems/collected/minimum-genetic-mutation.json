@@ -1,0 +1,36 @@
+{
+ "slug": "minimum-genetic-mutation",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "433",
+ "title": "Minimum Genetic Mutation",
+ "premium": false,
+ "meta": {
+  "name": "minMutation",
+  "params": [
+   {
+    "name": "startGene",
+    "type": "string"
+   },
+   {
+    "name": "endGene",
+    "type": "string"
+   },
+   {
+    "name": "bank",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"AACCGGTT\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+  "\"AACCGGTT\"\n\"AAACGGTA\"\n[\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

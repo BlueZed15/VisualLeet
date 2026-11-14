@@ -1,0 +1,32 @@
+{
+ "slug": "search-suggestions-system",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1268",
+ "title": "Search Suggestions System",
+ "premium": false,
+ "meta": {
+  "name": "suggestedProducts",
+  "params": [
+   {
+    "name": "products",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "searchWord"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]\n\"mouse\"",
+  "[\"havana\"]\n\"havana\""
+ ],
+ "exampleOutputs": [
+  "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]",
+  "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "count-of-smaller-numbers-after-self",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "315",
+ "title": "Count of Smaller Numbers After Self",
+ "premium": false,
+ "meta": {
+  "name": "countSmaller",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[5,2,6,1]",
+  "[-1]",
+  "[-1,-1]"
+ ],
+ "exampleOutputs": [
+  "[2,1,1,0]",
+  "[0]",
+  "[0,0]"
+ ],
+ "anyOrder": false
+}

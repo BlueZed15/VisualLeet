@@ -1,0 +1,40 @@
+{
+ "slug": "flood-fill",
+ "frontendId": "733",
+ "title": "Flood Fill",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "image",
+   "type": "integer[][]"
+  },
+  {
+   "name": "sr",
+   "type": "integer"
+  },
+  {
+   "name": "sc",
+   "type": "integer"
+  },
+  {
+   "name": "color",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "image = {image}\nsr = {sr}\nsc = {sc}\ncolor = {color}",
+ "visible": [
+  "image",
+  "sr",
+  "sc",
+  "color"
+ ],
+ "call": "result = Solution().floodFill(image, sr, sc, color)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1239",
+ "title": "Maximum Length of a Concatenated String with Unique Characters",
+ "premium": false,
+ "meta": {
+  "name": "maxLength",
+  "params": [
+   {
+    "name": "arr",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"un\",\"iq\",\"ue\"]",
+  "[\"cha\",\"r\",\"act\",\"ers\"]",
+  "[\"abcdefghijklmnopqrstuvwxyz\"]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "6",
+  "26"
+ ],
+ "anyOrder": false
+}

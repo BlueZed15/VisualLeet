@@ -1,0 +1,29 @@
+{
+ "slug": "count-square-submatrices-with-all-ones",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1277",
+ "title": "Count Square Submatrices with All Ones",
+ "premium": false,
+ "meta": {
+  "name": "countSquares",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[[0,1,1,1],[1,1,1,1],[0,1,1,1]]",
+  "[[1,0,1],[1,1,0],[1,1,0]]"
+ ],
+ "exampleOutputs": [
+  "15",
+  "7"
+ ],
+ "anyOrder": false
+}

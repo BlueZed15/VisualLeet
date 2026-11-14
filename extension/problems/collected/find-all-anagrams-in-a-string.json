@@ -1,0 +1,32 @@
+{
+ "slug": "find-all-anagrams-in-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "438",
+ "title": "Find All Anagrams in a String",
+ "premium": false,
+ "meta": {
+  "name": "findAnagrams",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "p",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "\"cbaebabacd\"\n\"abc\"",
+  "\"abab\"\n\"ab\""
+ ],
+ "exampleOutputs": [
+  "[0,6]",
+  "[0,1,2]"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "next-greater-element-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "556",
+ "title": "Next Greater Element III",
+ "premium": false,
+ "meta": {
+  "name": "nextGreaterElement",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "12",
+  "21"
+ ],
+ "exampleOutputs": [
+  "21",
+  "-1"
+ ],
+ "anyOrder": false
+}

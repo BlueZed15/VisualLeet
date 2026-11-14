@@ -1,0 +1,28 @@
+{
+ "slug": "average-of-levels-in-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "637",
+ "title": "Average of Levels in Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "averageOfLevels",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<double>"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[3,9,20,15,7]"
+ ],
+ "exampleOutputs": [
+  "[3.00000,14.50000,11.00000]",
+  "[3.00000,14.50000,11.00000]"
+ ],
+ "anyOrder": false
+}

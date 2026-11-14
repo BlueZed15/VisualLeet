@@ -1,0 +1,30 @@
+{
+ "slug": "search-insert-position",
+ "frontendId": "35",
+ "title": "Search Insert Position",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}",
+ "visible": [
+  "nums",
+  "target"
+ ],
+ "call": "result = Solution().searchInsert(nums, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

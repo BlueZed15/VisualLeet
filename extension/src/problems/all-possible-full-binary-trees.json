@@ -1,0 +1,27 @@
+{
+ "slug": "all-possible-full-binary-trees",
+ "frontendId": "894",
+ "title": "All Possible Full Binary Trees",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().allPossibleFBT(n)\nprint(leet_str([tree_values(x) for x in result]))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

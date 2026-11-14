@@ -1,0 +1,28 @@
+{
+ "slug": "summary-ranges",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "228",
+ "title": "Summary Ranges",
+ "premium": false,
+ "meta": {
+  "name": "summaryRanges",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,2,4,5,7]",
+  "[0,2,3,4,6,8,9]"
+ ],
+ "exampleOutputs": [
+  "[\"0->2\",\"4->5\",\"7\"]",
+  "[\"0\",\"2->4\",\"6\",\"8->9\"]"
+ ],
+ "anyOrder": false
+}

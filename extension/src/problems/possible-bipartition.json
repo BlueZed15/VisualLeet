@@ -1,0 +1,30 @@
+{
+ "slug": "possible-bipartition",
+ "frontendId": "886",
+ "title": "Possible Bipartition",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "dislikes",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ndislikes = {dislikes}",
+ "visible": [
+  "n",
+  "dislikes"
+ ],
+ "call": "result = Solution().possibleBipartition(n, dislikes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

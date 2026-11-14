@@ -1,0 +1,28 @@
+{
+ "slug": "letter-case-permutation",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "784",
+ "title": "Letter Case Permutation",
+ "premium": false,
+ "meta": {
+  "name": "letterCasePermutation",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"a1b2\"",
+  "\"3z4\""
+ ],
+ "exampleOutputs": [
+  "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]",
+  "[\"3z4\",\"3Z4\"]"
+ ],
+ "anyOrder": true
+}

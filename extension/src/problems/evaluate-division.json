@@ -1,0 +1,35 @@
+{
+ "slug": "evaluate-division",
+ "frontendId": "399",
+ "title": "Evaluate Division",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "equations",
+   "type": "list<list<string>>"
+  },
+  {
+   "name": "values",
+   "type": "double[]"
+  },
+  {
+   "name": "queries",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "equations = {equations}\nvalues = {values}\nqueries = {queries}",
+ "visible": [
+  "equations",
+  "values",
+  "queries"
+ ],
+ "call": "result = Solution().calcEquation(equations, values, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

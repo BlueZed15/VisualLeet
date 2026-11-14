@@ -1,0 +1,28 @@
+{
+ "slug": "candy",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "135",
+ "title": "Candy",
+ "premium": false,
+ "meta": {
+  "name": "candy",
+  "params": [
+   {
+    "name": "ratings",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,2]",
+  "[1,2,2]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "4"
+ ],
+ "anyOrder": false
+}

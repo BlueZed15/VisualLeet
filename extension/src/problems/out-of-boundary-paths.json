@@ -1,0 +1,45 @@
+{
+ "slug": "out-of-boundary-paths",
+ "frontendId": "576",
+ "title": "Out of Boundary Paths",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "maxMove",
+   "type": "integer"
+  },
+  {
+   "name": "startRow",
+   "type": "integer"
+  },
+  {
+   "name": "startColumn",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nmaxMove = {maxMove}\nstartRow = {startRow}\nstartColumn = {startColumn}",
+ "visible": [
+  "m",
+  "n",
+  "maxMove",
+  "startRow",
+  "startColumn"
+ ],
+ "call": "result = Solution().findPaths(m, n, maxMove, startRow, startColumn)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

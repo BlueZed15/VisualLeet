@@ -1,0 +1,28 @@
+{
+ "slug": "01-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "542",
+ "title": "01 Matrix",
+ "premium": false,
+ "meta": {
+  "name": "updateMatrix",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,0],[0,1,0],[0,0,0]]",
+  "[[0,0,0],[0,1,0],[1,1,1]]"
+ ],
+ "exampleOutputs": [
+  "[[0,0,0],[0,1,0],[0,0,0]]",
+  "[[0,0,0],[0,1,0],[1,2,1]]"
+ ],
+ "anyOrder": false
+}

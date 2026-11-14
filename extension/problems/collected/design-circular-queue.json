@@ -1,0 +1,78 @@
+{
+ "slug": "design-circular-queue",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "622",
+ "title": "Design Circular Queue",
+ "premium": false,
+ "meta": {
+  "classname": "MyCircularQueue",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "k"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "name": "enQueue",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [],
+    "name": "deQueue",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [],
+    "name": "Front",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "Rear",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "isEmpty",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [],
+    "name": "isFull",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"Rear\",\"isFull\",\"deQueue\",\"enQueue\",\"Rear\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, true, true, false, 3, true, true, true, 4]"
+ ],
+ "anyOrder": false
+}

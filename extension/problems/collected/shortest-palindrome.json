@@ -1,0 +1,28 @@
+{
+ "slug": "shortest-palindrome",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "214",
+ "title": "Shortest Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "shortestPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"aacecaaa\"",
+  "\"abcd\""
+ ],
+ "exampleOutputs": [
+  "\"aaacecaaa\"",
+  "\"dcbabcd\""
+ ],
+ "anyOrder": false
+}

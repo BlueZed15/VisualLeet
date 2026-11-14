@@ -1,0 +1,28 @@
+{
+ "slug": "reverse-words-in-a-string-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "557",
+ "title": "Reverse Words in a String III",
+ "premium": false,
+ "meta": {
+  "name": "reverseWords",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"Let's take LeetCode contest\"",
+  "\"Mr Ding\""
+ ],
+ "exampleOutputs": [
+  "\"s'teL ekat edoCteeL tsetnoc\"",
+  "\"rM gniD\""
+ ],
+ "anyOrder": false
+}

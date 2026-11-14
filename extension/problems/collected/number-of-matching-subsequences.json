@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-matching-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "792",
+ "title": "Number of Matching Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "numMatchingSubseq",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+  "\"dsahjpjauf\"\n[\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-cost-tree-from-leaf-values",
+ "frontendId": "1130",
+ "title": "Minimum Cost Tree From Leaf Values",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().mctFromLeafValues(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

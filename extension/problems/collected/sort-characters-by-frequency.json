@@ -1,0 +1,30 @@
+{
+ "slug": "sort-characters-by-frequency",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "451",
+ "title": "Sort Characters By Frequency",
+ "premium": false,
+ "meta": {
+  "name": "frequencySort",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"tree\"",
+  "\"cccaaa\"",
+  "\"Aabb\""
+ ],
+ "exampleOutputs": [
+  "\"eert\"",
+  "\"aaaccc\"",
+  "\"bbAa\""
+ ],
+ "anyOrder": false
+}

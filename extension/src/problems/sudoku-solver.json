@@ -1,0 +1,25 @@
+{
+ "slug": "sudoku-solver",
+ "frontendId": "37",
+ "title": "Sudoku Solver",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "Solution().solveSudoku(board)\nprint(leet_str(board))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "find-largest-value-in-each-tree-row",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "515",
+ "title": "Find Largest Value in Each Tree Row",
+ "premium": false,
+ "meta": {
+  "name": "largestValues",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,5,3,null,9]",
+  "[1,2,3]"
+ ],
+ "exampleOutputs": [
+  "[1,3,9]",
+  "[1,3]"
+ ],
+ "anyOrder": false
+}

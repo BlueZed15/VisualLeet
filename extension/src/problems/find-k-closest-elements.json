@@ -1,0 +1,35 @@
+{
+ "slug": "find-k-closest-elements",
+ "frontendId": "658",
+ "title": "Find K Closest Elements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nk = {k}\nx = {x}",
+ "visible": [
+  "arr",
+  "k",
+  "x"
+ ],
+ "call": "result = Solution().findClosestElements(arr, k, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

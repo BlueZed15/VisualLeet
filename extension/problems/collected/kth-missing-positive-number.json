@@ -1,0 +1,32 @@
+{
+ "slug": "kth-missing-positive-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1539",
+ "title": "Kth Missing Positive Number",
+ "premium": false,
+ "meta": {
+  "name": "findKthPositive",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,4,7,11]\n5",
+  "[1,2,3,4]\n2"
+ ],
+ "exampleOutputs": [
+  "9",
+  "6"
+ ],
+ "anyOrder": false
+}

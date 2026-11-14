@@ -1,0 +1,30 @@
+{
+ "slug": "excel-sheet-column-title",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "168",
+ "title": "Excel Sheet Column Title",
+ "premium": false,
+ "meta": {
+  "name": "convertToTitle",
+  "params": [
+   {
+    "name": "columnNumber",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "28",
+  "701"
+ ],
+ "exampleOutputs": [
+  "\"A\"",
+  "\"AB\"",
+  "\"ZY\""
+ ],
+ "anyOrder": false
+}

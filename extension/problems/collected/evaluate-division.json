@@ -1,0 +1,38 @@
+{
+ "slug": "evaluate-division",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "399",
+ "title": "Evaluate Division",
+ "premium": false,
+ "meta": {
+  "name": "calcEquation",
+  "params": [
+   {
+    "name": "equations",
+    "type": "list<list<string>>"
+   },
+   {
+    "name": "values",
+    "type": "double[]"
+   },
+   {
+    "name": "queries",
+    "type": "list<list<string>>"
+   }
+  ],
+  "return": {
+   "type": "double[]"
+  }
+ },
+ "exampleInputs": [
+  "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
+  "[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
+  "[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]"
+ ],
+ "exampleOutputs": [
+  "[6.00000,0.50000,-1.00000,1.00000,-1.00000]",
+  "[3.75000,0.40000,5.00000,0.20000]",
+  "[0.50000,2.00000,-1.00000,-1.00000]"
+ ],
+ "anyOrder": false
+}

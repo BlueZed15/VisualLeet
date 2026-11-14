@@ -1,0 +1,30 @@
+{
+ "slug": "assign-cookies",
+ "frontendId": "455",
+ "title": "Assign Cookies",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "g",
+   "type": "integer[]"
+  },
+  {
+   "name": "s",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "g = {g}\ns = {s}",
+ "visible": [
+  "g",
+  "s"
+ ],
+ "call": "result = Solution().findContentChildren(g, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

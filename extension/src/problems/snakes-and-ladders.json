@@ -1,0 +1,25 @@
+{
+ "slug": "snakes-and-ladders",
+ "frontendId": "909",
+ "title": "Snakes and Ladders",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "result = Solution().snakesAndLadders(board)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

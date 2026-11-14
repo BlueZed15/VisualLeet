@@ -1,0 +1,32 @@
+{
+ "slug": "is-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "392",
+ "title": "Is Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "isSubsequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"ahbgdc\"",
+  "\"axc\"\n\"ahbgdc\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

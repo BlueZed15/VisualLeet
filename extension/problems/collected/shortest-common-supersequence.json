@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-common-supersequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1092",
+ "title": "Shortest Common Supersequence ",
+ "premium": false,
+ "meta": {
+  "name": "shortestCommonSupersequence",
+  "params": [
+   {
+    "name": "str1",
+    "type": "string"
+   },
+   {
+    "name": "str2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abac\"\n\"cab\"",
+  "\"aaaaaaaa\"\n\"aaaaaaaa\""
+ ],
+ "exampleOutputs": [
+  "\"cabac\"",
+  "\"aaaaaaaa\""
+ ],
+ "anyOrder": false
+}

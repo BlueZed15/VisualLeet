@@ -1,0 +1,25 @@
+{
+ "slug": "push-dominoes",
+ "frontendId": "838",
+ "title": "Push Dominoes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dominoes",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "dominoes = {dominoes}",
+ "visible": [
+  "dominoes"
+ ],
+ "call": "result = Solution().pushDominoes(dominoes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-width-of-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "662",
+ "title": "Maximum Width of Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "widthOfBinaryTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,5,3,null,9]",
+  "[1,3,2,5,null,null,9,6,null,7]",
+  "[1,3,2,5]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7",
+  "2"
+ ],
+ "anyOrder": false
+}

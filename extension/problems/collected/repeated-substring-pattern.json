@@ -1,0 +1,30 @@
+{
+ "slug": "repeated-substring-pattern",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "459",
+ "title": "Repeated Substring Pattern",
+ "premium": false,
+ "meta": {
+  "name": "repeatedSubstringPattern",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abab\"",
+  "\"aba\"",
+  "\"abcabcabcabc\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

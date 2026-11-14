@@ -1,0 +1,25 @@
+{
+ "slug": "flipping-an-image",
+ "frontendId": "832",
+ "title": "Flipping an Image",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "image",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "image = {image}",
+ "visible": [
+  "image"
+ ],
+ "call": "result = Solution().flipAndInvertImage(image)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

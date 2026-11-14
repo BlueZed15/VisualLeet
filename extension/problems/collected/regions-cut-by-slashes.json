@@ -1,0 +1,30 @@
+{
+ "slug": "regions-cut-by-slashes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "959",
+ "title": "Regions Cut By Slashes",
+ "premium": false,
+ "meta": {
+  "name": "regionsBySlashes",
+  "params": [
+   {
+    "name": "grid",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\" /\",\"/ \"]",
+  "[\" /\",\"  \"]",
+  "[\"/\\\\\",\"\\\\/\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "5"
+ ],
+ "anyOrder": false
+}

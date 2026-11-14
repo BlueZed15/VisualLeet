@@ -1,0 +1,28 @@
+{
+ "slug": "largest-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "179",
+ "title": "Largest Number",
+ "premium": false,
+ "meta": {
+  "name": "largestNumber",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[10,2]",
+  "[3,30,34,5,9]"
+ ],
+ "exampleOutputs": [
+  "\"210\"",
+  "\"9534330\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "basic-calculator",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "224",
+ "title": "Basic Calculator",
+ "premium": false,
+ "meta": {
+  "name": "calculate",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1 + 1\"",
+  "\" 2-1 + 2 \"",
+  "\"(1+(4+5+2)-3)+(6+8)\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "23"
+ ],
+ "anyOrder": false
+}

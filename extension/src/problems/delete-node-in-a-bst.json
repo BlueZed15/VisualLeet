@@ -1,0 +1,32 @@
+{
+ "slug": "delete-node-in-a-bst",
+ "frontendId": "450",
+ "title": "Delete Node in a BST",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "key",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nkey = {key}",
+ "visible": [
+  "root",
+  "key"
+ ],
+ "call": "result = Solution().deleteNode(root, key)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+ "frontendId": "1498",
+ "title": "Number of Subsequences That Satisfy the Given Sum Condition",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}",
+ "visible": [
+  "nums",
+  "target"
+ ],
+ "call": "result = Solution().numSubseq(nums, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

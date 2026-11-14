@@ -1,0 +1,28 @@
+{
+ "slug": "distribute-coins-in-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "979",
+ "title": "Distribute Coins in Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "distributeCoins",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,0,0]",
+  "[0,3,0]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

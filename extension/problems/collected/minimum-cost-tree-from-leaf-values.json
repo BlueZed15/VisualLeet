@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-cost-tree-from-leaf-values",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1130",
+ "title": "Minimum Cost Tree From Leaf Values",
+ "premium": false,
+ "meta": {
+  "name": "mctFromLeafValues",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,2,4]",
+  "[4,11]"
+ ],
+ "exampleOutputs": [
+  "32",
+  "44"
+ ],
+ "anyOrder": false
+}

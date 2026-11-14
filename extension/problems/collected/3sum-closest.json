@@ -1,0 +1,32 @@
+{
+ "slug": "3sum-closest",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "16",
+ "title": "3Sum Closest",
+ "premium": false,
+ "meta": {
+  "name": "threeSumClosest",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,2,1,-4]\n1",
+  "[0,0,0]\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

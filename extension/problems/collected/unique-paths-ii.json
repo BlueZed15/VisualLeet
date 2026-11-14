@@ -1,0 +1,28 @@
+{
+ "slug": "unique-paths-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "63",
+ "title": "Unique Paths II",
+ "premium": false,
+ "meta": {
+  "name": "uniquePathsWithObstacles",
+  "params": [
+   {
+    "name": "obstacleGrid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,0],[0,1,0],[0,0,0]]",
+  "[[0,1],[0,0]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

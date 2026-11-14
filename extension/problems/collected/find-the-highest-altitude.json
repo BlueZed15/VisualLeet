@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-highest-altitude",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1732",
+ "title": "Find the Highest Altitude",
+ "premium": false,
+ "meta": {
+  "name": "largestAltitude",
+  "params": [
+   {
+    "name": "gain",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-5,1,5,0,-7]",
+  "[-4,-3,-2,-1,4,3,2]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-highest-altitude",
+ "frontendId": "1732",
+ "title": "Find the Highest Altitude",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "gain",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "gain = {gain}",
+ "visible": [
+  "gain"
+ ],
+ "call": "result = Solution().largestAltitude(gain)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

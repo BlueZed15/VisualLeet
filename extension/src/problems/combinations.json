@@ -1,0 +1,30 @@
+{
+ "slug": "combinations",
+ "frontendId": "77",
+ "title": "Combinations",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}",
+ "visible": [
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().combine(n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

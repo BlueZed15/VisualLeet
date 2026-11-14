@@ -1,0 +1,28 @@
+{
+ "slug": "rearrange-array-elements-by-sign",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2149",
+ "title": "Rearrange Array Elements by Sign",
+ "premium": false,
+ "meta": {
+  "name": "rearrangeArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,-2,-5,2,-4]",
+  "[-1,1]"
+ ],
+ "exampleOutputs": [
+  "[3,-2,1,-5,2,-4]",
+  "[1,-1]"
+ ],
+ "anyOrder": false
+}

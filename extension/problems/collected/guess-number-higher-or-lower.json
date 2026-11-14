@@ -1,0 +1,53 @@
+{
+ "slug": "guess-number-higher-or-lower",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "374",
+ "title": "Guess Number Higher or Lower",
+ "premium": false,
+ "meta": {
+  "name": "guessNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "pick",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": true,
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "c",
+   "csharp",
+   "javascript",
+   "ruby",
+   "swift",
+   "golang",
+   "python3",
+   "scala",
+   "kotlin",
+   "rust",
+   "php",
+   "typescript"
+  ],
+  "typescriptCustomType": "var guess = (num: number) => {\n    if (num == __pick__) return 0;\n    return (num > __pick__) ? -1 : 1;\n}"
+ },
+ "exampleInputs": [
+  "10\n6",
+  "1\n1",
+  "2\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

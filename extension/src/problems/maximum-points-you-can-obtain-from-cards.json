@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-points-you-can-obtain-from-cards",
+ "frontendId": "1423",
+ "title": "Maximum Points You Can Obtain from Cards",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cardPoints",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "cardPoints = {cardPoints}\nk = {k}",
+ "visible": [
+  "cardPoints",
+  "k"
+ ],
+ "call": "result = Solution().maxScore(cardPoints, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

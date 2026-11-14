@@ -1,0 +1,34 @@
+{
+ "slug": "backspace-string-compare",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "844",
+ "title": "Backspace String Compare",
+ "premium": false,
+ "meta": {
+  "name": "backspaceCompare",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"ab#c\"\n\"ad#c\"",
+  "\"ab##\"\n\"c#d#\"",
+  "\"a#c\"\n\"b\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

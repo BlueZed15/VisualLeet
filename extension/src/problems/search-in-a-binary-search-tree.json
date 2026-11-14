@@ -1,0 +1,32 @@
+{
+ "slug": "search-in-a-binary-search-tree",
+ "frontendId": "700",
+ "title": "Search in a Binary Search Tree",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "val",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nval = {val}",
+ "visible": [
+  "root",
+  "val"
+ ],
+ "call": "result = Solution().searchBST(root, val)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

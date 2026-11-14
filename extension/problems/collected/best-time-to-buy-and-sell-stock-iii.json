@@ -1,0 +1,30 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "123",
+ "title": "Best Time to Buy and Sell Stock III",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,3,5,0,0,3,1,4]",
+  "[1,2,3,4,5]",
+  "[7,6,4,3,1]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

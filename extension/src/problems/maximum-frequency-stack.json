@@ -1,0 +1,42 @@
+{
+ "slug": "maximum-frequency-stack",
+ "frontendId": "895",
+ "title": "Maximum Frequency Stack",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "FreqStack",
+ "methods": {
+  "FreqStack": [],
+  "push": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "pop": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = FreqStack(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

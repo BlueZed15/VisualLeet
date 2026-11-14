@@ -1,0 +1,30 @@
+{
+ "slug": "decode-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "394",
+ "title": "Decode String",
+ "premium": false,
+ "meta": {
+  "name": "decodeString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"3[a]2[bc]\"",
+  "\"3[a2[c]]\"",
+  "\"2[abc]3[cd]ef\""
+ ],
+ "exampleOutputs": [
+  "\"aaabcbc\"",
+  "\"accaccacc\"",
+  "\"abcabccdcdcdef\""
+ ],
+ "anyOrder": false
+}

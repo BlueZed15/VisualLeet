@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-matching-subsequences",
+ "frontendId": "792",
+ "title": "Number of Matching Subsequences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nwords = {words}",
+ "visible": [
+  "s",
+  "words"
+ ],
+ "call": "result = Solution().numMatchingSubseq(s, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

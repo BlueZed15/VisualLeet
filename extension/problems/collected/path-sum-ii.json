@@ -1,0 +1,35 @@
+{
+ "slug": "path-sum-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "113",
+ "title": "Path Sum II",
+ "premium": false,
+ "meta": {
+  "name": "pathSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "targetSum",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[5,4,8,11,null,13,4,7,2,null,null,5,1]\n22",
+  "[1,2,3]\n5",
+  "[1,2]\n0"
+ ],
+ "exampleOutputs": [
+  "[[5,4,11,2],[5,8,4,5]]",
+  "[]",
+  "[]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-root-to-leaf-binary-numbers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1022",
+ "title": "Sum of Root To Leaf Binary Numbers",
+ "premium": false,
+ "meta": {
+  "name": "sumRootToLeaf",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,1,0,1,0,1]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "22",
+  "0"
+ ],
+ "anyOrder": false
+}

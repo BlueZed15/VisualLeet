@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-submatrices-that-sum-to-target",
+ "frontendId": "1074",
+ "title": "Number of Submatrices That Sum to Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}\ntarget = {target}",
+ "visible": [
+  "matrix",
+  "target"
+ ],
+ "call": "result = Solution().numSubmatrixSumTarget(matrix, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

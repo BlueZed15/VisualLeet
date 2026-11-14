@@ -1,0 +1,34 @@
+{
+ "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1498",
+ "title": "Number of Subsequences That Satisfy the Given Sum Condition",
+ "premium": false,
+ "meta": {
+  "name": "numSubseq",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,5,6,7]\n9",
+  "[3,3,6,8]\n10",
+  "[2,3,3,4,6,7]\n12"
+ ],
+ "exampleOutputs": [
+  "4",
+  "6",
+  "61"
+ ],
+ "anyOrder": false
+}

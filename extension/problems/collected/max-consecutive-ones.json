@@ -1,0 +1,28 @@
+{
+ "slug": "max-consecutive-ones",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "485",
+ "title": "Max Consecutive Ones",
+ "premium": false,
+ "meta": {
+  "name": "findMaxConsecutiveOnes",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,0,1,1,1]",
+  "[1,0,1,1,0,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

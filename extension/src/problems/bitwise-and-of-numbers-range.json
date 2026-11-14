@@ -1,0 +1,30 @@
+{
+ "slug": "bitwise-and-of-numbers-range",
+ "frontendId": "201",
+ "title": "Bitwise AND of Numbers Range",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "left = {left}\nright = {right}",
+ "visible": [
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().rangeBitwiseAnd(left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

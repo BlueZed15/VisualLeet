@@ -1,0 +1,28 @@
+{
+ "slug": "domino-and-tromino-tiling",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "790",
+ "title": "Domino and Tromino Tiling",
+ "premium": false,
+ "meta": {
+  "name": "numTilings",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

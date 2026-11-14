@@ -1,0 +1,36 @@
+{
+ "slug": "shortest-path-with-alternating-colors",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1129",
+ "title": "Shortest Path with Alternating Colors",
+ "premium": false,
+ "meta": {
+  "name": "shortestAlternatingPaths",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "redEdges"
+   },
+   {
+    "type": "integer[][]",
+    "name": "blueEdges"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,1],[1,2]]\n[]",
+  "3\n[[0,1]]\n[[2,1]]"
+ ],
+ "exampleOutputs": [
+  "[0,1,-1]",
+  "[0,1,-1]"
+ ],
+ "anyOrder": false
+}

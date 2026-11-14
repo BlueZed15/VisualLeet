@@ -1,0 +1,32 @@
+{
+ "slug": "car-pooling",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1094",
+ "title": "Car Pooling",
+ "premium": false,
+ "meta": {
+  "name": "carPooling",
+  "params": [
+   {
+    "name": "trips",
+    "type": "integer[][]"
+   },
+   {
+    "name": "capacity",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[2,1,5],[3,3,7]]\n4",
+  "[[2,1,5],[3,3,7]]\n5"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

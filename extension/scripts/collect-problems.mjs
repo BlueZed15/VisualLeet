@@ -19,7 +19,9 @@ const only = arg("--only", "") ? arg("--only", "").split(",") : null;
 const skipExisting = process.argv.includes("--skip-existing");
 
 const list = JSON.parse(readFileSync(path.join(root, "problems", "neetcode150.json"), "utf8"));
-const slugs = only || list.problems.flatMap((c) => c.slugs);
+// --list problems/batch-<name>.json: collect that batch instead of the NeetCode 150
+const listFile = arg("--list", "");
+const slugs = only || (listFile ? JSON.parse(readFileSync(path.resolve(root, listFile), "utf8")).slugs : list.problems.flatMap((c) => c.slugs));
 const outDir = path.join(root, "problems", "collected");
 await mkdir(outDir, { recursive: true });
 

@@ -1,0 +1,30 @@
+{
+ "slug": "remove-outermost-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1021",
+ "title": "Remove Outermost Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "removeOuterParentheses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"(()())(())\"",
+  "\"(()())(())(()(()))\"",
+  "\"()()\""
+ ],
+ "exampleOutputs": [
+  "\"()()()\"",
+  "\"()()()()(())\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,27 @@
+{
+ "slug": "remove-duplicates-from-sorted-list-ii",
+ "frontendId": "82",
+ "title": "Remove Duplicates from Sorted List II",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().deleteDuplicates(head)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

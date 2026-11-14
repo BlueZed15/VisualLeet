@@ -1,0 +1,28 @@
+{
+ "slug": "find-all-numbers-disappeared-in-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "448",
+ "title": "Find All Numbers Disappeared in an Array",
+ "premium": false,
+ "meta": {
+  "name": "findDisappearedNumbers",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[4,3,2,7,8,2,3,1]",
+  "[1,1]"
+ ],
+ "exampleOutputs": [
+  "[5,6]",
+  "[2]"
+ ],
+ "anyOrder": false
+}

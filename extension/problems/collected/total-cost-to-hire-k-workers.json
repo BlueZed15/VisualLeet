@@ -1,0 +1,36 @@
+{
+ "slug": "total-cost-to-hire-k-workers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2462",
+ "title": "Total Cost to Hire K Workers",
+ "premium": false,
+ "meta": {
+  "name": "totalCost",
+  "params": [
+   {
+    "name": "costs",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "candidates"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[17,12,10,2,7,2,11,20,8]\n3\n4",
+  "[1,2,4,1]\n3\n3"
+ ],
+ "exampleOutputs": [
+  "11",
+  "4"
+ ],
+ "anyOrder": false
+}

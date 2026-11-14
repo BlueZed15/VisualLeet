@@ -1,0 +1,31 @@
+{
+ "slug": "binary-tree-level-order-traversal-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "107",
+ "title": "Binary Tree Level Order Traversal II",
+ "premium": false,
+ "meta": {
+  "name": "levelOrderBottom",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[1]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[[15,7],[9,20],[3]]",
+  "[[1]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

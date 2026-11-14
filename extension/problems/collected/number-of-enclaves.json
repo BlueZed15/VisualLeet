@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-enclaves",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1020",
+ "title": "Number of Enclaves",
+ "premium": false,
+ "meta": {
+  "name": "numEnclaves",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]",
+  "[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

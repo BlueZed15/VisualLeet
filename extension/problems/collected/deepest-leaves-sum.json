@@ -1,0 +1,28 @@
+{
+ "slug": "deepest-leaves-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1302",
+ "title": "Deepest Leaves Sum",
+ "premium": false,
+ "meta": {
+  "name": "deepestLeavesSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,null,6,7,null,null,null,null,8]",
+  "[6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]"
+ ],
+ "exampleOutputs": [
+  "15",
+  "19"
+ ],
+ "anyOrder": false
+}

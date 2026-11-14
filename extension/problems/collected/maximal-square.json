@@ -1,0 +1,30 @@
+{
+ "slug": "maximal-square",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "221",
+ "title": "Maximal Square",
+ "premium": false,
+ "meta": {
+  "name": "maximalSquare",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+  "[[\"0\",\"1\"],[\"1\",\"0\"]]",
+  "[[\"0\"]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

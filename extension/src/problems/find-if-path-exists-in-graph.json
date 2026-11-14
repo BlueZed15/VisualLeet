@@ -1,0 +1,40 @@
+{
+ "slug": "find-if-path-exists-in-graph",
+ "frontendId": "1971",
+ "title": "Find if Path Exists in Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "source",
+   "type": "integer"
+  },
+  {
+   "name": "destination",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nsource = {source}\ndestination = {destination}",
+ "visible": [
+  "n",
+  "edges",
+  "source",
+  "destination"
+ ],
+ "call": "result = Solution().validPath(n, edges, source, destination)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

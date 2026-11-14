@@ -1,0 +1,30 @@
+{
+ "slug": "vertical-order-traversal-of-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "987",
+ "title": "Vertical Order Traversal of a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "verticalTraversal",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[1,2,3,4,5,6,7]",
+  "[1,2,3,4,6,5,7]"
+ ],
+ "exampleOutputs": [
+  "[[9],[3,15],[20],[7]]",
+  "[[4],[2],[1,5,6],[3],[7]]",
+  "[[4],[2],[1,5,6],[3],[7]]"
+ ],
+ "anyOrder": false
+}

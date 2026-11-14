@@ -1,0 +1,31 @@
+{
+ "slug": "spiral-matrix-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "59",
+ "title": "Spiral Matrix II",
+ "premium": false,
+ "meta": {
+  "name": "generateMatrix",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[][]",
+   "rowsize": "param_1",
+   "colsize": "param_1",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[[1,2,3],[8,9,4],[7,6,5]]",
+  "[[1]]"
+ ],
+ "anyOrder": false
+}

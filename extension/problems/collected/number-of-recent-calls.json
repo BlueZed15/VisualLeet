@@ -1,0 +1,50 @@
+{
+ "slug": "number-of-recent-calls",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "933",
+ "title": "Number of Recent Calls",
+ "premium": false,
+ "meta": {
+  "classname": "RecentCounter",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "name": "ping",
+    "params": [
+     {
+      "name": "t",
+      "type": "integer"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 2, 3, 3]"
+ ],
+ "anyOrder": false
+}

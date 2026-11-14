@@ -1,0 +1,28 @@
+{
+ "slug": "russian-doll-envelopes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "354",
+ "title": "Russian Doll Envelopes",
+ "premium": false,
+ "meta": {
+  "name": "maxEnvelopes",
+  "params": [
+   {
+    "name": "envelopes",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[5,4],[6,4],[6,7],[2,3]]",
+  "[[1,1],[1,1],[1,1]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "time-needed-to-inform-all-employees",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1376",
+ "title": "Time Needed to Inform All Employees",
+ "premium": false,
+ "meta": {
+  "name": "numOfMinutes",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "headID"
+   },
+   {
+    "type": "integer[]",
+    "name": "manager"
+   },
+   {
+    "type": "integer[]",
+    "name": "informTime"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n0\n[-1]\n[0]",
+  "6\n2\n[2,2,-1,2,2,2]\n[0,0,1,0,0,0]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

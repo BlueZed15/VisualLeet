@@ -1,0 +1,30 @@
+{
+ "slug": "length-of-last-word",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "58",
+ "title": "Length of Last Word",
+ "premium": false,
+ "meta": {
+  "name": "lengthOfLastWord",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"Hello World\"",
+  "\"   fly me   to   the moon  \"",
+  "\"luffy is still joyboy\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "4",
+  "6"
+ ],
+ "anyOrder": false
+}

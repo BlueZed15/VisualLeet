@@ -1,0 +1,32 @@
+{
+ "slug": "interval-list-intersections",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "986",
+ "title": "Interval List Intersections",
+ "premium": false,
+ "meta": {
+  "name": "intervalIntersection",
+  "params": [
+   {
+    "name": "firstList",
+    "type": "integer[][]"
+   },
+   {
+    "name": "secondList",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[0,2],[5,10],[13,23],[24,25]]\n[[1,5],[8,12],[15,24],[25,26]]",
+  "[[1,3],[5,9]]\n[]"
+ ],
+ "exampleOutputs": [
+  "[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

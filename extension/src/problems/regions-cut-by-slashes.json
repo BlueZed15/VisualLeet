@@ -1,0 +1,25 @@
+{
+ "slug": "regions-cut-by-slashes",
+ "frontendId": "959",
+ "title": "Regions Cut By Slashes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().regionsBySlashes(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

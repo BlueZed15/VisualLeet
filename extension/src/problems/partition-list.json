@@ -1,0 +1,32 @@
+{
+ "slug": "partition-list",
+ "frontendId": "86",
+ "title": "Partition List",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}\nx = {x}",
+ "visible": [
+  "head",
+  "x"
+ ],
+ "call": "result = Solution().partition(head, x)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

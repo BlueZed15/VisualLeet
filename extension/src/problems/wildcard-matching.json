@@ -1,0 +1,30 @@
+{
+ "slug": "wildcard-matching",
+ "frontendId": "44",
+ "title": "Wildcard Matching",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "p",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\np = {p}",
+ "visible": [
+  "s",
+  "p"
+ ],
+ "call": "result = Solution().isMatch(s, p)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

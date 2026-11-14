@@ -1,0 +1,30 @@
+{
+ "slug": "text-justification",
+ "frontendId": "68",
+ "title": "Text Justification",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "maxWidth",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nmaxWidth = {maxWidth}",
+ "visible": [
+  "words",
+  "maxWidth"
+ ],
+ "call": "result = Solution().fullJustify(words, maxWidth)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

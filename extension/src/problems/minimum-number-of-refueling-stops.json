@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-number-of-refueling-stops",
+ "frontendId": "871",
+ "title": "Minimum Number of Refueling Stops",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "startFuel",
+   "type": "integer"
+  },
+  {
+   "name": "stations",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\nstartFuel = {startFuel}\nstations = {stations}",
+ "visible": [
+  "target",
+  "startFuel",
+  "stations"
+ ],
+ "call": "result = Solution().minRefuelStops(target, startFuel, stations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

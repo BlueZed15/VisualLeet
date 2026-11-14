@@ -1,0 +1,30 @@
+{
+ "slug": "contiguous-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "525",
+ "title": "Contiguous Array",
+ "premium": false,
+ "meta": {
+  "name": "findMaxLength",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1]",
+  "[0,1,0]",
+  "[0,1,1,1,1,1,0,0,0]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "6"
+ ],
+ "anyOrder": false
+}

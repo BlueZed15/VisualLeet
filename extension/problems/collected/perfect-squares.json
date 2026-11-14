@@ -1,0 +1,28 @@
+{
+ "slug": "perfect-squares",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "279",
+ "title": "Perfect Squares",
+ "premium": false,
+ "meta": {
+  "name": "numSquares",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "12",
+  "13"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

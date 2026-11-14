@@ -25,5 +25,6 @@
  ],
  "call": "result = Solution().countComponents(n, edges)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

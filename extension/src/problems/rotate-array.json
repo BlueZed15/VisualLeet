@@ -1,0 +1,30 @@
+{
+ "slug": "rotate-array",
+ "frontendId": "189",
+ "title": "Rotate Array",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}",
+ "visible": [
+  "nums",
+  "k"
+ ],
+ "call": "Solution().rotate(nums, k)\nprint(leet_str(nums))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

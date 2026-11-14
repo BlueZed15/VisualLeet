@@ -1,0 +1,30 @@
+{
+ "slug": "fruit-into-baskets",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "904",
+ "title": "Fruit Into Baskets",
+ "premium": false,
+ "meta": {
+  "name": "totalFruit",
+  "params": [
+   {
+    "name": "fruits",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,1]",
+  "[0,1,2,2]",
+  "[1,2,3,2,2]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

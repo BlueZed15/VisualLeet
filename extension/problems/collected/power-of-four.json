@@ -1,0 +1,30 @@
+{
+ "slug": "power-of-four",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "342",
+ "title": "Power of Four",
+ "premium": false,
+ "meta": {
+  "name": "isPowerOfFour",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "16",
+  "5",
+  "1"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

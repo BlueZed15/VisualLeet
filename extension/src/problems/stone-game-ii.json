@@ -1,0 +1,25 @@
+{
+ "slug": "stone-game-ii",
+ "frontendId": "1140",
+ "title": "Stone Game II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}",
+ "visible": [
+  "piles"
+ ],
+ "call": "result = Solution().stoneGameII(piles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

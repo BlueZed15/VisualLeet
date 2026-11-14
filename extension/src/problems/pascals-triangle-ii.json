@@ -1,0 +1,25 @@
+{
+ "slug": "pascals-triangle-ii",
+ "frontendId": "119",
+ "title": "Pascal's Triangle II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rowIndex",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rowIndex = {rowIndex}",
+ "visible": [
+  "rowIndex"
+ ],
+ "call": "result = Solution().getRow(rowIndex)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

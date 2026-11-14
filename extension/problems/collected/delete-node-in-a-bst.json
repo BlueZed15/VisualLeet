@@ -1,0 +1,35 @@
+{
+ "slug": "delete-node-in-a-bst",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "450",
+ "title": "Delete Node in a BST",
+ "premium": false,
+ "meta": {
+  "name": "deleteNode",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode",
+    "dealloc": false
+   },
+   {
+    "name": "key",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,6,2,4,null,7]\n3",
+  "[5,3,6,2,4,null,7]\n0",
+  "[]\n0"
+ ],
+ "exampleOutputs": [
+  "[5,4,6,2,null,null,7]",
+  "[5,3,6,2,4,null,7]",
+  "[]"
+ ],
+ "anyOrder": false
+}

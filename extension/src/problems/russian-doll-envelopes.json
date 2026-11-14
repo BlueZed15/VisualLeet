@@ -1,0 +1,25 @@
+{
+ "slug": "russian-doll-envelopes",
+ "frontendId": "354",
+ "title": "Russian Doll Envelopes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "envelopes",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "envelopes = {envelopes}",
+ "visible": [
+  "envelopes"
+ ],
+ "call": "result = Solution().maxEnvelopes(envelopes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

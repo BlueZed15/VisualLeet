@@ -1,0 +1,28 @@
+{
+ "slug": "different-ways-to-add-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "241",
+ "title": "Different Ways to Add Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "diffWaysToCompute",
+  "params": [
+   {
+    "name": "expression",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "\"2-1-1\"",
+  "\"2*3-4*5\""
+ ],
+ "exampleOutputs": [
+  "[0,2]",
+  "[-34,-14,-10,-10,10]"
+ ],
+ "anyOrder": true
+}

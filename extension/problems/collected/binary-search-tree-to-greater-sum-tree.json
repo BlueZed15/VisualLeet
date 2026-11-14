@@ -1,0 +1,28 @@
+{
+ "slug": "binary-search-tree-to-greater-sum-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1038",
+ "title": "Binary Search Tree to Greater Sum Tree",
+ "premium": false,
+ "meta": {
+  "name": "bstToGst",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]",
+  "[0,null,1]"
+ ],
+ "exampleOutputs": [
+  "[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]",
+  "[1,null,1]"
+ ],
+ "anyOrder": false
+}

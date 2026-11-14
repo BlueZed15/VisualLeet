@@ -1,0 +1,32 @@
+{
+ "slug": "critical-connections-in-a-network",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1192",
+ "title": "Critical Connections in a Network",
+ "premium": false,
+ "meta": {
+  "name": "criticalConnections",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "list<list<integer>>",
+    "name": "connections"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[0,1],[1,2],[2,0],[1,3]]",
+  "2\n[[0,1]]"
+ ],
+ "exampleOutputs": [
+  "[[1,3]]",
+  "[[0,1]]"
+ ],
+ "anyOrder": true
+}

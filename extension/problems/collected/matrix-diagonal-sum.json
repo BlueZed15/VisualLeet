@@ -1,0 +1,30 @@
+{
+ "slug": "matrix-diagonal-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1572",
+ "title": "Matrix Diagonal Sum",
+ "premium": false,
+ "meta": {
+  "name": "diagonalSum",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[4,5,6],[7,8,9]]",
+  "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
+  "[[5]]"
+ ],
+ "exampleOutputs": [
+  "25",
+  "8",
+  "5"
+ ],
+ "anyOrder": false
+}

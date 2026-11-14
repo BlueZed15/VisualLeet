@@ -1,0 +1,65 @@
+{
+ "slug": "range-sum-query-immutable",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "303",
+ "title": "Range Sum Query - Immutable",
+ "premium": false,
+ "meta": {
+  "classname": "NumArray",
+  "maxbytesperline": 135000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "nums"
+    },
+    {
+     "type": "integer",
+     "name": "numsSize",
+     "lang": "c",
+     "value": "size_1"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "sumRange",
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"NumArray\",\"sumRange\",\"sumRange\",\"sumRange\"]\n[[[-2,0,3,-5,2,-1]],[0,2],[2,5],[0,5]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, -1, -3]"
+ ],
+ "anyOrder": false
+}

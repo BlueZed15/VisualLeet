@@ -1,0 +1,28 @@
+{
+ "slug": "binary-tree-cameras",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "968",
+ "title": "Binary Tree Cameras",
+ "premium": false,
+ "meta": {
+  "name": "minCameraCover",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,0,null,0,0]",
+  "[0,0,null,0,null,0,null,null,0]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

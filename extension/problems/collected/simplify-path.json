@@ -1,0 +1,34 @@
+{
+ "slug": "simplify-path",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "71",
+ "title": "Simplify Path",
+ "premium": false,
+ "meta": {
+  "name": "simplifyPath",
+  "params": [
+   {
+    "name": "path",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"/home/\"",
+  "\"/home//foo/\"",
+  "\"/home/user/Documents/../Pictures\"",
+  "\"/../\"",
+  "\"/.../a/../b/c/../d/./\""
+ ],
+ "exampleOutputs": [
+  "\"/home\"",
+  "\"/home/foo\"",
+  "\"/home/user/Pictures\"",
+  "\"/\"",
+  "\"/.../b/d\""
+ ],
+ "anyOrder": false
+}

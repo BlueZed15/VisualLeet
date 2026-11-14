@@ -1,0 +1,38 @@
+{
+ "slug": "minimum-time-to-collect-all-apples-in-a-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1443",
+ "title": "Minimum Time to Collect All Apples in a Tree",
+ "premium": false,
+ "meta": {
+  "name": "minTime",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "list<boolean>",
+    "name": "hasApple"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "7\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,true,true,false]",
+  "7\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,false,true,false]",
+  "7\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,false,false,false,false,false]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-events-that-can-be-attended",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1353",
+ "title": "Maximum Number of Events That Can Be Attended",
+ "premium": false,
+ "meta": {
+  "name": "maxEvents",
+  "params": [
+   {
+    "name": "events",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,3],[3,4]]",
+  "[[1,2],[2,3],[3,4],[1,2]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

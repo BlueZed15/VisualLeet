@@ -21,5 +21,6 @@
  ],
  "call": "ser = Codec()\ndeser = Codec()\nresult = deser.deserialize(ser.serialize(root))\nprint(leet_str(tree_values(result)))",
  "source": "hand-written",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

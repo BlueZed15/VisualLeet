@@ -1,0 +1,25 @@
+{
+ "slug": "robot-bounded-in-circle",
+ "frontendId": "1041",
+ "title": "Robot Bounded In Circle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "instructions",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "instructions = {instructions}",
+ "visible": [
+  "instructions"
+ ],
+ "call": "result = Solution().isRobotBounded(instructions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

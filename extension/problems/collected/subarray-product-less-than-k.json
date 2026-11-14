@@ -1,0 +1,32 @@
+{
+ "slug": "subarray-product-less-than-k",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "713",
+ "title": "Subarray Product Less Than K",
+ "premium": false,
+ "meta": {
+  "name": "numSubarrayProductLessThanK",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,5,2,6]\n100",
+  "[1,2,3]\n0"
+ ],
+ "exampleOutputs": [
+  "8",
+  "0"
+ ],
+ "anyOrder": false
+}

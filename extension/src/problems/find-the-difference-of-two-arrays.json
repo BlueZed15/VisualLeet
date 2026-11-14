@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-difference-of-two-arrays",
+ "frontendId": "2215",
+ "title": "Find the Difference of Two Arrays",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}",
+ "visible": [
+  "nums1",
+  "nums2"
+ ],
+ "call": "result = Solution().findDifference(nums1, nums2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

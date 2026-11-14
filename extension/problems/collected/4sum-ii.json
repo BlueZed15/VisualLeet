@@ -1,0 +1,40 @@
+{
+ "slug": "4sum-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "454",
+ "title": "4Sum II",
+ "premium": false,
+ "meta": {
+  "name": "fourSumCount",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums2",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums3",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums4",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2]\n[-2,-1]\n[-1,2]\n[0,2]",
+  "[0]\n[0]\n[0]\n[0]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "increasing-triplet-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "334",
+ "title": "Increasing Triplet Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "increasingTriplet",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]",
+  "[5,4,3,2,1]",
+  "[2,1,5,0,4,6]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

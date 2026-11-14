@@ -21,5 +21,6 @@
  ],
  "call": "codec = Codec()\nresult = codec.decode(codec.encode(strs))\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

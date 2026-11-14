@@ -1,0 +1,36 @@
+{
+ "slug": "trim-a-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "669",
+ "title": "Trim a Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "trimBST",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "name": "high",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,2]\n1\n2",
+  "[3,0,4,null,2,null,null,1]\n1\n3"
+ ],
+ "exampleOutputs": [
+  "[1,null,2]",
+  "[3,2,null,1]"
+ ],
+ "anyOrder": false
+}

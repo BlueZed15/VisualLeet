@@ -1,0 +1,32 @@
+{
+ "slug": "delete-operation-for-two-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "583",
+ "title": "Delete Operation for Two Strings",
+ "premium": false,
+ "meta": {
+  "name": "minDistance",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "name": "word2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"sea\"\n\"eat\"",
+  "\"leetcode\"\n\"etco\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "count-negative-numbers-in-a-sorted-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1351",
+ "title": "Count Negative Numbers in a Sorted Matrix",
+ "premium": false,
+ "meta": {
+  "name": "countNegatives",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]",
+  "[[3,2],[1,0]]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,53 @@
+{
+ "slug": "design-hashset",
+ "frontendId": "705",
+ "title": "Design HashSet",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MyHashSet",
+ "methods": {
+  "MyHashSet": [],
+  "add": [
+   {
+    "name": "key",
+    "type": "integer"
+   }
+  ],
+  "remove": [
+   {
+    "name": "key",
+    "type": "integer"
+   }
+  ],
+  "contains": [
+   {
+    "name": "key",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MyHashSet(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

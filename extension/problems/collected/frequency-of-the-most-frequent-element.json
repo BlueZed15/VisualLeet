@@ -1,0 +1,34 @@
+{
+ "slug": "frequency-of-the-most-frequent-element",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1838",
+ "title": "Frequency of the Most Frequent Element",
+ "premium": false,
+ "meta": {
+  "name": "maxFrequency",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,4]\n5",
+  "[1,4,8,13]\n5",
+  "[3,9,6]\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

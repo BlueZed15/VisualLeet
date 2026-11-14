@@ -1,0 +1,30 @@
+{
+ "slug": "split-array-into-consecutive-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "659",
+ "title": "Split Array into Consecutive Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "isPossible",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,3,4,5]",
+  "[1,2,3,3,4,4,5,5]",
+  "[1,2,3,4,4,5]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

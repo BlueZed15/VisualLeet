@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-length-of-pair-chain",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "646",
+ "title": "Maximum Length of Pair Chain",
+ "premium": false,
+ "meta": {
+  "name": "findLongestChain",
+  "params": [
+   {
+    "name": "pairs",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,3],[3,4]]",
+  "[[1,2],[7,8],[4,5]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": true
+}

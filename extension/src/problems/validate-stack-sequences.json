@@ -1,0 +1,30 @@
+{
+ "slug": "validate-stack-sequences",
+ "frontendId": "946",
+ "title": "Validate Stack Sequences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pushed",
+   "type": "integer[]"
+  },
+  {
+   "name": "popped",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "pushed = {pushed}\npopped = {popped}",
+ "visible": [
+  "pushed",
+  "popped"
+ ],
+ "call": "result = Solution().validateStackSequences(pushed, popped)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

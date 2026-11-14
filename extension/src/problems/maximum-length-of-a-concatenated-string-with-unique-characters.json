@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+ "frontendId": "1239",
+ "title": "Maximum Length of a Concatenated String with Unique Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().maxLength(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

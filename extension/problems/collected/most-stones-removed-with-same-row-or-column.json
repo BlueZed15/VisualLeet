@@ -1,0 +1,30 @@
+{
+ "slug": "most-stones-removed-with-same-row-or-column",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "947",
+ "title": "Most Stones Removed with Same Row or Column",
+ "premium": false,
+ "meta": {
+  "name": "removeStones",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]",
+  "[[0,0],[0,2],[1,1],[2,0],[2,2]]",
+  "[[0,0]]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

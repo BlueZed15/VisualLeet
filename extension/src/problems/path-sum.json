@@ -1,0 +1,30 @@
+{
+ "slug": "path-sum",
+ "frontendId": "112",
+ "title": "Path Sum",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "targetSum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\ntargetSum = {targetSum}",
+ "visible": [
+  "root",
+  "targetSum"
+ ],
+ "call": "result = Solution().hasPathSum(root, targetSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

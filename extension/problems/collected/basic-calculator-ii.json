@@ -1,0 +1,30 @@
+{
+ "slug": "basic-calculator-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "227",
+ "title": "Basic Calculator II",
+ "premium": false,
+ "meta": {
+  "name": "calculate",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"3+2*2\"",
+  "\" 3/2 \"",
+  "\" 3+5 / 2 \""
+ ],
+ "exampleOutputs": [
+  "7",
+  "1",
+  "5"
+ ],
+ "anyOrder": false
+}

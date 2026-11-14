@@ -1,0 +1,30 @@
+{
+ "slug": "path-sum-ii",
+ "frontendId": "113",
+ "title": "Path Sum II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "targetSum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\ntargetSum = {targetSum}",
+ "visible": [
+  "root",
+  "targetSum"
+ ],
+ "call": "result = Solution().pathSum(root, targetSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

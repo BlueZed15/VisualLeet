@@ -1,0 +1,34 @@
+{
+ "slug": "4sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "18",
+ "title": "4Sum",
+ "premium": false,
+ "meta": {
+  "name": "fourSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "colsize": 4,
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,0,-1,0,-2,2]\n0",
+  "[2,2,2,2,2]\n8"
+ ],
+ "exampleOutputs": [
+  "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]",
+  "[[2,2,2,2]]"
+ ],
+ "anyOrder": true
+}

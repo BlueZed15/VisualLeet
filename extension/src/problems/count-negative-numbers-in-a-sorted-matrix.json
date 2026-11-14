@@ -1,0 +1,25 @@
+{
+ "slug": "count-negative-numbers-in-a-sorted-matrix",
+ "frontendId": "1351",
+ "title": "Count Negative Numbers in a Sorted Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().countNegatives(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

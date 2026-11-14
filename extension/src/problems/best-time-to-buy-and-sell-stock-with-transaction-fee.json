@@ -1,0 +1,30 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+ "frontendId": "714",
+ "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  },
+  {
+   "name": "fee",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}\nfee = {fee}",
+ "visible": [
+  "prices",
+  "fee"
+ ],
+ "call": "result = Solution().maxProfit(prices, fee)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

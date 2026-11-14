@@ -1,0 +1,32 @@
+{
+ "slug": "merge-two-binary-trees",
+ "frontendId": "617",
+ "title": "Merge Two Binary Trees",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root1",
+   "type": "TreeNode"
+  },
+  {
+   "name": "root2",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root1 = {root1}\nroot2 = {root2}",
+ "visible": [
+  "root1",
+  "root2"
+ ],
+ "call": "result = Solution().mergeTrees(root1, root2)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

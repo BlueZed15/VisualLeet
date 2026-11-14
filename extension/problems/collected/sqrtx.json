@@ -1,0 +1,28 @@
+{
+ "slug": "sqrtx",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "69",
+ "title": "Sqrt(x)",
+ "premium": false,
+ "meta": {
+  "name": "mySqrt",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "8"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

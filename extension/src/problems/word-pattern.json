@@ -1,0 +1,30 @@
+{
+ "slug": "word-pattern",
+ "frontendId": "290",
+ "title": "Word Pattern",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pattern",
+   "type": "string"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "pattern = {pattern}\ns = {s}",
+ "visible": [
+  "pattern",
+  "s"
+ ],
+ "call": "result = Solution().wordPattern(pattern, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

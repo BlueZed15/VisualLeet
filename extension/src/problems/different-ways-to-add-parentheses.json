@@ -1,0 +1,25 @@
+{
+ "slug": "different-ways-to-add-parentheses",
+ "frontendId": "241",
+ "title": "Different Ways to Add Parentheses",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "expression",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "expression = {expression}",
+ "visible": [
+  "expression"
+ ],
+ "call": "result = Solution().diffWaysToCompute(expression)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

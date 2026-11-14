@@ -1,0 +1,79 @@
+{
+ "slug": "range-sum-query-2d-immutable",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "304",
+ "title": "Range Sum Query 2D - Immutable",
+ "premium": false,
+ "meta": {
+  "classname": "NumMatrix",
+  "maxbytesperline": 150000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[][]",
+     "name": "matrix"
+    },
+    {
+     "type": "integer",
+     "name": "matrixRowSize",
+     "lang": "c",
+     "value": "size_1"
+    },
+    {
+     "type": "integer",
+     "name": "matrixColSize",
+     "lang": "c",
+     "value": "col_size_1"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "sumRegion",
+    "params": [
+     {
+      "type": "integer",
+      "name": "row1"
+     },
+     {
+      "type": "integer",
+      "name": "col1"
+     },
+     {
+      "type": "integer",
+      "name": "row2"
+     },
+     {
+      "type": "integer",
+      "name": "col2"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]"
+ ],
+ "exampleOutputs": [
+  "[null, 8, 11, 12]"
+ ],
+ "anyOrder": false
+}

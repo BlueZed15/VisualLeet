@@ -1,0 +1,37 @@
+{
+ "slug": "reverse-linked-list-ii",
+ "frontendId": "92",
+ "title": "Reverse Linked List II",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "ListNode"
+ ],
+ "setup": "head = {head}\nleft = {left}\nright = {right}",
+ "visible": [
+  "head",
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().reverseBetween(head, left, right)\nprint(leet_str(list_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

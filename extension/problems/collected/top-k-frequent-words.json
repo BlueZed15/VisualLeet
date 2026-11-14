@@ -1,0 +1,32 @@
+{
+ "slug": "top-k-frequent-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "692",
+ "title": "Top K Frequent Words",
+ "premium": false,
+ "meta": {
+  "name": "topKFrequent",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]\n2",
+  "[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]\n4"
+ ],
+ "exampleOutputs": [
+  "[\"i\",\"love\"]",
+  "[\"the\",\"is\",\"sunny\",\"day\"]"
+ ],
+ "anyOrder": false
+}

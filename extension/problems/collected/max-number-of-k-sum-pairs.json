@@ -1,0 +1,32 @@
+{
+ "slug": "max-number-of-k-sum-pairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1679",
+ "title": "Max Number of K-Sum Pairs",
+ "premium": false,
+ "meta": {
+  "name": "maxOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n5",
+  "[3,1,3,4,3]\n6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

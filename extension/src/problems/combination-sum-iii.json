@@ -1,0 +1,30 @@
+{
+ "slug": "combination-sum-iii",
+ "frontendId": "216",
+ "title": "Combination Sum III",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nn = {n}",
+ "visible": [
+  "k",
+  "n"
+ ],
+ "call": "result = Solution().combinationSum3(k, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

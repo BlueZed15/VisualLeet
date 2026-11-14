@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-left-leaves",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "404",
+ "title": "Sum of Left Leaves",
+ "premium": false,
+ "meta": {
+  "name": "sumOfLeftLeaves",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,9,20,null,null,15,7]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "24",
+  "0"
+ ],
+ "anyOrder": false
+}

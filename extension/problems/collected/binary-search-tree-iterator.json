@@ -1,0 +1,58 @@
+{
+ "slug": "binary-search-tree-iterator",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "173",
+ "title": "Binary Search Tree Iterator",
+ "premium": false,
+ "meta": {
+  "classname": "BSTIterator",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "type": "TreeNode",
+     "name": "root"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [],
+    "name": "next",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "hasNext",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]",
+   "dealloc": true
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"BSTIterator\",\"next\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[[7,3,15,null,null,9,20]],[],[],[],[],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 3, 7, true, 9, true, 15, true, 20, false]"
+ ],
+ "anyOrder": false
+}

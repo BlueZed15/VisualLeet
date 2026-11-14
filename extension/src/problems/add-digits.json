@@ -1,0 +1,25 @@
+{
+ "slug": "add-digits",
+ "frontendId": "258",
+ "title": "Add Digits",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().addDigits(num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

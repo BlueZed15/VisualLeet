@@ -1,0 +1,28 @@
+{
+ "slug": "middle-of-the-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "876",
+ "title": "Middle of the Linked List",
+ "premium": false,
+ "meta": {
+  "name": "middleNode",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]",
+  "[1,2,3,4,5,6]"
+ ],
+ "exampleOutputs": [
+  "[3,4,5]",
+  "[4,5,6]"
+ ],
+ "anyOrder": false
+}

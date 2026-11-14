@@ -1,0 +1,30 @@
+{
+ "slug": "longest-arithmetic-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1027",
+ "title": "Longest Arithmetic Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "longestArithSeqLength",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,6,9,12]",
+  "[9,4,7,2,10]",
+  "[20,1,15,3,10,5,8]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

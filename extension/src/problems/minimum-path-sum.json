@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-path-sum",
+ "frontendId": "64",
+ "title": "Minimum Path Sum",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().minPathSum(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

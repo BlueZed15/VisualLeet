@@ -1,0 +1,30 @@
+{
+ "slug": "word-break-ii",
+ "frontendId": "140",
+ "title": "Word Break II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "wordDict",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nwordDict = {wordDict}",
+ "visible": [
+  "s",
+  "wordDict"
+ ],
+ "call": "result = Solution().wordBreak(s, wordDict)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

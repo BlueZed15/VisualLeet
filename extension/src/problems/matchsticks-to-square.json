@@ -1,0 +1,25 @@
+{
+ "slug": "matchsticks-to-square",
+ "frontendId": "473",
+ "title": "Matchsticks to Square",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matchsticks",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matchsticks = {matchsticks}",
+ "visible": [
+  "matchsticks"
+ ],
+ "call": "result = Solution().makesquare(matchsticks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

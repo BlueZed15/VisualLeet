@@ -1,0 +1,30 @@
+{
+ "slug": "determine-if-two-strings-are-close",
+ "frontendId": "1657",
+ "title": "Determine if Two Strings Are Close",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word1",
+   "type": "string"
+  },
+  {
+   "name": "word2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word1 = {word1}\nword2 = {word2}",
+ "visible": [
+  "word1",
+  "word2"
+ ],
+ "call": "result = Solution().closeStrings(word1, word2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

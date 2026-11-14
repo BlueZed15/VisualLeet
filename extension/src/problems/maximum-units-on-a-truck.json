@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-units-on-a-truck",
+ "frontendId": "1710",
+ "title": "Maximum Units on a Truck",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "boxTypes",
+   "type": "integer[][]"
+  },
+  {
+   "name": "truckSize",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "boxTypes = {boxTypes}\ntruckSize = {truckSize}",
+ "visible": [
+  "boxTypes",
+  "truckSize"
+ ],
+ "call": "result = Solution().maximumUnits(boxTypes, truckSize)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

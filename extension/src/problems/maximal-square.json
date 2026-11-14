@@ -1,0 +1,25 @@
+{
+ "slug": "maximal-square",
+ "frontendId": "221",
+ "title": "Maximal Square",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "result = Solution().maximalSquare(matrix)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

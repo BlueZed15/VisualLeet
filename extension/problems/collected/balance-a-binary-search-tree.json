@@ -1,0 +1,28 @@
+{
+ "slug": "balance-a-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1382",
+ "title": "Balance a Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "balanceBST",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,null,2,null,3,null,4]",
+  "[2,1,3]"
+ ],
+ "exampleOutputs": [
+  "[2,1,3,null,null,null,4]",
+  "[2,1,3]"
+ ],
+ "anyOrder": false
+}

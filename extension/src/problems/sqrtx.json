@@ -1,0 +1,25 @@
+{
+ "slug": "sqrtx",
+ "frontendId": "69",
+ "title": "Sqrt(x)",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}",
+ "visible": [
+  "x"
+ ],
+ "call": "result = Solution().mySqrt(x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

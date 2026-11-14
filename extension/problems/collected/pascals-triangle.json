@@ -1,0 +1,30 @@
+{
+ "slug": "pascals-triangle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "118",
+ "title": "Pascal's Triangle",
+ "premium": false,
+ "meta": {
+  "name": "generate",
+  "params": [
+   {
+    "name": "numRows",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>",
+   "dealloc": true,
+   "rowsize": "param_1"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]",
+  "[[1]]"
+ ],
+ "anyOrder": false
+}

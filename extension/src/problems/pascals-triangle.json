@@ -1,0 +1,25 @@
+{
+ "slug": "pascals-triangle",
+ "frontendId": "118",
+ "title": "Pascal's Triangle",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numRows",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "numRows = {numRows}",
+ "visible": [
+  "numRows"
+ ],
+ "call": "result = Solution().generate(numRows)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

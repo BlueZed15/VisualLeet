@@ -1,0 +1,33 @@
+{
+ "slug": "binary-tree-preorder-traversal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "144",
+ "title": "Binary Tree Preorder Traversal",
+ "premium": false,
+ "meta": {
+  "name": "preorderTraversal",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<integer>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,null,2,3]",
+  "[1,2,3,4,5,null,8,null,null,6,7,9]",
+  "[]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[1,2,3]",
+  "[1,2,4,5,6,7,3,8,9]",
+  "[]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,33 @@
+{
+ "slug": "binary-tree-inorder-traversal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "94",
+ "title": "Binary Tree Inorder Traversal",
+ "premium": false,
+ "meta": {
+  "name": "inorderTraversal",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<integer>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,null,2,3]",
+  "[1,2,3,4,5,null,8,null,null,6,7,9]",
+  "[]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[1,3,2]",
+  "[4,2,6,5,7,1,3,9,8]",
+  "[]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

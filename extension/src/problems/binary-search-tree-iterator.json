@@ -1,0 +1,43 @@
+{
+ "slug": "binary-search-tree-iterator",
+ "frontendId": "173",
+ "title": "Binary Search Tree Iterator",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "BSTIterator",
+ "methods": {
+  "BSTIterator": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "next": [],
+  "hasNext": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops",
+  "TreeNode"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = BSTIterator(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

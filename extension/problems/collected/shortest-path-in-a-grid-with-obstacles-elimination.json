@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1293",
+ "title": "Shortest Path in a Grid with Obstacles Elimination",
+ "premium": false,
+ "meta": {
+  "name": "shortestPath",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]]\n1",
+  "[[0,1,1],[1,1,1],[1,0,0]]\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "-1"
+ ],
+ "anyOrder": false
+}

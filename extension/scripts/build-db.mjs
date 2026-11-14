@@ -26,8 +26,18 @@ mkdirSync(OUT, { recursive: true });
 for (const f of readdirSync(OUT)) if (f.endsWith(".json")) unlinkSync(path.join(OUT, f));
 
 const index = {}, skipped = [];
-for (const { category, slugs } of list.problems) {
-  for (const slug of slugs) {
+// the NeetCode 150 by category, then each batch (problems/batch-*.json) by the list it came from
+const LIST_NAMES = { "leetcode-75": "LeetCode 75", "top-interview-150": "Top Interview 150", "top-100-liked": "Top 100 Liked", "most-liked": "Most liked" };
+const todo = list.problems.flatMap(({ category, slugs }) => slugs.map((slug) => ({ slug, category })));
+for (const f of readdirSync(P()).filter((x) => /^batch-.+\.json$/.test(x)).sort()) {
+  const b = readJson(P(f));
+  for (const slug of b.slugs) todo.push({ slug, category: LIST_NAMES[b.sources && b.sources[slug]] || "More problems", batch: f });
+}
+const done = new Set();
+for (const { slug, category } of todo) {
+  {
+    if (done.has(slug)) continue;
+    done.add(slug);
     const c = existsSync(P("collected", slug + ".json")) ? readJson(P("collected", slug + ".json")) : null;
     const hwAll = handwritten[slug] || {};
     const head = {
@@ -48,10 +58,11 @@ for (const { category, slugs } of list.problems) {
       skipped.push(`${slug}: no data (premium or not collected)`);
       continue;
     }
-    const entry = { ...head, ...body, verified: false };
+    const entry = { ...head, ...body, verified: false, checked: "none" };
     writeFileSync(path.join(OUT, slug + ".json"), JSON.stringify(entry, null, 1) + "\n");
-    index[slug] = { title: entry.title, frontendId: entry.frontendId, category, verified: false };
+    index[slug] = { title: entry.title, frontendId: entry.frontendId, category, verified: false, checked: "none" };
   }
 }
 writeFileSync(path.join(OUT, "index.json"), JSON.stringify({ about: "VisualLeet problem database: one file per problem (src/problems/<slug>.json).", problems: index }, null, 1) + "\n");
 console.log(`wrote ${Object.keys(index).length} problem files; skipped ${skipped.length}:\n  ${skipped.join("\n  ")}`);
+writeFileSync(P("build-skipped.json"), JSON.stringify(skipped, null, 1) + "\n");

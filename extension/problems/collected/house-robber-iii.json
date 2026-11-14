@@ -1,0 +1,28 @@
+{
+ "slug": "house-robber-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "337",
+ "title": "House Robber III",
+ "premium": false,
+ "meta": {
+  "name": "rob",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,3,null,3,null,1]",
+  "[3,4,5,1,3,null,1]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "9"
+ ],
+ "anyOrder": false
+}

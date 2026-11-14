@@ -1,0 +1,31 @@
+{
+ "slug": "reverse-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "344",
+ "title": "Reverse String",
+ "premium": false,
+ "meta": {
+  "name": "reverseString",
+  "params": [
+   {
+    "name": "s",
+    "type": "character[]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[\"h\",\"e\",\"l\",\"l\",\"o\"]",
+  "[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]"
+ ],
+ "exampleOutputs": [
+  "[\"o\",\"l\",\"l\",\"e\",\"h\"]",
+  "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]"
+ ],
+ "anyOrder": false
+}

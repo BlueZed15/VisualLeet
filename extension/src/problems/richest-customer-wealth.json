@@ -1,0 +1,25 @@
+{
+ "slug": "richest-customer-wealth",
+ "frontendId": "1672",
+ "title": "Richest Customer Wealth",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "accounts",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "accounts = {accounts}",
+ "visible": [
+  "accounts"
+ ],
+ "call": "result = Solution().maximumWealth(accounts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

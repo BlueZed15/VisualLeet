@@ -1,0 +1,35 @@
+{
+ "slug": "shortest-path-with-alternating-colors",
+ "frontendId": "1129",
+ "title": "Shortest Path with Alternating Colors",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "redEdges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "blueEdges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nredEdges = {redEdges}\nblueEdges = {blueEdges}",
+ "visible": [
+  "n",
+  "redEdges",
+  "blueEdges"
+ ],
+ "call": "result = Solution().shortestAlternatingPaths(n, redEdges, blueEdges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

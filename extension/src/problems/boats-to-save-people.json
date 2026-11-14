@@ -1,0 +1,30 @@
+{
+ "slug": "boats-to-save-people",
+ "frontendId": "881",
+ "title": "Boats to Save People",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "people",
+   "type": "integer[]"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "people = {people}\nlimit = {limit}",
+ "visible": [
+  "people",
+  "limit"
+ ],
+ "call": "result = Solution().numRescueBoats(people, limit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

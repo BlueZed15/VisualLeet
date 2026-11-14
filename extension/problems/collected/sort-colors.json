@@ -1,0 +1,32 @@
+{
+ "slug": "sort-colors",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "75",
+ "title": "Sort Colors",
+ "premium": false,
+ "meta": {
+  "name": "sortColors",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[2,0,2,1,1,0]",
+  "[2,0,1]"
+ ],
+ "exampleOutputs": [
+  "[0,0,1,1,2,2]",
+  "[0,1,2]"
+ ],
+ "anyOrder": false
+}

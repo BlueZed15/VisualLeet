@@ -1,0 +1,25 @@
+{
+ "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+ "frontendId": "2035",
+ "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().minimumDifference(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

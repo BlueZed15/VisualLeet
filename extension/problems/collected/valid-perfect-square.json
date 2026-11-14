@@ -1,0 +1,28 @@
+{
+ "slug": "valid-perfect-square",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "367",
+ "title": "Valid Perfect Square",
+ "premium": false,
+ "meta": {
+  "name": "isPerfectSquare",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "16",
+  "14"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

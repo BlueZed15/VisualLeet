@@ -1,0 +1,35 @@
+{
+ "slug": "bus-routes",
+ "frontendId": "815",
+ "title": "Bus Routes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "routes",
+   "type": "integer[][]"
+  },
+  {
+   "name": "source",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "routes = {routes}\nsource = {source}\ntarget = {target}",
+ "visible": [
+  "routes",
+  "source",
+  "target"
+ ],
+ "call": "result = Solution().numBusesToDestination(routes, source, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

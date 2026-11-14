@@ -1,0 +1,30 @@
+{
+ "slug": "course-schedule-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "630",
+ "title": "Course Schedule III",
+ "premium": false,
+ "meta": {
+  "name": "scheduleCourse",
+  "params": [
+   {
+    "name": "courses",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
+  "[[1,2]]",
+  "[[3,2],[4,3]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

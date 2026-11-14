@@ -1,0 +1,28 @@
+{
+ "slug": "all-possible-full-binary-trees",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "894",
+ "title": "All Possible Full Binary Trees",
+ "premium": false,
+ "meta": {
+  "name": "allPossibleFBT",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<TreeNode>"
+  }
+ },
+ "exampleInputs": [
+  "7",
+  "3"
+ ],
+ "exampleOutputs": [
+  "[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]",
+  "[[0,0,0]]"
+ ],
+ "anyOrder": true
+}

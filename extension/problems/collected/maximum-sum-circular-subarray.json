@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-sum-circular-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "918",
+ "title": "Maximum Sum Circular Subarray",
+ "premium": false,
+ "meta": {
+  "name": "maxSubarraySumCircular",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,-2,3,-2]",
+  "[5,-3,5]",
+  "[-3,-2,-3]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "10",
+  "-2"
+ ],
+ "anyOrder": false
+}

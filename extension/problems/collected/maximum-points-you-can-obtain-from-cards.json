@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-points-you-can-obtain-from-cards",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1423",
+ "title": "Maximum Points You Can Obtain from Cards",
+ "premium": false,
+ "meta": {
+  "name": "maxScore",
+  "params": [
+   {
+    "name": "cardPoints",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6,1]\n3",
+  "[2,2,2]\n2",
+  "[9,7,7,9,7,7,9]\n7"
+ ],
+ "exampleOutputs": [
+  "12",
+  "4",
+  "55"
+ ],
+ "anyOrder": false
+}

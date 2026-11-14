@@ -1,0 +1,27 @@
+{
+ "slug": "unique-binary-search-trees-ii",
+ "frontendId": "95",
+ "title": "Unique Binary Search Trees II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().generateTrees(n)\nprint(leet_str([tree_values(x) for x in result]))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

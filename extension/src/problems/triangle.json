@@ -1,0 +1,25 @@
+{
+ "slug": "triangle",
+ "frontendId": "120",
+ "title": "Triangle",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "triangle",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "triangle = {triangle}",
+ "visible": [
+  "triangle"
+ ],
+ "call": "result = Solution().minimumTotal(triangle)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

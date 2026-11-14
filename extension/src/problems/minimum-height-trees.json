@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-height-trees",
+ "frontendId": "310",
+ "title": "Minimum Height Trees",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().findMinHeightTrees(n, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "flatten-nested-list-iterator",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "341",
+ "title": "Flatten Nested List Iterator",
+ "premium": false,
+ "meta": {
+  "name": "",
+  "params": [
+   {
+    "name": "nestedList",
+    "type": "list<NestedInteger>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[[1,1],2,[1,1]]",
+  "[1,[4,[6]]]"
+ ],
+ "exampleOutputs": [
+  "[1,1,2,1,1]",
+  "[1,4,6]"
+ ],
+ "anyOrder": false
+}

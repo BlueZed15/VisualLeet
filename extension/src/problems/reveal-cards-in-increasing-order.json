@@ -1,0 +1,25 @@
+{
+ "slug": "reveal-cards-in-increasing-order",
+ "frontendId": "950",
+ "title": "Reveal Cards In Increasing Order",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "deck",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "deck = {deck}",
+ "visible": [
+  "deck"
+ ],
+ "call": "result = Solution().deckRevealedIncreasing(deck)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "binary-tree-paths",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "257",
+ "title": "Binary Tree Paths",
+ "premium": false,
+ "meta": {
+  "name": "binaryTreePaths",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<string>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,null,5]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[\"1->2->5\",\"1->3\"]",
+  "[\"1\"]"
+ ],
+ "anyOrder": true
+}

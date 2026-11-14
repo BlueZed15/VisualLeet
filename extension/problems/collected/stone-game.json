@@ -1,0 +1,28 @@
+{
+ "slug": "stone-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "877",
+ "title": "Stone Game",
+ "premium": false,
+ "meta": {
+  "name": "stoneGame",
+  "params": [
+   {
+    "name": "piles",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,4,5]",
+  "[3,7,2,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

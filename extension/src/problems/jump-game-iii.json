@@ -1,0 +1,30 @@
+{
+ "slug": "jump-game-iii",
+ "frontendId": "1306",
+ "title": "Jump Game III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nstart = {start}",
+ "visible": [
+  "arr",
+  "start"
+ ],
+ "call": "result = Solution().canReach(arr, start)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

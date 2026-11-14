@@ -1,0 +1,30 @@
+{
+ "slug": "robot-bounded-in-circle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1041",
+ "title": "Robot Bounded In Circle",
+ "premium": false,
+ "meta": {
+  "name": "isRobotBounded",
+  "params": [
+   {
+    "name": "instructions",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"GGLLGG\"",
+  "\"GG\"",
+  "\"GL\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

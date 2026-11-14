@@ -1,0 +1,38 @@
+{
+ "slug": "furthest-building-you-can-reach",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1642",
+ "title": "Furthest Building You Can Reach",
+ "premium": false,
+ "meta": {
+  "name": "furthestBuilding",
+  "params": [
+   {
+    "name": "heights",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "bricks"
+   },
+   {
+    "type": "integer",
+    "name": "ladders"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,7,6,9,14,12]\n5\n1",
+  "[4,12,2,7,3,18,20,3,19]\n10\n2",
+  "[14,3,19,3]\n17\n0"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-iv",
+ "frontendId": "188",
+ "title": "Best Time to Buy and Sell Stock IV",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "prices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nprices = {prices}",
+ "visible": [
+  "k",
+  "prices"
+ ],
+ "call": "result = Solution().maxProfit(k, prices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

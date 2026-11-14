@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-dice-rolls-with-target-sum",
+ "frontendId": "1155",
+ "title": "Number of Dice Rolls With Target Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}\ntarget = {target}",
+ "visible": [
+  "n",
+  "k",
+  "target"
+ ],
+ "call": "result = Solution().numRollsToTarget(n, k, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

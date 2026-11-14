@@ -1,0 +1,33 @@
+{
+ "slug": "next-permutation",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "31",
+ "title": "Next Permutation",
+ "premium": false,
+ "meta": {
+  "name": "nextPermutation",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[3,2,1]",
+  "[1,1,5]"
+ ],
+ "exampleOutputs": [
+  "[1,3,2]",
+  "[1,2,3]",
+  "[1,5,1]"
+ ],
+ "anyOrder": false
+}

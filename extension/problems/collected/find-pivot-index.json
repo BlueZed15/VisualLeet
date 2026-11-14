@@ -1,0 +1,30 @@
+{
+ "slug": "find-pivot-index",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "724",
+ "title": "Find Pivot Index",
+ "premium": false,
+ "meta": {
+  "name": "pivotIndex",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,7,3,6,5,6]",
+  "[1,2,3]",
+  "[2,1,-1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1",
+  "0"
+ ],
+ "anyOrder": false
+}

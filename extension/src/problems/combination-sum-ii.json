@@ -25,5 +25,6 @@
  ],
  "call": "result = Solution().combinationSum2(candidates, target)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true
+ "verified": true,
+ "checked": "solution"
 }

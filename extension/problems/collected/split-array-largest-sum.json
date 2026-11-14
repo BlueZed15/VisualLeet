@@ -1,0 +1,32 @@
+{
+ "slug": "split-array-largest-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "410",
+ "title": "Split Array Largest Sum",
+ "premium": false,
+ "meta": {
+  "name": "splitArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[7,2,5,10,8]\n2",
+  "[1,2,3,4,5]\n2"
+ ],
+ "exampleOutputs": [
+  "18",
+  "9"
+ ],
+ "anyOrder": false
+}

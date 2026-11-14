@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-falling-path-sum",
+ "frontendId": "931",
+ "title": "Minimum Falling Path Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "result = Solution().minFallingPathSum(matrix)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

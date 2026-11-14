@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-difference-between-node-and-ancestor",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1026",
+ "title": "Maximum Difference Between Node and Ancestor",
+ "premium": false,
+ "meta": {
+  "name": "maxAncestorDiff",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[8,3,10,1,6,null,14,null,null,4,7,13]",
+  "[1,null,2,null,0,3]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "3"
+ ],
+ "anyOrder": false
+}

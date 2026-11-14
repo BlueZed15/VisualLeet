@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-smallest-divisor-given-a-threshold",
+ "frontendId": "1283",
+ "title": "Find the Smallest Divisor Given a Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nthreshold = {threshold}",
+ "visible": [
+  "nums",
+  "threshold"
+ ],
+ "call": "result = Solution().smallestDivisor(nums, threshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

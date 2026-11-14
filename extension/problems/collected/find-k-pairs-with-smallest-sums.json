@@ -1,0 +1,37 @@
+{
+ "slug": "find-k-pairs-with-smallest-sums",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "373",
+ "title": "Find K Pairs with Smallest Sums",
+ "premium": false,
+ "meta": {
+  "name": "kSmallestPairs",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums2",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[1,7,11]\n[2,4,6]\n3",
+  "[1,1,2]\n[1,2,3]\n2"
+ ],
+ "exampleOutputs": [
+  "[[1,2],[1,4],[1,6]]",
+  "[[1,1],[1,1]]"
+ ],
+ "anyOrder": false
+}

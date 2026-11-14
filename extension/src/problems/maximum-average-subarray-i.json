@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-average-subarray-i",
+ "frontendId": "643",
+ "title": "Maximum Average Subarray I",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}",
+ "visible": [
+  "nums",
+  "k"
+ ],
+ "call": "result = Solution().findMaxAverage(nums, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

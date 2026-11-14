@@ -1,0 +1,32 @@
+{
+ "slug": "possible-bipartition",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "886",
+ "title": "Possible Bipartition",
+ "premium": false,
+ "meta": {
+  "name": "possibleBipartition",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "dislikes",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[1,2],[1,3],[2,4]]",
+  "3\n[[1,2],[1,3],[2,3]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "super-egg-drop",
+ "frontendId": "887",
+ "title": "Super Egg Drop",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nn = {n}",
+ "visible": [
+  "k",
+  "n"
+ ],
+ "call": "result = Solution().superEggDrop(k, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

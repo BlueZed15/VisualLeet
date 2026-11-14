@@ -1,0 +1,25 @@
+{
+ "slug": "how-many-numbers-are-smaller-than-the-current-number",
+ "frontendId": "1365",
+ "title": "How Many Numbers Are Smaller Than the Current Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().smallerNumbersThanCurrent(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

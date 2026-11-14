@@ -1,0 +1,35 @@
+{
+ "slug": "reshape-the-matrix",
+ "frontendId": "566",
+ "title": "Reshape the Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "r",
+   "type": "integer"
+  },
+  {
+   "name": "c",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\nr = {r}\nc = {c}",
+ "visible": [
+  "mat",
+  "r",
+  "c"
+ ],
+ "call": "result = Solution().matrixReshape(mat, r, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

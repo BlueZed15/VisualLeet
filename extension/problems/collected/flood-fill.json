@@ -1,0 +1,40 @@
+{
+ "slug": "flood-fill",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "733",
+ "title": "Flood Fill",
+ "premium": false,
+ "meta": {
+  "name": "floodFill",
+  "params": [
+   {
+    "name": "image",
+    "type": "integer[][]"
+   },
+   {
+    "name": "sr",
+    "type": "integer"
+   },
+   {
+    "name": "sc",
+    "type": "integer"
+   },
+   {
+    "name": "color",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,1],[1,1,0],[1,0,1]]\n1\n1\n2",
+  "[[0,0,0],[0,0,0]]\n0\n0\n0"
+ ],
+ "exampleOutputs": [
+  "[[2,2,2],[2,2,0],[2,0,1]]",
+  "[[0,0,0],[0,0,0]]"
+ ],
+ "anyOrder": false
+}

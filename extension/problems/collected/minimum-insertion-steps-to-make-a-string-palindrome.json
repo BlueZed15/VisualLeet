@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1312",
+ "title": "Minimum Insertion Steps to Make a String Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "minInsertions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"zzazz\"",
+  "\"mbadm\"",
+  "\"leetcode\""
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "excel-sheet-column-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "171",
+ "title": "Excel Sheet Column Number",
+ "premium": false,
+ "meta": {
+  "name": "titleToNumber",
+  "params": [
+   {
+    "name": "columnTitle",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"A\"",
+  "\"AB\"",
+  "\"ZY\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "28",
+  "701"
+ ],
+ "anyOrder": false
+}

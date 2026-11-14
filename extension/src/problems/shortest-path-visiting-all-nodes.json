@@ -1,0 +1,25 @@
+{
+ "slug": "shortest-path-visiting-all-nodes",
+ "frontendId": "847",
+ "title": "Shortest Path Visiting All Nodes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "graph",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "graph = {graph}",
+ "visible": [
+  "graph"
+ ],
+ "call": "result = Solution().shortestPathLength(graph)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

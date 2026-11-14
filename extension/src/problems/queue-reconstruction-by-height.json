@@ -1,0 +1,25 @@
+{
+ "slug": "queue-reconstruction-by-height",
+ "frontendId": "406",
+ "title": "Queue Reconstruction by Height",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "people",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "people = {people}",
+ "visible": [
+  "people"
+ ],
+ "call": "result = Solution().reconstructQueue(people)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

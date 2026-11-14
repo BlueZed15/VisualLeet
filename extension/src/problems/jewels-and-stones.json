@@ -1,0 +1,30 @@
+{
+ "slug": "jewels-and-stones",
+ "frontendId": "771",
+ "title": "Jewels and Stones",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "jewels",
+   "type": "string"
+  },
+  {
+   "name": "stones",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "jewels = {jewels}\nstones = {stones}",
+ "visible": [
+  "jewels",
+  "stones"
+ ],
+ "call": "result = Solution().numJewelsInStones(jewels, stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

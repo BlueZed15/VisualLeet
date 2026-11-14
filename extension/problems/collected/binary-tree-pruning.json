@@ -1,0 +1,31 @@
+{
+ "slug": "binary-tree-pruning",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "814",
+ "title": "Binary Tree Pruning",
+ "premium": false,
+ "meta": {
+  "name": "pruneTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[1,null,0,0,1]",
+  "[1,0,1,0,0,0,1]",
+  "[1,1,0,1,1,0,1,0]"
+ ],
+ "exampleOutputs": [
+  "[1,null,0,null,1]",
+  "[1,null,1,null,1]",
+  "[1,1,0,1,1,null,1]"
+ ],
+ "anyOrder": false
+}

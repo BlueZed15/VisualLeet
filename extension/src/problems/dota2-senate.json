@@ -1,0 +1,25 @@
+{
+ "slug": "dota2-senate",
+ "frontendId": "649",
+ "title": "Dota2 Senate",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "senate",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "senate = {senate}",
+ "visible": [
+  "senate"
+ ],
+ "call": "result = Solution().predictPartyVictory(senate)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

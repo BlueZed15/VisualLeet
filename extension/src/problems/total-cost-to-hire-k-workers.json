@@ -1,0 +1,35 @@
+{
+ "slug": "total-cost-to-hire-k-workers",
+ "frontendId": "2462",
+ "title": "Total Cost to Hire K Workers",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "costs",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "candidates",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "costs = {costs}\nk = {k}\ncandidates = {candidates}",
+ "visible": [
+  "costs",
+  "k",
+  "candidates"
+ ],
+ "call": "result = Solution().totalCost(costs, k, candidates)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "kth-smallest-element-in-a-sorted-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "378",
+ "title": "Kth Smallest Element in a Sorted Matrix",
+ "premium": false,
+ "meta": {
+  "name": "kthSmallest",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,5,9],[10,11,13],[12,13,15]]\n8",
+  "[[-5]]\n1"
+ ],
+ "exampleOutputs": [
+  "13",
+  "-5"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-closed-islands",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1254",
+ "title": "Number of Closed Islands",
+ "premium": false,
+ "meta": {
+  "name": "closedIsland",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]",
+  "[[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]",
+  "[[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

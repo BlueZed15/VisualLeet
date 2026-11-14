@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-add-to-make-parentheses-valid",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "921",
+ "title": "Minimum Add to Make Parentheses Valid",
+ "premium": false,
+ "meta": {
+  "name": "minAddToMakeValid",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"())\"",
+  "\"(((\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

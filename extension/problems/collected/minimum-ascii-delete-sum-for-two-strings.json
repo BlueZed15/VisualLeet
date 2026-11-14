@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-ascii-delete-sum-for-two-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "712",
+ "title": "Minimum ASCII Delete Sum for Two Strings",
+ "premium": false,
+ "meta": {
+  "name": "minimumDeleteSum",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"sea\"\n\"eat\"",
+  "\"delete\"\n\"leet\""
+ ],
+ "exampleOutputs": [
+  "231",
+  "403"
+ ],
+ "anyOrder": false
+}

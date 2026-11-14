@@ -1,0 +1,28 @@
+{
+ "slug": "toeplitz-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "766",
+ "title": "Toeplitz Matrix",
+ "premium": false,
+ "meta": {
+  "name": "isToeplitzMatrix",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
+  "[[1,2],[2,2]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}
