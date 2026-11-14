@@ -1162,6 +1162,9 @@ class PGLogger(bdb.Bdb):
         for (k, v) in cur_globals_dict.items():
           if self.should_hide_var(k):
             continue
+          # VisualLeet tidy mode: names imported from typing (List, Optional...) are noise
+          if getattr(self, 'tidy', False) and pg_encoder._tidy_label(v, typing_only=True):
+            continue
 
           encoded_val = self.encoder.encode(v, self.get_parent_of_function)
           encoded_globals[k] = encoded_val
@@ -1665,6 +1668,7 @@ def exec_script_str(script_str, raw_input_lst_json, options_json, finalizer_func
 
   logger = PGLogger(options['cumulative_mode'], options['heap_primitives'], options['show_only_outputs'], finalizer_func,
                     crazy_mode=py_crazy_mode)
+  logger.tidy = bool(options.get('tidy'))  # VisualLeet: see pg_encoder._tidy_label
 
   # TODO: refactor these NOT to be globals
   global input_string_queue

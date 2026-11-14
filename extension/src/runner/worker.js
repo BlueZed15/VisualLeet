@@ -32,7 +32,7 @@ import json, sys
 sys.path.insert(0, "/home/pyodide/visualleet")
 import pg_logger
 
-_OPTIONS = json.dumps({"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False})
+_OPTIONS = json.dumps({"cumulative_mode": False, "heap_primitives": False, "show_only_outputs": False, "tidy": True})
 
 def visualleet_run(source, inputs_json):
     out = {}
