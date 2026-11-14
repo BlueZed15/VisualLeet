@@ -42,6 +42,6 @@
  ],
  "call": "obj = WordDictionary(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

@@ -23,5 +23,5 @@
  "call": "result = Solution().pruneTree(root)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

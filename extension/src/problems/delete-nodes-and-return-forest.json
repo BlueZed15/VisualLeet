@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().delNodes(root, to_delete)\nprint(leet_str([tree_values(t) for t in result]))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

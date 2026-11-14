@@ -28,5 +28,5 @@
  "call": "result = Solution().splitListToParts(head, k)\nprint(leet_str([list_values(x) for x in result]))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

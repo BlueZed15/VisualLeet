@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().uniquePaths(m, n)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

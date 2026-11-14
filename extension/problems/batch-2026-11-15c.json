@@ -200,7 +200,12 @@
   "most-common-word",
   "maximum-score-words-formed-by-letters",
   "longest-word-in-dictionary-through-deleting",
-  "calculate-money-in-leetcode-bank"
+  "calculate-money-in-leetcode-bank",
+  "peeking-iterator",
+  "encode-and-decode-tinyurl",
+  "employee-importance",
+  "merge-in-between-linked-lists",
+  "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree"
  ],
  "sources": {
   "remove-boxes": "most-liked",
@@ -402,6 +407,11 @@
   "most-common-word": "most-liked",
   "maximum-score-words-formed-by-letters": "most-liked",
   "longest-word-in-dictionary-through-deleting": "most-liked",
-  "calculate-money-in-leetcode-bank": "most-liked"
+  "calculate-money-in-leetcode-bank": "most-liked",
+  "peeking-iterator": "most-liked",
+  "encode-and-decode-tinyurl": "most-liked",
+  "employee-importance": "most-liked",
+  "merge-in-between-linked-lists": "most-liked",
+  "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree": "most-liked"
  }
 }

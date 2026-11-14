@@ -20,6 +20,6 @@
  ],
  "call": "Solution().solve(board)\nprint(leet_str(board))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

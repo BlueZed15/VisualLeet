@@ -4,7 +4,7 @@
     "headless": true,
     "platform": "Windows_NT 10.0.26300",
     "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
-    "date": "2026-11-14T16:17:08.371Z",
+    "date": "2026-11-14T16:19:59.788Z",
     "python": "3.14.2",
     "pyodide": "314.0.8"
   },
@@ -15,8 +15,8 @@
       "pass": true,
       "detail": {
         "python": "3.14.2",
-        "ms": 2374,
-        "wasmCompiledOnceMs": 23.400000002235174
+        "ms": 2495,
+        "wasmCompiledOnceMs": 17.399999998509884
       }
     },
     {
@@ -251,8 +251,8 @@
       "name": "Native loop killed by the 5 s watchdog; spare takes over at once",
       "pass": true,
       "detail": {
-        "killedAfterMs": 5019,
-        "readyAgainMs": 2
+        "killedAfterMs": 5014,
+        "readyAgainMs": 1
       }
     },
     {
@@ -261,8 +261,8 @@
       "pass": true,
       "detail": {
         "res": "stopped",
-        "stoppedMs": 5.5,
-        "readyMs": 0.29999999701976776
+        "stoppedMs": 7.900000002235174,
+        "readyMs": 0.09999999776482582
       }
     },
     {
@@ -331,7 +331,7 @@
       "pass": true,
       "detail": {
         "burstRunsOnOneInterpreter": 12,
-        "swappedAfterMs": 1348,
+        "swappedAfterMs": 1132,
         "nextRunInterpreterRun": 1,
         "spareInitErrors": 0
       }
@@ -376,7 +376,7 @@
       "pass": true,
       "detail": {
         "title": "1. Two Sum",
-        "badge": "✓ checked setup"
+        "badge": "setup not checked yet"
       }
     },
     {
@@ -599,7 +599,7 @@
       "name": "Packaged examples run and render with the network off",
       "pass": true,
       "detail": {
-        "initMs": 2749
+        "initMs": 2582
       }
     },
     {
@@ -613,82 +613,82 @@
     }
   ],
   "timings": {
-    "coldStartMs": 2374,
-    "watchdogKillMs": 5019,
-    "readyAfterTimeoutMs": 2,
-    "stopMs": 6,
+    "coldStartMs": 2495,
+    "watchdogKillMs": 5014,
+    "readyAfterTimeoutMs": 1,
+    "stopMs": 8,
     "readyAfterStopMs": 0,
     "BFS": {
       "execMs": {
-        "median": 16.8,
-        "worst": 18.8
+        "median": 12,
+        "worst": 13.9
       },
       "transferMs": {
-        "median": 6.6,
-        "worst": 12.6
+        "median": 5.4,
+        "worst": 6.8
       },
       "parseMs": {
-        "median": 0.3,
-        "worst": 0.4
+        "median": 0.2,
+        "worst": 0.3
       },
       "renderMs": {
-        "median": 23.9,
-        "worst": 29.9
+        "median": 14.8,
+        "worst": 20.2
       },
       "firstViewMs": {
-        "median": 49.8,
-        "worst": 57.1
+        "median": 32.1,
+        "worst": 41.2
       }
     },
     "Sliding window": {
       "execMs": {
-        "median": 10.6,
-        "worst": 12.7
+        "median": 6.5,
+        "worst": 8.4
       },
       "transferMs": {
-        "median": 8.4,
-        "worst": 9
+        "median": 4.7,
+        "worst": 5.6
       },
       "parseMs": {
-        "median": 0.3,
-        "worst": 0.4
+        "median": 0.1,
+        "worst": 0.2
       },
       "renderMs": {
-        "median": 24.6,
-        "worst": 26.1
+        "median": 12.6,
+        "worst": 15.9
       },
       "firstViewMs": {
-        "median": 43.3,
-        "worst": 47.2
+        "median": 24.7,
+        "worst": 29.1
       }
     },
     "Two Sum": {
       "execMs": {
-        "median": 5.3,
-        "worst": 6.2
+        "median": 3.3,
+        "worst": 3.9
       },
       "transferMs": {
-        "median": 4.6,
-        "worst": 11.8
+        "median": 2.9,
+        "worst": 8.2
       },
       "parseMs": {
-        "median": 0.1,
-        "worst": 0.3
+        "median": 0,
+        "worst": 0.2
       },
       "renderMs": {
-        "median": 18.7,
-        "worst": 25.9
+        "median": 11,
+        "worst": 15.2
       },
       "firstViewMs": {
-        "median": 34.3,
-        "worst": 35.5
+        "median": 18.2,
+        "worst": 22.9
       }
     },
     "stepNavigation": {
-      "medianMs": 14.2,
-      "worstMs": 21.7
+      "medianMs": 8.4,
+      "worstMs": 11.4
     },
-    "reloadStartMs": 1616
+    "reloadStartMs": 2046
   },
   "passed": 58,
   "total": 58

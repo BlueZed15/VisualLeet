@@ -23,5 +23,5 @@
  "call": "result = Solution().deleteMiddle(head)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

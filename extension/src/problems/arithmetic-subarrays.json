@@ -31,5 +31,5 @@
  "call": "result = Solution().checkArithmeticSubarrays(nums, l, r)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

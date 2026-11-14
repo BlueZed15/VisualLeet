@@ -29,6 +29,6 @@
  ],
  "call": "result = Solution().hasCycle(head)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

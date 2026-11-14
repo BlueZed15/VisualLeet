@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().twoSum(nums, target)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

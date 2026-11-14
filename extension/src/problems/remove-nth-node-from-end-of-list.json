@@ -27,6 +27,6 @@
  ],
  "call": "result = Solution().removeNthFromEnd(head, n)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

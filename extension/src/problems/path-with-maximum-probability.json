@@ -41,5 +41,5 @@
  "call": "result = Solution().maxProbability(n, edges, succProb, start_node, end_node)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

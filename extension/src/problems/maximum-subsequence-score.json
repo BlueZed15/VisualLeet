@@ -31,5 +31,5 @@
  "call": "result = Solution().maxScore(nums1, nums2, k)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

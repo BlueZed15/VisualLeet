@@ -1,0 +1,34 @@
+{
+ "slug": "peeking-iterator",
+ "frontendId": "284",
+ "title": "Peeking Iterator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args",
+   "hint": "the first is [nums] for the Iterator"
+  }
+ ],
+ "helpers": [
+  "Iterator",
+  "run_ops"
+ ],
+ "setup": "ops = {operations}\nargs = {arguments}",
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = PeekingIterator(Iterator(args[0][0]))\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

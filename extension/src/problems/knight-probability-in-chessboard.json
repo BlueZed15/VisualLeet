@@ -36,5 +36,5 @@
  "call": "result = Solution().knightProbability(n, k, row, column)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

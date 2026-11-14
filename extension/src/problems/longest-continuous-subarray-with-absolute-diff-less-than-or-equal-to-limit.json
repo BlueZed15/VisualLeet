@@ -26,5 +26,5 @@
  "call": "result = Solution().longestSubarray(nums, limit)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

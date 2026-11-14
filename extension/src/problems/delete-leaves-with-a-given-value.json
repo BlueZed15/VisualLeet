@@ -28,5 +28,5 @@
  "call": "result = Solution().removeLeafNodes(root, target)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

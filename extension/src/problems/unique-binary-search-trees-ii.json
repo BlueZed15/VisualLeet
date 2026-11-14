@@ -23,5 +23,5 @@
  "call": "result = Solution().generateTrees(n)\nprint(leet_str([tree_values(x) for x in result]))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

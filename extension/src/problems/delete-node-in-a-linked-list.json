@@ -28,6 +28,6 @@
  ],
  "call": "Solution().deleteNode(node)\nprint(leet_str(list_values(head)))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

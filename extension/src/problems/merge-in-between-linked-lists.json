@@ -1,0 +1,40 @@
+{
+ "slug": "merge-in-between-linked-lists",
+ "frontendId": "1669",
+ "title": "Merge In Between Linked Lists",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "list1",
+   "type": "ListNode"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  },
+  {
+   "name": "list2",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "list1 = {list1}\na = {a}\nb = {b}\nlist2 = {list2}",
+ "visible": [
+  "list1",
+  "a",
+  "b",
+  "list2"
+ ],
+ "call": "result = Solution().mergeInBetween(list1, a, b, list2)\nprint(leet_str(list_values(result)))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

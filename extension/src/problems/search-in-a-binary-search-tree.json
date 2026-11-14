@@ -28,5 +28,5 @@
  "call": "result = Solution().searchBST(root, val)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

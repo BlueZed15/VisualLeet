@@ -31,5 +31,5 @@
  "call": "result = Solution().closestMeetingNode(edges, node1, node2)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

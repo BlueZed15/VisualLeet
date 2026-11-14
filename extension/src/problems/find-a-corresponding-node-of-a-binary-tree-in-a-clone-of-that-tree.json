@@ -1,0 +1,32 @@
+{
+ "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+ "frontendId": "1379",
+ "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tree",
+   "type": "TreeNode"
+  },
+  {
+   "name": "target",
+   "type": "integer",
+   "hint": "value of a node in the tree"
+  }
+ ],
+ "helpers": [],
+ "setup": "original = {tree}\ncloned = build_tree(tree_values(original))\ntarget = find_node(original, {target})",
+ "visible": [
+  "original",
+  "cloned",
+  "target"
+ ],
+ "call": "result = Solution().getTargetCopy(original, cloned, target)\nprint(leet_str(result.val if result else None))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

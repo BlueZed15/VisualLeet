@@ -20,6 +20,6 @@
  ],
  "call": "result = Solution().canAttendMeetings(intervals)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

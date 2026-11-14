@@ -36,5 +36,5 @@
  "call": "result = Solution().validPath(n, edges, source, destination)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

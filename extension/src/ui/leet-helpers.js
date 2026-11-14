@@ -383,6 +383,26 @@ def guess(num: int) -> int:
 def isBadVersion(version: int) -> bool:
     return version >= _vl_bad`,
 
+  // Peeking Iterator: the Iterator LeetCode gives the constructor
+  Iterator: `class Iterator:
+    def __init__(self, nums):
+        self._nums = list(nums)
+        self._i = 0
+
+    def hasNext(self):
+        return self._i < len(self._nums)
+
+    def next(self):
+        self._i += 1
+        return self._nums[self._i - 1]`,
+
+  // Employee Importance: rows of [id, importance, [subordinate ids]]
+  Employee: `class Employee:
+    def __init__(self, id: int, importance: int, subordinates):
+        self.id = id
+        self.importance = importance
+        self.subordinates = subordinates`,
+
   // Design problems: call each operation on the user's object, untraced
   // itself; the user's methods are traced as usual.
   run_ops: `def run_ops(obj, ops, args):
@@ -411,6 +431,8 @@ export const HELPER_DEPS = {
   MountainArray: [],
   Guess: [],
   BadVersion: [],
+  Iterator: [],
+  Employee: [],
 };
 
 /** Setup source with the imports and the given helpers (dependencies first, each once). */

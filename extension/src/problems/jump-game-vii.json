@@ -31,5 +31,5 @@
  "call": "result = Solution().canReach(s, minJump, maxJump)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().validTree(n, edges)\nprint(leet_str(result))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

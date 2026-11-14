@@ -2,7 +2,7 @@
  "date": "2026-11-14",
  "python": "Python 3.15.2",
  "counts": {
-  "verified": 171,
+  "verified": 176,
   "inputs-ok": 850
  },
  "problems": {
@@ -5111,6 +5111,31 @@
   },
   "calculate-money-in-leetcode-bank": {
    "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "peeking-iterator": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "encode-and-decode-tinyurl": {
+   "status": "verified",
+   "examples": 1,
+   "problems": []
+  },
+  "employee-importance": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "merge-in-between-linked-lists": {
+   "status": "verified",
+   "examples": 2,
+   "problems": []
+  },
+  "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree": {
+   "status": "verified",
    "examples": 3,
    "problems": []
   }

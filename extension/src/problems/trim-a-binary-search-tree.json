@@ -33,5 +33,5 @@
  "call": "result = Solution().trimBST(root, low, high)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

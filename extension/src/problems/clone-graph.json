@@ -24,6 +24,6 @@
  ],
  "call": "result = Solution().cloneGraph(node)\nprint(leet_str(graph_values(result)))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

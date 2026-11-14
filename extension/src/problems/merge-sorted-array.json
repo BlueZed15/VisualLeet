@@ -36,5 +36,5 @@
  "call": "Solution().merge(nums1, m, nums2, n)\nprint(leet_str(nums1))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

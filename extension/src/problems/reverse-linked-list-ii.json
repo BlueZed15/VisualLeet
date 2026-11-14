@@ -33,5 +33,5 @@
  "call": "result = Solution().reverseBetween(head, left, right)\nprint(leet_str(list_values(result)))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

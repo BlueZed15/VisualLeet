@@ -31,5 +31,5 @@
  "call": "result = Solution().smallestEquivalentString(s1, s2, baseStr)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

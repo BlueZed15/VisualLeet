@@ -35,6 +35,6 @@
  ],
  "call": "result = Solution().lowestCommonAncestor(root, p, q)\nprint(leet_str(result.val if result else None))",
  "source": "hand-written",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

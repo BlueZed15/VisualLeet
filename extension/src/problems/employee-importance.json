@@ -1,0 +1,33 @@
+{
+ "slug": "employee-importance",
+ "frontendId": "690",
+ "title": "Employee Importance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "employees",
+   "type": "any",
+   "hint": "[id, importance, [subordinate ids]] per employee"
+  },
+  {
+   "name": "id",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "Employee"
+ ],
+ "setup": "employees = [Employee(*row) for row in {employees}]\nid_ = {id}",
+ "visible": [
+  "employees",
+  "id_"
+ ],
+ "call": "result = Solution().getImportance(employees, id_)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

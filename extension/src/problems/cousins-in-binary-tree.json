@@ -31,5 +31,5 @@
  "call": "result = Solution().isCousins(root, x, y)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

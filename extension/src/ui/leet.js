@@ -78,7 +78,7 @@ export function parseType(t) {
 }
 
 const INT_TYPES = new Set(["integer", "int", "long"]);
-const BASE_TYPES = new Set(["integer", "int", "long", "double", "float", "boolean", "string", "String", "character", "char", "ListNode", "TreeNode", "NestedInteger"]);
+const BASE_TYPES = new Set(["integer", "int", "long", "double", "float", "boolean", "string", "String", "character", "char", "ListNode", "TreeNode", "NestedInteger", "any"]);
 
 /** Every base type in `type` is one we can build. */
 export function isSupported(type) {
@@ -107,6 +107,7 @@ export function checkValue(v, type) {
   if (n === "boolean") return typeof v === "boolean" ? null : "should be true or false";
   if (n === "string" || n === "String") return typeof v === "string" ? null : 'should be a string in double quotes, like "abc"';
   if (n === "character" || n === "char") return typeof v === "string" && [...v].length === 1 ? null : 'should be one character in double quotes, like "a"';
+  if (n === "any") return null;          // free-form value (hand-written entries, e.g. employee rows)
   if (n === "NestedInteger") {
     const ok = (x) => (x instanceof LeetNum && x.isInteger) || (Array.isArray(x) && x.every(ok));
     return ok(v) ? null : "should be a whole number or a nested list of them, like [1,[4,[6]]]";

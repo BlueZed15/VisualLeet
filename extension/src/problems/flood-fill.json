@@ -36,5 +36,5 @@
  "call": "result = Solution().floodFill(image, sr, sc, color)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

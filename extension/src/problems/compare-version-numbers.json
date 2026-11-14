@@ -26,5 +26,5 @@
  "call": "result = Solution().compareVersion(version1, version2)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
  "verified": false,
- "checked": "inputs"
+ "checked": "none"
 }

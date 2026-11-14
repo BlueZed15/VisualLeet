@@ -7,12 +7,14 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
-- **Database: 1,021 problems** (2026-11-15, after batch c). 171 solution-checked
+- **Database: 1,026 problems** (2026-11-15). 176 solution-checked: batch c's 5
+  "manual" problems are now hand-written too (Peeking Iterator, Encode and
+  Decode TinyURL, Employee Importance, Merge In Between Linked Lists, Find a
+  Corresponding Node in a Clone); new hidden helpers Iterator and Employee,
+  and a free-form box type "any". Before that: 1,021 problems, 171 solution-checked
   (+5 hand-written: Serialize/Deserialize BST, three N-ary tree problems,
   Count Nodes Equal to Average), 850 inputs-checked; `batch-2026-11-15c.json`
-  added 200. Next hand-write candidates: peeking-iterator,
-  encode-and-decode-tinyurl, employee-importance,
-  merge-in-between-linked-lists, find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.
+  added 200.
   Earlier: 816 problems. 166 are
   checked with known-good solutions (NeetCode 150 + the 16 LeetCode "manual"
   problems now hand-written: LCA, Linked List Cycle II, Intersection, First Bad

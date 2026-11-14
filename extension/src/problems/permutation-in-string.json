@@ -25,6 +25,6 @@
  ],
  "call": "result = Solution().checkInclusion(s1, s2)\nprint(leet_str(result))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

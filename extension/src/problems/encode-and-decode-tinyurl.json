@@ -1,0 +1,25 @@
+{
+ "slug": "encode-and-decode-tinyurl",
+ "frontendId": "535",
+ "title": "Encode and Decode TinyURL",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "url",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "url = {url}",
+ "visible": [
+  "url"
+ ],
+ "call": "codec = Codec()\nresult = codec.decode(codec.encode(url))\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

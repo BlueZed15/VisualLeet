@@ -27,6 +27,6 @@
  ],
  "call": "result = Solution().buildTree(preorder, inorder)\nprint(leet_str(tree_values(result)))",
  "source": "written from LeetCode's signature",
- "verified": true,
- "checked": "solution"
+ "verified": false,
+ "checked": "none"
 }

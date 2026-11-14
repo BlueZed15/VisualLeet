@@ -856,6 +856,125 @@
       ],
       "call": "result = Solution().averageOfSubtree(root)\nprint(leet_str(result))",
       "tests": "collected"
+    },
+    "peeking-iterator": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "operations",
+          "type": "string[]"
+        },
+        {
+          "name": "arguments",
+          "type": "design-args",
+          "hint": "the first is [nums] for the Iterator"
+        }
+      ],
+      "helpers": [
+        "Iterator",
+        "run_ops"
+      ],
+      "setup": "ops = {operations}\nargs = {arguments}",
+      "visible": [
+        "ops",
+        "args"
+      ],
+      "call": "obj = PeekingIterator(Iterator(args[0][0]))\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+      "tests": "collected"
+    },
+    "encode-and-decode-tinyurl": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "helpers": [],
+      "setup": "url = {url}",
+      "visible": [
+        "url"
+      ],
+      "call": "codec = Codec()\nresult = codec.decode(codec.encode(url))\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "employee-importance": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "employees",
+          "type": "any",
+          "hint": "[id, importance, [subordinate ids]] per employee"
+        },
+        {
+          "name": "id",
+          "type": "integer"
+        }
+      ],
+      "helpers": [
+        "Employee"
+      ],
+      "setup": "employees = [Employee(*row) for row in {employees}]\nid_ = {id}",
+      "visible": [
+        "employees",
+        "id_"
+      ],
+      "call": "result = Solution().getImportance(employees, id_)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "merge-in-between-linked-lists": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "list1",
+          "type": "ListNode"
+        },
+        {
+          "name": "a",
+          "type": "integer"
+        },
+        {
+          "name": "b",
+          "type": "integer"
+        },
+        {
+          "name": "list2",
+          "type": "ListNode"
+        }
+      ],
+      "helpers": [],
+      "setup": "list1 = {list1}\na = {a}\nb = {b}\nlist2 = {list2}",
+      "visible": [
+        "list1",
+        "a",
+        "b",
+        "list2"
+      ],
+      "call": "result = Solution().mergeInBetween(list1, a, b, list2)\nprint(leet_str(list_values(result)))",
+      "tests": "collected"
+    },
+    "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "tree",
+          "type": "TreeNode"
+        },
+        {
+          "name": "target",
+          "type": "integer",
+          "hint": "value of a node in the tree"
+        }
+      ],
+      "helpers": [],
+      "setup": "original = {tree}\ncloned = build_tree(tree_values(original))\ntarget = find_node(original, {target})",
+      "visible": [
+        "original",
+        "cloned",
+        "target"
+      ],
+      "call": "result = Solution().getTargetCopy(original, cloned, target)\nprint(leet_str(result.val if result else None))",
+      "tests": "collected"
     }
   }
 }
