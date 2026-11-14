@@ -148,7 +148,7 @@ workers.
 
 Cold start (open tab to ready): 2.3 s. Ready again after Stop or a timeout:
 immediate (spare interpreter). Watchdog fires at 5.02 s. Step navigation
-measured in the spike: 3.3 ms median.
+measured during the early prototype: 3.3 ms median.
 
 ### Checked by hand, and not yet checked
 
@@ -167,7 +167,6 @@ measured in the spike: 3.3 ms median.
   visualization to see its structure.
 - Design: dark v0.1 only (no light mode yet). The visualizer's own controls
   (First/Prev/Next/Last, slider, legend) are restyled, not replaced.
-  `acceptance/ui-*.png` show the earlier plain design.
 
 ## Development layout
 
@@ -182,8 +181,6 @@ measured in the spike: 3.3 ms median.
 | `src/runner/worker.js` | Python worker: loads Pyodide from in-memory assets, runs the tracer |
 | `scripts/build-extension.mjs` | Builds `dist/extension` (or `dist/extension-test` with `--test`) |
 | `scripts/acceptance.mjs` | Acceptance checks in headless Chrome -> `acceptance/` |
-| `scripts/spike-check.mjs` | Loads the extension in headless Chrome and runs the spike checks |
-| `spike/` | Spike results: `SPIKE.md`, `spike-results.json`, screenshot |
 | `src/visualizer/pytutor.ts` | Fork of `v5-unity/js/pytutor.ts` with performance fixes (below) |
 | `src/visualizer/arrow-layer.ts` | Replacement for the jsPlumb 1.3.10 calls pytutor.ts makes |
 | `src/visualizer/index.ts` | Renderer entry point: `VisualLeetRenderer.renderTrace(containerId, trace, options)` |
@@ -204,7 +201,6 @@ longer bundled.
 cd extension
 npm ci                                   # esbuild, pyodide 314.0.8, puppeteer-core (pinned)
 npm run build:extension                  # -> dist/extension (load unpacked in chrome://extensions)
-npm run spike:check                      # automated spike checks in headless Chrome -> spike/
 npm run build:renderer                   # -> dist/visualizer/renderer.{js,css} (bench pages)
 npm run build:baseline                   # -> dist/baseline: the unmodified renderer, for comparisons
 cd ..

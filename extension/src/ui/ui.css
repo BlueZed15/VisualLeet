@@ -144,12 +144,7 @@ button.tab:hover { color: var(--text-1); background: var(--bg-2); }
 .ph-steps b { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font: 700 10px var(--font-code); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ---------- player panel: header chip, code editor, video-style control bar ---------- */
-.mode-chip { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px 0 8px; margin-right: 8px; flex: none;
-  border-radius: var(--r-pill); font: 700 var(--fs-xs) var(--font-ui); letter-spacing: .06em; text-transform: uppercase; }
-.mode-chip svg { width: 13px; height: 13px; }
-.mode-chip[data-mode="edit"] { background: var(--info-soft); color: #8ec5ff; }
-.mode-chip[data-mode="watch"] { background: var(--brand-soft); color: var(--brand); }
+/* ---------- player panel: code editor, video-style control bar ---------- */
 .btn-icon-sm { width: 28px; padding: 0; }
 .btn-icon-sm svg { width: 15px; height: 15px; }
 
