@@ -1,0 +1,25 @@
+{
+ "slug": "avoid-flood-in-the-city",
+ "frontendId": "1488",
+ "title": "Avoid Flood in The City",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rains",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rains = {rains}",
+ "visible": [
+  "rains"
+ ],
+ "call": "result = Solution().avoidFlood(rains)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

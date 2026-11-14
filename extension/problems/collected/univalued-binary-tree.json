@@ -1,0 +1,28 @@
+{
+ "slug": "univalued-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "965",
+ "title": "Univalued Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "isUnivalTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,1,1,null,1]",
+  "[2,2,2,5,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

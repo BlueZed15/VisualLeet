@@ -1,0 +1,30 @@
+{
+ "slug": "corporate-flight-bookings",
+ "frontendId": "1109",
+ "title": "Corporate Flight Bookings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bookings",
+   "type": "integer[][]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "bookings = {bookings}\nn = {n}",
+ "visible": [
+  "bookings",
+  "n"
+ ],
+ "call": "result = Solution().corpFlightBookings(bookings, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

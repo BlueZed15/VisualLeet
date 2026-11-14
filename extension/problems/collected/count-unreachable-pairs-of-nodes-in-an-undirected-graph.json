@@ -1,0 +1,32 @@
+{
+ "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2316",
+ "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+ "premium": false,
+ "meta": {
+  "name": "countPairs",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,1],[0,2],[1,2]]",
+  "7\n[[0,2],[0,5],[2,4],[1,6],[5,4]]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "14"
+ ],
+ "anyOrder": false
+}

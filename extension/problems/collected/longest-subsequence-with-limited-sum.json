@@ -1,0 +1,32 @@
+{
+ "slug": "longest-subsequence-with-limited-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2389",
+ "title": "Longest Subsequence With Limited Sum",
+ "premium": false,
+ "meta": {
+  "name": "answerQueries",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[4,5,2,1]\n[3,10,21]",
+  "[2,3,4,5]\n[1]"
+ ],
+ "exampleOutputs": [
+  "[2,3,4]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

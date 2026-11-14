@@ -1,0 +1,28 @@
+{
+ "slug": "consecutive-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1446",
+ "title": "Consecutive Characters",
+ "premium": false,
+ "meta": {
+  "name": "maxPower",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"leetcode\"",
+  "\"abbcccddddeeeeedcba\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "count-ways-to-build-good-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2466",
+ "title": "Count Ways To Build Good Strings",
+ "premium": false,
+ "meta": {
+  "name": "countGoodStrings",
+  "params": [
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "high"
+   },
+   {
+    "type": "integer",
+    "name": "zero"
+   },
+   {
+    "type": "integer",
+    "name": "one"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n3\n1\n1",
+  "2\n3\n1\n2"
+ ],
+ "exampleOutputs": [
+  "8",
+  "5"
+ ],
+ "anyOrder": false
+}

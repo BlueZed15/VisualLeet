@@ -200,7 +200,12 @@
   "couples-holding-hands",
   "find-n-unique-integers-sum-up-to-zero",
   "new-21-game",
-  "maximum-ice-cream-bars"
+  "maximum-ice-cream-bars",
+  "serialize-and-deserialize-bst",
+  "n-ary-tree-preorder-traversal",
+  "maximum-depth-of-n-ary-tree",
+  "n-ary-tree-postorder-traversal",
+  "count-nodes-equal-to-average-of-subtree"
  ],
  "sources": {
   "minimum-number-of-taps-to-open-to-water-a-garden": "most-liked",
@@ -402,6 +407,11 @@
   "couples-holding-hands": "most-liked",
   "find-n-unique-integers-sum-up-to-zero": "most-liked",
   "new-21-game": "most-liked",
-  "maximum-ice-cream-bars": "most-liked"
+  "maximum-ice-cream-bars": "most-liked",
+  "serialize-and-deserialize-bst": "most-liked",
+  "n-ary-tree-preorder-traversal": "most-liked",
+  "maximum-depth-of-n-ary-tree": "most-liked",
+  "n-ary-tree-postorder-traversal": "most-liked",
+  "count-nodes-equal-to-average-of-subtree": "most-liked"
  }
 }

@@ -1,0 +1,34 @@
+{
+ "slug": "count-number-of-pairs-with-absolute-difference-k",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2006",
+ "title": "Count Number of Pairs With Absolute Difference K",
+ "premium": false,
+ "meta": {
+  "name": "countKDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,1]\n1",
+  "[1,3]\n3",
+  "[3,2,1,5,4]\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

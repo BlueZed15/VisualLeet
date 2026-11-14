@@ -1,0 +1,32 @@
+{
+ "slug": "sum-of-even-numbers-after-queries",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "985",
+ "title": "Sum of Even Numbers After Queries",
+ "premium": false,
+ "meta": {
+  "name": "sumEvenAfterQueries",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "queries",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n[[1,0],[-3,1],[-4,0],[2,3]]",
+  "[1]\n[[4,0]]"
+ ],
+ "exampleOutputs": [
+  "[8,6,2,4]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

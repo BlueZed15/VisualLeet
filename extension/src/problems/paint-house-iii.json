@@ -1,0 +1,45 @@
+{
+ "slug": "paint-house-iii",
+ "frontendId": "1473",
+ "title": "Paint House III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "houses",
+   "type": "integer[]"
+  },
+  {
+   "name": "cost",
+   "type": "integer[][]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "houses = {houses}\ncost = {cost}\nm = {m}\nn = {n}\ntarget = {target}",
+ "visible": [
+  "houses",
+  "cost",
+  "m",
+  "n",
+  "target"
+ ],
+ "call": "result = Solution().minCost(houses, cost, m, n, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

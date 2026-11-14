@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-speed-to-arrive-on-time",
+ "frontendId": "1870",
+ "title": "Minimum Speed to Arrive on Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dist",
+   "type": "integer[]"
+  },
+  {
+   "name": "hour",
+   "type": "double"
+  }
+ ],
+ "helpers": [],
+ "setup": "dist = {dist}\nhour = {hour}",
+ "visible": [
+  "dist",
+  "hour"
+ ],
+ "call": "result = Solution().minSpeedOnTime(dist, hour)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

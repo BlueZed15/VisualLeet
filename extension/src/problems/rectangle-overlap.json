@@ -1,0 +1,30 @@
+{
+ "slug": "rectangle-overlap",
+ "frontendId": "836",
+ "title": "Rectangle Overlap",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rec1",
+   "type": "integer[]"
+  },
+  {
+   "name": "rec2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rec1 = {rec1}\nrec2 = {rec2}",
+ "visible": [
+  "rec1",
+  "rec2"
+ ],
+ "call": "result = Solution().isRectangleOverlap(rec1, rec2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

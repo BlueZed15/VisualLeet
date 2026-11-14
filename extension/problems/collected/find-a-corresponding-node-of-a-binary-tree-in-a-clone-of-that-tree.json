@@ -1,0 +1,44 @@
+{
+ "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1379",
+ "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+ "premium": false,
+ "meta": {
+  "name": "getTargetCopy",
+  "params": [
+   {
+    "name": "tree",
+    "type": "TreeNode"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  },
+  "manual": true,
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "csharp",
+   "javascript",
+   "python3",
+   "typescript"
+  ]
+ },
+ "exampleInputs": [
+  "[7,4,3,null,null,6,19]\n3",
+  "[7]\n7",
+  "[8,null,6,null,5,null,4,null,3,null,2,null,1]\n4"
+ ],
+ "exampleOutputs": [
+  "3",
+  "7",
+  "4"
+ ],
+ "anyOrder": false
+}

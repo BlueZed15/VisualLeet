@@ -1,0 +1,30 @@
+{
+ "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+ "frontendId": "1489",
+ "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().findCriticalAndPseudoCriticalEdges(n, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

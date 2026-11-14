@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-laser-beams-in-a-bank",
+ "frontendId": "2125",
+ "title": "Number of Laser Beams in a Bank",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bank",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "bank = {bank}",
+ "visible": [
+  "bank"
+ ],
+ "call": "result = Solution().numberOfBeams(bank)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

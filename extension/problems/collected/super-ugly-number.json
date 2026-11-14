@@ -1,0 +1,32 @@
+{
+ "slug": "super-ugly-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "313",
+ "title": "Super Ugly Number",
+ "premium": false,
+ "meta": {
+  "name": "nthSuperUglyNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "primes",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "12\n[2,7,13,19]",
+  "1\n[2,3,5]"
+ ],
+ "exampleOutputs": [
+  "32",
+  "1"
+ ],
+ "anyOrder": false
+}

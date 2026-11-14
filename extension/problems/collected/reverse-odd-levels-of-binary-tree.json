@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-odd-levels-of-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2415",
+ "title": "Reverse Odd Levels of Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "reverseOddLevels",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,5,8,13,21,34]",
+  "[7,13,11]",
+  "[0,1,2,0,0,0,0,1,1,1,1,2,2,2,2]"
+ ],
+ "exampleOutputs": [
+  "[2,5,3,8,13,21,34]",
+  "[7,11,13]",
+  "[0,2,1,0,0,0,0,2,2,2,2,1,1,1,1]"
+ ],
+ "anyOrder": false
+}

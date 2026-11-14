@@ -5712,6 +5712,1441 @@
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "serialize-and-deserialize-bst": {
+   "title": "Serialize and Deserialize BST",
+   "frontendId": "449",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "n-ary-tree-preorder-traversal": {
+   "title": "N-ary Tree Preorder Traversal",
+   "frontendId": "589",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "maximum-depth-of-n-ary-tree": {
+   "title": "Maximum Depth of N-ary Tree",
+   "frontendId": "559",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "n-ary-tree-postorder-traversal": {
+   "title": "N-ary Tree Postorder Traversal",
+   "frontendId": "590",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "count-nodes-equal-to-average-of-subtree": {
+   "title": "Count Nodes Equal to Average of Subtree",
+   "frontendId": "2265",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "remove-boxes": {
+   "title": "Remove Boxes",
+   "frontendId": "546",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-sum-of-distinct-subarrays-with-length-k": {
+   "title": "Maximum Sum of Distinct Subarrays With Length K",
+   "frontendId": "2461",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-continuous-increasing-subsequence": {
+   "title": "Longest Continuous Increasing Subsequence",
+   "frontendId": "674",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-speed-to-arrive-on-time": {
+   "title": "Minimum Speed to Arrive on Time",
+   "frontendId": "1870",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-subarray-to-be-removed-to-make-array-sorted": {
+   "title": "Shortest Subarray to be Removed to Make Array Sorted",
+   "frontendId": "1574",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "divisor-game": {
+   "title": "Divisor Game",
+   "frontendId": "1025",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-music-playlists": {
+   "title": "Number of Music Playlists",
+   "frontendId": "920",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-nodes-from-linked-list": {
+   "title": "Remove Nodes From Linked List",
+   "frontendId": "2487",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-only-letters": {
+   "title": "Reverse Only Letters",
+   "frontendId": "917",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-penalty-for-a-shop": {
+   "title": "Minimum Penalty for a Shop",
+   "frontendId": "2483",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-value-of-k-coins-from-piles": {
+   "title": "Maximum Value of K Coins From Piles",
+   "frontendId": "2218",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "similar-string-groups": {
+   "title": "Similar String Groups",
+   "frontendId": "839",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-move-chips-to-the-same-position": {
+   "title": "Minimum Cost to Move Chips to The Same Position",
+   "frontendId": "1217",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-subarrays-with-bounded-maximum": {
+   "title": "Number of Subarrays with Bounded Maximum",
+   "frontendId": "795",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "array-partition": {
+   "title": "Array Partition",
+   "frontendId": "561",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "verify-preorder-serialization-of-a-binary-tree": {
+   "title": "Verify Preorder Serialization of a Binary Tree",
+   "frontendId": "331",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "patching-array": {
+   "title": "Patching Array",
+   "frontendId": "330",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-string-ii": {
+   "title": "Reverse String II",
+   "frontendId": "541",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "break-a-palindrome": {
+   "title": "Break a Palindrome",
+   "frontendId": "1328",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-running-time-of-n-computers": {
+   "title": "Maximum Running Time of N Computers",
+   "frontendId": "2141",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "insert-delete-getrandom-o1-duplicates-allowed": {
+   "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+   "frontendId": "381",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximal-network-rank": {
+   "title": "Maximal Network Rank",
+   "frontendId": "1615",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "exclusive-time-of-functions": {
+   "title": "Exclusive Time of Functions",
+   "frontendId": "636",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "greatest-sum-divisible-by-three": {
+   "title": "Greatest Sum Divisible by Three",
+   "frontendId": "1262",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-string-starting-from-leaf": {
+   "title": "Smallest String Starting From Leaf",
+   "frontendId": "988",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sorting-the-sentence": {
+   "title": "Sorting the Sentence",
+   "frontendId": "1859",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "last-day-where-you-can-still-cross": {
+   "title": "Last Day Where You Can Still Cross",
+   "frontendId": "1970",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-tree-tilt": {
+   "title": "Binary Tree Tilt",
+   "frontendId": "563",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "defanging-an-ip-address": {
+   "title": "Defanging an IP Address",
+   "frontendId": "1108",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-falling-path-sum-ii": {
+   "title": "Minimum Falling Path Sum II",
+   "frontendId": "1289",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "heaters": {
+   "title": "Heaters",
+   "frontendId": "475",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-nodes-in-the-sub-tree-with-the-same-label": {
+   "title": "Number of Nodes in the Sub-Tree With the Same Label",
+   "frontendId": "1519",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-right-interval": {
+   "title": "Find Right Interval",
+   "frontendId": "436",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimize-maximum-pair-sum-in-array": {
+   "title": "Minimize Maximum Pair Sum in Array",
+   "frontendId": "1877",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-a-stack-with-increment-operation": {
+   "title": "Design a Stack With Increment Operation",
+   "frontendId": "1381",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "most-frequent-subtree-sum": {
+   "title": "Most Frequent Subtree Sum",
+   "frontendId": "508",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lucky-numbers-in-a-matrix": {
+   "title": "Lucky Numbers in a Matrix",
+   "frontendId": "1380",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "student-attendance-record-ii": {
+   "title": "Student Attendance Record II",
+   "frontendId": "552",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rectangle-overlap": {
+   "title": "Rectangle Overlap",
+   "frontendId": "836",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "can-make-arithmetic-progression-from-sequence": {
+   "title": "Can Make Arithmetic Progression From Sequence",
+   "frontendId": "1502",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "make-array-strictly-increasing": {
+   "title": "Make Array Strictly Increasing",
+   "frontendId": "1187",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "guess-number-higher-or-lower-ii": {
+   "title": "Guess Number Higher or Lower II",
+   "frontendId": "375",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-duplicate-substring": {
+   "title": "Longest Duplicate Substring",
+   "frontendId": "1044",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "special-array-with-x-elements-greater-than-or-equal-x": {
+   "title": "Special Array With X Elements Greater Than or Equal X",
+   "frontendId": "1608",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "prefix-and-suffix-search": {
+   "title": "Prefix and Suffix Search",
+   "frontendId": "745",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-score-triangulation-of-polygon": {
+   "title": "Minimum Score Triangulation of Polygon",
+   "frontendId": "1039",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "least-number-of-unique-integers-after-k-removals": {
+   "title": "Least Number of Unique Integers after K Removals",
+   "frontendId": "1481",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "determine-if-string-halves-are-alike": {
+   "title": "Determine if String Halves Are Alike",
+   "frontendId": "1704",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "destination-city": {
+   "title": "Destination City",
+   "frontendId": "1436",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "create-target-array-in-the-given-order": {
+   "title": "Create Target Array in the Given Order",
+   "frontendId": "1389",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-fuel-cost-to-report-to-the-capital": {
+   "title": "Minimum Fuel Cost to Report to the Capital",
+   "frontendId": "2477",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-removals-to-make-mountain-array": {
+   "title": "Minimum Number of Removals to Make Mountain Array",
+   "frontendId": "1671",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-visible-people-in-a-queue": {
+   "title": "Number of Visible People in a Queue",
+   "frontendId": "1944",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-submatrix-with-rearrangements": {
+   "title": "Largest Submatrix With Rearrangements",
+   "frontendId": "1727",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-safest-path-in-a-grid": {
+   "title": "Find the Safest Path in a Grid",
+   "frontendId": "2812",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-unreachable-pairs-of-nodes-in-an-undirected-graph": {
+   "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+   "frontendId": "2316",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "total-hamming-distance": {
+   "title": "Total Hamming Distance",
+   "frontendId": "477",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "random-pick-with-weight": {
+   "title": "Random Pick with Weight",
+   "frontendId": "528",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "my-calendar-ii": {
+   "title": "My Calendar II",
+   "frontendId": "731",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sign-of-the-product-of-an-array": {
+   "title": "Sign of the Product of an Array",
+   "frontendId": "1822",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "kth-smallest-number-in-multiplication-table": {
+   "title": "Kth Smallest Number in Multiplication Table",
+   "frontendId": "668",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "recover-a-tree-from-preorder-traversal": {
+   "title": "Recover a Tree From Preorder Traversal",
+   "frontendId": "1028",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "super-ugly-number": {
+   "title": "Super Ugly Number",
+   "frontendId": "313",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "water-bottles": {
+   "title": "Water Bottles",
+   "frontendId": "1518",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-the-number-of-consistent-strings": {
+   "title": "Count the Number of Consistent Strings",
+   "frontendId": "1684",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "diagonal-traverse-ii": {
+   "title": "Diagonal Traverse II",
+   "frontendId": "1424",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fair-candy-swap": {
+   "title": "Fair Candy Swap",
+   "frontendId": "888",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-players-with-zero-or-one-losses": {
+   "title": "Find Players With Zero or One Losses",
+   "frontendId": "2225",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-sufficient-team": {
+   "title": "Smallest Sufficient Team",
+   "frontendId": "1125",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "constrained-subsequence-sum": {
+   "title": "Constrained Subsequence Sum",
+   "frontendId": "1425",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "array-nesting": {
+   "title": "Array Nesting",
+   "frontendId": "565",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "average-salary-excluding-the-minimum-and-maximum-salary": {
+   "title": "Average Salary Excluding the Minimum and Maximum Salary",
+   "frontendId": "1491",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-words-that-can-be-formed-by-characters": {
+   "title": "Find Words That Can Be Formed by Characters",
+   "frontendId": "1160",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "all-oone-data-structure": {
+   "title": "All O`one Data Structure",
+   "frontendId": "432",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "validate-binary-tree-nodes": {
+   "title": "Validate Binary Tree Nodes",
+   "frontendId": "1361",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-absolute-differences-in-a-sorted-array": {
+   "title": "Sum of Absolute Differences in a Sorted Array",
+   "frontendId": "1685",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-laser-beams-in-a-bank": {
+   "title": "Number of Laser Beams in a Bank",
+   "frontendId": "2125",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-unique-characters-of-all-substrings-of-a-given-string": {
+   "title": "Count Unique Characters of All Substrings of a Given String",
+   "frontendId": "828",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "add-two-integers": {
+   "title": "Add Two Integers",
+   "frontendId": "2235",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-ways-to-build-good-strings": {
+   "title": "Count Ways To Build Good Strings",
+   "frontendId": "2466",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "relative-ranks": {
+   "title": "Relative Ranks",
+   "frontendId": "506",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-sum-of-averages": {
+   "title": "Largest Sum of Averages",
+   "frontendId": "813",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-target-indices-after-sorting-array": {
+   "title": "Find Target Indices After Sorting Array",
+   "frontendId": "2089",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-most-competitive-subsequence": {
+   "title": "Find the Most Competitive Subsequence",
+   "frontendId": "1673",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-score-after-splitting-a-string": {
+   "title": "Maximum Score After Splitting a String",
+   "frontendId": "1422",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reorder-data-in-log-files": {
+   "title": "Reorder Data in Log Files",
+   "frontendId": "937",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-valid-matrix-given-row-and-column-sums": {
+   "title": "Find Valid Matrix Given Row and Column Sums",
+   "frontendId": "1605",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rabbits-in-forest": {
+   "title": "Rabbits in Forest",
+   "frontendId": "781",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "create-maximum-number": {
+   "title": "Create Maximum Number",
+   "frontendId": "321",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "kth-ancestor-of-a-tree-node": {
+   "title": "Kth Ancestor of a Tree Node",
+   "frontendId": "1483",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "product-of-the-last-k-numbers": {
+   "title": "Product of the Last K Numbers",
+   "frontendId": "1352",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "course-schedule-iv": {
+   "title": "Course Schedule IV",
+   "frontendId": "1462",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rectangle-area": {
+   "title": "Rectangle Area",
+   "frontendId": "223",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-subsequence-with-limited-sum": {
+   "title": "Longest Subsequence With Limited Sum",
+   "frontendId": "2389",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-increments-on-subarrays-to-form-a-target-array": {
+   "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+   "frontendId": "1526",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "distinct-subsequences-ii": {
+   "title": "Distinct Subsequences II",
+   "frontendId": "940",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "k-th-smallest-prime-fraction": {
+   "title": "K-th Smallest Prime Fraction",
+   "frontendId": "786",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "checking-existence-of-edge-length-limited-paths": {
+   "title": "Checking Existence of Edge Length Limited Paths",
+   "frontendId": "1697",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-balloons": {
+   "title": "Maximum Number of Balloons",
+   "frontendId": "1189",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-dot-product-of-two-subsequences": {
+   "title": "Max Dot Product of Two Subsequences",
+   "frontendId": "1458",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "avoid-flood-in-the-city": {
+   "title": "Avoid Flood in The City",
+   "frontendId": "1488",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "construct-target-array-with-multiple-sums": {
+   "title": "Construct Target Array With Multiple Sums",
+   "frontendId": "1354",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-index-sum-of-two-lists": {
+   "title": "Minimum Index Sum of Two Lists",
+   "frontendId": "599",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "paint-house-iii": {
+   "title": "Paint House III",
+   "frontendId": "1473",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-increasing-paths-in-a-grid": {
+   "title": "Number of Increasing Paths in a Grid",
+   "frontendId": "2328",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-turbulent-subarray": {
+   "title": "Longest Turbulent Subarray",
+   "frontendId": "978",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-even-numbers-after-queries": {
+   "title": "Sum of Even Numbers After Queries",
+   "frontendId": "985",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-score-of-a-path-between-two-cities": {
+   "title": "Minimum Score of a Path Between Two Cities",
+   "frontendId": "2492",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-two-non-overlapping-sub-arrays-each-with-target-sum": {
+   "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+   "frontendId": "1477",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-good-ways-to-split-a-string": {
+   "title": "Number of Good Ways to Split a String",
+   "frontendId": "1525",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "odd-even-jump": {
+   "title": "Odd Even Jump",
+   "frontendId": "975",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-nice-subarray": {
+   "title": "Longest Nice Subarray",
+   "frontendId": "2401",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-subarray-sum-with-one-deletion": {
+   "title": "Maximum Subarray Sum with One Deletion",
+   "frontendId": "1186",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "k-radius-subarray-averages": {
+   "title": "K Radius Subarray Averages",
+   "frontendId": "2090",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-replacements-to-sort-the-array": {
+   "title": "Minimum Replacements to Sort the Array",
+   "frontendId": "2366",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-closest-node-to-given-two-nodes": {
+   "title": "Find Closest Node to Given Two Nodes",
+   "frontendId": "2359",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "xor-queries-of-a-subarray": {
+   "title": "XOR Queries of a Subarray",
+   "frontendId": "1310",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-swaps-to-group-all-1s-together-ii": {
+   "title": "Minimum Swaps to Group All 1's Together II",
+   "frontendId": "2134",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-area-rectangle": {
+   "title": "Minimum Area Rectangle",
+   "frontendId": "939",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-word-in-dictionary": {
+   "title": "Longest Word in Dictionary",
+   "frontendId": "720",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "jump-game-vii": {
+   "title": "Jump Game VII",
+   "frontendId": "1871",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minesweeper": {
+   "title": "Minesweeper",
+   "frontendId": "529",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "my-calendar-iii": {
+   "title": "My Calendar III",
+   "frontendId": "732",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-k-consecutive-bit-flips": {
+   "title": "Minimum Number of K Consecutive Bit Flips",
+   "frontendId": "995",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-servers-that-communicate": {
+   "title": "Count Servers that Communicate",
+   "frontendId": "1267",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-ways-to-form-a-target-string-given-a-dictionary": {
+   "title": "Number of Ways to Form a Target String Given a Dictionary",
+   "frontendId": "1639",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-sub-arrays-with-odd-sum": {
+   "title": "Number of Sub-arrays With Odd Sum",
+   "frontendId": "1524",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "to-lower-case": {
+   "title": "To Lower Case",
+   "frontendId": "709",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-there-is-a-valid-partition-for-the-array": {
+   "title": "Check if There is a Valid Partition For The Array",
+   "frontendId": "2369",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "nim-game": {
+   "title": "Nim Game",
+   "frontendId": "292",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-parking-system": {
+   "title": "Design Parking System",
+   "frontendId": "1603",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-nice-pairs-in-an-array": {
+   "title": "Count Nice Pairs in an Array",
+   "frontendId": "1814",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-absolute-sum-of-any-subarray": {
+   "title": "Maximum Absolute Sum of Any Subarray",
+   "frontendId": "1749",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-columns-to-make-sorted": {
+   "title": "Delete Columns to Make Sorted",
+   "frontendId": "944",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-a-parentheses-string-can-be-valid": {
+   "title": "Check if a Parentheses String Can Be Valid",
+   "frontendId": "2116",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree": {
+   "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+   "frontendId": "1489",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-ways-to-reorder-array-to-get-same-bst": {
+   "title": "Number of Ways to Reorder Array to Get Same BST",
+   "frontendId": "1569",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-items-matching-a-rule": {
+   "title": "Count Items Matching a Rule",
+   "frontendId": "1773",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "restore-the-array-from-adjacent-pairs": {
+   "title": "Restore the Array From Adjacent Pairs",
+   "frontendId": "1743",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "final-value-of-variable-after-performing-operations": {
+   "title": "Final Value of Variable After Performing Operations",
+   "frontendId": "2011",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shift-2d-grid": {
+   "title": "Shift 2D Grid",
+   "frontendId": "1260",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-triplets-that-can-form-two-arrays-of-equal-xor": {
+   "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
+   "frontendId": "1442",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-the-number-of-fair-pairs": {
+   "title": "Count the Number of Fair Pairs",
+   "frontendId": "2563",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-center-of-star-graph": {
+   "title": "Find Center of Star Graph",
+   "frontendId": "1791",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-score-of-a-good-subarray": {
+   "title": "Maximum Score of a Good Subarray",
+   "frontendId": "1793",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "race-car": {
+   "title": "Race Car",
+   "frontendId": "818",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "second-minimum-node-in-a-binary-tree": {
+   "title": "Second Minimum Node In a Binary Tree",
+   "frontendId": "671",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-different-palindromic-subsequences": {
+   "title": "Count Different Palindromic Subsequences",
+   "frontendId": "730",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-chunks-to-make-sorted-ii": {
+   "title": "Max Chunks To Make Sorted II",
+   "frontendId": "768",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-operations-to-make-array-continuous": {
+   "title": "Minimum Number of Operations to Make Array Continuous",
+   "frontendId": "2009",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "divide-array-in-sets-of-k-consecutive-numbers": {
+   "title": "Divide Array in Sets of K Consecutive Numbers",
+   "frontendId": "1296",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rotate-function": {
+   "title": "Rotate Function",
+   "frontendId": "396",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partition-array-according-to-given-pivot": {
+   "title": "Partition Array According to Given Pivot",
+   "frontendId": "2161",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-watch": {
+   "title": "Binary Watch",
+   "frontendId": "401",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "time-needed-to-buy-tickets": {
+   "title": "Time Needed to Buy Tickets",
+   "frontendId": "2073",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "univalued-binary-tree": {
+   "title": "Univalued Binary Tree",
+   "frontendId": "965",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-atoms": {
+   "title": "Number of Atoms",
+   "frontendId": "726",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-coins-you-can-get": {
+   "title": "Maximum Number of Coins You Can Get",
+   "frontendId": "1561",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-stones-to-minimize-the-total": {
+   "title": "Remove Stones to Minimize the Total",
+   "frontendId": "1962",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bitwise-ors-of-subarrays": {
+   "title": "Bitwise ORs of Subarrays",
+   "frontendId": "898",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "profitable-schemes": {
+   "title": "Profitable Schemes",
+   "frontendId": "879",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "parsing-a-boolean-expression": {
+   "title": "Parsing A Boolean Expression",
+   "frontendId": "1106",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "self-dividing-numbers": {
+   "title": "Self Dividing Numbers",
+   "frontendId": "728",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-all-people-with-secret": {
+   "title": "Find All People With Secret",
+   "frontendId": "2092",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-a-food-rating-system": {
+   "title": "Design a Food Rating System",
+   "frontendId": "2353",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reach-a-number": {
+   "title": "Reach a Number",
+   "frontendId": "754",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "naming-a-company": {
+   "title": "Naming a Company",
+   "frontendId": "2306",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "get-equal-substrings-within-budget": {
+   "title": "Get Equal Substrings Within Budget",
+   "frontendId": "1208",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-average-pass-ratio": {
+   "title": "Maximum Average Pass Ratio",
+   "frontendId": "1792",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "corporate-flight-bookings": {
+   "title": "Corporate Flight Bookings",
+   "frontendId": "1109",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "the-kth-factor-of-n": {
+   "title": "The kth Factor of n",
+   "frontendId": "1492",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold": {
+   "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+   "frontendId": "1343",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-digit-one": {
+   "title": "Number of Digit One",
+   "frontendId": "233",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-items-by-groups-respecting-dependencies": {
+   "title": "Sort Items by Groups Respecting Dependencies",
+   "frontendId": "1203",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-score-from-removing-substrings": {
+   "title": "Maximum Score From Removing Substrings",
+   "frontendId": "1717",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "substring-with-largest-variance": {
+   "title": "Substring With Largest Variance",
+   "frontendId": "2272",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-words-found-in-sentences": {
+   "title": "Maximum Number of Words Found in Sentences",
+   "frontendId": "2114",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-ways-of-cutting-a-pizza": {
+   "title": "Number of Ways of Cutting a Pizza",
+   "frontendId": "1444",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-string-with-a-given-numeric-value": {
+   "title": "Smallest String With A Given Numeric Value",
+   "frontendId": "1663",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-of-matches-in-tournament": {
+   "title": "Count of Matches in Tournament",
+   "frontendId": "1688",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "uncommon-words-from-two-sentences": {
+   "title": "Uncommon Words from Two Sentences",
+   "frontendId": "884",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "create-binary-tree-from-descriptions": {
+   "title": "Create Binary Tree From Descriptions",
+   "frontendId": "2196",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "even-odd-tree": {
+   "title": "Even Odd Tree",
+   "frontendId": "1609",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-longest-valid-obstacle-course-at-each-position": {
+   "title": "Find the Longest Valid Obstacle Course at Each Position",
+   "frontendId": "1964",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "x-of-a-kind-in-a-deck-of-cards": {
+   "title": "X of a Kind in a Deck of Cards",
+   "frontendId": "914",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "arithmetic-subarrays": {
+   "title": "Arithmetic Subarrays",
+   "frontendId": "1630",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "poor-pigs": {
+   "title": "Poor Pigs",
+   "frontendId": "458",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "24-game": {
+   "title": "24 Game",
+   "frontendId": "679",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-the-people": {
+   "title": "Sort the People",
+   "frontendId": "2418",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-candies-allocated-to-k-children": {
+   "title": "Maximum Candies Allocated to K Children",
+   "frontendId": "2226",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "video-stitching": {
+   "title": "Video Stitching",
+   "frontendId": "1024",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "stream-of-characters": {
+   "title": "Stream of Characters",
+   "frontendId": "1032",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimized-maximum-of-products-distributed-to-any-store": {
+   "title": "Minimized Maximum of Products Distributed to Any Store",
+   "frontendId": "2064",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "global-and-local-inversions": {
+   "title": "Global and Local Inversions",
+   "frontendId": "775",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "two-best-non-overlapping-events": {
+   "title": "Two Best Non-Overlapping Events",
+   "frontendId": "2054",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-kth-bit-in-nth-binary-string": {
+   "title": "Find Kth Bit in Nth Binary String",
+   "frontendId": "1545",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "most-common-word": {
+   "title": "Most Common Word",
+   "frontendId": "819",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-score-words-formed-by-letters": {
+   "title": "Maximum Score Words Formed by Letters",
+   "frontendId": "1255",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-word-in-dictionary-through-deleting": {
+   "title": "Longest Word in Dictionary through Deleting",
+   "frontendId": "524",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "calculate-money-in-leetcode-bank": {
+   "title": "Calculate Money in Leetcode Bank",
+   "frontendId": "1716",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
   }
  }
 }

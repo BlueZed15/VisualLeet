@@ -1,0 +1,30 @@
+{
+ "slug": "student-attendance-record-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "552",
+ "title": "Student Attendance Record II",
+ "premium": false,
+ "meta": {
+  "name": "checkRecord",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "1",
+  "10101"
+ ],
+ "exampleOutputs": [
+  "8",
+  "3",
+  "183236316"
+ ],
+ "anyOrder": false
+}

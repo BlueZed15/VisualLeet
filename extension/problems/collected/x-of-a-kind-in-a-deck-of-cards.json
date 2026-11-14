@@ -1,0 +1,28 @@
+{
+ "slug": "x-of-a-kind-in-a-deck-of-cards",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "914",
+ "title": "X of a Kind in a Deck of Cards",
+ "premium": false,
+ "meta": {
+  "name": "hasGroupsSizeX",
+  "params": [
+   {
+    "name": "deck",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,4,3,2,1]",
+  "[1,1,1,2,2,2,3,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

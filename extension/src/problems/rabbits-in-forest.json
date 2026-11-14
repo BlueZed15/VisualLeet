@@ -1,0 +1,25 @@
+{
+ "slug": "rabbits-in-forest",
+ "frontendId": "781",
+ "title": "Rabbits in Forest",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "answers",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "answers = {answers}",
+ "visible": [
+  "answers"
+ ],
+ "call": "result = Solution().numRabbits(answers)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

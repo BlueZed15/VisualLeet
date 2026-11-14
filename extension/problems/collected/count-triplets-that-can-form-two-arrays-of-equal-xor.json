@@ -1,0 +1,28 @@
+{
+ "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1442",
+ "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
+ "premium": false,
+ "meta": {
+  "name": "countTriplets",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,6,7]",
+  "[1,1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "10"
+ ],
+ "anyOrder": false
+}

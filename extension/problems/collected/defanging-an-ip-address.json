@@ -1,0 +1,28 @@
+{
+ "slug": "defanging-an-ip-address",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1108",
+ "title": "Defanging an IP Address",
+ "premium": false,
+ "meta": {
+  "name": "defangIPaddr",
+  "params": [
+   {
+    "name": "address",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1.1.1.1\"",
+  "\"255.100.50.0\""
+ ],
+ "exampleOutputs": [
+  "\"1[.]1[.]1[.]1\"",
+  "\"255[.]100[.]50[.]0\""
+ ],
+ "anyOrder": false
+}

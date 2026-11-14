@@ -1,0 +1,36 @@
+{
+ "slug": "count-the-number-of-fair-pairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2563",
+ "title": "Count the Number of Fair Pairs",
+ "premium": false,
+ "meta": {
+  "name": "countFairPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "lower"
+   },
+   {
+    "type": "integer",
+    "name": "upper"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,7,4,4,5]\n3\n6",
+  "[1,7,9,2,5]\n11\n11"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1"
+ ],
+ "anyOrder": false
+}

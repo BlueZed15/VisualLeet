@@ -1,0 +1,36 @@
+{
+ "slug": "jump-game-vii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1871",
+ "title": "Jump Game VII",
+ "premium": false,
+ "meta": {
+  "name": "canReach",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "minJump"
+   },
+   {
+    "type": "integer",
+    "name": "maxJump"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"011010\"\n2\n3",
+  "\"01101110\"\n2\n3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

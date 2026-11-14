@@ -1,0 +1,48 @@
+{
+ "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+ "frontendId": "381",
+ "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "RandomizedCollection",
+ "methods": {
+  "RandomizedCollection": [],
+  "insert": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "remove": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "getRandom": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = RandomizedCollection(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "remove-stones-to-minimize-the-total",
+ "frontendId": "1962",
+ "title": "Remove Stones to Minimize the Total",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}\nk = {k}",
+ "visible": [
+  "piles",
+  "k"
+ ],
+ "call": "result = Solution().minStoneSum(piles, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

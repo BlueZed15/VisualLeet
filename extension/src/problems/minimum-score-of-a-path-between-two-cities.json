@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-score-of-a-path-between-two-cities",
+ "frontendId": "2492",
+ "title": "Minimum Score of a Path Between Two Cities",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "roads",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nroads = {roads}",
+ "visible": [
+  "n",
+  "roads"
+ ],
+ "call": "result = Solution().minScore(n, roads)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

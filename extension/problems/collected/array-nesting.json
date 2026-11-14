@@ -1,0 +1,28 @@
+{
+ "slug": "array-nesting",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "565",
+ "title": "Array Nesting",
+ "premium": false,
+ "meta": {
+  "name": "arrayNesting",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,4,0,3,1,6,2]",
+  "[0,1,2]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

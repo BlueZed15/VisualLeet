@@ -1,0 +1,30 @@
+{
+ "slug": "lucky-numbers-in-a-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1380",
+ "title": "Lucky Numbers in a Matrix",
+ "premium": false,
+ "meta": {
+  "name": "luckyNumbers",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[[3,7,8],[9,11,13],[15,16,17]]",
+  "[[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
+  "[[7,8],[1,2]]"
+ ],
+ "exampleOutputs": [
+  "[15]",
+  "[12]",
+  "[7]"
+ ],
+ "anyOrder": true
+}

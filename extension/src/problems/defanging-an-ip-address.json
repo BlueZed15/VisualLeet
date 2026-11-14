@@ -1,0 +1,25 @@
+{
+ "slug": "defanging-an-ip-address",
+ "frontendId": "1108",
+ "title": "Defanging an IP Address",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "address",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "address = {address}",
+ "visible": [
+  "address"
+ ],
+ "call": "result = Solution().defangIPaddr(address)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

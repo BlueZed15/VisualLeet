@@ -1,0 +1,35 @@
+{
+ "slug": "count-the-number-of-fair-pairs",
+ "frontendId": "2563",
+ "title": "Count the Number of Fair Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "lower",
+   "type": "integer"
+  },
+  {
+   "name": "upper",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nlower = {lower}\nupper = {upper}",
+ "visible": [
+  "nums",
+  "lower",
+  "upper"
+ ],
+ "call": "result = Solution().countFairPairs(nums, lower, upper)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

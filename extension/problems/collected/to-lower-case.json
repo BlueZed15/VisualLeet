@@ -1,0 +1,30 @@
+{
+ "slug": "to-lower-case",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "709",
+ "title": "To Lower Case",
+ "premium": false,
+ "meta": {
+  "name": "toLowerCase",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"Hello\"",
+  "\"here\"",
+  "\"LOVELY\""
+ ],
+ "exampleOutputs": [
+  "\"hello\"",
+  "\"here\"",
+  "\"lovely\""
+ ],
+ "anyOrder": false
+}

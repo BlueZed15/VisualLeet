@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-coins-you-can-get",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1561",
+ "title": "Maximum Number of Coins You Can Get",
+ "premium": false,
+ "meta": {
+  "name": "maxCoins",
+  "params": [
+   {
+    "name": "piles",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,1,2,7,8]",
+  "[2,4,5]",
+  "[9,8,7,6,5,1,2,3,4]"
+ ],
+ "exampleOutputs": [
+  "9",
+  "4",
+  "18"
+ ],
+ "anyOrder": false
+}

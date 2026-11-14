@@ -1,0 +1,47 @@
+{
+ "slug": "product-of-the-last-k-numbers",
+ "frontendId": "1352",
+ "title": "Product of the Last K Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "ProductOfNumbers",
+ "methods": {
+  "ProductOfNumbers": [],
+  "add": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "getProduct": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = ProductOfNumbers(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

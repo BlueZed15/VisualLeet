@@ -1,0 +1,49 @@
+{
+ "slug": "peeking-iterator",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "284",
+ "title": "Peeking Iterator",
+ "premium": false,
+ "meta": {
+  "name": "PeekingIterator",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "name": "commands",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "list<string>",
+   "dealloc": true
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "python3",
+   "csharp",
+   "golang",
+   "ruby",
+   "kotlin",
+   "scala",
+   "swift",
+   "php",
+   "c",
+   "javascript",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class Iterator {\n    data: number[];\n    index: number;\n    constructor(data: number[]) {\n        this.data = data;\n        this.index = 0;\n    }\n\n    hasNext(): boolean {\n        return this.index != this.data.length;\n    }\n\n    next(): number {\n        var ret = -100000000;\n        if (this.hasNext()) {\n            ret = this.data[this.index];\n            this.index++;\n        }\n        return ret;\n    }\n};\n"
+ },
+ "exampleInputs": [
+  "[\"PeekingIterator\",\"next\",\"peek\",\"next\",\"next\",\"hasNext\"]\n[[[1,2,3]],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 2, 2, 3, false]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximal-network-rank",
+ "frontendId": "1615",
+ "title": "Maximal Network Rank",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "roads",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nroads = {roads}",
+ "visible": [
+  "n",
+  "roads"
+ ],
+ "call": "result = Solution().maximalNetworkRank(n, roads)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

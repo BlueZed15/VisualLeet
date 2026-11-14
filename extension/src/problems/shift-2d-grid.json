@@ -1,0 +1,30 @@
+{
+ "slug": "shift-2d-grid",
+ "frontendId": "1260",
+ "title": "Shift 2D Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nk = {k}",
+ "visible": [
+  "grid",
+  "k"
+ ],
+ "call": "result = Solution().shiftGrid(grid, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

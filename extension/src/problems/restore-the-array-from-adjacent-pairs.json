@@ -1,0 +1,25 @@
+{
+ "slug": "restore-the-array-from-adjacent-pairs",
+ "frontendId": "1743",
+ "title": "Restore the Array From Adjacent Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "adjacentPairs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "adjacentPairs = {adjacentPairs}",
+ "visible": [
+  "adjacentPairs"
+ ],
+ "call": "result = Solution().restoreArray(adjacentPairs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

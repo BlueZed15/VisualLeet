@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-fuel-cost-to-report-to-the-capital",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2477",
+ "title": "Minimum Fuel Cost to Report to the Capital",
+ "premium": false,
+ "meta": {
+  "name": "minimumFuelCost",
+  "params": [
+   {
+    "name": "roads",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "seats"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[0,2],[0,3]]\n5",
+  "[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]\n2",
+  "[]\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

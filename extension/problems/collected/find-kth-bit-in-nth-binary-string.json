@@ -1,0 +1,32 @@
+{
+ "slug": "find-kth-bit-in-nth-binary-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1545",
+ "title": "Find Kth Bit in Nth Binary String",
+ "premium": false,
+ "meta": {
+  "name": "findKthBit",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "character"
+  }
+ },
+ "exampleInputs": [
+  "3\n1",
+  "4\n11"
+ ],
+ "exampleOutputs": [
+  "\"0\"",
+  "\"1\""
+ ],
+ "anyOrder": false
+}

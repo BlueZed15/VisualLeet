@@ -1,0 +1,28 @@
+{
+ "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1491",
+ "title": "Average Salary Excluding the Minimum and Maximum Salary",
+ "premium": false,
+ "meta": {
+  "name": "average",
+  "params": [
+   {
+    "name": "salary",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[4000,3000,1000,2000]",
+  "[1000,2000,3000]"
+ ],
+ "exampleOutputs": [
+  "2500.00000",
+  "2000.00000"
+ ],
+ "anyOrder": false
+}

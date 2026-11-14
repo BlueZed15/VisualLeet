@@ -1,0 +1,30 @@
+{
+ "slug": "construct-target-array-with-multiple-sums",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1354",
+ "title": "Construct Target Array With Multiple Sums",
+ "premium": false,
+ "meta": {
+  "name": "isPossible",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[9,3,5]",
+  "[1,1,1,2]",
+  "[8,5]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

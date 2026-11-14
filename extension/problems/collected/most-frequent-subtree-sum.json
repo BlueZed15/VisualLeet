@@ -1,0 +1,28 @@
+{
+ "slug": "most-frequent-subtree-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "508",
+ "title": "Most Frequent Subtree Sum",
+ "premium": false,
+ "meta": {
+  "name": "findFrequentTreeSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,-3]",
+  "[5,2,-5]"
+ ],
+ "exampleOutputs": [
+  "[2,-3,4]",
+  "[2]"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-score-after-splitting-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1422",
+ "title": "Maximum Score After Splitting a String",
+ "premium": false,
+ "meta": {
+  "name": "maxScore",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"011101\"",
+  "\"00111\"",
+  "\"1111\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "5",
+  "3"
+ ],
+ "anyOrder": false
+}

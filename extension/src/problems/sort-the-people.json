@@ -1,0 +1,30 @@
+{
+ "slug": "sort-the-people",
+ "frontendId": "2418",
+ "title": "Sort the People",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "names",
+   "type": "string[]"
+  },
+  {
+   "name": "heights",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "names = {names}\nheights = {heights}",
+ "visible": [
+  "names",
+  "heights"
+ ],
+ "call": "result = Solution().sortPeople(names, heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

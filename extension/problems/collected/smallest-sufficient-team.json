@@ -1,0 +1,32 @@
+{
+ "slug": "smallest-sufficient-team",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1125",
+ "title": "Smallest Sufficient Team",
+ "premium": false,
+ "meta": {
+  "name": "smallestSufficientTeam",
+  "params": [
+   {
+    "name": "req_skills",
+    "type": "string[]"
+   },
+   {
+    "type": "list<list<string>>",
+    "name": "people"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+  "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]"
+ ],
+ "exampleOutputs": [
+  "[0,2]",
+  "[1,2]"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,67 @@
+{
+ "slug": "design-a-stack-with-increment-operation",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1381",
+ "title": "Design a Stack With Increment Operation",
+ "premium": false,
+ "meta": {
+  "classname": "CustomStack",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "maxSize"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "x"
+     }
+    ],
+    "name": "push",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "pop",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "k"
+     },
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "increment",
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"CustomStack\",\"push\",\"push\",\"pop\",\"push\",\"push\",\"push\",\"increment\",\"increment\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[3],[1],[2],[],[2],[3],[4],[5,100],[2,100],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,null,2,null,null,null,null,null,103,202,201,-1]"
+ ],
+ "anyOrder": false
+}

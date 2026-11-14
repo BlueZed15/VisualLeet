@@ -1,0 +1,30 @@
+{
+ "slug": "minimized-maximum-of-products-distributed-to-any-store",
+ "frontendId": "2064",
+ "title": "Minimized Maximum of Products Distributed to Any Store",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "quantities",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nquantities = {quantities}",
+ "visible": [
+  "n",
+  "quantities"
+ ],
+ "call": "result = Solution().minimizedMaximum(n, quantities)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

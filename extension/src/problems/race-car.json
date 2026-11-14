@@ -1,0 +1,25 @@
+{
+ "slug": "race-car",
+ "frontendId": "818",
+ "title": "Race Car",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}",
+ "visible": [
+  "target"
+ ],
+ "call": "result = Solution().racecar(target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

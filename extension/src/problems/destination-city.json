@@ -1,0 +1,25 @@
+{
+ "slug": "destination-city",
+ "frontendId": "1436",
+ "title": "Destination City",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "paths",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "paths = {paths}",
+ "visible": [
+  "paths"
+ ],
+ "call": "result = Solution().destCity(paths)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

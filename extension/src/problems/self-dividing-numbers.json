@@ -1,0 +1,30 @@
+{
+ "slug": "self-dividing-numbers",
+ "frontendId": "728",
+ "title": "Self Dividing Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "left = {left}\nright = {right}",
+ "visible": [
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().selfDividingNumbers(left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

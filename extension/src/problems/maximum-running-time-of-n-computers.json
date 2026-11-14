@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-running-time-of-n-computers",
+ "frontendId": "2141",
+ "title": "Maximum Running Time of N Computers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "batteries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nbatteries = {batteries}",
+ "visible": [
+  "n",
+  "batteries"
+ ],
+ "call": "result = Solution().maxRunTime(n, batteries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

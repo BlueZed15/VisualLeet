@@ -1,0 +1,53 @@
+{
+ "slug": "my-calendar-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "732",
+ "title": "My Calendar III",
+ "premium": false,
+ "meta": {
+  "classname": "MyCalendarThree",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "name": "book",
+    "params": [
+     {
+      "type": "integer",
+      "name": "startTime"
+     },
+     {
+      "type": "integer",
+      "name": "endTime"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "starts",
+    "type": "integer[]"
+   },
+   {
+    "name": "ends",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"MyCalendarThree\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 1, 2, 3, 3, 3]"
+ ],
+ "anyOrder": false
+}

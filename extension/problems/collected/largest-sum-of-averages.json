@@ -1,0 +1,32 @@
+{
+ "slug": "largest-sum-of-averages",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "813",
+ "title": "Largest Sum of Averages",
+ "premium": false,
+ "meta": {
+  "name": "largestSumOfAverages",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[9,1,2,3,9]\n3",
+  "[1,2,3,4,5,6,7]\n4"
+ ],
+ "exampleOutputs": [
+  "20.00000",
+  "20.50000"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-good-ways-to-split-a-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1525",
+ "title": "Number of Good Ways to Split a String",
+ "premium": false,
+ "meta": {
+  "name": "numSplits",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aacaba\"",
+  "\"abcd\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-visible-people-in-a-queue",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1944",
+ "title": "Number of Visible People in a Queue",
+ "premium": false,
+ "meta": {
+  "name": "canSeePersonsCount",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "heights"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[10,6,8,5,11,9]",
+  "[5,1,2,3,10]"
+ ],
+ "exampleOutputs": [
+  "[3,1,2,1,1,0]",
+  "[4,1,1,1,0]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "final-value-of-variable-after-performing-operations",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2011",
+ "title": "Final Value of Variable After Performing Operations",
+ "premium": false,
+ "meta": {
+  "name": "finalValueAfterOperations",
+  "params": [
+   {
+    "name": "operations",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"--X\",\"X++\",\"X++\"]",
+  "[\"++X\",\"++X\",\"X++\"]",
+  "[\"X++\",\"++X\",\"--X\",\"X--\"]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

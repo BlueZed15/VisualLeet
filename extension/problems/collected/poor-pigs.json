@@ -1,0 +1,36 @@
+{
+ "slug": "poor-pigs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "458",
+ "title": "Poor Pigs",
+ "premium": false,
+ "meta": {
+  "name": "poorPigs",
+  "params": [
+   {
+    "name": "buckets",
+    "type": "integer"
+   },
+   {
+    "name": "minutesToDie",
+    "type": "integer"
+   },
+   {
+    "name": "minutesToTest",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n15\n15",
+  "4\n15\n30"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "calculate-money-in-leetcode-bank",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1716",
+ "title": "Calculate Money in Leetcode Bank",
+ "premium": false,
+ "meta": {
+  "name": "totalMoney",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "10",
+  "20"
+ ],
+ "exampleOutputs": [
+  "10",
+  "37",
+  "96"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,64 @@
+{
+ "slug": "design-a-food-rating-system",
+ "frontendId": "2353",
+ "title": "Design a Food Rating System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "FoodRatings",
+ "methods": {
+  "FoodRatings": [
+   {
+    "name": "foods",
+    "type": "string[]"
+   },
+   {
+    "name": "cuisines",
+    "type": "string[]"
+   },
+   {
+    "name": "ratings",
+    "type": "integer[]"
+   }
+  ],
+  "changeRating": [
+   {
+    "name": "food",
+    "type": "string"
+   },
+   {
+    "name": "newRating",
+    "type": "integer"
+   }
+  ],
+  "highestRated": [
+   {
+    "name": "cuisine",
+    "type": "string"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = FoodRatings(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "number-of-ways-of-cutting-a-pizza",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1444",
+ "title": "Number of Ways of Cutting a Pizza",
+ "premium": false,
+ "meta": {
+  "name": "ways",
+  "params": [
+   {
+    "name": "pizza",
+    "type": "string[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"A..\",\"AAA\",\"...\"]\n3",
+  "[\"A..\",\"AA.\",\"...\"]\n3",
+  "[\"A..\",\"A..\",\"...\"]\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

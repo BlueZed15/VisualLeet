@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1343",
+ "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+ "premium": false,
+ "meta": {
+  "name": "numOfSubarrays",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "threshold"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,2,2,5,5,5,8]\n3\n4",
+  "[11,13,17,23,29,31,7,5,2,3]\n3\n5"
+ ],
+ "exampleOutputs": [
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

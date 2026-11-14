@@ -1,0 +1,40 @@
+{
+ "slug": "count-ways-to-build-good-strings",
+ "frontendId": "2466",
+ "title": "Count Ways To Build Good Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  },
+  {
+   "name": "zero",
+   "type": "integer"
+  },
+  {
+   "name": "one",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "low = {low}\nhigh = {high}\nzero = {zero}\none = {one}",
+ "visible": [
+  "low",
+  "high",
+  "zero",
+  "one"
+ ],
+ "call": "result = Solution().countGoodStrings(low, high, zero, one)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

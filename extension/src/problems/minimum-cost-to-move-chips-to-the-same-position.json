@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-cost-to-move-chips-to-the-same-position",
+ "frontendId": "1217",
+ "title": "Minimum Cost to Move Chips to The Same Position",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "position",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "position = {position}",
+ "visible": [
+  "position"
+ ],
+ "call": "result = Solution().minCostToMoveChips(position)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

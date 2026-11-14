@@ -1,0 +1,27 @@
+{
+ "slug": "recover-a-tree-from-preorder-traversal",
+ "frontendId": "1028",
+ "title": "Recover a Tree From Preorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "traversal",
+   "type": "string"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "traversal = {traversal}",
+ "visible": [
+  "traversal"
+ ],
+ "call": "result = Solution().recoverFromPreorder(traversal)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

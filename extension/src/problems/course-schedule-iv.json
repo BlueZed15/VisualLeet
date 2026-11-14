@@ -1,0 +1,35 @@
+{
+ "slug": "course-schedule-iv",
+ "frontendId": "1462",
+ "title": "Course Schedule IV",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numCourses",
+   "type": "integer"
+  },
+  {
+   "name": "prerequisites",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "numCourses = {numCourses}\nprerequisites = {prerequisites}\nqueries = {queries}",
+ "visible": [
+  "numCourses",
+  "prerequisites",
+  "queries"
+ ],
+ "call": "result = Solution().checkIfPrerequisite(numCourses, prerequisites, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

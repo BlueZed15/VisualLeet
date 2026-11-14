@@ -1,0 +1,30 @@
+{
+ "slug": "video-stitching",
+ "frontendId": "1024",
+ "title": "Video Stitching",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "clips",
+   "type": "integer[][]"
+  },
+  {
+   "name": "time",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "clips = {clips}\ntime = {time}",
+ "visible": [
+  "clips",
+  "time"
+ ],
+ "call": "result = Solution().videoStitching(clips, time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

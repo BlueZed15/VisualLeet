@@ -1,0 +1,46 @@
+{
+ "slug": "stream-of-characters",
+ "frontendId": "1032",
+ "title": "Stream of Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "StreamChecker",
+ "methods": {
+  "StreamChecker": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "query": [
+   {
+    "name": "letter",
+    "type": "character"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = StreamChecker(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

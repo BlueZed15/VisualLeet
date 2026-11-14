@@ -1,0 +1,28 @@
+{
+ "slug": "rotate-function",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "396",
+ "title": "Rotate Function",
+ "premium": false,
+ "meta": {
+  "name": "maxRotateFunction",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,3,2,6]",
+  "[100]"
+ ],
+ "exampleOutputs": [
+  "26",
+  "0"
+ ],
+ "anyOrder": false
+}

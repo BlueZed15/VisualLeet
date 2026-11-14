@@ -1,0 +1,36 @@
+{
+ "slug": "maximum-score-from-removing-substrings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1717",
+ "title": "Maximum Score From Removing Substrings",
+ "premium": false,
+ "meta": {
+  "name": "maximumGain",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   },
+   {
+    "type": "integer",
+    "name": "y"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"cdbcbbaaabab\"\n4\n5",
+  "\"aabbaaxybbaabb\"\n5\n4"
+ ],
+ "exampleOutputs": [
+  "19",
+  "20"
+ ],
+ "anyOrder": false
+}

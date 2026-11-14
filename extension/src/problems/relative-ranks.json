@@ -1,0 +1,25 @@
+{
+ "slug": "relative-ranks",
+ "frontendId": "506",
+ "title": "Relative Ranks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "score",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "score = {score}",
+ "visible": [
+  "score"
+ ],
+ "call": "result = Solution().findRelativeRanks(score)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

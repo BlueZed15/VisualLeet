@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+ "frontendId": "1526",
+ "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}",
+ "visible": [
+  "target"
+ ],
+ "call": "result = Solution().minNumberOperations(target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

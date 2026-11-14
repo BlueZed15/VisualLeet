@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-index-sum-of-two-lists",
+ "frontendId": "599",
+ "title": "Minimum Index Sum of Two Lists",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "list1",
+   "type": "string[]"
+  },
+  {
+   "name": "list2",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "list1 = {list1}\nlist2 = {list2}",
+ "visible": [
+  "list1",
+  "list2"
+ ],
+ "call": "result = Solution().findRestaurant(list1, list2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

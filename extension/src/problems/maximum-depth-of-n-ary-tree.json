@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-depth-of-n-ary-tree",
+ "frontendId": "559",
+ "title": "Maximum Depth of N-ary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "list<integer?>",
+   "hint": "level order, each node's children ended by null"
+  }
+ ],
+ "helpers": [
+  "NaryTree"
+ ],
+ "setup": "root = build_nary({root})",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().maxDepth(root)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

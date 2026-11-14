@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-balloons",
+ "frontendId": "1189",
+ "title": "Maximum Number of Balloons",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}",
+ "visible": [
+  "text"
+ ],
+ "call": "result = Solution().maxNumberOfBalloons(text)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

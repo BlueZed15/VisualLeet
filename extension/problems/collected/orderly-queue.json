@@ -1,0 +1,32 @@
+{
+ "slug": "orderly-queue",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "899",
+ "title": "Orderly Queue",
+ "premium": false,
+ "meta": {
+  "name": "orderlyQueue",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"cba\"\n1",
+  "\"baaca\"\n3"
+ ],
+ "exampleOutputs": [
+  "\"acb\"",
+  "\"aaabc\""
+ ],
+ "anyOrder": false
+}

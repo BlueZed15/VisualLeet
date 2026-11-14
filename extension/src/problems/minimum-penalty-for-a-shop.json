@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-penalty-for-a-shop",
+ "frontendId": "2483",
+ "title": "Minimum Penalty for a Shop",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "customers",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "customers = {customers}",
+ "visible": [
+  "customers"
+ ],
+ "call": "result = Solution().bestClosingTime(customers)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

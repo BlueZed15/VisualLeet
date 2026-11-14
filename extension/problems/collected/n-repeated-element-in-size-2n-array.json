@@ -1,0 +1,30 @@
+{
+ "slug": "n-repeated-element-in-size-2n-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "961",
+ "title": "N-Repeated Element in Size 2N Array",
+ "premium": false,
+ "meta": {
+  "name": "repeatedNTimes",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,3]",
+  "[2,1,2,5,3,2]",
+  "[5,1,5,2,5,3,5,4]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

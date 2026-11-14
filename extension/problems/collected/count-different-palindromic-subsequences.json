@@ -1,0 +1,28 @@
+{
+ "slug": "count-different-palindromic-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "730",
+ "title": "Count Different Palindromic Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "countPalindromicSubsequences",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"bccb\"",
+  "\"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "104860361"
+ ],
+ "anyOrder": false
+}

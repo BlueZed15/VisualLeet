@@ -1,0 +1,30 @@
+{
+ "slug": "parsing-a-boolean-expression",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1106",
+ "title": "Parsing A Boolean Expression",
+ "premium": false,
+ "meta": {
+  "name": "parseBoolExpr",
+  "params": [
+   {
+    "name": "expression",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"&(|(f))\"",
+  "\"|(f,f,f,t)\"",
+  "\"!(&(f,t))\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

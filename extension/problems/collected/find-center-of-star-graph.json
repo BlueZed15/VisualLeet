@@ -1,0 +1,28 @@
+{
+ "slug": "find-center-of-star-graph",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1791",
+ "title": "Find Center of Star Graph",
+ "premium": false,
+ "meta": {
+  "name": "findCenter",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,3],[4,2]]",
+  "[[1,2],[5,1],[1,3],[1,4]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

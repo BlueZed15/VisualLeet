@@ -1,0 +1,28 @@
+{
+ "slug": "longest-duplicate-substring",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1044",
+ "title": "Longest Duplicate Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestDupSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"banana\"",
+  "\"abcd\""
+ ],
+ "exampleOutputs": [
+  "\"ana\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

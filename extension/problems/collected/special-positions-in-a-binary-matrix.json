@@ -1,0 +1,28 @@
+{
+ "slug": "special-positions-in-a-binary-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1582",
+ "title": "Special Positions in a Binary Matrix",
+ "premium": false,
+ "meta": {
+  "name": "numSpecial",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0,0],[0,0,1],[1,0,0]]",
+  "[[1,0,0],[0,1,0],[0,0,1]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "kth-ancestor-of-a-tree-node",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1483",
+ "title": "Kth Ancestor of a Tree Node",
+ "premium": false,
+ "meta": {
+  "classname": "TreeAncestor",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    },
+    {
+     "name": "parent",
+     "type": "integer[]"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "node"
+     },
+     {
+      "type": "integer",
+      "name": "k"
+     }
+    ],
+    "name": "getKthAncestor",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"TreeAncestor\",\"getKthAncestor\",\"getKthAncestor\",\"getKthAncestor\"]\n[[7,[-1,0,0,1,1,2,2]],[3,1],[5,2],[6,3]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 0, -1]"
+ ],
+ "anyOrder": false
+}

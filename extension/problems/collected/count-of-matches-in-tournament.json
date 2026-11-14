@@ -1,0 +1,28 @@
+{
+ "slug": "count-of-matches-in-tournament",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1688",
+ "title": "Count of Matches in Tournament",
+ "premium": false,
+ "meta": {
+  "name": "numberOfMatches",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "7",
+  "14"
+ ],
+ "exampleOutputs": [
+  "6",
+  "13"
+ ],
+ "anyOrder": false
+}

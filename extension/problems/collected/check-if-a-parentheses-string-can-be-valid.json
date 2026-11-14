@@ -1,0 +1,36 @@
+{
+ "slug": "check-if-a-parentheses-string-can-be-valid",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2116",
+ "title": "Check if a Parentheses String Can Be Valid",
+ "premium": false,
+ "meta": {
+  "name": "canBeValid",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "locked"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"))()))\"\n\"010100\"",
+  "\"()()\"\n\"0000\"",
+  "\")\"\n\"0\"",
+  "\"(((())(((())\"\n\"111111010111\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

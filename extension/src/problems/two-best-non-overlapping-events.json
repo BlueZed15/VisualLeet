@@ -1,0 +1,25 @@
+{
+ "slug": "two-best-non-overlapping-events",
+ "frontendId": "2054",
+ "title": "Two Best Non-Overlapping Events",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "events",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "events = {events}",
+ "visible": [
+  "events"
+ ],
+ "call": "result = Solution().maxTwoEvents(events)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

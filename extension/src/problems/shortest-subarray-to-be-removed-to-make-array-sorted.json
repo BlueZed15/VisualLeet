@@ -1,0 +1,25 @@
+{
+ "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
+ "frontendId": "1574",
+ "title": "Shortest Subarray to be Removed to Make Array Sorted",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().findLengthOfShortestSubarray(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

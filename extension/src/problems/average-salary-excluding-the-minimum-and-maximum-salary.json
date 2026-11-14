@@ -1,0 +1,25 @@
+{
+ "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+ "frontendId": "1491",
+ "title": "Average Salary Excluding the Minimum and Maximum Salary",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "salary",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "salary = {salary}",
+ "visible": [
+  "salary"
+ ],
+ "call": "result = Solution().average(salary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

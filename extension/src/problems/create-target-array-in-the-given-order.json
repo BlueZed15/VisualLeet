@@ -1,0 +1,30 @@
+{
+ "slug": "create-target-array-in-the-given-order",
+ "frontendId": "1389",
+ "title": "Create Target Array in the Given Order",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "index",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nindex = {index}",
+ "visible": [
+  "nums",
+  "index"
+ ],
+ "call": "result = Solution().createTargetArray(nums, index)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

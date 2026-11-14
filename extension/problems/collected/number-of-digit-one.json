@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-digit-one",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "233",
+ "title": "Number of Digit One",
+ "premium": false,
+ "meta": {
+  "name": "countDigitOne",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "13",
+  "0"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

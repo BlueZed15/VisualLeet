@@ -1,0 +1,28 @@
+{
+ "slug": "can-make-arithmetic-progression-from-sequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1502",
+ "title": "Can Make Arithmetic Progression From Sequence",
+ "premium": false,
+ "meta": {
+  "name": "canMakeArithmeticProgression",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[3,5,1]",
+  "[1,2,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

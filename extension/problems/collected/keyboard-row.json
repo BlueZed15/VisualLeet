@@ -1,0 +1,30 @@
+{
+ "slug": "keyboard-row",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "500",
+ "title": "Keyboard Row",
+ "premium": false,
+ "meta": {
+  "name": "findWords",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]",
+  "[\"omk\"]",
+  "[\"adsdf\",\"sfd\"]"
+ ],
+ "exampleOutputs": [
+  "[\"Alaska\",\"Dad\"]",
+  "[]",
+  "[\"adsdf\",\"sfd\"]"
+ ],
+ "anyOrder": false
+}

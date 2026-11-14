@@ -1,0 +1,32 @@
+{
+ "slug": "xor-queries-of-a-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1310",
+ "title": "XOR Queries of a Subarray",
+ "premium": false,
+ "meta": {
+  "name": "xorQueries",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,4,8]\n[[0,1],[1,2],[0,3],[3,3]]",
+  "[4,8,2,10]\n[[2,3],[1,3],[0,0],[0,3]]"
+ ],
+ "exampleOutputs": [
+  "[2,7,14,8]",
+  "[8,0,4,4]"
+ ],
+ "anyOrder": false
+}

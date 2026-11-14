@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-safest-path-in-a-grid",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2812",
+ "title": "Find the Safest Path in a Grid",
+ "premium": false,
+ "meta": {
+  "name": "maximumSafenessFactor",
+  "params": [
+   {
+    "name": "grid",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0,0],[0,0,0],[0,0,1]]",
+  "[[0,0,1],[0,0,0],[0,0,0]]",
+  "[[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

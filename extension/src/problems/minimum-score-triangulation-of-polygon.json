@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-score-triangulation-of-polygon",
+ "frontendId": "1039",
+ "title": "Minimum Score Triangulation of Polygon",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "values",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "values = {values}",
+ "visible": [
+  "values"
+ ],
+ "call": "result = Solution().minScoreTriangulation(values)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

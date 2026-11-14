@@ -1,0 +1,30 @@
+{
+ "slug": "avoid-flood-in-the-city",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1488",
+ "title": "Avoid Flood in The City",
+ "premium": false,
+ "meta": {
+  "name": "avoidFlood",
+  "params": [
+   {
+    "name": "rains",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[1,2,0,0,2,1]",
+  "[1,2,0,1,2]"
+ ],
+ "exampleOutputs": [
+  "[-1,-1,-1,-1]",
+  "[-1,-1,2,1,-1,-1]",
+  "[]"
+ ],
+ "anyOrder": false
+}

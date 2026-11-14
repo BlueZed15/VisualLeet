@@ -1,0 +1,25 @@
+{
+ "slug": "parsing-a-boolean-expression",
+ "frontendId": "1106",
+ "title": "Parsing A Boolean Expression",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "expression",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "expression = {expression}",
+ "visible": [
+  "expression"
+ ],
+ "call": "result = Solution().parseBoolExpr(expression)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

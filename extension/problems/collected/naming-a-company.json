@@ -1,0 +1,28 @@
+{
+ "slug": "naming-a-company",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2306",
+ "title": "Naming a Company",
+ "premium": false,
+ "meta": {
+  "name": "distinctNames",
+  "params": [
+   {
+    "name": "ideas",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[\"coffee\",\"donuts\",\"time\",\"toffee\"]",
+  "[\"lack\",\"back\"]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

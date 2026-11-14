@@ -1,0 +1,30 @@
+{
+ "slug": "time-needed-to-buy-tickets",
+ "frontendId": "2073",
+ "title": "Time Needed to Buy Tickets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tickets",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tickets = {tickets}\nk = {k}",
+ "visible": [
+  "tickets",
+  "k"
+ ],
+ "call": "result = Solution().timeRequiredToBuy(tickets, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

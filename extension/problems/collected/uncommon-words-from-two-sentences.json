@@ -1,0 +1,32 @@
+{
+ "slug": "uncommon-words-from-two-sentences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "884",
+ "title": "Uncommon Words from Two Sentences",
+ "premium": false,
+ "meta": {
+  "name": "uncommonFromSentences",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "\"this apple is sweet\"\n\"this apple is sour\"",
+  "\"apple apple\"\n\"banana\""
+ ],
+ "exampleOutputs": [
+  "[\"sweet\",\"sour\"]",
+  "[\"banana\"]"
+ ],
+ "anyOrder": true
+}

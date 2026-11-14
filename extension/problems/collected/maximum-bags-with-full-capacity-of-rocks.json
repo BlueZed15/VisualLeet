@@ -1,0 +1,36 @@
+{
+ "slug": "maximum-bags-with-full-capacity-of-rocks",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2279",
+ "title": "Maximum Bags With Full Capacity of Rocks",
+ "premium": false,
+ "meta": {
+  "name": "maximumBags",
+  "params": [
+   {
+    "name": "capacity",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "rocks"
+   },
+   {
+    "type": "integer",
+    "name": "additionalRocks"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,4,5]\n[1,2,4,4]\n2",
+  "[10,2,2]\n[2,2,0]\n100"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

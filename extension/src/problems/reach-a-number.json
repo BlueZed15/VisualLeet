@@ -1,0 +1,25 @@
+{
+ "slug": "reach-a-number",
+ "frontendId": "754",
+ "title": "Reach a Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}",
+ "visible": [
+  "target"
+ ],
+ "call": "result = Solution().reachNumber(target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

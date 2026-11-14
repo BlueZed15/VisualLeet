@@ -1,0 +1,28 @@
+{
+ "slug": "n-ary-tree-preorder-traversal",
+ "frontendId": "589",
+ "title": "N-ary Tree Preorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "list<integer?>",
+   "hint": "level order, each node's children ended by null"
+  }
+ ],
+ "helpers": [
+  "NaryTree"
+ ],
+ "setup": "root = build_nary({root})",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().preorder(root)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

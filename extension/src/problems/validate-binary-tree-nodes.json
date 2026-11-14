@@ -1,0 +1,35 @@
+{
+ "slug": "validate-binary-tree-nodes",
+ "frontendId": "1361",
+ "title": "Validate Binary Tree Nodes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "leftChild",
+   "type": "integer[]"
+  },
+  {
+   "name": "rightChild",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nleftChild = {leftChild}\nrightChild = {rightChild}",
+ "visible": [
+  "n",
+  "leftChild",
+  "rightChild"
+ ],
+ "call": "result = Solution().validateBinaryTreeNodes(n, leftChild, rightChild)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

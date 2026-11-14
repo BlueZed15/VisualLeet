@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-average-pass-ratio",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1792",
+ "title": "Maximum Average Pass Ratio",
+ "premium": false,
+ "meta": {
+  "name": "maxAverageRatio",
+  "params": [
+   {
+    "name": "classes",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "extraStudents"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[3,5],[2,2]]\n2",
+  "[[2,4],[3,9],[4,5],[2,10]]\n4"
+ ],
+ "exampleOutputs": [
+  "0.78333",
+  "0.53485"
+ ],
+ "anyOrder": false
+}

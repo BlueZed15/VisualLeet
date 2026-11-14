@@ -1,0 +1,60 @@
+{
+ "slug": "rectangle-area",
+ "frontendId": "223",
+ "title": "Rectangle Area",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ax1",
+   "type": "integer"
+  },
+  {
+   "name": "ay1",
+   "type": "integer"
+  },
+  {
+   "name": "ax2",
+   "type": "integer"
+  },
+  {
+   "name": "ay2",
+   "type": "integer"
+  },
+  {
+   "name": "bx1",
+   "type": "integer"
+  },
+  {
+   "name": "by1",
+   "type": "integer"
+  },
+  {
+   "name": "bx2",
+   "type": "integer"
+  },
+  {
+   "name": "by2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "ax1 = {ax1}\nay1 = {ay1}\nax2 = {ax2}\nay2 = {ay2}\nbx1 = {bx1}\nby1 = {by1}\nbx2 = {bx2}\nby2 = {by2}",
+ "visible": [
+  "ax1",
+  "ay1",
+  "ax2",
+  "ay2",
+  "bx1",
+  "by1",
+  "bx2",
+  "by2"
+ ],
+ "call": "result = Solution().computeArea(ax1, ay1, ax2, ay2, bx1, by1, bx2, by2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

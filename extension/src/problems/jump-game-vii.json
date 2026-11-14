@@ -1,0 +1,35 @@
+{
+ "slug": "jump-game-vii",
+ "frontendId": "1871",
+ "title": "Jump Game VII",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "minJump",
+   "type": "integer"
+  },
+  {
+   "name": "maxJump",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nminJump = {minJump}\nmaxJump = {maxJump}",
+ "visible": [
+  "s",
+  "minJump",
+  "maxJump"
+ ],
+ "call": "result = Solution().canReach(s, minJump, maxJump)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

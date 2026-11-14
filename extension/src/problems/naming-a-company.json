@@ -1,0 +1,25 @@
+{
+ "slug": "naming-a-company",
+ "frontendId": "2306",
+ "title": "Naming a Company",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ideas",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ideas = {ideas}",
+ "visible": [
+  "ideas"
+ ],
+ "call": "result = Solution().distinctNames(ideas)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

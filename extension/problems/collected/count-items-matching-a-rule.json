@@ -1,0 +1,36 @@
+{
+ "slug": "count-items-matching-a-rule",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1773",
+ "title": "Count Items Matching a Rule",
+ "premium": false,
+ "meta": {
+  "name": "countMatches",
+  "params": [
+   {
+    "name": "items",
+    "type": "list<list<string>>"
+   },
+   {
+    "type": "string",
+    "name": "ruleKey"
+   },
+   {
+    "type": "string",
+    "name": "ruleValue"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"color\"\n\"silver\"",
+  "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]]\n\"type\"\n\"phone\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

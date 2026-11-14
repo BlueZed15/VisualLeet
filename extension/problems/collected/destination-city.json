@@ -1,0 +1,30 @@
+{
+ "slug": "destination-city",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1436",
+ "title": "Destination City",
+ "premium": false,
+ "meta": {
+  "name": "destCity",
+  "params": [
+   {
+    "name": "paths",
+    "type": "list<list<string>>"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
+  "[[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
+  "[[\"A\",\"Z\"]]"
+ ],
+ "exampleOutputs": [
+  "\"Sao Paulo\"",
+  "\"A\"",
+  "\"Z\""
+ ],
+ "anyOrder": false
+}

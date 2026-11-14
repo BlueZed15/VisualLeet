@@ -1,0 +1,30 @@
+{
+ "slug": "distinct-subsequences-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "940",
+ "title": "Distinct Subsequences II",
+ "premium": false,
+ "meta": {
+  "name": "distinctSubseqII",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"",
+  "\"aba\"",
+  "\"aaa\""
+ ],
+ "exampleOutputs": [
+  "7",
+  "6",
+  "3"
+ ],
+ "anyOrder": false
+}

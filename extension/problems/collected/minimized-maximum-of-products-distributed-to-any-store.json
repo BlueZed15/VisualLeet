@@ -1,0 +1,34 @@
+{
+ "slug": "minimized-maximum-of-products-distributed-to-any-store",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2064",
+ "title": "Minimized Maximum of Products Distributed to Any Store",
+ "premium": false,
+ "meta": {
+  "name": "minimizedMaximum",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "quantities"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[11,6]",
+  "7\n[15,10,10]",
+  "1\n[100000]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5",
+  "100000"
+ ],
+ "anyOrder": false
+}

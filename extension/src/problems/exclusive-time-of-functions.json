@@ -1,0 +1,30 @@
+{
+ "slug": "exclusive-time-of-functions",
+ "frontendId": "636",
+ "title": "Exclusive Time of Functions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "logs",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nlogs = {logs}",
+ "visible": [
+  "n",
+  "logs"
+ ],
+ "call": "result = Solution().exclusiveTime(n, logs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

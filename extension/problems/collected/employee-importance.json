@@ -1,0 +1,49 @@
+{
+ "slug": "employee-importance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "690",
+ "title": "Employee Importance",
+ "premium": false,
+ "meta": {
+  "name": "getImportance",
+  "params": [
+   {
+    "name": "employees",
+    "type": "list<string>"
+   },
+   {
+    "name": "id",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "ruby",
+   "python3",
+   "kotlin",
+   "scala",
+   "csharp",
+   "javascript",
+   "swift",
+   "golang",
+   "php",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class Employee {\n    id: number;\n    importance: number;\n    subordinates: number[];\n    constructor(id: number, importance: number, subordinates: number[]) {\n        this.id = (id === undefined) ? 0 : id;\n        this.importance = (importance === undefined) ? 0 : importance;\n        this.subordinates = (subordinates === undefined) ? [] : subordinates;\n    }\n}"
+ },
+ "exampleInputs": [
+  "[[1,5,[2,3]],[2,3,[]],[3,3,[]]]\n1",
+  "[[1,2,[5]],[5,-3,[]]]\n5"
+ ],
+ "exampleOutputs": [
+  "11",
+  "-3"
+ ],
+ "anyOrder": false
+}

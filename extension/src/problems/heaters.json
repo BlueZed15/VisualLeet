@@ -1,0 +1,30 @@
+{
+ "slug": "heaters",
+ "frontendId": "475",
+ "title": "Heaters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "houses",
+   "type": "integer[]"
+  },
+  {
+   "name": "heaters",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "houses = {houses}\nheaters = {heaters}",
+ "visible": [
+  "houses",
+  "heaters"
+ ],
+ "call": "result = Solution().findRadius(houses, heaters)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

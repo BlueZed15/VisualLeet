@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-balloons",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1189",
+ "title": "Maximum Number of Balloons",
+ "premium": false,
+ "meta": {
+  "name": "maxNumberOfBalloons",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"nlaebolko\"",
+  "\"loonbalxballpoon\"",
+  "\"leetcode\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

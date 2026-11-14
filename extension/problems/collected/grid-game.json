@@ -1,0 +1,30 @@
+{
+ "slug": "grid-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2017",
+ "title": "Grid Game",
+ "premium": false,
+ "meta": {
+  "name": "gridGame",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[2,5,4],[1,5,1]]",
+  "[[3,3,1],[8,5,2]]",
+  "[[1,3,1,15],[1,3,3,1]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4",
+  "7"
+ ],
+ "anyOrder": false
+}

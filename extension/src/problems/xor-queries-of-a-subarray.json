@@ -1,0 +1,30 @@
+{
+ "slug": "xor-queries-of-a-subarray",
+ "frontendId": "1310",
+ "title": "XOR Queries of a Subarray",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nqueries = {queries}",
+ "visible": [
+  "arr",
+  "queries"
+ ],
+ "call": "result = Solution().xorQueries(arr, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

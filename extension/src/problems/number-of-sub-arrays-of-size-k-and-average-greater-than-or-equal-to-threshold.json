@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+ "frontendId": "1343",
+ "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nk = {k}\nthreshold = {threshold}",
+ "visible": [
+  "arr",
+  "k",
+  "threshold"
+ ],
+ "call": "result = Solution().numOfSubarrays(arr, k, threshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

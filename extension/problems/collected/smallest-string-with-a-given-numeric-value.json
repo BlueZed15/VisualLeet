@@ -1,0 +1,32 @@
+{
+ "slug": "smallest-string-with-a-given-numeric-value",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1663",
+ "title": "Smallest String With A Given Numeric Value",
+ "premium": false,
+ "meta": {
+  "name": "getSmallestString",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "3\n27",
+  "5\n73"
+ ],
+ "exampleOutputs": [
+  "\"aay\"",
+  "\"aaszz\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-sufficient-team",
+ "frontendId": "1125",
+ "title": "Smallest Sufficient Team",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "req_skills",
+   "type": "string[]"
+  },
+  {
+   "name": "people",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "req_skills = {req_skills}\npeople = {people}",
+ "visible": [
+  "req_skills",
+  "people"
+ ],
+ "call": "result = Solution().smallestSufficientTeam(req_skills, people)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

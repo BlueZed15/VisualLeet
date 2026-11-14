@@ -1,0 +1,53 @@
+{
+ "slug": "my-calendar-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "731",
+ "title": "My Calendar II",
+ "premium": false,
+ "meta": {
+  "classname": "MyCalendarTwo",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "name": "book",
+    "params": [
+     {
+      "type": "integer",
+      "name": "startTime"
+     },
+     {
+      "type": "integer",
+      "name": "endTime"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "starts",
+    "type": "integer[]"
+   },
+   {
+    "name": "ends",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"MyCalendarTwo\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, true, true, false, true, true]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "x-of-a-kind-in-a-deck-of-cards",
+ "frontendId": "914",
+ "title": "X of a Kind in a Deck of Cards",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "deck",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "deck = {deck}",
+ "visible": [
+  "deck"
+ ],
+ "call": "result = Solution().hasGroupsSizeX(deck)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

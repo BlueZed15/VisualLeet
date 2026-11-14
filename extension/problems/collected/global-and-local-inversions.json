@@ -1,0 +1,28 @@
+{
+ "slug": "global-and-local-inversions",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "775",
+ "title": "Global and Local Inversions",
+ "premium": false,
+ "meta": {
+  "name": "isIdealPermutation",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,2]",
+  "[1,2,0]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

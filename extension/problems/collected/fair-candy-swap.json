@@ -1,0 +1,34 @@
+{
+ "slug": "fair-candy-swap",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "888",
+ "title": "Fair Candy Swap",
+ "premium": false,
+ "meta": {
+  "name": "fairCandySwap",
+  "params": [
+   {
+    "name": "aliceSizes",
+    "type": "integer[]"
+   },
+   {
+    "name": "bobSizes",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,1]\n[2,2]",
+  "[1,2]\n[2,3]",
+  "[2]\n[1,3]"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[1,2]",
+  "[2,3]"
+ ],
+ "anyOrder": false
+}

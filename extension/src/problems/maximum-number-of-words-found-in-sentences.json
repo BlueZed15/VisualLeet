@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-words-found-in-sentences",
+ "frontendId": "2114",
+ "title": "Maximum Number of Words Found in Sentences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentences",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentences = {sentences}",
+ "visible": [
+  "sentences"
+ ],
+ "call": "result = Solution().mostWordsFound(sentences)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

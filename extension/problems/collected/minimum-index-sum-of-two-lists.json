@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-index-sum-of-two-lists",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "599",
+ "title": "Minimum Index Sum of Two Lists",
+ "premium": false,
+ "meta": {
+  "name": "findRestaurant",
+  "params": [
+   {
+    "name": "list1",
+    "type": "string[]"
+   },
+   {
+    "name": "list2",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+  "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"KFC\",\"Shogun\",\"Burger King\"]",
+  "[\"happy\",\"sad\",\"good\"]\n[\"sad\",\"happy\",\"good\"]"
+ ],
+ "exampleOutputs": [
+  "[\"Shogun\"]",
+  "[\"Shogun\"]",
+  "[\"sad\",\"happy\"]"
+ ],
+ "anyOrder": true
+}

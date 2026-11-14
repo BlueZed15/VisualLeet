@@ -1,0 +1,50 @@
+{
+ "slug": "product-of-the-last-k-numbers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1352",
+ "title": "Product of the Last K Numbers",
+ "premium": false,
+ "meta": {
+  "classname": "ProductOfNumbers",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "k"
+     }
+    ],
+    "name": "getProduct",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]"
+ ],
+ "exampleOutputs": [
+  "[null,null,null,null,null,null,20,40,0,null,32]"
+ ],
+ "anyOrder": false
+}

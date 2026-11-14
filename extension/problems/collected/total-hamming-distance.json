@@ -1,0 +1,28 @@
+{
+ "slug": "total-hamming-distance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "477",
+ "title": "Total Hamming Distance",
+ "premium": false,
+ "meta": {
+  "name": "totalHammingDistance",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,14,2]",
+  "[4,14,4]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "4"
+ ],
+ "anyOrder": false
+}

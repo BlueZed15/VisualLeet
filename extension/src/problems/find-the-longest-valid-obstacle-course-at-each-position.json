@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-longest-valid-obstacle-course-at-each-position",
+ "frontendId": "1964",
+ "title": "Find the Longest Valid Obstacle Course at Each Position",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "obstacles",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "obstacles = {obstacles}",
+ "visible": [
+  "obstacles"
+ ],
+ "call": "result = Solution().longestObstacleCourseAtEachPosition(obstacles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

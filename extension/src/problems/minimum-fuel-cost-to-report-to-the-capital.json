@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-fuel-cost-to-report-to-the-capital",
+ "frontendId": "2477",
+ "title": "Minimum Fuel Cost to Report to the Capital",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "roads",
+   "type": "integer[][]"
+  },
+  {
+   "name": "seats",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "roads = {roads}\nseats = {seats}",
+ "visible": [
+  "roads",
+  "seats"
+ ],
+ "call": "result = Solution().minimumFuelCost(roads, seats)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

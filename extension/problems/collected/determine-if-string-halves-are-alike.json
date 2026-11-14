@@ -1,0 +1,28 @@
+{
+ "slug": "determine-if-string-halves-are-alike",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1704",
+ "title": "Determine if String Halves Are Alike",
+ "premium": false,
+ "meta": {
+  "name": "halvesAreAlike",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"book\"",
+  "\"textbook\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

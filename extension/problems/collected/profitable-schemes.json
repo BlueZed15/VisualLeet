@@ -1,0 +1,40 @@
+{
+ "slug": "profitable-schemes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "879",
+ "title": "Profitable Schemes",
+ "premium": false,
+ "meta": {
+  "name": "profitableSchemes",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "minProfit",
+    "type": "integer"
+   },
+   {
+    "name": "group",
+    "type": "integer[]"
+   },
+   {
+    "name": "profit",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n3\n[2,2]\n[2,3]",
+  "10\n5\n[2,3,5]\n[6,7,8]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "7"
+ ],
+ "anyOrder": false
+}

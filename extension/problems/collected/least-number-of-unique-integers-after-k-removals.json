@@ -1,0 +1,32 @@
+{
+ "slug": "least-number-of-unique-integers-after-k-removals",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1481",
+ "title": "Least Number of Unique Integers after K Removals",
+ "premium": false,
+ "meta": {
+  "name": "findLeastNumOfUniqueInts",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,5,4]\n1",
+  "[4,3,1,1,3,3,2]\n3"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,55 @@
+{
+ "slug": "stream-of-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1032",
+ "title": "Stream of Characters",
+ "premium": false,
+ "meta": {
+  "classname": "StreamChecker",
+  "maxbytesperline": 500000,
+  "constructor": {
+   "params": [
+    {
+     "type": "string[]",
+     "name": "words"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "query",
+    "params": [
+     {
+      "type": "character",
+      "name": "letter"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "starts",
+    "type": "integer[]"
+   },
+   {
+    "name": "ends",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"StreamChecker\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\"]\n[[[\"cd\",\"f\",\"kl\"]],[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"g\"],[\"h\"],[\"i\"],[\"j\"],[\"k\"],[\"l\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, false, false, false, true, false, true, false, false, false, false, false, true]"
+ ],
+ "anyOrder": false
+}

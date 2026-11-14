@@ -1,0 +1,30 @@
+{
+ "slug": "distribute-candies",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "575",
+ "title": "Distribute Candies",
+ "premium": false,
+ "meta": {
+  "name": "distributeCandies",
+  "params": [
+   {
+    "name": "candyType",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2,2,3,3]",
+  "[1,1,2,3]",
+  "[6,6,6,6]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

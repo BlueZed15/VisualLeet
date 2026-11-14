@@ -1,0 +1,35 @@
+{
+ "slug": "create-maximum-number",
+ "frontendId": "321",
+ "title": "Create Maximum Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nk = {k}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "k"
+ ],
+ "call": "result = Solution().maxNumber(nums1, nums2, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

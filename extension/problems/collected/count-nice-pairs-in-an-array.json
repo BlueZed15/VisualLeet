@@ -1,0 +1,28 @@
+{
+ "slug": "count-nice-pairs-in-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1814",
+ "title": "Count Nice Pairs in an Array",
+ "premium": false,
+ "meta": {
+  "name": "countNicePairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[42,11,1,97]",
+  "[13,10,35,24,76]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-coins-you-can-get",
+ "frontendId": "1561",
+ "title": "Maximum Number of Coins You Can Get",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}",
+ "visible": [
+  "piles"
+ ],
+ "call": "result = Solution().maxCoins(piles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

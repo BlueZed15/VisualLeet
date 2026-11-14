@@ -1,0 +1,28 @@
+{
+ "slug": "substring-with-largest-variance",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2272",
+ "title": "Substring With Largest Variance",
+ "premium": false,
+ "meta": {
+  "name": "largestVariance",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aababbb\"",
+  "\"abcde\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "course-schedule-iv",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1462",
+ "title": "Course Schedule IV",
+ "premium": false,
+ "meta": {
+  "name": "checkIfPrerequisite",
+  "params": [
+   {
+    "name": "numCourses",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "prerequisites"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>"
+  }
+ },
+ "exampleInputs": [
+  "6\n[[4,5],[3,4],[2,3],[1,2],[0,1]]\n[[0,5]]",
+  "3\n[[0,1],[1,2]]\n[[0,2]]",
+  "4\n[[0,1],[2,3]]\n[[0,3]]"
+ ],
+ "exampleOutputs": [
+  "[false,true]",
+  "[false,false]",
+  "[true,true]"
+ ],
+ "anyOrder": false
+}

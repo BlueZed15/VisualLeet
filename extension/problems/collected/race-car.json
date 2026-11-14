@@ -1,0 +1,28 @@
+{
+ "slug": "race-car",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "818",
+ "title": "Race Car",
+ "premium": false,
+ "meta": {
+  "name": "racecar",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

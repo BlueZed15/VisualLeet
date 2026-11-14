@@ -1,0 +1,32 @@
+{
+ "slug": "corporate-flight-bookings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1109",
+ "title": "Corporate Flight Bookings",
+ "premium": false,
+ "meta": {
+  "name": "corpFlightBookings",
+  "params": [
+   {
+    "name": "bookings",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,10],[2,3,20],[2,5,25]]\n5",
+  "[[1,2,10],[2,2,15]]\n2"
+ ],
+ "exampleOutputs": [
+  "[10,55,45,25,25]",
+  "[10,25]"
+ ],
+ "anyOrder": false
+}

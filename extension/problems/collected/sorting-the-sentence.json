@@ -1,0 +1,28 @@
+{
+ "slug": "sorting-the-sentence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1859",
+ "title": "Sorting the Sentence",
+ "premium": false,
+ "meta": {
+  "name": "sortSentence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"is2 sentence4 This1 a3\"",
+  "\"Myself2 Me1 I4 and3\""
+ ],
+ "exampleOutputs": [
+  "\"This is a sentence\"",
+  "\"Me Myself and I\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-nodes-in-the-sub-tree-with-the-same-label",
+ "frontendId": "1519",
+ "title": "Number of Nodes in the Sub-Tree With the Same Label",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "labels",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nlabels = {labels}",
+ "visible": [
+  "n",
+  "edges",
+  "labels"
+ ],
+ "call": "result = Solution().countSubTrees(n, edges, labels)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

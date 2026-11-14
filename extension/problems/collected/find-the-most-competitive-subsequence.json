@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-most-competitive-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1673",
+ "title": "Find the Most Competitive Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "mostCompetitive",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,5,2,6]\n2",
+  "[2,4,3,3,5,4,9,6]\n4"
+ ],
+ "exampleOutputs": [
+  "[2,6]",
+  "[2,3,3,4]"
+ ],
+ "anyOrder": false
+}

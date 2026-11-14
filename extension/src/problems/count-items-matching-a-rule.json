@@ -1,0 +1,35 @@
+{
+ "slug": "count-items-matching-a-rule",
+ "frontendId": "1773",
+ "title": "Count Items Matching a Rule",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "items",
+   "type": "list<list<string>>"
+  },
+  {
+   "name": "ruleKey",
+   "type": "string"
+  },
+  {
+   "name": "ruleValue",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "items = {items}\nruleKey = {ruleKey}\nruleValue = {ruleValue}",
+ "visible": [
+  "items",
+  "ruleKey",
+  "ruleValue"
+ ],
+ "call": "result = Solution().countMatches(items, ruleKey, ruleValue)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "partition-array-according-to-given-pivot",
+ "frontendId": "2161",
+ "title": "Partition Array According to Given Pivot",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "pivot",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\npivot = {pivot}",
+ "visible": [
+  "nums",
+  "pivot"
+ ],
+ "call": "result = Solution().pivotArray(nums, pivot)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

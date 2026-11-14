@@ -1,0 +1,34 @@
+{
+ "slug": "find-target-indices-after-sorting-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2089",
+ "title": "Find Target Indices After Sorting Array",
+ "premium": false,
+ "meta": {
+  "name": "targetIndices",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,5,2,3]\n2",
+  "[1,2,5,2,3]\n3",
+  "[1,2,5,2,3]\n5"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[3]",
+  "[4]"
+ ],
+ "anyOrder": false
+}

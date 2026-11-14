@@ -1,0 +1,35 @@
+{
+ "slug": "last-day-where-you-can-still-cross",
+ "frontendId": "1970",
+ "title": "Last Day Where You Can Still Cross",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "row",
+   "type": "integer"
+  },
+  {
+   "name": "col",
+   "type": "integer"
+  },
+  {
+   "name": "cells",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "row = {row}\ncol = {col}\ncells = {cells}",
+ "visible": [
+  "row",
+  "col",
+  "cells"
+ ],
+ "call": "result = Solution().latestDayToCross(row, col, cells)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

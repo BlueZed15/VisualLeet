@@ -1,0 +1,40 @@
+{
+ "slug": "profitable-schemes",
+ "frontendId": "879",
+ "title": "Profitable Schemes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "minProfit",
+   "type": "integer"
+  },
+  {
+   "name": "group",
+   "type": "integer[]"
+  },
+  {
+   "name": "profit",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nminProfit = {minProfit}\ngroup = {group}\nprofit = {profit}",
+ "visible": [
+  "n",
+  "minProfit",
+  "group",
+  "profit"
+ ],
+ "call": "result = Solution().profitableSchemes(n, minProfit, group, profit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

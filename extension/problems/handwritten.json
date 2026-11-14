@@ -767,6 +767,95 @@
       ],
       "call": "result = Solution().findInMountainArray(target, mountainArr)\nprint(leet_str(result))",
       "tests": "collected"
+    },
+    "serialize-and-deserialize-bst": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode"
+        }
+      ],
+      "helpers": [],
+      "setup": "root = {root}",
+      "visible": [
+        "root"
+      ],
+      "call": "ser = Codec()\ndeser = Codec()\nresult = deser.deserialize(ser.serialize(root))\nprint(leet_str(tree_values(result)))",
+      "tests": "collected"
+    },
+    "n-ary-tree-preorder-traversal": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, each node's children ended by null"
+        }
+      ],
+      "helpers": [
+        "NaryTree"
+      ],
+      "setup": "root = build_nary({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().preorder(root)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "maximum-depth-of-n-ary-tree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, each node's children ended by null"
+        }
+      ],
+      "helpers": [
+        "NaryTree"
+      ],
+      "setup": "root = build_nary({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().maxDepth(root)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "n-ary-tree-postorder-traversal": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, each node's children ended by null"
+        }
+      ],
+      "helpers": [
+        "NaryTree"
+      ],
+      "setup": "root = build_nary({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().postorder(root)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "count-nodes-equal-to-average-of-subtree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode"
+        }
+      ],
+      "helpers": [],
+      "setup": "root = {root}",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().averageOfSubtree(root)\nprint(leet_str(result))",
+      "tests": "collected"
     }
   }
 }

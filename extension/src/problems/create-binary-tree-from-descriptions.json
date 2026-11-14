@@ -1,0 +1,27 @@
+{
+ "slug": "create-binary-tree-from-descriptions",
+ "frontendId": "2196",
+ "title": "Create Binary Tree From Descriptions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "descriptions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "descriptions = {descriptions}",
+ "visible": [
+  "descriptions"
+ ],
+ "call": "result = Solution().createBinaryTree(descriptions)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

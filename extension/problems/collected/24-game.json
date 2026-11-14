@@ -1,0 +1,28 @@
+{
+ "slug": "24-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "679",
+ "title": "24 Game",
+ "premium": false,
+ "meta": {
+  "name": "judgePoint24",
+  "params": [
+   {
+    "name": "cards",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[4,1,8,7]",
+  "[1,2,1,2]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "reorder-data-in-log-files",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "937",
+ "title": "Reorder Data in Log Files",
+ "premium": false,
+ "meta": {
+  "name": "reorderLogFiles",
+  "params": [
+   {
+    "name": "logs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"0 pmz\", \"4 q j\", \"g 89\", \"t v p\", \"w ugr\"]",
+  "[\"2 08\", \"f 09\", \"v wc\", \"o z c\", \"u 14\"]"
+ ],
+ "exampleOutputs": [
+  "[\"let1 art can\",\"let3 art zero\",\"let2 own kit dig\",\"dig1 8 1 5 1\",\"dig2 3 6\"]",
+  "[\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]"
+ ],
+ "anyOrder": false
+}

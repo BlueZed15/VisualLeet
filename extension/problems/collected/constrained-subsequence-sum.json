@@ -1,0 +1,34 @@
+{
+ "slug": "constrained-subsequence-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1425",
+ "title": "Constrained Subsequence Sum",
+ "premium": false,
+ "meta": {
+  "name": "constrainedSubsetSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,2,-10,5,20]\n2",
+  "[-1,-2,-3]\n1",
+  "[10,-2,-10,-5,20]\n2"
+ ],
+ "exampleOutputs": [
+  "37",
+  "-1",
+  "23"
+ ],
+ "anyOrder": false
+}

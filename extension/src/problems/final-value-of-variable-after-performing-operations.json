@@ -1,0 +1,25 @@
+{
+ "slug": "final-value-of-variable-after-performing-operations",
+ "frontendId": "2011",
+ "title": "Final Value of Variable After Performing Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "operations = {operations}",
+ "visible": [
+  "operations"
+ ],
+ "call": "result = Solution().finalValueAfterOperations(operations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

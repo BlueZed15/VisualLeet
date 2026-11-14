@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-a-parentheses-string-can-be-valid",
+ "frontendId": "2116",
+ "title": "Check if a Parentheses String Can Be Valid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "locked",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nlocked = {locked}",
+ "visible": [
+  "s",
+  "locked"
+ ],
+ "call": "result = Solution().canBeValid(s, locked)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

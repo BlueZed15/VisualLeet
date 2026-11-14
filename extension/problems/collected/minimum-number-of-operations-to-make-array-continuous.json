@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-operations-to-make-array-continuous",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2009",
+ "title": "Minimum Number of Operations to Make Array Continuous",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,5,3]",
+  "[1,2,3,5,6]",
+  "[1,10,100,1000]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

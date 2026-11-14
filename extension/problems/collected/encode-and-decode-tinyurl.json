@@ -1,0 +1,27 @@
+{
+ "slug": "encode-and-decode-tinyurl",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "535",
+ "title": "Encode and Decode TinyURL",
+ "premium": false,
+ "meta": {
+  "name": "CodecDriver",
+  "params": [
+   {
+    "name": "url",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "\"https://leetcode.com/problems/design-tinyurl\""
+ ],
+ "exampleOutputs": [
+  "\"https://leetcode.com/problems/design-tinyurl\""
+ ],
+ "anyOrder": false
+}

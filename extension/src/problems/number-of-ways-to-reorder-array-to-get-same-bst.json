@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+ "frontendId": "1569",
+ "title": "Number of Ways to Reorder Array to Get Same BST",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().numOfWays(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

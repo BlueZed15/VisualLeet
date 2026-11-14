@@ -1,0 +1,30 @@
+{
+ "slug": "minesweeper",
+ "frontendId": "529",
+ "title": "Minesweeper",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  },
+  {
+   "name": "click",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}\nclick = {click}",
+ "visible": [
+  "board",
+  "click"
+ ],
+ "call": "result = Solution().updateBoard(board, click)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

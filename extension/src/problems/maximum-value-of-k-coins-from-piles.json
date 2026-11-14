@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-value-of-k-coins-from-piles",
+ "frontendId": "2218",
+ "title": "Maximum Value of K Coins From Piles",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "piles",
+   "type": "list<list<integer>>"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "piles = {piles}\nk = {k}",
+ "visible": [
+  "piles",
+  "k"
+ ],
+ "call": "result = Solution().maxValueOfCoins(piles, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

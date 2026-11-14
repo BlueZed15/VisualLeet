@@ -1,0 +1,30 @@
+{
+ "slug": "recover-a-tree-from-preorder-traversal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1028",
+ "title": "Recover a Tree From Preorder Traversal",
+ "premium": false,
+ "meta": {
+  "name": "recoverFromPreorder",
+  "params": [
+   {
+    "name": "traversal",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "\"1-2--3--4-5--6--7\"",
+  "\"1-2--3---4-5--6---7\"",
+  "\"1-401--349---90--88\""
+ ],
+ "exampleOutputs": [
+  "[1,2,5,3,4,6,7]",
+  "[1,2,5,3,null,6,null,4,null,7]",
+  "[1,401,null,349,88,90]"
+ ],
+ "anyOrder": false
+}

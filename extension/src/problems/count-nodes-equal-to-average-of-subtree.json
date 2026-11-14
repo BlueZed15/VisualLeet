@@ -1,0 +1,25 @@
+{
+ "slug": "count-nodes-equal-to-average-of-subtree",
+ "frontendId": "2265",
+ "title": "Count Nodes Equal to Average of Subtree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().averageOfSubtree(root)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

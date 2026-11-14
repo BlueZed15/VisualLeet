@@ -1,0 +1,25 @@
+{
+ "slug": "binary-watch",
+ "frontendId": "401",
+ "title": "Binary Watch",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "turnedOn",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "turnedOn = {turnedOn}",
+ "visible": [
+  "turnedOn"
+ ],
+ "call": "result = Solution().readBinaryWatch(turnedOn)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

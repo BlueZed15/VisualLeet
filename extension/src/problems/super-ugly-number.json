@@ -1,0 +1,30 @@
+{
+ "slug": "super-ugly-number",
+ "frontendId": "313",
+ "title": "Super Ugly Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "primes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nprimes = {primes}",
+ "visible": [
+  "n",
+  "primes"
+ ],
+ "call": "result = Solution().nthSuperUglyNumber(n, primes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

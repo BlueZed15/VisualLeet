@@ -1,0 +1,30 @@
+{
+ "slug": "most-common-word",
+ "frontendId": "819",
+ "title": "Most Common Word",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "paragraph",
+   "type": "string"
+  },
+  {
+   "name": "banned",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "paragraph = {paragraph}\nbanned = {banned}",
+ "visible": [
+  "paragraph",
+  "banned"
+ ],
+ "call": "result = Solution().mostCommonWord(paragraph, banned)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

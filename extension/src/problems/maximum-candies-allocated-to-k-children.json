@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-candies-allocated-to-k-children",
+ "frontendId": "2226",
+ "title": "Maximum Candies Allocated to K Children",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candies",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "candies = {candies}\nk = {k}",
+ "visible": [
+  "candies",
+  "k"
+ ],
+ "call": "result = Solution().maximumCandies(candies, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

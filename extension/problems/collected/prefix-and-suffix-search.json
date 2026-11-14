@@ -1,0 +1,58 @@
+{
+ "slug": "prefix-and-suffix-search",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "745",
+ "title": "Prefix and Suffix Search",
+ "premium": false,
+ "meta": {
+  "classname": "WordFilter",
+  "constructor": {
+   "params": [
+    {
+     "type": "string[]",
+     "name": "words"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "f",
+    "params": [
+     {
+      "type": "string",
+      "name": "pref"
+     },
+     {
+      "type": "string",
+      "name": "suff"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"WordFilter\",\"f\"]\n[[[\"apple\"]],[\"a\",\"e\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, 0]"
+ ],
+ "anyOrder": false
+}

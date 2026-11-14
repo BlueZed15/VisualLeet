@@ -1,0 +1,35 @@
+{
+ "slug": "kth-smallest-number-in-multiplication-table",
+ "frontendId": "668",
+ "title": "Kth Smallest Number in Multiplication Table",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nk = {k}",
+ "visible": [
+  "m",
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().findKthNumber(m, n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

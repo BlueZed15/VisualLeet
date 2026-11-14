@@ -1,0 +1,28 @@
+{
+ "slug": "rabbits-in-forest",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "781",
+ "title": "Rabbits in Forest",
+ "premium": false,
+ "meta": {
+  "name": "numRabbits",
+  "params": [
+   {
+    "name": "answers",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2]",
+  "[10,10,10]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "11"
+ ],
+ "anyOrder": false
+}

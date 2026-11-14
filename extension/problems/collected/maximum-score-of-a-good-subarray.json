@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-score-of-a-good-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1793",
+ "title": "Maximum Score of a Good Subarray",
+ "premium": false,
+ "meta": {
+  "name": "maximumScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,3,7,4,5]\n3",
+  "[5,5,4,5,4,1,1,1]\n0"
+ ],
+ "exampleOutputs": [
+  "15",
+  "20"
+ ],
+ "anyOrder": false
+}

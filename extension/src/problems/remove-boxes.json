@@ -1,0 +1,25 @@
+{
+ "slug": "remove-boxes",
+ "frontendId": "546",
+ "title": "Remove Boxes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "boxes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "boxes = {boxes}",
+ "visible": [
+  "boxes"
+ ],
+ "call": "result = Solution().removeBoxes(boxes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

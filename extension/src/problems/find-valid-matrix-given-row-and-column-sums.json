@@ -1,0 +1,30 @@
+{
+ "slug": "find-valid-matrix-given-row-and-column-sums",
+ "frontendId": "1605",
+ "title": "Find Valid Matrix Given Row and Column Sums",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rowSum",
+   "type": "integer[]"
+  },
+  {
+   "name": "colSum",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rowSum = {rowSum}\ncolSum = {colSum}",
+ "visible": [
+  "rowSum",
+  "colSum"
+ ],
+ "call": "result = Solution().restoreMatrix(rowSum, colSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1639",
+ "title": "Number of Ways to Form a Target String Given a Dictionary",
+ "premium": false,
+ "meta": {
+  "name": "numWays",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"acca\",\"bbbb\",\"caca\"]\n\"aba\"",
+  "[\"abba\",\"baab\"]\n\"bab\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "4"
+ ],
+ "anyOrder": false
+}

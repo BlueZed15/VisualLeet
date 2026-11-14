@@ -1,0 +1,25 @@
+{
+ "slug": "24-game",
+ "frontendId": "679",
+ "title": "24 Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cards",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cards = {cards}",
+ "visible": [
+  "cards"
+ ],
+ "call": "result = Solution().judgePoint24(cards)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

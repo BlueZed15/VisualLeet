@@ -1,0 +1,32 @@
+{
+ "slug": "find-words-that-can-be-formed-by-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1160",
+ "title": "Find Words That Can Be Formed by Characters",
+ "premium": false,
+ "meta": {
+  "name": "countCharacters",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "name": "chars",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
+  "[\"hello\",\"world\",\"leetcode\"]\n\"welldonehoneyr\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "10"
+ ],
+ "anyOrder": false
+}

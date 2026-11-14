@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-music-playlists",
+ "frontendId": "920",
+ "title": "Number of Music Playlists",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "goal",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ngoal = {goal}\nk = {k}",
+ "visible": [
+  "n",
+  "goal",
+  "k"
+ ],
+ "call": "result = Solution().numMusicPlaylists(n, goal, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "nim-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "292",
+ "title": "Nim Game",
+ "premium": false,
+ "meta": {
+  "name": "canWinNim",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

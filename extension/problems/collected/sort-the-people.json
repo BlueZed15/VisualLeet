@@ -1,0 +1,32 @@
+{
+ "slug": "sort-the-people",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2418",
+ "title": "Sort the People",
+ "premium": false,
+ "meta": {
+  "name": "sortPeople",
+  "params": [
+   {
+    "type": "string[]",
+    "name": "names"
+   },
+   {
+    "type": "integer[]",
+    "name": "heights"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"Mary\",\"John\",\"Emma\"]\n[180,165,170]",
+  "[\"Alice\",\"Bob\",\"Bob\"]\n[155,185,150]"
+ ],
+ "exampleOutputs": [
+  "[\"Mary\",\"Emma\",\"John\"]",
+  "[\"Bob\",\"Alice\",\"Bob\"]"
+ ],
+ "anyOrder": false
+}

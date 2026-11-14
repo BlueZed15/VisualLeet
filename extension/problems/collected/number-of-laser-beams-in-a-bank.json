@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-laser-beams-in-a-bank",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2125",
+ "title": "Number of Laser Beams in a Bank",
+ "premium": false,
+ "meta": {
+  "name": "numberOfBeams",
+  "params": [
+   {
+    "name": "bank",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"011001\",\"000000\",\"010100\",\"001000\"]",
+  "[\"000\",\"111\",\"000\"]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "get-equal-substrings-within-budget",
+ "frontendId": "1208",
+ "title": "Get Equal Substrings Within Budget",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  },
+  {
+   "name": "maxCost",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}\nmaxCost = {maxCost}",
+ "visible": [
+  "s",
+  "t",
+  "maxCost"
+ ],
+ "call": "result = Solution().equalSubstring(s, t, maxCost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

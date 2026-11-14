@@ -1,0 +1,28 @@
+{
+ "slug": "relative-ranks",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "506",
+ "title": "Relative Ranks",
+ "premium": false,
+ "meta": {
+  "name": "findRelativeRanks",
+  "params": [
+   {
+    "name": "score",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,4,3,2,1]",
+  "[10,3,8,9,4]"
+ ],
+ "exampleOutputs": [
+  "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]",
+  "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]"
+ ],
+ "anyOrder": false
+}

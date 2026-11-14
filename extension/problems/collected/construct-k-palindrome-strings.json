@@ -1,0 +1,34 @@
+{
+ "slug": "construct-k-palindrome-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1400",
+ "title": "Construct K Palindrome Strings",
+ "premium": false,
+ "meta": {
+  "name": "canConstruct",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"annabelle\"\n2",
+  "\"leetcode\"\n3",
+  "\"true\"\n4"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

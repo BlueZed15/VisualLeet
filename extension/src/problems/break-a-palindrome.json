@@ -1,0 +1,25 @@
+{
+ "slug": "break-a-palindrome",
+ "frontendId": "1328",
+ "title": "Break a Palindrome",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "palindrome",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "palindrome = {palindrome}",
+ "visible": [
+  "palindrome"
+ ],
+ "call": "result = Solution().breakPalindrome(palindrome)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

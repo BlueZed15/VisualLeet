@@ -1,0 +1,25 @@
+{
+ "slug": "verify-preorder-serialization-of-a-binary-tree",
+ "frontendId": "331",
+ "title": "Verify Preorder Serialization of a Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "preorder",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "preorder = {preorder}",
+ "visible": [
+  "preorder"
+ ],
+ "call": "result = Solution().isValidSerialization(preorder)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

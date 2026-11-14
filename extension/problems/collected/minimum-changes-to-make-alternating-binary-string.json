@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-changes-to-make-alternating-binary-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1758",
+ "title": "Minimum Changes To Make Alternating Binary String",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"0100\"",
+  "\"10\"",
+  "\"1111\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "2"
+ ],
+ "anyOrder": false
+}

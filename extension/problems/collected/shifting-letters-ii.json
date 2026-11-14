@@ -1,0 +1,32 @@
+{
+ "slug": "shifting-letters-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2381",
+ "title": "Shifting Letters II",
+ "premium": false,
+ "meta": {
+  "name": "shiftingLetters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer[][]",
+    "name": "shifts"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+  "\"dztz\"\n[[0,0,0],[1,1,1]]"
+ ],
+ "exampleOutputs": [
+  "\"ace\"",
+  "\"catz\""
+ ],
+ "anyOrder": false
+}

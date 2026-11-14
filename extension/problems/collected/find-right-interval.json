@@ -1,0 +1,30 @@
+{
+ "slug": "find-right-interval",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "436",
+ "title": "Find Right Interval",
+ "premium": false,
+ "meta": {
+  "name": "findRightInterval",
+  "params": [
+   {
+    "name": "intervals",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2]]",
+  "[[3,4],[2,3],[1,2]]",
+  "[[1,4],[2,3],[3,4]]"
+ ],
+ "exampleOutputs": [
+  "[-1]",
+  "[-1,0,1]",
+  "[-1,2,-1]"
+ ],
+ "anyOrder": false
+}

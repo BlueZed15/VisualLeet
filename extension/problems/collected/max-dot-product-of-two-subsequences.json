@@ -1,0 +1,35 @@
+{
+ "slug": "max-dot-product-of-two-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1458",
+ "title": "Max Dot Product of Two Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "maxDotProduct",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[2,1,-2,5]\n[3,0,-6]",
+  "[3,-2]\n[2,-6,7]",
+  "[-1,-1]\n[1,1]"
+ ],
+ "exampleOutputs": [
+  "18",
+  "21",
+  "-1"
+ ],
+ "anyOrder": false
+}

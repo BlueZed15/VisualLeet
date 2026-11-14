@@ -1,0 +1,30 @@
+{
+ "slug": "longest-word-in-dictionary-through-deleting",
+ "frontendId": "524",
+ "title": "Longest Word in Dictionary through Deleting",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "dictionary",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\ndictionary = {dictionary}",
+ "visible": [
+  "s",
+  "dictionary"
+ ],
+ "call": "result = Solution().findLongestWord(s, dictionary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

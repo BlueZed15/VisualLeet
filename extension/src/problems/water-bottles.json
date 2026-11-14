@@ -1,0 +1,30 @@
+{
+ "slug": "water-bottles",
+ "frontendId": "1518",
+ "title": "Water Bottles",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numBottles",
+   "type": "integer"
+  },
+  {
+   "name": "numExchange",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "numBottles = {numBottles}\nnumExchange = {numExchange}",
+ "visible": [
+  "numBottles",
+  "numExchange"
+ ],
+ "call": "result = Solution().numWaterBottles(numBottles, numExchange)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

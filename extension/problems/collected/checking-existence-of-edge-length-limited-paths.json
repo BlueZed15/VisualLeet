@@ -1,0 +1,36 @@
+{
+ "slug": "checking-existence-of-edge-length-limited-paths",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1697",
+ "title": "Checking Existence of Edge Length Limited Paths",
+ "premium": false,
+ "meta": {
+  "name": "distanceLimitedPathsExist",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edgeList"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "boolean[]"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,1,2],[1,2,4],[2,0,8],[1,0,16]]\n[[0,1,2],[0,2,5]]",
+  "5\n[[0,1,10],[1,2,5],[2,3,9],[3,4,13]]\n[[0,4,14],[1,4,13]]"
+ ],
+ "exampleOutputs": [
+  "[false,true]",
+  "[true,false]"
+ ],
+ "anyOrder": false
+}

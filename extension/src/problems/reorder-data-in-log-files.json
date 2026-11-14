@@ -1,0 +1,25 @@
+{
+ "slug": "reorder-data-in-log-files",
+ "frontendId": "937",
+ "title": "Reorder Data in Log Files",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "logs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "logs = {logs}",
+ "visible": [
+  "logs"
+ ],
+ "call": "result = Solution().reorderLogFiles(logs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

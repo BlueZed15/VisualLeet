@@ -1,0 +1,32 @@
+{
+ "slug": "partition-array-according-to-given-pivot",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2161",
+ "title": "Partition Array According to Given Pivot",
+ "premium": false,
+ "meta": {
+  "name": "pivotArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "pivot"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[9,12,5,10,14,3,10]\n10",
+  "[-3,4,3,2]\n2"
+ ],
+ "exampleOutputs": [
+  "[9,5,3,10,10,12,14]",
+  "[-3,2,4,3]"
+ ],
+ "anyOrder": false
+}

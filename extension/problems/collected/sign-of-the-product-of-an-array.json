@@ -1,0 +1,30 @@
+{
+ "slug": "sign-of-the-product-of-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1822",
+ "title": "Sign of the Product of an Array",
+ "premium": false,
+ "meta": {
+  "name": "arraySign",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,-2,-3,-4,3,2,1]",
+  "[1,5,0,2,-3]",
+  "[-1,1,-1,1,-1]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "-1"
+ ],
+ "anyOrder": false
+}

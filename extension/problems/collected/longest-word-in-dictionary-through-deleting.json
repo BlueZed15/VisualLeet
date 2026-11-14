@@ -1,0 +1,32 @@
+{
+ "slug": "longest-word-in-dictionary-through-deleting",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "524",
+ "title": "Longest Word in Dictionary through Deleting",
+ "premium": false,
+ "meta": {
+  "name": "findLongestWord",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "dictionary",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abpcplea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+  "\"abpcplea\"\n[\"a\",\"b\",\"c\"]"
+ ],
+ "exampleOutputs": [
+  "\"apple\"",
+  "\"a\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-absolute-differences-in-a-sorted-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1685",
+ "title": "Sum of Absolute Differences in a Sorted Array",
+ "premium": false,
+ "meta": {
+  "name": "getSumAbsoluteDifferences",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,5]",
+  "[1,4,6,8,10]"
+ ],
+ "exampleOutputs": [
+  "[4,3,5]",
+  "[24,15,13,15,21]"
+ ],
+ "anyOrder": false
+}

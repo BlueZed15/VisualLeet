@@ -1,0 +1,36 @@
+{
+ "slug": "parallel-courses-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2050",
+ "title": "Parallel Courses III",
+ "premium": false,
+ "meta": {
+  "name": "minimumTime",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "relations"
+   },
+   {
+    "type": "integer[]",
+    "name": "time"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[1,3],[2,3]]\n[3,2,5]",
+  "5\n[[1,5],[2,5],[3,5],[3,4],[4,5]]\n[1,2,3,4,5]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "12"
+ ],
+ "anyOrder": false
+}

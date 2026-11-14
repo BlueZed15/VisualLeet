@@ -1,0 +1,30 @@
+{
+ "slug": "binary-tree-tilt",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "563",
+ "title": "Binary Tree Tilt",
+ "premium": false,
+ "meta": {
+  "name": "findTilt",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[4,2,9,3,5,null,7]",
+  "[21,7,14,1,1,2,2,3,3]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "15",
+  "9"
+ ],
+ "anyOrder": false
+}

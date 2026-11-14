@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-iv",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1510",
+ "title": "Stone Game IV",
+ "premium": false,
+ "meta": {
+  "name": "winnerSquareGame",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "4"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-score-from-removing-substrings",
+ "frontendId": "1717",
+ "title": "Maximum Score From Removing Substrings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nx = {x}\ny = {y}",
+ "visible": [
+  "s",
+  "x",
+  "y"
+ ],
+ "call": "result = Solution().maximumGain(s, x, y)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

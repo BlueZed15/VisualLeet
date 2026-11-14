@@ -1,0 +1,35 @@
+{
+ "slug": "arithmetic-subarrays",
+ "frontendId": "1630",
+ "title": "Arithmetic Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "l",
+   "type": "integer[]"
+  },
+  {
+   "name": "r",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nl = {l}\nr = {r}",
+ "visible": [
+  "nums",
+  "l",
+  "r"
+ ],
+ "call": "result = Solution().checkArithmeticSubarrays(nums, l, r)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

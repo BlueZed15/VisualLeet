@@ -1,0 +1,32 @@
+{
+ "slug": "water-bottles",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1518",
+ "title": "Water Bottles",
+ "premium": false,
+ "meta": {
+  "name": "numWaterBottles",
+  "params": [
+   {
+    "name": "numBottles",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "numExchange"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "9\n3",
+  "15\n4"
+ ],
+ "exampleOutputs": [
+  "13",
+  "19"
+ ],
+ "anyOrder": false
+}

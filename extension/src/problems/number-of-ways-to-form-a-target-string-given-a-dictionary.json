@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+ "frontendId": "1639",
+ "title": "Number of Ways to Form a Target String Given a Dictionary",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\ntarget = {target}",
+ "visible": [
+  "words",
+  "target"
+ ],
+ "call": "result = Solution().numWays(words, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

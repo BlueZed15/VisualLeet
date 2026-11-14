@@ -1,0 +1,32 @@
+{
+ "slug": "k-th-smallest-prime-fraction",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "786",
+ "title": "K-th Smallest Prime Fraction",
+ "premium": false,
+ "meta": {
+  "name": "kthSmallestPrimeFraction",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,5]\n3",
+  "[1,7]\n1"
+ ],
+ "exampleOutputs": [
+  "[2,5]",
+  "[1,7]"
+ ],
+ "anyOrder": false
+}

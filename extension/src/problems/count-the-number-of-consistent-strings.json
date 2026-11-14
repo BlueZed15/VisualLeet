@@ -1,0 +1,30 @@
+{
+ "slug": "count-the-number-of-consistent-strings",
+ "frontendId": "1684",
+ "title": "Count the Number of Consistent Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "allowed",
+   "type": "string"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "allowed = {allowed}\nwords = {words}",
+ "visible": [
+  "allowed",
+  "words"
+ ],
+ "call": "result = Solution().countConsistentStrings(allowed, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

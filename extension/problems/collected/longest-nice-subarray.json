@@ -1,0 +1,28 @@
+{
+ "slug": "longest-nice-subarray",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2401",
+ "title": "Longest Nice Subarray",
+ "premium": false,
+ "meta": {
+  "name": "longestNiceSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,8,48,10]",
+  "[3,1,5,11,13]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

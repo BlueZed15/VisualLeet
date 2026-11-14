@@ -1,0 +1,36 @@
+{
+ "slug": "find-closest-node-to-given-two-nodes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2359",
+ "title": "Find Closest Node to Given Two Nodes",
+ "premium": false,
+ "meta": {
+  "name": "closestMeetingNode",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "node1"
+   },
+   {
+    "type": "integer",
+    "name": "node2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,3,-1]\n0\n1",
+  "[1,2,-1]\n0\n2"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

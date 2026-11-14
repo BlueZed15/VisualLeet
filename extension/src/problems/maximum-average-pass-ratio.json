@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-average-pass-ratio",
+ "frontendId": "1792",
+ "title": "Maximum Average Pass Ratio",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "classes",
+   "type": "integer[][]"
+  },
+  {
+   "name": "extraStudents",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "classes = {classes}\nextraStudents = {extraStudents}",
+ "visible": [
+  "classes",
+  "extraStudents"
+ ],
+ "call": "result = Solution().maxAverageRatio(classes, extraStudents)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

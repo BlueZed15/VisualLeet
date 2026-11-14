@@ -1,0 +1,67 @@
+{
+ "slug": "design-a-food-rating-system",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2353",
+ "title": "Design a Food Rating System",
+ "premium": false,
+ "meta": {
+  "classname": "FoodRatings",
+  "constructor": {
+   "params": [
+    {
+     "type": "string[]",
+     "name": "foods"
+    },
+    {
+     "name": "cuisines",
+     "type": "string[]"
+    },
+    {
+     "name": "ratings",
+     "type": "integer[]"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "food"
+     },
+     {
+      "type": "integer",
+      "name": "newRating"
+     }
+    ],
+    "name": "changeRating",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "cuisine"
+     }
+    ],
+    "name": "highestRated",
+    "return": {
+     "type": "string"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"kimchi\",\"miso\",\"sushi\",\"moussaka\",\"ramen\",\"bulgogi\"],[\"korean\",\"japanese\",\"japanese\",\"greek\",\"japanese\",\"korean\"],[9,12,8,15,14,7]],[\"korean\"],[\"japanese\"],[\"sushi\",16],[\"japanese\"],[\"ramen\",16],[\"japanese\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, \"kimchi\", \"ramen\", null, \"sushi\", null, \"ramen\"]"
+ ],
+ "anyOrder": false
+}

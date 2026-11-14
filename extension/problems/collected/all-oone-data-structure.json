@@ -1,0 +1,64 @@
+{
+ "slug": "all-oone-data-structure",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "432",
+ "title": "All O`one Data Structure",
+ "premium": false,
+ "meta": {
+  "classname": "AllOne",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "key"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "inc"
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "key"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "dec"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "string"
+    },
+    "name": "getMaxKey"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "string"
+    },
+    "name": "getMinKey"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"AllOne\",\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]\n[[],[\"hello\"],[\"hello\"],[],[],[\"leet\"],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]"
+ ],
+ "anyOrder": false
+}

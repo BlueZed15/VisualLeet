@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-of-cutting-a-pizza",
+ "frontendId": "1444",
+ "title": "Number of Ways of Cutting a Pizza",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pizza",
+   "type": "string[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "pizza = {pizza}\nk = {k}",
+ "visible": [
+  "pizza",
+  "k"
+ ],
+ "call": "result = Solution().ways(pizza, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

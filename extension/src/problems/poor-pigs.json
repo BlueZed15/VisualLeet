@@ -1,0 +1,35 @@
+{
+ "slug": "poor-pigs",
+ "frontendId": "458",
+ "title": "Poor Pigs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "buckets",
+   "type": "integer"
+  },
+  {
+   "name": "minutesToDie",
+   "type": "integer"
+  },
+  {
+   "name": "minutesToTest",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "buckets = {buckets}\nminutesToDie = {minutesToDie}\nminutesToTest = {minutesToTest}",
+ "visible": [
+  "buckets",
+  "minutesToDie",
+  "minutesToTest"
+ ],
+ "call": "result = Solution().poorPigs(buckets, minutesToDie, minutesToTest)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

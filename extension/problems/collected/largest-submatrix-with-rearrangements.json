@@ -1,0 +1,30 @@
+{
+ "slug": "largest-submatrix-with-rearrangements",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1727",
+ "title": "Largest Submatrix With Rearrangements",
+ "premium": false,
+ "meta": {
+  "name": "largestSubmatrix",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,1],[1,1,1],[1,0,1]]",
+  "[[1,0,1,0,1]]",
+  "[[1,1,0],[1,0,1]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "2"
+ ],
+ "anyOrder": true
+}

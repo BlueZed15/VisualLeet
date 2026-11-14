@@ -1,0 +1,34 @@
+{
+ "slug": "count-the-number-of-consistent-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1684",
+ "title": "Count the Number of Consistent Strings",
+ "premium": false,
+ "meta": {
+  "name": "countConsistentStrings",
+  "params": [
+   {
+    "name": "allowed",
+    "type": "string"
+   },
+   {
+    "type": "string[]",
+    "name": "words"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+  "\"abc\"\n[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
+  "\"cad\"\n[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "7",
+  "4"
+ ],
+ "anyOrder": false
+}

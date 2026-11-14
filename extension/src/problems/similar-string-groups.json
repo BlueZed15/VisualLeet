@@ -1,0 +1,25 @@
+{
+ "slug": "similar-string-groups",
+ "frontendId": "839",
+ "title": "Similar String Groups",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "strs = {strs}",
+ "visible": [
+  "strs"
+ ],
+ "call": "result = Solution().numSimilarGroups(strs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

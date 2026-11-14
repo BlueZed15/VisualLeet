@@ -1,0 +1,35 @@
+{
+ "slug": "find-closest-node-to-given-two-nodes",
+ "frontendId": "2359",
+ "title": "Find Closest Node to Given Two Nodes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[]"
+  },
+  {
+   "name": "node1",
+   "type": "integer"
+  },
+  {
+   "name": "node2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nnode1 = {node1}\nnode2 = {node2}",
+ "visible": [
+  "edges",
+  "node1",
+  "node2"
+ ],
+ "call": "result = Solution().closestMeetingNode(edges, node1, node2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

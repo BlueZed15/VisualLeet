@@ -1,0 +1,28 @@
+{
+ "slug": "reach-a-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "754",
+ "title": "Reach a Number",
+ "premium": false,
+ "meta": {
+  "name": "reachNumber",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

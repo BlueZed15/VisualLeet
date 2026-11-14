@@ -1,0 +1,28 @@
+{
+ "slug": "second-minimum-node-in-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "671",
+ "title": "Second Minimum Node In a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "findSecondMinimumValue",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,5,null,null,5,7]",
+  "[2,2,2]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "-1"
+ ],
+ "anyOrder": false
+}

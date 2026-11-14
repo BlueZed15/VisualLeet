@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-flowers-in-full-bloom",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2251",
+ "title": "Number of Flowers in Full Bloom",
+ "premium": false,
+ "meta": {
+  "name": "fullBloomFlowers",
+  "params": [
+   {
+    "name": "flowers",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "people"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,6],[3,7],[9,12],[4,13]]\n[2,3,7,11]",
+  "[[1,10],[3,3]]\n[3,3,2]"
+ ],
+ "exampleOutputs": [
+  "[1,2,2,2]",
+  "[2,2,1]"
+ ],
+ "anyOrder": false
+}

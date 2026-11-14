@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-score-words-formed-by-letters",
+ "frontendId": "1255",
+ "title": "Maximum Score Words Formed by Letters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "letters",
+   "type": "character[]"
+  },
+  {
+   "name": "score",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nletters = {letters}\nscore = {score}",
+ "visible": [
+  "words",
+  "letters",
+  "score"
+ ],
+ "call": "result = Solution().maxScoreWords(words, letters, score)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

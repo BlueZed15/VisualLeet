@@ -1,0 +1,25 @@
+{
+ "slug": "find-players-with-zero-or-one-losses",
+ "frontendId": "2225",
+ "title": "Find Players With Zero or One Losses",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matches",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matches = {matches}",
+ "visible": [
+  "matches"
+ ],
+ "call": "result = Solution().findWinners(matches)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

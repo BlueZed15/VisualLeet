@@ -1,0 +1,30 @@
+{
+ "slug": "guess-number-higher-or-lower-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "375",
+ "title": "Guess Number Higher or Lower II",
+ "premium": false,
+ "meta": {
+  "name": "getMoneyAmount",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10",
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "16",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

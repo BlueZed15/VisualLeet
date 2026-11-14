@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-atoms",
+ "frontendId": "726",
+ "title": "Number of Atoms",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "formula",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "formula = {formula}",
+ "visible": [
+  "formula"
+ ],
+ "call": "result = Solution().countOfAtoms(formula)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

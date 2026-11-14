@@ -1,0 +1,30 @@
+{
+ "slug": "fair-candy-swap",
+ "frontendId": "888",
+ "title": "Fair Candy Swap",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "aliceSizes",
+   "type": "integer[]"
+  },
+  {
+   "name": "bobSizes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "aliceSizes = {aliceSizes}\nbobSizes = {bobSizes}",
+ "visible": [
+  "aliceSizes",
+  "bobSizes"
+ ],
+ "call": "result = Solution().fairCandySwap(aliceSizes, bobSizes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

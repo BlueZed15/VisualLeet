@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-wonderful-substrings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1915",
+ "title": "Number of Wonderful Substrings",
+ "premium": false,
+ "meta": {
+  "name": "wonderfulSubstrings",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"aba\"",
+  "\"aabb\"",
+  "\"he\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "9",
+  "2"
+ ],
+ "anyOrder": false
+}

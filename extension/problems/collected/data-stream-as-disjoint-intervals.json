@@ -1,0 +1,45 @@
+{
+ "slug": "data-stream-as-disjoint-intervals",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "352",
+ "title": "Data Stream as Disjoint Intervals",
+ "premium": false,
+ "meta": {
+  "classname": "SummaryRanges",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "addNum"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer[][]"
+    },
+    "name": "getIntervals"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"SummaryRanges\",\"addNum\",\"getIntervals\",\"addNum\",\"getIntervals\",\"addNum\",\"getIntervals\",\"addNum\",\"getIntervals\",\"addNum\",\"getIntervals\"]\n[[],[1],[],[3],[],[7],[],[2],[],[6],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]"
+ ],
+ "anyOrder": false
+}

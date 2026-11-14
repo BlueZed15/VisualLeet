@@ -4,7 +4,7 @@
     "headless": true,
     "platform": "Windows_NT 10.0.26300",
     "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
-    "date": "2026-11-14T16:03:59.295Z",
+    "date": "2026-11-14T16:17:08.371Z",
     "python": "3.14.2",
     "pyodide": "314.0.8"
   },
@@ -15,8 +15,8 @@
       "pass": true,
       "detail": {
         "python": "3.14.2",
-        "ms": 2466,
-        "wasmCompiledOnceMs": 20.899999998509884
+        "ms": 2374,
+        "wasmCompiledOnceMs": 23.400000002235174
       }
     },
     {
@@ -251,8 +251,8 @@
       "name": "Native loop killed by the 5 s watchdog; spare takes over at once",
       "pass": true,
       "detail": {
-        "killedAfterMs": 5020,
-        "readyAgainMs": 1
+        "killedAfterMs": 5019,
+        "readyAgainMs": 2
       }
     },
     {
@@ -261,8 +261,8 @@
       "pass": true,
       "detail": {
         "res": "stopped",
-        "stoppedMs": 7.5,
-        "readyMs": 0.19999999925494194
+        "stoppedMs": 5.5,
+        "readyMs": 0.29999999701976776
       }
     },
     {
@@ -331,7 +331,7 @@
       "pass": true,
       "detail": {
         "burstRunsOnOneInterpreter": 12,
-        "swappedAfterMs": 1287,
+        "swappedAfterMs": 1348,
         "nextRunInterpreterRun": 1,
         "spareInitErrors": 0
       }
@@ -599,7 +599,7 @@
       "name": "Packaged examples run and render with the network off",
       "pass": true,
       "detail": {
-        "initMs": 2776
+        "initMs": 2749
       }
     },
     {
@@ -613,82 +613,82 @@
     }
   ],
   "timings": {
-    "coldStartMs": 2466,
-    "watchdogKillMs": 5020,
-    "readyAfterTimeoutMs": 1,
-    "stopMs": 8,
+    "coldStartMs": 2374,
+    "watchdogKillMs": 5019,
+    "readyAfterTimeoutMs": 2,
+    "stopMs": 6,
     "readyAfterStopMs": 0,
     "BFS": {
       "execMs": {
-        "median": 17.7,
-        "worst": 23.3
+        "median": 16.8,
+        "worst": 18.8
       },
       "transferMs": {
-        "median": 7.8,
-        "worst": 14.5
+        "median": 6.6,
+        "worst": 12.6
       },
       "parseMs": {
         "median": 0.3,
         "worst": 0.4
       },
       "renderMs": {
-        "median": 22.3,
-        "worst": 34.2
+        "median": 23.9,
+        "worst": 29.9
       },
       "firstViewMs": {
-        "median": 50.3,
-        "worst": 61.7
+        "median": 49.8,
+        "worst": 57.1
       }
     },
     "Sliding window": {
       "execMs": {
-        "median": 8.8,
-        "worst": 10.5
+        "median": 10.6,
+        "worst": 12.7
       },
       "transferMs": {
-        "median": 7.1,
-        "worst": 8.8
+        "median": 8.4,
+        "worst": 9
       },
       "parseMs": {
-        "median": 0.2,
-        "worst": 0.3
+        "median": 0.3,
+        "worst": 0.4
       },
       "renderMs": {
-        "median": 20.8,
-        "worst": 22.8
+        "median": 24.6,
+        "worst": 26.1
       },
       "firstViewMs": {
-        "median": 37,
-        "worst": 42.6
+        "median": 43.3,
+        "worst": 47.2
       }
     },
     "Two Sum": {
       "execMs": {
-        "median": 4.2,
-        "worst": 5.5
+        "median": 5.3,
+        "worst": 6.2
       },
       "transferMs": {
-        "median": 3.4,
-        "worst": 6.3
+        "median": 4.6,
+        "worst": 11.8
       },
       "parseMs": {
         "median": 0.1,
-        "worst": 0.2
+        "worst": 0.3
       },
       "renderMs": {
-        "median": 16.1,
-        "worst": 23.6
+        "median": 18.7,
+        "worst": 25.9
       },
       "firstViewMs": {
-        "median": 24.6,
-        "worst": 31.3
+        "median": 34.3,
+        "worst": 35.5
       }
     },
     "stepNavigation": {
-      "medianMs": 10.2,
-      "worstMs": 18.3
+      "medianMs": 14.2,
+      "worstMs": 21.7
     },
-    "reloadStartMs": 2716
+    "reloadStartMs": 1616
   },
   "passed": 58,
   "total": 58

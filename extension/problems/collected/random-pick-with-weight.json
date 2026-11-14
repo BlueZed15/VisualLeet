@@ -1,0 +1,58 @@
+{
+ "slug": "random-pick-with-weight",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "528",
+ "title": "Random Pick with Weight",
+ "premium": false,
+ "meta": {
+  "classname": "Solution",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "name": "w",
+     "type": "integer[]"
+    },
+    {
+     "name": "wSize",
+     "type": "integer",
+     "lang": "c",
+     "value": "size_1"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "pickIndex",
+    "params": [],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"Solution\",\"pickIndex\"]\n[[[1]],[]]",
+  "[\"Solution\",\"pickIndex\",\"pickIndex\",\"pickIndex\",\"pickIndex\",\"pickIndex\"]\n[[[1,3]],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null,0]",
+  "[null,1,1,1,1,0]"
+ ],
+ "anyOrder": false
+}
