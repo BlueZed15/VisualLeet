@@ -237,6 +237,13 @@ button.tab:hover { color: var(--text-1); background: var(--bg-2); }
 .diag { flex: none; margin: 0; padding: 8px 10px; font: var(--fs-xs)/1.6 var(--font-code); color: var(--text-3);
   background: var(--bg-0); border: 1px solid var(--line); border-radius: var(--r-sm); white-space: pre-wrap; }
 .diag:empty::before { content: "No diagnostics yet."; }
+/* diagnostics float under the top bar (never behind the player bar) */
+#diag { position: fixed; z-index: 40; top: 50px; right: 12px; width: min(560px, calc(100vw - 24px)); max-height: 45vh; overflow: auto;
+  background: var(--bg-2); border-color: var(--line-strong); box-shadow: 0 8px 28px rgba(0,0,0,.45); }
+/* LeetCode mode, editing beside the last run: the code card replaces the stepping code view */
+#viz.vlEditing #codAndNav, #viz.vlEditing #progOutputs { display: none !important; }
+#viz .code-card { flex: 1; min-height: 0; text-align: left; }
+#viz .code-card .editor, #viz .code-card .gutter { text-align: left; }
 
 /* ---------- LeetCode mode: code on the left, the test case under it, the visualization on the right ---------- */
 body:not(.mode-lc) .lc-only, body.mode-lc .manual-only { display: none !important; }
@@ -305,6 +312,27 @@ body.no-problem .edit-area { display: none !important; }
 /* while playing, the test case sits under the code card in the left column */
 #viz .lc-panel { margin-top: 10px; height: var(--cases-h, 300px); max-height: none; text-align: left; }
 #viz.vlStacked .lc-panel { height: auto; max-height: 420px; }
+
+/* ---------- resizable panes (LeetCode mode) ---------- */
+body.mode-lc .edit-area { grid-template-columns: var(--left-w, minmax(0, 1fr)) minmax(0, 1fr); }
+body.mode-lc .edit-left { grid-template-rows: minmax(120px, 1fr) var(--cases-h, minmax(0, auto)); }
+body.mode-lc .edit-left > .lc-panel { max-height: none; }
+body.mode-lc #viz.vlWide td#vizLayoutTdFirst { width: var(--left-w, auto); }
+body.mode-lc #viz.vlWide #codAndNav { width: 100% !important; }
+.splitter { position: absolute; z-index: 8; touch-action: none; }
+.splitter-v { width: 10px; cursor: col-resize; }
+.splitter-h { height: 10px; cursor: row-resize; }
+.splitter-x { width: 16px; height: 16px; cursor: move; z-index: 9; }
+.splitter::after { content: ""; position: absolute; border-radius: 2px; background: var(--brand); opacity: 0; transition: opacity .12s; }
+.splitter-v::after { left: 4px; width: 2px; top: 0; bottom: 0; }
+.splitter-h::after { top: 4px; height: 2px; left: 0; right: 0; }
+.splitter-x::after { inset: 3px; border-radius: 50%; }
+.splitter:hover::after, .splitter.dragging::after { opacity: .75; }
+body.resizing { user-select: none; }
+body.resizing-v, body.resizing-v * { cursor: col-resize !important; }
+body.resizing-h, body.resizing-h * { cursor: row-resize !important; }
+body.resizing-x, body.resizing-x * { cursor: move !important; }
+body.resizing #viz { pointer-events: none; }
 
 /* ---------- narrow windows ---------- */
 @media (max-width: 1000px) {

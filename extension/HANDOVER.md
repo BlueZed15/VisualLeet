@@ -7,6 +7,19 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
+- **2026-11-15, later (user requests):** problems at click time are shown on
+  the LeetCode page next to the Visualize button (content-script message;
+  LeetScope isn't opened): non-Python editor, unreadable code, problem not in
+  the database, selected test case not found (with "Use Example 1"). The
+  background checks this in `clickProblem` before switching tabs. The user
+  said **not** to read cases from LeetCode's plain-text test editor.
+  Status pill hidden when Ready/Done. In LeetCode mode **Edit keeps the
+  last run on the right** (the code card replaces the stepping code view in
+  the left column); Visualize / Run case replaces it. Diagnostics float under
+  the top bar. **Resizable panes:** handles between the columns, between code
+  and test cases, and at their corner (both); sizes in CSS variables
+  `--left-w` / `--cases-h`, saved in localStorage; double-click a handle to reset.
+
 - **2026-11-15, on `merge_1` (user decisions):** LeetScope is LeetCode-only in
   the normal build. Paste mode, the examples, "Import selection",
   "Import from LeetCode" and the Editing/Playing header row are gone; restart

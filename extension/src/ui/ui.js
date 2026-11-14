@@ -35,7 +35,7 @@ const el = {
   viz: $("viz"), vizBody: document.querySelector(".viz-body"), stepMeter: $("step-meter"), diagToggle: $("diag-toggle"),
   vizPanel: document.querySelector(".viz-panel"), codeEditor: $("code-editor"), gutter: document.querySelector("#code-editor .gutter"),
   edit: $("edit"), editArea: $("edit-area"),
-  modeToggle: $("mode-toggle"), lcCases: $("lc-cases"), editLeft: $("edit-left"),
+  modeToggle: $("mode-toggle"), lcCases: $("lc-cases"), editLeft: $("edit-left"), codeCard: document.querySelector(".code-card"),
 };
 
 // ---------- LeetCode mode: a problem from LeetScope's database + its test cases ----------
@@ -96,6 +96,7 @@ function setStatus(s, message = "", kind = "error") {
   const crashed = runCrashed && s === "complete";
   el.status.textContent = crashed ? "Error" : STATUS_LABEL[s] || s;
   el.status.dataset.state = crashed ? "failed" : s.replace(/\s+/g, "-");
+  el.status.hidden = !crashed && (s === "ready" || s === "complete");    // nothing to say when all is well
   showMessage(message, kind);
   const busy = s === "running" || s === "preparing visualization";
   el.visualize.disabled = busy || !runtimeInfo;
@@ -115,7 +116,9 @@ function enterEdit({ focus = false } = {}) {
   if (current && current.kind === "run") stop();
   setPlaying(false);
   hideInspector();
-  if (rendered) { rendered.destroy(); rendered = null; prevSnap = null; }
+  // LeetCode mode: the visualization stays on the right, as it was, while you
+  // edit on the left; the next Visualize / Run case replaces it
+  if (rendered && !lcMode) { rendered.destroy(); rendered = null; prevSnap = null; }
   setMode("edit");
   placeCases();
   // in the editor, keep only the headline of an error/warning ("Line 6: IndexError...");
@@ -200,8 +203,10 @@ function updateView() {
   const busy = status === "running" || status === "preparing visualization";
   el.vizBody.classList.toggle("busy", busy && !!rendered);
   const editing = mode === "edit";
-  el.editArea.hidden = !editing;
-  el.viz.hidden = editing;
+  const frozen = editing && lcMode && !!rendered;     // editing beside the last run (LeetCode mode)
+  el.editArea.hidden = !editing || frozen;
+  el.viz.hidden = editing && !frozen;
+  el.viz.classList.toggle("vlEditing", frozen);
   let eaten = false;
   if (editing || rendered) {
     el.empty.hidden = true;
@@ -233,11 +238,12 @@ function updateView() {
   if ((showMsg ? el.message.offsetHeight : 0) !== h) redrawArrows();   // the banner moved the trace
   if (!rendered) el.stepMeter.hidden = $("player").hidden = true;
   updateLayoutAttr();
+  requestAnimationFrame(positionSplitters);
 }
 
 // side-by-side cards (with the control bar docked under the right one) only while a trace is shown
 function updateLayoutAttr() {
-  const wide = mode === "watch" && rendered && rendered.wide;
+  const wide = (mode === "watch" || lcMode) && rendered && rendered.wide;
   if ((el.vizPanel.dataset.layout === "wide") !== !!wide) {
     el.vizPanel.dataset.layout = wide ? "wide" : "";
     redrawArrows();
@@ -1077,7 +1083,8 @@ function onResult(m) {
 const WIDE_MIN = 860;
 const isWide = () => el.vizBody.clientWidth >= WIDE_MIN;
 // the code column's width for the current panel size (the renderer takes it in px)
-const codeWidth = () => Math.round(Math.min(680, Math.max(360, el.vizBody.clientWidth * 0.45)));
+const codeWidth = () => (lcMode && sizes.leftW ? Math.round(clampN(sizes.leftW, 280, Math.max(280, el.vizBody.clientWidth - 380)))
+  : Math.round(Math.min(680, Math.max(360, el.vizBody.clientWidth * 0.45))));
 
 function renderView(trace, step) {
   const wide = isWide();
@@ -1109,6 +1116,7 @@ function renderView(trace, step) {
   el.vizPanel.style.setProperty("--code-w", (wide ? codeWidth() : 0) + "px");
   placeCases();
   updateLayoutAttr();
+  requestAnimationFrame(positionSplitters);
   // a new run starts with the default layout; a re-layout of the same run keeps zoom/moves
   if (stage.trace !== trace) { stage.trace = trace; stage.scale = 1; stage.x = 0; stage.y = 0; stage.offsets.clear(); hideInspector(); }
   mountStageBar();
@@ -1121,14 +1129,105 @@ function renderView(trace, step) {
 }
 
 // LeetCode mode: the test-case panel's height while playing (under the code card)
-const casesHeight = () => Math.round(Math.min(340, Math.max(230, el.vizBody.clientHeight * 0.4)));
+const casesHeight = () => (sizes.casesH ? sizes.casesH : Math.round(Math.min(340, Math.max(230, el.vizBody.clientHeight * 0.4))));
 
 // The test-case panel lives under the code: in the editor while editing, in the
 // renderer's left column (under the code card and output) while playing.
 function placeCases() {
-  const left = lcMode && mode === "watch" && rendered && rendered.viz.domRoot[0].querySelector("#vizLayoutTdFirst");
+  const left = lcMode && rendered && rendered.viz.domRoot[0].querySelector("#vizLayoutTdFirst");
+  const card = el.codeCard;
+  if (left && mode === "edit") {
+    if (card.parentElement !== left) left.insertBefore(card, left.firstChild);
+  } else if (card.parentElement !== el.editLeft) {
+    el.editLeft.insertBefore(card, el.editLeft.firstChild);
+  }
   const target = left || el.editLeft;
   if (el.lcCases.parentElement !== target) target.appendChild(el.lcCases);
+  if (el.viz) el.viz.classList.toggle("vlEditing", !!left && mode === "edit");
+}
+
+// ---------- resizable panes (LeetCode mode): code | test cases | visualization ----------
+// Three handles: between the columns (left width), between code and test
+// cases (their height), and where they meet (both). Sizes apply live through
+// CSS variables (--left-w, --cases-h; --code-w docks the player bar) and are
+// remembered.
+const SIZES_KEY = "visualleet.sizes.v1";
+const sizes = (() => { try { return JSON.parse(localStorage.getItem(SIZES_KEY) || "{}") || {}; } catch { return {}; } })();
+const clampN = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+const splitters = ["v", "h", "x"].map((kind) => {
+  const s = document.createElement("div");
+  s.className = "splitter splitter-" + kind;
+  s.hidden = true;
+  s.setAttribute("role", "separator");
+  s.setAttribute("aria-label", { v: "Resize the code and the visualization", h: "Resize the code and the test cases", x: "Resize all three panes" }[kind]);
+  s.addEventListener("pointerdown", (e) => startResize(kind, e));
+  s.addEventListener("dblclick", () => { delete sizes.leftW; delete sizes.casesH; saveSizes(); applySizes(); });
+  el.vizBody.appendChild(s);
+  return s;
+});
+
+// the left column and the right pane, in whichever layout is showing
+function panes() {
+  if (!lcMode || !lc.problem) return null;
+  if (rendered && rendered.wide && !el.viz.hidden) {
+    const root = rendered.viz.domRoot[0];
+    return { left: root.querySelector("#vizLayoutTdFirst"), right: root.querySelector("#vizLayoutTdSecond") };
+  }
+  if (!el.editArea.hidden) return { left: el.editLeft, right: $("lc-side") };
+  return null;
+}
+
+function positionSplitters() {
+  const p = panes();
+  const show = !!(p && p.left && p.right && p.left.offsetParent && p.right.offsetParent && el.lcCases.offsetParent);
+  for (const s of splitters) s.hidden = !show;
+  if (!show) return;
+  const B = el.vizBody.getBoundingClientRect(), L = p.left.getBoundingClientRect(), R = p.right.getBoundingClientRect(), C = el.lcCases.getBoundingClientRect();
+  const ox = el.vizBody.scrollLeft - B.left, oy = el.vizBody.scrollTop - B.top;
+  const x = (L.right + R.left) / 2 + ox, y = C.top - 6 + oy;
+  Object.assign(splitters[0].style, { left: x - 5 + "px", top: L.top + oy + "px", height: L.height + "px" });
+  Object.assign(splitters[1].style, { left: L.left + ox + "px", top: y - 5 + "px", width: L.width + "px" });
+  Object.assign(splitters[2].style, { left: x - 8 + "px", top: y - 8 + "px" });
+}
+
+function applySizes() {
+  const st = el.vizPanel.style;
+  // the left column: your size, else the default; the same while editing and playing
+  if (lcMode) { const w = codeWidth() + "px"; st.setProperty("--left-w", w); st.setProperty("--code-w", w); }
+  else st.removeProperty("--left-w");
+  if (sizes.casesH) st.setProperty("--cases-h", sizes.casesH + "px");
+  else st.removeProperty("--cases-h");
+  if (rendered) rendered.codeW = codeWidth();      // the run already uses this width: no re-render needed
+  requestAnimationFrame(() => { positionSplitters(); redrawArrows(); });
+}
+const saveSizes = () => { try { localStorage.setItem(SIZES_KEY, JSON.stringify({ leftW: sizes.leftW, casesH: sizes.casesH })); } catch {} };
+
+function startResize(kind, e) {
+  const p = panes();
+  if (!p || e.button !== 0) return;
+  e.preventDefault();
+  const handle = e.currentTarget;
+  handle.setPointerCapture(e.pointerId);
+  const L = p.left.getBoundingClientRect(), B = el.vizBody.getBoundingClientRect();
+  document.body.classList.add("resizing", "resizing-" + kind);
+  handle.classList.add("dragging");
+  const move = (ev) => {
+    if (kind !== "h") sizes.leftW = Math.round(clampN(ev.clientX - L.left, 280, B.width - 380));
+    if (kind !== "v") sizes.casesH = Math.round(clampN(L.bottom - ev.clientY, 110, L.height - 150));
+    applySizes();
+  };
+  const up = () => {
+    handle.removeEventListener("pointermove", move);
+    handle.removeEventListener("pointerup", up);
+    handle.removeEventListener("pointercancel", up);
+    document.body.classList.remove("resizing", "resizing-" + kind);
+    handle.classList.remove("dragging");
+    saveSizes();
+    applySizes();
+  };
+  handle.addEventListener("pointermove", move);
+  handle.addEventListener("pointerup", up);
+  handle.addEventListener("pointercancel", up);
 }
 
 // switch layouts when the panel crosses the threshold, keeping the current step
@@ -1312,6 +1411,7 @@ function setLcMode(on) {
   document.querySelector(".bar-hint").textContent = lcMode
     ? "Runs your code on the selected test case, then plays it step by step."
     : "Runs Setup, your code and the Test call, then plays it step by step.";
+  applySizes();
   if (mode === "watch") enterEdit();         // the other mode's run doesn't belong here
   placeCases();
   updateGutter();
@@ -1431,7 +1531,8 @@ el.helper.addEventListener("change", () => {
 
 for (const t of tabs) t.addEventListener("click", () => selectTab(t.dataset.tab));
 // arrows are drawn once per step; redraw them when the visualizer panel changes size
-new ResizeObserver(() => { redrawArrows(); maybeRelayout(); }).observe(el.vizBody);
+new ResizeObserver(() => { redrawArrows(); maybeRelayout(); applySizes(); }).observe(el.vizBody);
+applySizes();
 el.diagToggle.addEventListener("click", () => {
   const on = el.diag.hidden;
   el.diag.hidden = !on;

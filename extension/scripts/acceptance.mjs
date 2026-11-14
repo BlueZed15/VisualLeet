@@ -64,7 +64,7 @@ const PROBLEMS = {
   },
 };
 
-function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false } = {}) {
+function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false, panel = "boxes" } = {}) {
   const p = PROBLEMS[slug];
   const names = p.meta.systemdesign ? ["operations", "arguments"] : p.meta.params.map((x) => x.name);
   const all = cases || p.examples.map(([input]) => input.split("\n"));
@@ -79,14 +79,14 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
 <div class="text-title-large">${p.id}. ${p.title}</div>
 <div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
 <div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)</div>
-<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
-<div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>
+${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
+<div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>`}
 <script>
   window.__NEXT_DATA__ = JSON.parse(document.getElementById("__NEXT_DATA__").textContent);
   window.next = ${JSON.stringify({ router: { components: { "/problems/[slug]/[[...tab]]": { props: { pageProps: { dehydratedState: { queries: [{ state: { data: { question } } }] } } } } } } })};
   const code = ${JSON.stringify(code || p.code)};
   const mk = (lang, value) => ({ getLanguageId: () => lang, getValue: () => value, getValueLength: () => value.length, isDisposed: () => false });
-  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", "");
+  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", ${JSON.stringify(panel === "text" ? all.flat().join("\n") : "")});
   const node = document.getElementById("editor");
   window.monaco = { editor: {
     getModels: () => [codeModel, testModel],
@@ -113,7 +113,7 @@ function problemPage(url) {
   const p = PROBLEMS[m[1]];
   let cases = p.examples.map(([input]) => input.split("\n"));
   if (q.get("custom")) cases = cases.concat([JSON.parse(q.get("custom"))]);
-  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1" });
+  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1", panel: q.get("panel") || "boxes" });
 }
 
 const serve = (req, res) => {
@@ -525,6 +525,29 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     check("leetcode", "Top-bar button: the open VisualLeet tab is updated in place (no new tab, no reload)",
       viaButton.selected === "Example 3" && viaButton.status === "complete" && viaButton.sameTab && tabsAfter === tabsBefore && viaButton.verdict && viaButton.verdict.kind === "match",
       Object.assign({ tabsBefore, tabsAfter }, viaButton));
+    // problems found at click time are shown on the LeetCode page, next to the button
+    const toastFor = async (pathAndQuery) => {
+      await lc.bringToFront();
+      await lc.goto("https://leetcode.com" + pathAndQuery);
+      await lc.waitForSelector("#visualleet-top-button", { timeout: 5000 });
+      await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
+      return lc.waitForSelector("#leetscope-toast", { timeout: 5000 }).then(() => lc.evaluate(() => ({
+        text: document.querySelector("#leetscope-toast").textContent, action: !!document.querySelector("#leetscope-toast button + button, #leetscope-toast > button"),
+      })), () => null);
+    };
+    const tc1 = await toastFor("/problems/two-sum/?panel=none");
+    check("leetcode", "No test case on the page: explained on LeetCode itself, with a Use Example 1 option", !!tc1 && /Couldn.t find the test case/.test(tc1.text) && /Use Example 1/.test(tc1.text), tc1);
+    if (tc1) {
+      await lc.evaluate(() => [...document.querySelectorAll("#leetscope-toast button")].find((b) => /Use Example 1/.test(b.textContent)).click());
+      const ex1 = await ev(async () => {
+        for (let i = 0; i < 100; i++) { const c = visualleet.leetcode.currentCase(); if (c && c.label === "Example 1" && visualleet.status() === "complete") break; await new Promise((r) => setTimeout(r, 100)); }
+        return { selected: visualleet.leetcode.currentCase().label, status: visualleet.status(), message: visualleet.message() };
+      });
+      check("leetcode", "Use Example 1 opens LeetScope with Example 1, without a warning", ex1.selected === "Example 1" && ex1.status === "complete" && !/Couldn't find/.test(ex1.message), ex1);
+    }
+    const tc2 = await toastFor("/problems/two-sum/?lang=cpp");
+    check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened", !!tc2 && /Python3/.test(tc2.text), tc2);
+    await page.bringToFront();
     await ev(() => visualleet.setMode("manual"));
     await lc.close();
   }

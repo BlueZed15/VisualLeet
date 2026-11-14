@@ -21,11 +21,52 @@ chrome.action.onClicked.addListener((tab) => showFrom(tab));
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (sender.id !== chrome.runtime.id || !sender.tab || !msg || msg.type !== "visualize-page") return;
   if (!PROBLEM_URL.test(sender.tab.url || "")) { sendResponse({ ok: false, error: "Not a LeetCode problem page." }); return; }
-  showFrom(sender.tab).then(() => sendResponse({ ok: true }), (e) => sendResponse({ ok: false, error: String(e && e.message || e) }));
+  showFrom(sender.tab, { useExample: msg.useExample === true }).then(() => sendResponse({ ok: true }), (e) => sendResponse({ ok: false, error: String(e && e.message || e) }));
   return true;
 });
 
-async function showFrom(tab) {
+// LeetScope's problem index (which problems the database has, and their inputs)
+let dbIndex = null;
+async function problemEntry(slug) {
+  try {
+    if (!dbIndex) dbIndex = await (await fetch(chrome.runtime.getURL("problems/index.json"))).json();
+    if (!dbIndex.problems[slug]) return null;
+    return await (await fetch(chrome.runtime.getURL(`problems/${slug}.json`))).json();
+  } catch { return null; }
+}
+
+/** Problems that stop a click on LeetCode, checked before leaving the page.
+ *  Returns { text, action? } for a message on the LeetCode page, or null. */
+async function clickProblem(r, { useExample = false } = {}) {
+  if (!r.ok) return { text: r.error || "Couldn't read this LeetCode page." };
+  if (!/^python3?$/.test(r.language || "")) {
+    return { text: r.language ? `LeetCode's editor is set to ${r.language}. LeetScope runs Python 3: switch the editor to Python3 and click Visualize again.`
+                              : "Couldn't read LeetCode's code editor (is the page still loading?). Wait a moment and click Visualize again." };
+  }
+  if (!r.code) return { text: "Couldn't read LeetCode's code editor (is the page still loading?). Wait a moment and click Visualize again." };
+  const entry = await problemEntry(r.slug);
+  if (!entry) return { text: `"${r.title || r.slug}" isn't in LeetScope's problem database yet (it covers the NeetCode 150 for now).` };
+  if (useExample) return null;
+  // the selected test case: its boxes, or its lines in the raw list of cases
+  const n = entry.boxes.length;
+  const lines = (r.rawCases || "").split("\n").filter((l) => l.trim()).length;
+  const found = r.selectedCase.length === n || (r.selectedIndex >= 0 && (r.selectedIndex + 1) * n <= lines);
+  if (found) return null;
+  const f = r.testcaseFound || {};
+  return {
+    text: "Couldn't find the test case selected in LeetCode's Testcase panel. Open the Testcase panel, pick a case, and click Visualize again." +
+      ` (found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${n} input${n === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines` +
+      `${f.markers && f.markers.length ? "; page markers: " + f.markers.join(", ") : ""})`,
+    action: { label: "Use Example 1", useExample: true },
+  };
+}
+
+// Show a message next to the Visualize button on the LeetCode page (content script).
+async function tellPage(tabId, problem) {
+  try { await chrome.tabs.sendMessage(tabId, Object.assign({ type: "leetscope-toast" }, problem)); return true; } catch { return false; }
+}
+
+async function showFrom(tab, { useExample = false } = {}) {
   const uiUrl = chrome.runtime.getURL(UI_PATH);
   const onUi = (tab.url || "").startsWith(uiUrl);
   const sourceTabId = tab && typeof tab.id === "number" && !onUi ? tab.id : null;
@@ -34,6 +75,11 @@ async function showFrom(tab) {
   let pending = null;
   if (sourceTabId !== null && PROBLEM_URL.test(tab.url || "")) {
     const r = await readLeetCode(sourceTabId);
+    // a problem that stops this click: say so on the LeetCode page and stay there
+    // (if the page can't show it, e.g. it was open before LeetScope was updated, LeetScope explains instead)
+    const problem = await clickProblem(r, { useExample });
+    if (problem && await tellPage(sourceTabId, problem)) return;
+    if (useExample && r.ok) { r.selectedCase = []; r.selectedIndex = -1; r.useExample = true; }
     pending = { id: crypto.randomUUID(), at: Date.now(), tabId: sourceTabId, url: tab.url, result: r };
     await chrome.storage.session.set({ pending }).catch(() => {});
   }
@@ -152,7 +198,8 @@ async function readLeetCode(tabId) {
       : [],
     rawCases: str(r.rawCases, 1024 * 1024),
     testcaseFound: r.testcaseFound && typeof r.testcaseFound === "object"
-      ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0 } : null,
+      ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0,
+          markers: Array.isArray(r.testcaseFound.markers) ? r.testcaseFound.markers.filter((x) => typeof x === "string").slice(0, 12).map((x) => x.slice(0, 60)) : [] } : null,
   };
   if (!out.slug) return { ok: false, error: "That page's problem name looks wrong." };
   if (typeof r.code === "string") {

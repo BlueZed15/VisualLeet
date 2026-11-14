@@ -132,7 +132,12 @@ export async function readLeetCodePage() {
     out.rawCases = (lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(raw)).replace(/\xa0/g, " ");
   }
   // what was found, for the message if the case can't be matched to the inputs
-  out.testcaseFound = { tabs: tabs.length, boxes: fields.length, rawLines: raw ? out.rawCases.split("\n").filter((l) => l.trim()).length : 0 };
+  out.testcaseFound = {
+    tabs: tabs.length, boxes: fields.length, rawLines: out.rawCases ? out.rawCases.split("\n").filter((l) => l.trim()).length : 0,
+    // page markers near the test cases, to diagnose a LeetCode layout this reader doesn't know
+    markers: Array.from(new Set(Array.from(document.querySelectorAll("[data-e2e-locator]")).map((e) => e.getAttribute("data-e2e-locator"))
+      .filter((v) => /test|case|console|input/i.test(v)))).slice(0, 12),
+  };
 
   out.ok = true;
   return out;

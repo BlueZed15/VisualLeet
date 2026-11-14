@@ -52,6 +52,53 @@
     bar.appendChild(make());
   }
 
+  // A message from LeetScope about this click (e.g. the editor isn't Python,
+  // the test case couldn't be found), shown under the button.
+  const TOAST = "leetscope-toast";
+  function showToast(text, action) {
+    document.getElementById(TOAST)?.remove();
+    const btn = document.getElementById(ID);
+    const r = btn ? btn.getBoundingClientRect() : { left: window.innerWidth - 380, bottom: 48 };
+    const box = document.createElement("div");
+    box.id = TOAST;
+    box.setAttribute("role", "alert");
+    Object.assign(box.style, {
+      position: "fixed", zIndex: "2147483647", top: Math.round(r.bottom + 8) + "px",
+      left: Math.round(Math.max(8, Math.min(r.left, window.innerWidth - 380))) + "px", width: "360px", boxSizing: "border-box",
+      padding: "10px 12px", borderRadius: "8px", background: "#2b2b2b", color: "#eff1f6", border: "1px solid rgba(255,161,22,.45)",
+      boxShadow: "0 8px 28px rgba(0,0,0,.45)", font: "13px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+    });
+    const head = document.createElement("div");
+    Object.assign(head.style, { display: "flex", alignItems: "center", gap: "8px", fontWeight: "600", color: "#ffa116", marginBottom: "4px" });
+    head.append("LeetScope");
+    const close = document.createElement("button");
+    close.type = "button";
+    close.textContent = "×";
+    close.setAttribute("aria-label", "Close");
+    Object.assign(close.style, { marginLeft: "auto", border: "0", background: "transparent", color: "#8a8f98", fontSize: "16px", cursor: "pointer" });
+    close.addEventListener("click", () => box.remove());
+    head.append(close);
+    const body = document.createElement("div");
+    body.textContent = text;
+    Object.assign(body.style, { overflowWrap: "anywhere" });
+    box.append(head, body);
+    if (action) {
+      const a = document.createElement("button");
+      a.type = "button";
+      a.textContent = action.label;
+      Object.assign(a.style, { marginTop: "8px", padding: "4px 10px", borderRadius: "6px", border: "0", cursor: "pointer",
+        background: "rgba(255,161,22,.18)", color: "#ffa116", font: "600 12px/1.5 inherit" });
+      a.addEventListener("click", () => { box.remove(); chrome.runtime.sendMessage({ type: "visualize-page", useExample: !!action.useExample }).catch(() => {}); });
+      box.append(a);
+    }
+    document.body.appendChild(box);
+    setTimeout(() => box.remove(), 20000);
+  }
+  chrome.runtime.onMessage.addListener((msg, sender) => {
+    if (sender.id !== chrome.runtime.id || !msg || msg.type !== TOAST || typeof msg.text !== "string") return;
+    showToast(msg.text.slice(0, 800), msg.action && typeof msg.action.label === "string" ? { label: msg.action.label.slice(0, 40), useExample: msg.action.useExample === true } : null);
+  });
+
   ensure();
   new MutationObserver(ensure).observe(document.documentElement, { childList: true, subtree: true });
 })();

@@ -69,7 +69,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       const same = cases.find((c) => sameTexts(entry, c.texts, lc));
       if (same) selectedId = same.id;
       else { cases.push({ id: "lc", label: "From LeetCode", source: "leetcode", texts: lc }); selectedId = "lc"; }
-    } else {
+    } else if (!r.useExample) {
       const f = r.testcaseFound || {};
       note = `Couldn't find your selected test case on LeetCode (found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${names.length} input${names.length === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines), so the first example is selected.`;
     }
