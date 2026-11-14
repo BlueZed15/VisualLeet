@@ -1,0 +1,30 @@
+{
+ "slug": "longest-palindrome-by-concatenating-two-letter-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2131",
+ "title": "Longest Palindrome by Concatenating Two Letter Words",
+ "premium": false,
+ "meta": {
+  "name": "longestPalindrome",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"lc\",\"cl\",\"gg\"]",
+  "[\"ab\",\"ty\",\"yt\",\"lc\",\"cl\",\"ab\"]",
+  "[\"cc\",\"ll\",\"xx\"]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "8",
+  "2"
+ ],
+ "anyOrder": true
+}

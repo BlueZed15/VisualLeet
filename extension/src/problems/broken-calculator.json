@@ -1,0 +1,30 @@
+{
+ "slug": "broken-calculator",
+ "frontendId": "991",
+ "title": "Broken Calculator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startValue",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "startValue = {startValue}\ntarget = {target}",
+ "visible": [
+  "startValue",
+  "target"
+ ],
+ "call": "result = Solution().brokenCalc(startValue, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

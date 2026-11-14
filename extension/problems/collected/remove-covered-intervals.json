@@ -1,0 +1,28 @@
+{
+ "slug": "remove-covered-intervals",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1288",
+ "title": "Remove Covered Intervals",
+ "premium": false,
+ "meta": {
+  "name": "removeCoveredIntervals",
+  "params": [
+   {
+    "name": "intervals",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[52141,92589],[52991,93486],[46321,59199],[51955,78788],[18533,23127]]",
+  "[[14041,32641],[24914,51477],[4983,81235],[62018,77987],[31523,32192],[74196,96194],[16126,52652],[59901,67707],[36502,51366],[56437,86744]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

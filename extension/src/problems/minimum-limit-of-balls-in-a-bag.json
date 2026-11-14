@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-limit-of-balls-in-a-bag",
+ "frontendId": "1760",
+ "title": "Minimum Limit of Balls in a Bag",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "maxOperations",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nmaxOperations = {maxOperations}",
+ "visible": [
+  "nums",
+  "maxOperations"
+ ],
+ "call": "result = Solution().minimumSize(nums, maxOperations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

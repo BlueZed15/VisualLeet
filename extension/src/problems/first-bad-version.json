@@ -1,0 +1,32 @@
+{
+ "slug": "first-bad-version",
+ "frontendId": "278",
+ "title": "First Bad Version",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "bad",
+   "type": "integer",
+   "hint": "the first bad version isBadVersion() knows"
+  }
+ ],
+ "helpers": [
+  "BadVersion"
+ ],
+ "setup": "_vl_bad = {bad}\nn = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().firstBadVersion(n)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

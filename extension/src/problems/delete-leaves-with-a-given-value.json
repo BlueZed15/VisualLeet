@@ -1,0 +1,32 @@
+{
+ "slug": "delete-leaves-with-a-given-value",
+ "frontendId": "1325",
+ "title": "Delete Leaves With a Given Value",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\ntarget = {target}",
+ "visible": [
+  "root",
+  "target"
+ ],
+ "call": "result = Solution().removeLeafNodes(root, target)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "unique-email-addresses",
+ "frontendId": "929",
+ "title": "Unique Email Addresses",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "emails",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "emails = {emails}",
+ "visible": [
+  "emails"
+ ],
+ "call": "result = Solution().numUniqueEmails(emails)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

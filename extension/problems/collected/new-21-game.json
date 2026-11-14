@@ -1,0 +1,38 @@
+{
+ "slug": "new-21-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "837",
+ "title": "New 21 Game",
+ "premium": false,
+ "meta": {
+  "name": "new21Game",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "maxPts",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "10\n1\n10",
+  "6\n1\n10",
+  "21\n17\n10"
+ ],
+ "exampleOutputs": [
+  "1.00000",
+  "0.60000",
+  "0.73278"
+ ],
+ "anyOrder": false
+}

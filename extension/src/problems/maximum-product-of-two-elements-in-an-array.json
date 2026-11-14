@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-product-of-two-elements-in-an-array",
+ "frontendId": "1464",
+ "title": "Maximum Product of Two Elements in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().maxProduct(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

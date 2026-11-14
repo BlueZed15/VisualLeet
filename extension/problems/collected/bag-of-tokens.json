@@ -1,0 +1,34 @@
+{
+ "slug": "bag-of-tokens",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "948",
+ "title": "Bag of Tokens",
+ "premium": false,
+ "meta": {
+  "name": "bagOfTokensScore",
+  "params": [
+   {
+    "name": "tokens",
+    "type": "integer[]"
+   },
+   {
+    "name": "power",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[100]\n50",
+  "[200,100]\n150",
+  "[100,200,300,400]\n200"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

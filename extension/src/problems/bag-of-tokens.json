@@ -1,0 +1,30 @@
+{
+ "slug": "bag-of-tokens",
+ "frontendId": "948",
+ "title": "Bag of Tokens",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tokens",
+   "type": "integer[]"
+  },
+  {
+   "name": "power",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tokens = {tokens}\npower = {power}",
+ "visible": [
+  "tokens",
+  "power"
+ ],
+ "call": "result = Solution().bagOfTokensScore(tokens, power)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

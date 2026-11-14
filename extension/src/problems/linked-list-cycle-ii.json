@@ -1,0 +1,33 @@
+{
+ "slug": "linked-list-cycle-ii",
+ "frontendId": "142",
+ "title": "Linked List Cycle II",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "integer[]"
+  },
+  {
+   "name": "pos",
+   "type": "integer",
+   "hint": "index the tail links back to; -1 means no cycle"
+  }
+ ],
+ "helpers": [
+  "CycleList",
+  "ListFind"
+ ],
+ "setup": "head = build_cycle_list({head}, {pos})",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().detectCycle(head)\nprint(\"no cycle\" if result is None else \"tail connects to node index \" + str(node_index(head, result)))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

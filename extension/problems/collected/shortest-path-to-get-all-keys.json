@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-path-to-get-all-keys",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "864",
+ "title": "Shortest Path to Get All Keys",
+ "premium": false,
+ "meta": {
+  "name": "shortestPathAllKeys",
+  "params": [
+   {
+    "name": "grid",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"@.a..\",\"###.#\",\"b.A.B\"]",
+  "[\"@..aA\",\"..B#.\",\"....b\"]",
+  "[\"@Aa\"]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "6",
+  "-1"
+ ],
+ "anyOrder": false
+}

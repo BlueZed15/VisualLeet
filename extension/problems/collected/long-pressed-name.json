@@ -1,0 +1,32 @@
+{
+ "slug": "long-pressed-name",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "925",
+ "title": "Long Pressed Name",
+ "premium": false,
+ "meta": {
+  "name": "isLongPressedName",
+  "params": [
+   {
+    "name": "name",
+    "type": "string"
+   },
+   {
+    "name": "typed",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"alex\"\n\"aaleex\"",
+  "\"saeed\"\n\"ssaaedd\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

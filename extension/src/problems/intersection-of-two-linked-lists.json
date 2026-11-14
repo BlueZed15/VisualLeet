@@ -1,0 +1,47 @@
+{
+ "slug": "intersection-of-two-linked-lists",
+ "frontendId": "160",
+ "title": "Intersection of Two Linked Lists",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intersectVal",
+   "type": "integer",
+   "hint": "0 means the lists don't meet"
+  },
+  {
+   "name": "listA",
+   "type": "integer[]"
+  },
+  {
+   "name": "listB",
+   "type": "integer[]"
+  },
+  {
+   "name": "skipA",
+   "type": "integer",
+   "hint": "nodes of listA before they meet"
+  },
+  {
+   "name": "skipB",
+   "type": "integer",
+   "hint": "nodes of listB before they meet"
+  }
+ ],
+ "helpers": [
+  "Intersect"
+ ],
+ "setup": "headA, headB = build_intersecting({intersectVal}, {listA}, {listB}, {skipA}, {skipB})",
+ "visible": [
+  "headA",
+  "headB"
+ ],
+ "call": "result = Solution().getIntersectionNode(headA, headB)\nprint(\"Intersected at '\" + str(result.val) + \"'\" if result else \"No intersection\")",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "letter-tile-possibilities",
+ "frontendId": "1079",
+ "title": "Letter Tile Possibilities",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tiles",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "tiles = {tiles}",
+ "visible": [
+  "tiles"
+ ],
+ "call": "result = Solution().numTilePossibilities(tiles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

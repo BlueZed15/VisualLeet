@@ -1,0 +1,34 @@
+{
+ "slug": "decoded-string-at-index",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "880",
+ "title": "Decoded String at Index",
+ "premium": false,
+ "meta": {
+  "name": "decodeAtIndex",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leet2code3\"\n10",
+  "\"ha22\"\n5",
+  "\"a2345678999999999999999\"\n1"
+ ],
+ "exampleOutputs": [
+  "\"o\"",
+  "\"h\"",
+  "\"a\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-difficulty-of-a-job-schedule",
+ "frontendId": "1335",
+ "title": "Minimum Difficulty of a Job Schedule",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "jobDifficulty",
+   "type": "integer[]"
+  },
+  {
+   "name": "d",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "jobDifficulty = {jobDifficulty}\nd = {d}",
+ "visible": [
+  "jobDifficulty",
+  "d"
+ ],
+ "call": "result = Solution().minDifficulty(jobDifficulty, d)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

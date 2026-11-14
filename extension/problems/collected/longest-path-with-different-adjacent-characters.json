@@ -1,0 +1,32 @@
+{
+ "slug": "longest-path-with-different-adjacent-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2246",
+ "title": "Longest Path With Different Adjacent Characters",
+ "premium": false,
+ "meta": {
+  "name": "longestPath",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "parent"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,0,0,1,1,2]\n\"abacbe\"",
+  "[-1,0,0,0]\n\"aabc\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

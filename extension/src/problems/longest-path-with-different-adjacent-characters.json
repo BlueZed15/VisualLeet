@@ -1,0 +1,30 @@
+{
+ "slug": "longest-path-with-different-adjacent-characters",
+ "frontendId": "2246",
+ "title": "Longest Path With Different Adjacent Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "parent",
+   "type": "integer[]"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "parent = {parent}\ns = {s}",
+ "visible": [
+  "parent",
+  "s"
+ ],
+ "call": "result = Solution().longestPath(parent, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

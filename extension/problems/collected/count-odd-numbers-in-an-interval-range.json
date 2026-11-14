@@ -1,0 +1,32 @@
+{
+ "slug": "count-odd-numbers-in-an-interval-range",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1523",
+ "title": "Count Odd Numbers in an Interval Range",
+ "premium": false,
+ "meta": {
+  "name": "countOdds",
+  "params": [
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "high"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n7",
+  "8\n10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

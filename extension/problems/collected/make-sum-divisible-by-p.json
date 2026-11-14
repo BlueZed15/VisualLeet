@@ -1,0 +1,34 @@
+{
+ "slug": "make-sum-divisible-by-p",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1590",
+ "title": "Make Sum Divisible by P",
+ "premium": false,
+ "meta": {
+  "name": "minSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "p"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,4,2]\n6",
+  "[6,3,5,2]\n9",
+  "[1,2,3]\n3"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

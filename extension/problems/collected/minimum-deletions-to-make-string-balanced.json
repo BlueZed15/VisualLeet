@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-deletions-to-make-string-balanced",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1653",
+ "title": "Minimum Deletions to Make String Balanced",
+ "premium": false,
+ "meta": {
+  "name": "minimumDeletions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aababbab\"",
+  "\"bbaaaaabb\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

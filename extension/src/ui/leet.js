@@ -78,7 +78,7 @@ export function parseType(t) {
 }
 
 const INT_TYPES = new Set(["integer", "int", "long"]);
-const BASE_TYPES = new Set(["integer", "int", "long", "double", "float", "boolean", "string", "String", "character", "char", "ListNode", "TreeNode"]);
+const BASE_TYPES = new Set(["integer", "int", "long", "double", "float", "boolean", "string", "String", "character", "char", "ListNode", "TreeNode", "NestedInteger"]);
 
 /** Every base type in `type` is one we can build. */
 export function isSupported(type) {
@@ -107,6 +107,10 @@ export function checkValue(v, type) {
   if (n === "boolean") return typeof v === "boolean" ? null : "should be true or false";
   if (n === "string" || n === "String") return typeof v === "string" ? null : 'should be a string in double quotes, like "abc"';
   if (n === "character" || n === "char") return typeof v === "string" && [...v].length === 1 ? null : 'should be one character in double quotes, like "a"';
+  if (n === "NestedInteger") {
+    const ok = (x) => (x instanceof LeetNum && x.isInteger) || (Array.isArray(x) && x.every(ok));
+    return ok(v) ? null : "should be a whole number or a nested list of them, like [1,[4,[6]]]";
+  }
   if (n === "ListNode") {
     if (!Array.isArray(v)) return "should be a list of values, like [1,2,3] ([] for an empty list)";
     return v.every((e) => e instanceof LeetNum) ? null : "a linked list holds numbers only";
@@ -136,6 +140,7 @@ export function toPython(v, type) {
   if (ty.kind === "list") return "[" + v.map((e) => toPython(e, ty.of)).join(", ") + "]";
   if (ty.name === "ListNode") return `build_list(${pyLiteral(v)})`;
   if (ty.name === "TreeNode") return `build_tree(${pyLiteral(v)})`;
+  if (ty.name === "NestedInteger") return `build_nested(${pyLiteral(v)})`;
   if ((ty.name === "double" || ty.name === "float") && v instanceof LeetNum && v.isInteger) return v.text + ".0";
   return pyLiteral(v);
 }
@@ -144,7 +149,7 @@ export function toPython(v, type) {
 export function helpersFor(type, into = new Set()) {
   const ty = typeof type === "string" ? parseType(type) : type;
   if (ty.kind === "list") return helpersFor(ty.of, into);
-  if (ty.name === "ListNode" || ty.name === "TreeNode") into.add(ty.name);
+  if (ty.name === "ListNode" || ty.name === "TreeNode" || ty.name === "NestedInteger") into.add(ty.name);
   return into;
 }
 

@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-sum-of-two-non-overlapping-subarrays",
+ "frontendId": "1031",
+ "title": "Maximum Sum of Two Non-Overlapping Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "firstLen",
+   "type": "integer"
+  },
+  {
+   "name": "secondLen",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nfirstLen = {firstLen}\nsecondLen = {secondLen}",
+ "visible": [
+  "nums",
+  "firstLen",
+  "secondLen"
+ ],
+ "call": "result = Solution().maxSumTwoNoOverlap(nums, firstLen, secondLen)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

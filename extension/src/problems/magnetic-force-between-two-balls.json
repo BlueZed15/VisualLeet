@@ -1,0 +1,30 @@
+{
+ "slug": "magnetic-force-between-two-balls",
+ "frontendId": "1552",
+ "title": "Magnetic Force Between Two Balls",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "position",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "position = {position}\nm = {m}",
+ "visible": [
+  "position",
+  "m"
+ ],
+ "call": "result = Solution().maxDistance(position, m)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

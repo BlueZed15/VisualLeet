@@ -1,0 +1,32 @@
+{
+ "slug": "find-in-mountain-array",
+ "frontendId": "1095",
+ "title": "Find in Mountain Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mountainArr",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "MountainArray"
+ ],
+ "setup": "mountainArr = MountainArray({mountainArr})\ntarget = {target}",
+ "visible": [
+  "mountainArr",
+  "target"
+ ],
+ "call": "result = Solution().findInMountainArray(target, mountainArr)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

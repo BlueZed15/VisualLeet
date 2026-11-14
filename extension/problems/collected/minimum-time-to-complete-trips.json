@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-time-to-complete-trips",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2187",
+ "title": "Minimum Time to Complete Trips",
+ "premium": false,
+ "meta": {
+  "name": "minimumTime",
+  "params": [
+   {
+    "name": "time",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "totalTrips"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n5",
+  "[2]\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

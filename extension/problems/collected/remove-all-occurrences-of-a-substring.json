@@ -1,0 +1,32 @@
+{
+ "slug": "remove-all-occurrences-of-a-substring",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1910",
+ "title": "Remove All Occurrences of a Substring",
+ "premium": false,
+ "meta": {
+  "name": "removeOccurrences",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "part"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"daabcbaabcbc\"\n\"abc\"",
+  "\"axxxxyyyyb\"\n\"xy\""
+ ],
+ "exampleOutputs": [
+  "\"dab\"",
+  "\"ab\""
+ ],
+ "anyOrder": false
+}

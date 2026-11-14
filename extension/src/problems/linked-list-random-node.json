@@ -1,0 +1,42 @@
+{
+ "slug": "linked-list-random-node",
+ "frontendId": "382",
+ "title": "Linked List Random Node",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Solution",
+ "methods": {
+  "Solution": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "getRandom": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops",
+  "ListNode"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Solution(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

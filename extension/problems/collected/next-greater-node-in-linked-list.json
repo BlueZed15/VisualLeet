@@ -1,0 +1,28 @@
+{
+ "slug": "next-greater-node-in-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1019",
+ "title": "Next Greater Node In Linked List",
+ "premium": false,
+ "meta": {
+  "name": "nextLargerNodes",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,5]",
+  "[2,7,4,3,5]"
+ ],
+ "exampleOutputs": [
+  "[5,5,0]",
+  "[7,0,5,5,0]"
+ ],
+ "anyOrder": false
+}

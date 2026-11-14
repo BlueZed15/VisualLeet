@@ -1,0 +1,25 @@
+{
+ "slug": "solving-questions-with-brainpower",
+ "frontendId": "2140",
+ "title": "Solving Questions With Brainpower",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "questions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "questions = {questions}",
+ "visible": [
+  "questions"
+ ],
+ "call": "result = Solution().mostPoints(questions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

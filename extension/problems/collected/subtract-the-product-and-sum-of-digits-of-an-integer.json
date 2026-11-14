@@ -1,0 +1,28 @@
+{
+ "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1281",
+ "title": "Subtract the Product and Sum of Digits of an Integer",
+ "premium": false,
+ "meta": {
+  "name": "subtractProductAndSum",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "234",
+  "4421"
+ ],
+ "exampleOutputs": [
+  "15",
+  "21"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,37 @@
+{
+ "slug": "lowest-common-ancestor-of-a-binary-tree",
+ "frontendId": "236",
+ "title": "Lowest Common Ancestor of a Binary Tree",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "p",
+   "type": "integer",
+   "hint": "value of a node in the tree"
+  },
+  {
+   "name": "q",
+   "type": "integer",
+   "hint": "value of a node in the tree"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\np = find_node(root, {p})\nq = find_node(root, {q})",
+ "visible": [
+  "root",
+  "p",
+  "q"
+ ],
+ "call": "result = Solution().lowestCommonAncestor(root, p, q)\nprint(leet_str(result.val if result else None))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

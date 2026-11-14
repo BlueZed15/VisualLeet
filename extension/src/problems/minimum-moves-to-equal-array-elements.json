@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-moves-to-equal-array-elements",
+ "frontendId": "453",
+ "title": "Minimum Moves to Equal Array Elements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().minMoves(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

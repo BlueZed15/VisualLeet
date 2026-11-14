@@ -1,0 +1,30 @@
+{
+ "slug": "count-all-valid-pickup-and-delivery-options",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1359",
+ "title": "Count All Valid Pickup and Delivery Options",
+ "premium": false,
+ "meta": {
+  "name": "countOrders",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "1",
+  "6",
+  "90"
+ ],
+ "anyOrder": false
+}

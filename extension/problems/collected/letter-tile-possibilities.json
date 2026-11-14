@@ -1,0 +1,30 @@
+{
+ "slug": "letter-tile-possibilities",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1079",
+ "title": "Letter Tile Possibilities",
+ "premium": false,
+ "meta": {
+  "name": "numTilePossibilities",
+  "params": [
+   {
+    "name": "tiles",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"AAB\"",
+  "\"AAABBC\"",
+  "\"V\""
+ ],
+ "exampleOutputs": [
+  "8",
+  "188",
+  "1"
+ ],
+ "anyOrder": false
+}

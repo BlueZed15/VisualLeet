@@ -1,0 +1,34 @@
+{
+ "slug": "longest-arithmetic-subsequence-of-given-difference",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1218",
+ "title": "Longest Arithmetic Subsequence of Given Difference",
+ "premium": false,
+ "meta": {
+  "name": "longestSubsequence",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "difference"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n1",
+  "[1,3,5,7]\n1",
+  "[1,5,7,8,5,3,4,2,1]\n-2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1",
+  "4"
+ ],
+ "anyOrder": false
+}

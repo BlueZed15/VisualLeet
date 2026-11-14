@@ -178,6 +178,211 @@ def graph_values(node):
                 queue.append(n)
     return [[n.val for n in seen[v].neighbors] for v in range(1, max(seen) + 1)]`,
 
+  // Find a node by value in a linked list (Delete Node in a Linked List).
+  ListFind: `def list_find(head, val):
+    while head is not None and head.val != val:
+        head = head.next
+    return head
+
+def node_index(head, target, limit=10000):
+    i = 0
+    while head is not None and i < limit:
+        if head is target:
+            return i
+        head = head.next
+        i += 1
+    return -1`,
+
+  // Intersection of Two Linked Lists: listB's tail joins listA at skipA.
+  Intersect: `def build_intersecting(intersect_val, a, b, skip_a, skip_b):
+    head_a = build_list(a)
+    if intersect_val == 0:
+        return head_a, build_list(b)
+    nodes, node = [], head_a
+    while node is not None:
+        nodes.append(node)
+        node = node.next
+    head_b = build_list(b[:skip_b])
+    if head_b is None:
+        return head_a, nodes[skip_a]
+    tail = head_b
+    while tail.next is not None:
+        tail = tail.next
+    tail.next = nodes[skip_a]
+    return head_a, head_b`,
+
+  // Populating Next Right Pointers: a binary tree whose nodes have .next
+  NextTree: `class Node:
+    def __init__(self, val=0, left=None, right=None, next=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+
+def build_next_tree(values):
+    if not values or values[0] is None:
+        return None
+    root = Node(values[0])
+    queue, i = deque([root]), 1
+    while queue and i < len(values):
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = Node(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = Node(values[i])
+            queue.append(node.right)
+        i += 1
+    return root
+
+def next_values_str(root):
+    # LeetCode's output: each level followed through .next, then "#"
+    out, level = [], [root] if root else []
+    while level:
+        node, seen = level[0], 0
+        while node is not None and seen < 10000:
+            out.append(str(node.val))
+            node = node.next
+            seen += 1
+        out.append("#")
+        level = [c for n in level for c in (n.left, n.right) if c]
+    return "[" + ",".join(out) + "]"`,
+
+  // Construct Quad Tree: [isLeaf, val] per node in level order, null for a leaf's children
+  QuadTree: `class Node:
+    def __init__(self, val, isLeaf, topLeft=None, topRight=None, bottomLeft=None, bottomRight=None):
+        self.val = val
+        self.isLeaf = isLeaf
+        self.topLeft = topLeft
+        self.topRight = topRight
+        self.bottomLeft = bottomLeft
+        self.bottomRight = bottomRight
+
+def quad_values(root):
+    out, queue, i = [], [root], 0
+    while i < len(queue) and len(out) < 100000:
+        node = queue[i]
+        i += 1
+        if node is None:
+            out.append(None)
+            continue
+        out.append([int(bool(node.isLeaf)), int(bool(node.val))])
+        if not node.isLeaf:
+            queue.extend([node.topLeft, node.topRight, node.bottomLeft, node.bottomRight])
+        else:
+            queue.extend([None, None, None, None])
+    while out and out[-1] is None:
+        out.pop()
+    return out`,
+
+  // Flatten a Multilevel Doubly Linked List: levels separated by nulls; the
+  // nulls after a level's terminator say which node of it has the next level as child
+  Multilevel: `class Node:
+    def __init__(self, val, prev=None, next=None, child=None):
+        self.val = val
+        self.prev = prev
+        self.next = next
+        self.child = child
+
+def build_multilevel(values):
+    head, prev_level, i, offset = None, None, 0, 0
+    while i < len(values):
+        level = []
+        while i < len(values) and values[i] is not None:
+            level.append(Node(values[i]))
+            i += 1
+        for a, b in zip(level, level[1:]):
+            a.next, b.prev = b, a
+        if level:
+            if prev_level is None:
+                head = level[0]
+            else:
+                prev_level[offset].child = level[0]
+            prev_level = level
+        if i < len(values):
+            i += 1
+        offset = 0
+        while i < len(values) and values[i] is None:
+            offset += 1
+            i += 1
+    return head`,
+
+  // N-ary trees: [root, null, children of root..., null, children of the next node...]
+  NaryTree: `class Node:
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children if children is not None else []
+
+def build_nary(values):
+    if not values or values[0] is None:
+        return None
+    root = Node(values[0], [])
+    queue, i = deque([root]), 2
+    while queue and i < len(values):
+        node = queue.popleft()
+        while i < len(values) and values[i] is not None:
+            child = Node(values[i], [])
+            node.children.append(child)
+            queue.append(child)
+            i += 1
+        i += 1
+    return root`,
+
+  // NestedInteger, as LeetCode defines its interface
+  NestedInteger: `class NestedInteger:
+    def __init__(self, value=None):
+        self._list = None if isinstance(value, int) else (value if value is not None else [])
+        self._int = value if isinstance(value, int) else None
+
+    def isInteger(self) -> bool:
+        return self._list is None
+
+    def getInteger(self):
+        return self._int
+
+    def getList(self):
+        return self._list
+
+    def add(self, elem):
+        if self._list is None:
+            self._list, self._int = [], None
+        self._list.append(elem)
+
+    def setInteger(self, value):
+        self._int, self._list = value, None
+
+    def __repr__(self):
+        return repr(self._int) if self._list is None else repr(self._list)
+
+def build_nested(value):
+    if isinstance(value, list):
+        return NestedInteger([build_nested(v) for v in value])
+    return NestedInteger(value)`,
+
+  // Interactive problems: the API LeetCode provides, backed by the hidden answer
+  MountainArray: `class MountainArray:
+    def __init__(self, values):
+        self._values = list(values)
+        self.calls = 0
+
+    def get(self, index: int) -> int:
+        self.calls += 1
+        return self._values[index]
+
+    def length(self) -> int:
+        return len(self._values)`,
+
+  Guess: `_vl_pick = 0
+
+def guess(num: int) -> int:
+    return 0 if num == _vl_pick else (-1 if num > _vl_pick else 1)`,
+
+  BadVersion: `_vl_bad = 0
+
+def isBadVersion(version: int) -> bool:
+    return version >= _vl_bad`,
+
   // Design problems: call each operation on the user's object, untraced
   // itself; the user's methods are traced as usual.
   run_ops: `def run_ops(obj, ops, args):
@@ -196,6 +401,16 @@ export const HELPER_DEPS = {
   RandomList: [],
   Graph: [],
   run_ops: [],
+  ListFind: [],
+  Intersect: ["ListNode"],
+  NextTree: [],
+  QuadTree: [],
+  Multilevel: [],
+  NaryTree: [],
+  NestedInteger: [],
+  MountainArray: [],
+  Guess: [],
+  BadVersion: [],
 };
 
 /** Setup source with the imports and the given helpers (dependencies first, each once). */

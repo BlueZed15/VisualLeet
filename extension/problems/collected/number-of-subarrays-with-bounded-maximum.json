@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-subarrays-with-bounded-maximum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "795",
+ "title": "Number of Subarrays with Bounded Maximum",
+ "premium": false,
+ "meta": {
+  "name": "numSubarrayBoundedMax",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "left",
+    "type": "integer"
+   },
+   {
+    "name": "right",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,4,3]\n2\n3",
+  "[2,9,2,5,6]\n2\n8"
+ ],
+ "exampleOutputs": [
+  "3",
+  "7"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimize-the-maximum-difference-of-pairs",
+ "frontendId": "2616",
+ "title": "Minimize the Maximum Difference of Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "p",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\np = {p}",
+ "visible": [
+  "nums",
+  "p"
+ ],
+ "call": "result = Solution().minimizeMax(nums, p)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "fraction-to-recurring-decimal",
+ "frontendId": "166",
+ "title": "Fraction to Recurring Decimal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numerator",
+   "type": "integer"
+  },
+  {
+   "name": "denominator",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "numerator = {numerator}\ndenominator = {denominator}",
+ "visible": [
+  "numerator",
+  "denominator"
+ ],
+ "call": "result = Solution().fractionToDecimal(numerator, denominator)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

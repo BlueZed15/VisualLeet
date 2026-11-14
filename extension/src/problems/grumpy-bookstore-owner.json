@@ -1,0 +1,35 @@
+{
+ "slug": "grumpy-bookstore-owner",
+ "frontendId": "1052",
+ "title": "Grumpy Bookstore Owner",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "customers",
+   "type": "integer[]"
+  },
+  {
+   "name": "grumpy",
+   "type": "integer[]"
+  },
+  {
+   "name": "minutes",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "customers = {customers}\ngrumpy = {grumpy}\nminutes = {minutes}",
+ "visible": [
+  "customers",
+  "grumpy",
+  "minutes"
+ ],
+ "call": "result = Solution().maxSatisfied(customers, grumpy, minutes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

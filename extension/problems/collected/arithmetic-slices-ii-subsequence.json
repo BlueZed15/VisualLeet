@@ -1,0 +1,28 @@
+{
+ "slug": "arithmetic-slices-ii-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "446",
+ "title": "Arithmetic Slices II - Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "numberOfArithmeticSlices",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,6,8,10]",
+  "[7,7,7,7,7]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "16"
+ ],
+ "anyOrder": false
+}

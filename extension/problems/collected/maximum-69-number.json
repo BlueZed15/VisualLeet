@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-69-number",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1323",
+ "title": "Maximum 69 Number",
+ "premium": false,
+ "meta": {
+  "name": "maximum69Number ",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "9669",
+  "9996",
+  "9999"
+ ],
+ "exampleOutputs": [
+  "9969",
+  "9999",
+  "9999"
+ ],
+ "anyOrder": false
+}

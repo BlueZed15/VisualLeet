@@ -1,0 +1,32 @@
+{
+ "slug": "bulls-and-cows",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "299",
+ "title": "Bulls and Cows",
+ "premium": false,
+ "meta": {
+  "name": "getHint",
+  "params": [
+   {
+    "name": "secret",
+    "type": "string"
+   },
+   {
+    "name": "guess",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1807\"\n\"7810\"",
+  "\"1123\"\n\"0111\""
+ ],
+ "exampleOutputs": [
+  "\"1A3B\"",
+  "\"1A1B\""
+ ],
+ "anyOrder": false
+}

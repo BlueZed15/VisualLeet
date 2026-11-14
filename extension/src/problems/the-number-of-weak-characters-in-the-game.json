@@ -1,0 +1,25 @@
+{
+ "slug": "the-number-of-weak-characters-in-the-game",
+ "frontendId": "1996",
+ "title": "The Number of Weak Characters in the Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "properties",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "properties = {properties}",
+ "visible": [
+  "properties"
+ ],
+ "call": "result = Solution().numberOfWeakCharacters(properties)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

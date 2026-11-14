@@ -1,0 +1,46 @@
+{
+ "slug": "n-ary-tree-postorder-traversal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "590",
+ "title": "N-ary Tree Postorder Traversal",
+ "premium": false,
+ "meta": {
+  "name": "postorder",
+  "params": [
+   {
+    "name": "root",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  },
+  "languages": [
+   "cpp",
+   "java",
+   "python",
+   "csharp",
+   "javascript",
+   "python3",
+   "golang",
+   "ruby",
+   "c",
+   "kotlin",
+   "scala",
+   "php",
+   "swift",
+   "typescript"
+  ],
+  "manual": true,
+  "typescriptCustomType": "class _Node {\n    val: number\n    children: _Node[]\n    \n    constructor(v: number) {\n        this.val = v;\n        this.children = [];\n    }\n}"
+ },
+ "exampleInputs": [
+  "[1,null,3,2,4,null,5,6]",
+  "[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]"
+ ],
+ "exampleOutputs": [
+  "[5,6,3,2,4,1]",
+  "[2,6,14,11,7,3,12,8,4,13,9,10,5,1]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
+ "frontendId": "1326",
+ "title": "Minimum Number of Taps to Open to Water a Garden",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "ranges",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nranges = {ranges}",
+ "visible": [
+  "n",
+  "ranges"
+ ],
+ "call": "result = Solution().minTaps(n, ranges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

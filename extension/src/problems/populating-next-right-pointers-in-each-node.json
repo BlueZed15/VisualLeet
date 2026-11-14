@@ -1,0 +1,28 @@
+{
+ "slug": "populating-next-right-pointers-in-each-node",
+ "frontendId": "116",
+ "title": "Populating Next Right Pointers in Each Node",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "list<integer?>",
+   "hint": "level order, like a tree"
+  }
+ ],
+ "helpers": [
+  "NextTree"
+ ],
+ "setup": "root = build_next_tree({root})",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().connect(root)\nprint(next_values_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

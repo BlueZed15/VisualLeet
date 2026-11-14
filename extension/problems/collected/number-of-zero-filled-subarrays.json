@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-zero-filled-subarrays",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2348",
+ "title": "Number of Zero-Filled Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "zeroFilledSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,0,0,2,0,0,4]",
+  "[0,0,0,2,0,0]",
+  "[2,10,2019]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "9",
+  "0"
+ ],
+ "anyOrder": false
+}

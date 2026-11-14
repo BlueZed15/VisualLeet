@@ -1,0 +1,28 @@
+{
+ "slug": "beautiful-arrangement",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "526",
+ "title": "Beautiful Arrangement",
+ "premium": false,
+ "meta": {
+  "name": "countArrangement",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

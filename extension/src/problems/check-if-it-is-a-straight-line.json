@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-it-is-a-straight-line",
+ "frontendId": "1232",
+ "title": "Check If It Is a Straight Line",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coordinates",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "coordinates = {coordinates}",
+ "visible": [
+  "coordinates"
+ ],
+ "call": "result = Solution().checkStraightLine(coordinates)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

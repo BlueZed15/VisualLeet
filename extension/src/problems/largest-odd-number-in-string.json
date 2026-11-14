@@ -1,0 +1,25 @@
+{
+ "slug": "largest-odd-number-in-string",
+ "frontendId": "1903",
+ "title": "Largest Odd Number in String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().largestOddNumber(num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

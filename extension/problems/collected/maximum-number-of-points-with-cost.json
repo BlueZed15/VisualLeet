@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-points-with-cost",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1937",
+ "title": "Maximum Number of Points with Cost",
+ "premium": false,
+ "meta": {
+  "name": "maxPoints",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[1,5,1],[3,1,1]]",
+  "[[1,5],[2,3],[4,2]]"
+ ],
+ "exampleOutputs": [
+  "9",
+  "11"
+ ],
+ "anyOrder": false
+}

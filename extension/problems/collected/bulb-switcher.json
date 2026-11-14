@@ -1,0 +1,30 @@
+{
+ "slug": "bulb-switcher",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "319",
+ "title": "Bulb Switcher",
+ "premium": false,
+ "meta": {
+  "name": "bulbSwitch",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "0",
+  "1"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

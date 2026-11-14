@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-nesting-depth-of-the-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1614",
+ "title": "Maximum Nesting Depth of the Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "maxDepth",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"(1+(2*3)+((8)/4))+1\"",
+  "\"(1)+((2))+(((3)))\"",
+  "\"()(())((()()))\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

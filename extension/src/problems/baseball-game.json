@@ -1,0 +1,25 @@
+{
+ "slug": "baseball-game",
+ "frontendId": "682",
+ "title": "Baseball Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "operations = {operations}",
+ "visible": [
+  "operations"
+ ],
+ "call": "result = Solution().calPoints(operations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

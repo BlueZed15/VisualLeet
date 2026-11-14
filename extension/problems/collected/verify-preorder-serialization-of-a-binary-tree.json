@@ -1,0 +1,30 @@
+{
+ "slug": "verify-preorder-serialization-of-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "331",
+ "title": "Verify Preorder Serialization of a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "isValidSerialization",
+  "params": [
+   {
+    "name": "preorder",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"9,3,4,#,#,1,#,#,2,#,6,#,#\"",
+  "\"1,#\"",
+  "\"9,#,#,1\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

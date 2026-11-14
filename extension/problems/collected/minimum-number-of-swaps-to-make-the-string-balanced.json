@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1963",
+ "title": "Minimum Number of Swaps to Make the String Balanced",
+ "premium": false,
+ "meta": {
+  "name": "minSwaps",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"][][\"",
+  "\"]]][[[\"",
+  "\"[]\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

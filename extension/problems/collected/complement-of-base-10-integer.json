@@ -1,0 +1,30 @@
+{
+ "slug": "complement-of-base-10-integer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1009",
+ "title": "Complement of Base 10 Integer",
+ "premium": false,
+ "meta": {
+  "name": "bitwiseComplement",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "7",
+  "10"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "5"
+ ],
+ "anyOrder": false
+}

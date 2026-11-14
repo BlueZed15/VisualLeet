@@ -1,0 +1,30 @@
+{
+ "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+ "frontendId": "1579",
+ "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().maxNumEdgesToRemove(n, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

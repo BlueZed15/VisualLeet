@@ -1,0 +1,30 @@
+{
+ "slug": "compare-version-numbers",
+ "frontendId": "165",
+ "title": "Compare Version Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "version1",
+   "type": "string"
+  },
+  {
+   "name": "version2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "version1 = {version1}\nversion2 = {version2}",
+ "visible": [
+  "version1",
+  "version2"
+ ],
+ "call": "result = Solution().compareVersion(version1, version2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

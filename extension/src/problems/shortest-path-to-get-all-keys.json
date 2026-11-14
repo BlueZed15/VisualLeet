@@ -1,0 +1,25 @@
+{
+ "slug": "shortest-path-to-get-all-keys",
+ "frontendId": "864",
+ "title": "Shortest Path to Get All Keys",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().shortestPathAllKeys(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

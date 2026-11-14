@@ -1,0 +1,34 @@
+{
+ "slug": "number-of-good-paths",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2421",
+ "title": "Number of Good Paths",
+ "premium": false,
+ "meta": {
+  "name": "numberOfGoodPaths",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "vals"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,1,3]\n[[0,1],[0,2],[2,3],[2,4]]",
+  "[1,1,2,2,3]\n[[0,1],[1,2],[2,3],[2,4]]",
+  "[1]\n[]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "7",
+  "1"
+ ],
+ "anyOrder": false
+}

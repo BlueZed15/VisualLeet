@@ -1,0 +1,25 @@
+{
+ "slug": "unique-length-3-palindromic-subsequences",
+ "frontendId": "1930",
+ "title": "Unique Length-3 Palindromic Subsequences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().countPalindromicSubsequence(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-increment-to-make-array-unique",
+ "frontendId": "945",
+ "title": "Minimum Increment to Make Array Unique",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().minIncrementForUnique(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "last-stone-weight-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1049",
+ "title": "Last Stone Weight II",
+ "premium": false,
+ "meta": {
+  "name": "lastStoneWeightII",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,7,4,1,8,1]",
+  "[31,26,33,21,40]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "5"
+ ],
+ "anyOrder": false
+}

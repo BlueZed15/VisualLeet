@@ -1,0 +1,25 @@
+{
+ "slug": "reducing-dishes",
+ "frontendId": "1402",
+ "title": "Reducing Dishes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "satisfaction",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "satisfaction = {satisfaction}",
+ "visible": [
+  "satisfaction"
+ ],
+ "call": "result = Solution().maxSatisfaction(satisfaction)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

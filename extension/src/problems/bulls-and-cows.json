@@ -1,0 +1,30 @@
+{
+ "slug": "bulls-and-cows",
+ "frontendId": "299",
+ "title": "Bulls and Cows",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "secret",
+   "type": "string"
+  },
+  {
+   "name": "guess",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "secret = {secret}\nguess = {guess}",
+ "visible": [
+  "secret",
+  "guess"
+ ],
+ "call": "result = Solution().getHint(secret, guess)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

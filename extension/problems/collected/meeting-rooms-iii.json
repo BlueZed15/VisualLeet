@@ -1,0 +1,32 @@
+{
+ "slug": "meeting-rooms-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2402",
+ "title": "Meeting Rooms III",
+ "premium": false,
+ "meta": {
+  "name": "mostBooked",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "meetings"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n[[0,10],[1,5],[2,7],[3,4]]",
+  "3\n[[1,20],[2,10],[3,5],[4,9],[6,8]]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

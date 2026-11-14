@@ -1275,6 +1275,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "lowest-common-ancestor-of-a-binary-tree": {
+   "title": "Lowest Common Ancestor of a Binary Tree",
+   "frontendId": "236",
+   "category": "LeetCode 75",
+   "verified": true,
+   "checked": "solution"
+  },
   "maximum-level-sum-of-a-binary-tree": {
    "title": "Maximum Level Sum of a Binary Tree",
    "frontendId": "1161",
@@ -1351,6 +1358,13 @@
    "category": "LeetCode 75",
    "verified": false,
    "checked": "inputs"
+  },
+  "guess-number-higher-or-lower": {
+   "title": "Guess Number Higher or Lower",
+   "frontendId": "374",
+   "category": "LeetCode 75",
+   "verified": true,
+   "checked": "solution"
   },
   "successful-pairs-of-spells-and-potions": {
    "title": "Successful Pairs of Spells and Potions",
@@ -1653,6 +1667,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "populating-next-right-pointers-in-each-node-ii": {
+   "title": "Populating Next Right Pointers in Each Node II",
+   "frontendId": "117",
+   "category": "Top Interview 150",
+   "verified": true,
+   "checked": "solution"
+  },
   "flatten-binary-tree-to-linked-list": {
    "title": "Flatten Binary Tree to Linked List",
    "frontendId": "114",
@@ -1750,6 +1771,13 @@
    "category": "Top Interview 150",
    "verified": false,
    "checked": "inputs"
+  },
+  "construct-quad-tree": {
+   "title": "Construct Quad Tree",
+   "frontendId": "427",
+   "category": "Top Interview 150",
+   "verified": true,
+   "checked": "solution"
   },
   "maximum-sum-circular-subarray": {
    "title": "Maximum Sum Circular Subarray",
@@ -1919,12 +1947,33 @@
    "verified": false,
    "checked": "inputs"
   },
+  "linked-list-cycle-ii": {
+   "title": "Linked List Cycle II",
+   "frontendId": "142",
+   "category": "Top 100 Liked",
+   "verified": true,
+   "checked": "solution"
+  },
+  "intersection-of-two-linked-lists": {
+   "title": "Intersection of Two Linked Lists",
+   "frontendId": "160",
+   "category": "Top 100 Liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "palindrome-linked-list": {
    "title": "Palindrome Linked List",
    "frontendId": "234",
    "category": "Top 100 Liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "search-a-2d-matrix-ii": {
+   "title": "Search a 2D Matrix II",
+   "frontendId": "240",
+   "category": "Top 100 Liked",
+   "verified": true,
+   "checked": "solution"
   },
   "find-all-anagrams-in-a-string": {
    "title": "Find All Anagrams in a String",
@@ -1974,6 +2023,13 @@
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "all-nodes-distance-k-in-binary-tree": {
+   "title": "All Nodes Distance K in Binary Tree",
+   "frontendId": "863",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
   },
   "maximal-rectangle": {
    "title": "Maximal Rectangle",
@@ -2058,6 +2114,13 @@
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "populating-next-right-pointers-in-each-node": {
+   "title": "Populating Next Right Pointers in Each Node",
+   "frontendId": "116",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
   },
   "squares-of-a-sorted-array": {
    "title": "Squares of a Sorted Array",
@@ -2226,6 +2289,13 @@
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "first-bad-version": {
+   "title": "First Bad Version",
+   "frontendId": "278",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
   },
   "contiguous-array": {
    "title": "Contiguous Array",
@@ -2738,6 +2808,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "delete-node-in-a-linked-list": {
+   "title": "Delete Node in a Linked List",
+   "frontendId": "237",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "string-to-integer-atoi": {
    "title": "String to Integer (atoi)",
    "frontendId": "8",
@@ -3067,6 +3144,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "flatten-a-multilevel-doubly-linked-list": {
+   "title": "Flatten a Multilevel Doubly Linked List",
+   "frontendId": "430",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "unique-paths-iii": {
    "title": "Unique Paths III",
    "frontendId": "980",
@@ -3284,6 +3368,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "flatten-nested-list-iterator": {
+   "title": "Flatten Nested List Iterator",
+   "frontendId": "341",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "minimum-deletions-to-make-character-frequencies-unique": {
    "title": "Minimum Deletions to Make Character Frequencies Unique",
    "frontendId": "1647",
@@ -3402,6 +3493,13 @@
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"
+  },
+  "delete-nodes-and-return-forest": {
+   "title": "Delete Nodes And Return Forest",
+   "frontendId": "1110",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
   },
   "maximum-product-of-three-numbers": {
    "title": "Maximum Product of Three Numbers",
@@ -4103,6 +4201,13 @@
    "verified": false,
    "checked": "inputs"
   },
+  "n-ary-tree-level-order-traversal": {
+   "title": "N-ary Tree Level Order Traversal",
+   "frontendId": "429",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "find-the-smallest-divisor-given-a-threshold": {
    "title": "Find the Smallest Divisor Given a Threshold",
    "frontendId": "1283",
@@ -4194,9 +4299,1416 @@
    "verified": false,
    "checked": "inputs"
   },
+  "find-in-mountain-array": {
+   "title": "Find in Mountain Array",
+   "frontendId": "1095",
+   "category": "Most liked",
+   "verified": true,
+   "checked": "solution"
+  },
   "sliding-window-median": {
    "title": "Sliding Window Median",
    "frontendId": "480",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-taps-to-open-to-water-a-garden": {
+   "title": "Minimum Number of Taps to Open to Water a Garden",
+   "frontendId": "1326",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-difficulty-of-a-job-schedule": {
+   "title": "Minimum Difficulty of a Job Schedule",
+   "frontendId": "1335",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-product-of-word-lengths": {
+   "title": "Maximum Product of Word Lengths",
+   "frontendId": "318",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "detect-capital": {
+   "title": "Detect Capital",
+   "frontendId": "520",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-gap": {
+   "title": "Maximum Gap",
+   "frontendId": "164",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lemonade-change": {
+   "title": "Lemonade Change",
+   "frontendId": "860",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-underground-system": {
+   "title": "Design Underground System",
+   "frontendId": "1396",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "jump-game-vi": {
+   "title": "Jump Game VI",
+   "frontendId": "1696",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-the-matrix-diagonally": {
+   "title": "Sort the Matrix Diagonally",
+   "frontendId": "1329",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-product-of-splitted-binary-tree": {
+   "title": "Maximum Product of Splitted Binary Tree",
+   "frontendId": "1339",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-sum-of-rectangle-no-larger-than-k": {
+   "title": "Max Sum of Rectangle No Larger Than K",
+   "frontendId": "363",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "single-threaded-cpu": {
+   "title": "Single-Threaded CPU",
+   "frontendId": "1834",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "next-greater-node-in-linked-list": {
+   "title": "Next Greater Node In Linked List",
+   "frontendId": "1019",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reducing-dishes": {
+   "title": "Reducing Dishes",
+   "frontendId": "1402",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "arithmetic-slices-ii-subsequence": {
+   "title": "Arithmetic Slices II - Subsequence",
+   "frontendId": "446",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bag-of-tokens": {
+   "title": "Bag of Tokens",
+   "frontendId": "948",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-zero-sum-consecutive-nodes-from-linked-list": {
+   "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+   "frontendId": "1171",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "word-subsets": {
+   "title": "Word Subsets",
+   "frontendId": "916",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fizz-buzz": {
+   "title": "Fizz Buzz",
+   "frontendId": "412",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-square-numbers": {
+   "title": "Sum of Square Numbers",
+   "frontendId": "633",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "last-stone-weight-ii": {
+   "title": "Last Stone Weight II",
+   "frontendId": "1049",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "baseball-game": {
+   "title": "Baseball Game",
+   "frontendId": "682",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "insertion-sort-list": {
+   "title": "Insertion Sort List",
+   "frontendId": "147",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-number-of-teams": {
+   "title": "Count Number of Teams",
+   "frontendId": "1395",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "path-with-maximum-gold": {
+   "title": "Path with Maximum Gold",
+   "frontendId": "1219",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "detonate-the-maximum-bombs": {
+   "title": "Detonate the Maximum Bombs",
+   "frontendId": "2101",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "beautiful-arrangement": {
+   "title": "Beautiful Arrangement",
+   "frontendId": "526",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "construct-binary-tree-from-preorder-and-postorder-traversal": {
+   "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+   "frontendId": "889",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-perimeter-triangle": {
+   "title": "Largest Perimeter Triangle",
+   "frontendId": "976",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-erasure-value": {
+   "title": "Maximum Erasure Value",
+   "frontendId": "1695",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "relative-sort-array": {
+   "title": "Relative Sort Array",
+   "frontendId": "1122",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-arithmetic-subsequence-of-given-difference": {
+   "title": "Longest Arithmetic Subsequence of Given Difference",
+   "frontendId": "1218",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "buddy-strings": {
+   "title": "Buddy Strings",
+   "frontendId": "859",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reduce-array-size-to-the-half": {
+   "title": "Reduce Array Size to The Half",
+   "frontendId": "1338",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "binary-trees-with-factors": {
+   "title": "Binary Trees With Factors",
+   "frontendId": "823",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "amount-of-time-for-binary-tree-to-be-infected": {
+   "title": "Amount of Time for Binary Tree to Be Infected",
+   "frontendId": "2385",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-distance-to-a-character": {
+   "title": "Shortest Distance to a Character",
+   "frontendId": "821",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximize-distance-to-closest-person": {
+   "title": "Maximize Distance to Closest Person",
+   "frontendId": "849",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "pseudo-palindromic-paths-in-a-binary-tree": {
+   "title": "Pseudo-Palindromic Paths in a Binary Tree",
+   "frontendId": "1457",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "magnetic-force-between-two-balls": {
+   "title": "Magnetic Force Between Two Balls",
+   "frontendId": "1552",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-69-number": {
+   "title": "Maximum 69 Number",
+   "frontendId": "1323",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "monotonic-array": {
+   "title": "Monotonic Array",
+   "frontendId": "896",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "degree-of-an-array": {
+   "title": "Degree of an Array",
+   "frontendId": "697",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "step-by-step-directions-from-a-binary-tree-node-to-another": {
+   "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+   "frontendId": "2096",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-vowels-permutation": {
+   "title": "Count Vowels Permutation",
+   "frontendId": "1220",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-sightseeing-pair": {
+   "title": "Best Sightseeing Pair",
+   "frontendId": "1014",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-points-with-cost": {
+   "title": "Maximum Number of Points with Cost",
+   "frontendId": "1937",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "wiggle-sort-ii": {
+   "title": "Wiggle Sort II",
+   "frontendId": "324",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-domino-rotations-for-equal-row": {
+   "title": "Minimum Domino Rotations For Equal Row",
+   "frontendId": "1007",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-subtree-with-all-the-deepest-nodes": {
+   "title": "Smallest Subtree with all the Deepest Nodes",
+   "frontendId": "865",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "make-the-string-great": {
+   "title": "Make The String Great",
+   "frontendId": "1544",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reverse-substrings-between-each-pair-of-parentheses": {
+   "title": "Reverse Substrings Between Each Pair of Parentheses",
+   "frontendId": "1190",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-complement": {
+   "title": "Number Complement",
+   "frontendId": "476",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "linked-list-random-node": {
+   "title": "Linked List Random Node",
+   "frontendId": "382",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sequential-digits": {
+   "title": "Sequential Digits",
+   "frontendId": "1291",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-performance-of-a-team": {
+   "title": "Maximum Performance of a Team",
+   "frontendId": "1383",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "knight-dialer": {
+   "title": "Knight Dialer",
+   "frontendId": "935",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "compare-version-numbers": {
+   "title": "Compare Version Numbers",
+   "frontendId": "165",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-moves-to-equal-array-elements": {
+   "title": "Minimum Moves to Equal Array Elements",
+   "frontendId": "453",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "valid-mountain-array": {
+   "title": "Valid Mountain Array",
+   "frontendId": "941",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "all-elements-in-two-binary-search-trees": {
+   "title": "All Elements in Two Binary Search Trees",
+   "frontendId": "1305",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "group-the-people-given-the-group-size-they-belong-to": {
+   "title": "Group the People Given the Group Size They Belong To",
+   "frontendId": "1282",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "where-will-the-ball-fall": {
+   "title": "Where Will the Ball Fall",
+   "frontendId": "1706",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-two-string-arrays-are-equivalent": {
+   "title": "Check If Two String Arrays are Equivalent",
+   "frontendId": "1662",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lexicographical-numbers": {
+   "title": "Lexicographical Numbers",
+   "frontendId": "386",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "letter-tile-possibilities": {
+   "title": "Letter Tile Possibilities",
+   "frontendId": "1079",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-odd-numbers-in-an-interval-range": {
+   "title": "Count Odd Numbers in an Interval Range",
+   "frontendId": "1523",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-operations-to-move-all-balls-to-each-box": {
+   "title": "Minimum Number of Operations to Move All Balls to Each Box",
+   "frontendId": "1769",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "replace-words": {
+   "title": "Replace Words",
+   "frontendId": "648",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "design-linked-list": {
+   "title": "Design Linked List",
+   "frontendId": "707",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-time-to-complete-trips": {
+   "title": "Minimum Time to Complete Trips",
+   "frontendId": "2187",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-subarray-ranges": {
+   "title": "Sum of Subarray Ranges",
+   "frontendId": "2104",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximize-the-confusion-of-an-exam": {
+   "title": "Maximize the Confusion of an Exam",
+   "frontendId": "2024",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "smallest-subsequence-of-distinct-characters": {
+   "title": "Smallest Subsequence of Distinct Characters",
+   "frontendId": "1081",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-sum-bst-in-binary-tree": {
+   "title": "Maximum Sum BST in Binary Tree",
+   "frontendId": "1373",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-hire-k-workers": {
+   "title": "Minimum Cost to Hire K Workers",
+   "frontendId": "857",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-nesting-depth-of-the-parentheses": {
+   "title": "Maximum Nesting Depth of the Parentheses",
+   "frontendId": "1614",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "the-number-of-weak-characters-in-the-game": {
+   "title": "The Number of Weak Characters in the Game",
+   "frontendId": "1996",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-all-valid-pickup-and-delivery-options": {
+   "title": "Count All Valid Pickup and Delivery Options",
+   "frontendId": "1359",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-mountain-in-array": {
+   "title": "Longest Mountain in Array",
+   "frontendId": "845",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimize-deviation-in-array": {
+   "title": "Minimize Deviation in Array",
+   "frontendId": "1675",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-the-sentence-is-pangram": {
+   "title": "Check if the Sentence Is Pangram",
+   "frontendId": "1832",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "best-team-with-no-conflicts": {
+   "title": "Best Team With No Conflicts",
+   "frontendId": "1626",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-numbers-with-even-number-of-digits": {
+   "title": "Find Numbers with Even Number of Digits",
+   "frontendId": "1295",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "linked-list-in-binary-tree": {
+   "title": "Linked List in Binary Tree",
+   "frontendId": "1367",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "final-prices-with-a-special-discount-in-a-shop": {
+   "title": "Final Prices With a Special Discount in a Shop",
+   "frontendId": "1475",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bulb-switcher": {
+   "title": "Bulb Switcher",
+   "frontendId": "319",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shuffle-string": {
+   "title": "Shuffle String",
+   "frontendId": "1528",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-palindrome-by-concatenating-two-letter-words": {
+   "title": "Longest Palindrome by Concatenating Two Letter Words",
+   "frontendId": "2131",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "solving-questions-with-brainpower": {
+   "title": "Solving Questions With Brainpower",
+   "frontendId": "2140",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-swaps-to-make-sequences-increasing": {
+   "title": "Minimum Swaps To Make Sequences Increasing",
+   "frontendId": "801",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "repeated-string-match": {
+   "title": "Repeated String Match",
+   "frontendId": "686",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimize-the-maximum-difference-of-pairs": {
+   "title": "Minimize the Maximum Difference of Pairs",
+   "frontendId": "2616",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "split-a-string-in-balanced-strings": {
+   "title": "Split a String in Balanced Strings",
+   "frontendId": "1221",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "make-sum-divisible-by-p": {
+   "title": "Make Sum Divisible by P",
+   "frontendId": "1590",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "delete-leaves-with-a-given-value": {
+   "title": "Delete Leaves With a Given Value",
+   "frontendId": "1325",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "replace-elements-with-greatest-element-on-right-side": {
+   "title": "Replace Elements with Greatest Element on Right Side",
+   "frontendId": "1299",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-absolute-difference": {
+   "title": "Minimum Absolute Difference",
+   "frontendId": "1200",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-width-ramp": {
+   "title": "Maximum Width Ramp",
+   "frontendId": "962",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "flip-equivalent-binary-trees": {
+   "title": "Flip Equivalent Binary Trees",
+   "frontendId": "951",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lexicographically-smallest-equivalent-string": {
+   "title": "Lexicographically Smallest Equivalent String",
+   "frontendId": "1061",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "subtract-the-product-and-sum-of-digits-of-an-integer": {
+   "title": "Subtract the Product and Sum of Digits of an Integer",
+   "frontendId": "1281",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-limit-of-balls-in-a-bag": {
+   "title": "Minimum Limit of Balls in a Bag",
+   "frontendId": "1760",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "duplicate-zeros": {
+   "title": "Duplicate Zeros",
+   "frontendId": "1089",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "numbers-with-same-consecutive-differences": {
+   "title": "Numbers With Same Consecutive Differences",
+   "frontendId": "967",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-harmonious-subsequence": {
+   "title": "Longest Harmonious Subsequence",
+   "frontendId": "594",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-integers-by-the-number-of-1-bits": {
+   "title": "Sort Integers by The Number of 1 Bits",
+   "frontendId": "1356",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "can-i-win": {
+   "title": "Can I Win",
+   "frontendId": "464",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sort-array-by-parity-ii": {
+   "title": "Sort Array By Parity II",
+   "frontendId": "922",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-length-3-palindromic-subsequences": {
+   "title": "Unique Length-3 Palindromic Subsequences",
+   "frontendId": "1930",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "broken-calculator": {
+   "title": "Broken Calculator",
+   "frontendId": "991",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-a-peak-element-ii": {
+   "title": "Find a Peak Element II",
+   "frontendId": "1901",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-rounds-to-complete-all-tasks": {
+   "title": "Minimum Rounds to Complete All Tasks",
+   "frontendId": "2244",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-unique-binary-string": {
+   "title": "Find Unique Binary String",
+   "frontendId": "1980",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "complement-of-base-10-integer": {
+   "title": "Complement of Base 10 Integer",
+   "frontendId": "1009",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-nodes-with-even-valued-grandparent": {
+   "title": "Sum of Nodes with Even-Valued Grandparent",
+   "frontendId": "1315",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-steps-to-make-two-strings-anagram": {
+   "title": "Minimum Number of Steps to Make Two Strings Anagram",
+   "frontendId": "1347",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "partitioning-into-minimum-number-of-deci-binary-numbers": {
+   "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+   "frontendId": "1689",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-happy-string": {
+   "title": "Longest Happy String",
+   "frontendId": "1405",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "robot-return-to-origin": {
+   "title": "Robot Return to Origin",
+   "frontendId": "657",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "optimal-partition-of-string": {
+   "title": "Optimal Partition of String",
+   "frontendId": "2405",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-email-addresses": {
+   "title": "Unique Email Addresses",
+   "frontendId": "929",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "strange-printer": {
+   "title": "Strange Printer",
+   "frontendId": "664",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-product-of-two-elements-in-an-array": {
+   "title": "Maximum Product of Two Elements in an Array",
+   "frontendId": "1464",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-increment-to-make-array-unique": {
+   "title": "Minimum Increment to Make Array Unique",
+   "frontendId": "945",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-students-unable-to-eat-lunch": {
+   "title": "Number of Students Unable to Eat Lunch",
+   "frontendId": "1700",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-zero-filled-subarrays": {
+   "title": "Number of Zero-Filled Subarrays",
+   "frontendId": "2348",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "grumpy-bookstore-owner": {
+   "title": "Grumpy Bookstore Owner",
+   "frontendId": "1052",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "k-inverse-pairs-array": {
+   "title": "K Inverse Pairs Array",
+   "frontendId": "629",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sliding-puzzle": {
+   "title": "Sliding Puzzle",
+   "frontendId": "773",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-time-visiting-all-points": {
+   "title": "Minimum Time Visiting All Points",
+   "frontendId": "1266",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fair-distribution-of-cookies": {
+   "title": "Fair Distribution of Cookies",
+   "frontendId": "2305",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-value-at-a-given-index-in-a-bounded-array": {
+   "title": "Maximum Value at a Given Index in a Bounded Array",
+   "frontendId": "1802",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "sum-of-all-subset-xor-totals": {
+   "title": "Sum of All Subset XOR Totals",
+   "frontendId": "1863",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-a-string-contains-all-binary-codes-of-size-k": {
+   "title": "Check If a String Contains All Binary Codes of Size K",
+   "frontendId": "1461",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-all-possible-recipes-from-given-supplies": {
+   "title": "Find All Possible Recipes from Given Supplies",
+   "frontendId": "2115",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-max-number-of-edges-to-keep-graph-fully-traversable": {
+   "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+   "frontendId": "1579",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-sum-of-two-non-overlapping-subarrays": {
+   "title": "Maximum Sum of Two Non-Overlapping Subarrays",
+   "frontendId": "1031",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "lowest-common-ancestor-of-deepest-leaves": {
+   "title": "Lowest Common Ancestor of Deepest Leaves",
+   "frontendId": "1123",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-it-is-a-straight-line": {
+   "title": "Check If It Is a Straight Line",
+   "frontendId": "1232",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "length-of-longest-fibonacci-subsequence": {
+   "title": "Length of Longest Fibonacci Subsequence",
+   "frontendId": "873",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "filling-bookcase-shelves": {
+   "title": "Filling Bookcase Shelves",
+   "frontendId": "1105",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-submatrices-with-all-ones": {
+   "title": "Count Submatrices With All Ones",
+   "frontendId": "1504",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "brick-wall": {
+   "title": "Brick Wall",
+   "frontendId": "554",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "3sum-with-multiplicity": {
+   "title": "3Sum With Multiplicity",
+   "frontendId": "923",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-merge-stones": {
+   "title": "Minimum Cost to Merge Stones",
+   "frontendId": "1000",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-sub-islands": {
+   "title": "Count Sub Islands",
+   "frontendId": "1905",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-odd-number-in-string": {
+   "title": "Largest Odd Number in String",
+   "frontendId": "1903",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "largest-color-value-in-a-directed-graph": {
+   "title": "Largest Color Value in a Directed Graph",
+   "frontendId": "1857",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "max-increase-to-keep-city-skyline": {
+   "title": "Max Increase to Keep City Skyline",
+   "frontendId": "807",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-all-occurrences-of-a-substring": {
+   "title": "Remove All Occurrences of a Substring",
+   "frontendId": "1910",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-array-pairs-are-divisible-by-k": {
+   "title": "Check If Array Pairs Are Divisible by k",
+   "frontendId": "1497",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "put-marbles-in-bags": {
+   "title": "Put Marbles in Bags",
+   "frontendId": "2551",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "bulls-and-cows": {
+   "title": "Bulls and Cows",
+   "frontendId": "299",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "extra-characters-in-a-string": {
+   "title": "Extra Characters in a String",
+   "frontendId": "2707",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "rank-transform-of-an-array": {
+   "title": "Rank Transform of an Array",
+   "frontendId": "1331",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-sum-of-3-non-overlapping-subarrays": {
+   "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+   "frontendId": "689",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-make-at-least-one-valid-path-in-a-grid": {
+   "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+   "frontendId": "1368",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "di-string-match": {
+   "title": "DI String Match",
+   "frontendId": "942",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts": {
+   "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+   "frontendId": "1465",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "unique-morse-code-words": {
+   "title": "Unique Morse Code Words",
+   "frontendId": "804",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "long-pressed-name": {
+   "title": "Long Pressed Name",
+   "frontendId": "925",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-deletions-to-make-string-balanced": {
+   "title": "Minimum Deletions to Make String Balanced",
+   "frontendId": "1653",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimize-maximum-of-array": {
+   "title": "Minimize Maximum of Array",
+   "frontendId": "2439",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-time-difference": {
+   "title": "Minimum Time Difference",
+   "frontendId": "539",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "decoded-string-at-index": {
+   "title": "Decoded String at Index",
+   "frontendId": "880",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-good-numbers": {
+   "title": "Count Good Numbers",
+   "frontendId": "1922",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "remove-covered-intervals": {
+   "title": "Remove Covered Intervals",
+   "frontendId": "1288",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-number-of-swaps-to-make-the-string-balanced": {
+   "title": "Minimum Number of Swaps to Make the String Balanced",
+   "frontendId": "1963",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-cycle-in-a-graph": {
+   "title": "Longest Cycle in a Graph",
+   "frontendId": "2360",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "fraction-to-recurring-decimal": {
+   "title": "Fraction to Recurring Decimal",
+   "frontendId": "166",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-score-from-performing-multiplication-operations": {
+   "title": "Maximum Score from Performing Multiplication Operations",
+   "frontendId": "1770",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "stone-game-iii": {
+   "title": "Stone Game III",
+   "frontendId": "1406",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "gray-code": {
+   "title": "Gray Code",
+   "frontendId": "89",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-the-longest-substring-containing-vowels-in-even-counts": {
+   "title": "Find the Longest Substring Containing Vowels in Even Counts",
+   "frontendId": "1371",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "longest-path-with-different-adjacent-characters": {
+   "title": "Longest Path With Different Adjacent Characters",
+   "frontendId": "2246",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-original-array-from-doubled-array": {
+   "title": "Find Original Array From Doubled Array",
+   "frontendId": "2007",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-number-of-events-that-can-be-attended-ii": {
+   "title": "Maximum Number of Events That Can Be Attended II",
+   "frontendId": "1751",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "most-profit-assigning-work": {
+   "title": "Most Profit Assigning Work",
+   "frontendId": "826",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "count-of-range-sum": {
+   "title": "Count of Range Sum",
+   "frontendId": "327",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "redundant-connection-ii": {
+   "title": "Redundant Connection II",
+   "frontendId": "685",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-difference-between-largest-and-smallest-value-in-three-moves": {
+   "title": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+   "frontendId": "1509",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "minimum-cost-to-make-array-equal": {
+   "title": "Minimum Cost to Make Array Equal",
+   "frontendId": "2448",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "battleships-in-a-board": {
+   "title": "Battleships in a Board",
+   "frontendId": "419",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "matrix-block-sum": {
+   "title": "Matrix Block Sum",
+   "frontendId": "1314",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "shortest-path-to-get-all-keys": {
+   "title": "Shortest Path to Get All Keys",
+   "frontendId": "864",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "check-if-n-and-its-double-exist": {
+   "title": "Check If N and Its Double Exist",
+   "frontendId": "1346",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "meeting-rooms-iii": {
+   "title": "Meeting Rooms III",
+   "frontendId": "2402",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "reordered-power-of-2": {
+   "title": "Reordered Power of 2",
+   "frontendId": "869",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "merge-nodes-in-between-zeros": {
+   "title": "Merge Nodes in Between Zeros",
+   "frontendId": "2181",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "tallest-billboard": {
+   "title": "Tallest Billboard",
+   "frontendId": "956",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-good-paths": {
+   "title": "Number of Good Paths",
+   "frontendId": "2421",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-length-of-subarray-with-positive-product": {
+   "title": "Maximum Length of Subarray With Positive Product",
+   "frontendId": "1567",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "string-compression-ii": {
+   "title": "String Compression II",
+   "frontendId": "1531",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "score-after-flipping-matrix": {
+   "title": "Score After Flipping Matrix",
+   "frontendId": "861",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "number-of-good-leaf-nodes-pairs": {
+   "title": "Number of Good Leaf Nodes Pairs",
+   "frontendId": "1530",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "couples-holding-hands": {
+   "title": "Couples Holding Hands",
+   "frontendId": "765",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "find-n-unique-integers-sum-up-to-zero": {
+   "title": "Find N Unique Integers Sum up to Zero",
+   "frontendId": "1304",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "new-21-game": {
+   "title": "New 21 Game",
+   "frontendId": "837",
+   "category": "Most liked",
+   "verified": false,
+   "checked": "inputs"
+  },
+  "maximum-ice-cream-bars": {
+   "title": "Maximum Ice Cream Bars",
+   "frontendId": "1833",
    "category": "Most liked",
    "verified": false,
    "checked": "inputs"

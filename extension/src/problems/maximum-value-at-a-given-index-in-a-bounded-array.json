@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
+ "frontendId": "1802",
+ "title": "Maximum Value at a Given Index in a Bounded Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "index",
+   "type": "integer"
+  },
+  {
+   "name": "maxSum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nindex = {index}\nmaxSum = {maxSum}",
+ "visible": [
+  "n",
+  "index",
+  "maxSum"
+ ],
+ "call": "result = Solution().maxValue(n, index, maxSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

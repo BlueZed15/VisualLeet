@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-length-of-subarray-with-positive-product",
+ "frontendId": "1567",
+ "title": "Maximum Length of Subarray With Positive Product",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().getMaxLen(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

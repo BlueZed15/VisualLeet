@@ -1,0 +1,28 @@
+{
+ "slug": "degree-of-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "697",
+ "title": "Degree of an Array",
+ "premium": false,
+ "meta": {
+  "name": "findShortestSubArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,3,1]",
+  "[1,2,2,3,1,4,2]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "6"
+ ],
+ "anyOrder": false
+}

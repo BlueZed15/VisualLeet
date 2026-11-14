@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+ "frontendId": "1368",
+ "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().minCost(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

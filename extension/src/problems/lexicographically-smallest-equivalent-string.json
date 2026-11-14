@@ -1,0 +1,35 @@
+{
+ "slug": "lexicographically-smallest-equivalent-string",
+ "frontendId": "1061",
+ "title": "Lexicographically Smallest Equivalent String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "baseStr",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}\nbaseStr = {baseStr}",
+ "visible": [
+  "s1",
+  "s2",
+  "baseStr"
+ ],
+ "call": "result = Solution().smallestEquivalentString(s1, s2, baseStr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

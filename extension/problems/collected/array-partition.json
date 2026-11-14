@@ -1,0 +1,28 @@
+{
+ "slug": "array-partition",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "561",
+ "title": "Array Partition",
+ "premium": false,
+ "meta": {
+  "name": "arrayPairSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,3,2]",
+  "[6,2,6,5,1,2]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "9"
+ ],
+ "anyOrder": false
+}

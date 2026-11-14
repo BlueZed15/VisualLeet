@@ -1,0 +1,28 @@
+{
+ "slug": "replace-elements-with-greatest-element-on-right-side",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1299",
+ "title": "Replace Elements with Greatest Element on Right Side",
+ "premium": false,
+ "meta": {
+  "name": "replaceElements",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[17,18,5,4,6,1]",
+  "[400]"
+ ],
+ "exampleOutputs": [
+  "[18,6,6,6,1,-1]",
+  "[-1]"
+ ],
+ "anyOrder": false
+}

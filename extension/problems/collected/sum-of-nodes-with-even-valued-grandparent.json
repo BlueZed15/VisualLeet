@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-nodes-with-even-valued-grandparent",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1315",
+ "title": "Sum of Nodes with Even-Valued Grandparent",
+ "premium": false,
+ "meta": {
+  "name": "sumEvenGrandparent",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "18",
+  "0"
+ ],
+ "anyOrder": false
+}

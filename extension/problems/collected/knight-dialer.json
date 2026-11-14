@@ -1,0 +1,30 @@
+{
+ "slug": "knight-dialer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "935",
+ "title": "Knight Dialer",
+ "premium": false,
+ "meta": {
+  "name": "knightDialer",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "3131"
+ ],
+ "exampleOutputs": [
+  "10",
+  "20",
+  "136006598"
+ ],
+ "anyOrder": false
+}

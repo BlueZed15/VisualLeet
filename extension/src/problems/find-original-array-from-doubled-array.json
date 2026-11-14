@@ -1,0 +1,25 @@
+{
+ "slug": "find-original-array-from-doubled-array",
+ "frontendId": "2007",
+ "title": "Find Original Array From Doubled Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "changed",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "changed = {changed}",
+ "visible": [
+  "changed"
+ ],
+ "call": "result = Solution().findOriginalArray(changed)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

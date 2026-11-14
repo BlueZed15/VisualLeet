@@ -1,0 +1,28 @@
+{
+ "slug": "binary-trees-with-factors",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "823",
+ "title": "Binary Trees With Factors",
+ "premium": false,
+ "meta": {
+  "name": "numFactoredBinaryTrees",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4]",
+  "[2,4,5,10]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "7"
+ ],
+ "anyOrder": false
+}

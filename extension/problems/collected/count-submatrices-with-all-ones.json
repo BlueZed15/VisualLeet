@@ -1,0 +1,28 @@
+{
+ "slug": "count-submatrices-with-all-ones",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1504",
+ "title": "Count Submatrices With All Ones",
+ "premium": false,
+ "meta": {
+  "name": "numSubmat",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0,1],[1,1,0],[1,1,0]]",
+  "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]"
+ ],
+ "exampleOutputs": [
+  "13",
+  "24"
+ ],
+ "anyOrder": false
+}

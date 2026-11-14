@@ -1,0 +1,25 @@
+{
+ "slug": "pseudo-palindromic-paths-in-a-binary-tree",
+ "frontendId": "1457",
+ "title": "Pseudo-Palindromic Paths in a Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().pseudoPalindromicPaths (root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

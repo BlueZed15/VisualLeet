@@ -1,0 +1,25 @@
+{
+ "slug": "detonate-the-maximum-bombs",
+ "frontendId": "2101",
+ "title": "Detonate the Maximum Bombs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bombs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "bombs = {bombs}",
+ "visible": [
+  "bombs"
+ ],
+ "call": "result = Solution().maximumDetonation(bombs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

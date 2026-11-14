@@ -1,0 +1,30 @@
+{
+ "slug": "baseball-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "682",
+ "title": "Baseball Game",
+ "premium": false,
+ "meta": {
+  "name": "calPoints",
+  "params": [
+   {
+    "name": "operations",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"5\",\"2\",\"C\",\"D\",\"+\"]",
+  "[\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]",
+  "[\"1\",\"C\"]"
+ ],
+ "exampleOutputs": [
+  "30",
+  "27",
+  "0"
+ ],
+ "anyOrder": false
+}

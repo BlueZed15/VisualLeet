@@ -1,0 +1,30 @@
+{
+ "slug": "best-team-with-no-conflicts",
+ "frontendId": "1626",
+ "title": "Best Team With No Conflicts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "scores",
+   "type": "integer[]"
+  },
+  {
+   "name": "ages",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "scores = {scores}\nages = {ages}",
+ "visible": [
+  "scores",
+  "ages"
+ ],
+ "call": "result = Solution().bestTeamScore(scores, ages)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

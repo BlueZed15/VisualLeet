@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-product-of-splitted-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1339",
+ "title": "Maximum Product of Splitted Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "maxProduct",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6]",
+  "[1,null,2,3,4,null,null,5,6]"
+ ],
+ "exampleOutputs": [
+  "110",
+  "90"
+ ],
+ "anyOrder": false
+}

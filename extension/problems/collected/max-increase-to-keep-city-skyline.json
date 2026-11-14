@@ -1,0 +1,28 @@
+{
+ "slug": "max-increase-to-keep-city-skyline",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "807",
+ "title": "Max Increase to Keep City Skyline",
+ "premium": false,
+ "meta": {
+  "name": "maxIncreaseKeepingSkyline",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
+  "[[0,0,0],[0,0,0],[0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "35",
+  "0"
+ ],
+ "anyOrder": false
+}

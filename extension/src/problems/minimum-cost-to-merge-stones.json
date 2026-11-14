@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-cost-to-merge-stones",
+ "frontendId": "1000",
+ "title": "Minimum Cost to Merge Stones",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}\nk = {k}",
+ "visible": [
+  "stones",
+  "k"
+ ],
+ "call": "result = Solution().mergeStones(stones, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

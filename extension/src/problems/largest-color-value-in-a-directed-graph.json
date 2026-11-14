@@ -1,0 +1,30 @@
+{
+ "slug": "largest-color-value-in-a-directed-graph",
+ "frontendId": "1857",
+ "title": "Largest Color Value in a Directed Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "colors",
+   "type": "string"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "colors = {colors}\nedges = {edges}",
+ "visible": [
+  "colors",
+  "edges"
+ ],
+ "call": "result = Solution().largestPathValue(colors, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

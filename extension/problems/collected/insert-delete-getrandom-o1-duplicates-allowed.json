@@ -1,0 +1,57 @@
+{
+ "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "381",
+ "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+ "premium": false,
+ "meta": {
+  "classname": "RandomizedCollection",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "insert"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "remove"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "getRandom"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"RandomizedCollection\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"getRandom\"]\n[[],[1],[1],[2],[],[1],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, false, true, 2, true, 1]"
+ ],
+ "anyOrder": false
+}

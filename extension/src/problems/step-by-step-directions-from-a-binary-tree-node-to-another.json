@@ -1,0 +1,35 @@
+{
+ "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+ "frontendId": "2096",
+ "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "startValue",
+   "type": "integer"
+  },
+  {
+   "name": "destValue",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nstartValue = {startValue}\ndestValue = {destValue}",
+ "visible": [
+  "root",
+  "startValue",
+  "destValue"
+ ],
+ "call": "result = Solution().getDirections(root, startValue, destValue)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

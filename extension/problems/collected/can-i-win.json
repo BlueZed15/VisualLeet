@@ -1,0 +1,34 @@
+{
+ "slug": "can-i-win",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "464",
+ "title": "Can I Win",
+ "premium": false,
+ "meta": {
+  "name": "canIWin",
+  "params": [
+   {
+    "name": "maxChoosableInteger",
+    "type": "integer"
+   },
+   {
+    "name": "desiredTotal",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "10\n11",
+  "10\n0",
+  "10\n1"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

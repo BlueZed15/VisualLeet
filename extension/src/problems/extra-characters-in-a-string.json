@@ -1,0 +1,30 @@
+{
+ "slug": "extra-characters-in-a-string",
+ "frontendId": "2707",
+ "title": "Extra Characters in a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "dictionary",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\ndictionary = {dictionary}",
+ "visible": [
+  "s",
+  "dictionary"
+ ],
+ "call": "result = Solution().minExtraChar(s, dictionary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

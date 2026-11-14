@@ -1,0 +1,28 @@
+{
+ "slug": "reordered-power-of-2",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "869",
+ "title": "Reordered Power of 2",
+ "premium": false,
+ "meta": {
+  "name": "reorderedPowerOf2",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "10"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": true
+}

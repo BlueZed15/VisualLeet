@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-cost-to-hire-k-workers",
+ "frontendId": "857",
+ "title": "Minimum Cost to Hire K Workers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "quality",
+   "type": "integer[]"
+  },
+  {
+   "name": "wage",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "quality = {quality}\nwage = {wage}\nk = {k}",
+ "visible": [
+  "quality",
+  "wage",
+  "k"
+ ],
+ "call": "result = Solution().mincostToHireWorkers(quality, wage, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

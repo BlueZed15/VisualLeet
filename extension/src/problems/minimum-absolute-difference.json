@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-absolute-difference",
+ "frontendId": "1200",
+ "title": "Minimum Absolute Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().minimumAbsDifference(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-iii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1406",
+ "title": "Stone Game III",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameIII",
+  "params": [
+   {
+    "name": "stoneValue",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,7]",
+  "[1,2,3,-9]",
+  "[1,2,3,6]"
+ ],
+ "exampleOutputs": [
+  "\"Bob\"",
+  "\"Alice\"",
+  "\"Tie\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "detect-capital",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "520",
+ "title": "Detect Capital",
+ "premium": false,
+ "meta": {
+  "name": "detectCapitalUse",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"USA\"",
+  "\"FlaG\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

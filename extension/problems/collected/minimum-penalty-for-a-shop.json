@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-penalty-for-a-shop",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2483",
+ "title": "Minimum Penalty for a Shop",
+ "premium": false,
+ "meta": {
+  "name": "bestClosingTime",
+  "params": [
+   {
+    "name": "customers",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"YYNY\"",
+  "\"NNNNN\"",
+  "\"YYYY\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "4"
+ ],
+ "anyOrder": false
+}

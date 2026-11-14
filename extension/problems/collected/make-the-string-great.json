@@ -1,0 +1,30 @@
+{
+ "slug": "make-the-string-great",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1544",
+ "title": "Make The String Great",
+ "premium": false,
+ "meta": {
+  "name": "makeGood",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leEeetcode\"",
+  "\"abBAcC\"",
+  "\"s\""
+ ],
+ "exampleOutputs": [
+  "\"leetcode\"",
+  "\"\"",
+  "\"s\""
+ ],
+ "anyOrder": false
+}

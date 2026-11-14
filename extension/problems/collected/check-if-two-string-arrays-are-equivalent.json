@@ -1,0 +1,34 @@
+{
+ "slug": "check-if-two-string-arrays-are-equivalent",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1662",
+ "title": "Check If Two String Arrays are Equivalent",
+ "premium": false,
+ "meta": {
+  "name": "arrayStringsAreEqual",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[\"ab\", \"c\"]\n[\"a\", \"bc\"]",
+  "[\"a\", \"cb\"]\n[\"ab\", \"c\"]",
+  "[\"abc\", \"d\", \"defg\"]\n[\"abcddefg\"]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

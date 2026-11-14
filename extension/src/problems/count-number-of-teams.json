@@ -1,0 +1,25 @@
+{
+ "slug": "count-number-of-teams",
+ "frontendId": "1395",
+ "title": "Count Number of Teams",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rating",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rating = {rating}",
+ "visible": [
+  "rating"
+ ],
+ "call": "result = Solution().numTeams(rating)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

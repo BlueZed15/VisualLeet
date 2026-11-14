@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-zero-filled-subarrays",
+ "frontendId": "2348",
+ "title": "Number of Zero-Filled Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().zeroFilledSubarray(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

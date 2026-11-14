@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-time-difference",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "539",
+ "title": "Minimum Time Difference",
+ "premium": false,
+ "meta": {
+  "name": "findMinDifference",
+  "params": [
+   {
+    "name": "timePoints",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"23:59\",\"00:00\"]",
+  "[\"00:00\",\"23:59\",\"00:00\"]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

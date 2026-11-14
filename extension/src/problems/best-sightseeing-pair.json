@@ -1,0 +1,25 @@
+{
+ "slug": "best-sightseeing-pair",
+ "frontendId": "1014",
+ "title": "Best Sightseeing Pair",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "values",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "values = {values}",
+ "visible": [
+  "values"
+ ],
+ "call": "result = Solution().maxScoreSightseeingPair(values)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "string-compression-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1531",
+ "title": "String Compression II",
+ "premium": false,
+ "meta": {
+  "name": "getLengthOfOptimalCompression",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aaabcccd\"\n2",
+  "\"aabbaa\"\n2",
+  "\"aaaaaaaaaaa\"\n0"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

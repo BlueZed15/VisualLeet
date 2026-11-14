@@ -1,0 +1,30 @@
+{
+ "slug": "fair-distribution-of-cookies",
+ "frontendId": "2305",
+ "title": "Fair Distribution of Cookies",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cookies",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "cookies = {cookies}\nk = {k}",
+ "visible": [
+  "cookies",
+  "k"
+ ],
+ "call": "result = Solution().distributeCookies(cookies, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "maximum-performance-of-a-team",
+ "frontendId": "1383",
+ "title": "Maximum Performance of a Team",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "speed",
+   "type": "integer[]"
+  },
+  {
+   "name": "efficiency",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nspeed = {speed}\nefficiency = {efficiency}\nk = {k}",
+ "visible": [
+  "n",
+  "speed",
+  "efficiency",
+  "k"
+ ],
+ "call": "result = Solution().maxPerformance(n, speed, efficiency, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

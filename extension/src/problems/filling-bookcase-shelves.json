@@ -1,0 +1,30 @@
+{
+ "slug": "filling-bookcase-shelves",
+ "frontendId": "1105",
+ "title": "Filling Bookcase Shelves",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "books",
+   "type": "integer[][]"
+  },
+  {
+   "name": "shelfWidth",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "books = {books}\nshelfWidth = {shelfWidth}",
+ "visible": [
+  "books",
+  "shelfWidth"
+ ],
+ "call": "result = Solution().minHeightShelves(books, shelfWidth)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

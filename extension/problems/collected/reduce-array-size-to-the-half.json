@@ -1,0 +1,28 @@
+{
+ "slug": "reduce-array-size-to-the-half",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1338",
+ "title": "Reduce Array Size to The Half",
+ "premium": false,
+ "meta": {
+  "name": "minSetSize",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,3,3,3,5,5,5,2,2,7]",
+  "[7,7,7,7,7,7]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

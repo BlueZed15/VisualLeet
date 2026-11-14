@@ -1,0 +1,30 @@
+{
+ "slug": "reducing-dishes",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1402",
+ "title": "Reducing Dishes",
+ "premium": false,
+ "meta": {
+  "name": "maxSatisfaction",
+  "params": [
+   {
+    "name": "satisfaction",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,-8,0,5,-7]",
+  "[4,3,2]",
+  "[-1,-4,-5]"
+ ],
+ "exampleOutputs": [
+  "14",
+  "20",
+  "0"
+ ],
+ "anyOrder": true
+}

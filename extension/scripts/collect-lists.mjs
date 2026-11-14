@@ -1,6 +1,7 @@
 // Builds problems/batch-<name>.json: the next problems to add to the database,
 // from LeetCode's own study plans (most-practiced first), then the most-liked
-// free problems, skipping ones already in the database and premium ones.
+// free problems (LeetCode's "algorithms" category only: no SQL, pandas, shell or
+// concurrency problems), skipping ones already in the database and premium ones.
 //
 //   node scripts/collect-lists.mjs --count 400 --name 2026-11-15
 //
@@ -50,7 +51,7 @@ for (const plan of PLANS) {
 if (picked.length < COUNT) {
   const all = [];
   for (let skip = 0; skip < 5000; skip += 100) {
-    const d = await gql(`query l($skip: Int!, $limit: Int!) { problemsetQuestionList: questionList(categorySlug: "", limit: $limit, skip: $skip, filters: {}) {
+    const d = await gql(`query l($skip: Int!, $limit: Int!) { problemsetQuestionList: questionList(categorySlug: "algorithms", limit: $limit, skip: $skip, filters: {}) {
       total: totalNum questions: data { titleSlug isPaidOnly likes } } }`, { skip, limit: 100 });
     const qs = d.problemsetQuestionList.questions || [];
     all.push(...qs);

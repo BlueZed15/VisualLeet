@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-students-unable-to-eat-lunch",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1700",
+ "title": "Number of Students Unable to Eat Lunch",
+ "premium": false,
+ "meta": {
+  "name": "countStudents",
+  "params": [
+   {
+    "name": "students",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "sandwiches"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,0,0]\n[0,1,0,1]",
+  "[1,1,1,0,0,1]\n[1,0,0,0,1,1]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

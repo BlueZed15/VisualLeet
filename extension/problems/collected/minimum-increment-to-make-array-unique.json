@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-increment-to-make-array-unique",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "945",
+ "title": "Minimum Increment to Make Array Unique",
+ "premium": false,
+ "meta": {
+  "name": "minIncrementForUnique",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2]",
+  "[3,2,1,2,1,7]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "6"
+ ],
+ "anyOrder": false
+}

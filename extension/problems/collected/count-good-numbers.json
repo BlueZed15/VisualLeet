@@ -1,0 +1,30 @@
+{
+ "slug": "count-good-numbers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1922",
+ "title": "Count Good Numbers",
+ "premium": false,
+ "meta": {
+  "name": "countGoodNumbers",
+  "params": [
+   {
+    "name": "n",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "4",
+  "50"
+ ],
+ "exampleOutputs": [
+  "5",
+  "400",
+  "564908303"
+ ],
+ "anyOrder": false
+}

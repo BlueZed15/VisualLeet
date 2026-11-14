@@ -1,0 +1,34 @@
+{
+ "slug": "word-subsets",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "916",
+ "title": "Word Subsets",
+ "premium": false,
+ "meta": {
+  "name": "wordSubsets",
+  "params": [
+   {
+    "name": "words1",
+    "type": "string[]"
+   },
+   {
+    "name": "words2",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"e\",\"o\"]",
+  "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"lc\",\"eo\"]",
+  "[\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"]\n[\"c\",\"cc\",\"b\"]"
+ ],
+ "exampleOutputs": [
+  "[\"facebook\",\"google\",\"leetcode\"]",
+  "[\"leetcode\"]",
+  "[\"cccbb\"]"
+ ],
+ "anyOrder": true
+}

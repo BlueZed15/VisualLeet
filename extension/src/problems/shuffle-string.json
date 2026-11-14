@@ -1,0 +1,30 @@
+{
+ "slug": "shuffle-string",
+ "frontendId": "1528",
+ "title": "Shuffle String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "indices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nindices = {indices}",
+ "visible": [
+  "s",
+  "indices"
+ ],
+ "call": "result = Solution().restoreString(s, indices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

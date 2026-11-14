@@ -1,0 +1,34 @@
+{
+ "slug": "maximize-the-confusion-of-an-exam",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2024",
+ "title": "Maximize the Confusion of an Exam",
+ "premium": false,
+ "meta": {
+  "name": "maxConsecutiveAnswers",
+  "params": [
+   {
+    "name": "answerKey",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"TTFF\"\n2",
+  "\"TFFT\"\n1",
+  "\"TTFTTFTT\"\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

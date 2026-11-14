@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-score-from-performing-multiplication-operations",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1770",
+ "title": "Maximum Score from Performing Multiplication Operations",
+ "premium": false,
+ "meta": {
+  "name": "maximumScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "multipliers"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n[3,2,1]",
+  "[-5,-3,-3,-2,7,1]\n[-10,-5,3,4,6]"
+ ],
+ "exampleOutputs": [
+  "14",
+  "102"
+ ],
+ "anyOrder": false
+}

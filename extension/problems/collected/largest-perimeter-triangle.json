@@ -1,0 +1,28 @@
+{
+ "slug": "largest-perimeter-triangle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "976",
+ "title": "Largest Perimeter Triangle",
+ "premium": false,
+ "meta": {
+  "name": "largestPerimeter",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,2]",
+  "[1,2,1,10]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-length-of-subarray-with-positive-product",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1567",
+ "title": "Maximum Length of Subarray With Positive Product",
+ "premium": false,
+ "meta": {
+  "name": "getMaxLen",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,-2,-3,4]",
+  "[0,1,-2,-3,-4]",
+  "[-1,-2,-3,0,1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

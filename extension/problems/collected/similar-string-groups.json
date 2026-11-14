@@ -1,0 +1,28 @@
+{
+ "slug": "similar-string-groups",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "839",
+ "title": "Similar String Groups",
+ "premium": false,
+ "meta": {
+  "name": "numSimilarGroups",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"tars\",\"rats\",\"arts\",\"star\"]",
+  "[\"omv\",\"ovm\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

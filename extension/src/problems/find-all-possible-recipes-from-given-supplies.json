@@ -1,0 +1,35 @@
+{
+ "slug": "find-all-possible-recipes-from-given-supplies",
+ "frontendId": "2115",
+ "title": "Find All Possible Recipes from Given Supplies",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "recipes",
+   "type": "string[]"
+  },
+  {
+   "name": "ingredients",
+   "type": "list<list<string>>"
+  },
+  {
+   "name": "supplies",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "recipes = {recipes}\ningredients = {ingredients}\nsupplies = {supplies}",
+ "visible": [
+  "recipes",
+  "ingredients",
+  "supplies"
+ ],
+ "call": "result = Solution().findAllRecipes(recipes, ingredients, supplies)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

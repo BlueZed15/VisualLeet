@@ -1,0 +1,29 @@
+{
+ "slug": "number-complement",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "476",
+ "title": "Number Complement",
+ "premium": false,
+ "meta": {
+  "name": "findComplement",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "5",
+  "1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

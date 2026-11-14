@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-difficulty-of-a-job-schedule",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1335",
+ "title": "Minimum Difficulty of a Job Schedule",
+ "premium": false,
+ "meta": {
+  "name": "minDifficulty",
+  "params": [
+   {
+    "name": "jobDifficulty",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "d"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,5,4,3,2,1]\n2",
+  "[9,9,9]\n4",
+  "[1,1,1]\n3"
+ ],
+ "exampleOutputs": [
+  "7",
+  "-1",
+  "3"
+ ],
+ "anyOrder": false
+}

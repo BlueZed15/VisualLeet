@@ -1,0 +1,25 @@
+{
+ "slug": "stone-game-iii",
+ "frontendId": "1406",
+ "title": "Stone Game III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stoneValue",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stoneValue = {stoneValue}",
+ "visible": [
+  "stoneValue"
+ ],
+ "call": "result = Solution().stoneGameIII(stoneValue)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

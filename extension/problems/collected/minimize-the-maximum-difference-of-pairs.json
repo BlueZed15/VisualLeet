@@ -1,0 +1,32 @@
+{
+ "slug": "minimize-the-maximum-difference-of-pairs",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2616",
+ "title": "Minimize the Maximum Difference of Pairs",
+ "premium": false,
+ "meta": {
+  "name": "minimizeMax",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "p"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,1,2,7,1,3]\n2",
+  "[4,2,1,2]\n1"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

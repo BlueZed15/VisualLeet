@@ -1,0 +1,28 @@
+{
+ "slug": "lemonade-change",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "860",
+ "title": "Lemonade Change",
+ "premium": false,
+ "meta": {
+  "name": "lemonadeChange",
+  "params": [
+   {
+    "name": "bills",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[5,5,5,10,20]",
+  "[5,5,10,10,20]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

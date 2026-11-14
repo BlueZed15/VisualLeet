@@ -1,0 +1,38 @@
+{
+ "slug": "lexicographically-smallest-equivalent-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1061",
+ "title": "Lexicographically Smallest Equivalent String",
+ "premium": false,
+ "meta": {
+  "name": "smallestEquivalentString",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   },
+   {
+    "name": "baseStr",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"parker\"\n\"morris\"\n\"parser\"",
+  "\"hello\"\n\"world\"\n\"hold\"",
+  "\"leetcode\"\n\"programs\"\n\"sourcecode\""
+ ],
+ "exampleOutputs": [
+  "\"makkek\"",
+  "\"hdld\"",
+  "\"aauaaaaada\""
+ ],
+ "anyOrder": false
+}

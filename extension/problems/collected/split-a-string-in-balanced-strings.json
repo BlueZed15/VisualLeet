@@ -1,0 +1,30 @@
+{
+ "slug": "split-a-string-in-balanced-strings",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1221",
+ "title": "Split a String in Balanced Strings",
+ "premium": false,
+ "meta": {
+  "name": "balancedStringSplit",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"RLRRLLRLRL\"",
+  "\"RLRRRLLRLL\"",
+  "\"LLLLRRRR\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

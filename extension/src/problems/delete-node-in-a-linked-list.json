@@ -1,0 +1,33 @@
+{
+ "slug": "delete-node-in-a-linked-list",
+ "frontendId": "237",
+ "title": "Delete Node in a Linked List",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "node",
+   "type": "integer",
+   "hint": "value of the node to delete"
+  }
+ ],
+ "helpers": [
+  "ListFind"
+ ],
+ "setup": "head = {head}\nnode = list_find(head, {node})",
+ "visible": [
+  "head",
+  "node"
+ ],
+ "call": "Solution().deleteNode(node)\nprint(leet_str(list_values(head)))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "unique-length-3-palindromic-subsequences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1930",
+ "title": "Unique Length-3 Palindromic Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "countPalindromicSubsequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabca\"",
+  "\"adc\"",
+  "\"bbcbaba\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "4"
+ ],
+ "anyOrder": false
+}

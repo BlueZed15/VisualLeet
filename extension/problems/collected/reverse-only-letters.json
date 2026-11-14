@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-only-letters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "917",
+ "title": "Reverse Only Letters",
+ "premium": false,
+ "meta": {
+  "name": "reverseOnlyLetters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"ab-cd\"",
+  "\"a-bC-dEf-ghIj\"",
+  "\"Test1ng-Leet=code-Q!\""
+ ],
+ "exampleOutputs": [
+  "\"dc-ba\"",
+  "\"j-Ih-gfE-dCba\"",
+  "\"Qedo1ct-eeLg=ntse-T!\""
+ ],
+ "anyOrder": false
+}

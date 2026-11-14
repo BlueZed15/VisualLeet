@@ -1,0 +1,32 @@
+{
+ "slug": "matrix-block-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1314",
+ "title": "Matrix Block Sum",
+ "premium": false,
+ "meta": {
+  "name": "matrixBlockSum",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[4,5,6],[7,8,9]]\n1",
+  "[[1,2,3],[4,5,6],[7,8,9]]\n2"
+ ],
+ "exampleOutputs": [
+  "[[12,21,16],[27,45,33],[24,39,28]]",
+  "[[45,45,45],[45,45,45],[45,45,45]]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "longest-happy-string",
+ "frontendId": "1405",
+ "title": "Longest Happy String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  },
+  {
+   "name": "c",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}\nc = {c}",
+ "visible": [
+  "a",
+  "b",
+  "c"
+ ],
+ "call": "result = Solution().longestDiverseString(a, b, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

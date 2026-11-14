@@ -1,0 +1,32 @@
+{
+ "slug": "put-marbles-in-bags",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2551",
+ "title": "Put Marbles in Bags",
+ "premium": false,
+ "meta": {
+  "name": "putMarbles",
+  "params": [
+   {
+    "name": "weights",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,5,1]\n2",
+  "[1,3]\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

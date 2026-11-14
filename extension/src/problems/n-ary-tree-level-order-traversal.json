@@ -1,0 +1,28 @@
+{
+ "slug": "n-ary-tree-level-order-traversal",
+ "frontendId": "429",
+ "title": "N-ary Tree Level Order Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "list<integer?>",
+   "hint": "level order, each node's children ended by null"
+  }
+ ],
+ "helpers": [
+  "NaryTree"
+ ],
+ "setup": "root = build_nary({root})",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().levelOrder(root)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

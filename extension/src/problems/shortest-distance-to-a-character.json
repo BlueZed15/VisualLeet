@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-distance-to-a-character",
+ "frontendId": "821",
+ "title": "Shortest Distance to a Character",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "c",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nc = {c}",
+ "visible": [
+  "s",
+  "c"
+ ],
+ "call": "result = Solution().shortestToChar(s, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

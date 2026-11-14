@@ -1,0 +1,25 @@
+{
+ "slug": "robot-return-to-origin",
+ "frontendId": "657",
+ "title": "Robot Return to Origin",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "moves",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "moves = {moves}",
+ "visible": [
+  "moves"
+ ],
+ "call": "result = Solution().judgeCircle(moves)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

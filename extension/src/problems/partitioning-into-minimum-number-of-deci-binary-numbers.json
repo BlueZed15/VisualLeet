@@ -1,0 +1,25 @@
+{
+ "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+ "frontendId": "1689",
+ "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().minPartitions(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

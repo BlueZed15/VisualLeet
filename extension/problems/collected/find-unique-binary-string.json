@@ -1,0 +1,30 @@
+{
+ "slug": "find-unique-binary-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1980",
+ "title": "Find Unique Binary String",
+ "premium": false,
+ "meta": {
+  "name": "findDifferentBinaryString",
+  "params": [
+   {
+    "type": "string[]",
+    "name": "nums"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"01\",\"10\"]",
+  "[\"00\",\"01\"]",
+  "[\"111\",\"011\",\"001\"]"
+ ],
+ "exampleOutputs": [
+  "\"11\"",
+  "\"11\"",
+  "\"101\""
+ ],
+ "anyOrder": false
+}

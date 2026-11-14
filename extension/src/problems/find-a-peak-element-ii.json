@@ -1,0 +1,25 @@
+{
+ "slug": "find-a-peak-element-ii",
+ "frontendId": "1901",
+ "title": "Find a Peak Element II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}",
+ "visible": [
+  "mat"
+ ],
+ "call": "result = Solution().findPeakGrid(mat)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

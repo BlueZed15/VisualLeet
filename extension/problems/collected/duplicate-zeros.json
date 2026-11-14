@@ -1,0 +1,31 @@
+{
+ "slug": "duplicate-zeros",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1089",
+ "title": "Duplicate Zeros",
+ "premium": false,
+ "meta": {
+  "name": "duplicateZeros",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "void"
+  },
+  "output": {
+   "paramindex": 0
+  }
+ },
+ "exampleInputs": [
+  "[1,0,2,3,0,4,5,0]",
+  "[1,2,3]"
+ ],
+ "exampleOutputs": [
+  "[1,0,0,2,3,0,0,4]",
+  "[1,2,3]"
+ ],
+ "anyOrder": false
+}

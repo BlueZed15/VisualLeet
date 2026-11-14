@@ -1,0 +1,30 @@
+{
+ "slug": "max-sum-of-rectangle-no-larger-than-k",
+ "frontendId": "363",
+ "title": "Max Sum of Rectangle No Larger Than K",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}\nk = {k}",
+ "visible": [
+  "matrix",
+  "k"
+ ],
+ "call": "result = Solution().maxSumSubmatrix(matrix, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

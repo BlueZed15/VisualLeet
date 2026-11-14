@@ -1,0 +1,25 @@
+{
+ "slug": "count-all-valid-pickup-and-delivery-options",
+ "frontendId": "1359",
+ "title": "Count All Valid Pickup and Delivery Options",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().countOrders(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

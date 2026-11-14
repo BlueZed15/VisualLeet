@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-subsequence-of-distinct-characters",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1081",
+ "title": "Smallest Subsequence of Distinct Characters",
+ "premium": false,
+ "meta": {
+  "name": "smallestSubsequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"bcabc\"",
+  "\"cbacdcbc\""
+ ],
+ "exampleOutputs": [
+  "\"abc\"",
+  "\"acdb\""
+ ],
+ "anyOrder": false
+}

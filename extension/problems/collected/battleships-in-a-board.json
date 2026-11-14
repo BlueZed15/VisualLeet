@@ -1,0 +1,28 @@
+{
+ "slug": "battleships-in-a-board",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "419",
+ "title": "Battleships in a Board",
+ "premium": false,
+ "meta": {
+  "name": "countBattleships",
+  "params": [
+   {
+    "name": "board",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
+  "[[\".\"]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

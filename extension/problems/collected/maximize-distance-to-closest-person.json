@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-distance-to-closest-person",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "849",
+ "title": "Maximize Distance to Closest Person",
+ "premium": false,
+ "meta": {
+  "name": "maxDistToClosest",
+  "params": [
+   {
+    "name": "seats",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,0,1,0,1]",
+  "[1,0,0,0]",
+  "[0,1]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

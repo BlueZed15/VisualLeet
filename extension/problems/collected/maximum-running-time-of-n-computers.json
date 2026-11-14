@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-running-time-of-n-computers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2141",
+ "title": "Maximum Running Time of N Computers",
+ "premium": false,
+ "meta": {
+  "name": "maxRunTime",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "batteries"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "2\n[3,3,3]",
+  "2\n[1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

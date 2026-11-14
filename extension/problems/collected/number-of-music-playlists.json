@@ -1,0 +1,38 @@
+{
+ "slug": "number-of-music-playlists",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "920",
+ "title": "Number of Music Playlists",
+ "premium": false,
+ "meta": {
+  "name": "numMusicPlaylists",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "goal",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n3\n1",
+  "2\n3\n0",
+  "2\n3\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "6",
+  "2"
+ ],
+ "anyOrder": false
+}

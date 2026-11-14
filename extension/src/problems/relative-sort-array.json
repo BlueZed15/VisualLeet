@@ -1,0 +1,30 @@
+{
+ "slug": "relative-sort-array",
+ "frontendId": "1122",
+ "title": "Relative Sort Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr1",
+   "type": "integer[]"
+  },
+  {
+   "name": "arr2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr1 = {arr1}\narr2 = {arr2}",
+ "visible": [
+  "arr1",
+  "arr2"
+ ],
+ "call": "result = Solution().relativeSortArray(arr1, arr2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

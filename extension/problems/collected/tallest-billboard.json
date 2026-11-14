@@ -1,0 +1,30 @@
+{
+ "slug": "tallest-billboard",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "956",
+ "title": "Tallest Billboard",
+ "premium": false,
+ "meta": {
+  "name": "tallestBillboard",
+  "params": [
+   {
+    "name": "rods",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,6]",
+  "[1,2,3,4,5,6]",
+  "[1,2]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "10",
+  "0"
+ ],
+ "anyOrder": false
+}

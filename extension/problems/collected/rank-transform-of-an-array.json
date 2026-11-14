@@ -1,0 +1,30 @@
+{
+ "slug": "rank-transform-of-an-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1331",
+ "title": "Rank Transform of an Array",
+ "premium": false,
+ "meta": {
+  "name": "arrayRankTransform",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[40,10,20,30]",
+  "[100,100,100]",
+  "[37,12,28,9,100,56,80,5,12]"
+ ],
+ "exampleOutputs": [
+  "[4,1,2,3]",
+  "[1,1,1]",
+  "[5,3,4,2,8,6,7,1,3]"
+ ],
+ "anyOrder": false
+}

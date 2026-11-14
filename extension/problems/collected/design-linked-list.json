@@ -1,0 +1,90 @@
+{
+ "slug": "design-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "707",
+ "title": "Design Linked List",
+ "premium": false,
+ "meta": {
+  "classname": "MyLinkedList",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    },
+    "name": "get"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "addAtHead"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "addAtTail"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     },
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "addAtIndex"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "deleteAtIndex"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MyLinkedList\",\"addAtHead\",\"deleteAtIndex\",\"addAtTail\",\"get\"]\n[[],[1],[0],[2],[0]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, 2, null, 3]"
+ ],
+ "anyOrder": false
+}

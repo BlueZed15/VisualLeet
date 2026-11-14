@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-rounds-to-complete-all-tasks",
+ "frontendId": "2244",
+ "title": "Minimum Rounds to Complete All Tasks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}",
+ "visible": [
+  "tasks"
+ ],
+ "call": "result = Solution().minimumRounds(tasks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

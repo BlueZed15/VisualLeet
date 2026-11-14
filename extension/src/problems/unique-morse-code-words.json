@@ -1,0 +1,25 @@
+{
+ "slug": "unique-morse-code-words",
+ "frontendId": "804",
+ "title": "Unique Morse Code Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}",
+ "visible": [
+  "words"
+ ],
+ "call": "result = Solution().uniqueMorseRepresentations(words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

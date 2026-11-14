@@ -1,0 +1,34 @@
+{
+ "slug": "fraction-to-recurring-decimal",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "166",
+ "title": "Fraction to Recurring Decimal",
+ "premium": false,
+ "meta": {
+  "name": "fractionToDecimal",
+  "params": [
+   {
+    "name": "numerator",
+    "type": "integer"
+   },
+   {
+    "name": "denominator",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "1\n2",
+  "2\n1",
+  "4\n333"
+ ],
+ "exampleOutputs": [
+  "\"0.5\"",
+  "\"2\"",
+  "\"0.(012)\""
+ ],
+ "anyOrder": false
+}

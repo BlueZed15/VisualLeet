@@ -1,0 +1,30 @@
+{
+ "slug": "sequential-digits",
+ "frontendId": "1291",
+ "title": "Sequential Digits",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "low = {low}\nhigh = {high}",
+ "visible": [
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().sequentialDigits(low, high)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

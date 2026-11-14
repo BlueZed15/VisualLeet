@@ -1,0 +1,25 @@
+{
+ "slug": "detect-capital",
+ "frontendId": "520",
+ "title": "Detect Capital",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}",
+ "visible": [
+  "word"
+ ],
+ "call": "result = Solution().detectCapitalUse(word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

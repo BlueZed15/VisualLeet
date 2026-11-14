@@ -1,0 +1,35 @@
+{
+ "slug": "count-of-range-sum",
+ "frontendId": "327",
+ "title": "Count of Range Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "lower",
+   "type": "integer"
+  },
+  {
+   "name": "upper",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nlower = {lower}\nupper = {upper}",
+ "visible": [
+  "nums",
+  "lower",
+  "upper"
+ ],
+ "call": "result = Solution().countRangeSum(nums, lower, upper)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "greatest-sum-divisible-by-three",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1262",
+ "title": "Greatest Sum Divisible by Three",
+ "premium": false,
+ "meta": {
+  "name": "maxSumDivThree",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,6,5,1,8]",
+  "[4]",
+  "[1,2,3,4,4]"
+ ],
+ "exampleOutputs": [
+  "18",
+  "0",
+  "12"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-original-array-from-doubled-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2007",
+ "title": "Find Original Array From Doubled Array",
+ "premium": false,
+ "meta": {
+  "name": "findOriginalArray",
+  "params": [
+   {
+    "name": "changed",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,4,2,6,8]",
+  "[6,3,0,1]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[1,3,4]",
+  "[]",
+  "[]"
+ ],
+ "anyOrder": true
+}

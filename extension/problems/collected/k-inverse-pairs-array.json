@@ -1,0 +1,32 @@
+{
+ "slug": "k-inverse-pairs-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "629",
+ "title": "K Inverse Pairs Array",
+ "premium": false,
+ "meta": {
+  "name": "kInversePairs",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n0",
+  "3\n1"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "linked-list-in-binary-tree",
+ "frontendId": "1367",
+ "title": "Linked List in Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "head = {head}\nroot = {root}",
+ "visible": [
+  "head",
+  "root"
+ ],
+ "call": "result = Solution().isSubPath(head, root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "largest-color-value-in-a-directed-graph",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1857",
+ "title": "Largest Color Value in a Directed Graph",
+ "premium": false,
+ "meta": {
+  "name": "largestPathValue",
+  "params": [
+   {
+    "name": "colors",
+    "type": "string"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abaca\"\n[[0,1],[0,2],[2,3],[3,4]]",
+  "\"a\"\n[[0,0]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

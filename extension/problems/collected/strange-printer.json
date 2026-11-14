@@ -1,0 +1,28 @@
+{
+ "slug": "strange-printer",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "664",
+ "title": "Strange Printer",
+ "premium": false,
+ "meta": {
+  "name": "strangePrinter",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aaabbb\"",
+  "\"aba\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

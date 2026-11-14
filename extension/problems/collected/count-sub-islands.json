@@ -1,0 +1,32 @@
+{
+ "slug": "count-sub-islands",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1905",
+ "title": "Count Sub Islands",
+ "premium": false,
+ "meta": {
+  "name": "countSubIslands",
+  "params": [
+   {
+    "name": "grid1",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "grid2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]]\n[[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]",
+  "[[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]]\n[[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

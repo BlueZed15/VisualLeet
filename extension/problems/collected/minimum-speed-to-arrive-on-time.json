@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-speed-to-arrive-on-time",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1870",
+ "title": "Minimum Speed to Arrive on Time",
+ "premium": false,
+ "meta": {
+  "name": "minSpeedOnTime",
+  "params": [
+   {
+    "name": "dist",
+    "type": "integer[]"
+   },
+   {
+    "type": "double",
+    "name": "hour"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2]\n6",
+  "[1,3,2]\n2.7",
+  "[1,3,2]\n1.9"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

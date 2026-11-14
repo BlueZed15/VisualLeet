@@ -1,5 +1,16 @@
 {
   "about": "Corrections to what the statement text says, applied by scripts/build-db.mjs. anyOrder: LeetCode accepts the answer in any order although the statement doesn't say \"in any order\". multipleAnswers: several different answers are accepted, so a different output isn't necessarily wrong.",
-  "anyOrder": ["3sum", "word-search-ii", "pacific-atlantic-water-flow", "combination-sum-ii", "palindrome-partitioning", "generate-parentheses"],
-  "multipleAnswers": ["course-schedule-ii", "longest-palindromic-substring", "alien-dictionary"]
+  "anyOrder": [
+    "3sum",
+    "word-search-ii",
+    "pacific-atlantic-water-flow",
+    "combination-sum-ii",
+    "palindrome-partitioning",
+    "generate-parentheses"
+  ],
+  "multipleAnswers": [
+    "course-schedule-ii",
+    "longest-palindromic-substring",
+    "alien-dictionary"
+  ]
 }

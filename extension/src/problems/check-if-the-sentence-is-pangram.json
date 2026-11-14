@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-the-sentence-is-pangram",
+ "frontendId": "1832",
+ "title": "Check if the Sentence Is Pangram",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentence",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentence = {sentence}",
+ "visible": [
+  "sentence"
+ ],
+ "call": "result = Solution().checkIfPangram(sentence)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

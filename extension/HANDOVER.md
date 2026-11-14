@@ -7,7 +7,15 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
-- **Database: 600 problems** (2026-11-15). NeetCode 150 (each checked with a
+- **Database: 816 problems** (2026-11-15; was 600 earlier that day). 166 are
+  checked with known-good solutions (NeetCode 150 + the 16 LeetCode "manual"
+  problems now hand-written: LCA, Linked List Cycle II, Intersection, First Bad
+  Version, Guess Number, Mountain Array, next-pointer trees, quad tree,
+  multilevel list, N-ary tree, nested-list iterator, …), 650 inputs-checked
+  (batches `batch-2026-11-15.json`, `batch-2026-11-15b.json`; the second is
+  the 200 next most-liked from LeetCode's algorithms category).
+  SQL/pandas/shell problems are never added (user's decision).
+  First version of this note: NeetCode 150 (each checked with a
   known-good solution) + 450 more from LeetCode's study plans (LeetCode 75,
   Top Interview 150, Top 100 Liked) and the most-liked free problems
   (`problems/batch-2026-11-15.json`, made by `scripts/collect-lists.mjs`).

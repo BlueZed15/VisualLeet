@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-cost-to-merge-stones",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1000",
+ "title": "Minimum Cost to Merge Stones",
+ "premium": false,
+ "meta": {
+  "name": "mergeStones",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,4,1]\n2",
+  "[3,2,4,1]\n3",
+  "[3,5,1,2,6]\n3"
+ ],
+ "exampleOutputs": [
+  "20",
+  "-1",
+  "25"
+ ],
+ "anyOrder": false
+}

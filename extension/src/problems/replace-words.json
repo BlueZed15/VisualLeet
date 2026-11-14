@@ -1,0 +1,30 @@
+{
+ "slug": "replace-words",
+ "frontendId": "648",
+ "title": "Replace Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dictionary",
+   "type": "list<string>"
+  },
+  {
+   "name": "sentence",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "dictionary = {dictionary}\nsentence = {sentence}",
+ "visible": [
+  "dictionary",
+  "sentence"
+ ],
+ "call": "result = Solution().replaceWords(dictionary, sentence)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

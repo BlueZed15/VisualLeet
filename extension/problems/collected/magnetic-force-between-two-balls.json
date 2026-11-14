@@ -1,0 +1,32 @@
+{
+ "slug": "magnetic-force-between-two-balls",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1552",
+ "title": "Magnetic Force Between Two Balls",
+ "premium": false,
+ "meta": {
+  "name": "maxDistance",
+  "params": [
+   {
+    "name": "position",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,7]\n3",
+  "[5,4,3,2,1,1000000000]\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "999999999"
+ ],
+ "anyOrder": false
+}

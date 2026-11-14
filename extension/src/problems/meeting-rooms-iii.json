@@ -1,0 +1,30 @@
+{
+ "slug": "meeting-rooms-iii",
+ "frontendId": "2402",
+ "title": "Meeting Rooms III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "meetings",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nmeetings = {meetings}",
+ "visible": [
+  "n",
+  "meetings"
+ ],
+ "call": "result = Solution().mostBooked(n, meetings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

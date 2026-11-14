@@ -1,0 +1,29 @@
+{
+ "slug": "optimal-partition-of-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2405",
+ "title": "Optimal Partition of String",
+ "premium": false,
+ "meta": {
+  "name": "partitionString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"abacaba\"",
+  "\"ssssss\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "6"
+ ],
+ "anyOrder": false
+}

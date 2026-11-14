@@ -1,0 +1,30 @@
+{
+ "slug": "the-number-of-weak-characters-in-the-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1996",
+ "title": "The Number of Weak Characters in the Game",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWeakCharacters",
+  "params": [
+   {
+    "name": "properties",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[5,5],[6,3],[3,6]]",
+  "[[2,2],[3,3]]",
+  "[[1,5],[10,4],[4,3]]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

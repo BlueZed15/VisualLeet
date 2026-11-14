@@ -1,0 +1,27 @@
+{
+ "slug": "flatten-nested-list-iterator",
+ "frontendId": "341",
+ "title": "Flatten Nested List Iterator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nestedList",
+   "type": "list<NestedInteger>"
+  }
+ ],
+ "helpers": [
+  "NestedInteger"
+ ],
+ "setup": "nestedList = {nestedList}",
+ "visible": [
+  "nestedList"
+ ],
+ "call": "it, out = NestedIterator(nestedList), []\nwhile it.hasNext():\n    out.append(it.next())\nprint(leet_str(out))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

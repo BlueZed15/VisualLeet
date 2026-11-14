@@ -1,0 +1,38 @@
+{
+ "slug": "find-all-possible-recipes-from-given-supplies",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2115",
+ "title": "Find All Possible Recipes from Given Supplies",
+ "premium": false,
+ "meta": {
+  "name": "findAllRecipes",
+  "params": [
+   {
+    "name": "recipes",
+    "type": "string[]"
+   },
+   {
+    "type": "list<list<string>>",
+    "name": "ingredients"
+   },
+   {
+    "type": "string[]",
+    "name": "supplies"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"bread\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+  "[\"bread\",\"sandwich\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"]]\n[\"yeast\",\"flour\",\"meat\"]",
+  "[\"bread\",\"sandwich\",\"burger\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]]\n[\"yeast\",\"flour\",\"meat\"]"
+ ],
+ "exampleOutputs": [
+  "[\"bread\"]",
+  "[\"bread\",\"sandwich\"]",
+  "[\"bread\",\"sandwich\",\"burger\"]"
+ ],
+ "anyOrder": true
+}

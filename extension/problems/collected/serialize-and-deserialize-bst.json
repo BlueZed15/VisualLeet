@@ -1,0 +1,29 @@
+{
+ "slug": "serialize-and-deserialize-bst",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "449",
+ "title": "Serialize and Deserialize BST",
+ "premium": false,
+ "meta": {
+  "name": "CodecDriver",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  },
+  "manual": true
+ },
+ "exampleInputs": [
+  "[2,1,3]",
+  "[]"
+ ],
+ "exampleOutputs": [
+  "[2,1,3]",
+  "[]"
+ ],
+ "anyOrder": false
+}

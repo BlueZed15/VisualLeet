@@ -1,0 +1,25 @@
+{
+ "slug": "sort-the-matrix-diagonally",
+ "frontendId": "1329",
+ "title": "Sort the Matrix Diagonally",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}",
+ "visible": [
+  "mat"
+ ],
+ "call": "result = Solution().diagonalSort(mat)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

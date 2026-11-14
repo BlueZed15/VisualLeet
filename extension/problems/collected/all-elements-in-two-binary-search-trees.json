@@ -1,0 +1,32 @@
+{
+ "slug": "all-elements-in-two-binary-search-trees",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1305",
+ "title": "All Elements in Two Binary Search Trees",
+ "premium": false,
+ "meta": {
+  "name": "getAllElements",
+  "params": [
+   {
+    "name": "root1",
+    "type": "TreeNode"
+   },
+   {
+    "type": "TreeNode",
+    "name": "root2"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,4]\n[1,0,3]",
+  "[1,null,8]\n[8,1]"
+ ],
+ "exampleOutputs": [
+  "[0,1,1,2,3,4]",
+  "[1,1,8,8]"
+ ],
+ "anyOrder": false
+}

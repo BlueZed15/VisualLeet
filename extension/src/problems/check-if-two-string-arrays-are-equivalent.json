@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-two-string-arrays-are-equivalent",
+ "frontendId": "1662",
+ "title": "Check If Two String Arrays are Equivalent",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word1",
+   "type": "string[]"
+  },
+  {
+   "name": "word2",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "word1 = {word1}\nword2 = {word2}",
+ "visible": [
+  "word1",
+  "word2"
+ ],
+ "call": "result = Solution().arrayStringsAreEqual(word1, word2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

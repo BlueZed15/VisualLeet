@@ -1,0 +1,36 @@
+{
+ "slug": "grumpy-bookstore-owner",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1052",
+ "title": "Grumpy Bookstore Owner",
+ "premium": false,
+ "meta": {
+  "name": "maxSatisfied",
+  "params": [
+   {
+    "name": "customers",
+    "type": "integer[]"
+   },
+   {
+    "name": "grumpy",
+    "type": "integer[]"
+   },
+   {
+    "name": "minutes",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,1,2,1,1,7,5]\n[0,1,0,1,0,1,0,1]\n3",
+  "[1]\n[0]\n1"
+ ],
+ "exampleOutputs": [
+  "16",
+  "1"
+ ],
+ "anyOrder": false
+}

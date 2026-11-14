@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-limit-of-balls-in-a-bag",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1760",
+ "title": "Minimum Limit of Balls in a Bag",
+ "premium": false,
+ "meta": {
+  "name": "minimumSize",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "maxOperations"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[9]\n2",
+  "[2,4,8,2]\n4"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

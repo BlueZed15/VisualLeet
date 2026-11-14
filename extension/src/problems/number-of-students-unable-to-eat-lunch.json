@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-students-unable-to-eat-lunch",
+ "frontendId": "1700",
+ "title": "Number of Students Unable to Eat Lunch",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "students",
+   "type": "integer[]"
+  },
+  {
+   "name": "sandwiches",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "students = {students}\nsandwiches = {sandwiches}",
+ "visible": [
+  "students",
+  "sandwiches"
+ ],
+ "call": "result = Solution().countStudents(students, sandwiches)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "string-compression-ii",
+ "frontendId": "1531",
+ "title": "String Compression II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().getLengthOfOptimalCompression(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

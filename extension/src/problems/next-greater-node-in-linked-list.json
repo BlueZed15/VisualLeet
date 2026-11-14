@@ -1,0 +1,25 @@
+{
+ "slug": "next-greater-node-in-linked-list",
+ "frontendId": "1019",
+ "title": "Next Greater Node In Linked List",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().nextLargerNodes(head)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

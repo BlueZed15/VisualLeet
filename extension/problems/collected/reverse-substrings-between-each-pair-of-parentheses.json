@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-substrings-between-each-pair-of-parentheses",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1190",
+ "title": "Reverse Substrings Between Each Pair of Parentheses",
+ "premium": false,
+ "meta": {
+  "name": "reverseParentheses",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"(abcd)\"",
+  "\"(u(love)i)\"",
+  "\"(ed(et(oc))el)\""
+ ],
+ "exampleOutputs": [
+  "\"dcba\"",
+  "\"iloveu\"",
+  "\"leetcode\""
+ ],
+ "anyOrder": false
+}

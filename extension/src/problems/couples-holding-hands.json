@@ -1,0 +1,25 @@
+{
+ "slug": "couples-holding-hands",
+ "frontendId": "765",
+ "title": "Couples Holding Hands",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "row",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "row = {row}",
+ "visible": [
+  "row"
+ ],
+ "call": "result = Solution().minSwapsCouples(row)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

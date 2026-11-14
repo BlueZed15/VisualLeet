@@ -1,0 +1,28 @@
+{
+ "slug": "score-after-flipping-matrix",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "861",
+ "title": "Score After Flipping Matrix",
+ "premium": false,
+ "meta": {
+  "name": "matrixScore",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,1,1],[1,0,1,0],[1,1,0,0]]",
+  "[[0]]"
+ ],
+ "exampleOutputs": [
+  "39",
+  "1"
+ ],
+ "anyOrder": false
+}

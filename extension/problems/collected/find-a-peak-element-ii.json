@@ -1,0 +1,29 @@
+{
+ "slug": "find-a-peak-element-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1901",
+ "title": "Find a Peak Element II",
+ "premium": false,
+ "meta": {
+  "name": "findPeakGrid",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[[1,4],[3,2]]",
+  "[[10,20,15],[21,30,14],[7,16,32]]"
+ ],
+ "exampleOutputs": [
+  "[0,1]",
+  "[1,1]"
+ ],
+ "anyOrder": false
+}

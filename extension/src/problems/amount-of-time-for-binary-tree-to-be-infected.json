@@ -1,0 +1,30 @@
+{
+ "slug": "amount-of-time-for-binary-tree-to-be-infected",
+ "frontendId": "2385",
+ "title": "Amount of Time for Binary Tree to Be Infected",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nstart = {start}",
+ "visible": [
+  "root",
+  "start"
+ ],
+ "call": "result = Solution().amountOfTime(root, start)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

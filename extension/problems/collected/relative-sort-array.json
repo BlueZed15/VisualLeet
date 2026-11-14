@@ -1,0 +1,32 @@
+{
+ "slug": "relative-sort-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1122",
+ "title": "Relative Sort Array",
+ "premium": false,
+ "meta": {
+  "name": "relativeSortArray",
+  "params": [
+   {
+    "name": "arr1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "arr2"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,3,2,4,6,7,9,2,19]\n[2,1,4,3,9,6]",
+  "[28,6,22,8,44,17]\n[22,28,8,6]"
+ ],
+ "exampleOutputs": [
+  "[2,2,2,1,4,3,3,9,6,7,19]",
+  "[22,28,8,6,17,44]"
+ ],
+ "anyOrder": false
+}

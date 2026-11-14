@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-sum-bst-in-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1373",
+ "title": "Maximum Sum BST in Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "maxSumBST",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,3,2,4,2,5,null,null,null,null,null,null,4,6]",
+  "[4,3,null,1,2]",
+  "[-4,-2,-5]"
+ ],
+ "exampleOutputs": [
+  "20",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

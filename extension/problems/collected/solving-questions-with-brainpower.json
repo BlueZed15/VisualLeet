@@ -1,0 +1,28 @@
+{
+ "slug": "solving-questions-with-brainpower",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2140",
+ "title": "Solving Questions With Brainpower",
+ "premium": false,
+ "meta": {
+  "name": "mostPoints",
+  "params": [
+   {
+    "name": "questions",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[3,2],[4,3],[4,4],[2,5]]",
+  "[[1,1],[2,2],[3,3],[4,4],[5,5]]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "7"
+ ],
+ "anyOrder": false
+}

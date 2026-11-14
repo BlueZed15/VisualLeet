@@ -1,0 +1,32 @@
+{
+ "slug": "guess-number-higher-or-lower",
+ "frontendId": "374",
+ "title": "Guess Number Higher or Lower",
+ "category": "LeetCode 75",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "pick",
+   "type": "integer",
+   "hint": "the hidden number guess() compares with"
+  }
+ ],
+ "helpers": [
+  "Guess"
+ ],
+ "setup": "_vl_pick = {pick}\nn = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().guessNumber(n)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

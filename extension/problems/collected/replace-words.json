@@ -1,0 +1,32 @@
+{
+ "slug": "replace-words",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "648",
+ "title": "Replace Words",
+ "premium": false,
+ "meta": {
+  "name": "replaceWords",
+  "params": [
+   {
+    "name": "dictionary",
+    "type": "list<string>"
+   },
+   {
+    "name": "sentence",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"cat\",\"bat\",\"rat\"]\n\"the cattle was rattled by the battery\"",
+  "[\"a\",\"b\",\"c\"]\n\"aadsfasf absbs bbab cadsfafs\""
+ ],
+ "exampleOutputs": [
+  "\"the cat was rat by the bat\"",
+  "\"a a b c\""
+ ],
+ "anyOrder": false
+}

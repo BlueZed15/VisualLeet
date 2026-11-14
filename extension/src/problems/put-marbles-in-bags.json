@@ -1,0 +1,30 @@
+{
+ "slug": "put-marbles-in-bags",
+ "frontendId": "2551",
+ "title": "Put Marbles in Bags",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "weights",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "weights = {weights}\nk = {k}",
+ "visible": [
+  "weights",
+  "k"
+ ],
+ "call": "result = Solution().putMarbles(weights, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

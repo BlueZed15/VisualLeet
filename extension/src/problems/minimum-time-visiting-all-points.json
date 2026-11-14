@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-time-visiting-all-points",
+ "frontendId": "1266",
+ "title": "Minimum Time Visiting All Points",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().minTimeToVisitAllPoints(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

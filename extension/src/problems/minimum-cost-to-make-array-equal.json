@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-cost-to-make-array-equal",
+ "frontendId": "2448",
+ "title": "Minimum Cost to Make Array Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ncost = {cost}",
+ "visible": [
+  "nums",
+  "cost"
+ ],
+ "call": "result = Solution().minCost(nums, cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

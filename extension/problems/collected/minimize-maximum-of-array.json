@@ -1,0 +1,28 @@
+{
+ "slug": "minimize-maximum-of-array",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2439",
+ "title": "Minimize Maximum of Array",
+ "premium": false,
+ "meta": {
+  "name": "minimizeArrayValue",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,7,1,6]",
+  "[10,1]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "10"
+ ],
+ "anyOrder": false
+}

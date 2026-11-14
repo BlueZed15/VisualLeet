@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-69-number",
+ "frontendId": "1323",
+ "title": "Maximum 69 Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().maximum69Number (num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

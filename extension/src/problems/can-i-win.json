@@ -1,0 +1,30 @@
+{
+ "slug": "can-i-win",
+ "frontendId": "464",
+ "title": "Can I Win",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "maxChoosableInteger",
+   "type": "integer"
+  },
+  {
+   "name": "desiredTotal",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "maxChoosableInteger = {maxChoosableInteger}\ndesiredTotal = {desiredTotal}",
+ "visible": [
+  "maxChoosableInteger",
+  "desiredTotal"
+ ],
+ "call": "result = Solution().canIWin(maxChoosableInteger, desiredTotal)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

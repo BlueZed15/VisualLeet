@@ -1,0 +1,30 @@
+{
+ "slug": "all-elements-in-two-binary-search-trees",
+ "frontendId": "1305",
+ "title": "All Elements in Two Binary Search Trees",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root1",
+   "type": "TreeNode"
+  },
+  {
+   "name": "root2",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root1 = {root1}\nroot2 = {root2}",
+ "visible": [
+  "root1",
+  "root2"
+ ],
+ "call": "result = Solution().getAllElements(root1, root2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

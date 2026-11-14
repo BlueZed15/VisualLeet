@@ -1,0 +1,28 @@
+{
+ "slug": "path-with-maximum-gold",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1219",
+ "title": "Path with Maximum Gold",
+ "premium": false,
+ "meta": {
+  "name": "getMaximumGold",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,6,0],[5,8,7],[0,9,0]]",
+  "[[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]"
+ ],
+ "exampleOutputs": [
+  "24",
+  "28"
+ ],
+ "anyOrder": false
+}

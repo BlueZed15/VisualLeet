@@ -1,0 +1,25 @@
+{
+ "slug": "lemonade-change",
+ "frontendId": "860",
+ "title": "Lemonade Change",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bills",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "bills = {bills}",
+ "visible": [
+  "bills"
+ ],
+ "call": "result = Solution().lemonadeChange(bills)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

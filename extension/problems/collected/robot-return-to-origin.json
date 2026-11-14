@@ -1,0 +1,28 @@
+{
+ "slug": "robot-return-to-origin",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "657",
+ "title": "Robot Return to Origin",
+ "premium": false,
+ "meta": {
+  "name": "judgeCircle",
+  "params": [
+   {
+    "name": "moves",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"UD\"",
+  "\"LL\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

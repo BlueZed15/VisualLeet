@@ -1,0 +1,27 @@
+{
+ "slug": "construct-quad-tree",
+ "frontendId": "427",
+ "title": "Construct Quad Tree",
+ "category": "Top Interview 150",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [
+  "QuadTree"
+ ],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().construct(grid)\nprint(leet_str(quad_values(result)))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

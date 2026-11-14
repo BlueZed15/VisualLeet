@@ -1,0 +1,35 @@
+{
+ "slug": "most-profit-assigning-work",
+ "frontendId": "826",
+ "title": "Most Profit Assigning Work",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "difficulty",
+   "type": "integer[]"
+  },
+  {
+   "name": "profit",
+   "type": "integer[]"
+  },
+  {
+   "name": "worker",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "difficulty = {difficulty}\nprofit = {profit}\nworker = {worker}",
+ "visible": [
+  "difficulty",
+  "profit",
+  "worker"
+ ],
+ "call": "result = Solution().maxProfitAssignment(difficulty, profit, worker)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-distance-to-a-character",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "821",
+ "title": "Shortest Distance to a Character",
+ "premium": false,
+ "meta": {
+  "name": "shortestToChar",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "c",
+    "type": "character"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"loveleetcode\"\n\"e\"",
+  "\"aaab\"\n\"b\""
+ ],
+ "exampleOutputs": [
+  "[3,2,1,0,1,0,0,1,2,2,1,0]",
+  "[3,2,1,0]"
+ ],
+ "anyOrder": false
+}

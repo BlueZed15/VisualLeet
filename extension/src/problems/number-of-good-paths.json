@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-good-paths",
+ "frontendId": "2421",
+ "title": "Number of Good Paths",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "vals",
+   "type": "integer[]"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "vals = {vals}\nedges = {edges}",
+ "visible": [
+  "vals",
+  "edges"
+ ],
+ "call": "result = Solution().numberOfGoodPaths(vals, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

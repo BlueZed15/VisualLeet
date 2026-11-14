@@ -1,0 +1,28 @@
+{
+ "slug": "remove-nodes-from-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "2487",
+ "title": "Remove Nodes From Linked List",
+ "premium": false,
+ "meta": {
+  "name": "removeNodes",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,13,3,8]",
+  "[1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "[13,8]",
+  "[1,1,1,1]"
+ ],
+ "anyOrder": false
+}

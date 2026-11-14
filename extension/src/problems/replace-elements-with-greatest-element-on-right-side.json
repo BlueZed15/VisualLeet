@@ -1,0 +1,25 @@
+{
+ "slug": "replace-elements-with-greatest-element-on-right-side",
+ "frontendId": "1299",
+ "title": "Replace Elements with Greatest Element on Right Side",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().replaceElements(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

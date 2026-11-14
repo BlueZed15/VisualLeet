@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-the-sentence-is-pangram",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1832",
+ "title": "Check if the Sentence Is Pangram",
+ "premium": false,
+ "meta": {
+  "name": "checkIfPangram",
+  "params": [
+   {
+    "name": "sentence",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"thequickbrownfoxjumpsoverthelazydog\"",
+  "\"leetcode\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

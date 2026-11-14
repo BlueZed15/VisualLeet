@@ -1,0 +1,32 @@
+{
+ "slug": "shuffle-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1528",
+ "title": "Shuffle String",
+ "premium": false,
+ "meta": {
+  "name": "restoreString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer[]",
+    "name": "indices"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"codeleet\"\n[4,5,6,7,0,2,1,3]",
+  "\"abc\"\n[0,1,2]"
+ ],
+ "exampleOutputs": [
+  "\"leetcode\"",
+  "\"abc\""
+ ],
+ "anyOrder": false
+}

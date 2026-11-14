@@ -1,0 +1,25 @@
+{
+ "slug": "last-stone-weight-ii",
+ "frontendId": "1049",
+ "title": "Last Stone Weight II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().lastStoneWeightII(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

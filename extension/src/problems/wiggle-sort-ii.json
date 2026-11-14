@@ -1,0 +1,25 @@
+{
+ "slug": "wiggle-sort-ii",
+ "frontendId": "324",
+ "title": "Wiggle Sort II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "Solution().wiggleSort(nums)\nprint(leet_str(nums))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

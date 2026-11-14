@@ -1,0 +1,25 @@
+{
+ "slug": "battleships-in-a-board",
+ "frontendId": "419",
+ "title": "Battleships in a Board",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "result = Solution().countBattleships(board)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "linked-list-random-node",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "382",
+ "title": "Linked List Random Node",
+ "premium": false,
+ "meta": {
+  "classname": "Solution",
+  "constructor": {
+   "params": [
+    {
+     "type": "ListNode",
+     "name": "head"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [],
+    "name": "getRandom",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Solution\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\"]\n[[[1,2,3]],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 3, 2, 2, 3]"
+ ],
+ "anyOrder": false
+}

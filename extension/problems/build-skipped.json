@@ -1,22 +1,6 @@
 [
- "lowest-common-ancestor-of-a-binary-tree: LeetCode marks it manual: needs a hand-written entry",
- "guess-number-higher-or-lower: LeetCode marks it manual: needs a hand-written entry",
- "populating-next-right-pointers-in-each-node-ii: LeetCode marks it manual: needs a hand-written entry",
- "construct-quad-tree: LeetCode marks it manual: needs a hand-written entry",
- "linked-list-cycle-ii: LeetCode marks it manual: needs a hand-written entry",
- "intersection-of-two-linked-lists: LeetCode marks it manual: needs a hand-written entry",
- "search-a-2d-matrix-ii: LeetCode marks it manual: needs a hand-written entry",
- "all-nodes-distance-k-in-binary-tree: LeetCode marks it manual: needs a hand-written entry",
- "populating-next-right-pointers-in-each-node: LeetCode marks it manual: needs a hand-written entry",
- "first-bad-version: LeetCode marks it manual: needs a hand-written entry",
- "delete-node-in-a-linked-list: LeetCode marks it manual: needs a hand-written entry",
- "flatten-a-multilevel-doubly-linked-list: LeetCode marks it manual: needs a hand-written entry",
- "flatten-nested-list-iterator: LeetCode marks it manual: needs a hand-written entry",
- "delete-nodes-and-return-forest: LeetCode marks it manual: needs a hand-written entry",
  "combine-two-tables: SQL / pandas / shell problem: nothing to visualize",
  "rising-temperature: SQL / pandas / shell problem: nothing to visualize",
  "second-highest-salary: SQL / pandas / shell problem: nothing to visualize",
- "customer-who-visited-but-did-not-make-any-transactions: SQL / pandas / shell problem: nothing to visualize",
- "n-ary-tree-level-order-traversal: LeetCode marks it manual: needs a hand-written entry",
- "find-in-mountain-array: LeetCode marks it manual: needs a hand-written entry"
+ "customer-who-visited-but-did-not-make-any-transactions: SQL / pandas / shell problem: nothing to visualize"
 ]

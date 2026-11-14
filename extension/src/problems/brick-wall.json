@@ -1,0 +1,25 @@
+{
+ "slug": "brick-wall",
+ "frontendId": "554",
+ "title": "Brick Wall",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "wall",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "wall = {wall}",
+ "visible": [
+  "wall"
+ ],
+ "call": "result = Solution().leastBricks(wall)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

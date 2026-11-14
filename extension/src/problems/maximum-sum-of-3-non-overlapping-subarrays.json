@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-sum-of-3-non-overlapping-subarrays",
+ "frontendId": "689",
+ "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}",
+ "visible": [
+  "nums",
+  "k"
+ ],
+ "call": "result = Solution().maxSumOfThreeSubarrays(nums, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

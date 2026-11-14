@@ -1,0 +1,25 @@
+{
+ "slug": "final-prices-with-a-special-discount-in-a-shop",
+ "frontendId": "1475",
+ "title": "Final Prices With a Special Discount in a Shop",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}",
+ "visible": [
+  "prices"
+ ],
+ "call": "result = Solution().finalPrices(prices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

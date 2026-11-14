@@ -1,0 +1,42 @@
+{
+ "slug": "maximum-performance-of-a-team",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1383",
+ "title": "Maximum Performance of a Team",
+ "premium": false,
+ "meta": {
+  "name": "maxPerformance",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "speed"
+   },
+   {
+    "type": "integer[]",
+    "name": "efficiency"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n2",
+  "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n3",
+  "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n4"
+ ],
+ "exampleOutputs": [
+  "60",
+  "68",
+  "72"
+ ],
+ "anyOrder": false
+}

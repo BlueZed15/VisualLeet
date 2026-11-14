@@ -1,0 +1,25 @@
+{
+ "slug": "sliding-puzzle",
+ "frontendId": "773",
+ "title": "Sliding Puzzle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "result = Solution().slidingPuzzle(board)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

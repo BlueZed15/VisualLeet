@@ -1,0 +1,28 @@
+{
+ "slug": "break-a-palindrome",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1328",
+ "title": "Break a Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "breakPalindrome",
+  "params": [
+   {
+    "name": "palindrome",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abccba\"",
+  "\"a\""
+ ],
+ "exampleOutputs": [
+  "\"aaccba\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

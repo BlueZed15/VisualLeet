@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-the-confusion-of-an-exam",
+ "frontendId": "2024",
+ "title": "Maximize the Confusion of an Exam",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "answerKey",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "answerKey = {answerKey}\nk = {k}",
+ "visible": [
+  "answerKey",
+  "k"
+ ],
+ "call": "result = Solution().maxConsecutiveAnswers(answerKey, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

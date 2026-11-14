@@ -1,0 +1,30 @@
+{
+ "slug": "search-a-2d-matrix-ii",
+ "frontendId": "240",
+ "title": "Search a 2D Matrix II",
+ "category": "Top 100 Liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}\ntarget = {target}",
+ "visible": [
+  "matrix",
+  "target"
+ ],
+ "call": "result = Solution().searchMatrix(matrix, target)\nprint(leet_str(result))",
+ "source": "hand-written",
+ "verified": true,
+ "checked": "solution"
+}

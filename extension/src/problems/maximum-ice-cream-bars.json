@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-ice-cream-bars",
+ "frontendId": "1833",
+ "title": "Maximum Ice Cream Bars",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "costs",
+   "type": "integer[]"
+  },
+  {
+   "name": "coins",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "costs = {costs}\ncoins = {coins}",
+ "visible": [
+  "costs",
+  "coins"
+ ],
+ "call": "result = Solution().maxIceCream(costs, coins)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

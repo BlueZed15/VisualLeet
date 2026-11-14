@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-time-difference",
+ "frontendId": "539",
+ "title": "Minimum Time Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "timePoints",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "timePoints = {timePoints}",
+ "visible": [
+  "timePoints"
+ ],
+ "call": "result = Solution().findMinDifference(timePoints)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "redundant-connection-ii",
+ "frontendId": "685",
+ "title": "Redundant Connection II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}",
+ "visible": [
+  "edges"
+ ],
+ "call": "result = Solution().findRedundantDirectedConnection(edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

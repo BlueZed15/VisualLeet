@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-square-numbers",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "633",
+ "title": "Sum of Square Numbers",
+ "premium": false,
+ "meta": {
+  "name": "judgeSquareSum",
+  "params": [
+   {
+    "name": "c",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

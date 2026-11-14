@@ -1,0 +1,28 @@
+{
+ "slug": "sort-array-by-parity-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "922",
+ "title": "Sort Array By Parity II",
+ "premium": false,
+ "meta": {
+  "name": "sortArrayByParityII",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,5,7]",
+  "[2,3]"
+ ],
+ "exampleOutputs": [
+  "[4,5,2,7]",
+  "[2,3]"
+ ],
+ "anyOrder": false
+}

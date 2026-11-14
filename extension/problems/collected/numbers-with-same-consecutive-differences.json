@@ -1,0 +1,32 @@
+{
+ "slug": "numbers-with-same-consecutive-differences",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "967",
+ "title": "Numbers With Same Consecutive Differences",
+ "premium": false,
+ "meta": {
+  "name": "numsSameConsecDiff",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "3\n7",
+  "2\n1"
+ ],
+ "exampleOutputs": [
+  "[181,292,707,818,929]",
+  "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
+ ],
+ "anyOrder": true
+}

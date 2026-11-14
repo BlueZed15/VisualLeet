@@ -1,0 +1,32 @@
+{
+ "slug": "reverse-string-ii",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "541",
+ "title": "Reverse String II",
+ "premium": false,
+ "meta": {
+  "name": "reverseStr",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abcdefg\"\n2",
+  "\"abcd\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"bacdfeg\"",
+  "\"bacd\""
+ ],
+ "anyOrder": false
+}

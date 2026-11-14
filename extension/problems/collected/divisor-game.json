@@ -1,0 +1,28 @@
+{
+ "slug": "divisor-game",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1025",
+ "title": "Divisor Game",
+ "premium": false,
+ "meta": {
+  "name": "divisorGame",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

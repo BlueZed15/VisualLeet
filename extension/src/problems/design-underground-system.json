@@ -1,0 +1,73 @@
+{
+ "slug": "design-underground-system",
+ "frontendId": "1396",
+ "title": "Design Underground System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "UndergroundSystem",
+ "methods": {
+  "UndergroundSystem": [],
+  "checkIn": [
+   {
+    "name": "id",
+    "type": "integer"
+   },
+   {
+    "name": "stationName",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "integer"
+   }
+  ],
+  "checkOut": [
+   {
+    "name": "id",
+    "type": "integer"
+   },
+   {
+    "name": "stationName",
+    "type": "string"
+   },
+   {
+    "name": "t",
+    "type": "integer"
+   }
+  ],
+  "getAverageTime": [
+   {
+    "name": "startStation",
+    "type": "string"
+   },
+   {
+    "name": "endStation",
+    "type": "string"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = UndergroundSystem(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "sum-of-square-numbers",
+ "frontendId": "633",
+ "title": "Sum of Square Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "c",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "c = {c}",
+ "visible": [
+  "c"
+ ],
+ "call": "result = Solution().judgeSquareSum(c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-score-from-performing-multiplication-operations",
+ "frontendId": "1770",
+ "title": "Maximum Score from Performing Multiplication Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "multipliers",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nmultipliers = {multipliers}",
+ "visible": [
+  "nums",
+  "multipliers"
+ ],
+ "call": "result = Solution().maximumScore(nums, multipliers)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "repeated-string-match",
+ "frontendId": "686",
+ "title": "Repeated String Match",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "string"
+  },
+  {
+   "name": "b",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}",
+ "visible": [
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().repeatedStringMatch(a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

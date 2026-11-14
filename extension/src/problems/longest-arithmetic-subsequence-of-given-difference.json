@@ -1,0 +1,30 @@
+{
+ "slug": "longest-arithmetic-subsequence-of-given-difference",
+ "frontendId": "1218",
+ "title": "Longest Arithmetic Subsequence of Given Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "difference",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\ndifference = {difference}",
+ "visible": [
+  "arr",
+  "difference"
+ ],
+ "call": "result = Solution().longestSubsequence(arr, difference)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

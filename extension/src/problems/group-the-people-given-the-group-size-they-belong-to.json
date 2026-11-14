@@ -1,0 +1,25 @@
+{
+ "slug": "group-the-people-given-the-group-size-they-belong-to",
+ "frontendId": "1282",
+ "title": "Group the People Given the Group Size They Belong To",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "groupSizes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "groupSizes = {groupSizes}",
+ "visible": [
+  "groupSizes"
+ ],
+ "call": "result = Solution().groupThePeople(groupSizes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "reordered-power-of-2",
+ "frontendId": "869",
+ "title": "Reordered Power of 2",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().reorderedPowerOf2(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "di-string-match",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "942",
+ "title": "DI String Match",
+ "premium": false,
+ "meta": {
+  "name": "diStringMatch",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"IDID\"",
+  "\"III\"",
+  "\"DDI\""
+ ],
+ "exampleOutputs": [
+  "[0,4,1,3,2]",
+  "[0,1,2,3]",
+  "[3,2,0,1]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1171",
+ "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+ "premium": false,
+ "meta": {
+  "name": "removeZeroSumSublists",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,-3,3,1]",
+  "[1,2,3,-3,4]",
+  "[1,2,3,-3,-2]"
+ ],
+ "exampleOutputs": [
+  "[3,1]",
+  "[1,2,4]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "sum-of-nodes-with-even-valued-grandparent",
+ "frontendId": "1315",
+ "title": "Sum of Nodes with Even-Valued Grandparent",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}",
+ "visible": [
+  "root"
+ ],
+ "call": "result = Solution().sumEvenGrandparent(root)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

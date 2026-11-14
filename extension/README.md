@@ -4,8 +4,8 @@ A Chrome (MV3) extension that runs your Python DSA solution entirely in the
 browser and shows a Python Tutor-style step-by-step visualization. Spec:
 `../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with the LeetScope
 player UI (edit / playing modes, animated steps, zoom and drag), one-click visualization of LeetCode
-test cases backed by a checked problem database (600 problems: the NeetCode 150
-checked with solutions, 450 more with their inputs checked);
+test cases backed by a checked problem database (816 problems: 166 checked with
+solutions, 650 more with their inputs checked);
 acceptance results in [`acceptance/`](acceptance/) (55/55 automated checks),
 screenshots of every UI state in [`acceptance/states/`](acceptance/states/).
 Picking up the work? Start with [`HANDOVER.md`](HANDOVER.md).
@@ -65,7 +65,7 @@ left alone.
 
 ## Problem database
 
-`src/problems/<slug>.json` (shipped, ~450 KB for 600 files) + `index.json`.
+`src/problems/<slug>.json` (shipped, ~620 KB for 816 files) + `index.json`.
 Each file holds the problem's input boxes (names and LeetCode types), the
 hidden setup and the call, with `{box}` slots the extension fills with the
 case. Files can be edited by hand. They are made and checked by:
@@ -81,7 +81,7 @@ Hand-written entries (`problems/handwritten.json`) cover problems whose test
 input doesn't match the function (Linked List Cycle's `pos`, random pointers,
 Clone Graph, LCA by value, Codec problems) and the 7 Premium ones.
 `problems/overrides.json` lists problems that accept any order or several
-answers. Checked 2026-11-15: 150 with known-good solutions, 450 with their
+answers. Checked 2026-11-15: 166 with known-good solutions, 650 with their
 inputs (`checked` in each file). More problems: `node scripts/collect-lists.mjs
 --count 400` writes a batch list; collect it with `collect-problems.mjs --list`.
 

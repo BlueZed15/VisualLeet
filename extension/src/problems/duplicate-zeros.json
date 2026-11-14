@@ -1,0 +1,25 @@
+{
+ "slug": "duplicate-zeros",
+ "frontendId": "1089",
+ "title": "Duplicate Zeros",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "Solution().duplicateZeros(arr)\nprint(leet_str(arr))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

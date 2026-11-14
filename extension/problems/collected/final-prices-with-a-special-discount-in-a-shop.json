@@ -1,0 +1,30 @@
+{
+ "slug": "final-prices-with-a-special-discount-in-a-shop",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1475",
+ "title": "Final Prices With a Special Discount in a Shop",
+ "premium": false,
+ "meta": {
+  "name": "finalPrices",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[8,4,6,2,3]",
+  "[1,2,3,4,5]",
+  "[10,1,1,6]"
+ ],
+ "exampleOutputs": [
+  "[4,2,4,2,3]",
+  "[1,2,3,4,5]",
+  "[9,0,1,6]"
+ ],
+ "anyOrder": false
+}

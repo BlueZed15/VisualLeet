@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-domino-rotations-for-equal-row",
+ "frontendId": "1007",
+ "title": "Minimum Domino Rotations For Equal Row",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tops",
+   "type": "integer[]"
+  },
+  {
+   "name": "bottoms",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "tops = {tops}\nbottoms = {bottoms}",
+ "visible": [
+  "tops",
+  "bottoms"
+ ],
+ "call": "result = Solution().minDominoRotations(tops, bottoms)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "pseudo-palindromic-paths-in-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1457",
+ "title": "Pseudo-Palindromic Paths in a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "pseudoPalindromicPaths ",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,3,1,null,1]",
+  "[2,1,1,1,3,null,null,null,null,null,1]",
+  "[9]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

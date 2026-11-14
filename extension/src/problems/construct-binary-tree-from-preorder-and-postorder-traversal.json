@@ -1,0 +1,32 @@
+{
+ "slug": "construct-binary-tree-from-preorder-and-postorder-traversal",
+ "frontendId": "889",
+ "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "preorder",
+   "type": "integer[]"
+  },
+  {
+   "name": "postorder",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "preorder = {preorder}\npostorder = {postorder}",
+ "visible": [
+  "preorder",
+  "postorder"
+ ],
+ "call": "result = Solution().constructFromPrePost(preorder, postorder)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

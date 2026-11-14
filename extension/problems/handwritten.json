@@ -4,134 +4,769 @@
     "linked-list-cycle": {
       "kind": "template",
       "boxes": [
-        { "name": "head", "type": "integer[]", "label": "head" },
-        { "name": "pos", "type": "integer", "label": "pos", "hint": "index the tail links back to; -1 means no cycle" }
+        {
+          "name": "head",
+          "type": "integer[]",
+          "label": "head"
+        },
+        {
+          "name": "pos",
+          "type": "integer",
+          "label": "pos",
+          "hint": "index the tail links back to; -1 means no cycle"
+        }
       ],
-      "helpers": ["CycleList"],
+      "helpers": [
+        "CycleList"
+      ],
       "setup": "head = build_cycle_list({head}, {pos})",
-      "visible": ["head"],
+      "visible": [
+        "head"
+      ],
       "call": "result = Solution().hasCycle(head)\nprint(leet_str(result))",
-      "tests": [["[3,2,0,-4]\n1", "true"], ["[1,2]\n0", "true"], ["[1]\n-1", "false"]]
+      "tests": [
+        [
+          "[3,2,0,-4]\n1",
+          "true"
+        ],
+        [
+          "[1,2]\n0",
+          "true"
+        ],
+        [
+          "[1]\n-1",
+          "false"
+        ]
+      ]
     },
     "copy-list-with-random-pointer": {
       "kind": "template",
-      "boxes": [{ "name": "head", "type": "list<list<integer?>>", "label": "head", "hint": "[value, index of the random node or null] per node" }],
-      "helpers": ["RandomList"],
+      "boxes": [
+        {
+          "name": "head",
+          "type": "list<list<integer?>>",
+          "label": "head",
+          "hint": "[value, index of the random node or null] per node"
+        }
+      ],
+      "helpers": [
+        "RandomList"
+      ],
       "setup": "head = build_random_list({head})",
-      "visible": ["head"],
+      "visible": [
+        "head"
+      ],
       "call": "result = Solution().copyRandomList(head)\nprint(leet_str(random_list_values(result)))",
-      "tests": [["[[7,null],[13,0],[11,4],[10,2],[1,0]]", "[[7,null],[13,0],[11,4],[10,2],[1,0]]"], ["[[1,1],[2,1]]", "[[1,1],[2,1]]"], ["[[3,null],[3,0],[3,null]]", "[[3,null],[3,0],[3,null]]"]]
+      "tests": [
+        [
+          "[[7,null],[13,0],[11,4],[10,2],[1,0]]",
+          "[[7,null],[13,0],[11,4],[10,2],[1,0]]"
+        ],
+        [
+          "[[1,1],[2,1]]",
+          "[[1,1],[2,1]]"
+        ],
+        [
+          "[[3,null],[3,0],[3,null]]",
+          "[[3,null],[3,0],[3,null]]"
+        ]
+      ]
     },
     "clone-graph": {
       "kind": "template",
-      "boxes": [{ "name": "adjList", "type": "integer[][]", "label": "adjList", "hint": "neighbors of node 1, 2, 3, …" }],
-      "helpers": ["Graph"],
+      "boxes": [
+        {
+          "name": "adjList",
+          "type": "integer[][]",
+          "label": "adjList",
+          "hint": "neighbors of node 1, 2, 3, …"
+        }
+      ],
+      "helpers": [
+        "Graph"
+      ],
       "setup": "node = build_graph({adjList})",
-      "visible": ["node"],
+      "visible": [
+        "node"
+      ],
       "call": "result = Solution().cloneGraph(node)\nprint(leet_str(graph_values(result)))",
-      "tests": [["[[2,4],[1,3],[2,4],[1,3]]", "[[2,4],[1,3],[2,4],[1,3]]"], ["[[]]", "[[]]"], ["[]", "[]"]]
+      "tests": [
+        [
+          "[[2,4],[1,3],[2,4],[1,3]]",
+          "[[2,4],[1,3],[2,4],[1,3]]"
+        ],
+        [
+          "[[]]",
+          "[[]]"
+        ],
+        [
+          "[]",
+          "[]"
+        ]
+      ]
     },
     "lowest-common-ancestor-of-a-binary-search-tree": {
       "kind": "template",
       "boxes": [
-        { "name": "root", "type": "TreeNode", "label": "root" },
-        { "name": "p", "type": "integer", "label": "p", "hint": "value of a node in the tree" },
-        { "name": "q", "type": "integer", "label": "q", "hint": "value of a node in the tree" }
+        {
+          "name": "root",
+          "type": "TreeNode",
+          "label": "root"
+        },
+        {
+          "name": "p",
+          "type": "integer",
+          "label": "p",
+          "hint": "value of a node in the tree"
+        },
+        {
+          "name": "q",
+          "type": "integer",
+          "label": "q",
+          "hint": "value of a node in the tree"
+        }
       ],
       "helpers": [],
       "setup": "root = {root}\np = find_node(root, {p})\nq = find_node(root, {q})",
-      "visible": ["root", "p", "q"],
+      "visible": [
+        "root",
+        "p",
+        "q"
+      ],
       "call": "result = Solution().lowestCommonAncestor(root, p, q)\nprint(leet_str(result.val if result else None))",
-      "tests": [["[6,2,8,0,4,7,9,null,null,3,5]\n2\n8", "6"], ["[6,2,8,0,4,7,9,null,null,3,5]\n2\n4", "2"], ["[2,1]\n2\n1", "2"]]
+      "tests": [
+        [
+          "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8",
+          "6"
+        ],
+        [
+          "[6,2,8,0,4,7,9,null,null,3,5]\n2\n4",
+          "2"
+        ],
+        [
+          "[2,1]\n2\n1",
+          "2"
+        ]
+      ]
     },
     "serialize-and-deserialize-binary-tree": {
       "kind": "template",
-      "boxes": [{ "name": "root", "type": "TreeNode", "label": "root" }],
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode",
+          "label": "root"
+        }
+      ],
       "helpers": [],
       "setup": "root = {root}",
-      "visible": ["root"],
+      "visible": [
+        "root"
+      ],
       "call": "ser = Codec()\ndeser = Codec()\nresult = deser.deserialize(ser.serialize(root))\nprint(leet_str(tree_values(result)))",
-      "tests": [["[1,2,3,null,null,4,5]", "[1,2,3,null,null,4,5]"], ["[]", "[]"]]
+      "tests": [
+        [
+          "[1,2,3,null,null,4,5]",
+          "[1,2,3,null,null,4,5]"
+        ],
+        [
+          "[]",
+          "[]"
+        ]
+      ]
     },
     "encode-and-decode-strings": {
       "kind": "template",
-      "boxes": [{ "name": "strs", "type": "string[]", "label": "strs" }],
+      "boxes": [
+        {
+          "name": "strs",
+          "type": "string[]",
+          "label": "strs"
+        }
+      ],
       "helpers": [],
       "setup": "strs = {strs}",
-      "visible": ["strs"],
+      "visible": [
+        "strs"
+      ],
       "call": "codec = Codec()\nresult = codec.decode(codec.encode(strs))\nprint(leet_str(result))",
-      "title": "Encode and Decode Strings", "frontendId": "271", "premium": true,
-      "tests": [["[\"Hello\",\"World\"]", "[\"Hello\",\"World\"]"], ["[\"\"]", "[\"\"]"]]
+      "title": "Encode and Decode Strings",
+      "frontendId": "271",
+      "premium": true,
+      "tests": [
+        [
+          "[\"Hello\",\"World\"]",
+          "[\"Hello\",\"World\"]"
+        ],
+        [
+          "[\"\"]",
+          "[\"\"]"
+        ]
+      ]
     },
     "number-of-islands": {
       "kind": "template",
-      "boxes": [{ "name": "grid", "type": "character[][]" }],
+      "boxes": [
+        {
+          "name": "grid",
+          "type": "character[][]"
+        }
+      ],
       "helpers": [],
       "setup": "grid = {grid}",
-      "visible": ["grid"],
+      "visible": [
+        "grid"
+      ],
       "call": "result = Solution().numIslands(grid)\nprint(leet_str(result))",
       "note": "LeetCode marks it manual (for other languages); in Python the input is the parameter.",
       "tests": "collected"
     },
     "walls-and-gates": {
       "kind": "template",
-      "boxes": [{ "name": "rooms", "type": "integer[][]", "hint": "-1 wall, 0 gate, 2147483647 empty room" }],
+      "boxes": [
+        {
+          "name": "rooms",
+          "type": "integer[][]",
+          "hint": "-1 wall, 0 gate, 2147483647 empty room"
+        }
+      ],
       "helpers": [],
       "setup": "rooms = {rooms}",
-      "visible": ["rooms"],
+      "visible": [
+        "rooms"
+      ],
       "call": "Solution().wallsAndGates(rooms)\nprint(leet_str(rooms))",
-      "title": "Walls and Gates", "frontendId": "286", "premium": true,
-      "tests": [["[[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]", "[[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]"], ["[[-1]]", "[[-1]]"]]
+      "title": "Walls and Gates",
+      "frontendId": "286",
+      "premium": true,
+      "tests": [
+        [
+          "[[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]",
+          "[[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]"
+        ],
+        [
+          "[[-1]]",
+          "[[-1]]"
+        ]
+      ]
     },
     "graph-valid-tree": {
       "kind": "template",
-      "boxes": [{ "name": "n", "type": "integer" }, { "name": "edges", "type": "integer[][]" }],
+      "boxes": [
+        {
+          "name": "n",
+          "type": "integer"
+        },
+        {
+          "name": "edges",
+          "type": "integer[][]"
+        }
+      ],
       "helpers": [],
       "setup": "n = {n}\nedges = {edges}",
-      "visible": ["n", "edges"],
+      "visible": [
+        "n",
+        "edges"
+      ],
       "call": "result = Solution().validTree(n, edges)\nprint(leet_str(result))",
-      "title": "Graph Valid Tree", "frontendId": "261", "premium": true,
-      "tests": [["5\n[[0,1],[0,2],[0,3],[1,4]]", "true"], ["5\n[[0,1],[1,2],[2,3],[1,3],[1,4]]", "false"]]
+      "title": "Graph Valid Tree",
+      "frontendId": "261",
+      "premium": true,
+      "tests": [
+        [
+          "5\n[[0,1],[0,2],[0,3],[1,4]]",
+          "true"
+        ],
+        [
+          "5\n[[0,1],[1,2],[2,3],[1,3],[1,4]]",
+          "false"
+        ]
+      ]
     },
     "number-of-connected-components-in-an-undirected-graph": {
       "kind": "template",
-      "boxes": [{ "name": "n", "type": "integer" }, { "name": "edges", "type": "integer[][]" }],
+      "boxes": [
+        {
+          "name": "n",
+          "type": "integer"
+        },
+        {
+          "name": "edges",
+          "type": "integer[][]"
+        }
+      ],
       "helpers": [],
       "setup": "n = {n}\nedges = {edges}",
-      "visible": ["n", "edges"],
+      "visible": [
+        "n",
+        "edges"
+      ],
       "call": "result = Solution().countComponents(n, edges)\nprint(leet_str(result))",
-      "title": "Number of Connected Components in an Undirected Graph", "frontendId": "323", "premium": true,
-      "tests": [["5\n[[0,1],[1,2],[3,4]]", "2"], ["5\n[[0,1],[1,2],[2,3],[3,4]]", "1"]]
+      "title": "Number of Connected Components in an Undirected Graph",
+      "frontendId": "323",
+      "premium": true,
+      "tests": [
+        [
+          "5\n[[0,1],[1,2],[3,4]]",
+          "2"
+        ],
+        [
+          "5\n[[0,1],[1,2],[2,3],[3,4]]",
+          "1"
+        ]
+      ]
     },
     "alien-dictionary": {
       "kind": "template",
-      "boxes": [{ "name": "words", "type": "string[]" }],
+      "boxes": [
+        {
+          "name": "words",
+          "type": "string[]"
+        }
+      ],
       "helpers": [],
       "setup": "words = {words}",
-      "visible": ["words"],
+      "visible": [
+        "words"
+      ],
       "call": "result = Solution().alienOrder(words)\nprint(leet_str(result))",
-      "title": "Alien Dictionary", "frontendId": "269", "premium": true,
-      "tests": [["[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]", "\"wertf\""], ["[\"z\",\"x\"]", "\"zx\""], ["[\"z\",\"x\",\"z\"]", "\"\""]]
+      "title": "Alien Dictionary",
+      "frontendId": "269",
+      "premium": true,
+      "tests": [
+        [
+          "[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
+          "\"wertf\""
+        ],
+        [
+          "[\"z\",\"x\"]",
+          "\"zx\""
+        ],
+        [
+          "[\"z\",\"x\",\"z\"]",
+          "\"\""
+        ]
+      ]
     },
     "meeting-rooms": {
       "kind": "template",
-      "boxes": [{ "name": "intervals", "type": "integer[][]" }],
+      "boxes": [
+        {
+          "name": "intervals",
+          "type": "integer[][]"
+        }
+      ],
       "helpers": [],
       "setup": "intervals = {intervals}",
-      "visible": ["intervals"],
+      "visible": [
+        "intervals"
+      ],
       "call": "result = Solution().canAttendMeetings(intervals)\nprint(leet_str(result))",
-      "title": "Meeting Rooms", "frontendId": "252", "premium": true,
-      "tests": [["[[0,30],[5,10],[15,20]]", "false"], ["[[7,10],[2,4]]", "true"]]
+      "title": "Meeting Rooms",
+      "frontendId": "252",
+      "premium": true,
+      "tests": [
+        [
+          "[[0,30],[5,10],[15,20]]",
+          "false"
+        ],
+        [
+          "[[7,10],[2,4]]",
+          "true"
+        ]
+      ]
     },
     "meeting-rooms-ii": {
       "kind": "template",
-      "boxes": [{ "name": "intervals", "type": "integer[][]" }],
+      "boxes": [
+        {
+          "name": "intervals",
+          "type": "integer[][]"
+        }
+      ],
       "helpers": [],
       "setup": "intervals = {intervals}",
-      "visible": ["intervals"],
+      "visible": [
+        "intervals"
+      ],
       "call": "result = Solution().minMeetingRooms(intervals)\nprint(leet_str(result))",
-      "title": "Meeting Rooms II", "frontendId": "253", "premium": true,
-      "tests": [["[[0,30],[5,10],[15,20]]", "2"], ["[[7,10],[2,4]]", "1"]]
+      "title": "Meeting Rooms II",
+      "frontendId": "253",
+      "premium": true,
+      "tests": [
+        [
+          "[[0,30],[5,10],[15,20]]",
+          "2"
+        ],
+        [
+          "[[7,10],[2,4]]",
+          "1"
+        ]
+      ]
+    },
+    "lowest-common-ancestor-of-a-binary-tree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode"
+        },
+        {
+          "name": "p",
+          "type": "integer",
+          "hint": "value of a node in the tree"
+        },
+        {
+          "name": "q",
+          "type": "integer",
+          "hint": "value of a node in the tree"
+        }
+      ],
+      "helpers": [],
+      "setup": "root = {root}\np = find_node(root, {p})\nq = find_node(root, {q})",
+      "visible": [
+        "root",
+        "p",
+        "q"
+      ],
+      "call": "result = Solution().lowestCommonAncestor(root, p, q)\nprint(leet_str(result.val if result else None))",
+      "tests": "collected"
+    },
+    "guess-number-higher-or-lower": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "n",
+          "type": "integer"
+        },
+        {
+          "name": "pick",
+          "type": "integer",
+          "hint": "the hidden number guess() compares with"
+        }
+      ],
+      "helpers": [
+        "Guess"
+      ],
+      "setup": "_vl_pick = {pick}\nn = {n}",
+      "visible": [
+        "n"
+      ],
+      "call": "result = Solution().guessNumber(n)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "populating-next-right-pointers-in-each-node": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, like a tree"
+        }
+      ],
+      "helpers": [
+        "NextTree"
+      ],
+      "setup": "root = build_next_tree({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().connect(root)\nprint(next_values_str(result))",
+      "tests": "collected"
+    },
+    "populating-next-right-pointers-in-each-node-ii": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, like a tree"
+        }
+      ],
+      "helpers": [
+        "NextTree"
+      ],
+      "setup": "root = build_next_tree({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().connect(root)\nprint(next_values_str(result))",
+      "tests": "collected"
+    },
+    "construct-quad-tree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "grid",
+          "type": "integer[][]"
+        }
+      ],
+      "helpers": [
+        "QuadTree"
+      ],
+      "setup": "grid = {grid}",
+      "visible": [
+        "grid"
+      ],
+      "call": "result = Solution().construct(grid)\nprint(leet_str(quad_values(result)))",
+      "tests": "collected"
+    },
+    "linked-list-cycle-ii": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "head",
+          "type": "integer[]"
+        },
+        {
+          "name": "pos",
+          "type": "integer",
+          "hint": "index the tail links back to; -1 means no cycle"
+        }
+      ],
+      "helpers": [
+        "CycleList",
+        "ListFind"
+      ],
+      "setup": "head = build_cycle_list({head}, {pos})",
+      "visible": [
+        "head"
+      ],
+      "call": "result = Solution().detectCycle(head)\nprint(\"no cycle\" if result is None else \"tail connects to node index \" + str(node_index(head, result)))",
+      "tests": "collected"
+    },
+    "intersection-of-two-linked-lists": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "intersectVal",
+          "type": "integer",
+          "hint": "0 means the lists don't meet"
+        },
+        {
+          "name": "listA",
+          "type": "integer[]"
+        },
+        {
+          "name": "listB",
+          "type": "integer[]"
+        },
+        {
+          "name": "skipA",
+          "type": "integer",
+          "hint": "nodes of listA before they meet"
+        },
+        {
+          "name": "skipB",
+          "type": "integer",
+          "hint": "nodes of listB before they meet"
+        }
+      ],
+      "helpers": [
+        "Intersect"
+      ],
+      "setup": "headA, headB = build_intersecting({intersectVal}, {listA}, {listB}, {skipA}, {skipB})",
+      "visible": [
+        "headA",
+        "headB"
+      ],
+      "call": "result = Solution().getIntersectionNode(headA, headB)\nprint(\"Intersected at '\" + str(result.val) + \"'\" if result else \"No intersection\")",
+      "tests": "collected"
+    },
+    "search-a-2d-matrix-ii": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "matrix",
+          "type": "integer[][]"
+        },
+        {
+          "name": "target",
+          "type": "integer"
+        }
+      ],
+      "helpers": [],
+      "setup": "matrix = {matrix}\ntarget = {target}",
+      "visible": [
+        "matrix",
+        "target"
+      ],
+      "call": "result = Solution().searchMatrix(matrix, target)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "all-nodes-distance-k-in-binary-tree": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode"
+        },
+        {
+          "name": "target",
+          "type": "integer",
+          "hint": "value of a node in the tree"
+        },
+        {
+          "name": "k",
+          "type": "integer"
+        }
+      ],
+      "helpers": [],
+      "setup": "root = {root}\ntarget = find_node(root, {target})\nk = {k}",
+      "visible": [
+        "root",
+        "target",
+        "k"
+      ],
+      "call": "result = Solution().distanceK(root, target, k)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "first-bad-version": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "n",
+          "type": "integer"
+        },
+        {
+          "name": "bad",
+          "type": "integer",
+          "hint": "the first bad version isBadVersion() knows"
+        }
+      ],
+      "helpers": [
+        "BadVersion"
+      ],
+      "setup": "_vl_bad = {bad}\nn = {n}",
+      "visible": [
+        "n"
+      ],
+      "call": "result = Solution().firstBadVersion(n)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "delete-node-in-a-linked-list": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "head",
+          "type": "ListNode"
+        },
+        {
+          "name": "node",
+          "type": "integer",
+          "hint": "value of the node to delete"
+        }
+      ],
+      "helpers": [
+        "ListFind"
+      ],
+      "setup": "head = {head}\nnode = list_find(head, {node})",
+      "visible": [
+        "head",
+        "node"
+      ],
+      "call": "Solution().deleteNode(node)\nprint(leet_str(list_values(head)))",
+      "tests": "collected"
+    },
+    "flatten-a-multilevel-doubly-linked-list": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "head",
+          "type": "list<integer?>",
+          "hint": "levels separated by nulls, like LeetCode's"
+        }
+      ],
+      "helpers": [
+        "Multilevel"
+      ],
+      "setup": "head = build_multilevel({head})",
+      "visible": [
+        "head"
+      ],
+      "call": "result = Solution().flatten(head)\nprint(leet_str(list_values(result)))",
+      "tests": "collected"
+    },
+    "flatten-nested-list-iterator": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "nestedList",
+          "type": "list<NestedInteger>"
+        }
+      ],
+      "helpers": [
+        "NestedInteger"
+      ],
+      "setup": "nestedList = {nestedList}",
+      "visible": [
+        "nestedList"
+      ],
+      "call": "it, out = NestedIterator(nestedList), []\nwhile it.hasNext():\n    out.append(it.next())\nprint(leet_str(out))",
+      "tests": "collected"
+    },
+    "delete-nodes-and-return-forest": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "TreeNode"
+        },
+        {
+          "name": "to_delete",
+          "type": "integer[]"
+        }
+      ],
+      "helpers": [],
+      "setup": "root = {root}\nto_delete = {to_delete}",
+      "visible": [
+        "root",
+        "to_delete"
+      ],
+      "call": "result = Solution().delNodes(root, to_delete)\nprint(leet_str([tree_values(t) for t in result]))",
+      "tests": "collected"
+    },
+    "n-ary-tree-level-order-traversal": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "root",
+          "type": "list<integer?>",
+          "hint": "level order, each node's children ended by null"
+        }
+      ],
+      "helpers": [
+        "NaryTree"
+      ],
+      "setup": "root = build_nary({root})",
+      "visible": [
+        "root"
+      ],
+      "call": "result = Solution().levelOrder(root)\nprint(leet_str(result))",
+      "tests": "collected"
+    },
+    "find-in-mountain-array": {
+      "kind": "template",
+      "boxes": [
+        {
+          "name": "mountainArr",
+          "type": "integer[]"
+        },
+        {
+          "name": "target",
+          "type": "integer"
+        }
+      ],
+      "helpers": [
+        "MountainArray"
+      ],
+      "setup": "mountainArr = MountainArray({mountainArr})\ntarget = {target}",
+      "visible": [
+        "mountainArr",
+        "target"
+      ],
+      "call": "result = Solution().findInMountainArray(target, mountainArr)\nprint(leet_str(result))",
+      "tests": "collected"
     }
   }
 }

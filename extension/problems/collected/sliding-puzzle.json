@@ -1,0 +1,30 @@
+{
+ "slug": "sliding-puzzle",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "773",
+ "title": "Sliding Puzzle",
+ "premium": false,
+ "meta": {
+  "name": "slidingPuzzle",
+  "params": [
+   {
+    "name": "board",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[4,0,5]]",
+  "[[1,2,3],[5,4,0]]",
+  "[[4,1,2],[5,0,3]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "-1",
+  "5"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "largest-odd-number-in-string",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1903",
+ "title": "Largest Odd Number in String",
+ "premium": false,
+ "meta": {
+  "name": "largestOddNumber",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"52\"",
+  "\"4206\"",
+  "\"35427\""
+ ],
+ "exampleOutputs": [
+  "\"5\"",
+  "\"\"",
+  "\"35427\""
+ ],
+ "anyOrder": false
+}

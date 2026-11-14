@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-operations-to-move-all-balls-to-each-box",
+ "frontendId": "1769",
+ "title": "Minimum Number of Operations to Move All Balls to Each Box",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "boxes",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "boxes = {boxes}",
+ "visible": [
+  "boxes"
+ ],
+ "call": "result = Solution().minOperations(boxes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

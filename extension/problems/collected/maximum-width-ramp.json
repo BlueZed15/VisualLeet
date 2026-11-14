@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-width-ramp",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "962",
+ "title": "Maximum Width Ramp",
+ "premium": false,
+ "meta": {
+  "name": "maxWidthRamp",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,0,8,2,1,5]",
+  "[9,8,1,0,1,9,4,0,4,1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7"
+ ],
+ "anyOrder": false
+}

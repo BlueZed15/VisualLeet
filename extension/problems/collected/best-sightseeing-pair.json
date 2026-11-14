@@ -1,0 +1,28 @@
+{
+ "slug": "best-sightseeing-pair",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1014",
+ "title": "Best Sightseeing Pair",
+ "premium": false,
+ "meta": {
+  "name": "maxScoreSightseeingPair",
+  "params": [
+   {
+    "name": "values",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[8,1,5,2,6]",
+  "[1,2]"
+ ],
+ "exampleOutputs": [
+  "11",
+  "2"
+ ],
+ "anyOrder": false
+}

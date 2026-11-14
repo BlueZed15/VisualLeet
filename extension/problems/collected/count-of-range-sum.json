@@ -1,0 +1,36 @@
+{
+ "slug": "count-of-range-sum",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "327",
+ "title": "Count of Range Sum",
+ "premium": false,
+ "meta": {
+  "name": "countRangeSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "lower",
+    "type": "integer"
+   },
+   {
+    "name": "upper",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-2,5,-1]\n-2\n2",
+  "[0]\n0\n0"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

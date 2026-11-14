@@ -1,0 +1,30 @@
+{
+ "slug": "longest-harmonious-subsequence",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "594",
+ "title": "Longest Harmonious Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "findLHS",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,2,5,2,3,7]",
+  "[1,2,3,4]",
+  "[1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

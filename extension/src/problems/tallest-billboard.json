@@ -1,0 +1,25 @@
+{
+ "slug": "tallest-billboard",
+ "frontendId": "956",
+ "title": "Tallest Billboard",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rods",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rods = {rods}",
+ "visible": [
+  "rods"
+ ],
+ "call": "result = Solution().tallestBillboard(rods)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

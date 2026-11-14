@@ -1,0 +1,32 @@
+{
+ "slug": "sequential-digits",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "1291",
+ "title": "Sequential Digits",
+ "premium": false,
+ "meta": {
+  "name": "sequentialDigits",
+  "params": [
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "name": "high",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "100\n300",
+  "1000\n13000"
+ ],
+ "exampleOutputs": [
+  "[123,234]",
+  "[1234,2345,3456,4567,5678,6789,12345]"
+ ],
+ "anyOrder": false
+}

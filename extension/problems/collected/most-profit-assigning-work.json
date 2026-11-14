@@ -1,0 +1,36 @@
+{
+ "slug": "most-profit-assigning-work",
+ "source": "leetcode.com, collected 2026-11-14",
+ "frontendId": "826",
+ "title": "Most Profit Assigning Work",
+ "premium": false,
+ "meta": {
+  "name": "maxProfitAssignment",
+  "params": [
+   {
+    "name": "difficulty",
+    "type": "integer[]"
+   },
+   {
+    "name": "profit",
+    "type": "integer[]"
+   },
+   {
+    "name": "worker",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]",
+  "[85,47,57]\n[24,66,99]\n[40,25,25]"
+ ],
+ "exampleOutputs": [
+  "100",
+  "0"
+ ],
+ "anyOrder": false
+}
