@@ -28,6 +28,18 @@ await mkdir(out, { recursive: true });
 for (const dir of ["background", "content", "ui", "runner", "python", "problems", "icons"]) {
   await cp(src(dir), path.join(out, dir), { recursive: true });
 }
+// Ship the problem DB minified. The runtime only checks whether a slug is in
+// the index, and never reads an entry's category or premium flag.
+const UNUSED_FIELDS = ["category", "premium"];
+const dbOut = path.join(out, "problems");
+const dbIndex = JSON.parse(await readFile(path.join(dbOut, "index.json"), "utf8"));
+await writeFile(path.join(dbOut, "index.json"), JSON.stringify({ problems: Object.fromEntries(Object.keys(dbIndex.problems).map((s) => [s, 1])) }));
+for (const slug of Object.keys(dbIndex.problems)) {
+  const file = path.join(dbOut, slug + ".json");
+  const entry = JSON.parse(await readFile(file, "utf8"));
+  for (const k of UNUSED_FIELDS) delete entry[k];
+  await writeFile(file, JSON.stringify(entry));
+}
 const manifest = JSON.parse(await readFile(src("manifest.json"), "utf8"));
 if (devBuild && !testBuild) manifest.name += " (DEV)";
 if (testBuild) {
