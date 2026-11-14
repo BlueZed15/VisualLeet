@@ -358,7 +358,7 @@ print(table[-1][-1])`,
   },
 };
 
-// Programs that crash or give a wrong answer, to see how VisualLeet shows
+// Programs that crash or give a wrong answer, to see how LeetScope shows
 // each kind of failure. The first comment says what to look for.
 export const ERROR_EXAMPLES = {
   "IndexError: off by one": {

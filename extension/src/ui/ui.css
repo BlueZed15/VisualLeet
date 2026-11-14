@@ -39,9 +39,7 @@ code { font-family: var(--font-code); }
 .topbar { display: flex; align-items: center; gap: 10px; padding: 0 12px; min-width: 0;
   background: var(--bg-1); border-bottom: 1px solid var(--line); }
 .logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: var(--fs-lg); letter-spacing: -.01em; white-space: nowrap; }
-.logo-mark { width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center;
-  background: linear-gradient(135deg, #ffb84d, var(--brand) 55%, #ff7a1a); color: #1a1a1a;
-  box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 4px 14px rgba(255, 161, 22, .35); font: 800 11px var(--font-code); }
+.logo-mark { width: 26px; height: 26px; flex: none; display: block; filter: drop-shadow(0 3px 10px rgba(255, 161, 22, .35)); }
 .logo b { color: var(--brand); }
 .sep { width: 1px; height: 20px; background: var(--line); flex: none; }
 .source-chip { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
@@ -203,6 +201,18 @@ button.tab:hover { color: var(--text-1); background: var(--bg-2); }
 .btn-edit { background: transparent; border-color: var(--line-strong); color: var(--text-1); }
 .btn-edit:hover:not(:disabled) { background: var(--info-soft); border-color: rgba(60,156,255,.5); color: #a7d1ff; }
 .btn-edit svg { width: 14px; height: 14px; }
+
+/* value inspector (click a variable, object, or a name in the code) */
+.inspector { position: fixed; z-index: 50; width: 320px; max-width: calc(100vw - 24px); padding: 10px 12px 12px;
+  background: var(--bg-2); border: 1px solid var(--line-strong); border-radius: var(--r-md); box-shadow: var(--shadow, 0 8px 28px rgba(0,0,0,.45)); }
+.inspector .ins-title { display: flex; align-items: center; gap: 8px; font: 700 var(--fs-md) var(--font-code); color: var(--text-1); }
+.inspector .ins-close { margin-left: auto; width: 22px; height: 22px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--text-3); font-size: 16px; cursor: pointer; }
+.inspector .ins-close:hover { background: var(--bg-3); color: var(--text-1); }
+.inspector .ins-type { margin-top: 2px; font-size: var(--fs-xs); color: var(--info); }
+.inspector .ins-value { margin: 8px 0 0; max-height: 180px; overflow: auto; padding: 8px 10px; white-space: pre-wrap; overflow-wrap: anywhere;
+  font: var(--fs-md)/1.5 var(--font-code); color: var(--val-str); background: var(--bg-0); border: 1px solid var(--line); border-radius: var(--r-sm); }
+.inspector .ins-uses { margin-top: 6px; font-size: var(--fs-xs); color: var(--text-3); }
+.inspector .ins-uses:empty { display: none; }
 
 /* the scrubber: fills the bar, thickens on hover like a video timeline */
 .step-meter { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 120px; font: 600 var(--fs-sm) var(--font-code); color: var(--text-2); white-space: nowrap; }

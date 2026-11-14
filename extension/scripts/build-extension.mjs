@@ -1,5 +1,5 @@
-// Builds the unpacked extension into dist/extension:
-//   manifest, background, UI, sandboxed runner, renderer bundle,
+// Builds the unpacked LeetScope extension into dist/extension:
+//   manifest, icons, background, UI, sandboxed runner, renderer bundle,
 //   the forked tracer (src/python), and the pinned Pyodide runtime files.
 // Load dist/extension via chrome://extensions > Developer mode > Load unpacked.
 import { build } from "esbuild";
@@ -22,7 +22,7 @@ const PYODIDE_FILES = ["pyodide.mjs", "pyodide.asm.mjs", "pyodide.asm.wasm", "py
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 
-for (const dir of ["background", "ui", "runner", "python"]) {
+for (const dir of ["background", "ui", "runner", "python", "icons"]) {
   await cp(src(dir), path.join(out, dir), { recursive: true });
 }
 const manifest = JSON.parse(await readFile(src("manifest.json"), "utf8"));

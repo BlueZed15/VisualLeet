@@ -48,10 +48,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 function friendlyError(err) {
   const text = String((err && err.message) || err);
   if (/Cannot access|cannot be scripted|chrome:\/\/|extensions gallery|Missing host permission|permission/i.test(text)) {
-    return "VisualLeet can't read that page. Pages like chrome:// and the Chrome Web Store are protected, and access ends when the page navigates. " +
-           "Click the VisualLeet toolbar button again on the page you want, or paste your code instead.";
+    return "LeetScope can't read that page. Pages like chrome:// and the Chrome Web Store are protected, and access ends when the page navigates. " +
+           "Click the LeetScope toolbar button again on the page you want, or paste your code instead.";
   }
-  if (/No tab with id/i.test(text)) return "That page was closed. Open it again, click the VisualLeet toolbar button, or paste your code instead.";
+  if (/No tab with id/i.test(text)) return "That page was closed. Open it again, click the LeetScope toolbar button, or paste your code instead.";
   return "Import failed: " + text;
 }
 

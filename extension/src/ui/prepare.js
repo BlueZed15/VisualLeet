@@ -32,8 +32,8 @@ export function hasTopLevelCode(source) {
 const PY_LANGS = new Set(["python3", "python"]);
 
 export function describeLanguage(languageId) {
-  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python (2). VisualLeet runs Python 3; most solutions work, but Python 2 syntax such as print statements will not." : "" };
-  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. VisualLeet only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept.` };
+  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python (2). LeetScope runs Python 3; most solutions work, but Python 2 syntax such as print statements will not." : "" };
+  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. LeetScope only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept.` };
 }
 
 function splitTopLevel(text, sep) {

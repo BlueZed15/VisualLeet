@@ -124,6 +124,35 @@
 @keyframes vlFlow { to { stroke-dashoffset: -10; } }
 @keyframes vlFlare { 0% { stroke: #ffd98f; stroke-width: 2.6px; } 100% { stroke-width: 1.8px; } }
 
+/* ---------- stage: zoom/pan/drag, hover, inspect (classes added by ui.js) ---------- */
+#viz td#vizLayoutTdSecond { cursor: grab; }
+#viz td#vizLayoutTdSecond.panning { cursor: grabbing; }
+#viz td#vizLayoutTdSecond.dragging-box, #viz td#vizLayoutTdSecond.dragging-box * { cursor: grabbing !important; }
+#viz .toplevelHeapObject, #viz div.stackFrame, #viz div.zombieStackFrame { cursor: move; }
+#viz td.stackFrameValue, #viz td.stackFrameVar, #viz .heapObject td { cursor: pointer; }
+#viz td#vizLayoutTdSecond.panning *, #viz td#vizLayoutTdSecond.dragging-box * { user-select: none; }
+
+/* zoom toolbar in the card's top-right corner (stays put while the card scrolls) */
+#viz .stage-bar { position: sticky; top: 6px; float: right; z-index: 7; display: flex; align-items: center; gap: 2px; margin: 6px -8px 0 8px;
+  padding: 3px; border-radius: var(--r-md); background: rgba(38,38,38,.92); border: 1px solid var(--line); backdrop-filter: blur(4px); cursor: default; }
+#viz .stage-bar button { height: 24px; min-width: 26px; padding: 0 7px; border: 0; border-radius: var(--r-sm); background: transparent;
+  color: var(--text-2); font: 700 var(--fs-md)/1 var(--font-ui); cursor: pointer; }
+#viz .stage-bar button:hover { background: var(--bg-3); color: var(--text-1); }
+#viz .stage-bar button.reset { font-size: var(--fs-xs); font-weight: 600; margin-left: 4px; border-left: 1px solid var(--line); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+#viz .stage-bar #zoom-level { min-width: 40px; text-align: center; font: 600 var(--fs-xs) var(--font-code); color: var(--text-3); }
+
+/* arrows: an invisible wide twin under each arrow takes the hover */
+#viz .vlArrowLayer path.vlHit { stroke: transparent !important; stroke-width: 12px !important; fill: none !important; stroke-dasharray: none !important;
+  animation: none !important; filter: none !important; pointer-events: stroke; cursor: pointer; }
+#viz .vlArrowLayer g.vlHover path:not(.vlHit) { stroke: #ffe3a1 !important; stroke-width: 2.8px !important; filter: drop-shadow(0 0 5px rgba(255,214,128,.85)) !important; }
+#viz .vlArrowLayer g.vlHover polygon, #viz .vlArrowLayer g.vlHover circle { fill: #ffe3a1 !important; stroke: #ffe3a1 !important; }
+#viz td.vlHover, #viz .heapObject.vlHover > table { outline: 2px solid rgba(255,214,128,.75); outline-offset: 1px; }
+
+/* the inspected variable/object, and its uses in the code */
+#viz tr.vlInspected td { box-shadow: inset 0 0 0 999px rgba(60,156,255,.16); }
+#viz .heapObject.vlInspected > table { outline: 2px solid var(--info); outline-offset: 2px; }
+#viz mark.vlMark { background: rgba(60,156,255,.3); color: inherit; border-radius: 3px; box-shadow: 0 0 0 1px rgba(60,156,255,.55); }
+
 /* ---------- step animations (classes added by ui.js) ---------- */
 
 /* a value that changed on this step: orange text for the whole step, plus a

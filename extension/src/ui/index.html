@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VisualLeet</title>
+  <title>LeetScope</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32.png">
+  <link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
   <link rel="stylesheet" href="../visualizer/renderer.css">
   <link rel="stylesheet" href="ui.css">
   <link rel="stylesheet" href="renderer-dark.css">
@@ -30,9 +32,18 @@
   </svg>
 
   <header class="topbar">
-    <span class="logo"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span><span>Visual<b>Leet</b></span></span>
+    <span class="logo">
+      <svg class="logo-mark" viewBox="0 0 128 128" aria-hidden="true">
+        <defs><linearGradient id="ls-logo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb84d"/><stop offset=".55" stop-color="#ffa116"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient></defs>
+        <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#ls-logo-bg)"/>
+        <circle cx="55" cy="55" r="31" fill="#1a1a1a" fill-opacity=".12" stroke="#1a1a1a" stroke-width="10"/>
+        <path d="M78 78 L103 103" stroke="#1a1a1a" stroke-width="15" stroke-linecap="round"/>
+        <path d="M44 43 L33 55 L44 67 M66 43 L77 55 L66 67 M59 40 L51 70" fill="none" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Leet<b>Scope</b></span>
+    </span>
     <span class="sep" aria-hidden="true"></span>
-    <button id="import-leetcode" class="btn btn-sm btn-ghost" type="button" title="Copy the code from the LeetCode editor on the page you opened VisualLeet from"><svg aria-hidden="true"><use href="#i-import"/></svg>Import from LeetCode</button>
+    <button id="import-leetcode" class="btn btn-sm btn-ghost" type="button" title="Copy the code from the LeetCode editor on the page you opened LeetScope from"><svg aria-hidden="true"><use href="#i-import"/></svg>Import from LeetCode</button>
     <button id="import-selection" class="btn btn-sm btn-ghost" type="button" title="Copy the text you have selected on that page into the code editor"><svg aria-hidden="true"><use href="#i-select"/></svg>Import selection</button>
     <span id="source-tab" class="source-chip" title="Page to import from"></span>
     <span id="status" class="status" data-state="not-initialized" role="status">Not started</span>

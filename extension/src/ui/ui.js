@@ -90,6 +90,7 @@ function setMode(m) {
 function enterEdit({ focus = false } = {}) {
   if (current && current.kind === "run") stop();
   setPlaying(false);
+  hideInspector();
   if (rendered) { rendered.destroy(); rendered = null; prevSnap = null; }
   setMode("edit");
   // in the editor, keep only the headline of an error/warning ("Line 6: IndexError...");
@@ -339,6 +340,9 @@ function retrigger(els, cls) {
 }
 
 function animateStep(viz) {
+  // keep moved boxes and zoom on every step (the renderer redrew this step's arrows before them)
+  if (!stageIsDefault()) applyStage();
+  if (inspected) requestAnimationFrame(refreshInspector);   // live value as you step
   markCurrentLine(viz);
   // drop the archive's "(see UNSUPPORTED FEATURES)" pointer from error text
   const eo = viz.domRoot && viz.domRoot[0].querySelector("#errorOutput");
@@ -403,6 +407,411 @@ function markCurrentLine(viz) {
     td.parentElement.classList.toggle("vlCurLine", i + 1 === viz.curLineNumber && i + 1 !== errLine);
     td.parentElement.classList.toggle("vlErrLine", i + 1 === errLine);
   });
+}
+
+// ---------- stage: zoom, pan, drag boxes, hover arrows, inspect values ----------
+// The frames/objects area (#dataViz) is zoomed and panned with a CSS transform; frames and
+// objects can be dragged (a translate on each, remembered across steps). The arrow layer
+// sits outside #dataViz and measures on-screen positions, so a redraw keeps it exact.
+
+const stage = { scale: 1, x: 0, y: 0, offsets: new Map(), trace: null };
+const ZOOM_MIN = 0.4, ZOOM_MAX = 2.5;
+
+const vizRoot = () => rendered && rendered.viz.domRoot && rendered.viz.domRoot[0];
+const card = () => { const r = vizRoot(); return r && r.querySelector("#vizLayoutTdSecond"); };
+const dataViz = () => { const r = vizRoot(); return r && r.querySelector("#dataViz"); };
+const layerConns = () => (rendered && rendered.viz.dataViz && rendered.viz.dataViz.jsPlumbInstance && rendered.viz.dataViz.jsPlumbInstance.conns) || [];
+
+// a draggable box: a top-level object or a frame, keyed so it can be found again next step
+function boxOf(target) {
+  const r = vizRoot();
+  if (!r || !target.closest) return null;
+  const top = target.closest('[id^="toplevel_heap_object_"]');     // a <td class="toplevelHeapObject">
+
+  if (top && r.contains(top)) return { el: top, key: top.id };
+  const frame = target.closest("div.stackFrame, div.zombieStackFrame");
+  if (frame && r.contains(frame)) return { el: frame, key: frame.dataset.frame_id ? "frame:" + frame.dataset.frame_id : frame.id };
+  return null;
+}
+function findBox(key) {
+  const r = vizRoot();
+  if (!r) return null;
+  if (key.startsWith("frame:")) return r.querySelector(`[data-frame_id="${CSS.escape(key.slice(6))}"]`);
+  return r.querySelector("#" + CSS.escape(key));
+}
+
+function applyStage({ redraw = true } = {}) {
+  const dv = dataViz();
+  if (!dv) return;
+  dv.style.transformOrigin = "0 0";
+  dv.style.transform = stage.scale === 1 && !stage.x && !stage.y ? "" : `translate(${stage.x}px, ${stage.y}px) scale(${stage.scale})`;
+  for (const [key, o] of stage.offsets) {
+    const el = findBox(key);
+    if (el) el.style.transform = `translate(${o.x}px, ${o.y}px)`;
+  }
+  const label = document.getElementById("zoom-level");
+  if (label) label.textContent = Math.round(stage.scale * 100) + "%";
+  if (redraw && rendered) rendered.viz.redrawConnectors();
+}
+const stageIsDefault = () => stage.scale === 1 && !stage.x && !stage.y && !stage.offsets.size;
+
+function resetStage() {
+  for (const key of stage.offsets.keys()) { const el = findBox(key); if (el) el.style.transform = ""; }
+  stage.scale = 1; stage.x = 0; stage.y = 0; stage.offsets.clear();
+  applyStage();
+}
+
+function zoomBy(factor, clientX, clientY) {
+  const dv = dataViz();
+  if (!dv) return;
+  const s1 = stage.scale, s2 = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, s1 * factor));
+  if (s2 === s1) return;
+  const rect = dv.getBoundingClientRect();
+  // zoom around the pointer (or the card's centre): keep that point still
+  const c = card().getBoundingClientRect();
+  const px = (clientX ?? c.left + c.width / 2) - (rect.left - stage.x);
+  const py = (clientY ?? c.top + c.height / 3) - (rect.top - stage.y);
+  stage.x = px - (px - stage.x) * (s2 / s1);
+  stage.y = py - (py - stage.y) * (s2 / s1);
+  stage.scale = s2;
+  applyStage();
+}
+
+// the small toolbar in the visualization card's corner
+let stageBar = null;
+function mountStageBar() {
+  const c = card();
+  if (!c) return;
+  if (!stageBar) {
+    stageBar = document.createElement("div");
+    stageBar.className = "stage-bar";
+    stageBar.innerHTML =
+      '<button type="button" data-zoom="out" title="Zoom out (Ctrl+wheel)" aria-label="Zoom out">−</button>' +
+      '<span id="zoom-level" title="Zoom">100%</span>' +
+      '<button type="button" data-zoom="in" title="Zoom in (Ctrl+wheel)" aria-label="Zoom in">+</button>' +
+      '<button type="button" data-zoom="reset" class="reset" title="Reset zoom, pan and moved boxes">Reset layout</button>';
+    stageBar.addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      if (b.dataset.zoom === "in") zoomBy(1.2);
+      else if (b.dataset.zoom === "out") zoomBy(1 / 1.2);
+      else resetStage();
+    });
+  }
+  c.prepend(stageBar);
+  applyStage({ redraw: false });
+}
+
+// --- dragging: a box moves it, the background pans; a press without movement is a click ---
+let drag = null;
+el.viz.addEventListener("pointerdown", (e) => {
+  const c = card();
+  if (e.button !== 0 || !c || !c.contains(e.target) || e.target.closest(".stage-bar, button, a")) return;
+  const box = boxOf(e.target);
+  drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, lastX: e.clientX, lastY: e.clientY, moved: false, box, target: e.target };
+  c.setPointerCapture(e.pointerId);
+  e.preventDefault();                                      // no text selection while dragging
+});
+let dragRaf = 0;
+el.viz.addEventListener("pointermove", (e) => {
+  if (!drag || e.pointerId !== drag.id) return;
+  const dx = e.clientX - drag.lastX, dy = e.clientY - drag.lastY;
+  if (!drag.moved && Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 4) return;
+  if (!drag.moved) { drag.moved = true; card().classList.add(drag.box ? "dragging-box" : "panning"); hideInspector(); }
+  drag.lastX = e.clientX; drag.lastY = e.clientY;
+  if (drag.box) {
+    const o = stage.offsets.get(drag.box.key) || { x: 0, y: 0 };
+    o.x += dx / stage.scale; o.y += dy / stage.scale;
+    stage.offsets.set(drag.box.key, o);
+    drag.box.el.style.transform = `translate(${o.x}px, ${o.y}px)`;
+  } else {
+    stage.x += dx; stage.y += dy;
+    dataViz().style.transform = `translate(${stage.x}px, ${stage.y}px) scale(${stage.scale})`;
+  }
+  if (!dragRaf) dragRaf = requestAnimationFrame(() => { dragRaf = 0; if (rendered) rendered.viz.redrawConnectors(); });
+});
+const endDrag = (e) => {
+  if (!drag || e.pointerId !== drag.id) return;
+  const d = drag;
+  drag = null;
+  const c = card();
+  if (c) { c.classList.remove("dragging-box", "panning"); if (c.hasPointerCapture(e.pointerId)) c.releasePointerCapture(e.pointerId); }
+  if (!d.moved && e.type === "pointerup") inspectAt(d.target, e.clientX, e.clientY);
+};
+el.viz.addEventListener("pointerup", endDrag);
+el.viz.addEventListener("pointercancel", endDrag);
+el.viz.addEventListener("wheel", (e) => {
+  const c = card();
+  if (!c || !c.contains(e.target) || !(e.ctrlKey || e.metaKey)) return;   // plain wheel scrolls as usual
+  e.preventDefault();
+  zoomBy(e.deltaY < 0 ? 1.12 : 1 / 1.12, e.clientX, e.clientY);
+}, { passive: false });
+
+// --- hovering: an arrow, a variable/field or an object lights up its arrows ---
+// (arrows are 1.5px; each gets an invisible wide twin so it's easy to point at)
+function addArrowHitAreas() {
+  for (const c of layerConns()) {
+    const p = c.canvas.querySelector("path:not(.vlHit)");
+    if (!p || c.canvas.querySelector("path.vlHit")) continue;
+    const hit = p.cloneNode(false);
+    hit.setAttribute("class", "vlHit");
+    c.canvas.insertBefore(hit, p);
+  }
+}
+const arrowObserver = new MutationObserver(() => { if (rendered) addArrowHitAreas(); });
+function watchArrows() {
+  arrowObserver.disconnect();
+  const svg = vizRoot() && vizRoot().querySelector(".vlArrowLayer");
+  if (svg) arrowObserver.observe(svg, { childList: true, subtree: true });
+  else requestAnimationFrame(() => { const s = vizRoot() && vizRoot().querySelector(".vlArrowLayer"); if (s) { arrowObserver.observe(s, { childList: true, subtree: true }); addArrowHitAreas(); } });
+}
+
+let hoverEls = [];
+function setHover(conns, ends = []) {
+  for (const x of hoverEls) x.classList.remove("vlHover");
+  hoverEls = [...conns.map((c) => c.canvas), ...ends];
+  for (const x of hoverEls) x.classList.add("vlHover");
+}
+el.viz.addEventListener("mouseover", (e) => {
+  if (drag || !rendered) return;
+  const t = e.target;
+  const g = t.closest && t.closest(".vlArrowLayer g");
+  if (g) {
+    const c = layerConns().find((k) => k.canvas === g);
+    if (c) setHover([c], [document.getElementById(c.targetId), (document.getElementById(c.sourceId) || {}).closest?.("td")].filter(Boolean));
+    return;
+  }
+  const cell = t.closest && t.closest("td.stackFrameValue, td.stackFrameVar, td.listElt, td.tupleElt, td.setElt, td.dictVal, td.instVal, td.classVal");
+  const obj = t.closest && t.closest(".heapObject");
+  if (!cell && !obj) { setHover([]); return; }
+  const valueCell = cell && cell.classList.contains("stackFrameVar") ? cell.nextElementSibling : cell;
+  const related = layerConns().filter((c) => {
+    const src = document.getElementById(c.sourceId);
+    if (valueCell && src && valueCell.contains(src)) return true;                 // pointers out of this cell
+    return !valueCell && obj && (c.targetId === obj.id || (src && obj.contains(src))); // into / out of this object
+  });
+  setHover(related);
+});
+el.viz.addEventListener("mouseleave", () => setHover([]));
+
+// --- inspecting: what a variable/field/object holds right now, and where it's used ---
+function reprValue(v, heap, depth = 0, seen = new Set()) {
+  if (v === null) return "None";
+  if (v === true) return "True";
+  if (v === false) return "False";
+  if (typeof v === "number") return String(v);
+  if (typeof v === "string") return JSON.stringify(v).replace(/^"|"$/g, "'");
+  if (!Array.isArray(v)) return String(v);
+  if (v[0] === "REF") return reprObject(v[1], heap, depth, seen);
+  if (v[0] === "IMPORTED_FAUX_PRIMITIVE" || v[0] === "SPECIAL_FLOAT") return String(v[1]);
+  return String(v[0]).toLowerCase();
+}
+function reprObject(id, heap, depth = 0, seen = new Set()) {
+  const o = heap && heap[id];
+  if (!o) return "…";
+  if (seen.has(id)) return "<cycle>";
+  if (depth > 3) return "…";
+  const s = new Set(seen).add(id);
+  const sub = (x) => reprValue(x, heap, depth + 1, s);
+  const items = (arr, f) => (arr.length > 20 ? arr.slice(0, 20).map(f).concat(`… ${arr.length - 20} more`) : arr.map(f)).join(", ");
+  switch (o[0]) {
+    case "LIST": return "[" + items(o.slice(1), sub) + "]";
+    case "TUPLE": return "(" + items(o.slice(1), sub) + (o.length === 2 ? ",)" : ")");
+    case "SET": return o.length > 1 ? "{" + items(o.slice(1), sub) + "}" : "set()";
+    case "DICT": return "{" + items(o.slice(1), ([k, v]) => sub(k) + ": " + sub(v)) + "}";
+    case "INSTANCE": return o[1] + "(" + items(o.slice(2), ([k, v]) => k + "=" + sub(v)) + ")";
+    case "INSTANCE_PPRINT": return String(o[2]);
+    case "CLASS": return "class " + o[1];
+    case "FUNCTION": return String(o[1]);
+    default: return String(o[0]).toLowerCase();
+  }
+}
+function typeOfObject(id, heap) {
+  const o = heap && heap[id];
+  if (!o) return "object";
+  const n = o.length - 1;
+  switch (o[0]) {
+    case "LIST": return `list · ${n} item${n === 1 ? "" : "s"}`;
+    case "TUPLE": return `tuple · ${n} item${n === 1 ? "" : "s"}`;
+    case "SET": return `set · ${n} item${n === 1 ? "" : "s"}`;
+    case "DICT": return `dict · ${n} key${n === 1 ? "" : "s"}`;
+    case "INSTANCE": return `${o[1]} instance`;
+    case "INSTANCE_PPRINT": return `${o[1]} instance`;
+    default: return String(o[0]).toLowerCase();
+  }
+}
+const heapIdOf = (domId) => (domId || "").replace(/^.*heap_object_/, "");
+
+let inspected = null;      // what the inspector is showing: { kind: "var", frameKey, name } | { kind: "obj", id }
+const inspector = document.createElement("div");
+inspector.className = "inspector";
+inspector.hidden = true;
+inspector.setAttribute("role", "dialog");
+document.body.append(inspector);
+
+function hideInspector() {
+  inspected = null;
+  inspector.hidden = true;
+  clearCodeMarks();
+  for (const x of document.querySelectorAll("#viz .vlInspected")) x.classList.remove("vlInspected");
+}
+
+// resolve what was clicked in the visualization into something to inspect
+function inspectAt(target, x, y) {
+  const r = vizRoot();
+  if (!r) return;
+  const cell = target.closest("td.stackFrameValue, td.stackFrameVar");
+  if (cell) {
+    const row = cell.parentElement;
+    const name = row.querySelector("td.stackFrameVar")?.textContent.trim();
+    const frame = cell.closest("div.stackFrame, div.zombieStackFrame");
+    if (name && frame) return showInspector({ kind: "var", frameKey: frame.dataset.frame_id || frame.id, name }, x, y);
+  }
+  const obj = target.closest(".heapObject");
+  if (obj) return showInspector({ kind: "obj", id: heapIdOf(obj.id) }, x, y);
+  hideInspector();
+}
+
+// click a name in the code: inspect that variable (current frame first, then globals).
+// Capture phase + stopPropagation: the renderer's own click on a code line toggles a
+// breakpoint (which changes how Next steps), so that click must not reach it.
+el.viz.addEventListener("click", (e) => {
+  const cod = e.target.closest && e.target.closest("#pyCodeOutput td.cod, #pyCodeOutput td.lineNo");
+  if (!cod || !rendered) return;
+  e.stopPropagation();
+  if (!cod.classList.contains("cod")) return;
+  const pos = document.caretPositionFromPoint ? document.caretPositionFromPoint(e.clientX, e.clientY) : null;
+  const range = !pos && document.caretRangeFromPoint ? document.caretRangeFromPoint(e.clientX, e.clientY) : null;
+  const node = pos ? pos.offsetNode : range && range.startContainer;
+  const off = pos ? pos.offset : range && range.startOffset;
+  if (!node || node.nodeType !== 3) return hideInspector();
+  const text = node.textContent;
+  let a = off, b = off;
+  while (a > 0 && /\w/.test(text[a - 1])) a--;
+  while (b < text.length && /\w/.test(text[b])) b++;
+  const word = text.slice(a, b);
+  if (!/^[A-Za-z_]\w*$/.test(word)) return hideInspector();
+  const r = vizRoot();
+  const frames = [...r.querySelectorAll("div.highlightedStackFrame"), ...r.querySelectorAll("div.stackFrame")];
+  for (const f of frames) {
+    const row = [...f.querySelectorAll("td.stackFrameVar")].find((td) => td.textContent.trim() === word);
+    if (row) return showInspector({ kind: "var", frameKey: f.dataset.frame_id || f.id, name: word }, e.clientX, e.clientY);
+  }
+  showInspector({ kind: "name", name: word }, e.clientX, e.clientY);    // not a live variable: still mark its uses
+}, true);
+
+function showInspector(what, x, y) {
+  inspected = what;
+  inspector.style.left = Math.min(window.innerWidth - 340, x + 12) + "px";
+  inspector.style.top = Math.min(window.innerHeight - 200, y + 12) + "px";
+  refreshInspector();
+}
+
+// (re)compute the inspector for the current step; called on every step while it's open
+function refreshInspector() {
+  if (!inspected || !rendered) return;
+  const viz = rendered.viz, r = vizRoot();
+  const entry = viz.curTrace[viz.curInstr] || {};
+  const heap = entry.heap || {};
+  for (const x of r.querySelectorAll(".vlInspected")) x.classList.remove("vlInspected");
+  let title = inspected.name || "object", type = "", value = "", names = [];
+  if (inspected.kind === "var") {
+    const f = r.querySelector(`[data-frame_id="${CSS.escape(String(inspected.frameKey))}"]`) || document.getElementById(inspected.frameKey);
+    const row = f && [...f.querySelectorAll("td.stackFrameVar")].find((td) => td.textContent.trim() === inspected.name);
+    names = [inspected.name];
+    if (!row) { type = "not in scope at this step"; value = "—"; }
+    else {
+      const valTd = row.nextElementSibling;
+      row.parentElement.classList.add("vlInspected");
+      const src = valTd && valTd.querySelector(".stack_pointer, [id]");
+      const conn = src && layerConns().find((c) => c.sourceId === src.id);
+      const frameName = (f.querySelector(".stackFrameHeader") || {}).textContent || "";
+      if (conn) {
+        const id = heapIdOf(conn.targetId);
+        type = typeOfObject(id, heap); value = reprObject(id, heap);
+        document.getElementById(conn.targetId)?.classList.add("vlInspected");
+      } else {
+        const span = valTd && valTd.querySelector(".numberObj, .stringObj, .boolObj, .nullObj, .importedObj");
+        type = !span ? "value" : span.classList.contains("numberObj") ? (/[.e]/i.test(span.textContent) ? "float" : "int")
+          : span.classList.contains("stringObj") ? "str" : span.classList.contains("boolObj") ? "bool"
+          : span.classList.contains("nullObj") ? "NoneType" : "function / class";
+        value = valTd ? valTd.textContent.trim() : "";
+      }
+      type += frameName ? ` · in ${frameName.trim()}` : "";
+    }
+  } else if (inspected.kind === "obj") {
+    title = typeOfObject(inspected.id, heap).split(" · ")[0];
+    type = typeOfObject(inspected.id, heap);
+    value = heap[inspected.id] ? reprObject(inspected.id, heap) : "no longer exists at this step";
+    const objEl = r.querySelector(`[id$="heap_object_${CSS.escape(inspected.id)}"]`);
+    objEl && objEl.classList.add("vlInspected");
+    // the variables pointing at it, to mark in the code
+    for (const c of layerConns()) {
+      if (heapIdOf(c.targetId) !== inspected.id) continue;
+      const src = document.getElementById(c.sourceId);
+      const nm = src && src.closest("tr") && src.closest("tr").querySelector("td.stackFrameVar");
+      if (nm) names.push(nm.textContent.trim());
+    }
+  } else {
+    names = [inspected.name];
+    type = "not a variable at this step";
+    value = "—";
+  }
+  const lines = markCodeUses([...new Set(names)]);
+  inspector.replaceChildren();
+  const h = document.createElement("div"); h.className = "ins-title"; h.textContent = title;
+  const close = document.createElement("button"); close.type = "button"; close.className = "ins-close"; close.textContent = "×"; close.title = "Close (Esc)";
+  close.addEventListener("click", hideInspector);
+  h.append(close);
+  const t = document.createElement("div"); t.className = "ins-type"; t.textContent = type;
+  const v = document.createElement("pre"); v.className = "ins-value"; v.textContent = value;
+  const u = document.createElement("div"); u.className = "ins-uses";
+  u.textContent = lines.length ? `Used on line${lines.length > 1 ? "s" : ""} ${lines.join(", ")}` : (names.length ? "Not used by name in the code" : "");
+  inspector.append(h, t, v, u);
+  inspector.hidden = false;
+}
+
+// mark every whole-word use of the names in the code panel; returns the line numbers
+function clearCodeMarks() {
+  for (const m of document.querySelectorAll("#viz mark.vlMark")) {
+    const p = m.parentNode;
+    p.replaceChild(document.createTextNode(m.textContent), m);
+    p.normalize();
+  }
+}
+function markCodeUses(names) {
+  clearCodeMarks();
+  const r = vizRoot();
+  if (!r || !names.length) return [];
+  const re = new RegExp("\\b(" + names.map((n) => n.replace(/[^\w]/g, "")).join("|") + ")\\b", "g");
+  const lines = [];
+  r.querySelectorAll("#pyCodeOutput td.cod").forEach((td, i) => {
+    const walker = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    let hit = false;
+    for (const n of nodes) {
+      const text = n.textContent;
+      re.lastIndex = 0;
+      if (!re.test(text)) continue;
+      re.lastIndex = 0;
+      const frag = document.createDocumentFragment();
+      let last = 0, m;
+      while ((m = re.exec(text))) {
+        frag.append(text.slice(last, m.index));
+        const mark = document.createElement("mark");
+        mark.className = "vlMark";
+        mark.textContent = m[0];
+        frag.append(mark);
+        last = m.index + m[0].length;
+      }
+      frag.append(text.slice(last));
+      n.parentNode.replaceChild(frag, n);
+      hit = true;
+    }
+    if (hit) lines.push(i + 1);
+  });
+  return lines;
 }
 
 // ---------- autoplay ----------
@@ -567,7 +976,7 @@ function onResult(m) {
   if (steps === 1 && last.event === "uncaught_exception") {
     // that single entry has no frames or heap, which the renderer needs
     trace.trace[0] = Object.assign({ func_name: "<module>", globals: {}, ordered_globals: [], stack_to_render: [], heap: {}, stdout: "" }, last);
-    try { el.empty.hidden = true; renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("VisualLeet: could not show the code", err); clearVisualization(); }
+    try { el.empty.hidden = true; renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("LeetScope: could not show the code", err); clearVisualization(); }
     lastErrorLine = last.line || null;
     setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg + "\nThe program didn't start. Press Edit to fix the marked line, then Visualize again.");
     finishJob({ status: "failed", steps, exception: last.exception_msg, line: last.line });
@@ -660,6 +1069,11 @@ function renderView(trace, step) {
   }
   el.vizPanel.style.setProperty("--code-w", (wide ? codeWidth() : 0) + "px");
   updateLayoutAttr();
+  // a new run starts with the default layout; a re-layout of the same run keeps zoom/moves
+  if (stage.trace !== trace) { stage.trace = trace; stage.scale = 1; stage.x = 0; stage.y = 0; stage.offsets.clear(); hideInspector(); }
+  mountStageBar();
+  watchArrows();
+  if (!stageIsDefault()) applyStage();
   prevSnap = null;
   rendered.viz.add_pytutor_hook("end_updateOutput", (a) => { animateStep(a.myViz); return [false]; });
   animateStep(rendered.viz);          // baseline for the first step (nothing animates)
@@ -685,6 +1099,7 @@ function maybeRelayout() {
 
 function clearVisualization() {
   setPlaying(false);
+  hideInspector();
   if (rendered) { rendered.destroy(); rendered = null; }
   prevSnap = null;
   updateView();
@@ -725,7 +1140,7 @@ function visualize() {
   const source = composeSource(parts);
   if (!source.trim()) { showMessage("Add some Python code first.", "info"); return Promise.resolve({ status: "rejected" }); }
   if (new TextEncoder().encode(source).length > MAX_SOURCE_BYTES) {
-    showMessage("The program is larger than 256 KiB; VisualLeet is meant for small examples.", "error");
+    showMessage("The program is larger than 256 KiB; LeetScope is meant for small examples.", "error");
     return Promise.resolve({ status: "rejected" });
   }
   if (!hasTopLevelCode(source)) {
@@ -780,7 +1195,7 @@ function loadDraft() {
 
 async function requestImport(mode) {
   if (!sourceTabId) {
-    showMessage("Open VisualLeet from the toolbar button while on the page you want to import from.", "error");
+    showMessage("Open LeetScope from the toolbar button while on the page you want to import from.", "error");
     return { ok: false, reason: "no-source-tab" };
   }
   let res;
@@ -869,7 +1284,8 @@ el.solution.addEventListener("input", updateGutter);
 el.solution.addEventListener("scroll", () => { el.gutter.scrollTop = el.solution.scrollTop; });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!el.visualize.disabled) visualize(); return; }
-  // Esc while watching: back to the code
+  // Esc: close the inspector first; otherwise, while watching, back to the code
+  if (e.key === "Escape" && inspected) { e.preventDefault(); hideInspector(); return; }
   if (e.key === "Escape" && mode === "watch" && !e.target.closest("select")) { e.preventDefault(); enterEdit({ focus: true }); return; }
   // Player keys (like a video player): Space play/pause, ← → one step, Shift+← Shift+→ start/end.
   // Active unless you're typing, or on a control that isn't part of the player.
