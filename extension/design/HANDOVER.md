@@ -75,7 +75,7 @@ small-screen behaviour.
 
 ## Working rules (important)
 
-- **Another Claude session is building the real extension in the same
+- **Another session is building the real extension in the same
   folder at the same time** (no git worktree). Stay inside
   `extension/design/`. Do **not** edit `extension/src/`, `scripts/`,
   `bench/`, `tests/`, `package.json`, or the archive
