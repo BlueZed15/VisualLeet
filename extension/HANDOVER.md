@@ -212,8 +212,6 @@ cd ..
 Bench pages (renderer old vs new): `npm run build:renderer`,
 `npm run build:baseline`, `node scripts/serve-bench.mjs`, open
 `http://127.0.0.1:8765/bench/index.html` or `/bench/compare.html`.
-`.claude/launch.json` (workspace root) has a `renderer-bench` entry for the
-in-app browser.
 
 The test build is needed because automation can't grant activeTab. The
 acceptance script maps leetcode.com to a local **HTTPS** fixture (self-signed
