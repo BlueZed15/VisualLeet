@@ -9,7 +9,7 @@ import { createLeetCodeMode } from "./leetcode-mode.js";
 import { resultLine } from "./harness.js";
 
 const PROTOCOL = 1;
-const LIMITS = { wallMs: 5000, maxTraceBytes: 10 * 1024 * 1024 };
+const LIMITS = { wallMs: 10000, maxTraceBytes: 10 * 1024 * 1024 };
 const MAX_SOURCE_BYTES = 256 * 1024;
 const BACKSTOP_EXTRA_MS = 4000;   // if the sandbox itself stops answering
 const DRAFT_KEY = "visualleet.draft.v1";
@@ -191,7 +191,7 @@ function placeholderFor() {
       if (msg) return { kind: "error", title: "Your code didn't run", detail: msg, body: "Fix the problem and press Visualize again.", eats: true };
       break;
     case "timed out":
-      return { kind: "error", title: "Stopped after 5 seconds", body: msg || "The program ran too long. Try a smaller input.", eats: true };
+      return { kind: "error", title: `Stopped after ${LIMITS.wallMs / 1000} seconds`, body: msg || "The program ran too long. Try a smaller input.", eats: true };
     case "stopped":
       return { kind: "info", title: "Run stopped", body: "Your code is unchanged. Press Visualize to run it again.", eats: true };
   }

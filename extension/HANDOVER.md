@@ -148,7 +148,7 @@ ui/index.html + ui.js  (extension page, CSP script-src 'self')
    v
 runner/sandbox.html + sandbox.js  (manifest sandbox: opaque origin, no chrome.*,
    |                               CSP connect-src 'none'; compiles wasm once;
-   |                               active + spare worker; 5 s watchdog)
+   |                               active + spare worker; 10 s watchdog)
    v
 runner/worker.js in a blob: worker  (overrides fetch to serve the in-memory files,
                                      loads Pyodide via createPyodideModule,

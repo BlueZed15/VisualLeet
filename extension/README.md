@@ -53,7 +53,7 @@ the same extension plus developer tools in the page: built-in examples,
 editors; what runs is exactly Setup + Solution + Test call, and the
 visualizer shows that combined program). The normal build is LeetCode-only.
 
-Limits: 1,000 steps, 5 s, 64 KiB printed output, 10 MiB trace, 256 KiB
+Limits: 1,000 steps, 10 s, 64 KiB printed output, 10 MiB trace, 256 KiB
 source. Hitting one is reported ("limit reached" / "timed out"); a partial
 result is never shown as complete.
 
@@ -98,7 +98,7 @@ ui/index.html  (extension page, CSP script-src 'self'): editors, status, rendere
    |  fetches an allowlist of 7 packaged files once; postMessage to its own frame only
    v
 runner/sandbox.html  (manifest sandbox: opaque origin, no chrome.*, connect-src 'none')
-   |  compiles the wasm once; keeps an active + a spare Python worker; 5 s watchdog
+   |  compiles the wasm once; keeps an active + a spare Python worker; 10 s watchdog
    v
 blob: workers  (Pyodide 314.0.8 / Python 3.14.2 + forked tracer; fetch served from memory)
 ```

@@ -321,7 +321,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     await ev(() => visualleet.whenReady());
     const back = Date.now() - t0;
     const next = await run("print('after timeout')\n");
-    check("limits", "Native loop killed by the 5 s watchdog; spare takes over at once", busy.status === "timed out" && next.stdout === "after timeout\n" && back < 500, { killedAfterMs: killed, readyAgainMs: back });
+    check("limits", "Native loop killed by the 10 s watchdog; spare takes over at once", busy.status === "timed out" && next.stdout === "after timeout\n" && back < 500, { killedAfterMs: killed, readyAgainMs: back });
     results.timings.watchdogKillMs = killed;
     results.timings.readyAfterTimeoutMs = back;
   }

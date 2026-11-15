@@ -115,7 +115,7 @@
   function startJob(kind, msg) {
     if (!active || !active.ready) { toParent({ type: "error", runId: msg.runId, code: "not-ready", message: "Runtime is not ready." }); return; }
     if (job) { toParent({ type: "error", runId: msg.runId, code: "busy", message: "A run is already in progress." }); return; }
-    const wallMs = Math.min(Math.max(Number(msg.limits && msg.limits.wallMs) || 5000, 100), 60000);
+    const wallMs = Math.min(Math.max(Number(msg.limits && msg.limits.wallMs) || 10000, 100), 60000);
     const runId = msg.runId;
     job = {
       runId, kind,
