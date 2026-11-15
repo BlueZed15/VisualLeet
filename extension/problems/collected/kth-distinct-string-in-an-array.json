@@ -1,0 +1,34 @@
+{
+ "slug": "kth-distinct-string-in-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2053",
+ "title": "Kth Distinct String in an Array",
+ "premium": false,
+ "meta": {
+  "name": "kthDistinct",
+  "params": [
+   {
+    "name": "arr",
+    "type": "string[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]\n2",
+  "[\"aaa\",\"aa\",\"a\"]\n1",
+  "[\"a\",\"b\",\"a\"]\n3"
+ ],
+ "exampleOutputs": [
+  "\"a\"",
+  "\"aaa\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

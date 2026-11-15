@@ -1,0 +1,30 @@
+{
+ "slug": "most-beautiful-item-for-each-query",
+ "frontendId": "2070",
+ "title": "Most Beautiful Item for Each Query",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "items",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "items = {items}\nqueries = {queries}",
+ "visible": [
+  "items",
+  "queries"
+ ],
+ "call": "result = Solution().maximumBeauty(items, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

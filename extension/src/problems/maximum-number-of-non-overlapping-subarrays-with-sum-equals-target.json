@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+ "frontendId": "1546",
+ "title": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}",
+ "visible": [
+  "nums",
+  "target"
+ ],
+ "call": "result = Solution().maxNonOverlapping(nums, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

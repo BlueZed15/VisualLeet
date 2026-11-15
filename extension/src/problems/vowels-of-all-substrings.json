@@ -1,0 +1,25 @@
+{
+ "slug": "vowels-of-all-substrings",
+ "frontendId": "2063",
+ "title": "Vowels of All Substrings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}",
+ "visible": [
+  "word"
+ ],
+ "call": "result = Solution().countVowels(word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

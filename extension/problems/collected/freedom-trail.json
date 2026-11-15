@@ -1,0 +1,32 @@
+{
+ "slug": "freedom-trail",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "514",
+ "title": "Freedom Trail",
+ "premium": false,
+ "meta": {
+  "name": "findRotateSteps",
+  "params": [
+   {
+    "name": "ring",
+    "type": "string"
+   },
+   {
+    "name": "key",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"godding\"\n\"gd\"",
+  "\"godding\"\n\"godding\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "13"
+ ],
+ "anyOrder": false
+}

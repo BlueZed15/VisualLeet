@@ -1,0 +1,36 @@
+{
+ "slug": "sort-integers-by-the-power-value",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1387",
+ "title": "Sort Integers by The Power Value",
+ "premium": false,
+ "meta": {
+  "name": "getKth",
+  "params": [
+   {
+    "name": "lo",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "hi"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "12\n15\n2",
+  "7\n11\n4"
+ ],
+ "exampleOutputs": [
+  "13",
+  "7"
+ ],
+ "anyOrder": false
+}

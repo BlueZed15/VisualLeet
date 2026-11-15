@@ -1,0 +1,34 @@
+{
+ "slug": "sum-of-mutated-array-closest-to-target",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1300",
+ "title": "Sum of Mutated Array Closest to Target",
+ "premium": false,
+ "meta": {
+  "name": "findBestValue",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,9,3]\n10",
+  "[2,3,5]\n10",
+  "[60864,25176,27249,21296,20204]\n56803"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5",
+  "11361"
+ ],
+ "anyOrder": false
+}

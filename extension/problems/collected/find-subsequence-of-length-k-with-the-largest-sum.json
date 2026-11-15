@@ -1,0 +1,34 @@
+{
+ "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2099",
+ "title": "Find Subsequence of Length K With the Largest Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxSubsequence",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,3,3]\n2",
+  "[-1,-2,3,4]\n3",
+  "[3,4,3,3]\n2"
+ ],
+ "exampleOutputs": [
+  "[3,3]",
+  "[-1,3,4]",
+  "[3,4]"
+ ],
+ "anyOrder": false
+}

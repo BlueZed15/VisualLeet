@@ -1,0 +1,28 @@
+{
+ "slug": "image-smoother",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "661",
+ "title": "Image Smoother",
+ "premium": false,
+ "meta": {
+  "name": "imageSmoother",
+  "params": [
+   {
+    "name": "img",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,1],[1,0,1],[1,1,1]]",
+  "[[100,200,100],[200,50,200],[100,200,100]]"
+ ],
+ "exampleOutputs": [
+  "[[0,0,0],[0,0,0],[0,0,0]]",
+  "[[137,141,137],[141,138,141],[137,141,137]]"
+ ],
+ "anyOrder": false
+}

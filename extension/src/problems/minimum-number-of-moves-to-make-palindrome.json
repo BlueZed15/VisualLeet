@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-moves-to-make-palindrome",
+ "frontendId": "2193",
+ "title": "Minimum Number of Moves to Make Palindrome",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().minMovesToMakePalindrome(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

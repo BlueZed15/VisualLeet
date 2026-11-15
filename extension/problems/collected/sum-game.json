@@ -1,0 +1,30 @@
+{
+ "slug": "sum-game",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1927",
+ "title": "Sum Game",
+ "premium": false,
+ "meta": {
+  "name": "sumGame",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"5023\"",
+  "\"25??\"",
+  "\"?3295???\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

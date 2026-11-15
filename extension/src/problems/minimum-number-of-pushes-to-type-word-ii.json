@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-pushes-to-type-word-ii",
+ "frontendId": "3016",
+ "title": "Minimum Number of Pushes to Type Word II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}",
+ "visible": [
+  "word"
+ ],
+ "call": "result = Solution().minimumPushes(word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "nth-magical-number",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "878",
+ "title": "Nth Magical Number",
+ "premium": false,
+ "meta": {
+  "name": "nthMagicalNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "a",
+    "type": "integer"
+   },
+   {
+    "name": "b",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n2\n3",
+  "4\n2\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "6"
+ ],
+ "anyOrder": false
+}

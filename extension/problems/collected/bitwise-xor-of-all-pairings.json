@@ -1,0 +1,32 @@
+{
+ "slug": "bitwise-xor-of-all-pairings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2425",
+ "title": "Bitwise XOR of All Pairings",
+ "premium": false,
+ "meta": {
+  "name": "xorAllNums",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,3]\n[10,2,5,0]",
+  "[1,2]\n[3,4]"
+ ],
+ "exampleOutputs": [
+  "13",
+  "0"
+ ],
+ "anyOrder": false
+}

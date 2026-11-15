@@ -1,0 +1,30 @@
+{
+ "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1909",
+ "title": "Remove One Element to Make the Array Strictly Increasing",
+ "premium": false,
+ "meta": {
+  "name": "canBeIncreasing",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,10,5,7]",
+  "[2,3,1,2]",
+  "[1,1,1]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

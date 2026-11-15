@@ -1,0 +1,32 @@
+{
+ "slug": "kth-largest-sum-in-a-binary-tree",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2583",
+ "title": "Kth Largest Sum in a Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "kthLargestLevelSum",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[5,8,9,2,1,3,7,4,6]\n2",
+  "[1,2,null,3]\n1"
+ ],
+ "exampleOutputs": [
+  "13",
+  "3"
+ ],
+ "anyOrder": false
+}

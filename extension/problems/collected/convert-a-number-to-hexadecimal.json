@@ -1,0 +1,28 @@
+{
+ "slug": "convert-a-number-to-hexadecimal",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "405",
+ "title": "Convert a Number to Hexadecimal",
+ "premium": false,
+ "meta": {
+  "name": "toHex",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "26",
+  "-1"
+ ],
+ "exampleOutputs": [
+  "\"1a\"",
+  "\"ffffffff\""
+ ],
+ "anyOrder": false
+}

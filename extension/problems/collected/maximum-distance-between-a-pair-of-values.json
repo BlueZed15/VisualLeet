@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-distance-between-a-pair-of-values",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1855",
+ "title": "Maximum Distance Between a Pair of Values",
+ "premium": false,
+ "meta": {
+  "name": "maxDistance",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[55,30,5,4,2]\n[100,20,10,10,5]",
+  "[2,2,2]\n[10,10,1]",
+  "[30,29,19,5]\n[25,25,25,25,25]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

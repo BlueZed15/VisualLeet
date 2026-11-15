@@ -1,0 +1,28 @@
+{
+ "slug": "find-duplicate-file-in-system",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "609",
+ "title": "Find Duplicate File in System",
+ "premium": false,
+ "meta": {
+  "name": "findDuplicate",
+  "params": [
+   {
+    "name": "paths",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
+  "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]"
+ ],
+ "exampleOutputs": [
+  "[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]",
+  "[[\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+ ],
+ "anyOrder": true
+}

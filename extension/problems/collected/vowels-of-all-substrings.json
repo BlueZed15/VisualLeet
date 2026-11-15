@@ -1,0 +1,30 @@
+{
+ "slug": "vowels-of-all-substrings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2063",
+ "title": "Vowels of All Substrings",
+ "premium": false,
+ "meta": {
+  "name": "countVowels",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"aba\"",
+  "\"abc\"",
+  "\"ltcd\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

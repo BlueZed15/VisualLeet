@@ -1,0 +1,40 @@
+{
+ "slug": "range-sum-of-sorted-subarray-sums",
+ "frontendId": "1508",
+ "title": "Range Sum of Sorted Subarray Sums",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nn = {n}\nleft = {left}\nright = {right}",
+ "visible": [
+  "nums",
+  "n",
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().rangeSum(nums, n, left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

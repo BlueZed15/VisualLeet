@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-consecutive-cards-to-pick-up",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2260",
+ "title": "Minimum Consecutive Cards to Pick Up",
+ "premium": false,
+ "meta": {
+  "name": "minimumCardPickup",
+  "params": [
+   {
+    "name": "cards",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,4,2,3,4,7]",
+  "[1,0,5,3]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

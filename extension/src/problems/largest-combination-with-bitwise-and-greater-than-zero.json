@@ -1,0 +1,25 @@
+{
+ "slug": "largest-combination-with-bitwise-and-greater-than-zero",
+ "frontendId": "2275",
+ "title": "Largest Combination With Bitwise AND Greater Than Zero",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candidates",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "candidates = {candidates}",
+ "visible": [
+  "candidates"
+ ],
+ "call": "result = Solution().largestCombination(candidates)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

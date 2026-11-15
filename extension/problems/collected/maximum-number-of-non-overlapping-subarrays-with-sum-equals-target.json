@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1546",
+ "title": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
+ "premium": false,
+ "meta": {
+  "name": "maxNonOverlapping",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,1,1]\n2",
+  "[-1,3,5,1,4,2,-9]\n6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

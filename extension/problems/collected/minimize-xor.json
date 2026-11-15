@@ -1,0 +1,32 @@
+{
+ "slug": "minimize-xor",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2429",
+ "title": "Minimize XOR",
+ "premium": false,
+ "meta": {
+  "name": "minimizeXor",
+  "params": [
+   {
+    "name": "num1",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "num2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n5",
+  "1\n12"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

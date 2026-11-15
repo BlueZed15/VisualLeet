@@ -1,0 +1,34 @@
+{
+ "slug": "maximize-happiness-of-selected-children",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3075",
+ "title": "Maximize Happiness of Selected Children",
+ "premium": false,
+ "meta": {
+  "name": "maximumHappinessSum",
+  "params": [
+   {
+    "name": "happiness",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n2",
+  "[1,1,1,1]\n2",
+  "[2,3,4,5]\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1",
+  "5"
+ ],
+ "anyOrder": false
+}

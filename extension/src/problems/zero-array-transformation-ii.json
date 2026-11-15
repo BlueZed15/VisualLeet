@@ -1,0 +1,30 @@
+{
+ "slug": "zero-array-transformation-ii",
+ "frontendId": "3356",
+ "title": "Zero Array Transformation II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nqueries = {queries}",
+ "visible": [
+  "nums",
+  "queries"
+ ],
+ "call": "result = Solution().minZeroArray(nums, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

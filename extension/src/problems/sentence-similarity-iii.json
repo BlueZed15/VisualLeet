@@ -1,0 +1,30 @@
+{
+ "slug": "sentence-similarity-iii",
+ "frontendId": "1813",
+ "title": "Sentence Similarity III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentence1",
+   "type": "string"
+  },
+  {
+   "name": "sentence2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentence1 = {sentence1}\nsentence2 = {sentence2}",
+ "visible": [
+  "sentence1",
+  "sentence2"
+ ],
+ "call": "result = Solution().areSentencesSimilar(sentence1, sentence2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

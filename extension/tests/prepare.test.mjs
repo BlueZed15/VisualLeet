@@ -72,5 +72,5 @@ test("without examples the call has TODO values", () => {
 test("non-Python editors are refused with an explanation", () => {
   assert.equal(describeLanguage("python3").ok, true);
   assert.equal(describeLanguage("cpp").ok, false);
-  assert.match(describeLanguage("cpp").note, /only runs Python 3/);
+  assert.match(describeLanguage("cpp").note, /LeetScope runs Python 3/);
 });

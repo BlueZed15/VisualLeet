@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-the-array-increasing",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1827",
+ "title": "Minimum Operations to Make the Array Increasing",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1]",
+  "[1,5,2,4,1]",
+  "[8]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "14",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-v",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1563",
+ "title": "Stone Game V",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameV",
+  "params": [
+   {
+    "name": "stoneValue",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,2,3,4,5,5]",
+  "[7,7,7,7,7,7,7]",
+  "[4]"
+ ],
+ "exampleOutputs": [
+  "18",
+  "28",
+  "0"
+ ],
+ "anyOrder": false
+}

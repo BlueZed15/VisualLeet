@@ -1,0 +1,30 @@
+{
+ "slug": "find-good-days-to-rob-the-bank",
+ "frontendId": "2100",
+ "title": "Find Good Days to Rob the Bank",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "security",
+   "type": "integer[]"
+  },
+  {
+   "name": "time",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "security = {security}\ntime = {time}",
+ "visible": [
+  "security",
+  "time"
+ ],
+ "call": "result = Solution().goodDaysToRobBank(security, time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

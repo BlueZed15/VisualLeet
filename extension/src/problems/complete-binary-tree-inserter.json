@@ -1,0 +1,48 @@
+{
+ "slug": "complete-binary-tree-inserter",
+ "frontendId": "919",
+ "title": "Complete Binary Tree Inserter",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "CBTInserter",
+ "methods": {
+  "CBTInserter": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "insert": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "get_root": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops",
+  "TreeNode"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = CBTInserter(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

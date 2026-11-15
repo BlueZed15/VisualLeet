@@ -1,0 +1,28 @@
+{
+ "slug": "path-in-zigzag-labelled-binary-tree",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1104",
+ "title": "Path In Zigzag Labelled Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "pathInZigZagTree",
+  "params": [
+   {
+    "name": "label",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "14",
+  "26"
+ ],
+ "exampleOutputs": [
+  "[1,3,4,14]",
+  "[1,2,6,10,26]"
+ ],
+ "anyOrder": false
+}

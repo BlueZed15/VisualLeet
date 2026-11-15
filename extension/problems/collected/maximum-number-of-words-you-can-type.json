@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-number-of-words-you-can-type",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1935",
+ "title": "Maximum Number of Words You Can Type",
+ "premium": false,
+ "meta": {
+  "name": "canBeTypedWords",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "brokenLetters"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"hello world\"\n\"ad\"",
+  "\"leet code\"\n\"lt\"",
+  "\"leet code\"\n\"e\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

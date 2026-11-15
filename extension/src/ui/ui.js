@@ -36,7 +36,11 @@ const el = {
   vizPanel: document.querySelector(".viz-panel"), codeEditor: $("code-editor"), gutter: document.querySelector("#code-editor .gutter"),
   edit: $("edit"), editArea: $("edit-area"),
   modeToggle: $("mode-toggle"), lcCases: $("lc-cases"), editLeft: $("edit-left"), codeCard: document.querySelector(".code-card"),
+  caseRun: $("case-run"), vizHead: $("viz-head"), playerBar: $("player-bar"), lcSide: $("lc-side"), sidePh: $("side-ph"),
+  diagStrip: $("diag-strip"), lcLink: $("lc-link"),
 };
+el.codeBody = el.codeCard.querySelector(".code-body");
+el.sideHead = el.lcSide.querySelector(".viz-head");
 
 // ---------- LeetCode mode: a problem from LeetScope's database + its test cases ----------
 // (paste mode is everything else: the code editor + Test call / Setup / input())
@@ -54,7 +58,7 @@ async function loadEntry(slug) {
   try { return await (await fetch(chrome.runtime.getURL(`problems/${slug}.json`))).json(); } catch { return null; }
 }
 const lc = createLeetCodeMode({
-  tabs: $("case-tabs"), add: $("case-add"), del: $("case-delete"), fields: $("case-fields"), title: $("lc-title"),
+  tabs: $("case-tabs"), add: $("case-add"), fields: $("case-fields"), title: $("lc-title"),
   badge: $("lc-badge"), expected: $("case-expected"), verdict: $("case-verdict"), source: $("case-source"),
   call: $("lc-call"), callReset: $("lc-call-reset"), callNote: $("lc-call-note"), setup: $("lc-setup"),
 }, {
@@ -77,6 +81,7 @@ let lastRun = {};
 let lastTrace = null;
 let initStart = 0;
 let lastInitMs = null;
+let sourceUrl = "";        // the page the code and cases were read from
 let sourceTabId = Number(new URLSearchParams(location.search).get("sourceTab")) || null;
 const waiters = { ready: [], stats: [] };
 
@@ -96,13 +101,22 @@ function setStatus(s, message = "", kind = "error") {
   const crashed = runCrashed && s === "complete";
   el.status.textContent = crashed ? "Error" : STATUS_LABEL[s] || s;
   el.status.dataset.state = crashed ? "failed" : s.replace(/\s+/g, "-");
-  el.status.hidden = !crashed && (s === "ready" || s === "complete");    // nothing to say when all is well
+  el.status.hidden = true;     // no status pill in this design: Run shows a run, messages show the rest
   showMessage(message, kind);
-  const busy = s === "running" || s === "preparing visualization";
-  el.visualize.disabled = busy || !runtimeInfo;
+  const busy = isBusy();
+  el.visualize.disabled = !busy && !runtimeInfo;
   el.stop.disabled = !busy || s !== "running";
-  el.stop.hidden = s !== "running";
+  el.stop.hidden = true;
+  // while a run is going, Run becomes Stop (three hopping dots)
+  for (const b of [el.visualize, el.caseRun]) {
+    b.classList.toggle("running", busy);
+    b.querySelector(".run-label").textContent = busy ? "Stop" : "Run";
+    b.setAttribute("aria-label", busy ? "Stop" : "Run");
+    b.title = busy ? "Stop" : (b === el.caseRun ? "Run this case (Ctrl+Enter)" : "Run and visualize (Ctrl+Enter)");
+  }
 }
+const isBusy = () => status === "running" || status === "preparing visualization";
+function runOrStop() { if (isBusy()) stop(); else visualize(); }
 
 // ---------- modes: edit the code / watch it run ----------
 
@@ -183,58 +197,79 @@ function placeholderFor() {
   switch (status) {
     case "not initialized":
     case "initializing":
-      return { kind: "loading", title: "Starting Python…", body: "Loading the bundled runtime. This happens once per tab and takes a couple of seconds.", eats: msgKind === "info" };
+      return { kind: "loading", title: "Starting Python…", body: "Python loads once in each LeetScope tab. This takes a few seconds.", eats: msgKind === "info" };
     case "running":
     case "preparing visualization":
       return { kind: "loading", title: "Running your code…", body: "Recording every step. Press Stop if it takes too long.", eats: true };
     case "failed":
-      if (msg) return { kind: "error", title: "Your code didn't run", detail: msg, body: "Fix the problem and press Visualize again.", eats: true };
+      if (msg) return { kind: "error", title: "Your code didn't run", detail: msg, body: "Fix the code and press Run again.", eats: true };
       break;
     case "timed out":
-      return { kind: "error", title: `Stopped after ${LIMITS.wallMs / 1000} seconds`, body: msg || "The program ran too long. Try a smaller input.", eats: true };
+      return { kind: "error", title: `Stopped after ${LIMITS.wallMs / 1000} seconds`, body: msg || "Your code ran too long. Try a smaller input.", eats: true };
     case "stopped":
-      return { kind: "info", title: "Run stopped", body: "Your code is unchanged. Press Visualize to run it again.", eats: true };
+      return { kind: "info", title: "Run stopped", body: "Your code is unchanged. Press Run to start again.", eats: true };
   }
-  return { kind: "empty", title: "Ready when you are", steps: ["Paste, import or load an example", "Add a test call", "Press Visualize"] };
+  return { kind: "empty", title: "Ready when you are", steps: ["Paste, import or load an example", "Add a test call", "Press Run"] };
 }
+
+// fill a placeholder element with a state's icon, title and text
+function fillPlaceholder(box, ph) {
+  const parts = [];
+  if (ph.kind === "loading") parts.push(Object.assign(document.createElement("div"), { className: "ph-dots", innerHTML: "<i></i><i></i><i></i>" }));
+  else if (ph.kind === "empty") parts.push(Object.assign(document.createElement("img"), { className: "ph-mark", src: "../icons/mark.svg", alt: "" }));
+  parts.push(Object.assign(document.createElement("div"), { className: "ph-title", textContent: ph.title }));
+  if (ph.detail) parts.push(Object.assign(document.createElement("pre"), { className: "ph-detail", textContent: ph.detail }));
+  if (ph.body) parts.push(Object.assign(document.createElement("div"), { className: "ph-body", textContent: ph.body }));
+  if (ph.steps) {
+    const ol = document.createElement("ol");
+    ol.className = "ph-steps";
+    ph.steps.forEach((t, i) => {
+      const li = document.createElement("li");
+      li.append(Object.assign(document.createElement("span"), { className: "n", textContent: String(i + 1) }), t);
+      ol.append(li);
+    });
+    parts.push(ol);
+  }
+  box.dataset.kind = ph.kind;
+  box.replaceChildren(...parts);
+}
+
+// a run is on screen: always in LeetCode mode, only while watching in paste mode
+const traceShown = () => !!rendered && (mode !== "edit" || lcMode);
 
 function updateView() {
   if (!el.vizBody) return;
-  const busy = status === "running" || status === "preparing visualization";
+  const busy = isBusy();
   el.vizBody.classList.toggle("busy", busy && !!rendered);
   const editing = mode === "edit";
-  const frozen = editing && lcMode && !!rendered;     // editing beside the last run (LeetCode mode)
-  el.editArea.hidden = !editing || frozen;
-  el.viz.hidden = editing && !frozen;
+  const shown = traceShown();
+  const frozen = editing && shown;     // editing beside the last run (LeetCode mode)
+  // LeetCode mode keeps the code and cases on screen while a run starts
+  // the code stays on screen while a run starts (so Run/Stop can be pressed); the
+  // Visualizer side panel shows the state until there's a run to show
+  el.editArea.hidden = shown;
+  const side = lcMode || !editing;
+  el.vizPanel.dataset.side = side ? "1" : "";
+  // (renderView unhides #viz before drawing: the renderer skips hidden containers)
+  el.viz.hidden = !shown;
   el.viz.classList.toggle("vlEditing", frozen);
+  el.edit.setAttribute("aria-pressed", String(editing));
   let eaten = false;
-  if (editing || rendered) {
-    el.empty.hidden = true;
-  } else {
+  el.empty.hidden = true;
+  if (!shown) {
     const ph = placeholderFor();
-    eaten = !!ph.eats;
-    const parts = [Object.assign(document.createElement("div"), { className: "ph-icon" }),
-      Object.assign(document.createElement("div"), { className: "ph-title", textContent: ph.title })];
-    parts[0].setAttribute("aria-hidden", "true");
-    if (ph.detail) parts.push(Object.assign(document.createElement("pre"), { className: "ph-detail", textContent: ph.detail }));
-    if (ph.body) parts.push(Object.assign(document.createElement("div"), { className: "ph-body", textContent: ph.body }));
-    if (ph.steps) {
-      const ol = document.createElement("ol");
-      ol.className = "ph-steps";
-      ph.steps.forEach((t, i) => {
-        const li = document.createElement("li");
-        li.append(Object.assign(document.createElement("b"), { textContent: String(i + 1) }), t);
-        ol.append(li);
-      });
-      parts.push(ol);
+    if (side) {
+      // the Visualizer side of the editor: what happens next, or the state of a run starting
+      eaten = !!ph.eats;
+      fillPlaceholder(el.sidePh, ph.kind === "empty"
+        ? { kind: "empty", title: "The visualization plays here", body: lcMode ? "Press Run (Ctrl+Enter) to run your code on the selected test case." : "Press Run (Ctrl+Enter) to run your code and the test call." }
+        : ph);
     }
-    el.empty.dataset.kind = ph.kind;
-    el.empty.replaceChildren(...parts);
-    el.empty.hidden = false;
   }
   const showMsg = !!el.message.textContent && !eaten;
   const h = el.message.hidden ? 0 : el.message.offsetHeight;
   el.message.hidden = !showMsg;
+  placeCases();
   if ((showMsg ? el.message.offsetHeight : 0) !== h) redrawArrows();   // the banner moved the trace
   if (!rendered) el.stepMeter.hidden = $("player").hidden = true;
   updateLayoutAttr();
@@ -254,14 +289,26 @@ function redrawArrows() {
   if (rendered) requestAnimationFrame(() => rendered && rendered.viz.redrawConnectors());
 }
 
+const MAX_TICKS = 120;     // above this many steps the timeline is a plain track
 function updateStepMeter(viz) {
-  // same numbering as the visualizer's "Step N of M" (the last entry is the "done" state)
-  const total = Math.max(viz.curTrace.length - 1, 1);
+  // every position counts, the final "done" state too, so each step visibly moves
+  // the counter and the lens (the timeline maps positions 0..length-1 evenly)
+  const total = Math.max(viz.curTrace.length, 1);
   const cur = Math.min(viz.curInstr + 1, total);
   el.stepMeter.hidden = $("player").hidden = false;
-  el.stepMeter.querySelector("b").textContent = cur;
+  el.stepMeter.querySelector(".cur").textContent = cur;
   el.stepMeter.querySelector(".total").textContent = total;
-  el.stepMeter.style.setProperty("--p", (total ? (100 * cur) / total : 0).toFixed(1) + "%");
+  el.stepMeter.querySelector(".count").setAttribute("aria-label", `Step ${cur} of ${total}`);
+  if (el.stepMeter.dataset.total !== String(total)) {
+    // one tick per step, evenly spread; the "played" copy is clipped at the handle
+    el.stepMeter.dataset.total = String(total);
+    for (const row of el.stepMeter.querySelectorAll(".ticks")) {
+      row.replaceChildren(...(total <= MAX_TICKS && total > 1
+        ? Array.from({ length: total }, (_, i) => { const t = document.createElement("i"); t.style.left = (100 * i / (total - 1)).toFixed(3) + "%"; return t; })
+        : []));
+    }
+  }
+  el.stepMeter.style.setProperty("--p", (total > 1 ? (100 * (cur - 1)) / (total - 1) : 0).toFixed(2) + "%");
   const bar = el.stepMeter.querySelector(".bar");
   bar.setAttribute("aria-valuenow", cur);
   bar.setAttribute("aria-valuemax", total);
@@ -431,15 +478,83 @@ function animateStep(viz) {
   }
 }
 
+// The Code panel while playing: a band on the current line and two gutter arrows
+// (amber: about to run, mint: just ran) that glide from line to line, and lines
+// that fade a little with their distance from the current one.
 function markCurrentLine(viz) {
-  const rows = viz.domRoot ? viz.domRoot[0].querySelectorAll("#pyCodeOutput td.cod") : [];
+  const root = viz.domRoot && viz.domRoot[0];
+  const rows = root ? root.querySelectorAll("#pyCodeOutput td.cod") : [];
   const entry = viz.curTrace[viz.curInstr] || {};
   // the line an exception was raised on (also for a syntax error's single step)
   const errLine = /exception/.test(entry.event || "") ? entry.line : null;
+  const cur = viz.curLineNumber, prev = viz.prevLineNumber;
   rows.forEach((td, i) => {
-    td.parentElement.classList.toggle("vlCurLine", i + 1 === viz.curLineNumber && i + 1 !== errLine);
-    td.parentElement.classList.toggle("vlErrLine", i + 1 === errLine);
+    const n = i + 1, tr = td.parentElement;
+    tr.classList.toggle("vlCurLine", n === cur && n !== errLine);
+    tr.classList.toggle("vlPrevLine", n === prev && n !== cur);
+    tr.classList.toggle("vlErrLine", n === errLine);
+    tr.dataset.d = cur ? String(Math.min(4, Math.abs(n - cur))) : "0";
   });
+  const pane = root && root.querySelector("#pyCodeOutputDiv");
+  if (!pane || !rows.length) return;
+  let deco = pane.querySelector(":scope > .vl-deco");
+  if (!deco) {
+    deco = document.createElement("div");
+    deco.className = "vl-deco";
+    deco.setAttribute("aria-hidden", "true");
+    deco.innerHTML = '<div class="vl-band"></div>' +
+      '<svg class="vl-arrow vl-arrow-prev" viewBox="0 0 15 12"><use href="#i-line-arrow"/></svg>' +
+      '<svg class="vl-arrow vl-arrow-cur" viewBox="0 0 15 12"><use href="#i-line-arrow"/></svg>' +
+      // what the arrows mean: shown while the pointer is over the arrow column
+      '<span class="vl-tag vl-tag-prev">Line that just ran</span>' +
+      '<span class="vl-tag vl-tag-cur">Next line to run</span>';
+    pane.prepend(deco);
+  }
+  const P = pane.getBoundingClientRect();
+  const place = (node, line) => {
+    const td = line && rows[line - 1];
+    if (!td) { node.classList.add("off"); return; }
+    const r = td.parentElement.getBoundingClientRect();
+    if (!r.height) { node.classList.add("off"); return; }     // not laid out (hidden)
+    node.classList.remove("off");
+    node.style.setProperty("--y", (r.top - P.top + pane.scrollTop) + "px");
+    node.style.setProperty("--h", r.height + "px");
+  };
+  place(deco.children[0], cur && cur !== errLine ? cur : null);
+  place(deco.children[1], prev && prev !== cur ? prev : null);
+  place(deco.children[2], cur);
+  place(deco.children[3], prev && prev !== cur ? prev : null);
+  place(deco.children[4], cur);
+}
+
+// hovering the arrow column (left of the line numbers' right edge) labels the arrows
+el.viz.addEventListener("mousemove", (e) => {
+  const pane = e.target.closest && e.target.closest("#pyCodeOutputDiv");
+  const deco = pane && pane.querySelector(":scope > .vl-deco");
+  const on = !!deco && e.clientX - pane.getBoundingClientRect().left < 60;
+  for (const d of el.viz.querySelectorAll(".vl-deco")) d.classList.toggle("tags", on && d === deco);
+});
+el.viz.addEventListener("mouseleave", () => { for (const d of el.viz.querySelectorAll(".vl-deco.tags")) d.classList.remove("tags"); });
+
+// Quiet Python colouring for the code while playing: comments and keywords only.
+const PY_TOKENS = /(#.*$)|("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')|\b(and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield)\b/g;
+function highlightCode(root) {
+  for (const td of root.querySelectorAll("#pyCodeOutput td.cod")) {
+    if (td.childNodes.length !== 1 || td.firstChild.nodeType !== 3) continue;
+    const text = td.firstChild.textContent;
+    const frag = document.createDocumentFragment();
+    let last = 0, m, hit = false;
+    PY_TOKENS.lastIndex = 0;
+    while ((m = PY_TOKENS.exec(text))) {
+      if (m[2]) continue;                  // strings stay plain (and keep their # and keywords)
+      frag.append(text.slice(last, m.index), Object.assign(document.createElement("span"), { className: m[1] ? "tk-c" : "tk-k", textContent: m[0] }));
+      last = m.index + m[0].length;
+      hit = true;
+    }
+    if (!hit) continue;
+    frag.append(text.slice(last));
+    td.replaceChildren(frag);
+  }
 }
 
 // ---------- stage: zoom, pan, drag boxes, hover arrows, inspect values ----------
@@ -510,36 +625,35 @@ function zoomBy(factor, clientX, clientY) {
   applyStage();
 }
 
-// the small toolbar in the visualization card's corner
-let stageBar = null;
-function mountStageBar() {
-  const c = card();
-  if (!c) return;
-  if (!stageBar) {
-    stageBar = document.createElement("div");
-    stageBar.className = "stage-bar";
-    stageBar.innerHTML =
-      '<button type="button" data-zoom="out" title="Zoom out (Ctrl+wheel)" aria-label="Zoom out">−</button>' +
-      '<span id="zoom-level" title="Zoom">100%</span>' +
-      '<button type="button" data-zoom="in" title="Zoom in (Ctrl+wheel)" aria-label="Zoom in">+</button>' +
-      '<button type="button" data-zoom="reset" class="reset" title="Reset zoom, pan and moved boxes">Reset layout</button>';
-    stageBar.addEventListener("click", (e) => {
-      const b = e.target.closest("button");
-      if (!b) return;
-      if (b.dataset.zoom === "in") zoomBy(1.2);
-      else if (b.dataset.zoom === "out") zoomBy(1 / 1.2);
-      else resetStage();
-    });
-  }
-  c.prepend(stageBar);
-  applyStage({ redraw: false });
+// fit the frames and objects into the visible part of the card
+function fitStage() {
+  const dv = dataViz(), c = card();
+  const content = dv && dv.querySelector("table#stackHeapTable");
+  if (!content || !c) return;
+  const w = content.offsetWidth, h = content.offsetHeight;
+  const head = el.vizHead.offsetHeight, bar = el.playerBar.offsetHeight, msg = el.message.hidden ? 0 : el.message.offsetHeight;
+  const aw = c.clientWidth - 36, ah = c.clientHeight - head - bar - msg - 36;
+  if (!w || !h || aw <= 0 || ah <= 0) return;
+  stage.scale = Math.max(ZOOM_MIN, Math.min(1.5, aw / w, ah / h));
+  stage.x = 0; stage.y = 0;
+  applyStage();
 }
+
+// the Visualizer header: zoom out / level / in, fit, reset layout
+el.vizHead.addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-zoom]");
+  if (!b || !rendered) return;
+  if (b.dataset.zoom === "in") zoomBy(1.2);
+  else if (b.dataset.zoom === "out") zoomBy(1 / 1.2);
+  else if (b.dataset.zoom === "fit") fitStage();
+  else resetStage();
+});
 
 // --- dragging: a box moves it, the background pans; a press without movement is a click ---
 let drag = null;
 el.viz.addEventListener("pointerdown", (e) => {
   const c = card();
-  if (e.button !== 0 || !c || !c.contains(e.target) || e.target.closest(".stage-bar, button, a")) return;
+  if (e.button !== 0 || !c || !c.contains(e.target) || e.target.closest(".viz-head, .player-bar, .message, button, a")) return;
   const box = boxOf(e.target);
   drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, lastX: e.clientX, lastY: e.clientY, moved: false, box, target: e.target };
   c.setPointerCapture(e.pointerId);
@@ -575,7 +689,7 @@ el.viz.addEventListener("pointerup", endDrag);
 el.viz.addEventListener("pointercancel", endDrag);
 el.viz.addEventListener("wheel", (e) => {
   const c = card();
-  if (!c || !c.contains(e.target) || !(e.ctrlKey || e.metaKey)) return;   // plain wheel scrolls as usual
+  if (!c || !c.contains(e.target) || e.target.closest(".viz-head, .player-bar") || !(e.ctrlKey || e.metaKey)) return;   // plain wheel scrolls as usual
   e.preventDefault();
   zoomBy(e.deltaY < 0 ? 1.12 : 1 / 1.12, e.clientX, e.clientY);
 }, { passive: false });
@@ -859,28 +973,44 @@ function setPlaying(on) {
     if (v.curInstr >= v.curTrace.length - 1) v.renderStep(0);     // at the end: start over
     playTimer = setInterval(() => {
       if (!rendered || !rendered.viz.stepForward()) setPlaying(false);
-    }, Number($("speed").value));
+    }, speedMs());
   }
   const playing = !!playTimer;
   btn.setAttribute("aria-pressed", String(playing));
+  btn.setAttribute("aria-label", playing ? "Pause" : "Play");
   btn.querySelector("use").setAttribute("href", playing ? "#i-pause" : "#i-play");
   btn.querySelector("span").textContent = playing ? "Pause" : "Play";
+  el.stepMeter.classList.toggle("playing", playing);    // the dot in the lens breathes
 }
+const speedMs = () => Number(($("speed").querySelector('[aria-checked="true"]') || {}).dataset?.ms) || 550;
 
 const fmt = (ms) => (ms === undefined || ms === null ? "?" : ms.toFixed(0) + " ms");
+// one wrapping line of facts: labels dim, values light, "ready" in mint
 function renderDiag() {
-  const lines = [];
+  const items = [];
+  const item = (...parts) => {
+    const s = document.createElement("span");
+    s.className = "di";
+    for (const p of parts) s.append(typeof p === "string" ? p : Object.assign(document.createElement("span"), { className: p.c || "v", textContent: p.v }));
+    items.push(s);
+  };
   if (runtimeInfo) {
     const t = runtimeInfo.timings;
-    lines.push(`Python ${runtimeInfo.python} (Pyodide ${runtimeInfo.pyodide})`);
-    lines.push(`runtime start: ${fmt(runtimeInfo.uiInitMs)} (worker ${fmt(t.total)}: pyodide ${fmt(t.loadPyodide)}, tracer ${fmt(t.loadTracer)}${t.wasmCompiledOnceMs != null ? `, wasm compiled once in ${fmt(t.wasmCompiledOnceMs)}` : ""})`);
-    lines.push(`spare interpreter: ${runtimeInfo.spareReady ? "ready" : "starting"}`);
+    item({ v: `Python ${runtimeInfo.python}` }, ` (Pyodide ${runtimeInfo.pyodide})`);
+    item("runtime start ", { v: fmt(runtimeInfo.uiInitMs) });
+    items[items.length - 1].title = `worker ${fmt(t.total)}: pyodide ${fmt(t.loadPyodide)}, tracer ${fmt(t.loadTracer)}${t.wasmCompiledOnceMs != null ? `, wasm compiled once in ${fmt(t.wasmCompiledOnceMs)}` : ""}`;
   }
   if (lastRun.steps !== undefined) {
-    lines.push(`last run: ${lastRun.steps} steps, ${(lastRun.bytes / 1024).toFixed(0)} KiB trace, ${lastRun.interpreterRun === 1 ? "fresh" : "reused"} interpreter`);
-    lines.push(`  execute ${fmt(lastRun.execMs)}, transfer ${fmt(lastRun.transferMs)}, parse ${fmt(lastRun.parseMs)}, render ${fmt(lastRun.renderMs)}, click→first view ${fmt(lastRun.firstViewMs)}`);
+    item("last run ", { v: String(lastRun.steps) }, " steps, ", { v: (lastRun.bytes / 1024).toFixed(0) + " KiB" }, " trace, ", { v: lastRun.interpreterRun === 1 ? "fresh" : "reused" }, " interpreter");
+    item("execute ", { v: fmt(lastRun.execMs) });
+    item("transfer ", { v: fmt(lastRun.transferMs) });
+    item("parse ", { v: fmt(lastRun.parseMs) });
+    item("render ", { v: fmt(lastRun.renderMs) });
+    item("click to first view ", { v: fmt(lastRun.firstViewMs) });
   }
-  el.diag.textContent = lines.join("\n");
+  if (runtimeInfo) item("spare interpreter ", runtimeInfo.spareReady ? { v: "ready", c: "ok" } : { v: "starting" });
+  if (!items.length) item("No diagnostics yet.");
+  el.diag.replaceChildren(...items);
 }
 
 // ---------- runtime (sandboxed runner) ----------
@@ -927,7 +1057,7 @@ window.addEventListener("message", (e) => {
     case "sandbox-loaded":
       loadAssets()
         .then(() => toSandbox({ type: "assets", assets: assetCache, workerSrc }))
-        .catch((err) => setStatus("failed", "Could not load the packaged Python runtime: " + err.message));
+        .catch((err) => setStatus("failed", "LeetScope couldn't load Python. Reload the extension in chrome://extensions and try again."));
       break;
     case "initializing":
       runtimeInfo = null;
@@ -947,7 +1077,7 @@ window.addEventListener("message", (e) => {
       break;
     }
     case "init-error":
-      setStatus("failed", "The Python runtime failed to start: " + m.message);
+      setStatus("failed", "Python failed to start. Press the restart button in the top bar to try again.");
       finishJob({ status: "failed", message: m.message });
       break;
     case "result":
@@ -967,7 +1097,7 @@ window.addEventListener("message", (e) => {
       runtimeInfo = null;        // that interpreter is gone; wait for the sandbox's ready/initializing
       if (current && m.runId === current.runId) {
         clearVisualization();
-        setStatus("timed out", `Stopped after ${m.wallMs / 1000} s without finishing. Try a smaller input.`);
+        setStatus("timed out", `Your code ran for more than ${m.wallMs / 1000} seconds without finishing. It may loop forever, or the input may be too large to show step by step. Try a smaller input.`);
         finishJob({ status: "timed out" });
       }
       break;
@@ -994,7 +1124,7 @@ function onResult(m) {
   try {
     trace = JSON.parse(m.traceJson);
   } catch {
-    setStatus("failed", "The runner returned malformed data.");
+    setStatus("failed", "LeetScope couldn't read the result of this run. Press Run to try again.");
     finishJob({ status: "failed" });
     return;
   }
@@ -1011,8 +1141,8 @@ function onResult(m) {
     trace.trace[0] = Object.assign({ func_name: "<module>", globals: {}, ordered_globals: [], stack_to_render: [], heap: {}, stdout: "" }, last);
     try { el.empty.hidden = true; renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("LeetScope: could not show the code", err); clearVisualization(); }
     lastErrorLine = last.line || null;
-    if (current.info.lc) lc.judge(null, "No result: the program didn't start (see the marked line).");
-    setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg + "\nThe program didn't start. Press Edit to fix the marked line, then Visualize again.");
+    if (current.info.lc) lc.judge(null, "No result. Your code has an error on the marked line, so it didn't run.");
+    setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg + "\nYour code didn't run. Fix the marked line and press Run again.");
     finishJob({ status: "failed", steps, exception: last.exception_msg, line: last.line });
     return;
   }
@@ -1036,7 +1166,7 @@ function onResult(m) {
     renderView(trace, crashed ? failStep : 0);
     document.body.offsetHeight;
   } catch (err) {
-    setStatus("failed", "Could not display this trace: " + err.message);
+    setStatus("failed", "LeetScope couldn't draw this run. Press Run to try again.");
     finishJob({ status: "failed", message: String(err) });
     return;
   }
@@ -1056,20 +1186,24 @@ function onResult(m) {
     kind = "error";
   } else if (last.event === "instruction_limit_reached") {
     final = "limit reached";
-    // the archive's text continues "Please shorten your code, since Python Tutor is not designed..."
-    const why = (last.exception_msg || "the program hit a limit").split("\n")[0].replace(/\s*Please shorten your code.*$/i, "");
-    msg = "Incomplete: " + why + " Showing the steps recorded so far: look for the loop or recursion that never ends.";
+    const why = (last.exception_msg || "Stopped at a limit.").split("\n")[0];
+    if (/^Stopped after running \d+ steps/.test(why)) {
+      const n = (steps - 1).toLocaleString("en-US");
+      msg = `Incomplete. Your code ran more than ${n} steps, so only the first ${n} are shown. The code may be correct and simply long. A shorter input will show the whole run.`;
+    } else {
+      msg = `Incomplete. ${why} Showing the steps recorded so far. A smaller input will show the whole run.`;
+    }
     kind = "warn";
   } else if (last.event === "raw_input") {
     final = "needs input";
-    msg = `The program called input(${last.prompt ? JSON.stringify(last.prompt) : ""}) but there are no more input lines. Add a line in the input() tab and visualize again.`;
+    msg = `The program called input(${last.prompt ? JSON.stringify(last.prompt) : ""}) but there are no more input lines. Add a line in the input() tab and run again.`;
     kind = "warn";
     selectTab("stdin");
   }
   if (current.info.lc) {
     // the call prints the result last, in LeetCode's format: judge it against the expected output
-    if (crashed) lc.judge(null, `No result: your code raised ${(failEntry.exception_msg || last.exception_msg || "an error").split("\n")[0]}${failEntry.line ? ` (line ${failEntry.line})` : ""}.`);
-    else if (final !== "complete") lc.judge(null, "No result: the run stopped before your code returned.");
+    if (crashed) lc.judge(null, `No result. Your code raised ${(failEntry.exception_msg || last.exception_msg || "an error").split("\n")[0]}${failEntry.line ? ` (line ${failEntry.line})` : ""}.`);
+    else if (final !== "complete") lc.judge(null, "No result. The run stopped before your code returned.");
     else lc.judge(resultLine(last.stdout));
     // a note from reading LeetCode (e.g. "couldn't read the Testcase panel") stays visible
     if (!msg && current.info.note) { msg = current.info.note; kind = "info"; }
@@ -1084,9 +1218,12 @@ const WIDE_MIN = 860;
 const isWide = () => el.vizBody.clientWidth >= WIDE_MIN;
 // the code column's width for the current panel size (the renderer takes it in px)
 const codeWidth = () => (lcMode && sizes.leftW ? Math.round(clampN(sizes.leftW, 280, Math.max(280, el.vizBody.clientWidth - 380)))
-  : Math.round(Math.min(680, Math.max(360, el.vizBody.clientWidth * 0.45))));
+  // the design's left column: 460px (flex 1 1 460px beside a flex 999 visualizer), less in a narrow window
+  : Math.round(Math.max(320, Math.min(460 + Math.max(0, el.vizBody.clientWidth - 1032) / 1000, el.vizBody.clientWidth - 572))));
 
 function renderView(trace, step) {
+  // the run gets the whole panel before it's drawn (the renderer measures as it draws)
+  if (mode !== "edit" || lcMode) { el.editArea.hidden = true; el.empty.hidden = true; el.viz.hidden = false; }
   const wide = isWide();
   el.viz.classList.toggle("vlWide", wide);
   el.viz.classList.toggle("vlStacked", !wide);
@@ -1094,32 +1231,33 @@ function renderView(trace, step) {
   const opts = { startingInstruction: step, updateOutputCallback: updateStepMeter };
   // LeetCode mode: the test case goes under the code card, so the card leaves room for it
   const casesH = lcMode && wide ? casesHeight() : 0;
-  el.vizPanel.style.setProperty("--cases-h", casesH + "px");
+  if (sizes.casesH) el.vizPanel.style.setProperty("--cases-h", sizes.casesH + "px"); else el.vizPanel.style.removeProperty("--cases-h");   // natural height unless resized
   const codeH = Math.max(lcMode ? 180 : 240, el.vizBody.clientHeight - 40 - (casesH ? casesH + 10 : 0));
   if (wide) Object.assign(opts, { verticalStack: false, codeDivWidth: codeWidth(), codeDivHeight: codeH });
   else Object.assign(opts, { verticalStack: true, codeDivHeight: 230 });
+  dropRunNodes();
   rendered = VisualLeetRenderer.renderTrace("viz", trace, opts);
   rendered.wide = wide;
   rendered.codeW = wide ? codeWidth() : 0;
   rendered.trace = trace;
-  if (wide) {
-    // use the left column fully: the code card runs down the column, with the
-    // program's output under it (rather than above the frames and objects)
+  // the renderer clears #viz when it's destroyed: take our panels back out first
+  const destroy = rendered.destroy;
+  rendered.destroy = () => { rescueChrome(); destroy(); };
+  {
+    // the run's code view and printed output go into the Code panel (which
+    // placeCases puts in the renderer's left column, so it stays inside #viz)
     const root = rendered.viz.domRoot[0];
-    const out = root.querySelector("#progOutputs");
-    const left = root.querySelector("#vizLayoutTdFirst");
-    if (out && left && rendered.viz.outputBox) {
-      left.appendChild(out);
-      rendered.viz.outputBox.domRoot = window.jQuery(left);   // it looks itself up under its own root
-    }
+    runNodes = ["#codAndNav", "#progOutputs"].map((s) => root.querySelector(s)).filter(Boolean);
+    highlightCode(root);
   }
   el.vizPanel.style.setProperty("--code-w", (wide ? codeWidth() : 0) + "px");
   placeCases();
+  if (rendered.viz.outputBox) rendered.viz.outputBox.domRoot = window.jQuery(el.codeBody);   // it looks itself up under its own root
   updateLayoutAttr();
   requestAnimationFrame(positionSplitters);
   // a new run starts with the default layout; a re-layout of the same run keeps zoom/moves
   if (stage.trace !== trace) { stage.trace = trace; stage.scale = 1; stage.x = 0; stage.y = 0; stage.offsets.clear(); hideInspector(); }
-  mountStageBar();
+  applyStage({ redraw: false });
   watchArrows();
   if (!stageIsDefault()) applyStage();
   prevSnap = null;
@@ -1131,18 +1269,47 @@ function renderView(trace, step) {
 // LeetCode mode: the test-case panel's height while playing (under the code card)
 const casesHeight = () => (sizes.casesH ? sizes.casesH : Math.round(Math.min(340, Math.max(230, el.vizBody.clientHeight * 0.4))));
 
-// The test-case panel lives under the code: in the editor while editing, in the
-// renderer's left column (under the code card and output) while playing.
+// The Code panel and the test cases form the left column: in the editor area
+// before there's a run, in the renderer's left column while a run is shown
+// (inside #viz, so the code view stays part of the visualization). The
+// Visualizer header, messages and playback bar go around the frames and objects.
+let runNodes = [];         // the run's code view and output, shown in the Code panel
+function dropRunNodes() { for (const n of runNodes) n.remove(); runNodes = []; }
+function rescueChrome() {
+  if (el.codeCard.parentElement !== el.editLeft) el.editLeft.prepend(el.codeCard);
+  if (el.lcCases.parentElement !== el.editLeft) el.codeCard.after(el.lcCases);
+  if (el.vizHead.parentElement !== el.vizPanel) el.vizPanel.append(el.vizHead, el.playerBar);
+  if (el.vizBody.contains(el.message) && !el.lcSide.contains(el.message) && el.message.parentElement !== el.vizBody) el.vizBody.prepend(el.message);
+}
+
 function placeCases() {
-  const left = lcMode && rendered && rendered.viz.domRoot[0].querySelector("#vizLayoutTdFirst");
-  const card = el.codeCard;
-  if (left && mode === "edit") {
-    if (card.parentElement !== left) left.insertBefore(card, left.firstChild);
-  } else if (card.parentElement !== el.editLeft) {
-    el.editLeft.insertBefore(card, el.editLeft.firstChild);
-  }
+  const root = traceShown() && rendered.viz.domRoot && rendered.viz.domRoot[0];
+  const left = root && root.querySelector("#vizLayoutTdFirst");
+  const right = root && root.querySelector("#vizLayoutTdSecond");
   const target = left || el.editLeft;
-  if (el.lcCases.parentElement !== target) target.appendChild(el.lcCases);
+  const card = el.codeCard;
+  const watching = !!left && mode !== "edit";
+  if (card.classList.contains("watching") !== watching) {
+    card.classList.toggle("watching", watching);
+    // the code view just appeared or went away: re-measure its line marks
+    if (watching) requestAnimationFrame(() => rendered && markCurrentLine(rendered.viz));
+  }
+  if (card.parentElement !== target) target.insertBefore(card, target.firstChild);
+  if (el.lcCases.parentElement !== target) target.insertBefore(el.lcCases, card.nextSibling);
+  if (!rendered) dropRunNodes();
+  for (const n of runNodes) if (n.parentElement !== el.codeBody) el.codeBody.appendChild(n);
+  // the Visualizer panel's chrome
+  if (right) {
+    if (right.firstElementChild !== el.vizHead) right.prepend(el.vizHead);
+    if (el.vizHead.nextElementSibling !== el.message) el.vizHead.after(el.message);
+    if (right.lastElementChild !== el.playerBar) right.append(el.playerBar);
+  } else {
+    if (el.vizHead.parentElement !== el.vizPanel) el.vizPanel.append(el.vizHead, el.playerBar);
+    // messages: under the Visualizer header of the editor's side panel, or above the page (paste mode)
+    if (lcMode || mode !== "edit") { if (el.sideHead.nextElementSibling !== el.message) el.sideHead.after(el.message); }
+    else if (el.vizBody.firstElementChild !== el.message) el.vizBody.prepend(el.message);
+  }
+  el.vizHead.hidden = el.playerBar.hidden = !right;
   if (el.viz) el.viz.classList.toggle("vlEditing", !!left && mode === "edit");
 }
 
@@ -1258,7 +1425,7 @@ function clearVisualization() {
 
 function startJob(kind, extra = {}, info = {}) {
   if (!IDLE.has(status) || !runtimeInfo) {
-    showMessage(runtimeInfo ? "A run is already in progress." : "The Python runtime is still starting.", "info");
+    showMessage(runtimeInfo ? "A run is already in progress." : "Python is still loading. Try again in a moment.", "info");
     return Promise.resolve({ status: "rejected", message: "Runtime is " + status });
   }
   const runId = crypto.randomUUID();
@@ -1270,7 +1437,7 @@ function startJob(kind, extra = {}, info = {}) {
       backstop: setTimeout(() => {
         // the sandbox didn't answer at all: throw the whole frame away
         clearVisualization();
-        setStatus("timed out", "The runner stopped responding; restarting it.");
+        setStatus("timed out", "LeetScope stopped responding and is restarting Python. Press Run to try again.");
         finishJob({ status: "timed out", backstop: true });
         createSandbox();
       }, LIMITS.wallMs + BACKSTOP_EXTRA_MS),
@@ -1293,18 +1460,18 @@ function visualize(opts = {}) {
 // LeetCode mode: your code + the call from the problem's database file; the
 // inputs are built by hidden setup, which runs untraced.
 function visualizeCase(opts = {}) {
-  if (!lc.problem) { showMessage("Click Visualize on a LeetCode problem (or the LeetScope icon there) first.", "info"); return Promise.resolve({ status: "rejected" }); }
+  if (!lc.problem) { showMessage("Open a problem on LeetCode and click Visualize to load it here.", "info"); return Promise.resolve({ status: "rejected" }); }
   const g = lc.program();
   if (!g.ok) {
     showCodeView("code");
-    showMessage("Fix the highlighted test-case values first.", "error");
+    showMessage("Fix the highlighted test case values, then press Run.", "error");
     return Promise.resolve({ status: "rejected", reason: "case", errors: g.errors });
   }
   const solution = el.solution.value;
-  if (!solution.trim()) { showMessage("There's no code yet: click Visualize on the LeetCode tab to copy it.", "info"); return Promise.resolve({ status: "rejected" }); }
+  if (!solution.trim()) { showMessage("There's no code yet. Click Visualize on the LeetCode problem to bring your code here.", "info"); return Promise.resolve({ status: "rejected" }); }
   const source = solution.replace(/\s+$/, "") + "\n\n" + g.code + "\n";
   if (new TextEncoder().encode(source + g.setup).length > MAX_SOURCE_BYTES) {
-    showMessage("The program is larger than 256 KiB; LeetScope is meant for small examples.", "error");
+    showMessage("This program is larger than 256 KiB, which is more than LeetScope can show.", "error");
     return Promise.resolve({ status: "rejected" });
   }
   if (IDLE.has(status) && runtimeInfo) { lastErrorLine = null; enterWatch(); }
@@ -1316,11 +1483,11 @@ function visualizePasted() {
   const source = composeSource(parts);
   if (!source.trim()) { showMessage("Add some Python code first.", "info"); return Promise.resolve({ status: "rejected" }); }
   if (new TextEncoder().encode(source).length > MAX_SOURCE_BYTES) {
-    showMessage("The program is larger than 256 KiB; LeetScope is meant for small examples.", "error");
+    showMessage("This program is larger than 256 KiB, which is more than LeetScope can show.", "error");
     return Promise.resolve({ status: "rejected" });
   }
   if (!hasTopLevelCode(source)) {
-    showMessage("Your code only defines functions or classes, so nothing would run. Add a test call, e.g. print(Solution().twoSum([2, 7, 11, 15], 9))", "error");
+    showMessage("Your code only defines functions or classes, so nothing runs. Add a test call such as print(Solution().twoSum([2, 7, 11, 15], 9)).", "error");
     el.call.focus();
     return Promise.resolve({ status: "rejected", reason: "no-call" });
   }
@@ -1334,7 +1501,7 @@ function stop() { if (current && current.kind !== "probe") toSandbox({ type: "st
 function resetRuntime() {
   runtimeInfo = null;
   initStart = performance.now();
-  setStatus("initializing", "Restarting the Python runtime…", "info");
+  setStatus("initializing", "Restarting Python…", "info");
   toSandbox({ type: "reset" });
 }
 
@@ -1389,7 +1556,7 @@ async function requestImport(mode) {
     el.solution.value = res.text;
     saveDraft();
     enterEdit();
-    showMessage(`Imported ${res.text.split("\n").length} lines from the selection into Solution. Review it, add a test call if needed, then Visualize.`, "ok");
+    showMessage(`Imported ${res.text.split("\n").length} lines from the selection. Check the code, add a test call if needed, and press Run.`, "ok");
     return res;
   }
   return openLeetCode(res, { autoRun: true });
@@ -1405,22 +1572,32 @@ function setLcMode(on) {
   document.body.classList.toggle("no-problem", empty);
   $("lc-empty").hidden = !empty;
   el.modeToggle.hidden = !DEV || !lc.problem;
-  el.modeToggle.textContent = lcMode ? "Paste mode" : "LeetCode mode";
-  el.modeToggle.title = lcMode ? "Paste or type any Python program instead" : "Back to the LeetCode problem and its test cases";
+  for (const b of el.modeToggle.querySelectorAll("[data-set-mode]")) b.setAttribute("aria-pressed", String((b.dataset.setMode === "lc") === lcMode));
   try { localStorage.setItem(LC_MODE_KEY, lcMode ? "lc" : "manual"); } catch {}
-  document.querySelector(".bar-hint").textContent = lcMode
-    ? "Runs your code on the selected test case, then plays it step by step."
-    : "Runs Setup, your code and the Test call, then plays it step by step.";
+  updateProblemLink();
   applySizes();
   if (mode === "watch") enterEdit();         // the other mode's run doesn't belong here
   placeCases();
   updateGutter();
 }
 
+// the problem chip links back to the problem on LeetCode
+function updateProblemLink() {
+  const pr = lc.problem;
+  // the page the cases were read from, when known (keeps leetcode.cn, /description/ etc.)
+  const same = pr && sourceUrl && new RegExp(`^https://leetcode\.(com|cn)/problems/${pr.slug}(/|$)`).test(sourceUrl);
+  if (same) el.lcLink.href = sourceUrl;
+  else if (pr && /^[a-z0-9-]+$/.test(pr.slug || "")) el.lcLink.href = `https://leetcode.com/problems/${pr.slug}/`;
+  else el.lcLink.removeAttribute("href");
+}
+
 // Your code / Call / Setup: the views of the code card (LeetCode mode)
 function showCodeView(name) {
   for (const t of document.querySelectorAll("[data-codeview]")) t.setAttribute("aria-selected", String(t.dataset.codeview === name));
   for (const p of document.querySelectorAll("[data-codepanel]")) p.hidden = p.dataset.codepanel !== name;
+  el.codeCard.dataset.view = name;
+  redrawArrows();
+  if (rendered) requestAnimationFrame(() => rendered && markCurrentLine(rendered.viz));
   if (name === "code") updateGutter();
 }
 
@@ -1437,7 +1614,7 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   const entry = await loadEntry(res.slug);
   const lang = describeLanguage(res.language || "");
   if (!entry && !DEV) {
-    showMessage(`"${res.title || res.slug}" isn't in LeetScope's problem database yet. The database covers the NeetCode 150 for now and is growing.`, "info");
+    showMessage(`"${res.title || res.slug}" isn't supported by LeetScope yet. Support for more problems is on the way.`, "info");
     return { ok: false, reason: "not-in-db", slug: res.slug };
   }
   if (!entry) {
@@ -1448,10 +1625,10 @@ async function openLeetCode(res, { autoRun = false } = {}) {
       setProgram({ setup: draft.setup, solution: res.code, call: draft.call });
       selectTab("call");
       const first = (res.exampleInputs || [])[0];
-      showMessage([`"${res.title || res.slug}" isn't in LeetScope's problem database yet, so you're in paste mode: check the drafted test call.`,
-        first ? `LeetCode's first example input: ${first.split("\n").join(", ")}` : "", lang.note, ...draft.notes].filter(Boolean).join("\n"), "info");
+      showMessage([`"${res.title || res.slug}" isn't supported by LeetScope yet, so it opened in paste mode. Check the drafted test call.`,
+        first ? `LeetCode's first example input is ${first.split("\n").join(", ")}.` : "", lang.note, ...draft.notes].filter(Boolean).join("\n"), "info");
     } else {
-      showMessage(`"${res.title || res.slug}" isn't in LeetScope's problem database yet. ${!res.code ? "Couldn't read the code editor either (is the page still loading?)." : lang.note}`, "error");
+      showMessage(`"${res.title || res.slug}" isn't supported by LeetScope yet. ${!res.code ? "LeetScope couldn't read the code editor either. The page may still be loading." : lang.note}`, "error");
     }
     return { ok: false, reason: "not-in-db", slug: res.slug };
   }
@@ -1461,7 +1638,7 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   const notes = [loaded.note];
   let runnable = true;
   // never run older code in place of what the click was meant to show
-  if (!res.code) { notes.push("Couldn't read LeetCode's code editor (is it still loading?). Your code here was kept; press Visualize to run it."); runnable = false; }
+  if (!res.code) { notes.push("LeetScope couldn't read the code editor on LeetCode. The page may still be loading. Your code here is unchanged, and you can press Run to run it."); runnable = false; }
   else if (!lang.ok) { notes.push(lang.note); runnable = false; }
   else { el.solution.value = res.code; saveDraft(); updateGutter(); if (lang.note) notes.push(lang.note); }
   const note = notes.filter(Boolean).join("\n");
@@ -1481,6 +1658,7 @@ async function takePending(id) {
   if (!pending || (id && pending.id !== id) || Date.now() - pending.at > PENDING_MAX_AGE_MS) return;
   await chrome.storage.session.remove("pending").catch(() => {});
   sourceTabId = pending.tabId;
+  chrome.runtime.sendMessage({ type: "describe-tab", tabId: sourceTabId }).then((r) => r && showSourceTab(r.title, r.url)).catch(() => {});
   return openLeetCode(pending.result, { autoRun: true });
 }
 
@@ -1494,6 +1672,8 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 });
 
 function showSourceTab(title, url) {
+  sourceUrl = typeof url === "string" ? url : "";
+  updateProblemLink();
   el.sourceTab.textContent = title || url ? `from: ${title || url}` : "";
   el.sourceTab.title = url ? `Imports come from ${url}` : "Page to import from";
 }
@@ -1533,19 +1713,26 @@ for (const t of tabs) t.addEventListener("click", () => selectTab(t.dataset.tab)
 // arrows are drawn once per step; redraw them when the visualizer panel changes size
 new ResizeObserver(() => { redrawArrows(); maybeRelayout(); applySizes(); }).observe(el.vizBody);
 applySizes();
-el.diagToggle.addEventListener("click", () => {
-  const on = el.diag.hidden;
-  el.diag.hidden = !on;
+function showDiag(on) {
+  el.diagStrip.hidden = !on;
   el.diagToggle.setAttribute("aria-pressed", String(on));
   el.diagToggle.title = on ? "Hide diagnostics" : "Show diagnostics";
-});
+  redrawArrows();          // the panels above shrank or grew
+}
+el.diagToggle.addEventListener("click", () => showDiag(el.diagStrip.hidden));
+$("diag-close").addEventListener("click", () => showDiag(false));
 $("play").addEventListener("click", () => setPlaying(!playTimer));
-$("speed").addEventListener("change", () => { if (playTimer) setPlaying(true); });
+$("speed").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-ms]");
+  if (!b) return;
+  for (const x of $("speed").querySelectorAll("[data-ms]")) x.setAttribute("aria-checked", String(x === b));
+  if (playTimer) setPlaying(true);
+});
 el.edit.addEventListener("click", () => enterEdit({ focus: true }));
 el.solution.addEventListener("input", updateGutter);
 el.solution.addEventListener("scroll", () => { el.gutter.scrollTop = el.solution.scrollTop; });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!el.visualize.disabled) visualize(); return; }
+  if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!isBusy() && !el.visualize.disabled) visualize(); return; }
   // Esc: close the inspector first; otherwise, while watching, back to the code
   if (e.key === "Escape" && inspected) { e.preventDefault(); hideInspector(); return; }
   if (e.key === "Escape" && mode === "watch" && !e.target.closest("select")) { e.preventDefault(); enterEdit({ focus: true }); return; }
@@ -1561,7 +1748,7 @@ document.addEventListener("keydown", (e) => {
   else if (steps[e.key]) { e.preventDefault(); userStep(steps[e.key]); }
 });
 initStepControls();
-if (/Mac/.test(navigator.platform)) document.querySelector("#visualize .kbd").textContent = "⌘ ↵";
+if (/Mac/.test(navigator.platform)) for (const b of [el.visualize, el.caseRun]) b.dataset.mac = "1";
 
 for (const ta of [el.setup, el.solution, el.call, el.inputs]) {
   ta.addEventListener("input", saveDraft);
@@ -1575,15 +1762,31 @@ for (const ta of [el.setup, el.solution, el.call, el.inputs]) {
     }
   });
 }
-el.visualize.addEventListener("click", visualize);
+el.visualize.addEventListener("click", runOrStop);
 el.stop.addEventListener("click", stop);
 el.reset.addEventListener("click", resetRuntime);
 el.importSelection.addEventListener("click", () => requestImport("selection"));
 window.addEventListener("pagehide", () => { if (iframe) iframe.remove(); clearVisualization(); });
 
-el.modeToggle.addEventListener("click", () => setLcMode(!lcMode));
+// The problem chip goes back to the LeetCode tab the code and cases came from
+// (focusing it); only if that tab is gone does it open the problem in a new tab.
+el.lcLink.addEventListener("click", async (e) => {
+  if (!sourceTabId || e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+  e.preventDefault();
+  try {
+    const t = await chrome.tabs.update(sourceTabId, { active: true });
+    if (t && typeof t.windowId === "number") await chrome.windows.update(t.windowId, { focused: true }).catch(() => {});
+  } catch {
+    if (el.lcLink.href) window.open(el.lcLink.href, "_blank", "noopener");
+  }
+});
+
+el.modeToggle.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-set-mode]");
+  if (b && (b.dataset.setMode === "lc") !== lcMode) setLcMode(b.dataset.setMode === "lc");
+});
 for (const t of document.querySelectorAll("[data-codeview]")) t.addEventListener("click", () => showCodeView(t.dataset.codeview));
-$("case-run").addEventListener("click", () => visualize());
+el.caseRun.addEventListener("click", runOrStop);
 
 const draft = loadDraft();
 setProgram(draft || EXAMPLES["Two Sum"]);

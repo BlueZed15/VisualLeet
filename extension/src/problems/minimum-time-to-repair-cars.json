@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-time-to-repair-cars",
+ "frontendId": "2594",
+ "title": "Minimum Time to Repair Cars",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ranks",
+   "type": "integer[]"
+  },
+  {
+   "name": "cars",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "ranks = {ranks}\ncars = {cars}",
+ "visible": [
+  "ranks",
+  "cars"
+ ],
+ "call": "result = Solution().repairCars(ranks, cars)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

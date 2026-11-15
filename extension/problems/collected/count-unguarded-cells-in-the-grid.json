@@ -1,0 +1,40 @@
+{
+ "slug": "count-unguarded-cells-in-the-grid",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2257",
+ "title": "Count Unguarded Cells in the Grid",
+ "premium": false,
+ "meta": {
+  "name": "countUnguarded",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "guards"
+   },
+   {
+    "type": "integer[][]",
+    "name": "walls"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n6\n[[0,0],[1,1],[2,3]]\n[[0,1],[2,2],[1,4]]",
+  "3\n3\n[[1,1]]\n[[0,1],[1,0],[2,1],[1,2]]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "4"
+ ],
+ "anyOrder": false
+}

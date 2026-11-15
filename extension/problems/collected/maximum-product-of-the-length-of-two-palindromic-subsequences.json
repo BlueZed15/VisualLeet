@@ -1,0 +1,31 @@
+{
+ "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2002",
+ "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "maxProduct",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"leetcodecom\"",
+  "\"bb\"",
+  "\"accbcaxxcxx\""
+ ],
+ "exampleOutputs": [
+  "9",
+  "1",
+  "25"
+ ],
+ "anyOrder": false
+}

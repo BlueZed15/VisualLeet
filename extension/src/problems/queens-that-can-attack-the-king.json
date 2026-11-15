@@ -1,0 +1,30 @@
+{
+ "slug": "queens-that-can-attack-the-king",
+ "frontendId": "1222",
+ "title": "Queens That Can Attack the King",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queens",
+   "type": "integer[][]"
+  },
+  {
+   "name": "king",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queens = {queens}\nking = {king}",
+ "visible": [
+  "queens",
+  "king"
+ ],
+ "call": "result = Solution().queensAttacktheKing(queens, king)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

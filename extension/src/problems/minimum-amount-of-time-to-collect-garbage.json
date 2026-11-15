@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-amount-of-time-to-collect-garbage",
+ "frontendId": "2391",
+ "title": "Minimum Amount of Time to Collect Garbage",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "garbage",
+   "type": "string[]"
+  },
+  {
+   "name": "travel",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "garbage = {garbage}\ntravel = {travel}",
+ "visible": [
+  "garbage",
+  "travel"
+ ],
+ "call": "result = Solution().garbageCollection(garbage, travel)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

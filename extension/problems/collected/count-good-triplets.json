@@ -1,0 +1,40 @@
+{
+ "slug": "count-good-triplets",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1534",
+ "title": "Count Good Triplets",
+ "premium": false,
+ "meta": {
+  "name": "countGoodTriplets",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "a"
+   },
+   {
+    "type": "integer",
+    "name": "b"
+   },
+   {
+    "type": "integer",
+    "name": "c"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,0,1,1,9,7]\n7\n2\n3",
+  "[1,1,2,2,3]\n0\n0\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

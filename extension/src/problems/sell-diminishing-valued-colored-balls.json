@@ -1,0 +1,30 @@
+{
+ "slug": "sell-diminishing-valued-colored-balls",
+ "frontendId": "1648",
+ "title": "Sell Diminishing-Valued Colored Balls",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "inventory",
+   "type": "integer[]"
+  },
+  {
+   "name": "orders",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "inventory = {inventory}\norders = {orders}",
+ "visible": [
+  "inventory",
+  "orders"
+ ],
+ "call": "result = Solution().maxProfit(inventory, orders)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

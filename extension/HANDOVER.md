@@ -7,7 +7,10 @@ handover: `design/HANDOVER.md`. Last updated 2026-11-15.
 
 ## Where things stand
 
-- **Database: 1,026 problems** (2026-11-15). 176 solution-checked: batch c's 5
+- **Database: 1,526 problems** (2026-11-15). `batch-2026-11-15d.json` adds the 500
+  most-liked free problems not yet in (inputs and calls checked; 2 without
+  example outputs and 3 "manual" ones left out). Before that: 1,026 problems,
+  176 solution-checked: batch c's 5
   "manual" problems are now hand-written too (Peeking Iterator, Encode and
   Decode TinyURL, Employee Importance, Merge In Between Linked Lists, Find a
   Corresponding Node in a Clone); new hidden helpers Iterator and Employee,

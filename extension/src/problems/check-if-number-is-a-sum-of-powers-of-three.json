@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-number-is-a-sum-of-powers-of-three",
+ "frontendId": "1780",
+ "title": "Check if Number is a Sum of Powers of Three",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().checkPowersOfThree(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

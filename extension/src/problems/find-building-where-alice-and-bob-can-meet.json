@@ -1,0 +1,30 @@
+{
+ "slug": "find-building-where-alice-and-bob-can-meet",
+ "frontendId": "2940",
+ "title": "Find Building Where Alice and Bob Can Meet",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}\nqueries = {queries}",
+ "visible": [
+  "heights",
+  "queries"
+ ],
+ "call": "result = Solution().leftmostBuildingQueries(heights, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

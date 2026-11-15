@@ -1,0 +1,28 @@
+{
+ "slug": "longest-subarray-with-maximum-bitwise-and",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2419",
+ "title": "Longest Subarray With Maximum Bitwise AND",
+ "premium": false,
+ "meta": {
+  "name": "longestSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,3,2,2]",
+  "[1,2,3,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

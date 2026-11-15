@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-alternating-subsequence-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1911",
+ "title": "Maximum Alternating Subsequence Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxAlternatingSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,5,3]",
+  "[5,6,7,8]",
+  "[6,2,1,2,4,5]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "8",
+  "10"
+ ],
+ "anyOrder": false
+}

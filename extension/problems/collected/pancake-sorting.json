@@ -1,0 +1,29 @@
+{
+ "slug": "pancake-sorting",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "969",
+ "title": "Pancake Sorting",
+ "premium": false,
+ "meta": {
+  "name": "pancakeSort",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[3,2,4,1]",
+  "[1,2,3]"
+ ],
+ "exampleOutputs": [
+  "[4,2,4,3]",
+  "[]"
+ ],
+ "anyOrder": false
+}

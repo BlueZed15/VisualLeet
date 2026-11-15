@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-product-difference-between-two-pairs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1913",
+ "title": "Maximum Product Difference Between Two Pairs",
+ "premium": false,
+ "meta": {
+  "name": "maxProductDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,6,2,7,4]",
+  "[4,2,5,9,7,4,8]"
+ ],
+ "exampleOutputs": [
+  "34",
+  "64"
+ ],
+ "anyOrder": false
+}

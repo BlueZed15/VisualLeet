@@ -1,0 +1,38 @@
+{
+ "slug": "convert-1d-array-into-2d-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2022",
+ "title": "Convert 1D Array Into 2D Array",
+ "premium": false,
+ "meta": {
+  "name": "construct2DArray",
+  "params": [
+   {
+    "name": "original",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n2\n2",
+  "[1,2,3]\n1\n3",
+  "[1,2]\n1\n1"
+ ],
+ "exampleOutputs": [
+  "[[1,2],[3,4]]",
+  "[[1,2,3]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

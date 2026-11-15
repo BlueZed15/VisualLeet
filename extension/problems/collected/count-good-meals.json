@@ -1,0 +1,28 @@
+{
+ "slug": "count-good-meals",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1711",
+ "title": "Count Good Meals",
+ "premium": false,
+ "meta": {
+  "name": "countPairs",
+  "params": [
+   {
+    "name": "deliciousness",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,5,7,9]",
+  "[1,1,1,3,3,3,7]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "15"
+ ],
+ "anyOrder": false
+}

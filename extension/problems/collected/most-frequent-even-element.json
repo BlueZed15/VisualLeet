@@ -1,0 +1,30 @@
+{
+ "slug": "most-frequent-even-element",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2404",
+ "title": "Most Frequent Even Element",
+ "premium": false,
+ "meta": {
+  "name": "mostFrequentEven",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,2,2,4,4,1]",
+  "[4,4,4,9,2,4]",
+  "[29,47,21,41,13,37,25,7]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

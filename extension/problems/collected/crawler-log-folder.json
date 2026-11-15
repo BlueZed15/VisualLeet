@@ -1,0 +1,30 @@
+{
+ "slug": "crawler-log-folder",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1598",
+ "title": "Crawler Log Folder",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "logs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]",
+  "[\"d1/\",\"d2/\",\"./\",\"d3/\",\"../\",\"d31/\"]",
+  "[\"d1/\",\"../\",\"../\",\"../\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "jump-game-v",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1340",
+ "title": "Jump Game V",
+ "premium": false,
+ "meta": {
+  "name": "maxJumps",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "d"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,4,14,6,8,13,9,7,10,6,12]\n2",
+  "[3,3,3,3,3]\n3",
+  "[7,6,5,4,3,2,1]\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1",
+  "7"
+ ],
+ "anyOrder": false
+}

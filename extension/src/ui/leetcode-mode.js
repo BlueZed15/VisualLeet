@@ -26,9 +26,9 @@ const sameTexts = (entry, a, b) => !!a && !!b && entry.boxes.every((x) => sameVa
 const badgeFor = (entry) => (entry.verified || entry.checked === "solution" ? ["verified", "✓ checked setup"]
   : entry.checked === "inputs" ? ["inputs", "inputs checked"] : ["unchecked", "setup not checked yet"]);
 const BADGE_TITLE = {
-  verified: "This problem's setup in LeetScope's database was checked: a known-good solution gave LeetCode's expected output on every example.",
-  inputs: "This problem's inputs are built exactly like LeetCode's examples (checked). A full check with a known-good solution comes later; if a result looks wrong, look at the Call and Setup tabs.",
-  unchecked: "This problem's setup in LeetScope's database hasn't been checked yet. If the result looks wrong, look at the Call and Setup tabs.",
+  verified: "This problem's setup was checked. A known good solution gave LeetCode's expected output on every example.",
+  inputs: "This problem's inputs are built like LeetCode's examples. If a result looks wrong, check the Call and Setup tabs.",
+  unchecked: "This problem's setup hasn't been checked yet. If a result looks wrong, check the Call and Setup tabs.",
 };
 
 export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {} } = {}) {
@@ -76,9 +76,10 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       const same = cases.find((c) => sameTexts(entry, c.texts, lc));
       if (same) selectedId = same.id;
       else { cases.push({ id: "lc", label: "From LeetCode", source: "leetcode", texts: lc }); selectedId = "lc"; }
-    } else if (!r.useExample) {
+    } else {
       const f = r.testcaseFound || {};
-      note = `Couldn't find your selected test case on LeetCode (found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${names.length} input${names.length === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines), so the first example is selected.`;
+      note = "LeetScope couldn't read the selected test case from LeetCode, so Case 1 is shown.";
+      console.info("LeetScope: selected case not found", `${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${names.length} input${names.length === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines`);
     }
     cases.push(...yours);
     if (!cases.length) cases.push({ id: "c" + counter++, label: "Case 1", source: "yours", texts: Object.fromEntries(names.map((n) => [n, ""])) });
@@ -112,7 +113,14 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
   function render() {
     if (!p) return;
     const badge = badgeFor(entry);
-    el.title.textContent = (p.frontendId ? p.frontendId + ". " : "") + (p.title || p.slug);
+    // "206." dim and monospace, then the title (textContent stays "206. Title")
+    const num = Object.assign(document.createElement("span"), { className: "problem-num", textContent: p.frontendId ? p.frontendId + "." : "" });
+    // the page's title can already start with the number ("120. Triangle"): show it once
+    let name = String(p.title || p.slug);
+    const lead = /^\s*(\d+)\.\s*/.exec(name);
+    if (lead && (!p.frontendId || lead[1] === String(p.frontendId))) { name = name.slice(lead[0].length); if (!p.frontendId) num.textContent = lead[1] + "."; }
+    const id = p.frontendId || (lead && lead[1]);
+    el.title.replaceChildren(...(id ? [num, " "] : []), name);
     el.badge.textContent = badge[1];
     el.badge.dataset.kind = badge[0];
     el.badge.title = BADGE_TITLE[badge[0]];
@@ -120,8 +128,10 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     renderCase();
   }
 
+  // case numbers cycle amber, blue, coral (Case 4 is amber again)
+  const CASE_COLORS = ["#FFB020", "#4C8DFF", "#FF6B5B"];
   function renderTabs() {
-    el.tabs.replaceChildren(...p.cases.map((c) => {
+    el.tabs.replaceChildren(...p.cases.map((c, i) => {
       const b = document.createElement("button");
       b.type = "button";
       b.className = "tab";
@@ -130,10 +140,25 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       b.dataset.source = c.source;
       b.setAttribute("aria-selected", String(c.id === p.selectedId));
       b.tabIndex = c.id === p.selectedId ? 0 : -1;
-      b.textContent = c.label;
+      b.style.setProperty("--case-color", CASE_COLORS[i % CASE_COLORS.length]);
+      // every tab reads "Case N" by position, like LeetCode's own Testcase panel
+      // (where a case came from is shown under its inputs)
+      b.append("Case ", Object.assign(document.createElement("span"), { className: "case-num", textContent: String(i + 1) }));
       if (c.source === "leetcode") b.title = "The case that was selected in LeetCode's Testcase panel";
       b.addEventListener("click", () => { const changed = c.id !== p.selectedId; select(c.id); if (changed) onSelect(c.id); });
-      return b;
+      if (c.source === "example") return b;
+      // your own cases (and LeetCode's): an × at the top right on hover deletes it, like LeetCode
+      const wrap = document.createElement("span");
+      wrap.className = "case-tab-wrap";
+      const x = document.createElement("button");
+      x.type = "button";
+      x.className = "case-x";
+      x.title = "Delete this case";
+      x.setAttribute("aria-label", `Delete Case ${i + 1}`);
+      x.innerHTML = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5"/></svg>';
+      x.addEventListener("click", (e) => { e.stopPropagation(); deleteCase(c.id); });
+      wrap.append(b, x);
+      return wrap;
     }));
   }
 
@@ -149,13 +174,14 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       const label = document.createElement("label");
       label.htmlFor = id;
       label.append(`${prm.label || prm.name} =`);
-      if (prm.hint) { const h = document.createElement("span"); h.className = "hint"; h.textContent = prm.hint; label.append(h); }
+      if (prm.hint) label.title = prm.hint;
       const ta = document.createElement("textarea");
       ta.id = id;
       ta.rows = 1;
       ta.spellcheck = false;
       ta.value = c.texts[prm.name] ?? "";
       ta.setAttribute("aria-describedby", id + "-err");
+      if (prm.hint) ta.title = prm.hint;
       const err = document.createElement("div");
       err.className = "field-error";
       err.id = id + "-err";
@@ -171,15 +197,15 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       el.fields.append(wrap);
     }
     el.fields.querySelectorAll("textarea").forEach(autosize);
-    el.del.hidden = c.source === "example";
-    el.source.textContent = { example: "From the problem's examples", leetcode: "Copied from LeetCode's Testcase panel", yours: "Your case" }[c.source] || "";
+    el.source.textContent = { example: "From LeetCode", leetcode: "From your LeetCode Testcase tab", yours: "Added by you" }[c.source] || "";
     setVerdict(null);
     check();
   }
 
   function autosize(ta) {
     ta.style.height = "auto";
-    ta.style.height = Math.min(ta.scrollHeight + 2, 220) + "px";
+    ta.style.height = Math.max(36, Math.min(ta.scrollHeight + 2, 220)) + "px";   // one line = 36px, like the design
+    ta.closest(".field")?.classList.toggle("multiline", ta.offsetHeight > 37);
   }
 
   /** Expected output for the current case, if it's an unchanged example. */
@@ -202,7 +228,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     }
     const exp = expected();
     el.expected.hidden = !exp;
-    if (exp) { el.expected.replaceChildren("Expected ", Object.assign(document.createElement("code"), { textContent: exp })); }
+    if (exp) { el.expected.replaceChildren(Object.assign(document.createElement("span"), { className: "exp-label", textContent: "Expected" }), " ", Object.assign(document.createElement("code"), { textContent: exp })); }
     if (g.ok) {
       el.setup.value = g.setup;
       if (!p.callOverride) el.call.value = g.code;
@@ -211,7 +237,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       if (!p.callOverride) el.call.value = "# Fix the test-case values to see the call.";
     }
     el.callReset.hidden = !p.callOverride;
-    el.callNote.textContent = p.callOverride ? "Edited: your version runs." : "From LeetScope's database. Edit it to change what runs.";
+    el.callNote.textContent = p.callOverride ? "Edited. Your version runs." : "From LeetScope's database. Edit it to change what runs.";
     return g;
   }
 
@@ -235,17 +261,21 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     if (first) first.focus();
   }
 
-  function deleteCase() {
+  // delete a case (the selected one by default); the problem's examples stay
+  function deleteCase(id) {
     if (!p) return;
-    const c = current();
+    const c = id ? p.cases.find((x) => x.id === id) : current();
     if (!c || c.source === "example") return;
+    const wasSelected = c.id === p.selectedId;
+    const i = p.cases.indexOf(c);
     p.cases = p.cases.filter((x) => x.id !== c.id);
-    select(p.cases.length ? p.cases[0].id : null);
+    if (!p.cases.length) return select(null);
+    // the neighbour takes over when the selected case goes; otherwise the selection stays
+    select(wasSelected ? p.cases[Math.min(i, p.cases.length - 1)].id : p.selectedId);
   }
 
   el.add.addEventListener("click", addCase);
-  el.del.addEventListener("click", deleteCase);
-  el.call.addEventListener("input", () => { if (p) { p.callOverride = el.call.value; save(); el.callReset.hidden = false; el.callNote.textContent = "Edited: your version runs."; } });
+  el.call.addEventListener("input", () => { if (p) { p.callOverride = el.call.value; save(); el.callReset.hidden = false; el.callNote.textContent = "Edited. Your version runs."; } });
   el.callReset.addEventListener("click", () => { if (p) { p.callOverride = null; save(); check(); } });
 
   /** The program for the selected case: { ok, setup, visible, code } or { ok: false, errors }. */
@@ -261,9 +291,26 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     if (!v) { el.verdict.hidden = true; el.verdict.replaceChildren(); return; }
     const code = (t) => Object.assign(document.createElement("code"), { textContent: t });
     el.verdict.dataset.kind = v.kind;
-    if (v.kind === "match") el.verdict.replaceChildren("✓ Output ", code(v.got), " matches the expected output.");
-    else if (v.kind === "mismatch") el.verdict.replaceChildren("✗ Output ", code(v.got || "(nothing)"), "\nexpected ", code(v.expected));
-    else el.verdict.replaceChildren(v.text ? v.text : "Output ", ...(v.text ? [] : [code(v.got || "(nothing)")]));
+    el.verdict.title = "";
+    if (v.kind === "match") {
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("aria-hidden", "true");
+      const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      use.setAttribute("href", "#i-check");
+      svg.append(use);
+      el.verdict.replaceChildren(svg, "matches");
+      el.verdict.title = `Your output ${v.got} matches the expected output.`;
+    } else if (v.kind === "mismatch") {
+      // same shape as "✓ matches", in coral: ✕ Output [what your code returned]
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("aria-hidden", "true");
+      const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      use.setAttribute("href", "#i-close");
+      svg.append(use);
+      el.verdict.replaceChildren(svg, "Output", code(v.got || "nothing"));
+      el.verdict.title = `Your output ${v.got || "is empty"}, and LeetCode expects ${v.expected}.`;
+    }
+    else el.verdict.replaceChildren(...(v.text ? [v.text] : ["Output", code(v.got || "nothing")]));
     el.verdict.hidden = false;
   }
 
@@ -276,7 +323,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     if (r === "unknown") return setVerdict({ kind: "output", got });     // couldn't read one of them: no verdict
     if (r !== "match" && entry.multipleAnswers) {
       // a different answer can be right here: don't call it wrong
-      setVerdict({ kind: "output", text: `Output ${got || "(nothing)"}. LeetCode accepts several answers for this problem; the example shows ${exp}.` });
+      setVerdict({ kind: "output", text: `Output ${got || "(nothing)"}. LeetCode accepts more than one answer here, and the example shows ${exp}.` });
       return "different";
     }
     setVerdict({ kind: r === "match" ? "match" : "mismatch", got, expected: exp });
@@ -284,7 +331,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
   }
 
   return {
-    loadFromPage, restore, program, judge, select, addCase,
+    loadFromPage, restore, program, judge, select, addCase, deleteCase,
     get problem() { return p; },
     get entry() { return entry; }, lastSlug,
     currentCase: current,

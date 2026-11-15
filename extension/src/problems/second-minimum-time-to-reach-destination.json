@@ -1,0 +1,40 @@
+{
+ "slug": "second-minimum-time-to-reach-destination",
+ "frontendId": "2045",
+ "title": "Second Minimum Time to Reach Destination",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "time",
+   "type": "integer"
+  },
+  {
+   "name": "change",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\ntime = {time}\nchange = {change}",
+ "visible": [
+  "n",
+  "edges",
+  "time",
+  "change"
+ ],
+ "call": "result = Solution().secondMinimum(n, edges, time, change)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,66 @@
+/* LeetScope design tokens (signature workspace, dark).
+   Every grey is a true neutral (equal R, G and B) on purpose: the owner
+   rejected the cool blue-grey cast, so do not swap in #18181B-style greys. */
+
+:root {
+  /* ---------- surfaces ---------- */
+  --ls-page: #0E0E0E;          /* page and top bar (same colour, no border) */
+  --ls-panel: #191919;         /* code, test cases, visualizer header, playback bar, diagnostics */
+  --ls-viz: #1A1A1A;           /* visualizer drawing area (matches the renderer's own background) */
+  --ls-input: #0F0F0F;         /* text inputs */
+  --ls-chip: #232323;          /* inline value chips, e.g. Expected */
+  --ls-control: #1E1E1E;       /* Edit and Run buttons */
+  --ls-control-on: #2A2A2A;    /* selected segment, pressed toggle */
+  --ls-segment: #171717;       /* LeetCode / Paste switch track */
+  --ls-segment-speed: #141414; /* speed switch track */
+  --ls-hover: #262626;         /* ghost button hover */
+
+  /* ---------- lines ---------- */
+  --ls-border: #232323;        /* panel borders, panel dividers */
+  --ls-border-control: #2C2C2C;/* Edit and Run border */
+  --ls-border-input: #262626;  /* inputs, zoom group */
+  --ls-border-segment: #222222;/* switch tracks */
+
+  /* ---------- text ---------- */
+  --ls-text-strong: #EDEDED;   /* titles, selected labels, values */
+  --ls-text: #D4D4D4;          /* code text, body values */
+  --ls-text-muted: #A0A0A0;    /* ghost buttons, icons */
+  --ls-text-dim: #8A8A8A;      /* labels, unselected tabs, problem number */
+  --ls-text-faint: #6E6E6E;    /* hints, "/ 30", "Python 3" */
+
+  /* ---------- brand accents (from the logo) ---------- */
+  --ls-amber: #FFB020;         /* Code label, current line, lens dot. Means "now". */
+  --ls-blue: #2F6BFF;          /* logo blue (dots, run indicator) */
+  --ls-blue-text: #4C8DFF;     /* blue used as text on dark (Case 2 number) */
+  --ls-coral: #FF5B4A;         /* logo coral (dots, run indicator) */
+  --ls-coral-text: #FF6B5B;    /* coral used as text on dark (Visualizer label, Case 3 number) */
+  --ls-mint: #3DD68C;          /* "matches", previous-line arrow, "ready" */
+
+  /* ---------- code ---------- */
+  --ls-code-comment: #6A9955;
+  --ls-code-keyword: #7FB2F0;
+  --ls-line-current-bg: rgba(255, 176, 32, .09);
+  --ls-line-number: #555555;
+  --ls-line-number-prev: #8A8A8A;
+
+  /* ---------- timeline ---------- */
+  --ls-track: #262626;
+  --ls-track-fill: #4A4A4A;
+  --ls-tick-played: #5A5A5A;
+  --ls-tick-ahead: #313131;
+
+  /* ---------- type ---------- */
+  --ls-font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ls-font-code: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* ---------- shape ---------- */
+  --ls-radius-panel: 14px;
+  --ls-radius-control: 8px;
+  --ls-radius-segment: 9px;
+  --ls-radius-chip: 6px;
+
+  /* ---------- motion ---------- */
+  --ls-ease-glide: cubic-bezier(.3, .7, .2, 1);
+  --ls-glide: .3s;             /* current-line band, arrows, timeline handle */
+  --ls-fade: .35s;             /* code focus dimming */
+}

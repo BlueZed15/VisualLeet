@@ -1,0 +1,35 @@
+{
+ "slug": "range-addition-ii",
+ "frontendId": "598",
+ "title": "Range Addition II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "ops",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nops_ = {ops}",
+ "visible": [
+  "m",
+  "n",
+  "ops_"
+ ],
+ "call": "result = Solution().maxCount(m, n, ops_)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

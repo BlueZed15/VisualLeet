@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-boomerangs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "447",
+ "title": "Number of Boomerangs",
+ "premium": false,
+ "meta": {
+  "name": "numberOfBoomerangs",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0],[1,0],[2,0]]",
+  "[[1,1],[2,2],[3,3]]",
+  "[[1,1]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "rank-teams-by-votes",
+ "frontendId": "1366",
+ "title": "Rank Teams by Votes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "votes",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "votes = {votes}",
+ "visible": [
+  "votes"
+ ],
+ "call": "result = Solution().rankTeams(votes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

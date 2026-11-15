@@ -1,0 +1,28 @@
+{
+ "slug": "goat-latin",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "824",
+ "title": "Goat Latin",
+ "premium": false,
+ "meta": {
+  "name": "toGoatLatin",
+  "params": [
+   {
+    "name": "sentence",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"I speak Goat Latin\"",
+  "\"The quick brown fox jumped over the lazy dog\""
+ ],
+ "exampleOutputs": [
+  "\"Imaa peaksmaaa oatGmaaaa atinLmaaaaa\"",
+  "\"heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa\""
+ ],
+ "anyOrder": false
+}

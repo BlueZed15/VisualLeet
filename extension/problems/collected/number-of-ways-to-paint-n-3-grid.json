@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-ways-to-paint-n-3-grid",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1411",
+ "title": "Number of Ways to Paint N × 3 Grid",
+ "premium": false,
+ "meta": {
+  "name": "numOfWays",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "5000"
+ ],
+ "exampleOutputs": [
+  "12",
+  "30228214"
+ ],
+ "anyOrder": false
+}

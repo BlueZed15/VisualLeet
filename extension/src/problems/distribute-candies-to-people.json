@@ -1,0 +1,30 @@
+{
+ "slug": "distribute-candies-to-people",
+ "frontendId": "1103",
+ "title": "Distribute Candies to People",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candies",
+   "type": "integer"
+  },
+  {
+   "name": "num_people",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "candies = {candies}\nnum_people = {num_people}",
+ "visible": [
+  "candies",
+  "num_people"
+ ],
+ "call": "result = Solution().distributeCandies(candies, num_people)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

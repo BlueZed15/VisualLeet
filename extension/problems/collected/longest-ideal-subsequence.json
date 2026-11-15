@@ -1,0 +1,32 @@
+{
+ "slug": "longest-ideal-subsequence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2370",
+ "title": "Longest Ideal Subsequence",
+ "premium": false,
+ "meta": {
+  "name": "longestIdealString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"acfgbd\"\n2",
+  "\"abcd\"\n3"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

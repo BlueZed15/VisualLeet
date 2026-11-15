@@ -1,0 +1,25 @@
+{
+ "slug": "cut-off-trees-for-golf-event",
+ "frontendId": "675",
+ "title": "Cut Off Trees for Golf Event",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "forest",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "forest = {forest}",
+ "visible": [
+  "forest"
+ ],
+ "call": "result = Solution().cutOffTree(forest)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

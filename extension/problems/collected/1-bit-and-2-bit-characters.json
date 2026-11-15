@@ -1,0 +1,28 @@
+{
+ "slug": "1-bit-and-2-bit-characters",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "717",
+ "title": "1-bit and 2-bit Characters",
+ "premium": false,
+ "meta": {
+  "name": "isOneBitCharacter",
+  "params": [
+   {
+    "name": "bits",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0]",
+  "[1,1,1,0]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

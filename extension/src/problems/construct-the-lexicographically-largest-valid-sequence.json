@@ -1,0 +1,25 @@
+{
+ "slug": "construct-the-lexicographically-largest-valid-sequence",
+ "frontendId": "1718",
+ "title": "Construct the Lexicographically Largest Valid Sequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().constructDistancedSequence(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

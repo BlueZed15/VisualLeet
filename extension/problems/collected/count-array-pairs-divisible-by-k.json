@@ -1,0 +1,32 @@
+{
+ "slug": "count-array-pairs-divisible-by-k",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2183",
+ "title": "Count Array Pairs Divisible by K",
+ "premium": false,
+ "meta": {
+  "name": "countPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2",
+  "[1,2,3,4]\n5"
+ ],
+ "exampleOutputs": [
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

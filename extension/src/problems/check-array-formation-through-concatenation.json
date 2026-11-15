@@ -1,0 +1,30 @@
+{
+ "slug": "check-array-formation-through-concatenation",
+ "frontendId": "1640",
+ "title": "Check Array Formation Through Concatenation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "pieces",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\npieces = {pieces}",
+ "visible": [
+  "arr",
+  "pieces"
+ ],
+ "call": "result = Solution().canFormArray(arr, pieces)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

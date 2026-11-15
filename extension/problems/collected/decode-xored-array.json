@@ -1,0 +1,32 @@
+{
+ "slug": "decode-xored-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1720",
+ "title": "Decode XORed Array",
+ "premium": false,
+ "meta": {
+  "name": "decode",
+  "params": [
+   {
+    "name": "encoded",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "first"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n1",
+  "[6,2,7,3]\n4"
+ ],
+ "exampleOutputs": [
+  "[1,0,2,1]",
+  "[4,2,0,7,4]"
+ ],
+ "anyOrder": false
+}

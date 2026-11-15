@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-total-distance-traveled",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2463",
+ "title": "Minimum Total Distance Traveled",
+ "premium": false,
+ "meta": {
+  "name": "minimumTotalDistance",
+  "params": [
+   {
+    "name": "robot",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer[][]",
+    "name": "factory"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[0,4,6]\n[[2,2],[6,2]]",
+  "[1,-1]\n[[-2,1],[2,1]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

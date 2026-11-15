@@ -1,0 +1,32 @@
+{
+ "slug": "string-without-aaa-or-bbb",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "984",
+ "title": "String Without AAA or BBB",
+ "premium": false,
+ "meta": {
+  "name": "strWithout3a3b",
+  "params": [
+   {
+    "name": "a",
+    "type": "integer"
+   },
+   {
+    "name": "b",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "1\n2",
+  "4\n1"
+ ],
+ "exampleOutputs": [
+  "\"abb\"",
+  "\"aabaa\""
+ ],
+ "anyOrder": false
+}

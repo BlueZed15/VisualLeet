@@ -1,0 +1,28 @@
+{
+ "slug": "additive-number",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "306",
+ "title": "Additive Number",
+ "premium": false,
+ "meta": {
+  "name": "isAdditiveNumber",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"112358\"",
+  "\"199100199\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

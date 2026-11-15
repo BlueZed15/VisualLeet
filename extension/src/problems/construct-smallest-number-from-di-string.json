@@ -1,0 +1,25 @@
+{
+ "slug": "construct-smallest-number-from-di-string",
+ "frontendId": "2375",
+ "title": "Construct Smallest Number From DI String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pattern",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "pattern = {pattern}",
+ "visible": [
+  "pattern"
+ ],
+ "call": "result = Solution().smallestNumber(pattern)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-students-taking-exam",
+ "frontendId": "1349",
+ "title": "Maximum Students Taking Exam",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "seats",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "seats = {seats}",
+ "visible": [
+  "seats"
+ ],
+ "call": "result = Solution().maxStudents(seats)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-matching-of-players-with-trainers",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2410",
+ "title": "Maximum Matching of Players With Trainers",
+ "premium": false,
+ "meta": {
+  "name": "matchPlayersAndTrainers",
+  "params": [
+   {
+    "name": "players",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "trainers"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,7,9]\n[8,2,5,8]",
+  "[1,1,1]\n[10]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

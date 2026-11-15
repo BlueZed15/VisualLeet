@@ -1,0 +1,30 @@
+{
+ "slug": "build-an-array-with-stack-operations",
+ "frontendId": "1441",
+ "title": "Build an Array With Stack Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\nn = {n}",
+ "visible": [
+  "target",
+  "n"
+ ],
+ "call": "result = Solution().buildArray(target, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

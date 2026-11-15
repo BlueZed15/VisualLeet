@@ -1,0 +1,32 @@
+{
+ "slug": "k-th-smallest-in-lexicographical-order",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "440",
+ "title": "K-th Smallest in Lexicographical Order",
+ "premium": false,
+ "meta": {
+  "name": "findKthNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "13\n2",
+  "1\n1"
+ ],
+ "exampleOutputs": [
+  "10",
+  "1"
+ ],
+ "anyOrder": false
+}

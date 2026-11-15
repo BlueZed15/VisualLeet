@@ -1,0 +1,25 @@
+{
+ "slug": "longest-well-performing-interval",
+ "frontendId": "1124",
+ "title": "Longest Well-Performing Interval",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hours",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "hours = {hours}",
+ "visible": [
+  "hours"
+ ],
+ "call": "result = Solution().longestWPI(hours)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

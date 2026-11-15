@@ -1,0 +1,28 @@
+{
+ "slug": "partition-array-into-disjoint-intervals",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "915",
+ "title": "Partition Array into Disjoint Intervals",
+ "premium": false,
+ "meta": {
+  "name": "partitionDisjoint",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,0,3,8,6]",
+  "[1,1,1,0,6,12]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

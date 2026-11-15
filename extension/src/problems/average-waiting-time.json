@@ -1,0 +1,25 @@
+{
+ "slug": "average-waiting-time",
+ "frontendId": "1701",
+ "title": "Average Waiting Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "customers",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "customers = {customers}",
+ "visible": [
+  "customers"
+ ],
+ "call": "result = Solution().averageWaitingTime(customers)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

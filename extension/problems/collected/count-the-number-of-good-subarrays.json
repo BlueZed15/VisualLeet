@@ -1,0 +1,32 @@
+{
+ "slug": "count-the-number-of-good-subarrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2537",
+ "title": "Count the Number of Good Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "countGood",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,1,1]\n10",
+  "[3,1,4,3,2,2,4]\n2"
+ ],
+ "exampleOutputs": [
+  "1",
+  "4"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "swap-adjacent-in-lr-string",
+ "frontendId": "777",
+ "title": "Swap Adjacent in LR String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "start",
+   "type": "string"
+  },
+  {
+   "name": "result",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "start = {start}\nresult_ = {result}",
+ "visible": [
+  "start",
+  "result_"
+ ],
+ "call": "result = Solution().canTransform(start, result_)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

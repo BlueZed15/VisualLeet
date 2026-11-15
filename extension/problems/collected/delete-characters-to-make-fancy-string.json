@@ -1,0 +1,30 @@
+{
+ "slug": "delete-characters-to-make-fancy-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1957",
+ "title": "Delete Characters to Make Fancy String",
+ "premium": false,
+ "meta": {
+  "name": "makeFancyString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leeetcode\"",
+  "\"aaabaaaa\"",
+  "\"aab\""
+ ],
+ "exampleOutputs": [
+  "\"leetcode\"",
+  "\"aabaa\"",
+  "\"aab\""
+ ],
+ "anyOrder": false
+}

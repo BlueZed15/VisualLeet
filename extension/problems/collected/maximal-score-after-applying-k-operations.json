@@ -1,0 +1,32 @@
+{
+ "slug": "maximal-score-after-applying-k-operations",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2530",
+ "title": "Maximal Score After Applying K Operations",
+ "premium": false,
+ "meta": {
+  "name": "maxKelements",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[10,10,10,10,10]\n5",
+  "[1,10,3,3,3]\n3"
+ ],
+ "exampleOutputs": [
+  "50",
+  "17"
+ ],
+ "anyOrder": false
+}

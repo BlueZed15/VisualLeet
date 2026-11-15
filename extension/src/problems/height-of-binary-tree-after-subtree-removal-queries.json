@@ -1,0 +1,30 @@
+{
+ "slug": "height-of-binary-tree-after-subtree-removal-queries",
+ "frontendId": "2458",
+ "title": "Height of Binary Tree After Subtree Removal Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nqueries = {queries}",
+ "visible": [
+  "root",
+  "queries"
+ ],
+ "call": "result = Solution().treeQueries(root, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "minimize-hamming-distance-after-swap-operations",
+ "frontendId": "1722",
+ "title": "Minimize Hamming Distance After Swap Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "source",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer[]"
+  },
+  {
+   "name": "allowedSwaps",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "source = {source}\ntarget = {target}\nallowedSwaps = {allowedSwaps}",
+ "visible": [
+  "source",
+  "target",
+  "allowedSwaps"
+ ],
+ "call": "result = Solution().minimumHammingDistance(source, target, allowedSwaps)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

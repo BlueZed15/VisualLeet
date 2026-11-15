@@ -1,0 +1,35 @@
+{
+ "slug": "build-a-matrix-with-conditions",
+ "frontendId": "2392",
+ "title": "Build a Matrix With Conditions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "rowConditions",
+   "type": "integer[][]"
+  },
+  {
+   "name": "colConditions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nrowConditions = {rowConditions}\ncolConditions = {colConditions}",
+ "visible": [
+  "k",
+  "rowConditions",
+  "colConditions"
+ ],
+ "call": "result = Solution().buildMatrix(k, rowConditions, colConditions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

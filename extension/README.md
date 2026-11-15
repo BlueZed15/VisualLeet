@@ -4,9 +4,9 @@ A Chrome (MV3) extension that runs your Python DSA solution entirely in the
 browser and shows a Python Tutor-style step-by-step visualization. Spec:
 `../VISUALLEET_EXTENSION_SPEC.md`. Status: working prototype with the LeetScope
 player UI (edit / playing modes, animated steps, zoom and drag), one-click visualization of LeetCode
-test cases backed by a checked problem database (1,026 problems: 176 checked with
-solutions, 850 more with their inputs checked);
-acceptance results in [`acceptance/`](acceptance/) (55/55 automated checks),
+test cases backed by a checked problem database (1,526 problems: 176 checked with
+solutions, 1,350 more with their inputs checked);
+acceptance results in [`acceptance/`](acceptance/) (58/58 automated checks),
 screenshots of every UI state in [`acceptance/states/`](acceptance/states/).
 Picking up the work? Start with [`HANDOVER.md`](HANDOVER.md).
 
@@ -53,7 +53,7 @@ the same extension plus developer tools in the page: built-in examples,
 editors; what runs is exactly Setup + Solution + Test call, and the
 visualizer shows that combined program). The normal build is LeetCode-only.
 
-Limits: 1,000 steps, 10 s, 64 KiB printed output, 10 MiB trace, 256 KiB
+Limits: 1,500 steps, 10 s, 64 KiB printed output, 10 MiB trace, 256 KiB
 source. Hitting one is reported ("limit reached" / "timed out"); a partial
 result is never shown as complete.
 
@@ -65,7 +65,7 @@ left alone.
 
 ## Problem database
 
-`src/problems/<slug>.json` (shipped, ~780 KB for 1,026 files) + `index.json`.
+`src/problems/<slug>.json` (shipped minified, ~750 KB for 1,526 files) + `index.json`.
 Each file holds the problem's input boxes (names and LeetCode types), the
 hidden setup and the call, with `{box}` slots the extension fills with the
 case. Files can be edited by hand. They are made and checked by:
@@ -120,7 +120,8 @@ blob: workers  (Pyodide 314.0.8 / Python 3.14.2 + forked tracer; fetch served fr
 cd extension
 node --test tests/                       # program assembly, LeetCode values/types, database entries (21)
 npm run build:extension-test             # real extension + host access to 127.0.0.1 and leetcode.com
-node scripts/acceptance.mjs              # 55 checks in headless Chrome -> acceptance/
+node scripts/acceptance.mjs              # 58 checks in headless Chrome -> acceptance/
+node scripts/stress.mjs                  # weak-machine stress test (CPU 1x/4x/6x slower) -> acceptance/stress-results.json
 npm run build:extension
 node scripts/shoot-states.mjs            # screenshot every UI state -> acceptance/states/
 cd ..

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-length-of-string-after-deleting-similar-ends",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1750",
+ "title": "Minimum Length of String After Deleting Similar Ends",
+ "premium": false,
+ "meta": {
+  "name": "minimumLength",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ca\"",
+  "\"cabaabac\"",
+  "\"aabccabba\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

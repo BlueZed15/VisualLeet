@@ -1,0 +1,47 @@
+{
+ "slug": "find-elements-in-a-contaminated-binary-tree",
+ "frontendId": "1261",
+ "title": "Find Elements in a Contaminated Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "FindElements",
+ "methods": {
+  "FindElements": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "find": [
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops",
+  "TreeNode"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = FindElements(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

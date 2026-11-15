@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-string-length-after-removing-substrings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2696",
+ "title": "Minimum String Length After Removing Substrings",
+ "premium": false,
+ "meta": {
+  "name": "minLength",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ABFCACDB\"",
+  "\"ACBBD\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

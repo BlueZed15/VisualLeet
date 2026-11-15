@@ -1,0 +1,30 @@
+{
+ "slug": "find-winner-on-a-tic-tac-toe-game",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1275",
+ "title": "Find Winner on a Tic Tac Toe Game",
+ "premium": false,
+ "meta": {
+  "name": "tictactoe",
+  "params": [
+   {
+    "name": "moves",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0],[2,0],[1,1],[2,1],[2,2]]",
+  "[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]",
+  "[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]"
+ ],
+ "exampleOutputs": [
+  "\"A\"",
+  "\"B\"",
+  "\"Draw\""
+ ],
+ "anyOrder": false
+}

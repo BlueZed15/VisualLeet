@@ -1,0 +1,30 @@
+{
+ "slug": "adding-spaces-to-a-string",
+ "frontendId": "2109",
+ "title": "Adding Spaces to a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "spaces",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nspaces = {spaces}",
+ "visible": [
+  "s",
+  "spaces"
+ ],
+ "call": "result = Solution().addSpaces(s, spaces)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

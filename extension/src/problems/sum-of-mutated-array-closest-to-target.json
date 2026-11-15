@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-mutated-array-closest-to-target",
+ "frontendId": "1300",
+ "title": "Sum of Mutated Array Closest to Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\ntarget = {target}",
+ "visible": [
+  "arr",
+  "target"
+ ],
+ "call": "result = Solution().findBestValue(arr, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

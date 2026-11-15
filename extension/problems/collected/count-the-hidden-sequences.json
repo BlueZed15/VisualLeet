@@ -1,0 +1,38 @@
+{
+ "slug": "count-the-hidden-sequences",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2145",
+ "title": "Count the Hidden Sequences",
+ "premium": false,
+ "meta": {
+  "name": "numberOfArrays",
+  "params": [
+   {
+    "name": "differences",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "lower"
+   },
+   {
+    "type": "integer",
+    "name": "upper"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,-3,4]\n1\n6",
+  "[3,-4,5,1,-2]\n-4\n5",
+  "[4,-7,2]\n3\n6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

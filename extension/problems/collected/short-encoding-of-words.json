@@ -1,0 +1,28 @@
+{
+ "slug": "short-encoding-of-words",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "820",
+ "title": "Short Encoding of Words",
+ "premium": false,
+ "meta": {
+  "name": "minimumLengthEncoding",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"time\",\"me\",\"bell\"]",
+  "[\"t\"]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "2"
+ ],
+ "anyOrder": false
+}

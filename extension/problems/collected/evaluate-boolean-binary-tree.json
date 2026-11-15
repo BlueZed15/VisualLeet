@@ -1,0 +1,28 @@
+{
+ "slug": "evaluate-boolean-binary-tree",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2331",
+ "title": "Evaluate Boolean Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "evaluateTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,3,null,null,0,1]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

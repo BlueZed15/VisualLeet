@@ -1,0 +1,25 @@
+{
+ "slug": "distant-barcodes",
+ "frontendId": "1054",
+ "title": "Distant Barcodes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "barcodes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "barcodes = {barcodes}",
+ "visible": [
+  "barcodes"
+ ],
+ "call": "result = Solution().rearrangeBarcodes(barcodes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "make-string-a-subsequence-using-cyclic-increments",
+ "frontendId": "2825",
+ "title": "Make String a Subsequence Using Cyclic Increments",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "str1",
+   "type": "string"
+  },
+  {
+   "name": "str2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "str1 = {str1}\nstr2 = {str2}",
+ "visible": [
+  "str1",
+  "str2"
+ ],
+ "call": "result = Solution().canMakeSubsequence(str1, str2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

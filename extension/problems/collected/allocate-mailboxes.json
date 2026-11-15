@@ -1,0 +1,32 @@
+{
+ "slug": "allocate-mailboxes",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1478",
+ "title": "Allocate Mailboxes",
+ "premium": false,
+ "meta": {
+  "name": "minDistance",
+  "params": [
+   {
+    "name": "houses",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,8,10,20]\n3",
+  "[2,3,5,12,18]\n2"
+ ],
+ "exampleOutputs": [
+  "5",
+  "9"
+ ],
+ "anyOrder": false
+}

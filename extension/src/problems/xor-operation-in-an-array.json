@@ -1,0 +1,30 @@
+{
+ "slug": "xor-operation-in-an-array",
+ "frontendId": "1486",
+ "title": "XOR Operation in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nstart = {start}",
+ "visible": [
+  "n",
+  "start"
+ ],
+ "call": "result = Solution().xorOperation(n, start)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

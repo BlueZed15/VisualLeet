@@ -1,0 +1,28 @@
+{
+ "slug": "convert-an-array-into-a-2d-array-with-conditions",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2610",
+ "title": "Convert an Array Into a 2D Array With Conditions",
+ "premium": false,
+ "meta": {
+  "name": "findMatrix",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,4,1,2,3,1]",
+  "[2,1,1]"
+ ],
+ "exampleOutputs": [
+  "[[1,3,4,2],[1,3],[1]]",
+  "[[4,3,2,1]]"
+ ],
+ "anyOrder": false
+}

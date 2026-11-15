@@ -1,0 +1,28 @@
+{
+ "slug": "tuple-with-same-product",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1726",
+ "title": "Tuple with Same Product",
+ "premium": false,
+ "meta": {
+  "name": "tupleSameProduct",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,4,6]",
+  "[1,2,4,5,10]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "16"
+ ],
+ "anyOrder": false
+}

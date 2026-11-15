@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-students-doing-homework-at-a-given-time",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1450",
+ "title": "Number of Students Doing Homework at a Given Time",
+ "premium": false,
+ "meta": {
+  "name": "busyStudent",
+  "params": [
+   {
+    "name": "startTime",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "endTime"
+   },
+   {
+    "type": "integer",
+    "name": "queryTime"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n[3,2,7]\n4",
+  "[4]\n[4]\n4"
+ ],
+ "exampleOutputs": [
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

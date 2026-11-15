@@ -1,0 +1,45 @@
+{
+ "slug": "minimum-cost-to-convert-string-i",
+ "frontendId": "2976",
+ "title": "Minimum Cost to Convert String I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "source",
+   "type": "string"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  },
+  {
+   "name": "original",
+   "type": "character[]"
+  },
+  {
+   "name": "changed",
+   "type": "character[]"
+  },
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "source = {source}\ntarget = {target}\noriginal = {original}\nchanged = {changed}\ncost = {cost}",
+ "visible": [
+  "source",
+  "target",
+  "original",
+  "changed",
+  "cost"
+ ],
+ "call": "result = Solution().minimumCost(source, target, original, changed, cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

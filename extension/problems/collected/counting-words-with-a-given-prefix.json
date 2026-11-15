@@ -1,0 +1,32 @@
+{
+ "slug": "counting-words-with-a-given-prefix",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2185",
+ "title": "Counting Words With a Given Prefix",
+ "premium": false,
+ "meta": {
+  "name": "prefixCount",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "pref"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
+  "[\"leetcode\",\"win\",\"loops\",\"success\"]\n\"code\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

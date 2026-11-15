@@ -1,0 +1,25 @@
+{
+ "slug": "distribute-candies",
+ "frontendId": "575",
+ "title": "Distribute Candies",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "candyType",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "candyType = {candyType}",
+ "visible": [
+  "candyType"
+ ],
+ "call": "result = Solution().distributeCandies(candyType)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

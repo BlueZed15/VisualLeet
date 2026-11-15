@@ -1,0 +1,30 @@
+{
+ "slug": "flip-binary-tree-to-match-preorder-traversal",
+ "frontendId": "971",
+ "title": "Flip Binary Tree To Match Preorder Traversal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "voyage",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nvoyage = {voyage}",
+ "visible": [
+  "root",
+  "voyage"
+ ],
+ "call": "result = Solution().flipMatchVoyage(root, voyage)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

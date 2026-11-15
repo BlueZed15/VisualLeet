@@ -1,0 +1,28 @@
+{
+ "slug": "count-nodes-with-the-highest-score",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2049",
+ "title": "Count Nodes With the Highest Score",
+ "premium": false,
+ "meta": {
+  "name": "countHighestScoreNodes",
+  "params": [
+   {
+    "name": "parents",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,2,0,2,0]",
+  "[-1,2,0]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

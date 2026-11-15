@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1984",
+ "title": "Minimum Difference Between Highest and Lowest of K Scores",
+ "premium": false,
+ "meta": {
+  "name": "minimumDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[90]\n1",
+  "[9,4,1,7]\n2"
+ ],
+ "exampleOutputs": [
+  "0",
+  "2"
+ ],
+ "anyOrder": false
+}

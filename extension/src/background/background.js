@@ -20,8 +20,8 @@ chrome.action.onClicked.addListener((tab) => showFrom(tab));
 // The top-bar button (content script on LeetCode): same as clicking the icon on that tab.
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (sender.id !== chrome.runtime.id || !sender.tab || !msg || msg.type !== "visualize-page") return;
-  if (!PROBLEM_URL.test(sender.tab.url || "")) { sendResponse({ ok: false, error: "Not a LeetCode problem page." }); return; }
-  showFrom(sender.tab, { useExample: msg.useExample === true }).then(() => sendResponse({ ok: true }), (e) => sendResponse({ ok: false, error: String(e && e.message || e) }));
+  if (!PROBLEM_URL.test(sender.tab.url || "")) { sendResponse({ ok: false, error: "Open a LeetCode problem to use Visualize." }); return; }
+  showFrom(sender.tab).then(() => sendResponse({ ok: true }), (e) => sendResponse({ ok: false, error: String(e && e.message || e) }));
   return true;
 });
 
@@ -37,16 +37,15 @@ async function problemEntry(slug) {
 
 /** Problems that stop a click on LeetCode, checked before leaving the page.
  *  Returns { text, action? } for a message on the LeetCode page, or null. */
-async function clickProblem(r, { useExample = false } = {}) {
-  if (!r.ok) return { text: r.error || "Couldn't read this LeetCode page." };
+async function clickProblem(r) {
+  if (!r.ok) return { text: r.error || "LeetScope couldn't read this page. Reload it and click Visualize again." };
   if (!/^python3?$/.test(r.language || "")) {
-    return { text: r.language ? `LeetCode's editor is set to ${r.language}. LeetScope runs Python 3: switch the editor to Python3 and click Visualize again.`
-                              : "Couldn't read LeetCode's code editor (is the page still loading?). Wait a moment and click Visualize again." };
+    return { text: r.language ? `LeetCode’s editor is set to ${r.language}. LeetScope runs Python 3. Switch the editor to Python3 and click Visualize again.`
+                              : "LeetScope couldn't read the code editor. The page may still be loading. Wait a moment and click Visualize again." };
   }
-  if (!r.code) return { text: "Couldn't read LeetCode's code editor (is the page still loading?). Wait a moment and click Visualize again." };
+  if (!r.code) return { text: "LeetScope couldn't read the code editor. The page may still be loading. Wait a moment and click Visualize again." };
   const entry = await problemEntry(r.slug);
-  if (!entry) return { text: `"${r.title || r.slug}" isn't in LeetScope's problem database yet (it covers the NeetCode 150 for now).` };
-  if (useExample) return null;
+  if (!entry) return { text: `"${r.title || r.slug}" isn't supported by LeetScope yet. Support for more problems is on the way.` };
   // the selected test case: its boxes, or its lines in the raw list of cases
   const n = entry.boxes.length;
   const lines = (r.rawCases || "").split("\n").filter((l) => l.trim()).length;
@@ -54,19 +53,25 @@ async function clickProblem(r, { useExample = false } = {}) {
   if (found) return null;
   const f = r.testcaseFound || {};
   return {
-    text: "Couldn't find the test case selected in LeetCode's Testcase panel. Open the Testcase panel, pick a case, and click Visualize again." +
-      ` (found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${n} input${n === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines` +
-      `${f.markers && f.markers.length ? "; page markers: " + f.markers.join(", ") : ""})`,
-    action: { label: "Use Example 1", useExample: true },
+    // nothing of the Testcase panel in the page: LeetCode only renders it while its tab is
+    // open (before a first Run, the Test Result tab replaces it entirely)
+    text: !f.tabs && !f.boxes && !f.rawLines
+      ? "LeetScope reads your test case from LeetCode's Testcase tab, and that tab isn't open. Open the Testcase tab below the editor, select a case, and click Visualize again."
+      : "LeetScope couldn't match the selected test case to this problem's inputs. Select the case again in LeetCode's Testcase tab and click Visualize.",
+    // what the page reader saw, for debugging (shown in the service worker's console, not in the card)
+    detail: `found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${n} input${n === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines` +
+      `${f.markers && f.markers.length ? "; page markers: " + f.markers.join(", ") : ""}`,
   };
 }
 
 // Show a message next to the Visualize button on the LeetCode page (content script).
 async function tellPage(tabId, problem) {
-  try { await chrome.tabs.sendMessage(tabId, Object.assign({ type: "leetscope-toast" }, problem)); return true; } catch { return false; }
+  if (problem.detail) console.info("LeetScope:", problem.text, "|", problem.detail);
+  const { detail, ...shown } = problem;
+  try { await chrome.tabs.sendMessage(tabId, Object.assign({ type: "leetscope-toast" }, shown)); return true; } catch { return false; }
 }
 
-async function showFrom(tab, { useExample = false } = {}) {
+async function showFrom(tab) {
   const uiUrl = chrome.runtime.getURL(UI_PATH);
   const onUi = (tab.url || "").startsWith(uiUrl);
   const sourceTabId = tab && typeof tab.id === "number" && !onUi ? tab.id : null;
@@ -77,9 +82,8 @@ async function showFrom(tab, { useExample = false } = {}) {
     const r = await readLeetCode(sourceTabId);
     // a problem that stops this click: say so on the LeetCode page and stay there
     // (if the page can't show it, e.g. it was open before LeetScope was updated, LeetScope explains instead)
-    const problem = await clickProblem(r, { useExample });
+    const problem = await clickProblem(r);
     if (problem && await tellPage(sourceTabId, problem)) return;
-    if (useExample && r.ok) { r.selectedCase = []; r.selectedIndex = -1; r.useExample = true; }
     pending = { id: crypto.randomUUID(), at: Date.now(), tabId: sourceTabId, url: tab.url, result: r };
     await chrome.storage.session.set({ pending }).catch(() => {});
   }
@@ -122,11 +126,12 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 function friendlyError(err) {
   const text = String((err && err.message) || err);
   if (/Cannot access|cannot be scripted|chrome:\/\/|extensions gallery|Missing host permission|permission/i.test(text)) {
-    return "LeetScope can't read that page right now. Pages like chrome:// are protected, and access ends when the page reloads or navigates: " +
-           "click the LeetScope icon (or press Alt+V) on that page again, or paste your code instead.";
+    return "LeetScope can't read this page. Chrome protects some pages, such as chrome:// pages, and access ends when a page reloads. " +
+           "Click the LeetScope icon on the page again.";
   }
   if (/No tab with id/i.test(text)) return "That page was closed. Open it again and click the LeetScope icon.";
-  return "Reading the page failed: " + text;
+  console.warn("LeetScope: reading the page failed", text);
+  return "LeetScope couldn't read this page. Reload it and try again.";
 }
 
 const utf8Length = (s) => new TextEncoder().encode(s).length;
@@ -156,9 +161,9 @@ async function importSelection(tabId) {
   const texts = results.map((r) => (typeof r.result === "string" ? r.result : "")).filter((t) => t.trim());
   const text = (texts[0] || "").replace(/\r\n?/g, "\n").replace(/\xa0/g, " ");
   if (!text.trim()) {
-    return { ok: false, error: "Nothing is selected on that page. Select your code there first (or paste it here). Your current code was kept." };
+    return { ok: false, error: "Nothing is selected on that page. Select the code there and try again. Your current code is unchanged." };
   }
-  if (utf8Length(text) > MAX_CODE_BYTES) return { ok: false, error: "The selection is larger than 256 KiB." };
+  if (utf8Length(text) > MAX_CODE_BYTES) return { ok: false, error: "The selection is larger than 256 KiB, which is more than LeetScope can show." };
   return { ok: true, text };
 }
 
@@ -173,12 +178,12 @@ async function readLeetCode(tabId) {
   }
   // The page is not trusted: check the shape and bound everything.
   const r = results && results[0] && results[0].result;
-  if (!r || typeof r !== "object") return { ok: false, error: "Couldn't read the LeetCode page." };
+  if (!r || typeof r !== "object") return { ok: false, error: "LeetScope couldn't read this LeetCode page. Reload it and try again." };
   if (!r.ok) {
     return { ok: false, reason: r.reason, error: {
-      "not-leetcode": "That page isn't LeetCode.",
-      "not-problem": "That LeetCode page isn't a problem. Open a problem and click Visualize or the LeetScope icon there.",
-    }[r.reason] || "Couldn't read the LeetCode page." };
+      "not-leetcode": "This page isn't on LeetCode. Open a LeetCode problem and click the LeetScope icon there.",
+      "not-problem": "This LeetCode page isn't a problem. Open a problem and click Visualize.",
+    }[r.reason] || "LeetScope couldn't read this LeetCode page. Reload it and try again." };
   }
   const out = {
     ok: true,
@@ -201,9 +206,9 @@ async function readLeetCode(tabId) {
       ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0,
           markers: Array.isArray(r.testcaseFound.markers) ? r.testcaseFound.markers.filter((x) => typeof x === "string").slice(0, 12).map((x) => x.slice(0, 60)) : [] } : null,
   };
-  if (!out.slug) return { ok: false, error: "That page's problem name looks wrong." };
+  if (!out.slug) return { ok: false, error: "LeetScope couldn't tell which problem this page is. Reload it and try again." };
   if (typeof r.code === "string") {
-    if (utf8Length(r.code) > MAX_CODE_BYTES) return { ok: false, error: "The editor contains more than 256 KiB of code." };
+    if (utf8Length(r.code) > MAX_CODE_BYTES) return { ok: false, error: "The code in the editor is larger than 256 KiB, which is more than LeetScope can show." };
     out.code = r.code.replace(/\r\n?/g, "\n");
   }
   return out;

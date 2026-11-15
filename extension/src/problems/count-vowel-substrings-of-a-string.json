@@ -1,0 +1,25 @@
+{
+ "slug": "count-vowel-substrings-of-a-string",
+ "frontendId": "2062",
+ "title": "Count Vowel Substrings of a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}",
+ "visible": [
+  "word"
+ ],
+ "call": "result = Solution().countVowelSubstrings(word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

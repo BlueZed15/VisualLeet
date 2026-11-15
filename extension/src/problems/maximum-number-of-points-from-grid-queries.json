@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-points-from-grid-queries",
+ "frontendId": "2503",
+ "title": "Maximum Number of Points From Grid Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nqueries = {queries}",
+ "visible": [
+  "grid",
+  "queries"
+ ],
+ "call": "result = Solution().maxPoints(grid, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

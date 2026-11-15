@@ -1,0 +1,28 @@
+{
+ "slug": "average-waiting-time",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1701",
+ "title": "Average Waiting Time",
+ "premium": false,
+ "meta": {
+  "name": "averageWaitingTime",
+  "params": [
+   {
+    "name": "customers",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,5],[4,3]]",
+  "[[5,2],[5,4],[10,3],[20,1]]"
+ ],
+ "exampleOutputs": [
+  "5.00000",
+  "3.25000"
+ ],
+ "anyOrder": false
+}

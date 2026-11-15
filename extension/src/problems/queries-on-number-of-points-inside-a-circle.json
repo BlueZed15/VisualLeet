@@ -1,0 +1,30 @@
+{
+ "slug": "queries-on-number-of-points-inside-a-circle",
+ "frontendId": "1828",
+ "title": "Queries on Number of Points Inside a Circle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}\nqueries = {queries}",
+ "visible": [
+  "points",
+  "queries"
+ ],
+ "call": "result = Solution().countPoints(points, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

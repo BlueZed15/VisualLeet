@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-fruits-harvested-after-at-most-k-steps",
+ "frontendId": "2106",
+ "title": "Maximum Fruits Harvested After at Most K Steps",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "fruits",
+   "type": "integer[][]"
+  },
+  {
+   "name": "startPos",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "fruits = {fruits}\nstartPos = {startPos}\nk = {k}",
+ "visible": [
+  "fruits",
+  "startPos",
+  "k"
+ ],
+ "call": "result = Solution().maxTotalFruits(fruits, startPos, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

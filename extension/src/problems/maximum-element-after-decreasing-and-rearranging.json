@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-element-after-decreasing-and-rearranging",
+ "frontendId": "1846",
+ "title": "Maximum Element After Decreasing and Rearranging",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}",
+ "visible": [
+  "arr"
+ ],
+ "call": "result = Solution().maximumElementAfterDecrementingAndRearranging(arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

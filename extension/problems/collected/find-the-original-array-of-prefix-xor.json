@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-original-array-of-prefix-xor",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2433",
+ "title": "Find The Original Array of Prefix Xor",
+ "premium": false,
+ "meta": {
+  "name": "findArray",
+  "params": [
+   {
+    "name": "pref",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,0,3,1]",
+  "[13]"
+ ],
+ "exampleOutputs": [
+  "[5,7,2,3,2]",
+  "[13]"
+ ],
+ "anyOrder": false
+}

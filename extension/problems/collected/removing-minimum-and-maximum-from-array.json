@@ -1,0 +1,30 @@
+{
+ "slug": "removing-minimum-and-maximum-from-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2091",
+ "title": "Removing Minimum and Maximum From Array",
+ "premium": false,
+ "meta": {
+  "name": "minimumDeletions",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,10,7,5,4,1,8,6]",
+  "[0,-4,19,1,8,-2,-3,5]",
+  "[101]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

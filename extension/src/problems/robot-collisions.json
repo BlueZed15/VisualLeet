@@ -1,0 +1,35 @@
+{
+ "slug": "robot-collisions",
+ "frontendId": "2751",
+ "title": "Robot Collisions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "positions",
+   "type": "integer[]"
+  },
+  {
+   "name": "healths",
+   "type": "integer[]"
+  },
+  {
+   "name": "directions",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "positions = {positions}\nhealths = {healths}\ndirections = {directions}",
+ "visible": [
+  "positions",
+  "healths",
+  "directions"
+ ],
+ "call": "result = Solution().survivedRobotsHealths(positions, healths, directions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

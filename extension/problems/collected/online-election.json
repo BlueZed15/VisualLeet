@@ -1,0 +1,59 @@
+{
+ "slug": "online-election",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "911",
+ "title": "Online Election",
+ "premium": false,
+ "meta": {
+  "classname": "TopVotedCandidate",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "persons"
+    },
+    {
+     "type": "integer[]",
+     "name": "times"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "q",
+    "params": [
+     {
+      "type": "integer",
+      "name": "t"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"TopVotedCandidate\",\"q\",\"q\",\"q\",\"q\",\"q\",\"q\"]\n[[[0,1,1,0,0,1,0],[0,5,10,15,20,25,30]],[3],[12],[25],[15],[24],[8]]"
+ ],
+ "exampleOutputs": [
+  "[null, 0, 1, 1, 0, 0, 1]"
+ ],
+ "anyOrder": false
+}

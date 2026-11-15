@@ -1,0 +1,30 @@
+{
+ "slug": "defuse-the-bomb",
+ "frontendId": "1652",
+ "title": "Defuse the Bomb",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "code",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "code = {code}\nk = {k}",
+ "visible": [
+  "code",
+  "k"
+ ],
+ "call": "result = Solution().decrypt(code, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

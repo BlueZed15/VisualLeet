@@ -1,0 +1,30 @@
+{
+ "slug": "loud-and-rich",
+ "frontendId": "851",
+ "title": "Loud and Rich",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "richer",
+   "type": "integer[][]"
+  },
+  {
+   "name": "quiet",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "richer = {richer}\nquiet = {quiet}",
+ "visible": [
+  "richer",
+  "quiet"
+ ],
+ "call": "result = Solution().loudAndRich(richer, quiet)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

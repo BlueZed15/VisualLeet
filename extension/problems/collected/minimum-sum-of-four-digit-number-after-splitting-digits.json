@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2160",
+ "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+ "premium": false,
+ "meta": {
+  "name": "minimumSum",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2932",
+  "4009"
+ ],
+ "exampleOutputs": [
+  "52",
+  "13"
+ ],
+ "anyOrder": false
+}

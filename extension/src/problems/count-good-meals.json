@@ -1,0 +1,25 @@
+{
+ "slug": "count-good-meals",
+ "frontendId": "1711",
+ "title": "Count Good Meals",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "deliciousness",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "deliciousness = {deliciousness}",
+ "visible": [
+  "deliciousness"
+ ],
+ "call": "result = Solution().countPairs(deliciousness)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

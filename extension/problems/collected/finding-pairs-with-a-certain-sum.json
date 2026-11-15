@@ -1,0 +1,63 @@
+{
+ "slug": "finding-pairs-with-a-certain-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1865",
+ "title": "Finding Pairs With a Certain Sum",
+ "premium": false,
+ "meta": {
+  "classname": "FindSumPairs",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "nums1"
+    },
+    {
+     "name": "nums2",
+     "type": "integer[]"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     },
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "tot"
+     }
+    ],
+    "name": "count",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"FindSumPairs\",\"count\",\"add\",\"count\",\"count\",\"add\",\"add\",\"count\"]\n[[[1,1,2,2,2,3],[1,4,5,2,5,4]],[7],[3,2],[8],[4],[0,1],[1,1],[7]]"
+ ],
+ "exampleOutputs": [
+  "[null, 8, null, 2, 1, null, null, 11]"
+ ],
+ "anyOrder": false
+}

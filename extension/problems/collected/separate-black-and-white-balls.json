@@ -1,0 +1,30 @@
+{
+ "slug": "separate-black-and-white-balls",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2938",
+ "title": "Separate Black and White Balls",
+ "premium": false,
+ "meta": {
+  "name": "minimumSteps",
+  "params": [
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"101\"",
+  "\"100\"",
+  "\"0111\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

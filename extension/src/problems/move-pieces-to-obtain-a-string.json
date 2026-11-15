@@ -1,0 +1,30 @@
+{
+ "slug": "move-pieces-to-obtain-a-string",
+ "frontendId": "2337",
+ "title": "Move Pieces to Obtain a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "start",
+   "type": "string"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "start = {start}\ntarget = {target}",
+ "visible": [
+  "start",
+  "target"
+ ],
+ "call": "result = Solution().canChange(start, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

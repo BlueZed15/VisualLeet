@@ -1,0 +1,32 @@
+{
+ "slug": "height-of-binary-tree-after-subtree-removal-queries",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2458",
+ "title": "Height of Binary Tree After Subtree Removal Queries",
+ "premium": false,
+ "meta": {
+  "name": "treeQueries",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "type": "integer[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,4,2,null,6,5,null,null,null,null,null,7]\n[4]",
+  "[5,8,9,2,1,3,7,4,6]\n[3,2,4,8]"
+ ],
+ "exampleOutputs": [
+  "[2]",
+  "[3,2,3,2]"
+ ],
+ "anyOrder": false
+}

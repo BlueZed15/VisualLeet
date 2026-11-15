@@ -1,0 +1,40 @@
+{
+ "slug": "count-good-triplets",
+ "frontendId": "1534",
+ "title": "Count Good Triplets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  },
+  {
+   "name": "c",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\na = {a}\nb = {b}\nc = {c}",
+ "visible": [
+  "arr",
+  "a",
+  "b",
+  "c"
+ ],
+ "call": "result = Solution().countGoodTriplets(arr, a, b, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

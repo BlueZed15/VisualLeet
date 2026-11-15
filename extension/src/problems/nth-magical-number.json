@@ -1,0 +1,35 @@
+{
+ "slug": "nth-magical-number",
+ "frontendId": "878",
+ "title": "Nth Magical Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\na = {a}\nb = {b}",
+ "visible": [
+  "n",
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().nthMagicalNumber(n, a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

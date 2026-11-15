@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-difference-between-increasing-elements",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2016",
+ "title": "Maximum Difference Between Increasing Elements",
+ "premium": false,
+ "meta": {
+  "name": "maximumDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[7,1,5,4]",
+  "[9,4,3,2]",
+  "[1,5,2,10]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1",
+  "9"
+ ],
+ "anyOrder": false
+}

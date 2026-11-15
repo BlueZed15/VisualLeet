@@ -125,6 +125,26 @@ async function init(msg) {
   });
 }
 
+// A trace over the size limit (big data that changes every step, e.g. a growing
+// dict of lists) keeps the steps that fit and ends like the step limit does,
+// instead of showing nothing. Returns null if not even one step fits.
+function truncateTrace(traceJson, maxBytes) {
+  const data = JSON.parse(traceJson);
+  const steps = data.trace || [];
+  let size = traceJson.length - JSON.stringify(steps).length + 600;   // everything but the steps, plus the end marker
+  let keep = 0;
+  while (keep < steps.length) {
+    size += JSON.stringify(steps[keep]).length + 1;
+    if (size > maxBytes) break;
+    keep += 1;
+  }
+  if (!keep) return null;
+  data.trace = steps.slice(0, keep);
+  data.trace.push({ event: "instruction_limit_reached",
+                    exception_msg: `Stopped after ${keep} steps because the data grew too large to show more.` });
+  return JSON.stringify(data);
+}
+
 self.onmessage = async (e) => {
   const m = e.data;
   try {
@@ -138,11 +158,12 @@ self.onmessage = async (e) => {
       }
       const t0 = performance.now();
       const inputs = Array.isArray(m.inputs) && m.inputs.length ? JSON.stringify(m.inputs) : null;
-      const traceJson = runPython(m.source, inputs, m.setup || "", JSON.stringify(m.setupVisible || []));
+      let traceJson = runPython(m.source, inputs, m.setup || "", JSON.stringify(m.setupVisible || []));
       const t1 = performance.now();
-      if (traceJson.length > maxBytes) {
+      if (traceJson.length > maxBytes) traceJson = truncateTrace(traceJson, maxBytes);
+      if (!traceJson) {
         postMessage({ type: "error", runId: m.runId, code: "trace-too-large",
-                      message: `Trace is ${(traceJson.length / 1048576).toFixed(1)} MiB, over the ${(maxBytes / 1048576).toFixed(0)} MiB limit.` });
+                      message: `The first step alone is over the ${(maxBytes / 1048576).toFixed(0)} MiB limit. Please use a smaller input.` });
         return;
       }
       postMessage({ type: "result", runId: m.runId, traceJson, metrics: { execMs: t1 - t0, bytes: traceJson.length } });

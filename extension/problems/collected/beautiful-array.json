@@ -1,0 +1,28 @@
+{
+ "slug": "beautiful-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "932",
+ "title": "Beautiful Array",
+ "premium": false,
+ "meta": {
+  "name": "beautifulArray",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "5"
+ ],
+ "exampleOutputs": [
+  "[2,1,4,3]",
+  "[3,1,2,5,4]"
+ ],
+ "anyOrder": false
+}

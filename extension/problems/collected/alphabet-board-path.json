@@ -1,0 +1,28 @@
+{
+ "slug": "alphabet-board-path",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1138",
+ "title": "Alphabet Board Path",
+ "premium": false,
+ "meta": {
+  "name": "alphabetBoardPath",
+  "params": [
+   {
+    "name": "target",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leet\"",
+  "\"code\""
+ ],
+ "exampleOutputs": [
+  "\"DDR!UURRR!!DDD!\"",
+  "\"RR!DDRR!UUL!R!\""
+ ],
+ "anyOrder": false
+}

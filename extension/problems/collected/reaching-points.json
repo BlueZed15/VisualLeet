@@ -1,0 +1,42 @@
+{
+ "slug": "reaching-points",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "780",
+ "title": "Reaching Points",
+ "premium": false,
+ "meta": {
+  "name": "reachingPoints",
+  "params": [
+   {
+    "name": "sx",
+    "type": "integer"
+   },
+   {
+    "name": "sy",
+    "type": "integer"
+   },
+   {
+    "name": "tx",
+    "type": "integer"
+   },
+   {
+    "name": "ty",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "1\n1\n3\n5",
+  "1\n1\n2\n2",
+  "1\n1\n1\n1"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

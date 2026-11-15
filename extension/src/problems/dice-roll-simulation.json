@@ -1,0 +1,30 @@
+{
+ "slug": "dice-roll-simulation",
+ "frontendId": "1223",
+ "title": "Dice Roll Simulation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "rollMax",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrollMax = {rollMax}",
+ "visible": [
+  "n",
+  "rollMax"
+ ],
+ "call": "result = Solution().dieSimulator(n, rollMax)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

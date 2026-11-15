@@ -1,0 +1,32 @@
+{
+ "slug": "swap-adjacent-in-lr-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "777",
+ "title": "Swap Adjacent in LR String",
+ "premium": false,
+ "meta": {
+  "name": "canTransform",
+  "params": [
+   {
+    "name": "start",
+    "type": "string"
+   },
+   {
+    "name": "result",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"RXXLRXRXL\"\n\"XRLXXRRLX\"",
+  "\"X\"\n\"L\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

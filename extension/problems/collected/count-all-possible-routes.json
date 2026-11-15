@@ -1,0 +1,42 @@
+{
+ "slug": "count-all-possible-routes",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1575",
+ "title": "Count All Possible Routes",
+ "premium": false,
+ "meta": {
+  "name": "countRoutes",
+  "params": [
+   {
+    "name": "locations",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "start"
+   },
+   {
+    "type": "integer",
+    "name": "finish"
+   },
+   {
+    "type": "integer",
+    "name": "fuel"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,6,8,4]\n1\n3\n5",
+  "[4,3,1]\n1\n0\n6",
+  "[5,2,1]\n0\n2\n3"
+ ],
+ "exampleOutputs": [
+  "4",
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

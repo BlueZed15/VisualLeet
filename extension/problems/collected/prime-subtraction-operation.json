@@ -1,0 +1,30 @@
+{
+ "slug": "prime-subtraction-operation",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2601",
+ "title": "Prime Subtraction Operation",
+ "premium": false,
+ "meta": {
+  "name": "primeSubOperation",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[4,9,6,10]",
+  "[6,8,11,12]",
+  "[5,8,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

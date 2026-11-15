@@ -1,0 +1,40 @@
+{
+ "slug": "reaching-points",
+ "frontendId": "780",
+ "title": "Reaching Points",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sx",
+   "type": "integer"
+  },
+  {
+   "name": "sy",
+   "type": "integer"
+  },
+  {
+   "name": "tx",
+   "type": "integer"
+  },
+  {
+   "name": "ty",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "sx = {sx}\nsy = {sy}\ntx = {tx}\nty = {ty}",
+ "visible": [
+  "sx",
+  "sy",
+  "tx",
+  "ty"
+ ],
+ "call": "result = Solution().reachingPoints(sx, sy, tx, ty)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

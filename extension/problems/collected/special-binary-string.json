@@ -1,0 +1,28 @@
+{
+ "slug": "special-binary-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "761",
+ "title": "Special Binary String",
+ "premium": false,
+ "meta": {
+  "name": "makeLargestSpecial",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"11011000\"",
+  "\"10\""
+ ],
+ "exampleOutputs": [
+  "\"11100100\"",
+  "\"10\""
+ ],
+ "anyOrder": false
+}

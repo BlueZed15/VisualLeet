@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-vi",
+ "frontendId": "1686",
+ "title": "Stone Game VI",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "aliceValues",
+   "type": "integer[]"
+  },
+  {
+   "name": "bobValues",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "aliceValues = {aliceValues}\nbobValues = {bobValues}",
+ "visible": [
+  "aliceValues",
+  "bobValues"
+ ],
+ "call": "result = Solution().stoneGameVI(aliceValues, bobValues)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

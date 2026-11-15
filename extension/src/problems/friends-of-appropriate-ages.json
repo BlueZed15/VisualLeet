@@ -1,0 +1,25 @@
+{
+ "slug": "friends-of-appropriate-ages",
+ "frontendId": "825",
+ "title": "Friends Of Appropriate Ages",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ages",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ages = {ages}",
+ "visible": [
+  "ages"
+ ],
+ "call": "result = Solution().numFriendRequests(ages)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "convert-1d-array-into-2d-array",
+ "frontendId": "2022",
+ "title": "Convert 1D Array Into 2D Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "original",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "original = {original}\nm = {m}\nn = {n}",
+ "visible": [
+  "original",
+  "m",
+  "n"
+ ],
+ "call": "result = Solution().construct2DArray(original, m, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-ways-to-split-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2270",
+ "title": "Number of Ways to Split Array",
+ "premium": false,
+ "meta": {
+  "name": "waysToSplitArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,4,-8,7]",
+  "[2,3,1,0]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

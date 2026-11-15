@@ -1,0 +1,25 @@
+{
+ "slug": "path-crossing",
+ "frontendId": "1496",
+ "title": "Path Crossing",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "path",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "path = {path}",
+ "visible": [
+  "path"
+ ],
+ "call": "result = Solution().isPathCrossing(path)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "find-missing-and-repeated-values",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2965",
+ "title": "Find Missing and Repeated Values",
+ "premium": false,
+ "meta": {
+  "name": "findMissingAndRepeatedValues",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,3],[2,2]]",
+  "[[9,1,7],[8,9,2],[3,4,6]]"
+ ],
+ "exampleOutputs": [
+  "[2,4]",
+  "[9,5]"
+ ],
+ "anyOrder": false
+}

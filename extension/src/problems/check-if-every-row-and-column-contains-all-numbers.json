@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-every-row-and-column-contains-all-numbers",
+ "frontendId": "2133",
+ "title": "Check if Every Row and Column Contains All Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "matrix",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "matrix = {matrix}",
+ "visible": [
+  "matrix"
+ ],
+ "call": "result = Solution().checkValid(matrix)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

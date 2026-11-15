@@ -1,0 +1,36 @@
+{
+ "slug": "count-of-interesting-subarrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2845",
+ "title": "Count of Interesting Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "countInterestingSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "modulo"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,4]\n2\n1",
+  "[3,1,9,6]\n3\n0"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

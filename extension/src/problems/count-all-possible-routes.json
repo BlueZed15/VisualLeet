@@ -1,0 +1,40 @@
+{
+ "slug": "count-all-possible-routes",
+ "frontendId": "1575",
+ "title": "Count All Possible Routes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "locations",
+   "type": "integer[]"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  },
+  {
+   "name": "finish",
+   "type": "integer"
+  },
+  {
+   "name": "fuel",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "locations = {locations}\nstart = {start}\nfinish = {finish}\nfuel = {fuel}",
+ "visible": [
+  "locations",
+  "start",
+  "finish",
+  "fuel"
+ ],
+ "call": "result = Solution().countRoutes(locations, start, finish, fuel)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

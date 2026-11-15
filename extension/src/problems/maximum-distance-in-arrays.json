@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-distance-in-arrays",
+ "frontendId": "624",
+ "title": "Maximum Distance in Arrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arrays",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "arrays = {arrays}",
+ "visible": [
+  "arrays"
+ ],
+ "call": "result = Solution().maxDistance(arrays)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

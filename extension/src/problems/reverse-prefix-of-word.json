@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-prefix-of-word",
+ "frontendId": "2000",
+ "title": "Reverse Prefix of Word",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "ch",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nch = {ch}",
+ "visible": [
+  "word",
+  "ch"
+ ],
+ "call": "result = Solution().reversePrefix(word, ch)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

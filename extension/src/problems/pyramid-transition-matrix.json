@@ -1,0 +1,30 @@
+{
+ "slug": "pyramid-transition-matrix",
+ "frontendId": "756",
+ "title": "Pyramid Transition Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bottom",
+   "type": "string"
+  },
+  {
+   "name": "allowed",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "bottom = {bottom}\nallowed = {allowed}",
+ "visible": [
+  "bottom",
+  "allowed"
+ ],
+ "call": "result = Solution().pyramidTransition(bottom, allowed)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

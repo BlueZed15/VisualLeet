@@ -1,0 +1,25 @@
+{
+ "slug": "find-first-palindromic-string-in-the-array",
+ "frontendId": "2108",
+ "title": "Find First Palindromic String in the Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}",
+ "visible": [
+  "words"
+ ],
+ "call": "result = Solution().firstPalindrome(words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

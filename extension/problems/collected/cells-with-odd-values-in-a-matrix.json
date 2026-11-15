@@ -1,0 +1,36 @@
+{
+ "slug": "cells-with-odd-values-in-a-matrix",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1252",
+ "title": "Cells with Odd Values in a Matrix",
+ "premium": false,
+ "meta": {
+  "name": "oddCells",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "indices"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n3\n[[0,1],[1,1]]",
+  "2\n2\n[[1,1],[0,0]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

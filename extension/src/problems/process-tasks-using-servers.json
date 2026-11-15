@@ -1,0 +1,30 @@
+{
+ "slug": "process-tasks-using-servers",
+ "frontendId": "1882",
+ "title": "Process Tasks Using Servers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "servers",
+   "type": "integer[]"
+  },
+  {
+   "name": "tasks",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "servers = {servers}\ntasks = {tasks}",
+ "visible": [
+  "servers",
+  "tasks"
+ ],
+ "call": "result = Solution().assignTasks(servers, tasks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

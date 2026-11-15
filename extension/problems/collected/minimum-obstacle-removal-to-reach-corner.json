@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-obstacle-removal-to-reach-corner",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2290",
+ "title": "Minimum Obstacle Removal to Reach Corner",
+ "premium": false,
+ "meta": {
+  "name": "minimumObstacles",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,1],[1,1,0],[1,1,0]]",
+  "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

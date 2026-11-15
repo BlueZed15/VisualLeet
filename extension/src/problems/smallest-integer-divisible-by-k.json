@@ -1,0 +1,25 @@
+{
+ "slug": "smallest-integer-divisible-by-k",
+ "frontendId": "1015",
+ "title": "Smallest Integer Divisible by K",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}",
+ "visible": [
+  "k"
+ ],
+ "call": "result = Solution().smallestRepunitDivByK(k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

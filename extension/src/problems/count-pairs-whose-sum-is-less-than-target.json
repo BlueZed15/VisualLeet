@@ -1,0 +1,30 @@
+{
+ "slug": "count-pairs-whose-sum-is-less-than-target",
+ "frontendId": "2824",
+ "title": "Count Pairs Whose Sum is Less than Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}",
+ "visible": [
+  "nums",
+  "target"
+ ],
+ "call": "result = Solution().countPairs(nums, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

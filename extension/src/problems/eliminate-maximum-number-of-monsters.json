@@ -1,0 +1,30 @@
+{
+ "slug": "eliminate-maximum-number-of-monsters",
+ "frontendId": "1921",
+ "title": "Eliminate Maximum Number of Monsters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dist",
+   "type": "integer[]"
+  },
+  {
+   "name": "speed",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "dist = {dist}\nspeed = {speed}",
+ "visible": [
+  "dist",
+  "speed"
+ ],
+ "call": "result = Solution().eliminateMaximum(dist, speed)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

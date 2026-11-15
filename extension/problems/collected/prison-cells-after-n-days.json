@@ -1,0 +1,32 @@
+{
+ "slug": "prison-cells-after-n-days",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "957",
+ "title": "Prison Cells After N Days",
+ "premium": false,
+ "meta": {
+  "name": "prisonAfterNDays",
+  "params": [
+   {
+    "name": "cells",
+    "type": "integer[]"
+   },
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,0,1,1,0,0,1]\n7",
+  "[1,0,0,1,0,0,1,0]\n1000000000"
+ ],
+ "exampleOutputs": [
+  "[0,0,1,1,0,0,0,0]",
+  "[0,0,1,1,1,1,1,0]"
+ ],
+ "anyOrder": false
+}

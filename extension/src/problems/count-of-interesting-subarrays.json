@@ -1,0 +1,35 @@
+{
+ "slug": "count-of-interesting-subarrays",
+ "frontendId": "2845",
+ "title": "Count of Interesting Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "modulo",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nmodulo = {modulo}\nk = {k}",
+ "visible": [
+  "nums",
+  "modulo",
+  "k"
+ ],
+ "call": "result = Solution().countInterestingSubarrays(nums, modulo, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

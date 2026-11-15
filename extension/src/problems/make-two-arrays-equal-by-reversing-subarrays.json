@@ -1,0 +1,30 @@
+{
+ "slug": "make-two-arrays-equal-by-reversing-subarrays",
+ "frontendId": "1460",
+ "title": "Make Two Arrays Equal by Reversing Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer[]"
+  },
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\narr = {arr}",
+ "visible": [
+  "target",
+  "arr"
+ ],
+ "call": "result = Solution().canBeEqual(target, arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

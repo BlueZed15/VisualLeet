@@ -1,0 +1,30 @@
+{
+ "slug": "find-minimum-time-to-finish-all-jobs",
+ "frontendId": "1723",
+ "title": "Find Minimum Time to Finish All Jobs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "jobs",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "jobs = {jobs}\nk = {k}",
+ "visible": [
+  "jobs",
+  "k"
+ ],
+ "call": "result = Solution().minimumTimeRequired(jobs, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

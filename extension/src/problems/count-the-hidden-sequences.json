@@ -1,0 +1,35 @@
+{
+ "slug": "count-the-hidden-sequences",
+ "frontendId": "2145",
+ "title": "Count the Hidden Sequences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "differences",
+   "type": "integer[]"
+  },
+  {
+   "name": "lower",
+   "type": "integer"
+  },
+  {
+   "name": "upper",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "differences = {differences}\nlower = {lower}\nupper = {upper}",
+ "visible": [
+  "differences",
+  "lower",
+  "upper"
+ ],
+ "call": "result = Solution().numberOfArrays(differences, lower, upper)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

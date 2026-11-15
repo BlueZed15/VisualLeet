@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-divide-a-long-corridor",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2147",
+ "title": "Number of Ways to Divide a Long Corridor",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWays",
+  "params": [
+   {
+    "name": "corridor",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"SSPPSPS\"",
+  "\"PPSPSP\"",
+  "\"S\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

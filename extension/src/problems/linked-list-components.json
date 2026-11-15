@@ -1,0 +1,30 @@
+{
+ "slug": "linked-list-components",
+ "frontendId": "817",
+ "title": "Linked List Components",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "head = {head}\nnums = {nums}",
+ "visible": [
+  "head",
+  "nums"
+ ],
+ "call": "result = Solution().numComponents(head, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

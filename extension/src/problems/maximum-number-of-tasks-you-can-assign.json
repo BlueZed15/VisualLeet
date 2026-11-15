@@ -1,0 +1,40 @@
+{
+ "slug": "maximum-number-of-tasks-you-can-assign",
+ "frontendId": "2071",
+ "title": "Maximum Number of Tasks You Can Assign",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[]"
+  },
+  {
+   "name": "workers",
+   "type": "integer[]"
+  },
+  {
+   "name": "pills",
+   "type": "integer"
+  },
+  {
+   "name": "strength",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}\nworkers = {workers}\npills = {pills}\nstrength = {strength}",
+ "visible": [
+  "tasks",
+  "workers",
+  "pills",
+  "strength"
+ ],
+ "call": "result = Solution().maxTaskAssign(tasks, workers, pills, strength)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "construct-string-with-repeat-limit",
+ "frontendId": "2182",
+ "title": "Construct String With Repeat Limit",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "repeatLimit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nrepeatLimit = {repeatLimit}",
+ "visible": [
+  "s",
+  "repeatLimit"
+ ],
+ "call": "result = Solution().repeatLimitedString(s, repeatLimit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

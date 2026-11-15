@@ -1,0 +1,32 @@
+{
+ "slug": "sell-diminishing-valued-colored-balls",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1648",
+ "title": "Sell Diminishing-Valued Colored Balls",
+ "premium": false,
+ "meta": {
+  "name": "maxProfit",
+  "params": [
+   {
+    "name": "inventory",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "orders"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,5]\n4",
+  "[3,5]\n6"
+ ],
+ "exampleOutputs": [
+  "14",
+  "19"
+ ],
+ "anyOrder": true
+}

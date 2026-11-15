@@ -1,0 +1,28 @@
+{
+ "slug": "elimination-game",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "390",
+ "title": "Elimination Game",
+ "premium": false,
+ "meta": {
+  "name": "lastRemaining",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "9",
+  "1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1"
+ ],
+ "anyOrder": false
+}

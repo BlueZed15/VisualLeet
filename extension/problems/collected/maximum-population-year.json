@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-population-year",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1854",
+ "title": "Maximum Population Year",
+ "premium": false,
+ "meta": {
+  "name": "maximumPopulation",
+  "params": [
+   {
+    "name": "logs",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1993,1999],[2000,2010]]",
+  "[[1950,1961],[1960,1971],[1970,1981]]"
+ ],
+ "exampleOutputs": [
+  "1993",
+  "1960"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,174 @@
+{
+  "environment": {
+    "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
+    "cores": 18,
+    "ramGb": 32,
+    "date": "2026-11-14T17:35:39.466Z"
+  },
+  "rates": {
+    "1": {
+      "programs": {
+        "typical (two sum)": {
+          "status": "complete",
+          "steps": 97,
+          "wallMs": 80,
+          "worstWallMs": 192,
+          "execMs": 35,
+          "renderMs": 30,
+          "estimatedMs": 80
+        },
+        "step limit, growing list": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 266,
+          "worstWallMs": 324,
+          "execMs": 190,
+          "renderMs": 53,
+          "estimatedMs": 266
+        },
+        "step limit, growing dict": {
+          "status": "limit reached",
+          "steps": 866,
+          "wallMs": 2758,
+          "worstWallMs": 2768,
+          "execMs": 2403,
+          "renderMs": 115,
+          "estimatedMs": 2758
+        },
+        "recursion (fib 14)": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 345,
+          "worstWallMs": 360,
+          "execMs": 258,
+          "renderMs": 32,
+          "estimatedMs": 345
+        },
+        "BFS on a 15x15 grid": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 972,
+          "worstWallMs": 1024,
+          "execMs": 793,
+          "renderMs": 104,
+          "estimatedMs": 972
+        },
+        "tree of 127 nodes, DFS": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 417,
+          "worstWallMs": 462,
+          "execMs": 329,
+          "renderMs": 39,
+          "estimatedMs": 417
+        },
+        "big input (2,000-item list)": {
+          "status": "complete",
+          "steps": 205,
+          "wallMs": 208,
+          "worstWallMs": 232,
+          "execMs": 115,
+          "renderMs": 66,
+          "estimatedMs": 208
+        }
+      },
+      "failures": [],
+      "coldStartMs": 2611,
+      "memoryIdleMb": 590,
+      "stepNavigation": {
+        "medianMs": 7.7,
+        "worstMs": 19.2,
+        "jumpToLastMs": 15.6
+      },
+      "endlessLoop": {
+        "status": "timed out",
+        "stoppedAfterMs": 5049,
+        "readyAgainMs": 4
+      },
+      "memoryThreeTabsMb": 929,
+      "memoryPeakMb": 929
+    },
+    "6": {
+      "programs": {
+        "typical (two sum)": {
+          "status": "complete",
+          "steps": 97,
+          "wallMs": 375,
+          "worstWallMs": 1087,
+          "execMs": 22,
+          "renderMs": 238,
+          "estimatedMs": 485
+        },
+        "step limit, growing list": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 747,
+          "worstWallMs": 851,
+          "execMs": 127,
+          "renderMs": 482,
+          "estimatedMs": 1382
+        },
+        "step limit, growing dict": {
+          "status": "limit reached",
+          "steps": 866,
+          "wallMs": 3423,
+          "worstWallMs": 3431,
+          "execMs": 1327,
+          "renderMs": 621,
+          "estimatedMs": 10058
+        },
+        "recursion (fib 14)": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 794,
+          "worstWallMs": 902,
+          "execMs": 191,
+          "renderMs": 325,
+          "estimatedMs": 1749
+        },
+        "BFS on a 15x15 grid": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 1782,
+          "worstWallMs": 1825,
+          "execMs": 494,
+          "renderMs": 887,
+          "estimatedMs": 4252
+        },
+        "tree of 127 nodes, DFS": {
+          "status": "limit reached",
+          "steps": 1000,
+          "wallMs": 1055,
+          "worstWallMs": 1078,
+          "execMs": 234,
+          "renderMs": 475,
+          "estimatedMs": 2225
+        },
+        "big input (2,000-item list)": {
+          "status": "complete",
+          "steps": 205,
+          "wallMs": 921,
+          "worstWallMs": 928,
+          "execMs": 70,
+          "renderMs": 557,
+          "estimatedMs": 1271
+        }
+      },
+      "failures": [],
+      "coldStartMs": 5035,
+      "memoryIdleMb": 594,
+      "stepNavigation": {
+        "medianMs": 82.1,
+        "worstMs": 200.8,
+        "jumpToLastMs": 133.2
+      },
+      "endlessLoop": {
+        "status": "timed out",
+        "stoppedAfterMs": 5360,
+        "readyAgainMs": 3
+      },
+      "memoryThreeTabsMb": 911,
+      "memoryPeakMb": 911
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "parallel-courses-iii",
+ "frontendId": "2050",
+ "title": "Parallel Courses III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "relations",
+   "type": "integer[][]"
+  },
+  {
+   "name": "time",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrelations = {relations}\ntime = {time}",
+ "visible": [
+  "n",
+  "relations",
+  "time"
+ ],
+ "call": "result = Solution().minimumTime(n, relations, time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

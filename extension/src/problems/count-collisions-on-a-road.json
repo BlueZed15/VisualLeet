@@ -1,0 +1,25 @@
+{
+ "slug": "count-collisions-on-a-road",
+ "frontendId": "2211",
+ "title": "Count Collisions on a Road",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "directions",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "directions = {directions}",
+ "visible": [
+  "directions"
+ ],
+ "call": "result = Solution().countCollisions(directions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-operations-to-make-array-equal",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1551",
+ "title": "Minimum Operations to Make Array Equal",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "9"
+ ],
+ "anyOrder": false
+}

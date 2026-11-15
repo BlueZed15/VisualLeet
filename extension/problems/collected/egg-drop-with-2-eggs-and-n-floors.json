@@ -1,0 +1,28 @@
+{
+ "slug": "egg-drop-with-2-eggs-and-n-floors",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1884",
+ "title": "Egg Drop With 2 Eggs and N Floors",
+ "premium": false,
+ "meta": {
+  "name": "twoEggDrop",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "100"
+ ],
+ "exampleOutputs": [
+  "2",
+  "14"
+ ],
+ "anyOrder": false
+}

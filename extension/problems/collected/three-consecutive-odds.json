@@ -1,0 +1,28 @@
+{
+ "slug": "three-consecutive-odds",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1550",
+ "title": "Three Consecutive Odds",
+ "premium": false,
+ "meta": {
+  "name": "threeConsecutiveOdds",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,6,4,1]",
+  "[1,2,34,3,4,5,7,23,12]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

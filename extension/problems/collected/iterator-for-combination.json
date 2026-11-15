@@ -1,0 +1,61 @@
+{
+ "slug": "iterator-for-combination",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1286",
+ "title": "Iterator for Combination",
+ "premium": false,
+ "meta": {
+  "classname": "CombinationIterator",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "type": "string",
+     "name": "characters"
+    },
+    {
+     "type": "integer",
+     "name": "combinationLength"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "next",
+    "params": [],
+    "return": {
+     "type": "string"
+    }
+   },
+   {
+    "name": "hasNext",
+    "params": [],
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",2],[],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, \"ab\", true, \"ac\", true, \"bc\", false]"
+ ],
+ "anyOrder": false
+}

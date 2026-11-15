@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-consecutive-cards-to-pick-up",
+ "frontendId": "2260",
+ "title": "Minimum Consecutive Cards to Pick Up",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cards",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cards = {cards}",
+ "visible": [
+  "cards"
+ ],
+ "call": "result = Solution().minimumCardPickup(cards)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

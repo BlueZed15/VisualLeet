@@ -1,0 +1,25 @@
+{
+ "slug": "map-of-highest-peak",
+ "frontendId": "1765",
+ "title": "Map of Highest Peak",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "isWater",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "isWater = {isWater}",
+ "visible": [
+  "isWater"
+ ],
+ "call": "result = Solution().highestPeak(isWater)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

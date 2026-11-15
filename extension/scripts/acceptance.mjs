@@ -310,7 +310,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
   {
     const inf = await run("i = 0\nwhile True:\n    i += 1\n");
     const after = await run("print('ok')\n");
-    check("limits", "Infinite loop ends at the step limit, labeled incomplete; next run works", inf.status === "limit reached" && inf.steps === 1001 && after.stdout === "ok\n", { status: inf.status, steps: inf.steps });
+    check("limits", "Infinite loop ends at the step limit, labeled incomplete; next run works", inf.status === "limit reached" && inf.steps === 1501 && after.stdout === "ok\n", { status: inf.status, steps: inf.steps });
   }
   {
     await ev(() => new Promise((r) => { const t = setInterval(() => { if (visualleet.runtimeInfo() && visualleet.runtimeInfo().spareReady) { clearInterval(t); r(); } }, 50); }));
@@ -368,7 +368,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     check("limits", "Large output stops with an explicit output limit", out.status === "limit reached" && /KiB of output/.test(msg), { msg: msg.slice(0, 100) });
     const huge = await run("data = list(range(20000))\nfor i in range(200):\n    data[i] += 1\n");
     const hmsg = await ev(() => visualleet.message());
-    check("limits", "Trace over 10 MiB is refused with an explanation", huge.status === "failed" && /MiB limit/.test(hmsg), { msg: hmsg });
+    check("limits", "Trace over 10 MiB stops recording with an explicit reason, keeping the steps that fit", huge.status === "limit reached" && /too large/.test(hmsg) && huge.steps > 1, { steps: huge.steps, msg: hmsg.slice(0, 120) });
   }
   {
     const before = await ev(() => ({ iframes: document.querySelectorAll("iframe").length, arrowLayers: document.querySelectorAll(".vlArrowLayer").length }));
@@ -484,11 +484,11 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     // not in VisualLeet's database: paste mode with a drafted call, explained
     const nd = await open("/problems/not-in-the-database/");
     const s6 = await state();
-    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't in LeetScope's problem database/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
+    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't supported by LeetScope/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
 
     const none = await open("/problems/no-editor/");
     const s7 = await state();
-    check("leetcode", "LeetCode page without data or editor: explained, nothing run", !none.ok && /Couldn't read the code editor|isn't in/.test(s7.message), { message: s7.message.slice(0, 160) });
+    check("leetcode", "LeetCode page without data or editor: explained, nothing run", !none.ok && /couldn't read the code editor|isn't supported/.test(s7.message), { message: s7.message.slice(0, 160) });
 
     // cases are kept per problem; the icon click's hand-off reaches a freshly opened tab
     await open("/problems/two-sum/?case=0");
@@ -536,15 +536,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
       })), () => null);
     };
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
-    check("leetcode", "No test case on the page: explained on LeetCode itself, with a Use Example 1 option", !!tc1 && /Couldn.t find the test case/.test(tc1.text) && /Use Example 1/.test(tc1.text), tc1);
-    if (tc1) {
-      await lc.evaluate(() => [...document.querySelectorAll("#leetscope-toast button")].find((b) => /Use Example 1/.test(b.textContent)).click());
-      const ex1 = await ev(async () => {
-        for (let i = 0; i < 100; i++) { const c = visualleet.leetcode.currentCase(); if (c && c.label === "Example 1" && visualleet.status() === "complete") break; await new Promise((r) => setTimeout(r, 100)); }
-        return { selected: visualleet.leetcode.currentCase().label, status: visualleet.status(), message: visualleet.message() };
-      });
-      check("leetcode", "Use Example 1 opens LeetScope with Example 1, without a warning", ex1.selected === "Example 1" && ex1.status === "complete" && !/Couldn't find/.test(ex1.message), ex1);
-    }
+    check("leetcode", "Testcase tab not open: explained on LeetCode itself, no extra options", !!tc1 && /Testcase tab, and that tab isn't open/.test(tc1.text) && !tc1.action, tc1);
     const tc2 = await toastFor("/problems/two-sum/?lang=cpp");
     check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened", !!tc2 && /Python3/.test(tc2.text), tc2);
     await page.bringToFront();
@@ -559,7 +551,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     await ev(() => visualleet.setProgram({ setup: "", solution: "STILL HERE", call: "" }));
     const res = await ev((t) => visualleet.importFrom("selection", t), tabId);
     const kept = await ev(() => visualleet.program().solution);
-    check("imports", "Protected chrome:// page: graceful refusal, edits kept", !res.ok && /can't read that page|protected/i.test(res.error) && kept === "STILL HERE", { error: res.error });
+    check("imports", "Protected chrome:// page: graceful refusal, edits kept", !res.ok && /can't read (that|this) page|protect/i.test(res.error) && kept === "STILL HERE", { error: res.error });
     await prot.close();
   }
 

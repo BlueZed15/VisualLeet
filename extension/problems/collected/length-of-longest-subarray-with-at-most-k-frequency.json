@@ -1,0 +1,34 @@
+{
+ "slug": "length-of-longest-subarray-with-at-most-k-frequency",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2958",
+ "title": "Length of Longest Subarray With at Most K Frequency",
+ "premium": false,
+ "meta": {
+  "name": "maxSubarrayLength",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,1,2,3,1,2]\n2",
+  "[1,2,1,2,1,2,1,2]\n1",
+  "[5,5,5,5,5,5,5]\n4"
+ ],
+ "exampleOutputs": [
+  "6",
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

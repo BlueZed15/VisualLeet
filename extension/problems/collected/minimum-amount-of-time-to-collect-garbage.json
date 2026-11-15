@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-amount-of-time-to-collect-garbage",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2391",
+ "title": "Minimum Amount of Time to Collect Garbage",
+ "premium": false,
+ "meta": {
+  "name": "garbageCollection",
+  "params": [
+   {
+    "name": "garbage",
+    "type": "string[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "travel"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]",
+  "[\"MMM\",\"PGM\",\"GP\"]\n[3,10]"
+ ],
+ "exampleOutputs": [
+  "21",
+  "37"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-vowel-substrings-of-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2062",
+ "title": "Count Vowel Substrings of a String",
+ "premium": false,
+ "meta": {
+  "name": "countVowelSubstrings",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aeiouu\"",
+  "\"unicornarihan\"",
+  "\"cuaieuouac\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "7"
+ ],
+ "anyOrder": false
+}

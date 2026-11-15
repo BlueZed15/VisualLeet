@@ -1,0 +1,32 @@
+{
+ "slug": "count-pairs-whose-sum-is-less-than-target",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2824",
+ "title": "Count Pairs Whose Sum is Less than Target",
+ "premium": false,
+ "meta": {
+  "name": "countPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,1,2,3,1]\n2",
+  "[-6,2,5,-2,-7,-1,3]\n-2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "10"
+ ],
+ "anyOrder": false
+}

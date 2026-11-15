@@ -1,0 +1,25 @@
+{
+ "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+ "frontendId": "1909",
+ "title": "Remove One Element to Make the Array Strictly Increasing",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().canBeIncreasing(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

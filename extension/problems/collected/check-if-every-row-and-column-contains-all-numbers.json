@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-every-row-and-column-contains-all-numbers",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2133",
+ "title": "Check if Every Row and Column Contains All Numbers",
+ "premium": false,
+ "meta": {
+  "name": "checkValid",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[3,1,2],[2,3,1]]",
+  "[[1,1,1],[1,2,3],[1,2,3]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

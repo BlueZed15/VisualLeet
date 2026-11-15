@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-moves-to-make-array-complementary",
+ "frontendId": "1674",
+ "title": "Minimum Moves to Make Array Complementary",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nlimit = {limit}",
+ "visible": [
+  "nums",
+  "limit"
+ ],
+ "call": "result = Solution().minMoves(nums, limit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

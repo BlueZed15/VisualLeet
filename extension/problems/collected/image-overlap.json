@@ -1,0 +1,34 @@
+{
+ "slug": "image-overlap",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "835",
+ "title": "Image Overlap",
+ "premium": false,
+ "meta": {
+  "name": "largestOverlap",
+  "params": [
+   {
+    "name": "img1",
+    "type": "integer[][]"
+   },
+   {
+    "name": "img2",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,0],[0,1,0],[0,1,0]]\n[[0,0,0],[0,1,1],[0,0,1]]",
+  "[[1]]\n[[1]]",
+  "[[0]]\n[[0]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

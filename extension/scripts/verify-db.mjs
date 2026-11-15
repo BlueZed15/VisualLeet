@@ -75,7 +75,8 @@ writeFileSync(path.join(tmp, "jobs.json"), JSON.stringify(jobs));
 const results = Object.fromEntries(JSON.parse(execFileSync(python, ["-W", "ignore", path.join(root, "scripts", "verify_runner.py"), path.join(tmp, "jobs.json")], { maxBuffer: 256 * 1024 * 1024, encoding: "utf8" })).map((r) => [r.id, r]));
 
 const prev = existsSync(P("verify-results.json")) ? readJson(P("verify-results.json")).problems : {};
-const report = { ...prev };
+// earlier results, minus problems no longer in the database
+const report = Object.fromEntries(Object.entries(prev).filter(([slug]) => slug in index.problems));
 for (const [slug, p] of Object.entries(plan)) {
   const problems = [], notes = [];
   if (!p.examples.length) problems.push("no examples to check");

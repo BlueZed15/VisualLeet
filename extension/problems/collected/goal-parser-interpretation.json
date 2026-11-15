@@ -1,0 +1,30 @@
+{
+ "slug": "goal-parser-interpretation",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1678",
+ "title": "Goal Parser Interpretation",
+ "premium": false,
+ "meta": {
+  "name": "interpret",
+  "params": [
+   {
+    "name": "command",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"G()(al)\"",
+  "\"G()()()()(al)\"",
+  "\"(al)G(al)()()G\""
+ ],
+ "exampleOutputs": [
+  "\"Goal\"",
+  "\"Gooooal\"",
+  "\"alGalooG\""
+ ],
+ "anyOrder": false
+}

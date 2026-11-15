@@ -1,0 +1,30 @@
+{
+ "slug": "earliest-possible-day-of-full-bloom",
+ "frontendId": "2136",
+ "title": "Earliest Possible Day of Full Bloom",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "plantTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "growTime",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "plantTime = {plantTime}\ngrowTime = {growTime}",
+ "visible": [
+  "plantTime",
+  "growTime"
+ ],
+ "call": "result = Solution().earliestFullBloom(plantTime, growTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

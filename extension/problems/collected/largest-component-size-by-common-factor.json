@@ -1,0 +1,30 @@
+{
+ "slug": "largest-component-size-by-common-factor",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "952",
+ "title": "Largest Component Size by Common Factor",
+ "premium": false,
+ "meta": {
+  "name": "largestComponentSize",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,6,15,35]",
+  "[20,50,9,63]",
+  "[2,3,6,7,4,12,21,39]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "8"
+ ],
+ "anyOrder": false
+}

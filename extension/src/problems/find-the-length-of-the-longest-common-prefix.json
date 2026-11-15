@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-length-of-the-longest-common-prefix",
+ "frontendId": "3043",
+ "title": "Find the Length of the Longest Common Prefix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr1",
+   "type": "integer[]"
+  },
+  {
+   "name": "arr2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr1 = {arr1}\narr2 = {arr2}",
+ "visible": [
+  "arr1",
+  "arr2"
+ ],
+ "call": "result = Solution().longestCommonPrefix(arr1, arr2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

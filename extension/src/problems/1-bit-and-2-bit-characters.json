@@ -1,0 +1,25 @@
+{
+ "slug": "1-bit-and-2-bit-characters",
+ "frontendId": "717",
+ "title": "1-bit and 2-bit Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bits",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "bits = {bits}",
+ "visible": [
+  "bits"
+ ],
+ "call": "result = Solution().isOneBitCharacter(bits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

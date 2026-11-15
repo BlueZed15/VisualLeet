@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-ways-to-wear-different-hats-to-each-other",
+ "frontendId": "1434",
+ "title": "Number of Ways to Wear Different Hats to Each Other",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hats",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "hats = {hats}",
+ "visible": [
+  "hats"
+ ],
+ "call": "result = Solution().numberWays(hats)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

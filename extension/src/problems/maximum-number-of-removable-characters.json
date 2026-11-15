@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-number-of-removable-characters",
+ "frontendId": "1898",
+ "title": "Maximum Number of Removable Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "p",
+   "type": "string"
+  },
+  {
+   "name": "removable",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\np = {p}\nremovable = {removable}",
+ "visible": [
+  "s",
+  "p",
+  "removable"
+ ],
+ "call": "result = Solution().maximumRemovals(s, p, removable)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

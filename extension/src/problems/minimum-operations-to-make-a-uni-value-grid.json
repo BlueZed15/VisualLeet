@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-a-uni-value-grid",
+ "frontendId": "2033",
+ "title": "Minimum Operations to Make a Uni-Value Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nx = {x}",
+ "visible": [
+  "grid",
+  "x"
+ ],
+ "call": "result = Solution().minOperations(grid, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

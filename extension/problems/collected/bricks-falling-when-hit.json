@@ -1,0 +1,32 @@
+{
+ "slug": "bricks-falling-when-hit",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "803",
+ "title": "Bricks Falling When Hit",
+ "premium": false,
+ "meta": {
+  "name": "hitBricks",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   },
+   {
+    "name": "hits",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0,0,0],[1,1,1,0]]\n[[1,0]]",
+  "[[1,0,0,0],[1,1,0,0]]\n[[1,1],[1,0]]"
+ ],
+ "exampleOutputs": [
+  "[2]",
+  "[0,0]"
+ ],
+ "anyOrder": false
+}

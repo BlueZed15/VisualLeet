@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-cost-of-buying-candies-with-discount",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2144",
+ "title": "Minimum Cost of Buying Candies With Discount",
+ "premium": false,
+ "meta": {
+  "name": "minimumCost",
+  "params": [
+   {
+    "name": "cost",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[6,5,7,9,2,2]",
+  "[5,5]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "23",
+  "10"
+ ],
+ "anyOrder": false
+}

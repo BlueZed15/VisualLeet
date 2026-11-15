@@ -1,0 +1,30 @@
+{
+ "slug": "rearranging-fruits",
+ "frontendId": "2561",
+ "title": "Rearranging Fruits",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "basket1",
+   "type": "integer[]"
+  },
+  {
+   "name": "basket2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "basket1 = {basket1}\nbasket2 = {basket2}",
+ "visible": [
+  "basket1",
+  "basket2"
+ ],
+ "call": "result = Solution().minCost(basket1, basket2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

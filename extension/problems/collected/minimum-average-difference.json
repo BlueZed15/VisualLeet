@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-average-difference",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2256",
+ "title": "Minimum Average Difference",
+ "premium": false,
+ "meta": {
+  "name": "minimumAverageDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,5,3,9,5,3]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

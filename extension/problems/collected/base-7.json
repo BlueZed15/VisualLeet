@@ -1,0 +1,28 @@
+{
+ "slug": "base-7",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "504",
+ "title": "Base 7",
+ "premium": false,
+ "meta": {
+  "name": "convertToBase7",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "100",
+  "-7"
+ ],
+ "exampleOutputs": [
+  "\"202\"",
+  "\"-10\""
+ ],
+ "anyOrder": false
+}

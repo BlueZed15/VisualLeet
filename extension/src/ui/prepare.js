@@ -32,8 +32,8 @@ export function hasTopLevelCode(source) {
 const PY_LANGS = new Set(["python3", "python"]);
 
 export function describeLanguage(languageId) {
-  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python (2). LeetScope runs Python 3; most solutions work, but Python 2 syntax such as print statements will not." : "" };
-  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. LeetScope only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept.` };
+  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python 2. LeetScope runs Python 3. Most solutions work, but Python 2 syntax such as print statements won't." : "" };
+  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. LeetScope runs Python 3. Switch the editor to Python3 and import again. Your current code here is unchanged.` };
 }
 
 function splitTopLevel(text, sep) {
@@ -126,7 +126,7 @@ export function draftForSolution(code, examples = []) {
   const helpers = new Set();
   if (usesTyping) helpers.add("Typing imports");
   if (!method) {
-    notes.push("No `class Solution` method found: add your own test call below.");
+    notes.push("No class Solution method was found. Add your own test call below.");
     return { setup: setupFrom(helpers, code), call: "# TODO: call your code here, e.g.\n# print(my_function(...))", notes };
   }
   const parsed = examples.map(parseExampleInput).find(Boolean);
@@ -145,7 +145,7 @@ export function draftForSolution(code, examples = []) {
   const callExpr = `Solution().${method.name}(${args.join(", ")})`;
   lines.push(ret && ret.show ? `print(${ret.show}(${callExpr}))` : `print(${callExpr})`);
   if (parsed) notes.push("Test call drafted from the problem's first example. Check the values before running.");
-  else notes.push("Couldn't read an example input: fill in the TODO values in the test call.");
+  else notes.push("LeetScope couldn't read an example input. Fill in the TODO values in the test call.");
   if (ret && !ret.show) notes.push(`${method.name} returns a ${method.returns}; the printed value is the node object. Step through the visualization to see its structure.`);
   return { setup: setupFrom(helpers, code), call: lines.join("\n"), notes };
 }

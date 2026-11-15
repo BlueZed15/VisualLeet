@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-number-of-robots-within-budget",
+ "frontendId": "2398",
+ "title": "Maximum Number of Robots Within Budget",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "chargeTimes",
+   "type": "integer[]"
+  },
+  {
+   "name": "runningCosts",
+   "type": "integer[]"
+  },
+  {
+   "name": "budget",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "chargeTimes = {chargeTimes}\nrunningCosts = {runningCosts}\nbudget = {budget}",
+ "visible": [
+  "chargeTimes",
+  "runningCosts",
+  "budget"
+ ],
+ "call": "result = Solution().maximumRobots(chargeTimes, runningCosts, budget)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

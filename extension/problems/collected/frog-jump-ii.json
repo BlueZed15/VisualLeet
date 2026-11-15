@@ -1,0 +1,28 @@
+{
+ "slug": "frog-jump-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2498",
+ "title": "Frog Jump II",
+ "premium": false,
+ "meta": {
+  "name": "maxJump",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,2,5,6,7]",
+  "[0,3,9]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "9"
+ ],
+ "anyOrder": false
+}

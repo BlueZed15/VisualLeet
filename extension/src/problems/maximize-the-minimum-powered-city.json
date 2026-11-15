@@ -1,0 +1,35 @@
+{
+ "slug": "maximize-the-minimum-powered-city",
+ "frontendId": "2528",
+ "title": "Maximize the Minimum Powered City",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stations",
+   "type": "integer[]"
+  },
+  {
+   "name": "r",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "stations = {stations}\nr = {r}\nk = {k}",
+ "visible": [
+  "stations",
+  "r",
+  "k"
+ ],
+ "call": "result = Solution().maxPower(stations, r, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

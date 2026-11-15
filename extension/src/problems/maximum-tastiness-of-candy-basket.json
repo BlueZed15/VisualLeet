@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-tastiness-of-candy-basket",
+ "frontendId": "2517",
+ "title": "Maximum Tastiness of Candy Basket",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "price",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "price = {price}\nk = {k}",
+ "visible": [
+  "price",
+  "k"
+ ],
+ "call": "result = Solution().maximumTastiness(price, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "valid-arrangement-of-pairs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2097",
+ "title": "Valid Arrangement of Pairs",
+ "premium": false,
+ "meta": {
+  "name": "validArrangement",
+  "params": [
+   {
+    "name": "pairs",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[5,1],[4,5],[11,9],[9,4]]",
+  "[[1,3],[3,2],[2,1]]",
+  "[[1,2],[1,3],[2,1]]"
+ ],
+ "exampleOutputs": [
+  "[[11,9],[9,4],[4,5],[5,1]]",
+  "[[1,3],[3,2],[2,1]]",
+  "[[1,2],[2,1],[1,3]]"
+ ],
+ "anyOrder": false
+}

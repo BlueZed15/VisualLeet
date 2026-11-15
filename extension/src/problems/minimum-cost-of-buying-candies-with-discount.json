@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-cost-of-buying-candies-with-discount",
+ "frontendId": "2144",
+ "title": "Minimum Cost of Buying Candies With Discount",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cost = {cost}",
+ "visible": [
+  "cost"
+ ],
+ "call": "result = Solution().minimumCost(cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "special-array-ii",
+ "frontendId": "3152",
+ "title": "Special Array II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nqueries = {queries}",
+ "visible": [
+  "nums",
+  "queries"
+ ],
+ "call": "result = Solution().isArraySpecial(nums, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

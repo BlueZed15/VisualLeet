@@ -1,0 +1,35 @@
+{
+ "slug": "camelcase-matching",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1023",
+ "title": "Camelcase Matching",
+ "premium": false,
+ "meta": {
+  "name": "camelMatch",
+  "params": [
+   {
+    "name": "queries",
+    "type": "string[]"
+   },
+   {
+    "name": "pattern",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
+  "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"",
+  "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\""
+ ],
+ "exampleOutputs": [
+  "[true,false,true,true,false]",
+  "[true,false,true,false,false]",
+  "[false,true,false,false,false]"
+ ],
+ "anyOrder": false
+}

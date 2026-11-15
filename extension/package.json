@@ -10,7 +10,8 @@
     "build:extension-test": "node scripts/build-extension.mjs --test",
     "build:extension-dev": "node scripts/build-extension.mjs --dev",
     "verify:db": "node scripts/verify-db.mjs",
-    "check:calls": "node scripts/check-calls.mjs"
+    "check:calls": "node scripts/check-calls.mjs",
+    "stress": "node scripts/stress.mjs"
   },
   "author": "",
   "license": "ISC",

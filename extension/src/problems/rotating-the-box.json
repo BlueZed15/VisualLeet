@@ -1,0 +1,25 @@
+{
+ "slug": "rotating-the-box",
+ "frontendId": "1861",
+ "title": "Rotating the Box",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "boxGrid",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "boxGrid = {boxGrid}",
+ "visible": [
+  "boxGrid"
+ ],
+ "call": "result = Solution().rotateTheBox(boxGrid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

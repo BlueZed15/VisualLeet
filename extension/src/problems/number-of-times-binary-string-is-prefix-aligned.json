@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-times-binary-string-is-prefix-aligned",
+ "frontendId": "1375",
+ "title": "Number of Times Binary String Is Prefix-Aligned",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "flips",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "flips = {flips}",
+ "visible": [
+  "flips"
+ ],
+ "call": "result = Solution().numTimesAllBlue(flips)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

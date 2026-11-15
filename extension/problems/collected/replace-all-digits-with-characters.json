@@ -1,0 +1,28 @@
+{
+ "slug": "replace-all-digits-with-characters",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1844",
+ "title": "Replace All Digits with Characters",
+ "premium": false,
+ "meta": {
+  "name": "replaceDigits",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"a1c1e1\"",
+  "\"a1b2c3d4e\""
+ ],
+ "exampleOutputs": [
+  "\"abcdef\"",
+  "\"abbdcfdhe\""
+ ],
+ "anyOrder": false
+}

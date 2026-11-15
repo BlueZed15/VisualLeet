@@ -1,0 +1,30 @@
+{
+ "slug": "split-array-into-fibonacci-sequence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "842",
+ "title": "Split Array into Fibonacci Sequence",
+ "premium": false,
+ "meta": {
+  "name": "splitIntoFibonacci",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "\"1101111\"",
+  "\"112358130\"",
+  "\"0123\""
+ ],
+ "exampleOutputs": [
+  "[11,0,11,11]",
+  "[]",
+  "[]"
+ ],
+ "anyOrder": false
+}

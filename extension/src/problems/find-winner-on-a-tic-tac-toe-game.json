@@ -1,0 +1,25 @@
+{
+ "slug": "find-winner-on-a-tic-tac-toe-game",
+ "frontendId": "1275",
+ "title": "Find Winner on a Tic Tac Toe Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "moves",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "moves = {moves}",
+ "visible": [
+  "moves"
+ ],
+ "call": "result = Solution().tictactoe(moves)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

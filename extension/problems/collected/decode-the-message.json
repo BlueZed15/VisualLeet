@@ -1,0 +1,32 @@
+{
+ "slug": "decode-the-message",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2325",
+ "title": "Decode the Message",
+ "premium": false,
+ "meta": {
+  "name": "decodeMessage",
+  "params": [
+   {
+    "name": "key",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "message"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"the quick brown fox jumps over the lazy dog\"\n\"vkbs bs t suepuv\"",
+  "\"eljuxhpwnyrdgtqkviszcfmabo\"\n\"zwx hnfx lqantp mnoeius ycgk vcnjrdb\""
+ ],
+ "exampleOutputs": [
+  "\"this is a secret\"",
+  "\"the five boxing wizards jump quickly\""
+ ],
+ "anyOrder": false
+}

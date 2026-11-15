@@ -1,0 +1,25 @@
+{
+ "slug": "image-smoother",
+ "frontendId": "661",
+ "title": "Image Smoother",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "img",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "img = {img}",
+ "visible": [
+  "img"
+ ],
+ "call": "result = Solution().imageSmoother(img)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

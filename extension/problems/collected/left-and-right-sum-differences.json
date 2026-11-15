@@ -1,0 +1,28 @@
+{
+ "slug": "left-and-right-sum-differences",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2574",
+ "title": "Left and Right Sum Differences",
+ "premium": false,
+ "meta": {
+  "name": "leftRightDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[10,4,8,3]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "[15,1,11,22]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

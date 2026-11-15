@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1941",
+ "title": "Check if All Characters Have Equal Number of Occurrences",
+ "premium": false,
+ "meta": {
+  "name": "areOccurrencesEqual",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abacbc\"",
+  "\"aaabb\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

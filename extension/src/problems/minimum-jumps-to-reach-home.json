@@ -1,0 +1,40 @@
+{
+ "slug": "minimum-jumps-to-reach-home",
+ "frontendId": "1654",
+ "title": "Minimum Jumps to Reach Home",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "forbidden",
+   "type": "integer[]"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "forbidden = {forbidden}\na = {a}\nb = {b}\nx = {x}",
+ "visible": [
+  "forbidden",
+  "a",
+  "b",
+  "x"
+ ],
+ "call": "result = Solution().minimumJumps(forbidden, a, b, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

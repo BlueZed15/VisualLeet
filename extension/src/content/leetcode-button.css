@@ -1,0 +1,106 @@
+/* LeetScope "Visualize" button on LeetCode's own top bar (#ide-top-btns),
+   plus the glow that plays once each time LeetCode finishes a Run.
+
+   Markup the content script should build:
+
+   <span class="ls-vz-wrap">                     <- gets .ls-vz-glow for one run of the animation
+     <button id="visualleet-top-button" class="ls-vz" type="button"
+             title="Visualize the selected test case in LeetScope (Alt+V)"
+             aria-label="Visualize in LeetScope">
+       <svg class="ls-vz-mark" viewBox="2 2 56 56" aria-hidden="true">  (ring and handle use currentColor)
+         <circle cx="28" cy="28" r="19" fill="none" stroke="currentColor" stroke-width="7"/>
+         <path d="M42 42L51 51" stroke="currentColor" stroke-width="7.5" stroke-linecap="round"/>
+         <rect class="ls-vz-d1" ... fill="#2F6BFF"/>   (three colour cells: blue, amber, coral)
+       </svg>
+       <span>Visualize</span>
+     </button>
+   </span>
+
+   Content scripts inject CSS with the page's own stylesheet rules around it,
+   so every rule below is scoped to these class names and uses !important
+   only where LeetCode's button resets would otherwise win. */
+
+/* Scoped to the button's id: LeetCode's own button resets (e.g. [type=button] { background: transparent })
+   load after this file and would otherwise win, which left the button without its grey fill on the live page. */
+
+.ls-vz-wrap { position: relative; display: inline-flex; border-radius: 8px; }
+
+#visualleet-top-button.ls-vz {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 32px !important; padding: 0 12px 0 9px !important; box-sizing: border-box;
+  border: 0 !important; border-radius: 8px !important; cursor: pointer; white-space: nowrap; margin: 0;
+  font: 500 14px/21px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #F5F5F5 !important;                    /* plain white label, no amber (glow design) */
+  background: #222222 !important;               /* LeetCode's own top-bar buttons are #222222 (measured on the live page) */
+  transition: background .12s ease;             /* keep it opaque: the glow haze sits behind the button */
+}
+#visualleet-top-button.ls-vz:hover { background: #333333 !important; }
+/* LeetCode light theme (the content script reads the bar's colour and sets data-ls-theme):
+   LeetCode's light bar is #F0F0F0 and its buttons #E8E8E8 (measured on the live page) */
+.ls-vz-wrap[data-ls-theme="light"] #visualleet-top-button.ls-vz { color: #262626 !important; background: #E8E8E8 !important; }
+.ls-vz-wrap[data-ls-theme="light"] #visualleet-top-button.ls-vz:hover { background: #DEDEDE !important; }
+.ls-vz-wrap[data-ls-theme="light"] .ls-vz-mark { color: #181818; }
+#visualleet-top-button.ls-vz:focus-visible { outline: none; box-shadow: 0 0 0 2px #0E0E0E, 0 0 0 4px #FFB020; }
+.ls-vz-wrap[data-ls-theme="light"] #visualleet-top-button.ls-vz:focus-visible { box-shadow: 0 0 0 2px #F0F0F0, 0 0 0 4px #FFB020; }
+#visualleet-top-button.ls-vz:disabled { cursor: default; }
+/* opening: only the three hopping dots, centred, at full strength (design: Opening) */
+#visualleet-top-button.ls-vz.ls-vz-opening .ls-vz-mark { display: none; }
+.ls-vz-mark { width: 18px; height: 18px; flex: none; display: block; overflow: visible; }
+
+/* ---------- glow: a thin three-colour edge and a faint haze, two soft pulses, then gone ---------- */
+
+/* thin edge: a gradient ring cut out with a mask so it works over LeetCode's translucent button fill */
+.ls-vz-wrap::before,
+.ls-vz-wrap::after {
+  content: ""; position: absolute; pointer-events: none; opacity: 0;
+  background: linear-gradient(90deg, #4C8DFF 0%, #4C8DFF 22%, #FFB020 42%, #FFB020 58%, #FF5B4A 80%, #FF5B4A 100%);
+}
+.ls-vz-wrap::before {               /* edge (design: inset -1.5 / radius 13.5 at 1.5625x) */
+  inset: -1px; border-radius: 9px; padding: 1px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+.ls-vz-wrap::after {                /* haze, sits behind the button (design: inset -3 / radius 15 / blur 9 at 1.5625x) */
+  inset: -2px; border-radius: 10px; filter: blur(6px); z-index: -1;
+}
+
+@keyframes ls-vz-edge { 0%, 100% { opacity: 0 } 20% { opacity: .48 } 50% { opacity: .16 } 74% { opacity: .42 } }
+@keyframes ls-vz-haze { 0%, 100% { opacity: 0 } 20% { opacity: .17 } 50% { opacity: .06 } 74% { opacity: .14 } }
+@keyframes ls-vz-dot  { 0%, 100% { transform: scale(1) } 45% { transform: scale(1.25) } }
+
+.ls-vz-glow::before { animation: ls-vz-edge 2.6s ease-in-out; }
+.ls-vz-glow::after  { animation: ls-vz-haze 2.6s ease-in-out; }
+.ls-vz-glow .ls-vz-d1,
+.ls-vz-glow .ls-vz-d2,
+.ls-vz-glow .ls-vz-d3 { transform-box: fill-box; transform-origin: center; animation: ls-vz-dot .55s cubic-bezier(.3, .7, .3, 1) 2; }
+.ls-vz-glow .ls-vz-d1 { animation-delay: .15s; }
+.ls-vz-glow .ls-vz-d2 { animation-delay: .33s; }
+.ls-vz-glow .ls-vz-d3 { animation-delay: .51s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ls-vz-glow::before, .ls-vz-glow::after, .ls-vz-glow rect { animation: none !important; }
+}
+
+/* ---------- "opening" state while the LeetScope tab is being prepared ---------- */
+@keyframes ls-vz-hop { 0%, 80%, 100% { transform: translateY(0); opacity: .55 } 40% { transform: translateY(-4px); opacity: 1 } }
+.ls-vz-hop { display: inline-block; width: 5px; height: 5px; border-radius: 50%; animation: ls-vz-hop .9s ease-in-out infinite; }
+.ls-vz-hop:nth-child(1) { background: #FFB020; }
+.ls-vz-hop:nth-child(2) { background: #2F6BFF; animation-delay: .12s; }
+.ls-vz-hop:nth-child(3) { background: #FF5B4A; animation-delay: .24s; }
+
+/* ---------- message card under the button (design: leetcode-button-states) ---------- */
+@keyframes ls-t-in { from { opacity: 0; transform: translateY(-6px) } to { opacity: 1; transform: none } }
+#leetscope-toast { position: fixed; z-index: 2147483647; width: 360px; max-width: calc(100vw - 16px); box-sizing: border-box;
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 12px 12px 14px 14px; border-radius: 12px; background: #1E1E1E; border: 1px solid #303030;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .5); color: #C8C8C8; text-align: left;
+  font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  animation: ls-t-in .22s cubic-bezier(.2, .7, .2, 1); }
+#leetscope-toast .ls-t-head { display: flex; align-items: center; gap: 8px; color: #F5F5F5; font-weight: 600; }
+#leetscope-toast .ls-t-head .ls-t-mark { width: 16px; height: 16px; flex: none; display: block; color: #EDEDED; }
+#leetscope-toast .ls-t-close { margin-left: auto; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
+  padding: 0; border: 0; border-radius: 6px; background: transparent; color: #8A8A8A; cursor: pointer; transition: background .12s ease, color .12s ease; }
+#leetscope-toast .ls-t-close svg { width: 12px; height: 12px; display: block; }
+#leetscope-toast .ls-t-close:hover { background: #2C2C2C; color: #F5F5F5; }
+#leetscope-toast .ls-t-body { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { #leetscope-toast { animation: none; } }

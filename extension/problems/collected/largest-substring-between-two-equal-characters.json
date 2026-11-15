@@ -1,0 +1,30 @@
+{
+ "slug": "largest-substring-between-two-equal-characters",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1624",
+ "title": "Largest Substring Between Two Equal Characters",
+ "premium": false,
+ "meta": {
+  "name": "maxLengthBetweenEqualCharacters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aa\"",
+  "\"abca\"",
+  "\"cbzxy\""
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

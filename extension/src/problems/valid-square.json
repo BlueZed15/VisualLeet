@@ -1,0 +1,40 @@
+{
+ "slug": "valid-square",
+ "frontendId": "593",
+ "title": "Valid Square",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "p1",
+   "type": "integer[]"
+  },
+  {
+   "name": "p2",
+   "type": "integer[]"
+  },
+  {
+   "name": "p3",
+   "type": "integer[]"
+  },
+  {
+   "name": "p4",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "p1 = {p1}\np2 = {p2}\np3 = {p3}\np4 = {p4}",
+ "visible": [
+  "p1",
+  "p2",
+  "p3",
+  "p4"
+ ],
+ "call": "result = Solution().validSquare(p1, p2, p3, p4)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

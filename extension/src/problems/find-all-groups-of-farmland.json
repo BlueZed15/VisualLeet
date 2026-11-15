@@ -1,0 +1,25 @@
+{
+ "slug": "find-all-groups-of-farmland",
+ "frontendId": "1992",
+ "title": "Find All Groups of Farmland",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "land",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "land = {land}",
+ "visible": [
+  "land"
+ ],
+ "call": "result = Solution().findFarmland(land)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

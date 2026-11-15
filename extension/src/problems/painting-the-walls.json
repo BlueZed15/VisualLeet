@@ -1,0 +1,30 @@
+{
+ "slug": "painting-the-walls",
+ "frontendId": "2742",
+ "title": "Painting the Walls",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cost",
+   "type": "integer[]"
+  },
+  {
+   "name": "time",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cost = {cost}\ntime = {time}",
+ "visible": [
+  "cost",
+  "time"
+ ],
+ "call": "result = Solution().paintWalls(cost, time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "pizza-with-3n-slices",
+ "frontendId": "1388",
+ "title": "Pizza With 3n Slices",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "slices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "slices = {slices}",
+ "visible": [
+  "slices"
+ ],
+ "call": "result = Solution().maxSizeSlices(slices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "substrings-of-size-three-with-distinct-characters",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1876",
+ "title": "Substrings of Size Three with Distinct Characters",
+ "premium": false,
+ "meta": {
+  "name": "countGoodSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"xyzzaz\"",
+  "\"aababcabc\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "4"
+ ],
+ "anyOrder": false
+}

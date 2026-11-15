@@ -1,0 +1,50 @@
+{
+ "slug": "implement-magic-dictionary",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "676",
+ "title": "Implement Magic Dictionary",
+ "premium": false,
+ "meta": {
+  "classname": "MagicDictionary",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string[]",
+      "name": "dictionary"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "buildDict"
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "searchWord"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "search"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\",\"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, false, true, false, false]"
+ ],
+ "anyOrder": false
+}

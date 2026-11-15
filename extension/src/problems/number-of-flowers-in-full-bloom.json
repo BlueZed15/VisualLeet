@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-flowers-in-full-bloom",
+ "frontendId": "2251",
+ "title": "Number of Flowers in Full Bloom",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "flowers",
+   "type": "integer[][]"
+  },
+  {
+   "name": "people",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "flowers = {flowers}\npeople = {people}",
+ "visible": [
+  "flowers",
+  "people"
+ ],
+ "call": "result = Solution().fullBloomFlowers(flowers, people)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

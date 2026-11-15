@@ -1,0 +1,30 @@
+{
+ "slug": "closest-prime-numbers-in-range",
+ "frontendId": "2523",
+ "title": "Closest Prime Numbers in Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "left = {left}\nright = {right}",
+ "visible": [
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().closestPrimes(left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

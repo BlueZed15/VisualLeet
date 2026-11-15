@@ -1,0 +1,30 @@
+{
+ "slug": "fraction-addition-and-subtraction",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "592",
+ "title": "Fraction Addition and Subtraction",
+ "premium": false,
+ "meta": {
+  "name": "fractionAddition",
+  "params": [
+   {
+    "name": "expression",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"-1/2+1/2\"",
+  "\"-1/2+1/2+1/3\"",
+  "\"1/3-1/2\""
+ ],
+ "exampleOutputs": [
+  "\"0/1\"",
+  "\"1/3\"",
+  "\"-1/6\""
+ ],
+ "anyOrder": false
+}

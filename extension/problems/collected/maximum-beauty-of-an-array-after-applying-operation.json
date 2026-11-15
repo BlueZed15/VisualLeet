@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-beauty-of-an-array-after-applying-operation",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2779",
+ "title": "Maximum Beauty of an Array After Applying Operation",
+ "premium": false,
+ "meta": {
+  "name": "maximumBeauty",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,6,1,2]\n2",
+  "[1,1,1,1]\n10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

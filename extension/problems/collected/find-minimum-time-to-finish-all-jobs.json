@@ -1,0 +1,32 @@
+{
+ "slug": "find-minimum-time-to-finish-all-jobs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1723",
+ "title": "Find Minimum Time to Finish All Jobs",
+ "premium": false,
+ "meta": {
+  "name": "minimumTimeRequired",
+  "params": [
+   {
+    "name": "jobs",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,3]\n3",
+  "[1,2,4,7,8]\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "11"
+ ],
+ "anyOrder": false
+}

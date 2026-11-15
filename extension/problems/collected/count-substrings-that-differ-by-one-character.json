@@ -1,0 +1,32 @@
+{
+ "slug": "count-substrings-that-differ-by-one-character",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1638",
+ "title": "Count Substrings That Differ by One Character",
+ "premium": false,
+ "meta": {
+  "name": "countSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aba\"\n\"baba\"",
+  "\"ab\"\n\"bb\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "3"
+ ],
+ "anyOrder": false
+}

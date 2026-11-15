@@ -1,0 +1,34 @@
+{
+ "slug": "longest-increasing-subsequence-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2407",
+ "title": "Longest Increasing Subsequence II",
+ "premium": false,
+ "meta": {
+  "name": "lengthOfLIS",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,1,4,3,4,5,8,15]\n3",
+  "[7,4,5,1,8,12,4,7]\n5",
+  "[1,5]\n1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

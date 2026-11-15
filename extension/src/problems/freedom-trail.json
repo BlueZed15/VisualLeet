@@ -1,0 +1,30 @@
+{
+ "slug": "freedom-trail",
+ "frontendId": "514",
+ "title": "Freedom Trail",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ring",
+   "type": "string"
+  },
+  {
+   "name": "key",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "ring = {ring}\nkey = {key}",
+ "visible": [
+  "ring",
+  "key"
+ ],
+ "call": "result = Solution().findRotateSteps(ring, key)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "stamping-the-sequence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "936",
+ "title": "Stamping The Sequence",
+ "premium": false,
+ "meta": {
+  "name": "movesToStamp",
+  "params": [
+   {
+    "name": "stamp",
+    "type": "string"
+   },
+   {
+    "name": "target",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"ababc\"",
+  "\"abca\"\n\"aabcaca\""
+ ],
+ "exampleOutputs": [
+  "[0,2]",
+  "[3,0,1]"
+ ],
+ "anyOrder": false
+}

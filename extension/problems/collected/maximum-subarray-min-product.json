@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-subarray-min-product",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1856",
+ "title": "Maximum Subarray Min-Product",
+ "premium": false,
+ "meta": {
+  "name": "maxSumMinProduct",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,2]",
+  "[2,3,3,1,2]",
+  "[3,1,5,6,4,2]"
+ ],
+ "exampleOutputs": [
+  "14",
+  "18",
+  "60"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "decode-the-message",
+ "frontendId": "2325",
+ "title": "Decode the Message",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "key",
+   "type": "string"
+  },
+  {
+   "name": "message",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "key = {key}\nmessage = {message}",
+ "visible": [
+  "key",
+  "message"
+ ],
+ "call": "result = Solution().decodeMessage(key, message)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

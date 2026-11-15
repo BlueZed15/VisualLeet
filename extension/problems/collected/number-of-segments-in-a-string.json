@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-segments-in-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "434",
+ "title": "Number of Segments in a String",
+ "premium": false,
+ "meta": {
+  "name": "countSegments",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"Hello, my name is John\"",
+  "\"Hello\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

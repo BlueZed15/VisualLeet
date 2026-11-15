@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-prefix-common-array-of-two-arrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2657",
+ "title": "Find the Prefix Common Array of Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "findThePrefixCommonArray",
+  "params": [
+   {
+    "name": "A",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "B"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,4]\n[3,1,2,4]",
+  "[2,3,1]\n[3,1,2]"
+ ],
+ "exampleOutputs": [
+  "[0,2,3,4]",
+  "[0,1,3]"
+ ],
+ "anyOrder": false
+}

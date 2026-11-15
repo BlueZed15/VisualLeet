@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-matching-of-players-with-trainers",
+ "frontendId": "2410",
+ "title": "Maximum Matching of Players With Trainers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "players",
+   "type": "integer[]"
+  },
+  {
+   "name": "trainers",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "players = {players}\ntrainers = {trainers}",
+ "visible": [
+  "players",
+  "trainers"
+ ],
+ "call": "result = Solution().matchPlayersAndTrainers(players, trainers)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

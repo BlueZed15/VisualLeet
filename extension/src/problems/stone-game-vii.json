@@ -1,0 +1,25 @@
+{
+ "slug": "stone-game-vii",
+ "frontendId": "1690",
+ "title": "Stone Game VII",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().stoneGameVII(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

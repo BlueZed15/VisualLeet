@@ -1,0 +1,25 @@
+{
+ "slug": "rectangle-area-ii",
+ "frontendId": "850",
+ "title": "Rectangle Area II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rectangles",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rectangles = {rectangles}",
+ "visible": [
+  "rectangles"
+ ],
+ "call": "result = Solution().rectangleArea(rectangles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "validate-ip-address",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "468",
+ "title": "Validate IP Address",
+ "premium": false,
+ "meta": {
+  "name": "validIPAddress",
+  "params": [
+   {
+    "name": "queryIP",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"172.16.254.1\"",
+  "\"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
+  "\"256.256.256.256\""
+ ],
+ "exampleOutputs": [
+  "\"IPv4\"",
+  "\"IPv6\"",
+  "\"Neither\""
+ ],
+ "anyOrder": false
+}

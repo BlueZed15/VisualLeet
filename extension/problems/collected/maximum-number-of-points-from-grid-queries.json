@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-of-points-from-grid-queries",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2503",
+ "title": "Maximum Number of Points From Grid Queries",
+ "premium": false,
+ "meta": {
+  "name": "maxPoints",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[2,5,7],[3,5,1]]\n[5,6,2]",
+  "[[5,2,1],[1,1,2]]\n[3]"
+ ],
+ "exampleOutputs": [
+  "[5,8,1]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

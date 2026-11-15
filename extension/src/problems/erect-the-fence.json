@@ -1,0 +1,25 @@
+{
+ "slug": "erect-the-fence",
+ "frontendId": "587",
+ "title": "Erect the Fence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "trees",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "trees = {trees}",
+ "visible": [
+  "trees"
+ ],
+ "call": "result = Solution().outerTrees(trees)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-beauty-of-all-substrings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1781",
+ "title": "Sum of Beauty of All Substrings",
+ "premium": false,
+ "meta": {
+  "name": "beautySum",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabcb\"",
+  "\"aabcbaa\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "17"
+ ],
+ "anyOrder": false
+}

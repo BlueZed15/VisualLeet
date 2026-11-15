@@ -1,0 +1,34 @@
+{
+ "slug": "stone-game-vi",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1686",
+ "title": "Stone Game VI",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameVI",
+  "params": [
+   {
+    "name": "aliceValues",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "bobValues"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3]\n[2,1]",
+  "[1,2]\n[3,1]",
+  "[2,4,3]\n[1,6,7]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "-1"
+ ],
+ "anyOrder": false
+}

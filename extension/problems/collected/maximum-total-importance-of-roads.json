@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-total-importance-of-roads",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2285",
+ "title": "Maximum Total Importance of Roads",
+ "premium": false,
+ "meta": {
+  "name": "maximumImportance",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "roads"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "5\n[[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]",
+  "5\n[[0,3],[2,4],[1,3]]"
+ ],
+ "exampleOutputs": [
+  "43",
+  "20"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "count-hills-and-valleys-in-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2210",
+ "title": "Count Hills and Valleys in an Array",
+ "premium": false,
+ "meta": {
+  "name": "countHillValley",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,1,1,6,5]",
+  "[6,6,5,5,4,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

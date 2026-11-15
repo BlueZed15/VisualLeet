@@ -1,0 +1,30 @@
+{
+ "slug": "stickers-to-spell-word",
+ "frontendId": "691",
+ "title": "Stickers to Spell Word",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stickers",
+   "type": "string[]"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "stickers = {stickers}\ntarget = {target}",
+ "visible": [
+  "stickers",
+  "target"
+ ],
+ "call": "result = Solution().minStickers(stickers, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

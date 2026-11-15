@@ -29,6 +29,9 @@
 # code (options 'visualleet_setup' / 'visualleet_setup_visible'): it runs
 # before tracing starts, in its own module, and the names it defines are
 # hidden from the Global frame unless listed as visible (the test inputs).
+# Also a trace-size budget (MAX_TRACE_BYTES): data that grows every step
+# stops the trace early, again with 'instruction_limit_reached', instead of
+# encoding steps that are too big to show.
 # Without those options the tracer behaves exactly like the original.
 
 
@@ -62,7 +65,8 @@ import pg_encoder
 # infinite loops
 #MAX_EXECUTED_LINES = 300
 MAX_STDOUT_BYTES = 64 * 1024 # VisualLeet: see the output check in interaction()
-MAX_EXECUTED_LINES = 1000 # on 2016-05-01, I increased the limit from 300 to 1000 for Python due to popular user demand! and I also improved the warning message
+MAX_TRACE_BYTES = 9 * 1024 * 1024 # VisualLeet: under the page's 10 MiB limit; see interaction()
+MAX_EXECUTED_LINES = 1500 # VisualLeet: 1500 so typical backtracking solutions finish. Original: 1000 # on 2016-05-01, I increased the limit from 300 to 1000 for Python due to popular user demand! and I also improved the warning message
 
 #DEBUG = False
 DEBUG = True
@@ -137,7 +141,7 @@ for e in ('_*', '__*', '__*__', '*_$'):
 '''
 
 
-TRY_ANACONDA_STR = '\n\nYou can also try "Python 3.6 with Anaconda (experimental)",\nwhich is slower but lets you import many more modules.\n'
+TRY_ANACONDA_STR = ''  # VisualLeet: the original pointed to a site option this app doesn't have
 
 
 # simple sandboxing scheme:
@@ -261,18 +265,16 @@ input_string_queue = []
 
 def open_wrapper(*args):
   if is_python3:
-      raise Exception('''open() is not supported by Python Tutor.
-Instead use io.StringIO() to simulate a file.
-Example: http://goo.gl/uNvBGl''' + TRY_ANACONDA_STR)
+      raise Exception('''open() is not supported in this app.
+Use io.StringIO() to simulate a file.''' + TRY_ANACONDA_STR)
   else:
-      raise Exception('''open() is not supported by Python Tutor.
-Instead use StringIO.StringIO() to simulate a file.
-Example: http://goo.gl/Q9xQ4p''' + TRY_ANACONDA_STR)
+      raise Exception('''open() is not supported in this app.
+Use StringIO.StringIO() to simulate a file.''' + TRY_ANACONDA_STR)
 
 # create a more sensible error message for unsupported features
 def create_banned_builtins_wrapper(fn_name):
   def err_func(*args):
-    raise Exception("'" + fn_name + "' is not supported by Python Tutor." + TRY_ANACONDA_STR)
+    raise Exception("'" + fn_name + "' is not supported in this app." + TRY_ANACONDA_STR)
   return err_func
 
 
@@ -566,6 +568,7 @@ class PGLogger(bdb.Bdb):
         # each entry contains a dict with the information for a single
         # executed line
         self.trace = []
+        self.trace_bytes = 0 # VisualLeet: encoded size of the steps so far
 
         # if this is true, don't put any more stuff into self.trace
         self.done = False
@@ -1350,7 +1353,7 @@ class PGLogger(bdb.Bdb):
 
 
         if len(self.trace) >= MAX_EXECUTED_LINES:
-          self.trace.append(dict(event='instruction_limit_reached', exception_msg='Stopped after running ' + str(MAX_EXECUTED_LINES) + ' steps. Please shorten your code,\nsince Python Tutor is not designed to handle long-running code.'))
+          self.trace.append(dict(event='instruction_limit_reached', exception_msg='Stopped after running ' + str(MAX_EXECUTED_LINES) + ' steps.'))
           self.force_terminate()
 
         # VisualLeet: bound printed output while capturing (every trace entry
@@ -1358,8 +1361,19 @@ class PGLogger(bdb.Bdb):
         # blow up the trace size)
         cur_stdout = trace_entry.get('stdout', '') if append_to_trace else ''
         if len(cur_stdout) * 4 > MAX_STDOUT_BYTES and len(cur_stdout.encode('utf-8')) > MAX_STDOUT_BYTES:
-          self.trace.append(dict(event='instruction_limit_reached', exception_msg='Stopped: the program printed more than ' + str(MAX_STDOUT_BYTES // 1024) + ' KiB of output.\nPrint less, or use a smaller input.'))
+          self.trace.append(dict(event='instruction_limit_reached', exception_msg='Stopped because the program printed more than ' + str(MAX_STDOUT_BYTES // 1024) + ' KiB of output. Print less or use a smaller input.'))
           self.force_terminate()
+
+        # VisualLeet: stop once the steps no longer fit the trace budget
+        # (e.g. a dict of lists that grows every step: each step carries the
+        # whole heap), keeping the steps that fit
+        if append_to_trace:
+          import json
+          self.trace_bytes += len(json.dumps(trace_entry)) + 2
+          if self.trace_bytes > MAX_TRACE_BYTES and len(self.trace) > 1:
+            self.trace.pop()
+            self.trace.append(dict(event='instruction_limit_reached', exception_msg='Stopped after ' + str(len(self.trace)) + ' steps because the data grew too large to show more.'))
+            self.force_terminate()
 
         self.forget()
 

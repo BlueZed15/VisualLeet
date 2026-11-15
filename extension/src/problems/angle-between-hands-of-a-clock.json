@@ -1,0 +1,30 @@
+{
+ "slug": "angle-between-hands-of-a-clock",
+ "frontendId": "1344",
+ "title": "Angle Between Hands of a Clock",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hour",
+   "type": "integer"
+  },
+  {
+   "name": "minutes",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "hour = {hour}\nminutes = {minutes}",
+ "visible": [
+  "hour",
+  "minutes"
+ ],
+ "call": "result = Solution().angleClock(hour, minutes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

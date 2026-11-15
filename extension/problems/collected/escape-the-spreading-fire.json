@@ -1,0 +1,30 @@
+{
+ "slug": "escape-the-spreading-fire",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2258",
+ "title": "Escape the Spreading Fire",
+ "premium": false,
+ "meta": {
+  "name": "maximumMinutes",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,2,0,0,0,0,0],[0,0,0,2,2,1,0],[0,2,0,0,1,2,0],[0,0,2,2,2,0,2],[0,0,0,0,0,0,0]]",
+  "[[0,0,0,0],[0,1,2,0],[0,2,0,0]]",
+  "[[0,0,0],[2,2,0],[1,2,0]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1",
+  "1000000000"
+ ],
+ "anyOrder": false
+}

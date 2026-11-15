@@ -1,0 +1,30 @@
+{
+ "slug": "numbers-with-repeated-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1012",
+ "title": "Numbers With Repeated Digits",
+ "premium": false,
+ "meta": {
+  "name": "numDupDigitsAtMostN",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "20",
+  "100",
+  "1000"
+ ],
+ "exampleOutputs": [
+  "1",
+  "10",
+  "262"
+ ],
+ "anyOrder": false
+}

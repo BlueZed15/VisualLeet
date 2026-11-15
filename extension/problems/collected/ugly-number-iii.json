@@ -1,0 +1,42 @@
+{
+ "slug": "ugly-number-iii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1201",
+ "title": "Ugly Number III",
+ "premium": false,
+ "meta": {
+  "name": "nthUglyNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "a"
+   },
+   {
+    "type": "integer",
+    "name": "b"
+   },
+   {
+    "type": "integer",
+    "name": "c"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n2\n3\n5",
+  "4\n2\n3\n4",
+  "5\n2\n11\n13"
+ ],
+ "exampleOutputs": [
+  "4",
+  "6",
+  "10"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-prefix-common-array-of-two-arrays",
+ "frontendId": "2657",
+ "title": "Find the Prefix Common Array of Two Arrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "A",
+   "type": "integer[]"
+  },
+  {
+   "name": "B",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "A = {A}\nB = {B}",
+ "visible": [
+  "A",
+  "B"
+ ],
+ "call": "result = Solution().findThePrefixCommonArray(A, B)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

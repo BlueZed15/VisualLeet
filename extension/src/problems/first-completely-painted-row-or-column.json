@@ -1,0 +1,30 @@
+{
+ "slug": "first-completely-painted-row-or-column",
+ "frontendId": "2661",
+ "title": "First Completely Painted Row or Column",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nmat = {mat}",
+ "visible": [
+  "arr",
+  "mat"
+ ],
+ "call": "result = Solution().firstCompleteIndex(arr, mat)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

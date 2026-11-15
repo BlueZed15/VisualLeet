@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-valid-words-for-each-puzzle",
+ "frontendId": "1178",
+ "title": "Number of Valid Words for Each Puzzle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "puzzles",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\npuzzles = {puzzles}",
+ "visible": [
+  "words",
+  "puzzles"
+ ],
+ "call": "result = Solution().findNumOfValidWords(words, puzzles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

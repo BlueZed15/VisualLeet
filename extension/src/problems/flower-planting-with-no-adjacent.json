@@ -1,0 +1,30 @@
+{
+ "slug": "flower-planting-with-no-adjacent",
+ "frontendId": "1042",
+ "title": "Flower Planting With No Adjacent",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "paths",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\npaths = {paths}",
+ "visible": [
+  "n",
+  "paths"
+ ],
+ "call": "result = Solution().gardenNoAdj(n, paths)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "spiral-matrix-iii",
+ "frontendId": "885",
+ "title": "Spiral Matrix III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rows",
+   "type": "integer"
+  },
+  {
+   "name": "cols",
+   "type": "integer"
+  },
+  {
+   "name": "rStart",
+   "type": "integer"
+  },
+  {
+   "name": "cStart",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rows = {rows}\ncols = {cols}\nrStart = {rStart}\ncStart = {cStart}",
+ "visible": [
+  "rows",
+  "cols",
+  "rStart",
+  "cStart"
+ ],
+ "call": "result = Solution().spiralMatrixIII(rows, cols, rStart, cStart)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

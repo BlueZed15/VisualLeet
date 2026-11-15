@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
+ "frontendId": "1292",
+ "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\nthreshold = {threshold}",
+ "visible": [
+  "mat",
+  "threshold"
+ ],
+ "call": "result = Solution().maxSideLength(mat, threshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

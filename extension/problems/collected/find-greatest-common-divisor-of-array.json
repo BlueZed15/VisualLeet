@@ -1,0 +1,30 @@
+{
+ "slug": "find-greatest-common-divisor-of-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1979",
+ "title": "Find Greatest Common Divisor of Array",
+ "premium": false,
+ "meta": {
+  "name": "findGCD",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,5,6,9,10]",
+  "[7,5,6,8,3]",
+  "[3,3]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

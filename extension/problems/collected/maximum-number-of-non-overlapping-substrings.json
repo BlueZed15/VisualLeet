@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-non-overlapping-substrings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1520",
+ "title": "Maximum Number of Non-Overlapping Substrings",
+ "premium": false,
+ "meta": {
+  "name": "maxNumOfSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"adefaddaccc\"",
+  "\"abbaccd\""
+ ],
+ "exampleOutputs": [
+  "[\"e\",\"f\",\"ccc\"]",
+  "[\"d\",\"bb\",\"cc\"]"
+ ],
+ "anyOrder": true
+}

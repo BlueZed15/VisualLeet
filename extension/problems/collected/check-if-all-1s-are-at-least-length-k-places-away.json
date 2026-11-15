@@ -1,0 +1,32 @@
+{
+ "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1437",
+ "title": "Check If All 1's Are at Least Length K Places Away",
+ "premium": false,
+ "meta": {
+  "name": "kLengthApart",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,0,1,0,0,1]\n2",
+  "[1,0,0,1,0,1]\n2"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

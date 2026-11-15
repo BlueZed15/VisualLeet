@@ -1,0 +1,28 @@
+{
+ "slug": "find-resultant-array-after-removing-anagrams",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2273",
+ "title": "Find Resultant Array After Removing Anagrams",
+ "premium": false,
+ "meta": {
+  "name": "removeAnagrams",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
+  "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+ ],
+ "exampleOutputs": [
+  "[\"abba\",\"cd\"]",
+  "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+ ],
+ "anyOrder": false
+}

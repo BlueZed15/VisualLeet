@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-even-multiple",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2413",
+ "title": "Smallest Even Multiple",
+ "premium": false,
+ "meta": {
+  "name": "smallestEvenMultiple",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "6"
+ ],
+ "exampleOutputs": [
+  "10",
+  "6"
+ ],
+ "anyOrder": false
+}

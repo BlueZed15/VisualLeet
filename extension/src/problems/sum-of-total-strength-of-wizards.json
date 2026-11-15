@@ -1,0 +1,25 @@
+{
+ "slug": "sum-of-total-strength-of-wizards",
+ "frontendId": "2281",
+ "title": "Sum of Total Strength of Wizards",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strength",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "strength = {strength}",
+ "visible": [
+  "strength"
+ ],
+ "call": "result = Solution().totalStrength(strength)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

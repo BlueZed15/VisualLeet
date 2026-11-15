@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-bags-with-full-capacity-of-rocks",
+ "frontendId": "2279",
+ "title": "Maximum Bags With Full Capacity of Rocks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "capacity",
+   "type": "integer[]"
+  },
+  {
+   "name": "rocks",
+   "type": "integer[]"
+  },
+  {
+   "name": "additionalRocks",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "capacity = {capacity}\nrocks = {rocks}\nadditionalRocks = {additionalRocks}",
+ "visible": [
+  "capacity",
+  "rocks",
+  "additionalRocks"
+ ],
+ "call": "result = Solution().maximumBags(capacity, rocks, additionalRocks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

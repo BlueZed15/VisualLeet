@@ -1,0 +1,32 @@
+{
+ "slug": "longest-binary-subsequence-less-than-or-equal-to-k",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2311",
+ "title": "Longest Binary Subsequence Less Than or Equal to K",
+ "premium": false,
+ "meta": {
+  "name": "longestSubsequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1001010\"\n5",
+  "\"00101001\"\n1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "6"
+ ],
+ "anyOrder": false
+}

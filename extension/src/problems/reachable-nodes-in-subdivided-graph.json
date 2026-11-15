@@ -1,0 +1,35 @@
+{
+ "slug": "reachable-nodes-in-subdivided-graph",
+ "frontendId": "882",
+ "title": "Reachable Nodes In Subdivided Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "maxMoves",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nmaxMoves = {maxMoves}\nn = {n}",
+ "visible": [
+  "edges",
+  "maxMoves",
+  "n"
+ ],
+ "call": "result = Solution().reachableNodes(edges, maxMoves, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

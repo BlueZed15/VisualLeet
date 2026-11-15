@@ -1,0 +1,28 @@
+{
+ "slug": "construct-smallest-number-from-di-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2375",
+ "title": "Construct Smallest Number From DI String",
+ "premium": false,
+ "meta": {
+  "name": "smallestNumber",
+  "params": [
+   {
+    "name": "pattern",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"IIIDIDDD\"",
+  "\"DDD\""
+ ],
+ "exampleOutputs": [
+  "\"123549876\"",
+  "\"4321\""
+ ],
+ "anyOrder": false
+}

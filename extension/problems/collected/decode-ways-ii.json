@@ -1,0 +1,30 @@
+{
+ "slug": "decode-ways-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "639",
+ "title": "Decode Ways II",
+ "premium": false,
+ "meta": {
+  "name": "numDecodings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"*\"",
+  "\"1*\"",
+  "\"2*\""
+ ],
+ "exampleOutputs": [
+  "9",
+  "18",
+  "15"
+ ],
+ "anyOrder": false
+}

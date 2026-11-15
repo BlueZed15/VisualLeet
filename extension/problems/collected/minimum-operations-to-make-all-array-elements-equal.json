@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-operations-to-make-all-array-elements-equal",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2602",
+ "title": "Minimum Operations to Make All Array Elements Equal",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "list<long>"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,6,8]\n[1,5]",
+  "[2,9,6,3]\n[10]"
+ ],
+ "exampleOutputs": [
+  "[14,10]",
+  "[20]"
+ ],
+ "anyOrder": false
+}

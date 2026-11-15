@@ -1,0 +1,32 @@
+{
+ "slug": "queens-that-can-attack-the-king",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1222",
+ "title": "Queens That Can Attack the King",
+ "premium": false,
+ "meta": {
+  "name": "queensAttacktheKing",
+  "params": [
+   {
+    "name": "queens",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "king"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]]\n[0,0]",
+  "[[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]]\n[3,3]"
+ ],
+ "exampleOutputs": [
+  "[[0,1],[1,0],[3,3]]",
+  "[[2,2],[3,4],[4,4]]"
+ ],
+ "anyOrder": true
+}

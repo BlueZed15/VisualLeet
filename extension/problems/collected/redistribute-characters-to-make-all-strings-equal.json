@@ -1,0 +1,29 @@
+{
+ "slug": "redistribute-characters-to-make-all-strings-equal",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1897",
+ "title": "Redistribute Characters to Make All Strings Equal",
+ "premium": false,
+ "meta": {
+  "name": "makeEqual",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"abc\",\"aabc\",\"bc\"]",
+  "[\"ab\",\"a\"]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

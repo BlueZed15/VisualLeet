@@ -1,0 +1,28 @@
+{
+ "slug": "make-array-zero-by-subtracting-equal-amounts",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2357",
+ "title": "Make Array Zero by Subtracting Equal Amounts",
+ "premium": false,
+ "meta": {
+  "name": "minimumOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,5,0,3,5]",
+  "[0]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

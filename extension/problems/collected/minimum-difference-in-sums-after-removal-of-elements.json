@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-difference-in-sums-after-removal-of-elements",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2163",
+ "title": "Minimum Difference in Sums After Removal of Elements",
+ "premium": false,
+ "meta": {
+  "name": "minimumDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,2]",
+  "[7,9,5,8,1,3]"
+ ],
+ "exampleOutputs": [
+  "-1",
+  "1"
+ ],
+ "anyOrder": false
+}

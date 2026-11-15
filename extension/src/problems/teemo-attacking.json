@@ -1,0 +1,30 @@
+{
+ "slug": "teemo-attacking",
+ "frontendId": "495",
+ "title": "Teemo Attacking",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "timeSeries",
+   "type": "integer[]"
+  },
+  {
+   "name": "duration",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "timeSeries = {timeSeries}\nduration = {duration}",
+ "visible": [
+  "timeSeries",
+  "duration"
+ ],
+ "call": "result = Solution().findPoisonedDuration(timeSeries, duration)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

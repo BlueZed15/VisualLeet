@@ -1,0 +1,25 @@
+{
+ "slug": "subdomain-visit-count",
+ "frontendId": "811",
+ "title": "Subdomain Visit Count",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cpdomains",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cpdomains = {cpdomains}",
+ "visible": [
+  "cpdomains"
+ ],
+ "call": "result = Solution().subdomainVisits(cpdomains)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

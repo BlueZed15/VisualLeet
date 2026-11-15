@@ -1,0 +1,30 @@
+{
+ "slug": "replace-the-substring-for-balanced-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1234",
+ "title": "Replace the Substring for Balanced String",
+ "premium": false,
+ "meta": {
+  "name": "balancedString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"QWER\"",
+  "\"QQWE\"",
+  "\"QQQW\""
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

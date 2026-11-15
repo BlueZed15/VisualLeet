@@ -1,0 +1,32 @@
+{
+ "slug": "linked-list-components",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "817",
+ "title": "Linked List Components",
+ "premium": false,
+ "meta": {
+  "name": "numComponents",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   },
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,2,3]\n[0,1,3]",
+  "[0,1,2,3,4]\n[0,3,1,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

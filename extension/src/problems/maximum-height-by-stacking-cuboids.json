@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-height-by-stacking-cuboids",
+ "frontendId": "1691",
+ "title": "Maximum Height by Stacking Cuboids ",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cuboids",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cuboids = {cuboids}",
+ "visible": [
+  "cuboids"
+ ],
+ "call": "result = Solution().maxHeight(cuboids)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

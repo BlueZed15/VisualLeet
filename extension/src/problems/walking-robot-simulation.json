@@ -1,0 +1,30 @@
+{
+ "slug": "walking-robot-simulation",
+ "frontendId": "874",
+ "title": "Walking Robot Simulation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "commands",
+   "type": "integer[]"
+  },
+  {
+   "name": "obstacles",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "commands = {commands}\nobstacles = {obstacles}",
+ "visible": [
+  "commands",
+  "obstacles"
+ ],
+ "call": "result = Solution().robotSim(commands, obstacles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

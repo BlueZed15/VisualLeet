@@ -1,0 +1,32 @@
+{
+ "slug": "find-building-where-alice-and-bob-can-meet",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2940",
+ "title": "Find Building Where Alice and Bob Can Meet",
+ "premium": false,
+ "meta": {
+  "name": "leftmostBuildingQueries",
+  "params": [
+   {
+    "name": "heights",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[6,4,8,5,2,7]\n[[0,1],[0,3],[2,4],[3,4],[2,2]]",
+  "[5,3,8,2,6,1,4,6]\n[[0,7],[3,5],[5,2],[3,0],[1,6]]"
+ ],
+ "exampleOutputs": [
+  "[2,5,-1,5,2]",
+  "[7,6,-1,4,6]"
+ ],
+ "anyOrder": false
+}

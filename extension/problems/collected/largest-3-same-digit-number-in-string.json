@@ -1,0 +1,30 @@
+{
+ "slug": "largest-3-same-digit-number-in-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2264",
+ "title": "Largest 3-Same-Digit Number in String",
+ "premium": false,
+ "meta": {
+  "name": "largestGoodInteger",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"6777133339\"",
+  "\"2300019\"",
+  "\"42352338\""
+ ],
+ "exampleOutputs": [
+  "\"777\"",
+  "\"000\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

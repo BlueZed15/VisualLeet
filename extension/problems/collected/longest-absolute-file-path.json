@@ -1,0 +1,30 @@
+{
+ "slug": "longest-absolute-file-path",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "388",
+ "title": "Longest Absolute File Path",
+ "premium": false,
+ "meta": {
+  "name": "lengthLongestPath",
+  "params": [
+   {
+    "name": "input",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
+  "\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
+  "\"a\""
+ ],
+ "exampleOutputs": [
+  "20",
+  "32",
+  "0"
+ ],
+ "anyOrder": false
+}

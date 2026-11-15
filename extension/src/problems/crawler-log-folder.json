@@ -1,0 +1,25 @@
+{
+ "slug": "crawler-log-folder",
+ "frontendId": "1598",
+ "title": "Crawler Log Folder",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "logs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "logs = {logs}",
+ "visible": [
+  "logs"
+ ],
+ "call": "result = Solution().minOperations(logs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

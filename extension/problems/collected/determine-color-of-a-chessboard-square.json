@@ -1,0 +1,30 @@
+{
+ "slug": "determine-color-of-a-chessboard-square",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1812",
+ "title": "Determine Color of a Chessboard Square",
+ "premium": false,
+ "meta": {
+  "name": "squareIsWhite",
+  "params": [
+   {
+    "name": "coordinates",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"a1\"",
+  "\"h3\"",
+  "\"c7\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

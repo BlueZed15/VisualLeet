@@ -1,0 +1,40 @@
+{
+ "slug": "ugly-number-iii",
+ "frontendId": "1201",
+ "title": "Ugly Number III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  },
+  {
+   "name": "c",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\na = {a}\nb = {b}\nc = {c}",
+ "visible": [
+  "n",
+  "a",
+  "b",
+  "c"
+ ],
+ "call": "result = Solution().nthUglyNumber(n, a, b, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

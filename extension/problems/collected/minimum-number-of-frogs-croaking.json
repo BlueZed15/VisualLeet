@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-frogs-croaking",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1419",
+ "title": "Minimum Number of Frogs Croaking",
+ "premium": false,
+ "meta": {
+  "name": "minNumberOfFrogs",
+  "params": [
+   {
+    "name": "croakOfFrogs",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"croakcroak\"",
+  "\"crcoakroak\"",
+  "\"croakcrook\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

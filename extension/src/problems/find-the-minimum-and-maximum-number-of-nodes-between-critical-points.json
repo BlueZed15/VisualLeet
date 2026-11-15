@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+ "frontendId": "2058",
+ "title": "Find the Minimum and Maximum Number of Nodes Between Critical Points",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "head = {head}",
+ "visible": [
+  "head"
+ ],
+ "call": "result = Solution().nodesBetweenCriticalPoints(head)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

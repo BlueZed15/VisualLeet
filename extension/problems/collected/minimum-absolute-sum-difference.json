@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-absolute-sum-difference",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1818",
+ "title": "Minimum Absolute Sum Difference",
+ "premium": false,
+ "meta": {
+  "name": "minAbsoluteSumDiff",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,7,5]\n[2,3,5]",
+  "[2,4,6,8,10]\n[2,4,6,8,10]",
+  "[1,10,4,4,2,7]\n[9,3,5,1,7,4]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "20"
+ ],
+ "anyOrder": false
+}

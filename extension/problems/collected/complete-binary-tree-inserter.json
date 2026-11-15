@@ -1,0 +1,62 @@
+{
+ "slug": "complete-binary-tree-inserter",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "919",
+ "title": "Complete Binary Tree Inserter",
+ "premium": false,
+ "meta": {
+  "classname": "CBTInserter",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "name": "root",
+     "type": "TreeNode"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "insert",
+    "params": [
+     {
+      "name": "val",
+      "type": "integer"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "name": "get_root",
+    "params": [],
+    "return": {
+     "type": "TreeNode"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"CBTInserter\",\"insert\",\"insert\",\"get_root\"]\n[[[1,2]],[3],[4],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 2, [1, 2, 3, 4]]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-total-distance-traveled",
+ "frontendId": "2463",
+ "title": "Minimum Total Distance Traveled",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "robot",
+   "type": "list<integer>"
+  },
+  {
+   "name": "factory",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "robot = {robot}\nfactory = {factory}",
+ "visible": [
+  "robot",
+  "factory"
+ ],
+ "call": "result = Solution().minimumTotalDistance(robot, factory)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

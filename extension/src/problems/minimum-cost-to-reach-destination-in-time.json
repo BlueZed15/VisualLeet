@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-cost-to-reach-destination-in-time",
+ "frontendId": "1928",
+ "title": "Minimum Cost to Reach Destination in Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "maxTime",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "passingFees",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "maxTime = {maxTime}\nedges = {edges}\npassingFees = {passingFees}",
+ "visible": [
+  "maxTime",
+  "edges",
+  "passingFees"
+ ],
+ "call": "result = Solution().minCost(maxTime, edges, passingFees)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

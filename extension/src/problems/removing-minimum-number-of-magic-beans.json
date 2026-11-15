@@ -1,0 +1,25 @@
+{
+ "slug": "removing-minimum-number-of-magic-beans",
+ "frontendId": "2171",
+ "title": "Removing Minimum Number of Magic Beans",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "beans",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "beans = {beans}",
+ "visible": [
+  "beans"
+ ],
+ "call": "result = Solution().minimumRemoval(beans)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

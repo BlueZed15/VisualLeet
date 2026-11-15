@@ -1,0 +1,32 @@
+{
+ "slug": "k-similar-strings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "854",
+ "title": "K-Similar Strings",
+ "premium": false,
+ "meta": {
+  "name": "kSimilarity",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ab\"\n\"ba\"",
+  "\"abc\"\n\"bca\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "cousins-in-binary-tree-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2641",
+ "title": "Cousins in Binary Tree II",
+ "premium": false,
+ "meta": {
+  "name": "replaceValueInTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[5,4,9,1,10,null,7]",
+  "[3,1,2]"
+ ],
+ "exampleOutputs": [
+  "[0,0,0,7,7,null,11]",
+  "[0,0,0]"
+ ],
+ "anyOrder": false
+}

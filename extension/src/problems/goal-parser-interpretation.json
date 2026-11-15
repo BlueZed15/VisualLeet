@@ -1,0 +1,25 @@
+{
+ "slug": "goal-parser-interpretation",
+ "frontendId": "1678",
+ "title": "Goal Parser Interpretation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "command",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "command = {command}",
+ "visible": [
+  "command"
+ ],
+ "call": "result = Solution().interpret(command)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

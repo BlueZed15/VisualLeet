@@ -1,0 +1,30 @@
+{
+ "slug": "keep-multiplying-found-values-by-two",
+ "frontendId": "2154",
+ "title": "Keep Multiplying Found Values by Two",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "original",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\noriginal = {original}",
+ "visible": [
+  "nums",
+  "original"
+ ],
+ "call": "result = Solution().findFinalValue(nums, original)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

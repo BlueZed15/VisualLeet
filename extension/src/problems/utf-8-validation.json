@@ -1,0 +1,25 @@
+{
+ "slug": "utf-8-validation",
+ "frontendId": "393",
+ "title": "UTF-8 Validation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "data",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "data = {data}",
+ "visible": [
+  "data"
+ ],
+ "call": "result = Solution().validUtf8(data)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

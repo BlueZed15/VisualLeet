@@ -1,0 +1,46 @@
+{
+ "slug": "minimum-cost-to-convert-string-i",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2976",
+ "title": "Minimum Cost to Convert String I",
+ "premium": false,
+ "meta": {
+  "name": "minimumCost",
+  "params": [
+   {
+    "name": "source",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "target"
+   },
+   {
+    "type": "character[]",
+    "name": "original"
+   },
+   {
+    "type": "character[]",
+    "name": "changed"
+   },
+   {
+    "type": "integer[]",
+    "name": "cost"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"abcd\"\n\"acbe\"\n[\"a\",\"b\",\"c\",\"c\",\"e\",\"d\"]\n[\"b\",\"c\",\"b\",\"e\",\"b\",\"e\"]\n[2,5,5,1,2,20]",
+  "\"aaaa\"\n\"bbbb\"\n[\"a\",\"c\"]\n[\"c\",\"b\"]\n[1,2]",
+  "\"abcd\"\n\"abce\"\n[\"a\"]\n[\"e\"]\n[10000]"
+ ],
+ "exampleOutputs": [
+  "28",
+  "12",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "rings-and-rods",
+ "frontendId": "2103",
+ "title": "Rings and Rods",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rings",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "rings = {rings}",
+ "visible": [
+  "rings"
+ ],
+ "call": "result = Solution().countPoints(rings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

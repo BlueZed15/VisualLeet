@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-ways-to-divide-a-long-corridor",
+ "frontendId": "2147",
+ "title": "Number of Ways to Divide a Long Corridor",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "corridor",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "corridor = {corridor}",
+ "visible": [
+  "corridor"
+ ],
+ "call": "result = Solution().numberOfWays(corridor)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

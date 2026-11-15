@@ -1,0 +1,51 @@
+{
+ "slug": "seat-reservation-manager",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1845",
+ "title": "Seat Reservation Manager",
+ "premium": false,
+ "meta": {
+  "classname": "SeatManager",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [],
+    "name": "reserve",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "seatNumber"
+     }
+    ],
+    "name": "unreserve",
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\"]\n[[5],[],[],[2],[],[],[],[],[5]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 2, null, 2, 3, 4, 5, null]"
+ ],
+ "anyOrder": false
+}

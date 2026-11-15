@@ -1,0 +1,30 @@
+{
+ "slug": "divide-players-into-teams-of-equal-skill",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2491",
+ "title": "Divide Players Into Teams of Equal Skill",
+ "premium": false,
+ "meta": {
+  "name": "dividePlayers",
+  "params": [
+   {
+    "name": "skill",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,5,1,3,4]",
+  "[3,4]",
+  "[1,1,2,3]"
+ ],
+ "exampleOutputs": [
+  "22",
+  "12",
+  "-1"
+ ],
+ "anyOrder": false
+}

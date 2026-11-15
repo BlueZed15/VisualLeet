@@ -1,0 +1,25 @@
+{
+ "slug": "alphabet-board-path",
+ "frontendId": "1138",
+ "title": "Alphabet Board Path",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}",
+ "visible": [
+  "target"
+ ],
+ "call": "result = Solution().alphabetBoardPath(target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-students-doing-homework-at-a-given-time",
+ "frontendId": "1450",
+ "title": "Number of Students Doing Homework at a Given Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "endTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "queryTime",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "startTime = {startTime}\nendTime = {endTime}\nqueryTime = {queryTime}",
+ "visible": [
+  "startTime",
+  "endTime",
+  "queryTime"
+ ],
+ "call": "result = Solution().busyStudent(startTime, endTime, queryTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

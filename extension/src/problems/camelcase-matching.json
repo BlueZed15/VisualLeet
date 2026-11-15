@@ -1,0 +1,30 @@
+{
+ "slug": "camelcase-matching",
+ "frontendId": "1023",
+ "title": "Camelcase Matching",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "string[]"
+  },
+  {
+   "name": "pattern",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}\npattern = {pattern}",
+ "visible": [
+  "queries",
+  "pattern"
+ ],
+ "call": "result = Solution().camelMatch(queries, pattern)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "bricks-falling-when-hit",
+ "frontendId": "803",
+ "title": "Bricks Falling When Hit",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "hits",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nhits = {hits}",
+ "visible": [
+  "grid",
+  "hits"
+ ],
+ "call": "result = Solution().hitBricks(grid, hits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

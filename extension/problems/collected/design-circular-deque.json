@@ -1,0 +1,97 @@
+{
+ "slug": "design-circular-deque",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "641",
+ "title": "Design Circular Deque",
+ "premium": false,
+ "meta": {
+  "classname": "MyCircularDeque",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "k"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "insertFront"
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "insertLast"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "deleteFront"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "deleteLast"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "getFront"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "getRear"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "isEmpty"
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "isFull"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MyCircularDeque\",\"insertLast\",\"insertLast\",\"insertFront\",\"insertFront\",\"getRear\",\"isFull\",\"deleteLast\",\"insertFront\",\"getFront\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, true, true, false, 2, true, true, true, 4]"
+ ],
+ "anyOrder": false
+}

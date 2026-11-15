@@ -1,0 +1,32 @@
+{
+ "slug": "keep-multiplying-found-values-by-two",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2154",
+ "title": "Keep Multiplying Found Values by Two",
+ "premium": false,
+ "meta": {
+  "name": "findFinalValue",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "original"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,6,1,12]\n3",
+  "[2,7,9]\n4"
+ ],
+ "exampleOutputs": [
+  "24",
+  "4"
+ ],
+ "anyOrder": false
+}

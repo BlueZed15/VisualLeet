@@ -1,0 +1,30 @@
+{
+ "slug": "count-number-of-maximum-bitwise-or-subsets",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2044",
+ "title": "Count Number of Maximum Bitwise-OR Subsets",
+ "premium": false,
+ "meta": {
+  "name": "countMaxOrSubsets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1]",
+  "[2,2,2]",
+  "[3,2,1,5]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "7",
+  "6"
+ ],
+ "anyOrder": false
+}

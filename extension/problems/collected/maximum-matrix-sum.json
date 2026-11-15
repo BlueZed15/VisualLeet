@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-matrix-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1975",
+ "title": "Maximum Matrix Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxMatrixSum",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[1,-1],[-1,1]]",
+  "[[1,2,3],[-1,-2,-3],[1,2,3]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "16"
+ ],
+ "anyOrder": false
+}

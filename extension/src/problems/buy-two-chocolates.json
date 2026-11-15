@@ -1,0 +1,30 @@
+{
+ "slug": "buy-two-chocolates",
+ "frontendId": "2706",
+ "title": "Buy Two Chocolates",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  },
+  {
+   "name": "money",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}\nmoney = {money}",
+ "visible": [
+  "prices",
+  "money"
+ ],
+ "call": "result = Solution().buyChoco(prices, money)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-moves-to-reach-target-score",
+ "frontendId": "2139",
+ "title": "Minimum Moves to Reach Target Score",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "maxDoubles",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\nmaxDoubles = {maxDoubles}",
+ "visible": [
+  "target",
+  "maxDoubles"
+ ],
+ "call": "result = Solution().minMoves(target, maxDoubles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

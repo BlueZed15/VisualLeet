@@ -1,0 +1,40 @@
+{
+ "slug": "maximum-number-of-k-divisible-components",
+ "frontendId": "2872",
+ "title": "Maximum Number of K-Divisible Components",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "values",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nvalues = {values}\nk = {k}",
+ "visible": [
+  "n",
+  "edges",
+  "values",
+  "k"
+ ],
+ "call": "result = Solution().maxKDivisibleComponents(n, edges, values, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

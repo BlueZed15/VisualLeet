@@ -1,0 +1,58 @@
+{
+ "slug": "design-circular-deque",
+ "frontendId": "641",
+ "title": "Design Circular Deque",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MyCircularDeque",
+ "methods": {
+  "MyCircularDeque": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "insertFront": [
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ],
+  "insertLast": [
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ],
+  "deleteFront": [],
+  "deleteLast": [],
+  "getFront": [],
+  "getRear": [],
+  "isEmpty": [],
+  "isFull": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MyCircularDeque(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

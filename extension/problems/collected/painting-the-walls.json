@@ -1,0 +1,32 @@
+{
+ "slug": "painting-the-walls",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2742",
+ "title": "Painting the Walls",
+ "premium": false,
+ "meta": {
+  "name": "paintWalls",
+  "params": [
+   {
+    "name": "cost",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "time"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,2]\n[1,2,3,2]",
+  "[2,3,4,2]\n[1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

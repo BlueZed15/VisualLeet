@@ -1,0 +1,28 @@
+{
+ "slug": "root-equals-sum-of-children",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2236",
+ "title": "Root Equals Sum of Children",
+ "premium": false,
+ "meta": {
+  "name": "checkTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[10,4,6]",
+  "[5,3,1]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

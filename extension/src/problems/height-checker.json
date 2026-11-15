@@ -1,0 +1,25 @@
+{
+ "slug": "height-checker",
+ "frontendId": "1051",
+ "title": "Height Checker",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}",
+ "visible": [
+  "heights"
+ ],
+ "call": "result = Solution().heightChecker(heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

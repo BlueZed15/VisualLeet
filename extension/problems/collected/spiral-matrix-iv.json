@@ -1,0 +1,36 @@
+{
+ "slug": "spiral-matrix-iv",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2326",
+ "title": "Spiral Matrix IV",
+ "premium": false,
+ "meta": {
+  "name": "spiralMatrix",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "ListNode",
+    "name": "head"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "3\n5\n[3,0,2,6,8,1,7,9,4,2,5,5,0]",
+  "1\n4\n[0,1,2]"
+ ],
+ "exampleOutputs": [
+  "[[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]",
+  "[[0,1,2,-1]]"
+ ],
+ "anyOrder": false
+}

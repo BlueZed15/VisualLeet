@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-shortest-superstring",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "943",
+ "title": "Find the Shortest Superstring",
+ "premium": false,
+ "meta": {
+  "name": "shortestSuperstring",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"alex\",\"loves\",\"leetcode\"]",
+  "[\"catg\",\"ctaagt\",\"gcta\",\"ttca\",\"atgcatc\"]"
+ ],
+ "exampleOutputs": [
+  "\"alexlovesleetcode\"",
+  "\"gctaagttcatgcatc\""
+ ],
+ "anyOrder": false
+}

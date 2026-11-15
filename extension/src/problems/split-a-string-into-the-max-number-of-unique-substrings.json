@@ -1,0 +1,25 @@
+{
+ "slug": "split-a-string-into-the-max-number-of-unique-substrings",
+ "frontendId": "1593",
+ "title": "Split a String Into the Max Number of Unique Substrings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().maxUniqueSplit(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

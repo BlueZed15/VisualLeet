@@ -1,0 +1,28 @@
+{
+ "slug": "magic-squares-in-grid",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "840",
+ "title": "Magic Squares In Grid",
+ "premium": false,
+ "meta": {
+  "name": "numMagicSquaresInside",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[4,3,8,4],[9,5,1,9],[2,7,6,2]]",
+  "[[8]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

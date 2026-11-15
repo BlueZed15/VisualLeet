@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-fish-in-a-grid",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2658",
+ "title": "Maximum Number of Fish in a Grid",
+ "premium": false,
+ "meta": {
+  "name": "findMaxFish",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]]",
+  "[[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,1]]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "1"
+ ],
+ "anyOrder": false
+}

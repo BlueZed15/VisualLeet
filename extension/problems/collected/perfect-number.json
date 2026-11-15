@@ -1,0 +1,28 @@
+{
+ "slug": "perfect-number",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "507",
+ "title": "Perfect Number",
+ "premium": false,
+ "meta": {
+  "name": "checkPerfectNumber",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "28",
+  "7"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

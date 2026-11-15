@@ -1,0 +1,32 @@
+{
+ "slug": "pass-the-pillow",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2582",
+ "title": "Pass the Pillow",
+ "premium": false,
+ "meta": {
+  "name": "passThePillow",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "time"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n5",
+  "3\n2"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

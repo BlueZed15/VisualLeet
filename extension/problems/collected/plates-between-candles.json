@@ -1,0 +1,32 @@
+{
+ "slug": "plates-between-candles",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2055",
+ "title": "Plates Between Candles",
+ "premium": false,
+ "meta": {
+  "name": "platesBetweenCandles",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"**|**|***|\"\n[[2,5],[5,9]]",
+  "\"***|**|*****|**||**|*\"\n[[1,17],[4,5],[14,17],[5,11],[15,16]]"
+ ],
+ "exampleOutputs": [
+  "[2,3]",
+  "[9,0,0,0,0]"
+ ],
+ "anyOrder": false
+}

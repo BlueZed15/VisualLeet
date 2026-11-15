@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-swaps-to-make-strings-equal",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1247",
+ "title": "Minimum Swaps to Make Strings Equal",
+ "premium": false,
+ "meta": {
+  "name": "minimumSwap",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "s2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"xx\"\n\"yy\"",
+  "\"xy\"\n\"yx\"",
+  "\"xx\"\n\"xy\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

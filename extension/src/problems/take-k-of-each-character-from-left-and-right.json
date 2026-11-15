@@ -1,0 +1,30 @@
+{
+ "slug": "take-k-of-each-character-from-left-and-right",
+ "frontendId": "2516",
+ "title": "Take K of Each Character From Left and Right",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().takeCharacters(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

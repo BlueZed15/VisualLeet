@@ -1,0 +1,28 @@
+{
+ "slug": "largest-combination-with-bitwise-and-greater-than-zero",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2275",
+ "title": "Largest Combination With Bitwise AND Greater Than Zero",
+ "premium": false,
+ "meta": {
+  "name": "largestCombination",
+  "params": [
+   {
+    "name": "candidates",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[16,17,71,62,12,24,14]",
+  "[8,8]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

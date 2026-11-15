@@ -1,0 +1,25 @@
+{
+ "slug": "goat-latin",
+ "frontendId": "824",
+ "title": "Goat Latin",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentence",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentence = {sentence}",
+ "visible": [
+  "sentence"
+ ],
+ "call": "result = Solution().toGoatLatin(sentence)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

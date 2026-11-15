@@ -1,0 +1,30 @@
+{
+ "slug": "string-without-aaa-or-bbb",
+ "frontendId": "984",
+ "title": "String Without AAA or BBB",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}",
+ "visible": [
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().strWithout3a3b(a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

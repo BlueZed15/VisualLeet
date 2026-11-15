@@ -1,0 +1,28 @@
+{
+ "slug": "sort-vowels-in-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2785",
+ "title": "Sort Vowels in a String",
+ "premium": false,
+ "meta": {
+  "name": "sortVowels",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"lEetcOde\"",
+  "\"lYmpH\""
+ ],
+ "exampleOutputs": [
+  "\"lEOtcede\"",
+  "\"lYmpH\""
+ ],
+ "anyOrder": false
+}

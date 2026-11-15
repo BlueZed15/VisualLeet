@@ -1,0 +1,34 @@
+{
+ "slug": "move-pieces-to-obtain-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2337",
+ "title": "Move Pieces to Obtain a String",
+ "premium": false,
+ "meta": {
+  "name": "canChange",
+  "params": [
+   {
+    "name": "start",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"_L__R__R_\"\n\"L______RR\"",
+  "\"R_L_\"\n\"__LR\"",
+  "\"_R\"\n\"R_\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

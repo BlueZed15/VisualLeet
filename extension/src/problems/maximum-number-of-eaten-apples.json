@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-eaten-apples",
+ "frontendId": "1705",
+ "title": "Maximum Number of Eaten Apples",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "apples",
+   "type": "integer[]"
+  },
+  {
+   "name": "days",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "apples = {apples}\ndays = {days}",
+ "visible": [
+  "apples",
+  "days"
+ ],
+ "call": "result = Solution().eatenApples(apples, days)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

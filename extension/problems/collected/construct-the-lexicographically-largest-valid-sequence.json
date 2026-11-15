@@ -1,0 +1,28 @@
+{
+ "slug": "construct-the-lexicographically-largest-valid-sequence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1718",
+ "title": "Construct the Lexicographically Largest Valid Sequence",
+ "premium": false,
+ "meta": {
+  "name": "constructDistancedSequence",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "5"
+ ],
+ "exampleOutputs": [
+  "[3,1,2,3,2]",
+  "[5,3,1,4,3,5,2,4,2]"
+ ],
+ "anyOrder": false
+}

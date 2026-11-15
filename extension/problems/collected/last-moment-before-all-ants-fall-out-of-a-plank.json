@@ -1,0 +1,38 @@
+{
+ "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1503",
+ "title": "Last Moment Before All Ants Fall Out of a Plank",
+ "premium": false,
+ "meta": {
+  "name": "getLastMoment",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "left"
+   },
+   {
+    "type": "integer[]",
+    "name": "right"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n[4,3]\n[0,1]",
+  "7\n[]\n[0,1,2,3,4,5,6,7]",
+  "7\n[0,1,2,3,4,5,6,7]\n[]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7",
+  "7"
+ ],
+ "anyOrder": false
+}

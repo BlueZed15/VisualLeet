@@ -1,0 +1,28 @@
+{
+ "slug": "utf-8-validation",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "393",
+ "title": "UTF-8 Validation",
+ "premium": false,
+ "meta": {
+  "name": "validUtf8",
+  "params": [
+   {
+    "name": "data",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[197,130,1]",
+  "[235,140,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

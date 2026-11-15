@@ -1,0 +1,32 @@
+{
+ "slug": "the-number-of-beautiful-subsets",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2597",
+ "title": "The Number of Beautiful Subsets",
+ "premium": false,
+ "meta": {
+  "name": "beautifulSubsets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,6]\n2",
+  "[1]\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

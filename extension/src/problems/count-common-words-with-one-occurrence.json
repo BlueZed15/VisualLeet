@@ -1,0 +1,30 @@
+{
+ "slug": "count-common-words-with-one-occurrence",
+ "frontendId": "2085",
+ "title": "Count Common Words With One Occurrence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words1",
+   "type": "string[]"
+  },
+  {
+   "name": "words2",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words1 = {words1}\nwords2 = {words2}",
+ "visible": [
+  "words1",
+  "words2"
+ ],
+ "call": "result = Solution().countWords(words1, words2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

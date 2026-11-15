@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-frogs-croaking",
+ "frontendId": "1419",
+ "title": "Minimum Number of Frogs Croaking",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "croakOfFrogs",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "croakOfFrogs = {croakOfFrogs}",
+ "visible": [
+  "croakOfFrogs"
+ ],
+ "call": "result = Solution().minNumberOfFrogs(croakOfFrogs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

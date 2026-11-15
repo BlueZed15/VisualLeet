@@ -1,0 +1,31 @@
+{
+ "slug": "find-all-groups-of-farmland",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1992",
+ "title": "Find All Groups of Farmland",
+ "premium": false,
+ "meta": {
+  "name": "findFarmland",
+  "params": [
+   {
+    "name": "land",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[[1,0,0],[0,1,1],[0,1,1]]",
+  "[[1,1],[1,1]]",
+  "[[0]]"
+ ],
+ "exampleOutputs": [
+  "[[0,0,0,0],[1,1,2,2]]",
+  "[[0,0,1,1]]",
+  "[]"
+ ],
+ "anyOrder": true
+}

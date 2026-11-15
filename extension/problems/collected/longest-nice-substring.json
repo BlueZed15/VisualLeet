@@ -1,0 +1,30 @@
+{
+ "slug": "longest-nice-substring",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1763",
+ "title": "Longest Nice Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestNiceSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"YazaAay\"",
+  "\"Bb\"",
+  "\"c\""
+ ],
+ "exampleOutputs": [
+  "\"aAa\"",
+  "\"Bb\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

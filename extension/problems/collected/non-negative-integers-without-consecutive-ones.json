@@ -1,0 +1,30 @@
+{
+ "slug": "non-negative-integers-without-consecutive-ones",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "600",
+ "title": "Non-negative Integers without Consecutive Ones",
+ "premium": false,
+ "meta": {
+  "name": "findIntegers",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "5",
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

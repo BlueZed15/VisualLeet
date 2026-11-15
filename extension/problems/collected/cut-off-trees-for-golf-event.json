@@ -1,0 +1,30 @@
+{
+ "slug": "cut-off-trees-for-golf-event",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "675",
+ "title": "Cut Off Trees for Golf Event",
+ "premium": false,
+ "meta": {
+  "name": "cutOffTree",
+  "params": [
+   {
+    "name": "forest",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[0,0,4],[7,6,5]]",
+  "[[1,2,3],[0,0,0],[7,6,5]]",
+  "[[2,3,4],[0,0,5],[8,7,6]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "-1",
+  "6"
+ ],
+ "anyOrder": false
+}

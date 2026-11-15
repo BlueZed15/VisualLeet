@@ -1,0 +1,28 @@
+{
+ "slug": "palindrome-partitioning-iv",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1745",
+ "title": "Palindrome Partitioning IV",
+ "premium": false,
+ "meta": {
+  "name": "checkPartitioning",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abcbdd\"",
+  "\"bcbddxy\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

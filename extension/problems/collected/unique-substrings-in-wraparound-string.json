@@ -1,0 +1,30 @@
+{
+ "slug": "unique-substrings-in-wraparound-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "467",
+ "title": "Unique Substrings in Wraparound String",
+ "premium": false,
+ "meta": {
+  "name": "findSubstringInWraproundString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"a\"",
+  "\"cac\"",
+  "\"zab\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "6"
+ ],
+ "anyOrder": false
+}

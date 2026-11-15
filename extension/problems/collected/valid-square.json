@@ -1,0 +1,42 @@
+{
+ "slug": "valid-square",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "593",
+ "title": "Valid Square",
+ "premium": false,
+ "meta": {
+  "name": "validSquare",
+  "params": [
+   {
+    "name": "p1",
+    "type": "integer[]"
+   },
+   {
+    "name": "p2",
+    "type": "integer[]"
+   },
+   {
+    "name": "p3",
+    "type": "integer[]"
+   },
+   {
+    "name": "p4",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[0,0]\n[1,1]\n[1,0]\n[0,1]",
+  "[0,0]\n[1,1]\n[1,0]\n[0,12]",
+  "[1,0]\n[-1,0]\n[0,1]\n[0,-1]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "construct-string-with-repeat-limit",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2182",
+ "title": "Construct String With Repeat Limit",
+ "premium": false,
+ "meta": {
+  "name": "repeatLimitedString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "repeatLimit"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"cczazcc\"\n3",
+  "\"aababab\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"zzcccac\"",
+  "\"bbabaa\""
+ ],
+ "anyOrder": false
+}

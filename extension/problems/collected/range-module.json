@@ -1,0 +1,85 @@
+{
+ "slug": "range-module",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "715",
+ "title": "Range Module",
+ "premium": false,
+ "meta": {
+  "classname": "RangeModule",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "name": "addRange",
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     }
+    ],
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "name": "queryRange",
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "name": "removeRange",
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     }
+    ],
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "lefts",
+    "type": "integer[]"
+   },
+   {
+    "name": "rights",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"RangeModule\",\"addRange\",\"removeRange\",\"queryRange\",\"queryRange\",\"queryRange\"]\n[[],[10,20],[14,16],[10,14],[13,15],[16,17]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, true, false, true]"
+ ],
+ "anyOrder": false
+}

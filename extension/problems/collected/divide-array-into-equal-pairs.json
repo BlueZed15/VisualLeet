@@ -1,0 +1,28 @@
+{
+ "slug": "divide-array-into-equal-pairs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2206",
+ "title": "Divide Array Into Equal Pairs",
+ "premium": false,
+ "meta": {
+  "name": "divideArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,3,2,2,2]",
+  "[1,2,3,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

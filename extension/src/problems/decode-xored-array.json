@@ -1,0 +1,30 @@
+{
+ "slug": "decode-xored-array",
+ "frontendId": "1720",
+ "title": "Decode XORed Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "encoded",
+   "type": "integer[]"
+  },
+  {
+   "name": "first",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "encoded = {encoded}\nfirst = {first}",
+ "visible": [
+  "encoded",
+  "first"
+ ],
+ "call": "result = Solution().decode(encoded, first)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

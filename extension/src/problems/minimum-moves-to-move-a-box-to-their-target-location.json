@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-moves-to-move-a-box-to-their-target-location",
+ "frontendId": "1263",
+ "title": "Minimum Moves to Move a Box to Their Target Location",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().minPushBox(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

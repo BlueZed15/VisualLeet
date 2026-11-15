@@ -1,0 +1,28 @@
+{
+ "slug": "count-numbers-with-unique-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "357",
+ "title": "Count Numbers with Unique Digits",
+ "premium": false,
+ "meta": {
+  "name": "countNumbersWithUniqueDigits",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "0"
+ ],
+ "exampleOutputs": [
+  "91",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-student-that-will-replace-the-chalk",
+ "frontendId": "1894",
+ "title": "Find the Student that Will Replace the Chalk",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "chalk",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "chalk = {chalk}\nk = {k}",
+ "visible": [
+  "chalk",
+  "k"
+ ],
+ "call": "result = Solution().chalkReplacer(chalk, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

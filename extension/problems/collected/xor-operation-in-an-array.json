@@ -1,0 +1,32 @@
+{
+ "slug": "xor-operation-in-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1486",
+ "title": "XOR Operation in an Array",
+ "premium": false,
+ "meta": {
+  "name": "xorOperation",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "start"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n0",
+  "4\n3"
+ ],
+ "exampleOutputs": [
+  "8",
+  "8"
+ ],
+ "anyOrder": false
+}

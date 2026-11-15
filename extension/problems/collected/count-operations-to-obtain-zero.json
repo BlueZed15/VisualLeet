@@ -1,0 +1,32 @@
+{
+ "slug": "count-operations-to-obtain-zero",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2169",
+ "title": "Count Operations to Obtain Zero",
+ "premium": false,
+ "meta": {
+  "name": "countOperations",
+  "params": [
+   {
+    "name": "num1",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "num2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n3",
+  "10\n10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

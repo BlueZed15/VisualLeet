@@ -1,0 +1,42 @@
+{
+ "slug": "range-sum-of-sorted-subarray-sums",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1508",
+ "title": "Range Sum of Sorted Subarray Sums",
+ "premium": false,
+ "meta": {
+  "name": "rangeSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer",
+    "name": "left"
+   },
+   {
+    "type": "integer",
+    "name": "right"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n4\n1\n5",
+  "[1,2,3,4]\n4\n3\n4",
+  "[1,2,3,4]\n4\n1\n10"
+ ],
+ "exampleOutputs": [
+  "13",
+  "6",
+  "50"
+ ],
+ "anyOrder": false
+}

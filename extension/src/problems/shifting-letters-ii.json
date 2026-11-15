@@ -1,0 +1,30 @@
+{
+ "slug": "shifting-letters-ii",
+ "frontendId": "2381",
+ "title": "Shifting Letters II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "shifts",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nshifts = {shifts}",
+ "visible": [
+  "s",
+  "shifts"
+ ],
+ "call": "result = Solution().shiftingLetters(s, shifts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

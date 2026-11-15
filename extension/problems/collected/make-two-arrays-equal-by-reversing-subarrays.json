@@ -1,0 +1,34 @@
+{
+ "slug": "make-two-arrays-equal-by-reversing-subarrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1460",
+ "title": "Make Two Arrays Equal by Reversing Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "canBeEqual",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "arr"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n[2,4,1,3]",
+  "[7]\n[7]",
+  "[3,7,9]\n[3,7,11]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

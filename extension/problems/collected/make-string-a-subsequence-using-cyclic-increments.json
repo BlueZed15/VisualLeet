@@ -1,0 +1,34 @@
+{
+ "slug": "make-string-a-subsequence-using-cyclic-increments",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2825",
+ "title": "Make String a Subsequence Using Cyclic Increments",
+ "premium": false,
+ "meta": {
+  "name": "canMakeSubsequence",
+  "params": [
+   {
+    "name": "str1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "str2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"ad\"",
+  "\"zc\"\n\"ad\"",
+  "\"ab\"\n\"d\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

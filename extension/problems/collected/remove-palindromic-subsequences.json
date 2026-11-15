@@ -1,0 +1,30 @@
+{
+ "slug": "remove-palindromic-subsequences",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1332",
+ "title": "Remove Palindromic Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "removePalindromeSub",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ababa\"",
+  "\"abb\"",
+  "\"baabb\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

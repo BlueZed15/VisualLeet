@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-score-after-n-operations",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1799",
+ "title": "Maximize Score After N Operations",
+ "premium": false,
+ "meta": {
+  "name": "maxScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2]",
+  "[3,4,6,8]",
+  "[1,2,3,4,5,6]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "11",
+  "14"
+ ],
+ "anyOrder": false
+}

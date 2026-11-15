@@ -1,0 +1,30 @@
+{
+ "slug": "rings-and-rods",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2103",
+ "title": "Rings and Rods",
+ "premium": false,
+ "meta": {
+  "name": "countPoints",
+  "params": [
+   {
+    "name": "rings",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"B0B6G0R6R0R6G9\"",
+  "\"B0R0G0R9R0B0G0\"",
+  "\"G4\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

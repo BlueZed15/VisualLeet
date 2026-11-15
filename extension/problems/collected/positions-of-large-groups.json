@@ -1,0 +1,30 @@
+{
+ "slug": "positions-of-large-groups",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "830",
+ "title": "Positions of Large Groups",
+ "premium": false,
+ "meta": {
+  "name": "largeGroupPositions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "\"abbxxxxzzy\"",
+  "\"abc\"",
+  "\"abcdddeeeeaabbbcd\""
+ ],
+ "exampleOutputs": [
+  "[[3,6]]",
+  "[]",
+  "[[3,5],[6,9],[12,14]]"
+ ],
+ "anyOrder": false
+}

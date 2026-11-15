@@ -1,0 +1,28 @@
+{
+ "slug": "largest-number-at-least-twice-of-others",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "747",
+ "title": "Largest Number At Least Twice of Others",
+ "premium": false,
+ "meta": {
+  "name": "dominantIndex",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,6,1,0]",
+  "[1,2,3,4]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "-1"
+ ],
+ "anyOrder": false
+}

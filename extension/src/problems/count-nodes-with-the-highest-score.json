@@ -1,0 +1,25 @@
+{
+ "slug": "count-nodes-with-the-highest-score",
+ "frontendId": "2049",
+ "title": "Count Nodes With the Highest Score",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "parents",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "parents = {parents}",
+ "visible": [
+  "parents"
+ ],
+ "call": "result = Solution().countHighestScoreNodes(parents)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

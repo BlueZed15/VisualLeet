@@ -1,0 +1,32 @@
+{
+ "slug": "house-robber-iv",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2560",
+ "title": "House Robber IV",
+ "premium": false,
+ "meta": {
+  "name": "minCapability",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,5,9]\n2",
+  "[2,7,9,3,1]\n2"
+ ],
+ "exampleOutputs": [
+  "5",
+  "2"
+ ],
+ "anyOrder": false
+}

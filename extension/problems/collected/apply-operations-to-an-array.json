@@ -1,0 +1,28 @@
+{
+ "slug": "apply-operations-to-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2460",
+ "title": "Apply Operations to an Array",
+ "premium": false,
+ "meta": {
+  "name": "applyOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,1,1,0]",
+  "[0,1]"
+ ],
+ "exampleOutputs": [
+  "[1,4,2,0,0,0]",
+  "[1,0]"
+ ],
+ "anyOrder": false
+}

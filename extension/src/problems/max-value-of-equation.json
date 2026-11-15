@@ -1,0 +1,30 @@
+{
+ "slug": "max-value-of-equation",
+ "frontendId": "1499",
+ "title": "Max Value of Equation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}\nk = {k}",
+ "visible": [
+  "points",
+  "k"
+ ],
+ "call": "result = Solution().findMaxValueOfEquation(points, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "valid-number",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "65",
+ "title": "Valid Number",
+ "premium": false,
+ "meta": {
+  "name": "isNumber",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"0\"",
+  "\"e\"",
+  "\".\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

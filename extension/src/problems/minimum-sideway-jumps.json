@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-sideway-jumps",
+ "frontendId": "1824",
+ "title": "Minimum Sideway Jumps",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "obstacles",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "obstacles = {obstacles}",
+ "visible": [
+  "obstacles"
+ ],
+ "call": "result = Solution().minSideJumps(obstacles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

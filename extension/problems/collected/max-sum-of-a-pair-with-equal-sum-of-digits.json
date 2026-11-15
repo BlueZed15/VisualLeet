@@ -1,0 +1,28 @@
+{
+ "slug": "max-sum-of-a-pair-with-equal-sum-of-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2342",
+ "title": "Max Sum of a Pair With Equal Sum of Digits",
+ "premium": false,
+ "meta": {
+  "name": "maximumSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[18,43,36,13,7]",
+  "[10,12,19,14]"
+ ],
+ "exampleOutputs": [
+  "54",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-moves-to-seat-everyone",
+ "frontendId": "2037",
+ "title": "Minimum Number of Moves to Seat Everyone",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "seats",
+   "type": "integer[]"
+  },
+  {
+   "name": "students",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "seats = {seats}\nstudents = {students}",
+ "visible": [
+  "seats",
+  "students"
+ ],
+ "call": "result = Solution().minMovesToSeat(seats, students)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-original-array-of-prefix-xor",
+ "frontendId": "2433",
+ "title": "Find The Original Array of Prefix Xor",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pref",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "pref = {pref}",
+ "visible": [
+  "pref"
+ ],
+ "call": "result = Solution().findArray(pref)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

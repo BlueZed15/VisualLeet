@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-of-eaten-apples",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1705",
+ "title": "Maximum Number of Eaten Apples",
+ "premium": false,
+ "meta": {
+  "name": "eatenApples",
+  "params": [
+   {
+    "name": "apples",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "days"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,5,2]\n[3,2,1,4,2]",
+  "[3,0,0,0,0,2]\n[3,0,0,0,0,2]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "5"
+ ],
+ "anyOrder": false
+}

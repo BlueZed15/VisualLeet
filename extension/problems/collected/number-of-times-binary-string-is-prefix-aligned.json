@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-times-binary-string-is-prefix-aligned",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1375",
+ "title": "Number of Times Binary String Is Prefix-Aligned",
+ "premium": false,
+ "meta": {
+  "name": "numTimesAllBlue",
+  "params": [
+   {
+    "name": "flips",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,4,1,5]",
+  "[4,1,2,3]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

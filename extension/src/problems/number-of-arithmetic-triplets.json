@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-arithmetic-triplets",
+ "frontendId": "2367",
+ "title": "Number of Arithmetic Triplets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "diff",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ndiff = {diff}",
+ "visible": [
+  "nums",
+  "diff"
+ ],
+ "call": "result = Solution().arithmeticTriplets(nums, diff)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

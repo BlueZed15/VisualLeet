@@ -1,0 +1,35 @@
+{
+ "slug": "shopping-offers",
+ "frontendId": "638",
+ "title": "Shopping Offers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "price",
+   "type": "list<integer>"
+  },
+  {
+   "name": "special",
+   "type": "list<list<integer>>"
+  },
+  {
+   "name": "needs",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "price = {price}\nspecial = {special}\nneeds = {needs}",
+ "visible": [
+  "price",
+  "special",
+  "needs"
+ ],
+ "call": "result = Solution().shoppingOffers(price, special, needs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

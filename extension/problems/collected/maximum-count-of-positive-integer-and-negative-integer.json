@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-count-of-positive-integer-and-negative-integer",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2529",
+ "title": "Maximum Count of Positive Integer and Negative Integer",
+ "premium": false,
+ "meta": {
+  "name": "maximumCount",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-2,-1,-1,1,2,3]",
+  "[-3,-2,-1,0,0,1,2]",
+  "[5,20,66,1314]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

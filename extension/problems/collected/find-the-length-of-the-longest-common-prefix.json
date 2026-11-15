@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-length-of-the-longest-common-prefix",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3043",
+ "title": "Find the Length of the Longest Common Prefix",
+ "premium": false,
+ "meta": {
+  "name": "longestCommonPrefix",
+  "params": [
+   {
+    "name": "arr1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "arr2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,10,100]\n[1000]",
+  "[1,2,3]\n[4,4,4]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

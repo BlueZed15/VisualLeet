@@ -1,0 +1,32 @@
+{
+ "slug": "special-array-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3152",
+ "title": "Special Array II",
+ "premium": false,
+ "meta": {
+  "name": "isArraySpecial",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "boolean[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,4,1,2,6]\n[[0,4]]",
+  "[4,3,1,6]\n[[0,2],[2,3]]"
+ ],
+ "exampleOutputs": [
+  "[false]",
+  "[false,true]"
+ ],
+ "anyOrder": false
+}

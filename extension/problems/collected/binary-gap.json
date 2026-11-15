@@ -1,0 +1,30 @@
+{
+ "slug": "binary-gap",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "868",
+ "title": "Binary Gap",
+ "premium": false,
+ "meta": {
+  "name": "binaryGap",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "22",
+  "8",
+  "5"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "2"
+ ],
+ "anyOrder": false
+}

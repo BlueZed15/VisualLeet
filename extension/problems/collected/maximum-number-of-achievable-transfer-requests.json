@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-number-of-achievable-transfer-requests",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1601",
+ "title": "Maximum Number of Achievable Transfer Requests",
+ "premium": false,
+ "meta": {
+  "name": "maximumRequests",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "requests"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
+  "3\n[[0,0],[1,2],[2,1]]",
+  "4\n[[0,3],[3,1],[1,2],[2,0]]"
+ ],
+ "exampleOutputs": [
+  "5Explantion: Let's see the requests:From building 0 we have employees x and y and both want to move to building 1.From building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.From building 2 we have employee z and they want to move to building 0.From building 3 we have employee c and they want to move to building 4.From building 4 we don't have any requests.We can achieve the requests of users x and b by swapping their places.We can achieve the requests of users y, a and z by swapping the places in the 3 buildings.",
+  "3Explantion: Let's see the requests:From building 0 we have employee x and they want to stay in the same building 0.From building 1 we have employee y and they want to move to building 2.From building 2 we have employee z and they want to move to building 1.We can achieve all the requests.",
+  "4"
+ ],
+ "anyOrder": false
+}

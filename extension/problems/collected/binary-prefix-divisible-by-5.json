@@ -1,0 +1,29 @@
+{
+ "slug": "binary-prefix-divisible-by-5",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1018",
+ "title": "Binary Prefix Divisible By 5",
+ "premium": false,
+ "meta": {
+  "name": "prefixesDivBy5",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[0,1,1]",
+  "[1,1,1]"
+ ],
+ "exampleOutputs": [
+  "[true,false,false]",
+  "[false,false,false]"
+ ],
+ "anyOrder": false
+}

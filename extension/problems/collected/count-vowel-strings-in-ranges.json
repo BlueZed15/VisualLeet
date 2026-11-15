@@ -1,0 +1,32 @@
+{
+ "slug": "count-vowel-strings-in-ranges",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2559",
+ "title": "Count Vowel Strings in Ranges",
+ "premium": false,
+ "meta": {
+  "name": "vowelStrings",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"aba\",\"bcb\",\"ece\",\"aa\",\"e\"]\n[[0,2],[1,4],[1,1]]",
+  "[\"a\",\"e\",\"i\"]\n[[0,2],[0,1],[2,2]]"
+ ],
+ "exampleOutputs": [
+  "[2,3,0]",
+  "[3,2,1]"
+ ],
+ "anyOrder": false
+}

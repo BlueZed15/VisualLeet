@@ -1,0 +1,28 @@
+{
+ "slug": "count-collisions-on-a-road",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2211",
+ "title": "Count Collisions on a Road",
+ "premium": false,
+ "meta": {
+  "name": "countCollisions",
+  "params": [
+   {
+    "name": "directions",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"RLRSLL\"",
+  "\"LLRR\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

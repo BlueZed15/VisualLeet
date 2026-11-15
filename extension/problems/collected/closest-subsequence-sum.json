@@ -1,0 +1,34 @@
+{
+ "slug": "closest-subsequence-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1755",
+ "title": "Closest Subsequence Sum",
+ "premium": false,
+ "meta": {
+  "name": "minAbsDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "goal"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,-7,3,5]\n6",
+  "[7,-9,15,-2]\n-5",
+  "[1,2,3]\n-7"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "7"
+ ],
+ "anyOrder": false
+}

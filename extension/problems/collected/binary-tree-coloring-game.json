@@ -1,0 +1,36 @@
+{
+ "slug": "binary-tree-coloring-game",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1145",
+ "title": "Binary Tree Coloring Game",
+ "premium": false,
+ "meta": {
+  "name": "btreeGameWinningMove",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6,7,8,9,10,11]\n11\n3",
+  "[1,2,3]\n3\n1"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-first-palindromic-string-in-the-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2108",
+ "title": "Find First Palindromic String in the Array",
+ "premium": false,
+ "meta": {
+  "name": "firstPalindrome",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]",
+  "[\"notapalindrome\",\"racecar\"]",
+  "[\"def\",\"ghi\"]"
+ ],
+ "exampleOutputs": [
+  "\"ada\"",
+  "\"racecar\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

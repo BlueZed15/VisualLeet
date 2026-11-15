@@ -1,0 +1,30 @@
+{
+ "slug": "minimize-the-difference-between-target-and-chosen-elements",
+ "frontendId": "1981",
+ "title": "Minimize the Difference Between Target and Chosen Elements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\ntarget = {target}",
+ "visible": [
+  "mat",
+  "target"
+ ],
+ "call": "result = Solution().minimizeTheDifference(mat, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "prime-number-of-set-bits-in-binary-representation",
+ "frontendId": "762",
+ "title": "Prime Number of Set Bits in Binary Representation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "left = {left}\nright = {right}",
+ "visible": [
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().countPrimeSetBits(left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

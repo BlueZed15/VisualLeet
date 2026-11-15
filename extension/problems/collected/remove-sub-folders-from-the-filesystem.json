@@ -1,0 +1,30 @@
+{
+ "slug": "remove-sub-folders-from-the-filesystem",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1233",
+ "title": "Remove Sub-Folders from the Filesystem",
+ "premium": false,
+ "meta": {
+  "name": "removeSubfolders",
+  "params": [
+   {
+    "name": "folder",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"/a\",\"/a/b\",\"/c/d\",\"/c/d/e\",\"/c/f\"]",
+  "[\"/a\",\"/a/b/c\",\"/a/b/d\"]",
+  "[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]"
+ ],
+ "exampleOutputs": [
+  "[\"/a\",\"/c/d\",\"/c/f\"]",
+  "[\"/a\"]",
+  "[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]"
+ ],
+ "anyOrder": true
+}

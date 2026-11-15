@@ -1,0 +1,35 @@
+{
+ "slug": "contains-duplicate-iii",
+ "frontendId": "220",
+ "title": "Contains Duplicate III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "indexDiff",
+   "type": "integer"
+  },
+  {
+   "name": "valueDiff",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nindexDiff = {indexDiff}\nvalueDiff = {valueDiff}",
+ "visible": [
+  "nums",
+  "indexDiff",
+  "valueDiff"
+ ],
+ "call": "result = Solution().containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

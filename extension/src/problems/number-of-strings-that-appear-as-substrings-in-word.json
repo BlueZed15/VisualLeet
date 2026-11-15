@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-strings-that-appear-as-substrings-in-word",
+ "frontendId": "1967",
+ "title": "Number of Strings That Appear as Substrings in Word",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "patterns",
+   "type": "string[]"
+  },
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "patterns = {patterns}\nword = {word}",
+ "visible": [
+  "patterns",
+  "word"
+ ],
+ "call": "result = Solution().numOfStrings(patterns, word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

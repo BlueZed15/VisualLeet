@@ -1,0 +1,32 @@
+{
+ "slug": "buy-two-chocolates",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2706",
+ "title": "Buy Two Chocolates",
+ "premium": false,
+ "meta": {
+  "name": "buyChoco",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "money"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2]\n3",
+  "[3,2,3]\n3"
+ ],
+ "exampleOutputs": [
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -9,6 +9,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pg_logger, pg_encoder
 if sys.argv[2] in ("0", "1"):
     pg_encoder.ENABLE_ENCODE_CACHE = sys.argv[2] == "1"
+# The fork raises the step limit and rewords its limit messages; compare both
+# tracers at the original's limit, with the limit message left out.
+pg_logger.MAX_EXECUTED_LINES = 1000
 from tracer_programs import PROGRAMS
 
 out = {}
@@ -22,6 +25,8 @@ for name, code in PROGRAMS.items():
         # program's trace at a point that depends on allocation counts.
         # Collect here so each program's trace depends only on that program.
         gc.collect()
+        if trace and trace[-1].get("event") == "instruction_limit_reached":
+            trace[-1]["exception_msg"] = "<limit>"
     finally:
         sys.stdout = real_stdout
     out[name] = json.dumps({"code": code, "trace": trace}, separators=(",", ":"), sort_keys=False)

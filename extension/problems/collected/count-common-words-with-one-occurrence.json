@@ -1,0 +1,34 @@
+{
+ "slug": "count-common-words-with-one-occurrence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2085",
+ "title": "Count Common Words With One Occurrence",
+ "premium": false,
+ "meta": {
+  "name": "countWords",
+  "params": [
+   {
+    "name": "words1",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "words2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+  "[\"b\",\"bb\",\"bbb\"]\n[\"a\",\"aa\",\"aaa\"]",
+  "[\"a\",\"ab\"]\n[\"a\",\"a\",\"a\",\"ab\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

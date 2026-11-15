@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-pivot-integer",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2485",
+ "title": "Find the Pivot Integer",
+ "premium": false,
+ "meta": {
+  "name": "pivotInteger",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "8",
+  "1",
+  "4"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1",
+  "-1"
+ ],
+ "anyOrder": false
+}

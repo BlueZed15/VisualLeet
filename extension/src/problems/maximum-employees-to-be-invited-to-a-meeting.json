@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-employees-to-be-invited-to-a-meeting",
+ "frontendId": "2127",
+ "title": "Maximum Employees to Be Invited to a Meeting",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "favorite",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "favorite = {favorite}",
+ "visible": [
+  "favorite"
+ ],
+ "call": "result = Solution().maximumInvitations(favorite)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

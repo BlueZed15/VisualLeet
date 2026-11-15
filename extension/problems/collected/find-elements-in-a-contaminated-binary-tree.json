@@ -1,0 +1,48 @@
+{
+ "slug": "find-elements-in-a-contaminated-binary-tree",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1261",
+ "title": "Find Elements in a Contaminated Binary Tree",
+ "premium": false,
+ "meta": {
+  "classname": "FindElements",
+  "constructor": {
+   "params": [
+    {
+     "type": "TreeNode",
+     "name": "root"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "target"
+     }
+    ],
+    "name": "find",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"FindElements\",\"find\",\"find\"]\n[[[-1,null,-1]],[1],[2]]",
+  "[\"FindElements\",\"find\",\"find\",\"find\"]\n[[[-1,-1,-1,-1,-1]],[1],[3],[5]]",
+  "[\"FindElements\",\"find\",\"find\",\"find\",\"find\"]\n[[[-1,null,-1,-1,null,-1]],[2],[3],[4],[5]]"
+ ],
+ "exampleOutputs": [
+  "[null,false,true]",
+  "[null,true,true,false]",
+  "[null,true,false,false,true]"
+ ],
+ "anyOrder": false
+}

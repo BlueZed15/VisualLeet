@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-ways-to-select-buildings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2222",
+ "title": "Number of Ways to Select Buildings",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWays",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"001101\"",
+  "\"11100\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

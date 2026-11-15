@@ -1,0 +1,30 @@
+{
+ "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+ "frontendId": "1415",
+ "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}",
+ "visible": [
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().getHappyString(n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

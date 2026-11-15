@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-initial-energy-to-finish-tasks",
+ "frontendId": "1665",
+ "title": "Minimum Initial Energy to Finish Tasks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}",
+ "visible": [
+  "tasks"
+ ],
+ "call": "result = Solution().minimumEffort(tasks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

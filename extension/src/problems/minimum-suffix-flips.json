@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-suffix-flips",
+ "frontendId": "1529",
+ "title": "Minimum Suffix Flips",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}",
+ "visible": [
+  "target"
+ ],
+ "call": "result = Solution().minFlips(target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

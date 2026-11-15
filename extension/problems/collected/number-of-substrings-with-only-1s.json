@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-substrings-with-only-1s",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1513",
+ "title": "Number of Substrings With Only 1s",
+ "premium": false,
+ "meta": {
+  "name": "numSub",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"0110111\"",
+  "\"101\"",
+  "\"111111\""
+ ],
+ "exampleOutputs": [
+  "9",
+  "2",
+  "21"
+ ],
+ "anyOrder": false
+}

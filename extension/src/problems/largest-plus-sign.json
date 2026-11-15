@@ -1,0 +1,30 @@
+{
+ "slug": "largest-plus-sign",
+ "frontendId": "764",
+ "title": "Largest Plus Sign",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "mines",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nmines = {mines}",
+ "visible": [
+  "n",
+  "mines"
+ ],
+ "call": "result = Solution().orderOfLargestPlusSign(n, mines)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

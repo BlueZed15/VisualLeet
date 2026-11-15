@@ -1,0 +1,28 @@
+{
+ "slug": "map-of-highest-peak",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1765",
+ "title": "Map of Highest Peak",
+ "premium": false,
+ "meta": {
+  "name": "highestPeak",
+  "params": [
+   {
+    "name": "isWater",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[0,0]]",
+  "[[0,0,1],[1,0,0],[0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "[[1,0],[2,1]]",
+  "[[1,1,0],[0,1,1],[1,2,2]]"
+ ],
+ "anyOrder": false
+}

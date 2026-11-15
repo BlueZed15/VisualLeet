@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-total-importance-of-roads",
+ "frontendId": "2285",
+ "title": "Maximum Total Importance of Roads",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "roads",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nroads = {roads}",
+ "visible": [
+  "n",
+  "roads"
+ ],
+ "call": "result = Solution().maximumImportance(n, roads)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

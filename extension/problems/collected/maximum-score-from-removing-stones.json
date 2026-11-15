@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-score-from-removing-stones",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1753",
+ "title": "Maximum Score From Removing Stones",
+ "premium": false,
+ "meta": {
+  "name": "maximumScore",
+  "params": [
+   {
+    "name": "a",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "b"
+   },
+   {
+    "type": "integer",
+    "name": "c"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n4\n6",
+  "4\n4\n6",
+  "1\n8\n8"
+ ],
+ "exampleOutputs": [
+  "6",
+  "7",
+  "8"
+ ],
+ "anyOrder": false
+}

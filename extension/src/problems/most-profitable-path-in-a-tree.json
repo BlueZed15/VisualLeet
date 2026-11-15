@@ -1,0 +1,35 @@
+{
+ "slug": "most-profitable-path-in-a-tree",
+ "frontendId": "2467",
+ "title": "Most Profitable Path in a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "bob",
+   "type": "integer"
+  },
+  {
+   "name": "amount",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nbob = {bob}\namount = {amount}",
+ "visible": [
+  "edges",
+  "bob",
+  "amount"
+ ],
+ "call": "result = Solution().mostProfitablePath(edges, bob, amount)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

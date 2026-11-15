@@ -1,0 +1,30 @@
+{
+ "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2038",
+ "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
+ "premium": false,
+ "meta": {
+  "name": "winnerOfGame",
+  "params": [
+   {
+    "name": "colors",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"AAABABB\"",
+  "\"AA\"",
+  "\"ABBBBBBBAAA\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

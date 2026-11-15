@@ -1,0 +1,30 @@
+{
+ "slug": "swap-for-longest-repeated-character-substring",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1156",
+ "title": "Swap For Longest Repeated Character Substring",
+ "premium": false,
+ "meta": {
+  "name": "maxRepOpt1",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"bbaababbba\"",
+  "\"bbabbbbbaaba\"",
+  "\"abaaaaabbbbbaa\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "6",
+  "5"
+ ],
+ "anyOrder": false
+}

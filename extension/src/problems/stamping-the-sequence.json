@@ -1,0 +1,30 @@
+{
+ "slug": "stamping-the-sequence",
+ "frontendId": "936",
+ "title": "Stamping The Sequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stamp",
+   "type": "string"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "stamp = {stamp}\ntarget = {target}",
+ "visible": [
+  "stamp",
+  "target"
+ ],
+ "call": "result = Solution().movesToStamp(stamp, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

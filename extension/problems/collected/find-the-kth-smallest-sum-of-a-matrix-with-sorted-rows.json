@@ -1,0 +1,34 @@
+{
+ "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1439",
+ "title": "Find the Kth Smallest Sum of a Matrix With Sorted Rows",
+ "premium": false,
+ "meta": {
+  "name": "kthSmallest",
+  "params": [
+   {
+    "name": "mat",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,3,11],[2,4,6]]\n5",
+  "[[1,3,11],[2,4,6]]\n9",
+  "[[1,10,10],[1,4,5],[2,3,6]]\n7"
+ ],
+ "exampleOutputs": [
+  "7",
+  "17",
+  "9"
+ ],
+ "anyOrder": false
+}

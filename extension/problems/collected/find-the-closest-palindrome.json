@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-closest-palindrome",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "564",
+ "title": "Find the Closest Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "nearestPalindromic",
+  "params": [
+   {
+    "name": "n",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"123\"",
+  "\"1\""
+ ],
+ "exampleOutputs": [
+  "\"121\"",
+  "\"0\""
+ ],
+ "anyOrder": false
+}

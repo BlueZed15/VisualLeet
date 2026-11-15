@@ -1,0 +1,40 @@
+{
+ "slug": "find-and-replace-in-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "833",
+ "title": "Find And Replace in String",
+ "premium": false,
+ "meta": {
+  "name": "findReplaceString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "indices",
+    "type": "integer[]"
+   },
+   {
+    "name": "sources",
+    "type": "string[]"
+   },
+   {
+    "name": "targets",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abcd\"\n[0, 2]\n[\"a\", \"cd\"]\n[\"eee\", \"ffff\"]",
+  "\"abcd\"\n[0, 2]\n[\"ab\",\"ec\"]\n[\"eee\",\"ffff\"]"
+ ],
+ "exampleOutputs": [
+  "\"eeebffff\"",
+  "\"eeecd\""
+ ],
+ "anyOrder": false
+}

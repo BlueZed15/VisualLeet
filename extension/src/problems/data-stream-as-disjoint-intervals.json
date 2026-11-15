@@ -1,0 +1,42 @@
+{
+ "slug": "data-stream-as-disjoint-intervals",
+ "frontendId": "352",
+ "title": "Data Stream as Disjoint Intervals",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "SummaryRanges",
+ "methods": {
+  "SummaryRanges": [],
+  "addNum": [
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ],
+  "getIntervals": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = SummaryRanges(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

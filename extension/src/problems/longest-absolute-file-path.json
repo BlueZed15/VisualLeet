@@ -1,0 +1,25 @@
+{
+ "slug": "longest-absolute-file-path",
+ "frontendId": "388",
+ "title": "Longest Absolute File Path",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "input",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "input_ = {input}",
+ "visible": [
+  "input_"
+ ],
+ "call": "result = Solution().lengthLongestPath(input_)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "decrypt-string-from-alphabet-to-integer-mapping",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1309",
+ "title": "Decrypt String from Alphabet to Integer Mapping",
+ "premium": false,
+ "meta": {
+  "name": "freqAlphabets",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"10#11#12\"",
+  "\"1326#\""
+ ],
+ "exampleOutputs": [
+  "\"jkab\"",
+  "\"acz\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "take-k-of-each-character-from-left-and-right",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2516",
+ "title": "Take K of Each Character From Left and Right",
+ "premium": false,
+ "meta": {
+  "name": "takeCharacters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabaaaacaabc\"\n2",
+  "\"a\"\n1"
+ ],
+ "exampleOutputs": [
+  "8",
+  "-1"
+ ],
+ "anyOrder": false
+}

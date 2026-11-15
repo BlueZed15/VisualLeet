@@ -4,7 +4,7 @@
     "headless": true,
     "platform": "Windows_NT 10.0.26300",
     "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
-    "date": "2026-11-14T16:19:59.788Z",
+    "date": "2026-11-15T16:06:53.461Z",
     "python": "3.14.2",
     "pyodide": "314.0.8"
   },
@@ -15,8 +15,8 @@
       "pass": true,
       "detail": {
         "python": "3.14.2",
-        "ms": 2495,
-        "wasmCompiledOnceMs": 17.399999998509884
+        "ms": 2522,
+        "wasmCompiledOnceMs": 18.899999998509884
       }
     },
     {
@@ -149,7 +149,7 @@
       "name": "Syntax error: status failed, message has the line",
       "pass": true,
       "detail": {
-        "msg": "Line 1: SyntaxError: invalid syntax (<string>, line 1)\nThe program didn't start. Press Edit to fix the marked line, then Visualize again."
+        "msg": "Line 1: SyntaxError: invalid syntax (<string>, line 1)\nYour code didn't run. Fix the marked line and press Run again."
       }
     },
     {
@@ -196,7 +196,7 @@
       "name": "Definitions without a call prompt for a test call (not run)",
       "pass": true,
       "detail": {
-        "msg": "Your code only defines functions or classes, so nothing would run. Add a test call, e.g. print(Solution().twoSum([2, 7, 11, 15], 9))"
+        "msg": "Your code only defines functions or classes, so nothing runs. Add a test call such as print(Solution().twoSum([2, 7, 11, 15], 9))."
       }
     },
     {
@@ -243,15 +243,15 @@
       "pass": true,
       "detail": {
         "status": "limit reached",
-        "steps": 1001
+        "steps": 1501
       }
     },
     {
       "group": "limits",
-      "name": "Native loop killed by the 5 s watchdog; spare takes over at once",
+      "name": "Native loop killed by the 10 s watchdog; spare takes over at once",
       "pass": true,
       "detail": {
-        "killedAfterMs": 5014,
+        "killedAfterMs": 10014,
         "readyAgainMs": 1
       }
     },
@@ -261,8 +261,8 @@
       "pass": true,
       "detail": {
         "res": "stopped",
-        "stoppedMs": 7.900000002235174,
-        "readyMs": 0.09999999776482582
+        "stoppedMs": 8.400000005960464,
+        "readyMs": 1.3999999985098839
       }
     },
     {
@@ -290,15 +290,16 @@
       "name": "Large output stops with an explicit output limit",
       "pass": true,
       "detail": {
-        "msg": "Incomplete: Stopped: the program printed more than 64 KiB of output. Showing the steps recorded so f"
+        "msg": "Incomplete. Stopped because the program printed more than 64 KiB of output. Print less or use a smal"
       }
     },
     {
       "group": "limits",
-      "name": "Trace over 10 MiB is refused with an explanation",
+      "name": "Trace over 10 MiB stops recording with an explicit reason, keeping the steps that fit",
       "pass": true,
       "detail": {
-        "msg": "Trace is 49.5 MiB, over the 10 MiB limit."
+        "steps": 75,
+        "msg": "Incomplete. Stopped after 74 steps because the data grew too large to show more. Showing the steps recorded so far. A sm"
       }
     },
     {
@@ -308,7 +309,7 @@
       "detail": {
         "before": {
           "iframes": 1,
-          "arrowLayers": 0
+          "arrowLayers": 1
         },
         "after": {
           "iframes": 1,
@@ -316,12 +317,12 @@
           "vizChildren": 1
         },
         "domNodesBfs": [
-          138,
-          138
+          375,
+          375
         ],
         "domNodesTree": [
-          186,
-          186
+          322,
+          322
         ]
       }
     },
@@ -331,7 +332,7 @@
       "pass": true,
       "detail": {
         "burstRunsOnOneInterpreter": 12,
-        "swappedAfterMs": 1132,
+        "swappedAfterMs": 1043,
         "nextRunInterpreterRun": 1,
         "spareInitErrors": 0
       }
@@ -357,7 +358,7 @@
       "name": "Empty selection: helpful message, edits kept",
       "pass": true,
       "detail": {
-        "error": "Nothing is selected on that page. Select your code there first (or paste it here). Your current code was kept."
+        "error": "Nothing is selected on that page. Select the code there and try again. Your current code is unchanged."
       }
     },
     {
@@ -376,7 +377,7 @@
       "pass": true,
       "detail": {
         "title": "1. Two Sum",
-        "badge": "setup not checked yet"
+        "badge": "✓ checked setup"
       }
     },
     {
@@ -393,7 +394,7 @@
       "pass": true,
       "detail": {
         "kind": "match",
-        "text": "✓ Output [1,2] matches the expected output."
+        "text": "matches"
       }
     },
     {
@@ -425,7 +426,7 @@
         "stdout": "[0,2]\n",
         "verdict": {
           "kind": "output",
-          "text": "Output [0,2]"
+          "text": "Output[0,2]"
         }
       }
     },
@@ -447,7 +448,7 @@
         "stdout": "[2,1]\n",
         "verdict": {
           "kind": "match",
-          "text": "✓ Output [2,1] matches the expected output."
+          "text": "matches"
         },
         "globals": [
           "head",
@@ -464,7 +465,7 @@
         "stdout": "[null,null,null,1,null,-1,null,-1,3,4]\n",
         "verdict": {
           "kind": "match",
-          "text": "✓ Output [null,null,null,1,null,-1,null,-1,3,4] matches the expected output."
+          "text": "matches"
         }
       }
     },
@@ -473,7 +474,7 @@
       "name": "Non-Python editor: explained, nothing run, code here kept",
       "pass": true,
       "detail": {
-        "message": "The LeetCode editor is set to cpp. LeetScope only runs Python 3: switch the editor to Python3 and import again. Your current code here was kept."
+        "message": "The LeetCode editor is set to cpp. LeetScope runs Python 3. Switch the editor to Python3 and import again. Your current code here is unchanged."
       }
     },
     {
@@ -482,7 +483,7 @@
       "pass": true,
       "detail": {
         "mode": "manual",
-        "message": "\"Not In The Database\" isn't in LeetScope's problem database yet, so you're in paste mode: check the drafted test call.\nL"
+        "message": "\"Not In The Database\" isn't supported by LeetScope yet, so it opened in paste mode. Check the drafted test call.\nLeetCod"
       }
     },
     {
@@ -490,7 +491,7 @@
       "name": "LeetCode page without data or editor: explained, nothing run",
       "pass": true,
       "detail": {
-        "message": "\"Loading\" isn't in LeetScope's problem database yet. Couldn't read the code editor either (is the page still loading?)."
+        "message": "\"Loading\" isn't supported by LeetScope yet. LeetScope couldn't read the code editor either. The page may still be loading."
       }
     },
     {
@@ -554,27 +555,17 @@
         "sameTab": true,
         "verdict": {
           "kind": "match",
-          "text": "✓ Output [0,1] matches the expected output."
+          "text": "matches"
         }
       }
     },
     {
       "group": "leetcode",
-      "name": "No test case on the page: explained on LeetCode itself, with a Use Example 1 option",
+      "name": "Testcase tab not open: explained on LeetCode itself, no extra options",
       "pass": true,
       "detail": {
-        "text": "LeetScope×Couldn't find the test case selected in LeetCode's Testcase panel. Open the Testcase panel, pick a case, and click Visualize again. (found 0 case tabs, 0 input boxes for 2 inputs, 0 raw lines; page markers: console-submit-button)Use Example 1",
-        "action": true
-      }
-    },
-    {
-      "group": "leetcode",
-      "name": "Use Example 1 opens LeetScope with Example 1, without a warning",
-      "pass": true,
-      "detail": {
-        "selected": "Example 1",
-        "status": "complete",
-        "message": ""
+        "text": "LeetScopeLeetScope reads your test case from LeetCode's Testcase tab, and that tab isn't open. Open the Testcase tab below the editor, select a case, and click Visualize again.",
+        "action": false
       }
     },
     {
@@ -582,7 +573,7 @@
       "name": "Non-Python editor: explained on LeetCode itself, LeetScope not opened",
       "pass": true,
       "detail": {
-        "text": "LeetScope×LeetCode's editor is set to cpp. LeetScope runs Python 3: switch the editor to Python3 and click Visualize again.",
+        "text": "LeetScopeLeetCode’s editor is set to cpp. LeetScope runs Python 3. Switch the editor to Python3 and click Visualize again.",
         "action": false
       }
     },
@@ -591,7 +582,7 @@
       "name": "Protected chrome:// page: graceful refusal, edits kept",
       "pass": true,
       "detail": {
-        "error": "LeetScope can't read that page right now. Pages like chrome:// are protected, and access ends when the page reloads or navigates: click the LeetScope icon (or press Alt+V) on that page again, or paste your code instead."
+        "error": "LeetScope can't read this page. Chrome protects some pages, such as chrome:// pages, and access ends when a page reloads. Click the LeetScope icon on the page again."
       }
     },
     {
@@ -599,7 +590,7 @@
       "name": "Packaged examples run and render with the network off",
       "pass": true,
       "detail": {
-        "initMs": 2582
+        "initMs": 2747
       }
     },
     {
@@ -613,83 +604,83 @@
     }
   ],
   "timings": {
-    "coldStartMs": 2495,
-    "watchdogKillMs": 5014,
+    "coldStartMs": 2522,
+    "watchdogKillMs": 10014,
     "readyAfterTimeoutMs": 1,
     "stopMs": 8,
-    "readyAfterStopMs": 0,
+    "readyAfterStopMs": 1,
     "BFS": {
       "execMs": {
-        "median": 12,
-        "worst": 13.9
+        "median": 15.9,
+        "worst": 28
       },
       "transferMs": {
-        "median": 5.4,
-        "worst": 6.8
+        "median": 9.1,
+        "worst": 10.9
       },
       "parseMs": {
-        "median": 0.2,
+        "median": 0.3,
         "worst": 0.3
       },
       "renderMs": {
-        "median": 14.8,
-        "worst": 20.2
+        "median": 23.8,
+        "worst": 28.8
       },
       "firstViewMs": {
-        "median": 32.1,
-        "worst": 41.2
+        "median": 49.4,
+        "worst": 62.2
       }
     },
     "Sliding window": {
       "execMs": {
-        "median": 6.5,
-        "worst": 8.4
+        "median": 11,
+        "worst": 12.5
       },
       "transferMs": {
-        "median": 4.7,
-        "worst": 5.6
+        "median": 8.3,
+        "worst": 18.8
+      },
+      "parseMs": {
+        "median": 0.2,
+        "worst": 0.4
+      },
+      "renderMs": {
+        "median": 24.3,
+        "worst": 30.3
+      },
+      "firstViewMs": {
+        "median": 45.6,
+        "worst": 56.6
+      }
+    },
+    "Two Sum": {
+      "execMs": {
+        "median": 4.3,
+        "worst": 6.7
+      },
+      "transferMs": {
+        "median": 4.9,
+        "worst": 7.7
       },
       "parseMs": {
         "median": 0.1,
         "worst": 0.2
       },
       "renderMs": {
-        "median": 12.6,
-        "worst": 15.9
+        "median": 18.1,
+        "worst": 21.8
       },
       "firstViewMs": {
-        "median": 24.7,
-        "worst": 29.1
-      }
-    },
-    "Two Sum": {
-      "execMs": {
-        "median": 3.3,
-        "worst": 3.9
-      },
-      "transferMs": {
-        "median": 2.9,
-        "worst": 8.2
-      },
-      "parseMs": {
-        "median": 0,
-        "worst": 0.2
-      },
-      "renderMs": {
-        "median": 11,
-        "worst": 15.2
-      },
-      "firstViewMs": {
-        "median": 18.2,
-        "worst": 22.9
+        "median": 27.5,
+        "worst": 32.7
       }
     },
     "stepNavigation": {
-      "medianMs": 8.4,
-      "worstMs": 11.4
+      "medianMs": 12.8,
+      "worstMs": 29.5
     },
-    "reloadStartMs": 2046
+    "reloadStartMs": 2711
   },
-  "passed": 58,
-  "total": 58
+  "passed": 57,
+  "total": 57
 }

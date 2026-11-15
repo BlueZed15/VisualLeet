@@ -1,0 +1,32 @@
+{
+ "slug": "zero-array-transformation-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3356",
+ "title": "Zero Array Transformation II",
+ "premium": false,
+ "meta": {
+  "name": "minZeroArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,0,2]\n[[0,2,1],[0,2,1],[1,1,3]]",
+  "[4,3,2,1]\n[[1,3,2],[0,2,1]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

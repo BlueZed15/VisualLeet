@@ -1,0 +1,42 @@
+{
+ "slug": "maximum-number-of-tasks-you-can-assign",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2071",
+ "title": "Maximum Number of Tasks You Can Assign",
+ "premium": false,
+ "meta": {
+  "name": "maxTaskAssign",
+  "params": [
+   {
+    "name": "tasks",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "workers"
+   },
+   {
+    "type": "integer",
+    "name": "pills"
+   },
+   {
+    "type": "integer",
+    "name": "strength"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,1]\n[0,3,3]\n1\n1",
+  "[5,4]\n[0,0,0]\n1\n5",
+  "[10,15,30]\n[0,10,10,10,10]\n3\n10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

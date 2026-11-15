@@ -1,0 +1,28 @@
+{
+ "slug": "reconstruct-original-digits-from-english",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "423",
+ "title": "Reconstruct Original Digits from English",
+ "premium": false,
+ "meta": {
+  "name": "originalDigits",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"owoztneoer\"",
+  "\"fviefuro\""
+ ],
+ "exampleOutputs": [
+  "\"012\"",
+  "\"45\""
+ ],
+ "anyOrder": false
+}

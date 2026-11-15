@@ -1,0 +1,28 @@
+{
+ "slug": "element-appearing-more-than-25-in-sorted-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1287",
+ "title": "Element Appearing More Than 25% In Sorted Array",
+ "premium": false,
+ "meta": {
+  "name": "findSpecialInteger",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,6,6,6,6,7,10]",
+  "[1,1]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1"
+ ],
+ "anyOrder": false
+}

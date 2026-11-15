@@ -1,0 +1,38 @@
+{
+ "slug": "find-the-distance-value-between-two-arrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1385",
+ "title": "Find the Distance Value Between Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "findTheDistanceValue",
+  "params": [
+   {
+    "name": "arr1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "arr2"
+   },
+   {
+    "type": "integer",
+    "name": "d"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,5,8]\n[10,9,1,8]\n2",
+  "[1,4,2,3]\n[-4,-3,6,10,20,30]\n3",
+  "[2,1,100,3]\n[-5,-2,10,-3,7]\n6"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

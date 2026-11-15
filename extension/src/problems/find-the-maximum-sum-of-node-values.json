@@ -1,0 +1,35 @@
+{
+ "slug": "find-the-maximum-sum-of-node-values",
+ "frontendId": "3068",
+ "title": "Find the Maximum Sum of Node Values",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}\nedges = {edges}",
+ "visible": [
+  "nums",
+  "k",
+  "edges"
+ ],
+ "call": "result = Solution().maximumValueSum(nums, k, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

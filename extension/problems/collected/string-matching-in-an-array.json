@@ -1,0 +1,30 @@
+{
+ "slug": "string-matching-in-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1408",
+ "title": "String Matching in an Array",
+ "premium": false,
+ "meta": {
+  "name": "stringMatching",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"mass\",\"as\",\"hero\",\"superhero\"]",
+  "[\"leetcode\",\"et\",\"code\"]",
+  "[\"blue\",\"green\",\"bu\"]"
+ ],
+ "exampleOutputs": [
+  "[\"as\",\"hero\"]",
+  "[\"et\",\"code\"]",
+  "[]"
+ ],
+ "anyOrder": true
+}

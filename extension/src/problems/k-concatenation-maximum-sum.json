@@ -1,0 +1,30 @@
+{
+ "slug": "k-concatenation-maximum-sum",
+ "frontendId": "1191",
+ "title": "K-Concatenation Maximum Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nk = {k}",
+ "visible": [
+  "arr",
+  "k"
+ ],
+ "call": "result = Solution().kConcatenationMaxSum(arr, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

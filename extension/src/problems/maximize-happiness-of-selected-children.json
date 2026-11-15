@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-happiness-of-selected-children",
+ "frontendId": "3075",
+ "title": "Maximize Happiness of Selected Children",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "happiness",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "happiness = {happiness}\nk = {k}",
+ "visible": [
+  "happiness",
+  "k"
+ ],
+ "call": "result = Solution().maximumHappinessSum(happiness, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

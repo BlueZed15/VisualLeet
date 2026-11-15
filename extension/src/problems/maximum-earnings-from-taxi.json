@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-earnings-from-taxi",
+ "frontendId": "2008",
+ "title": "Maximum Earnings From Taxi",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "rides",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrides = {rides}",
+ "visible": [
+  "n",
+  "rides"
+ ],
+ "call": "result = Solution().maxTaxiEarnings(n, rides)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

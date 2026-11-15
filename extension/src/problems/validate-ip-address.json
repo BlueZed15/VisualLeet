@@ -1,0 +1,25 @@
+{
+ "slug": "validate-ip-address",
+ "frontendId": "468",
+ "title": "Validate IP Address",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queryIP",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "queryIP = {queryIP}",
+ "visible": [
+  "queryIP"
+ ],
+ "call": "result = Solution().validIPAddress(queryIP)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+ "frontendId": "1404",
+ "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().numSteps(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "maximum-number-of-occurrences-of-a-substring",
+ "frontendId": "1297",
+ "title": "Maximum Number of Occurrences of a Substring",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "maxLetters",
+   "type": "integer"
+  },
+  {
+   "name": "minSize",
+   "type": "integer"
+  },
+  {
+   "name": "maxSize",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nmaxLetters = {maxLetters}\nminSize = {minSize}\nmaxSize = {maxSize}",
+ "visible": [
+  "s",
+  "maxLetters",
+  "minSize",
+  "maxSize"
+ ],
+ "call": "result = Solution().maxFreq(s, maxLetters, minSize, maxSize)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

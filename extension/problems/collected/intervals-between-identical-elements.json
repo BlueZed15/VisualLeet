@@ -1,0 +1,28 @@
+{
+ "slug": "intervals-between-identical-elements",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2121",
+ "title": "Intervals Between Identical Elements",
+ "premium": false,
+ "meta": {
+  "name": "getDistances",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,3,1,2,3,3]",
+  "[10,5,10,10]"
+ ],
+ "exampleOutputs": [
+  "[4,2,7,2,4,4,5]",
+  "[5,0,3,4]"
+ ],
+ "anyOrder": false
+}

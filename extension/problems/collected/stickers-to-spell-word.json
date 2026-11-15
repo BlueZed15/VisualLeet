@@ -1,0 +1,32 @@
+{
+ "slug": "stickers-to-spell-word",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "691",
+ "title": "Stickers to Spell Word",
+ "premium": false,
+ "meta": {
+  "name": "minStickers",
+  "params": [
+   {
+    "name": "stickers",
+    "type": "string[]"
+   },
+   {
+    "name": "target",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"with\",\"example\",\"science\"]\n\"thehat\"",
+  "[\"notice\",\"possible\"]\n\"basicbasic\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

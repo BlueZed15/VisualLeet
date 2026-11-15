@@ -1,0 +1,25 @@
+{
+ "slug": "two-furthest-houses-with-different-colors",
+ "frontendId": "2078",
+ "title": "Two Furthest Houses With Different Colors",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "colors",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "colors = {colors}",
+ "visible": [
+  "colors"
+ ],
+ "call": "result = Solution().maxDistance(colors)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

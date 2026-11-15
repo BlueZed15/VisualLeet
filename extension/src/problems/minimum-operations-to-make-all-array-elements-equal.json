@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-all-array-elements-equal",
+ "frontendId": "2602",
+ "title": "Minimum Operations to Make All Array Elements Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nqueries = {queries}",
+ "visible": [
+  "nums",
+  "queries"
+ ],
+ "call": "result = Solution().minOperations(nums, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

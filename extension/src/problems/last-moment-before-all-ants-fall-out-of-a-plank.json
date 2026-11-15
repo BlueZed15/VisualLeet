@@ -1,0 +1,35 @@
+{
+ "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
+ "frontendId": "1503",
+ "title": "Last Moment Before All Ants Fall Out of a Plank",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "left",
+   "type": "integer[]"
+  },
+  {
+   "name": "right",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nleft = {left}\nright = {right}",
+ "visible": [
+  "n",
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().getLastMoment(n, left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "find-missing-observations",
+ "frontendId": "2028",
+ "title": "Find Missing Observations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rolls",
+   "type": "integer[]"
+  },
+  {
+   "name": "mean",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rolls = {rolls}\nmean = {mean}\nn = {n}",
+ "visible": [
+  "rolls",
+  "mean",
+  "n"
+ ],
+ "call": "result = Solution().missingRolls(rolls, mean, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-population-year",
+ "frontendId": "1854",
+ "title": "Maximum Population Year",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "logs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "logs = {logs}",
+ "visible": [
+  "logs"
+ ],
+ "call": "result = Solution().maximumPopulation(logs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "count-subarrays-with-score-less-than-k",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2302",
+ "title": "Count Subarrays With Score Less Than K",
+ "premium": false,
+ "meta": {
+  "name": "countSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "long",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,4,3,5]\n10",
+  "[1,1,1]\n5"
+ ],
+ "exampleOutputs": [
+  "6",
+  "5"
+ ],
+ "anyOrder": false
+}

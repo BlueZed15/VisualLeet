@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
+ "frontendId": "1269",
+ "title": "Number of Ways to Stay in the Same Place After Some Steps",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "steps",
+   "type": "integer"
+  },
+  {
+   "name": "arrLen",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "steps = {steps}\narrLen = {arrLen}",
+ "visible": [
+  "steps",
+  "arrLen"
+ ],
+ "call": "result = Solution().numWays(steps, arrLen)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

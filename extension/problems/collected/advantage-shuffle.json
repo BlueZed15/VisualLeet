@@ -1,0 +1,32 @@
+{
+ "slug": "advantage-shuffle",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "870",
+ "title": "Advantage Shuffle",
+ "premium": false,
+ "meta": {
+  "name": "advantageCount",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "name": "nums2",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,7,11,15]\n[1,10,4,11]",
+  "[12,24,8,32]\n[13,25,32,11]"
+ ],
+ "exampleOutputs": [
+  "[2,11,7,15]",
+  "[24,32,8,12]"
+ ],
+ "anyOrder": false
+}

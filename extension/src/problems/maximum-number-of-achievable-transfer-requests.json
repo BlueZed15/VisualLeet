@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-achievable-transfer-requests",
+ "frontendId": "1601",
+ "title": "Maximum Number of Achievable Transfer Requests",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "requests",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrequests = {requests}",
+ "visible": [
+  "n",
+  "requests"
+ ],
+ "call": "result = Solution().maximumRequests(n, requests)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

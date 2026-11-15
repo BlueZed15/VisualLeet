@@ -1,0 +1,35 @@
+{
+ "slug": "binary-tree-coloring-game",
+ "frontendId": "1145",
+ "title": "Binary Tree Coloring Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nn = {n}\nx = {x}",
+ "visible": [
+  "root",
+  "n",
+  "x"
+ ],
+ "call": "result = Solution().btreeGameWinningMove(root, n, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

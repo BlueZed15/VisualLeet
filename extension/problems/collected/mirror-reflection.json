@@ -1,0 +1,32 @@
+{
+ "slug": "mirror-reflection",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "858",
+ "title": "Mirror Reflection",
+ "premium": false,
+ "meta": {
+  "name": "mirrorReflection",
+  "params": [
+   {
+    "name": "p",
+    "type": "integer"
+   },
+   {
+    "name": "q",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n1",
+  "3\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

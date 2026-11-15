@@ -1,0 +1,54 @@
+{
+ "slug": "map-sum-pairs",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "677",
+ "title": "Map Sum Pairs",
+ "premium": false,
+ "meta": {
+  "classname": "MapSum",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "key"
+     },
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "return": {
+     "type": "void"
+    },
+    "name": "insert"
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "prefix"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    },
+    "name": "sum"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MapSum\",\"insert\",\"sum\",\"insert\",\"sum\"]\n[[],[\"apple\",3],[\"ap\"],[\"app\",2],[\"ap\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, 3, null, 5]"
+ ],
+ "anyOrder": false
+}

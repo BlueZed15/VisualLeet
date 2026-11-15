@@ -1,0 +1,30 @@
+{
+ "slug": "sort-the-jumbled-numbers",
+ "frontendId": "2191",
+ "title": "Sort the Jumbled Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mapping",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mapping = {mapping}\nnums = {nums}",
+ "visible": [
+  "mapping",
+  "nums"
+ ],
+ "call": "result = Solution().sortJumbled(mapping, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

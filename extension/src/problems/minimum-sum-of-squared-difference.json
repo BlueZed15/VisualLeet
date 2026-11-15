@@ -1,0 +1,40 @@
+{
+ "slug": "minimum-sum-of-squared-difference",
+ "frontendId": "2333",
+ "title": "Minimum Sum of Squared Difference",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "k1",
+   "type": "integer"
+  },
+  {
+   "name": "k2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nk1 = {k1}\nk2 = {k2}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "k1",
+  "k2"
+ ],
+ "call": "result = Solution().minSumSquareDiff(nums1, nums2, k1, k2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

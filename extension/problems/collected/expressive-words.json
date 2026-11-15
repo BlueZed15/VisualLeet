@@ -1,0 +1,32 @@
+{
+ "slug": "expressive-words",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "809",
+ "title": "Expressive Words",
+ "premium": false,
+ "meta": {
+  "name": "expressiveWords",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
+  "\"zzzzzyyyyy\"\n[\"zzyy\",\"zy\",\"zyy\"]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-bit-flips-to-convert-number",
+ "frontendId": "2220",
+ "title": "Minimum Bit Flips to Convert Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "start",
+   "type": "integer"
+  },
+  {
+   "name": "goal",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "start = {start}\ngoal = {goal}",
+ "visible": [
+  "start",
+  "goal"
+ ],
+ "call": "result = Solution().minBitFlips(start, goal)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

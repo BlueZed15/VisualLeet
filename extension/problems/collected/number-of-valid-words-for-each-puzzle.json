@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-valid-words-for-each-puzzle",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1178",
+ "title": "Number of Valid Words for Each Puzzle",
+ "premium": false,
+ "meta": {
+  "name": "findNumOfValidWords",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "puzzles"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+  "[\"apple\",\"pleas\",\"please\"]\n[\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]"
+ ],
+ "exampleOutputs": [
+  "[1,1,3,2,4,0]",
+  "[0,1,3,2,0]"
+ ],
+ "anyOrder": false
+}

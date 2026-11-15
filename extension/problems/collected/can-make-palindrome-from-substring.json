@@ -1,0 +1,33 @@
+{
+ "slug": "can-make-palindrome-from-substring",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1177",
+ "title": "Can Make Palindrome from Substring",
+ "premium": false,
+ "meta": {
+  "name": "canMakePaliQueries",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+  "\"lyb\"\n[[0,1,0],[2,2,1]]"
+ ],
+ "exampleOutputs": [
+  "[true,false,false,true,true]",
+  "[false,true]"
+ ],
+ "anyOrder": false
+}

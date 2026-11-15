@@ -1,0 +1,30 @@
+{
+ "slug": "make-lexicographically-smallest-array-by-swapping-elements",
+ "frontendId": "2948",
+ "title": "Make Lexicographically Smallest Array by Swapping Elements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nlimit = {limit}",
+ "visible": [
+  "nums",
+  "limit"
+ ],
+ "call": "result = Solution().lexicographicallySmallestArray(nums, limit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

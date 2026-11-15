@@ -1,0 +1,30 @@
+{
+ "slug": "friends-of-appropriate-ages",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "825",
+ "title": "Friends Of Appropriate Ages",
+ "premium": false,
+ "meta": {
+  "name": "numFriendRequests",
+  "params": [
+   {
+    "name": "ages",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[16,16]",
+  "[16,17,18]",
+  "[20,30,100,110,120]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

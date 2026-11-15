@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
+ "frontendId": "1986",
+ "title": "Minimum Number of Work Sessions to Finish the Tasks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[]"
+  },
+  {
+   "name": "sessionTime",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}\nsessionTime = {sessionTime}",
+ "visible": [
+  "tasks",
+  "sessionTime"
+ ],
+ "call": "result = Solution().minSessions(tasks, sessionTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

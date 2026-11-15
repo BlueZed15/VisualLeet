@@ -1,0 +1,28 @@
+{
+ "slug": "erect-the-fence",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "587",
+ "title": "Erect the Fence",
+ "premium": false,
+ "meta": {
+  "name": "outerTrees",
+  "params": [
+   {
+    "name": "trees",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]",
+  "[[1,2],[2,2],[4,2]]"
+ ],
+ "exampleOutputs": [
+  "[[1,1],[2,0],[4,2],[3,3],[2,4]]",
+  "[[4,2],[2,2],[1,2]]"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-number-of-moves-to-make-palindrome",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2193",
+ "title": "Minimum Number of Moves to Make Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "minMovesToMakePalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabb\"",
+  "\"letelt\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

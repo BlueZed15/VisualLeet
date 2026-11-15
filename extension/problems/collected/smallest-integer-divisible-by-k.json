@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-integer-divisible-by-k",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1015",
+ "title": "Smallest Integer Divisible by K",
+ "premium": false,
+ "meta": {
+  "name": "smallestRepunitDivByK",
+  "params": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "1",
+  "-1",
+  "3"
+ ],
+ "anyOrder": false
+}

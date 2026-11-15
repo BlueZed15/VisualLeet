@@ -1,0 +1,30 @@
+{
+ "slug": "binary-number-with-alternating-bits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "693",
+ "title": "Binary Number with Alternating Bits",
+ "premium": false,
+ "meta": {
+  "name": "hasAlternatingBits",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "7",
+  "11"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

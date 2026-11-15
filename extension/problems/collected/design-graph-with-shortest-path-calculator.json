@@ -1,0 +1,63 @@
+{
+ "slug": "design-graph-with-shortest-path-calculator",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2642",
+ "title": "Design Graph With Shortest Path Calculator",
+ "premium": false,
+ "meta": {
+  "classname": "Graph",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    },
+    {
+     "name": "edges",
+     "type": "integer[][]"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer[]",
+      "name": "edge"
+     }
+    ],
+    "name": "addEdge",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "node1"
+     },
+     {
+      "type": "integer",
+      "name": "node2"
+     }
+    ],
+    "name": "shortestPath",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Graph\",\"shortestPath\",\"shortestPath\",\"addEdge\",\"shortestPath\"]\n[[4,[[0,2,5],[0,1,2],[1,2,1],[3,0,3]]],[3,2],[0,3],[[1,3,4]],[0,3]]"
+ ],
+ "exampleOutputs": [
+  "[null, 6, -1, null, 6]"
+ ],
+ "anyOrder": false
+}

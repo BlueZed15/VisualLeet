@@ -1,0 +1,28 @@
+{
+ "slug": "soup-servings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "808",
+ "title": "Soup Servings",
+ "premium": false,
+ "meta": {
+  "name": "soupServings",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "50",
+  "100"
+ ],
+ "exampleOutputs": [
+  "0.62500",
+  "0.71875"
+ ],
+ "anyOrder": false
+}

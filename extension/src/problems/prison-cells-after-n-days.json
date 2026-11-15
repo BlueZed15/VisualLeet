@@ -1,0 +1,30 @@
+{
+ "slug": "prison-cells-after-n-days",
+ "frontendId": "957",
+ "title": "Prison Cells After N Days",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cells",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "cells = {cells}\nn = {n}",
+ "visible": [
+  "cells",
+  "n"
+ ],
+ "call": "result = Solution().prisonAfterNDays(cells, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "valid-arrangement-of-pairs",
+ "frontendId": "2097",
+ "title": "Valid Arrangement of Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pairs",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "pairs = {pairs}",
+ "visible": [
+  "pairs"
+ ],
+ "call": "result = Solution().validArrangement(pairs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

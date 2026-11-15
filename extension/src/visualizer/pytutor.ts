@@ -45,7 +45,6 @@ require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery.ba-bbq.js'); /
 require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery.ba-dotimeout.min.js'); // for $.doTimeout
 require('../../../OnlinePythonTutor-Backup/v5-unity/css/pytutor');
 
-import {unsupportedFeaturesStr} from '../../../OnlinePythonTutor-Backup/v5-unity/js/footer-html';
 import {ArrowLayer} from './arrow-layer';
 
 // for TypeScript
@@ -656,7 +655,7 @@ export class ExecutionVisualizer {
 
       // add an extra label to link back to the main site, so that viewers
       // on the embedded page know that they're seeing an OPT visualization
-      base.find('#creditsPane').html('<div style="font-size: 8pt; margin-top: 5px; margin-bottom: 5px;">Rendered by <a href="http://pythontutor.com/" target="_blank" style="color: #3D58A2;">Python Tutor</a></div>');
+      base.find('#creditsPane').empty(); // VisualLeet: no link back to the original site
       base.find('#codeFooterDocs').hide(); // cut out extraneous docs
     } else {
     }
@@ -940,7 +939,7 @@ export class ExecutionVisualizer {
     // render error (if applicable):
     if (myViz.curLineExceptionMsg) {
       if (myViz.curLineExceptionMsg === "Unknown error") {
-        myViz.navControls.showError('Unknown error: ' + unsupportedFeaturesStr);
+        myViz.navControls.showError('Unknown error. This app may not support a feature your code uses.');
       } else {
         myViz.navControls.showError(myViz.curLineExceptionMsg);
       }
@@ -4129,13 +4128,13 @@ class CodeDisplay {
         if (this.owner.params.embeddedMode) {
           this.domRoot.find('#langDisplayDiv').html('C (gcc 4.8, C11)');
         } else {
-          this.domRoot.find('#langDisplayDiv').html('C (gcc 4.8, C11)<br/><font color="#e93f34">EXPERIMENTAL!</font> <a href="https://github.com/pgbovine/OnlinePythonTutor/blob/master/unsupported-features.md#c-and-c-unsupported-features" target="_blank">known limitations</a>');
+          this.domRoot.find('#langDisplayDiv').html('C (gcc 4.8, C11)');
         }
       } else if (lang === 'cpp') {
         if (this.owner.params.embeddedMode) {
           this.domRoot.find('#langDisplayDiv').html('C++ (gcc 4.8, C++11)');
         } else {
-          this.domRoot.find('#langDisplayDiv').html('C++ (gcc 4.8, C++11)<br/><font color="#e93f34">EXPERIMENTAL!</font> <a href="https://github.com/pgbovine/OnlinePythonTutor/blob/master/unsupported-features.md#c-and-c-unsupported-features" target="_blank">known limitations</a>');
+          this.domRoot.find('#langDisplayDiv').html('C++ (gcc 4.8, C++11)');
         }
       } else {
         this.domRoot.find('#langDisplayDiv').hide();
@@ -4714,8 +4713,7 @@ class NavigationController {
 
   showError(msg: string) {
     if (msg) {
-      this.domRoot.find("#errorOutput").html(htmlspecialchars(msg) + `
-      <div style="font-size: 11pt; color: #666">(${unsupportedFeaturesStr})</div>`).show();
+      this.domRoot.find("#errorOutput").html(htmlspecialchars(msg)).show();
     } else {
       this.domRoot.find("#errorOutput").hide();
     }

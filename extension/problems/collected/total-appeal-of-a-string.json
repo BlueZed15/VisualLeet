@@ -1,0 +1,28 @@
+{
+ "slug": "total-appeal-of-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2262",
+ "title": "Total Appeal of A String",
+ "premium": false,
+ "meta": {
+  "name": "appealSum",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"abbca\"",
+  "\"code\""
+ ],
+ "exampleOutputs": [
+  "28",
+  "20"
+ ],
+ "anyOrder": false
+}

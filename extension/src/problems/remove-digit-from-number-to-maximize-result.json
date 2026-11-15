@@ -1,0 +1,30 @@
+{
+ "slug": "remove-digit-from-number-to-maximize-result",
+ "frontendId": "2259",
+ "title": "Remove Digit From Number to Maximize Result",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "number",
+   "type": "string"
+  },
+  {
+   "name": "digit",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "number = {number}\ndigit = {digit}",
+ "visible": [
+  "number",
+  "digit"
+ ],
+ "call": "result = Solution().removeDigit(number, digit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+ "frontendId": "2379",
+ "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "blocks",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "blocks = {blocks}\nk = {k}",
+ "visible": [
+  "blocks",
+  "k"
+ ],
+ "call": "result = Solution().minimumRecolors(blocks, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

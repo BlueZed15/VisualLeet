@@ -1,0 +1,28 @@
+{
+ "slug": "removing-minimum-number-of-magic-beans",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2171",
+ "title": "Removing Minimum Number of Magic Beans",
+ "premium": false,
+ "meta": {
+  "name": "minimumRemoval",
+  "params": [
+   {
+    "name": "beans",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[4,1,6,5]",
+  "[2,10,3,2]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3306",
+ "title": "Count of Substrings Containing Every Vowel and K Consonants II",
+ "premium": false,
+ "meta": {
+  "name": "countOfSubstrings",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"aeioqq\"\n1",
+  "\"aeiou\"\n0",
+  "\"ieaouqqieaouqq\"\n1"
+ ],
+ "exampleOutputs": [
+  "0",
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

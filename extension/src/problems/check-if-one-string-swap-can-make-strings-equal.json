@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-one-string-swap-can-make-strings-equal",
+ "frontendId": "1790",
+ "title": "Check if One String Swap Can Make Strings Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}",
+ "visible": [
+  "s1",
+  "s2"
+ ],
+ "call": "result = Solution().areAlmostEqual(s1, s2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

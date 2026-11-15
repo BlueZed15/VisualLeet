@@ -346,7 +346,7 @@ Initial engineering defaults, to be adjusted with documented measurements:
 
 | Budget | Initial value | Behavior on exhaustion |
 | --- | --- | --- |
-| Recorded trace entries | 1,000 | Stop and label the trace incomplete |
+| Recorded trace entries | 1,500 | Stop and label the trace incomplete |
 | Execution wall time after runtime ready | 10 seconds | Terminate worker and offer rerun with smaller input |
 | Runtime initialization | 30 seconds | Report initialization failure separately from user-code timeout |
 | Encoded trace data | 10 MiB | Stop recording with an explicit limit reason |

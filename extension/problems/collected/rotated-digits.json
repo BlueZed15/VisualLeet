@@ -1,0 +1,30 @@
+{
+ "slug": "rotated-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "788",
+ "title": "Rotated Digits",
+ "premium": false,
+ "meta": {
+  "name": "rotatedDigits",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10",
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

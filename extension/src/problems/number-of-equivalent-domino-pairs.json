@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-equivalent-domino-pairs",
+ "frontendId": "1128",
+ "title": "Number of Equivalent Domino Pairs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dominoes",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "dominoes = {dominoes}",
+ "visible": [
+  "dominoes"
+ ],
+ "call": "result = Solution().numEquivDominoPairs(dominoes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

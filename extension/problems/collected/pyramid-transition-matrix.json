@@ -1,0 +1,32 @@
+{
+ "slug": "pyramid-transition-matrix",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "756",
+ "title": "Pyramid Transition Matrix",
+ "premium": false,
+ "meta": {
+  "name": "pyramidTransition",
+  "params": [
+   {
+    "name": "bottom",
+    "type": "string"
+   },
+   {
+    "name": "allowed",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"BCD\"\n[\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
+  "\"AAAA\"\n[\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

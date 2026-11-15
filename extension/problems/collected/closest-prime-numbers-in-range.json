@@ -1,0 +1,32 @@
+{
+ "slug": "closest-prime-numbers-in-range",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2523",
+ "title": "Closest Prime Numbers in Range",
+ "premium": false,
+ "meta": {
+  "name": "closestPrimes",
+  "params": [
+   {
+    "name": "left",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "right"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "10\n19",
+  "4\n6"
+ ],
+ "exampleOutputs": [
+  "[11,13]",
+  "[-1,-1]"
+ ],
+ "anyOrder": false
+}

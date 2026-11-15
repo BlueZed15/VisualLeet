@@ -1,0 +1,25 @@
+{
+ "slug": "divide-players-into-teams-of-equal-skill",
+ "frontendId": "2491",
+ "title": "Divide Players Into Teams of Equal Skill",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "skill",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "skill = {skill}",
+ "visible": [
+  "skill"
+ ],
+ "call": "result = Solution().dividePlayers(skill)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

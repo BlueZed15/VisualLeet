@@ -1,0 +1,30 @@
+{
+ "slug": "find-longest-awesome-substring",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1542",
+ "title": "Find Longest Awesome Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestAwesome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"3242415\"",
+  "\"12345678\"",
+  "\"213123\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "1",
+  "6"
+ ],
+ "anyOrder": false
+}

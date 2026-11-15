@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-insertions-to-balance-a-parentheses-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1541",
+ "title": "Minimum Insertions to Balance a Parentheses String",
+ "premium": false,
+ "meta": {
+  "name": "minInsertions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"(()))\"",
+  "\"())\"",
+  "\"))())(\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

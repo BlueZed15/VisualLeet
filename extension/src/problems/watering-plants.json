@@ -1,0 +1,30 @@
+{
+ "slug": "watering-plants",
+ "frontendId": "2079",
+ "title": "Watering Plants",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "plants",
+   "type": "integer[]"
+  },
+  {
+   "name": "capacity",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "plants = {plants}\ncapacity = {capacity}",
+ "visible": [
+  "plants",
+  "capacity"
+ ],
+ "call": "result = Solution().wateringPlants(plants, capacity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

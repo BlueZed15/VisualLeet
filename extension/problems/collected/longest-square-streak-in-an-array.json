@@ -1,0 +1,28 @@
+{
+ "slug": "longest-square-streak-in-an-array",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2501",
+ "title": "Longest Square Streak in an Array",
+ "premium": false,
+ "meta": {
+  "name": "longestSquareStreak",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,3,6,16,8,2]",
+  "[2,3,5,6,7]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "allocate-mailboxes",
+ "frontendId": "1478",
+ "title": "Allocate Mailboxes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "houses",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "houses = {houses}\nk = {k}",
+ "visible": [
+  "houses",
+  "k"
+ ],
+ "call": "result = Solution().minDistance(houses, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

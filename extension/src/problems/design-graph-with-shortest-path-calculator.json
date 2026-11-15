@@ -1,0 +1,60 @@
+{
+ "slug": "design-graph-with-shortest-path-calculator",
+ "frontendId": "2642",
+ "title": "Design Graph With Shortest Path Calculator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Graph",
+ "methods": {
+  "Graph": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   }
+  ],
+  "addEdge": [
+   {
+    "name": "edge",
+    "type": "integer[]"
+   }
+  ],
+  "shortestPath": [
+   {
+    "name": "node1",
+    "type": "integer"
+   },
+   {
+    "name": "node2",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Graph(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

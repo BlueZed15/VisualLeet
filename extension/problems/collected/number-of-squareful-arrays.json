@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-squareful-arrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "996",
+ "title": "Number of Squareful Arrays",
+ "premium": false,
+ "meta": {
+  "name": "numSquarefulPerms",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,17,8]",
+  "[2,2,2]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

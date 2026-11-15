@@ -1,0 +1,25 @@
+{
+ "slug": "path-in-zigzag-labelled-binary-tree",
+ "frontendId": "1104",
+ "title": "Path In Zigzag Labelled Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "label",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "label = {label}",
+ "visible": [
+  "label"
+ ],
+ "call": "result = Solution().pathInZigZagTree(label)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "painting-a-grid-with-three-different-colors",
+ "frontendId": "1931",
+ "title": "Painting a Grid With Three Different Colors",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}",
+ "visible": [
+  "m",
+  "n"
+ ],
+ "call": "result = Solution().colorTheGrid(m, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

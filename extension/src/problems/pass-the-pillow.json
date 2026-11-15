@@ -1,0 +1,30 @@
+{
+ "slug": "pass-the-pillow",
+ "frontendId": "2582",
+ "title": "Pass the Pillow",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "time",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ntime = {time}",
+ "visible": [
+  "n",
+  "time"
+ ],
+ "call": "result = Solution().passThePillow(n, time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

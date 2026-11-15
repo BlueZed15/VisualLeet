@@ -1,0 +1,28 @@
+{
+ "slug": "score-of-a-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "3110",
+ "title": "Score of a String",
+ "premium": false,
+ "meta": {
+  "name": "scoreOfString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"hello\"",
+  "\"zaz\""
+ ],
+ "exampleOutputs": [
+  "13",
+  "50"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-words-you-can-type",
+ "frontendId": "1935",
+ "title": "Maximum Number of Words You Can Type",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  },
+  {
+   "name": "brokenLetters",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}\nbrokenLetters = {brokenLetters}",
+ "visible": [
+  "text",
+  "brokenLetters"
+ ],
+ "call": "result = Solution().canBeTypedWords(text, brokenLetters)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

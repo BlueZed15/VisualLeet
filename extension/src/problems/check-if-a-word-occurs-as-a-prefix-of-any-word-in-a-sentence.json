@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+ "frontendId": "1455",
+ "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentence",
+   "type": "string"
+  },
+  {
+   "name": "searchWord",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentence = {sentence}\nsearchWord = {searchWord}",
+ "visible": [
+  "sentence",
+  "searchWord"
+ ],
+ "call": "result = Solution().isPrefixOfWord(sentence, searchWord)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

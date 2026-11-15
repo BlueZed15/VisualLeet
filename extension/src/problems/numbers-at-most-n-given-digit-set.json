@@ -1,0 +1,30 @@
+{
+ "slug": "numbers-at-most-n-given-digit-set",
+ "frontendId": "902",
+ "title": "Numbers At Most N Given Digit Set",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "digits",
+   "type": "string[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "digits = {digits}\nn = {n}",
+ "visible": [
+  "digits",
+  "n"
+ ],
+ "call": "result = Solution().atMostNGivenDigitSet(digits, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

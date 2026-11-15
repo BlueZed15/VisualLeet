@@ -1,0 +1,32 @@
+{
+ "slug": "teemo-attacking",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "495",
+ "title": "Teemo Attacking",
+ "premium": false,
+ "meta": {
+  "name": "findPoisonedDuration",
+  "params": [
+   {
+    "name": "timeSeries",
+    "type": "integer[]"
+   },
+   {
+    "name": "duration",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4]\n2",
+  "[1,2]\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3"
+ ],
+ "anyOrder": false
+}

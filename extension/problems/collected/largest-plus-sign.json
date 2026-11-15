@@ -1,0 +1,32 @@
+{
+ "slug": "largest-plus-sign",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "764",
+ "title": "Largest Plus Sign",
+ "premium": false,
+ "meta": {
+  "name": "orderOfLargestPlusSign",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "mines",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n[[4,2]]",
+  "1\n[[0,0]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

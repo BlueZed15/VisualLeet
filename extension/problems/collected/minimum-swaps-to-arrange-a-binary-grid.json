@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-swaps-to-arrange-a-binary-grid",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1536",
+ "title": "Minimum Swaps to Arrange a Binary Grid",
+ "premium": false,
+ "meta": {
+  "name": "minSwaps",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,1],[1,1,0],[1,0,0]]",
+  "[[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]",
+  "[[1,0,0],[1,1,0],[1,1,1]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1",
+  "0"
+ ],
+ "anyOrder": false
+}

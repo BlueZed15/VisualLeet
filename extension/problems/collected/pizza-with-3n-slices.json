@@ -1,0 +1,28 @@
+{
+ "slug": "pizza-with-3n-slices",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1388",
+ "title": "Pizza With 3n Slices",
+ "premium": false,
+ "meta": {
+  "name": "maxSizeSlices",
+  "params": [
+   {
+    "name": "slices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,6]",
+  "[8,9,8,6,1,1]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "16"
+ ],
+ "anyOrder": false
+}

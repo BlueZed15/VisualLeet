@@ -1,0 +1,25 @@
+{
+ "slug": "perfect-rectangle",
+ "frontendId": "391",
+ "title": "Perfect Rectangle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rectangles",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rectangles = {rectangles}",
+ "visible": [
+  "rectangles"
+ ],
+ "call": "result = Solution().isRectangleCover(rectangles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "design-a-number-container-system",
+ "frontendId": "2349",
+ "title": "Design a Number Container System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "NumberContainers",
+ "methods": {
+  "NumberContainers": [],
+  "change": [
+   {
+    "name": "index",
+    "type": "integer"
+   },
+   {
+    "name": "number",
+    "type": "integer"
+   }
+  ],
+  "find": [
+   {
+    "name": "number",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = NumberContainers(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "image-overlap",
+ "frontendId": "835",
+ "title": "Image Overlap",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "img1",
+   "type": "integer[][]"
+  },
+  {
+   "name": "img2",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "img1 = {img1}\nimg2 = {img2}",
+ "visible": [
+  "img1",
+  "img2"
+ ],
+ "call": "result = Solution().largestOverlap(img1, img2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

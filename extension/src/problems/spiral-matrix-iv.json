@@ -1,0 +1,35 @@
+{
+ "slug": "spiral-matrix-iv",
+ "frontendId": "2326",
+ "title": "Spiral Matrix IV",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "head",
+   "type": "ListNode"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nhead = {head}",
+ "visible": [
+  "m",
+  "n",
+  "head"
+ ],
+ "call": "result = Solution().spiralMatrix(m, n, head)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

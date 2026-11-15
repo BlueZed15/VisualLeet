@@ -1,0 +1,30 @@
+{
+ "slug": "closest-subsequence-sum",
+ "frontendId": "1755",
+ "title": "Closest Subsequence Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "goal",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ngoal = {goal}",
+ "visible": [
+  "nums",
+  "goal"
+ ],
+ "call": "result = Solution().minAbsDifference(nums, goal)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

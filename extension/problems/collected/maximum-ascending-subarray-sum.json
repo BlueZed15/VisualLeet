@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-ascending-subarray-sum",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1800",
+ "title": "Maximum Ascending Subarray Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxAscendingSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,20,30,5,10,50]",
+  "[10,20,30,40,50]",
+  "[12,17,15,13,10,11,12]"
+ ],
+ "exampleOutputs": [
+  "65",
+  "150",
+  "33"
+ ],
+ "anyOrder": false
+}

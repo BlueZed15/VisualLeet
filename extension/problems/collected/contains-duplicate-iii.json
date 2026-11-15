@@ -1,0 +1,36 @@
+{
+ "slug": "contains-duplicate-iii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "220",
+ "title": "Contains Duplicate III",
+ "premium": false,
+ "meta": {
+  "name": "containsNearbyAlmostDuplicate",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "name": "indexDiff",
+    "type": "integer"
+   },
+   {
+    "name": "valueDiff",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,1]\n3\n0",
+  "[1,5,9,1,5,9]\n2\n3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

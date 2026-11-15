@@ -1,0 +1,25 @@
+{
+ "slug": "difference-between-ones-and-zeros-in-row-and-column",
+ "frontendId": "2482",
+ "title": "Difference Between Ones and Zeros in Row and Column",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().onesMinusZeros(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

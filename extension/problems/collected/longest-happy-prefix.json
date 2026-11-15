@@ -1,0 +1,28 @@
+{
+ "slug": "longest-happy-prefix",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1392",
+ "title": "Longest Happy Prefix",
+ "premium": false,
+ "meta": {
+  "name": "longestPrefix",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"level\"",
+  "\"ababab\""
+ ],
+ "exampleOutputs": [
+  "\"l\"",
+  "\"abab\""
+ ],
+ "anyOrder": false
+}

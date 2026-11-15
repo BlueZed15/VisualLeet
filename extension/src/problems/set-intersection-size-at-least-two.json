@@ -1,0 +1,25 @@
+{
+ "slug": "set-intersection-size-at-least-two",
+ "frontendId": "757",
+ "title": "Set Intersection Size At Least Two",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "intervals",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "intervals = {intervals}",
+ "visible": [
+  "intervals"
+ ],
+ "call": "result = Solution().intersectionSizeTwo(intervals)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

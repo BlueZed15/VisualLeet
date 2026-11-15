@@ -1,0 +1,25 @@
+{
+ "slug": "count-number-of-texts",
+ "frontendId": "2266",
+ "title": "Count Number of Texts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "pressedKeys",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "pressedKeys = {pressedKeys}",
+ "visible": [
+  "pressedKeys"
+ ],
+ "call": "result = Solution().countTexts(pressedKeys)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

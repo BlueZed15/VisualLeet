@@ -1,0 +1,30 @@
+{
+ "slug": "monotone-increasing-digits",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "738",
+ "title": "Monotone Increasing Digits",
+ "premium": false,
+ "meta": {
+  "name": "monotoneIncreasingDigits",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10",
+  "1234",
+  "332"
+ ],
+ "exampleOutputs": [
+  "9",
+  "1234",
+  "299"
+ ],
+ "anyOrder": false
+}

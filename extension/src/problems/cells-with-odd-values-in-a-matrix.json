@@ -1,0 +1,35 @@
+{
+ "slug": "cells-with-odd-values-in-a-matrix",
+ "frontendId": "1252",
+ "title": "Cells with Odd Values in a Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "indices",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nindices = {indices}",
+ "visible": [
+  "m",
+  "n",
+  "indices"
+ ],
+ "call": "result = Solution().oddCells(m, n, indices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

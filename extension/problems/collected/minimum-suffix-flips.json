@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-suffix-flips",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1529",
+ "title": "Minimum Suffix Flips",
+ "premium": false,
+ "meta": {
+  "name": "minFlips",
+  "params": [
+   {
+    "name": "target",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"10111\"",
+  "\"101\"",
+  "\"00000\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

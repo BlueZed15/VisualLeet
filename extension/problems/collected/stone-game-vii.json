@@ -1,0 +1,28 @@
+{
+ "slug": "stone-game-vii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1690",
+ "title": "Stone Game VII",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameVII",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,1,4,2]",
+  "[7,90,5,1,100,10,10,2]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "122"
+ ],
+ "anyOrder": false
+}

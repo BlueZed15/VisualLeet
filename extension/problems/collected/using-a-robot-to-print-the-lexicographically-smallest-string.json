@@ -1,0 +1,30 @@
+{
+ "slug": "using-a-robot-to-print-the-lexicographically-smallest-string",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2434",
+ "title": "Using a Robot to Print the Lexicographically Smallest String",
+ "premium": false,
+ "meta": {
+  "name": "robotWithString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"zza\"",
+  "\"bac\"",
+  "\"bdda\""
+ ],
+ "exampleOutputs": [
+  "\"azz\"",
+  "\"abc\"",
+  "\"addb\""
+ ],
+ "anyOrder": false
+}

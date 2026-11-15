@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-distance-to-type-a-word-using-two-fingers",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1320",
+ "title": "Minimum Distance to Type a Word Using Two Fingers",
+ "premium": false,
+ "meta": {
+  "name": "minimumDistance",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"CAKE\"",
+  "\"HAPPY\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "integer-replacement",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "397",
+ "title": "Integer Replacement",
+ "premium": false,
+ "meta": {
+  "name": "integerReplacement",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "8",
+  "7",
+  "4"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

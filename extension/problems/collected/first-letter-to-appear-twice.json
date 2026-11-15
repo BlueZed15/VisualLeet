@@ -1,0 +1,28 @@
+{
+ "slug": "first-letter-to-appear-twice",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2351",
+ "title": "First Letter to Appear Twice",
+ "premium": false,
+ "meta": {
+  "name": "repeatedCharacter",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "character"
+  }
+ },
+ "exampleInputs": [
+  "\"abccbaacz\"",
+  "\"abcdd\""
+ ],
+ "exampleOutputs": [
+  "\"c\"",
+  "\"d\""
+ ],
+ "anyOrder": false
+}

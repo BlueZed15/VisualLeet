@@ -1,0 +1,30 @@
+{
+ "slug": "count-number-of-homogenous-substrings",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1759",
+ "title": "Count Number of Homogenous Substrings",
+ "premium": false,
+ "meta": {
+  "name": "countHomogenous",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abbcccaa\"",
+  "\"xy\"",
+  "\"zzzzz\""
+ ],
+ "exampleOutputs": [
+  "13",
+  "2",
+  "15"
+ ],
+ "anyOrder": false
+}

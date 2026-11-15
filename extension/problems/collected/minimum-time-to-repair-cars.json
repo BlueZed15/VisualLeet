@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-time-to-repair-cars",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2594",
+ "title": "Minimum Time to Repair Cars",
+ "premium": false,
+ "meta": {
+  "name": "repairCars",
+  "params": [
+   {
+    "name": "ranks",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "cars"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,3,1]\n10",
+  "[5,1,8]\n6"
+ ],
+ "exampleOutputs": [
+  "16",
+  "16"
+ ],
+ "anyOrder": false
+}

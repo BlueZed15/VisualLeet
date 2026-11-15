@@ -1,0 +1,30 @@
+{
+ "slug": "four-divisors",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1390",
+ "title": "Four Divisors",
+ "premium": false,
+ "meta": {
+  "name": "sumFourDivisors",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[21,4,7]",
+  "[21,21]",
+  "[1,2,3,4,5]"
+ ],
+ "exampleOutputs": [
+  "32",
+  "64",
+  "0"
+ ],
+ "anyOrder": false
+}

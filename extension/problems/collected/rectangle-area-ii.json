@@ -1,0 +1,28 @@
+{
+ "slug": "rectangle-area-ii",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "850",
+ "title": "Rectangle Area II",
+ "premium": false,
+ "meta": {
+  "name": "rectangleArea",
+  "params": [
+   {
+    "name": "rectangles",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,2,2],[1,0,2,3],[1,0,3,1]]",
+  "[[0,0,1000000000,1000000000]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "49"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,62 @@
+{
+ "slug": "exam-room",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "855",
+ "title": "Exam Room",
+ "premium": false,
+ "meta": {
+  "classname": "ExamRoom",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "seat",
+    "params": [],
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "name": "leave",
+    "params": [
+     {
+      "type": "integer",
+      "name": "p"
+     }
+    ],
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"ExamRoom\",\"seat\",\"seat\",\"seat\",\"seat\",\"leave\",\"seat\"]\n[[10],[],[],[],[],[4],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 0, 9, 4, 2, null, 5]"
+ ],
+ "anyOrder": false
+}

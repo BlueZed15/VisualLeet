@@ -1,0 +1,32 @@
+{
+ "slug": "count-the-number-of-complete-components",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2685",
+ "title": "Count the Number of Complete Components",
+ "premium": false,
+ "meta": {
+  "name": "countCompleteComponents",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[[0,1],[0,2],[1,2],[3,4]]",
+  "6\n[[0,1],[0,2],[1,2],[3,4],[3,5]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "distribute-candies-to-people",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1103",
+ "title": "Distribute Candies to People",
+ "premium": false,
+ "meta": {
+  "name": "distributeCandies",
+  "params": [
+   {
+    "name": "candies",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "num_people"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "7\n4",
+  "10\n3"
+ ],
+ "exampleOutputs": [
+  "[1,2,3,1]",
+  "[5,2,3]"
+ ],
+ "anyOrder": false
+}

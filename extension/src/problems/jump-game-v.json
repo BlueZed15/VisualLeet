@@ -1,0 +1,30 @@
+{
+ "slug": "jump-game-v",
+ "frontendId": "1340",
+ "title": "Jump Game V",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "d",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nd = {d}",
+ "visible": [
+  "arr",
+  "d"
+ ],
+ "call": "result = Solution().maxJumps(arr, d)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

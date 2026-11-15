@@ -1,0 +1,28 @@
+{
+ "slug": "nth-digit",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "400",
+ "title": "Nth Digit",
+ "premium": false,
+ "meta": {
+  "name": "findNthDigit",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "11"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

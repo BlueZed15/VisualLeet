@@ -1,0 +1,35 @@
+{
+ "slug": "sort-integers-by-the-power-value",
+ "frontendId": "1387",
+ "title": "Sort Integers by The Power Value",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "lo",
+   "type": "integer"
+  },
+  {
+   "name": "hi",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "lo = {lo}\nhi = {hi}\nk = {k}",
+ "visible": [
+  "lo",
+  "hi",
+  "k"
+ ],
+ "call": "result = Solution().getKth(lo, hi, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

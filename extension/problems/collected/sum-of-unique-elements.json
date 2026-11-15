@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-unique-elements",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1748",
+ "title": "Sum of Unique Elements",
+ "premium": false,
+ "meta": {
+  "name": "sumOfUnique",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,2]",
+  "[1,1,1,1,1]",
+  "[1,2,3,4,5]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "15"
+ ],
+ "anyOrder": false
+}

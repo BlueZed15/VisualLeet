@@ -1,0 +1,30 @@
+{
+ "slug": "rank-teams-by-votes",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1366",
+ "title": "Rank Teams by Votes",
+ "premium": false,
+ "meta": {
+  "name": "rankTeams",
+  "params": [
+   {
+    "name": "votes",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]",
+  "[\"WXYZ\",\"XYZW\"]",
+  "[\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"]"
+ ],
+ "exampleOutputs": [
+  "\"ACB\"",
+  "\"XWYZ\"",
+  "\"ZMNAGUEDSJYLBOPHRQICWFXTVK\""
+ ],
+ "anyOrder": false
+}

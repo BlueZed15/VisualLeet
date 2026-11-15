@@ -1,0 +1,30 @@
+{
+ "slug": "counting-words-with-a-given-prefix",
+ "frontendId": "2185",
+ "title": "Counting Words With a Given Prefix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "pref",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\npref = {pref}",
+ "visible": [
+  "words",
+  "pref"
+ ],
+ "call": "result = Solution().prefixCount(words, pref)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

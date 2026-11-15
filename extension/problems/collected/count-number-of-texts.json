@@ -1,0 +1,28 @@
+{
+ "slug": "count-number-of-texts",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2266",
+ "title": "Count Number of Texts",
+ "premium": false,
+ "meta": {
+  "name": "countTexts",
+  "params": [
+   {
+    "name": "pressedKeys",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"22233\"",
+  "\"222222222222222222222222222222222222\""
+ ],
+ "exampleOutputs": [
+  "8",
+  "82876089"
+ ],
+ "anyOrder": false
+}

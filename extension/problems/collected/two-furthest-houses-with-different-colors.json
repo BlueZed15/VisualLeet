@@ -1,0 +1,30 @@
+{
+ "slug": "two-furthest-houses-with-different-colors",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2078",
+ "title": "Two Furthest Houses With Different Colors",
+ "premium": false,
+ "meta": {
+  "name": "maxDistance",
+  "params": [
+   {
+    "name": "colors",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,6,1,1,1]",
+  "[1,8,3,8,3]",
+  "[0,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

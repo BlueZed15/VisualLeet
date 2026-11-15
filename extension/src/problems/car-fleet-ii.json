@@ -1,0 +1,25 @@
+{
+ "slug": "car-fleet-ii",
+ "frontendId": "1776",
+ "title": "Car Fleet II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cars",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "cars = {cars}",
+ "visible": [
+  "cars"
+ ],
+ "call": "result = Solution().getCollisionTimes(cars)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

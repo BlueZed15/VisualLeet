@@ -1,0 +1,30 @@
+{
+ "slug": "flip-columns-for-maximum-number-of-equal-rows",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "1072",
+ "title": "Flip Columns For Maximum Number of Equal Rows",
+ "premium": false,
+ "meta": {
+  "name": "maxEqualRowsAfterFlips",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,1]]",
+  "[[0,1],[1,0]]",
+  "[[0,0,0],[0,0,1],[1,1,0]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

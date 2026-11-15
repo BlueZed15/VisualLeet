@@ -1,0 +1,32 @@
+{
+ "slug": "divide-nodes-into-the-maximum-number-of-groups",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2493",
+ "title": "Divide Nodes Into the Maximum Number of Groups",
+ "premium": false,
+ "meta": {
+  "name": "magnificentSets",
+  "params": [
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]",
+  "3\n[[1,2],[2,3],[3,1]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

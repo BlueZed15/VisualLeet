@@ -1,0 +1,30 @@
+{
+ "slug": "reverse-nodes-in-even-length-groups",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2074",
+ "title": "Reverse Nodes in Even Length Groups",
+ "premium": false,
+ "meta": {
+  "name": "reverseEvenLengthGroups",
+  "params": [
+   {
+    "name": "head",
+    "type": "ListNode"
+   }
+  ],
+  "return": {
+   "type": "ListNode"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,6,3,9,1,7,3,8,4]",
+  "[1,1,0,6]",
+  "[1,1,0,6,5]"
+ ],
+ "exampleOutputs": [
+  "[5,6,2,3,9,1,4,8,3,7]",
+  "[1,0,1,6]",
+  "[1,0,1,5,6]"
+ ],
+ "anyOrder": false
+}

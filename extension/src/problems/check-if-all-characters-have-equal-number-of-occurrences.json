@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+ "frontendId": "1941",
+ "title": "Check if All Characters Have Equal Number of Occurrences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().areOccurrencesEqual(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

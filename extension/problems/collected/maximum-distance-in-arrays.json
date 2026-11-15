@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-distance-in-arrays",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "624",
+ "title": "Maximum Distance in Arrays",
+ "premium": false,
+ "meta": {
+  "name": "maxDistance",
+  "params": [
+   {
+    "name": "arrays",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[4,5],[1,2,3]]",
+  "[[1],[1]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

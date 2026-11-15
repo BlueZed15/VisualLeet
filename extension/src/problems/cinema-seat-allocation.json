@@ -1,0 +1,30 @@
+{
+ "slug": "cinema-seat-allocation",
+ "frontendId": "1386",
+ "title": "Cinema Seat Allocation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "reservedSeats",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nreservedSeats = {reservedSeats}",
+ "visible": [
+  "n",
+  "reservedSeats"
+ ],
+ "call": "result = Solution().maxNumberOfFamilies(n, reservedSeats)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

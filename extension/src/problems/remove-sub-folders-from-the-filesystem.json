@@ -1,0 +1,25 @@
+{
+ "slug": "remove-sub-folders-from-the-filesystem",
+ "frontendId": "1233",
+ "title": "Remove Sub-Folders from the Filesystem",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "folder",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "folder = {folder}",
+ "visible": [
+  "folder"
+ ],
+ "call": "result = Solution().removeSubfolders(folder)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

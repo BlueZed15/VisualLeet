@@ -1,0 +1,30 @@
+{
+ "slug": "determine-whether-matrix-can-be-obtained-by-rotation",
+ "frontendId": "1886",
+ "title": "Determine Whether Matrix Can Be Obtained By Rotation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\ntarget = {target}",
+ "visible": [
+  "mat",
+  "target"
+ ],
+ "call": "result = Solution().findRotation(mat, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

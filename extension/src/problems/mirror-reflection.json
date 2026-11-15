@@ -1,0 +1,30 @@
+{
+ "slug": "mirror-reflection",
+ "frontendId": "858",
+ "title": "Mirror Reflection",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "p",
+   "type": "integer"
+  },
+  {
+   "name": "q",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "p = {p}\nq = {q}",
+ "visible": [
+  "p",
+  "q"
+ ],
+ "call": "result = Solution().mirrorReflection(p, q)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

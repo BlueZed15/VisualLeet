@@ -1,0 +1,60 @@
+{
+ "slug": "random-pick-with-blacklist",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "710",
+ "title": "Random Pick with Blacklist",
+ "premium": false,
+ "meta": {
+  "classname": "Solution",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "name": "n",
+     "type": "integer"
+    },
+    {
+     "name": "blacklist",
+     "type": "integer[]"
+    },
+    {
+     "type": "integer",
+     "name": "blacklistSize",
+     "lang": "c",
+     "value": "size_2"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "pick",
+    "params": [],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"Solution\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\"]\n[[7,[2,3,5]],[],[],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, 0, 4, 1, 6, 1, 0, 4]"
+ ],
+ "anyOrder": false
+}

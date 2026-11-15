@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-bit-flips-to-convert-number",
+ "source": "leetcode.com, collected 2026-11-15",
+ "frontendId": "2220",
+ "title": "Minimum Bit Flips to Convert Number",
+ "premium": false,
+ "meta": {
+  "name": "minBitFlips",
+  "params": [
+   {
+    "name": "start",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "goal"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n7",
+  "3\n4"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}
