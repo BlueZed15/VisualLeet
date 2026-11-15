@@ -192,3 +192,10 @@ export function compareOutputs(actual, expected, { anyOrder = false } = {}) {
   }
   return "mismatch";
 }
+
+// The LeetCode editor's language: LeetScope runs Python 3 ("python" is LeetCode's Python 2).
+const PY_LANGS = new Set(["python3", "python"]);
+export function describeLanguage(languageId) {
+  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python 2. LeetScope runs Python 3. Most solutions work, but Python 2 syntax such as print statements won't." : "" };
+  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. LeetScope runs Python 3. Switch the editor to Python3 and click Visualize again. Your code here is unchanged.` };
+}

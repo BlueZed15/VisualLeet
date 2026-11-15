@@ -22,14 +22,6 @@ function sameValue(a, b) {
 }
 const sameTexts = (entry, a, b) => !!a && !!b && entry.boxes.every((x) => sameValue(a[x.name] ?? "", b[x.name] ?? ""));
 
-// how well this problem's database entry has been checked
-const badgeFor = (entry) => (entry.verified || entry.checked === "solution" ? ["verified", "✓ checked setup"]
-  : entry.checked === "inputs" ? ["inputs", "inputs checked"] : ["unchecked", "setup not checked yet"]);
-const BADGE_TITLE = {
-  verified: "This problem's setup was checked. A known good solution gave LeetCode's expected output on every example.",
-  inputs: "This problem's inputs are built like LeetCode's examples. If a result looks wrong, check the Call and Setup tabs.",
-  unchecked: "This problem's setup hasn't been checked yet. If a result looks wrong, check the Call and Setup tabs.",
-};
 
 export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {} } = {}) {
   let p = null;          // { slug, title, frontendId, anyOrder, cases: [], selectedId, callOverride }
@@ -112,7 +104,6 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
 
   function render() {
     if (!p) return;
-    const badge = badgeFor(entry);
     // "206." dim and monospace, then the title (textContent stays "206. Title")
     const num = Object.assign(document.createElement("span"), { className: "problem-num", textContent: p.frontendId ? p.frontendId + "." : "" });
     // the page's title can already start with the number ("120. Triangle"): show it once
@@ -121,9 +112,6 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     if (lead && (!p.frontendId || lead[1] === String(p.frontendId))) { name = name.slice(lead[0].length); if (!p.frontendId) num.textContent = lead[1] + "."; }
     const id = p.frontendId || (lead && lead[1]);
     el.title.replaceChildren(...(id ? [num, " "] : []), name);
-    el.badge.textContent = badge[1];
-    el.badge.dataset.kind = badge[0];
-    el.badge.title = BADGE_TITLE[badge[0]];
     renderTabs();
     renderCase();
   }

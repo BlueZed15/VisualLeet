@@ -1,18 +1,17 @@
-// VisualLeet UI controller (privileged extension page). Owns the sandboxed
-// runner iframe, the packaged-asset bridge, run state, imports and the
-// renderer. It never executes Python and never acts on runner messages
-// beyond displaying their results.
+// LeetScope UI controller (privileged extension page). Owns the sandboxed
+// runner iframe, the packaged-asset bridge, run state, the problem and its
+// test cases, and the renderer. It never executes Python and never acts on
+// runner messages beyond displaying their results.
 
-import { EXAMPLES, SHOWCASE_EXAMPLES, ERROR_EXAMPLES, HELPERS } from "./examples.js";
-import { composeSource, hasTopLevelCode, describeLanguage, draftForSolution } from "./prepare.js";
 import { createLeetCodeMode } from "./leetcode-mode.js";
 import { resultLine } from "./harness.js";
+import { describeLanguage } from "./leet.js";
 
 const PROTOCOL = 1;
 const LIMITS = { wallMs: 10000, maxTraceBytes: 10 * 1024 * 1024 };
 const MAX_SOURCE_BYTES = 256 * 1024;
 const BACKSTOP_EXTRA_MS = 4000;   // if the sandbox itself stops answering
-const DRAFT_KEY = "visualleet.draft.v1";
+const CODE_KEY = "visualleet.draft.v1";      // your code, kept across reloads
 
 // The only files the runner can ever receive (packaged, version-pinned).
 const ASSETS = {
@@ -27,29 +26,19 @@ const ASSETS = {
 
 const $ = (id) => document.getElementById(id);
 const el = {
-  status: $("status"), message: $("message"), diag: $("diag"), sourceTab: $("source-tab"),
-  setup: $("setup"), solution: $("solution"), call: $("call"), inputs: $("inputs"),
-  visualize: $("visualize"), stop: $("stop"), reset: $("reset"),
-  importSelection: $("import-selection"),
-  example: $("example"), helper: $("helper"), empty: $("empty"),
+  message: $("message"), diag: $("diag"), solution: $("solution"), reset: $("reset"),
   viz: $("viz"), vizBody: document.querySelector(".viz-body"), stepMeter: $("step-meter"), diagToggle: $("diag-toggle"),
   vizPanel: document.querySelector(".viz-panel"), codeEditor: $("code-editor"), gutter: document.querySelector("#code-editor .gutter"),
   edit: $("edit"), editArea: $("edit-area"),
-  modeToggle: $("mode-toggle"), lcCases: $("lc-cases"), editLeft: $("edit-left"), codeCard: document.querySelector(".code-card"),
+  lcCases: $("lc-cases"), editLeft: $("edit-left"), codeCard: document.querySelector(".code-card"),
   caseRun: $("case-run"), vizHead: $("viz-head"), playerBar: $("player-bar"), lcSide: $("lc-side"), sidePh: $("side-ph"),
   diagStrip: $("diag-strip"), lcLink: $("lc-link"),
 };
 el.codeBody = el.codeCard.querySelector(".code-body");
 el.sideHead = el.lcSide.querySelector(".viz-head");
 
-// ---------- LeetCode mode: a problem from LeetScope's database + its test cases ----------
-// (paste mode is everything else: the code editor + Test call / Setup / input())
-const LC_MODE_KEY = "visualleet.mode";
-// dev/test builds ("LeetScope (DEV)", "(TEST BUILD)"): examples, Import selection and paste mode
-const DEV = /\((DEV|TEST BUILD)\)/.test(chrome.runtime.getManifest().name);
-document.body.classList.toggle("dev", DEV);
+// ---------- the problem: an entry from LeetScope's database + its test cases ----------
 const PENDING_MAX_AGE_MS = 2 * 60 * 1000;
-let lcMode = false;
 let dbIndex = { problems: {} };
 const dbReady = fetch(chrome.runtime.getURL("problems/index.json")).then((r) => r.json()).then((d) => { dbIndex = d; }).catch(() => {});
 async function loadEntry(slug) {
@@ -59,11 +48,11 @@ async function loadEntry(slug) {
 }
 const lc = createLeetCodeMode({
   tabs: $("case-tabs"), add: $("case-add"), fields: $("case-fields"), title: $("lc-title"),
-  badge: $("lc-badge"), expected: $("case-expected"), verdict: $("case-verdict"), source: $("case-source"),
+  expected: $("case-expected"), verdict: $("case-verdict"), source: $("case-source"),
   call: $("lc-call"), callReset: $("lc-call-reset"), callNote: $("lc-call-note"), setup: $("lc-setup"),
 }, {
   // another case picked while playing: run it right away
-  onSelect: () => { if (lcMode && mode === "watch") visualize(); },
+  onSelect: () => { if (mode === "watch") visualize(); },
 });
 
 // "edit": the code editor fills the panel. "watch": the run plays like a video.
@@ -88,32 +77,19 @@ const waiters = { ready: [], stats: [] };
 // ---------- status & messages ----------
 
 const IDLE = new Set(["ready", "complete", "limit reached", "failed", "stopped", "timed out", "needs input"]);
-const STATUS_LABEL = {
-  "not initialized": "Not started", initializing: "Starting Python…", ready: "Ready", running: "Running…",
-  "preparing visualization": "Rendering…", complete: "Done", "limit reached": "Incomplete", "timed out": "Timed out",
-  stopped: "Stopped", failed: "Error", "needs input": "Needs input",
-};
 let msgKind = "info";
-let runCrashed = false;   // the last run ended in an uncaught exception (status stays "complete")
 
+// No status pill in this design: Run shows a run (it turns into Stop), messages show the rest.
 function setStatus(s, message = "", kind = "error") {
   status = s;
-  const crashed = runCrashed && s === "complete";
-  el.status.textContent = crashed ? "Error" : STATUS_LABEL[s] || s;
-  el.status.dataset.state = crashed ? "failed" : s.replace(/\s+/g, "-");
-  el.status.hidden = true;     // no status pill in this design: Run shows a run, messages show the rest
   showMessage(message, kind);
   const busy = isBusy();
-  el.visualize.disabled = !busy && !runtimeInfo;
-  el.stop.disabled = !busy || s !== "running";
-  el.stop.hidden = true;
   // while a run is going, Run becomes Stop (three hopping dots)
-  for (const b of [el.visualize, el.caseRun]) {
-    b.classList.toggle("running", busy);
-    b.querySelector(".run-label").textContent = busy ? "Stop" : "Run";
-    b.setAttribute("aria-label", busy ? "Stop" : "Run");
-    b.title = busy ? "Stop" : (b === el.caseRun ? "Run this case (Ctrl+Enter)" : "Run and visualize (Ctrl+Enter)");
-  }
+  const b = el.caseRun;
+  b.classList.toggle("running", busy);
+  b.querySelector(".run-label").textContent = busy ? "Stop" : "Run";
+  b.setAttribute("aria-label", busy ? "Stop" : "Run");
+  b.title = busy ? "Stop" : "Run this case (Ctrl+Enter)";
 }
 const isBusy = () => status === "running" || status === "preparing visualization";
 function runOrStop() { if (isBusy()) stop(); else visualize(); }
@@ -130,9 +106,8 @@ function enterEdit({ focus = false } = {}) {
   if (current && current.kind === "run") stop();
   setPlaying(false);
   hideInspector();
-  // LeetCode mode: the visualization stays on the right, as it was, while you
-  // edit on the left; the next Visualize / Run case replaces it
-  if (rendered && !lcMode) { rendered.destroy(); rendered = null; prevSnap = null; }
+  // the visualization stays on the right, as it was, while you edit on the
+  // left; the next run replaces it
   setMode("edit");
   placeCases();
   // in the editor, keep only the headline of an error/warning ("Line 6: IndexError...");
@@ -153,15 +128,10 @@ function enterWatch() {
   updateView();
 }
 
-// The combined program is setup + "\n\n" + solution + ...: map one of its line numbers to the solution's.
+// The program is your code then the call (the setup runs hidden, separately):
+// a line of it is a line of your code when it's within your code.
 function solutionLineOf(programLine) {
-  if (!programLine) return null;
-  // LeetCode mode: the solution comes first (its setup runs hidden, separately)
-  if (lcMode) return programLine <= el.solution.value.split("\n").length ? programLine : null;
-  const setup = el.setup.value.replace(/\s+$/, "");
-  const offset = setup.trim() ? setup.split("\n").length + 2 : 0;
-  const n = programLine - offset;
-  return n >= 1 && n <= el.solution.value.split("\n").length ? n : null;
+  return programLine && programLine <= el.solution.value.split("\n").length ? programLine : null;
 }
 function selectLine(ta, n) {
   const lines = ta.value.split("\n");
@@ -209,7 +179,7 @@ function placeholderFor() {
     case "stopped":
       return { kind: "info", title: "Run stopped", body: "Your code is unchanged. Press Run to start again.", eats: true };
   }
-  return { kind: "empty", title: "Ready when you are", steps: ["Paste, import or load an example", "Add a test call", "Press Run"] };
+  return { kind: "empty", title: "The visualization plays here", body: "Press Run (Ctrl+Enter) to run your code on the selected test case." };
 }
 
 // fill a placeholder element with a state's icon, title and text
@@ -220,22 +190,12 @@ function fillPlaceholder(box, ph) {
   parts.push(Object.assign(document.createElement("div"), { className: "ph-title", textContent: ph.title }));
   if (ph.detail) parts.push(Object.assign(document.createElement("pre"), { className: "ph-detail", textContent: ph.detail }));
   if (ph.body) parts.push(Object.assign(document.createElement("div"), { className: "ph-body", textContent: ph.body }));
-  if (ph.steps) {
-    const ol = document.createElement("ol");
-    ol.className = "ph-steps";
-    ph.steps.forEach((t, i) => {
-      const li = document.createElement("li");
-      li.append(Object.assign(document.createElement("span"), { className: "n", textContent: String(i + 1) }), t);
-      ol.append(li);
-    });
-    parts.push(ol);
-  }
   box.dataset.kind = ph.kind;
   box.replaceChildren(...parts);
 }
 
-// a run is on screen: always in LeetCode mode, only while watching in paste mode
-const traceShown = () => !!rendered && (mode !== "edit" || lcMode);
+// a run is on screen (also while editing: it stays beside the editor)
+const traceShown = () => !!rendered;
 
 function updateView() {
   if (!el.vizBody) return;
@@ -243,28 +203,20 @@ function updateView() {
   el.vizBody.classList.toggle("busy", busy && !!rendered);
   const editing = mode === "edit";
   const shown = traceShown();
-  const frozen = editing && shown;     // editing beside the last run (LeetCode mode)
-  // LeetCode mode keeps the code and cases on screen while a run starts
+  const frozen = editing && shown;     // editing beside the last run
   // the code stays on screen while a run starts (so Run/Stop can be pressed); the
   // Visualizer side panel shows the state until there's a run to show
   el.editArea.hidden = shown;
-  const side = lcMode || !editing;
-  el.vizPanel.dataset.side = side ? "1" : "";
   // (renderView unhides #viz before drawing: the renderer skips hidden containers)
   el.viz.hidden = !shown;
   el.viz.classList.toggle("vlEditing", frozen);
   el.edit.setAttribute("aria-pressed", String(editing));
   let eaten = false;
-  el.empty.hidden = true;
   if (!shown) {
+    // the Visualizer side of the editor: what happens next, or the state of a run starting
     const ph = placeholderFor();
-    if (side) {
-      // the Visualizer side of the editor: what happens next, or the state of a run starting
-      eaten = !!ph.eats;
-      fillPlaceholder(el.sidePh, ph.kind === "empty"
-        ? { kind: "empty", title: "The visualization plays here", body: lcMode ? "Press Run (Ctrl+Enter) to run your code on the selected test case." : "Press Run (Ctrl+Enter) to run your code and the test call." }
-        : ph);
-    }
+    eaten = !!ph.eats;
+    fillPlaceholder(el.sidePh, ph);
   }
   const showMsg = !!el.message.textContent && !eaten;
   const h = el.message.hidden ? 0 : el.message.offsetHeight;
@@ -272,18 +224,9 @@ function updateView() {
   placeCases();
   if ((showMsg ? el.message.offsetHeight : 0) !== h) redrawArrows();   // the banner moved the trace
   if (!rendered) el.stepMeter.hidden = $("player").hidden = true;
-  updateLayoutAttr();
   requestAnimationFrame(positionSplitters);
 }
 
-// side-by-side cards (with the control bar docked under the right one) only while a trace is shown
-function updateLayoutAttr() {
-  const wide = (mode === "watch" || lcMode) && rendered && rendered.wide;
-  if ((el.vizPanel.dataset.layout === "wide") !== !!wide) {
-    el.vizPanel.dataset.layout = wide ? "wide" : "";
-    redrawArrows();
-  }
-}
 
 function redrawArrows() {
   if (rendered) requestAnimationFrame(() => rendered && rendered.viz.redrawConnectors());
@@ -1139,7 +1082,7 @@ function onResult(m) {
   if (steps === 1 && last.event === "uncaught_exception") {
     // that single entry has no frames or heap, which the renderer needs
     trace.trace[0] = Object.assign({ func_name: "<module>", globals: {}, ordered_globals: [], stack_to_render: [], heap: {}, stdout: "" }, last);
-    try { el.empty.hidden = true; renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("LeetScope: could not show the code", err); clearVisualization(); }
+    try { renderView(trace, 0); el.viz.classList.add("vlNoRun"); } catch (err) { console.warn("LeetScope: could not show the code", err); clearVisualization(); }
     lastErrorLine = last.line || null;
     if (current.info.lc) lc.judge(null, "No result. Your code has an error on the marked line, so it didn't run.");
     setStatus("failed", (last.line ? `Line ${last.line}: ` : "") + last.exception_msg + "\nYour code didn't run. Fix the marked line and press Run again.");
@@ -1162,7 +1105,6 @@ function onResult(m) {
   const failEntry = trace.trace[failStep] || last;
   const tr = performance.now();
   try {
-    el.empty.hidden = true;
     renderView(trace, crashed ? failStep : 0);
     document.body.offsetHeight;
   } catch (err) {
@@ -1179,7 +1121,6 @@ function onResult(m) {
   renderDiag();
   let final = "complete", msg = "", kind = "info";
   if (crashed) {
-    runCrashed = true;
     lastErrorLine = failEntry.line || null;
     const where = failEntry.line ? ` on line ${failEntry.line}` : "";
     msg = `${(failEntry.exception_msg || last.exception_msg || "Error").split("\n")[0]}${where}, at step ${Math.min(failStep + 1, Math.max(steps - 1, 1))}.\nShowing the moment it failed. Press ← or drag the step bar to see how it got there.`;
@@ -1196,9 +1137,8 @@ function onResult(m) {
     kind = "warn";
   } else if (last.event === "raw_input") {
     final = "needs input";
-    msg = `The program called input(${last.prompt ? JSON.stringify(last.prompt) : ""}) but there are no more input lines. Add a line in the input() tab and run again.`;
+    msg = "Your code called input(), and LeetCode problems don't read input. Remove the input() call and run again.";
     kind = "warn";
-    selectTab("stdin");
   }
   if (current.info.lc) {
     // the call prints the result last, in LeetCode's format: judge it against the expected output
@@ -1217,22 +1157,23 @@ function onResult(m) {
 const WIDE_MIN = 860;
 const isWide = () => el.vizBody.clientWidth >= WIDE_MIN;
 // the code column's width for the current panel size (the renderer takes it in px)
-const codeWidth = () => (lcMode && sizes.leftW ? Math.round(clampN(sizes.leftW, 280, Math.max(280, el.vizBody.clientWidth - 380)))
+const codeWidth = () => (sizes.leftW ? Math.round(clampN(sizes.leftW, 280, Math.max(280, el.vizBody.clientWidth - 380)))
   // the design's left column: 460px (flex 1 1 460px beside a flex 999 visualizer), less in a narrow window
   : Math.round(Math.max(320, Math.min(460 + Math.max(0, el.vizBody.clientWidth - 1032) / 1000, el.vizBody.clientWidth - 572))));
 
 function renderView(trace, step) {
   // the run gets the whole panel before it's drawn (the renderer measures as it draws)
-  if (mode !== "edit" || lcMode) { el.editArea.hidden = true; el.empty.hidden = true; el.viz.hidden = false; }
+  el.editArea.hidden = true;
+  el.viz.hidden = false;
   const wide = isWide();
   el.viz.classList.toggle("vlWide", wide);
   el.viz.classList.toggle("vlStacked", !wide);
   el.viz.classList.remove("vlNoRun");
   const opts = { startingInstruction: step, updateOutputCallback: updateStepMeter };
-  // LeetCode mode: the test case goes under the code card, so the card leaves room for it
-  const casesH = lcMode && wide ? casesHeight() : 0;
+  // the test case goes under the code card, so the card leaves room for it
+  const casesH = wide ? casesHeight() : 0;
   if (sizes.casesH) el.vizPanel.style.setProperty("--cases-h", sizes.casesH + "px"); else el.vizPanel.style.removeProperty("--cases-h");   // natural height unless resized
-  const codeH = Math.max(lcMode ? 180 : 240, el.vizBody.clientHeight - 40 - (casesH ? casesH + 10 : 0));
+  const codeH = Math.max(180, el.vizBody.clientHeight - 40 - (casesH ? casesH + 10 : 0));
   if (wide) Object.assign(opts, { verticalStack: false, codeDivWidth: codeWidth(), codeDivHeight: codeH });
   else Object.assign(opts, { verticalStack: true, codeDivHeight: 230 });
   dropRunNodes();
@@ -1253,7 +1194,6 @@ function renderView(trace, step) {
   el.vizPanel.style.setProperty("--code-w", (wide ? codeWidth() : 0) + "px");
   placeCases();
   if (rendered.viz.outputBox) rendered.viz.outputBox.domRoot = window.jQuery(el.codeBody);   // it looks itself up under its own root
-  updateLayoutAttr();
   requestAnimationFrame(positionSplitters);
   // a new run starts with the default layout; a re-layout of the same run keeps zoom/moves
   if (stage.trace !== trace) { stage.trace = trace; stage.scale = 1; stage.x = 0; stage.y = 0; stage.offsets.clear(); hideInspector(); }
@@ -1305,18 +1245,17 @@ function placeCases() {
     if (right.lastElementChild !== el.playerBar) right.append(el.playerBar);
   } else {
     if (el.vizHead.parentElement !== el.vizPanel) el.vizPanel.append(el.vizHead, el.playerBar);
-    // messages: under the Visualizer header of the editor's side panel, or above the page (paste mode)
-    if (lcMode || mode !== "edit") { if (el.sideHead.nextElementSibling !== el.message) el.sideHead.after(el.message); }
-    else if (el.vizBody.firstElementChild !== el.message) el.vizBody.prepend(el.message);
+    // messages: under the Visualizer header of the editor's side panel
+    if (el.sideHead.nextElementSibling !== el.message) el.sideHead.after(el.message);
   }
   el.vizHead.hidden = el.playerBar.hidden = !right;
   if (el.viz) el.viz.classList.toggle("vlEditing", !!left && mode === "edit");
 }
 
-// ---------- resizable panes (LeetCode mode): code | test cases | visualization ----------
+// ---------- resizable panes: code | test cases | visualization ----------
 // Three handles: between the columns (left width), between code and test
 // cases (their height), and where they meet (both). Sizes apply live through
-// CSS variables (--left-w, --cases-h; --code-w docks the player bar) and are
+// CSS variables (--left-w, --cases-h; --code-w is the code column's width) and are
 // remembered.
 const SIZES_KEY = "visualleet.sizes.v1";
 const sizes = (() => { try { return JSON.parse(localStorage.getItem(SIZES_KEY) || "{}") || {}; } catch { return {}; } })();
@@ -1335,7 +1274,7 @@ const splitters = ["v", "h", "x"].map((kind) => {
 
 // the left column and the right pane, in whichever layout is showing
 function panes() {
-  if (!lcMode || !lc.problem) return null;
+  if (!lc.problem) return null;
   if (rendered && rendered.wide && !el.viz.hidden) {
     const root = rendered.viz.domRoot[0];
     return { left: root.querySelector("#vizLayoutTdFirst"), right: root.querySelector("#vizLayoutTdSecond") };
@@ -1360,8 +1299,9 @@ function positionSplitters() {
 function applySizes() {
   const st = el.vizPanel.style;
   // the left column: your size, else the default; the same while editing and playing
-  if (lcMode) { const w = codeWidth() + "px"; st.setProperty("--left-w", w); st.setProperty("--code-w", w); }
-  else st.removeProperty("--left-w");
+  const w = codeWidth() + "px";
+  st.setProperty("--left-w", w);
+  st.setProperty("--code-w", w);
   if (sizes.casesH) st.setProperty("--cases-h", sizes.casesH + "px");
   else st.removeProperty("--cases-h");
   if (rendered) rendered.codeW = codeWidth();      // the run already uses this width: no re-render needed
@@ -1430,7 +1370,6 @@ function startJob(kind, extra = {}, info = {}) {
   }
   const runId = crypto.randomUUID();
   setPlaying(false);
-  runCrashed = false;
   return new Promise((resolve) => {
     current = {
       runId, kind, resolve, info, tClick: performance.now(),
@@ -1449,17 +1388,9 @@ function startJob(kind, extra = {}, info = {}) {
 
 // ---------- program ----------
 
-function program() {
-  return { setup: el.setup.value, solution: el.solution.value, call: el.call.value };
-}
-
+// Your code + the call from the problem's database file; the inputs are built
+// by hidden setup, which runs untraced.
 function visualize(opts = {}) {
-  return lcMode ? visualizeCase(opts) : visualizePasted();
-}
-
-// LeetCode mode: your code + the call from the problem's database file; the
-// inputs are built by hidden setup, which runs untraced.
-function visualizeCase(opts = {}) {
   if (!lc.problem) { showMessage("Open a problem on LeetCode and click Visualize to load it here.", "info"); return Promise.resolve({ status: "rejected" }); }
   const g = lc.program();
   if (!g.ok) {
@@ -1478,25 +1409,6 @@ function visualizeCase(opts = {}) {
   return startJob("run", { source, inputs: [], setup: g.setup, setupVisible: g.visible }, { lc: true, note: opts.note || "" });
 }
 
-function visualizePasted() {
-  const parts = program();                          // captured at click time
-  const source = composeSource(parts);
-  if (!source.trim()) { showMessage("Add some Python code first.", "info"); return Promise.resolve({ status: "rejected" }); }
-  if (new TextEncoder().encode(source).length > MAX_SOURCE_BYTES) {
-    showMessage("This program is larger than 256 KiB, which is more than LeetScope can show.", "error");
-    return Promise.resolve({ status: "rejected" });
-  }
-  if (!hasTopLevelCode(source)) {
-    showMessage("Your code only defines functions or classes, so nothing runs. Add a test call such as print(Solution().twoSum([2, 7, 11, 15], 9)).", "error");
-    el.call.focus();
-    return Promise.resolve({ status: "rejected", reason: "no-call" });
-  }
-  const inputs = el.inputs.value === "" ? [] : el.inputs.value.replace(/\r/g, "").split("\n");
-  // switch to the player only when the run will actually start (startJob explains otherwise)
-  if (IDLE.has(status) && runtimeInfo) { lastErrorLine = null; enterWatch(); }
-  return startJob("run", { source, inputs });
-}
-
 function stop() { if (current && current.kind !== "probe") toSandbox({ type: "stop" }); }
 function resetRuntime() {
   runtimeInfo = null;
@@ -1505,78 +1417,23 @@ function resetRuntime() {
   toSandbox({ type: "reset" });
 }
 
-function setProgram({ setup, solution, call, inputs }) {
-  if (setup !== undefined) el.setup.value = setup;
-  if (solution !== undefined) el.solution.value = solution;
-  if (call !== undefined) el.call.value = call;
-  if (inputs !== undefined) el.inputs.value = inputs;
-  saveDraft();
-  enterEdit();            // new code: back to the editor; the next run starts from step 1
+// your code, kept across reloads
+function saveCode() {
+  try { localStorage.setItem(CODE_KEY, JSON.stringify({ solution: el.solution.value })); } catch {}
+}
+function loadCode() {
+  try { return (JSON.parse(localStorage.getItem(CODE_KEY) || "null") || {}).solution || ""; } catch { return ""; }
 }
 
-// ---------- tabs (Test call / Setup / input()) ----------
+// ---------- the problem ----------
 
-const tabs = [...document.querySelectorAll("[data-tabs] [data-tab]")];
-function selectTab(name) {
-  for (const t of tabs) t.setAttribute("aria-selected", String(t.dataset.tab === name));
-  for (const p of document.querySelectorAll("[data-tabs] [data-panel]")) p.hidden = p.dataset.panel !== name;
-}
-// a small dot on a tab means it has content, so nothing hides unnoticed
-function updateDots() {
-  for (const d of document.querySelectorAll("[data-dot]")) d.classList.toggle("on", !!el[d.dataset.dot].value.trim());
-}
-
-function saveDraft() {
-  updateDots();
-  try { localStorage.setItem(DRAFT_KEY, JSON.stringify(Object.assign(program(), { inputs: el.inputs.value }))); } catch {}
-}
-function loadDraft() {
-  try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || "null"); } catch { return null; }
-}
-
-// ---------- imports (through the background service worker) ----------
-
-async function requestImport(mode) {
-  if (!sourceTabId) {
-    showMessage("Open LeetScope from the toolbar button while on the page you want to import from.", "error");
-    return { ok: false, reason: "no-source-tab" };
-  }
-  let res;
-  try {
-    res = await chrome.runtime.sendMessage({ type: "import", mode, tabId: sourceTabId });
-  } catch (err) {
-    res = { ok: false, error: String(err.message || err) };
-  }
-  if (!res || !res.ok) {
-    showMessage((res && res.error) || "Import failed.", "error");   // editors are left untouched
-    return res || { ok: false };
-  }
-  if (mode === "selection") {
-    setLcMode(false);
-    el.solution.value = res.text;
-    saveDraft();
-    enterEdit();
-    showMessage(`Imported ${res.text.split("\n").length} lines from the selection. Check the code, add a test call if needed, and press Run.`, "ok");
-    return res;
-  }
-  return openLeetCode(res, { autoRun: true });
-}
-
-// ---------- LeetCode mode ----------
-
-function setLcMode(on) {
-  // production: always LeetCode mode (an empty state until a problem is opened)
-  lcMode = DEV ? !!on && !!lc.problem : true;
-  document.body.classList.toggle("mode-lc", lcMode);
-  const empty = lcMode && !lc.problem;
+// With no problem loaded, an empty state explains how to start.
+function showProblem() {
+  const empty = !lc.problem;
   document.body.classList.toggle("no-problem", empty);
   $("lc-empty").hidden = !empty;
-  el.modeToggle.hidden = !DEV || !lc.problem;
-  for (const b of el.modeToggle.querySelectorAll("[data-set-mode]")) b.setAttribute("aria-pressed", String((b.dataset.setMode === "lc") === lcMode));
-  try { localStorage.setItem(LC_MODE_KEY, lcMode ? "lc" : "manual"); } catch {}
   updateProblemLink();
   applySizes();
-  if (mode === "watch") enterEdit();         // the other mode's run doesn't belong here
   placeCases();
   updateGutter();
 }
@@ -1591,7 +1448,7 @@ function updateProblemLink() {
   else el.lcLink.removeAttribute("href");
 }
 
-// Your code / Call / Setup: the views of the code card (LeetCode mode)
+// Your code / Call / Setup: the views of the code card
 function showCodeView(name) {
   for (const t of document.querySelectorAll("[data-codeview]")) t.setAttribute("aria-selected", String(t.dataset.codeview === name));
   for (const p of document.querySelectorAll("[data-codepanel]")) p.hidden = p.dataset.codepanel !== name;
@@ -1613,34 +1470,19 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   }
   const entry = await loadEntry(res.slug);
   const lang = describeLanguage(res.language || "");
-  if (!entry && !DEV) {
+  if (!entry) {
     showMessage(`"${res.title || res.slug}" isn't supported by LeetScope yet. Support for more problems is on the way.`, "info");
     return { ok: false, reason: "not-in-db", slug: res.slug };
   }
-  if (!entry) {
-    // dev/test builds: paste mode with a drafted test call
-    setLcMode(false);
-    if (res.code && lang.ok) {
-      const draft = draftForSolution(res.code, []);
-      setProgram({ setup: draft.setup, solution: res.code, call: draft.call });
-      selectTab("call");
-      const first = (res.exampleInputs || [])[0];
-      showMessage([`"${res.title || res.slug}" isn't supported by LeetScope yet, so it opened in paste mode. Check the drafted test call.`,
-        first ? `LeetCode's first example input is ${first.split("\n").join(", ")}.` : "", lang.note, ...draft.notes].filter(Boolean).join("\n"), "info");
-    } else {
-      showMessage(`"${res.title || res.slug}" isn't supported by LeetScope yet. ${!res.code ? "LeetScope couldn't read the code editor either. The page may still be loading." : lang.note}`, "error");
-    }
-    return { ok: false, reason: "not-in-db", slug: res.slug };
-  }
   const loaded = lc.loadFromPage(res, entry);
-  setLcMode(true);
+  showProblem();
   showCodeView("code");
   const notes = [loaded.note];
   let runnable = true;
   // never run older code in place of what the click was meant to show
   if (!res.code) { notes.push("LeetScope couldn't read the code editor on LeetCode. The page may still be loading. Your code here is unchanged, and you can press Run to run it."); runnable = false; }
   else if (!lang.ok) { notes.push(lang.note); runnable = false; }
-  else { el.solution.value = res.code; saveDraft(); updateGutter(); if (lang.note) notes.push(lang.note); }
+  else { el.solution.value = res.code; saveCode(); updateGutter(); if (lang.note) notes.push(lang.note); }
   const note = notes.filter(Boolean).join("\n");
   enterEdit();
   showMessage(note, "info");
@@ -1652,6 +1494,7 @@ async function openLeetCode(res, { autoRun = false } = {}) {
 }
 
 // The background worker stores what a click on LeetCode read; take it once.
+let opens = 0, lastOpen = null;     // for the automated checks
 async function takePending(id) {
   let pending = null;
   try { pending = (await chrome.storage.session.get("pending")).pending; } catch { return; }
@@ -1659,7 +1502,9 @@ async function takePending(id) {
   await chrome.storage.session.remove("pending").catch(() => {});
   sourceTabId = pending.tabId;
   chrome.runtime.sendMessage({ type: "describe-tab", tabId: sourceTabId }).then((r) => r && showSourceTab(r.title, r.url)).catch(() => {});
-  return openLeetCode(pending.result, { autoRun: true });
+  opens++;
+  lastOpen = openLeetCode(pending.result, { autoRun: true });
+  return lastOpen;
 }
 
 chrome.runtime.onMessage.addListener((msg, sender) => {
@@ -1674,42 +1519,10 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 function showSourceTab(title, url) {
   sourceUrl = typeof url === "string" ? url : "";
   updateProblemLink();
-  el.sourceTab.textContent = title || url ? `from: ${title || url}` : "";
-  el.sourceTab.title = url ? `Imports come from ${url}` : "Page to import from";
 }
 
 // ---------- wiring ----------
 
-const ALL_EXAMPLES = Object.assign({}, EXAMPLES, SHOWCASE_EXAMPLES, ERROR_EXAMPLES);
-for (const [label, set] of [["Examples", EXAMPLES], ["Diagram showcase", SHOWCASE_EXAMPLES], ["Errors & bugs", ERROR_EXAMPLES]]) {
-  const group = document.createElement("optgroup");
-  group.label = label;
-  for (const name of Object.keys(set)) group.append(new Option(name, name));
-  el.example.append(group);
-}
-for (const name of Object.keys(HELPERS)) el.helper.add(new Option(name, name));
-
-el.example.addEventListener("change", () => {
-  const ex = ALL_EXAMPLES[el.example.value];
-  if (ex) {
-    setLcMode(false);
-    setProgram({ setup: ex.setup, solution: ex.solution, call: ex.call, inputs: ex.inputs || "" });
-    selectTab(ex.inputs ? "stdin" : "call");
-    showMessage("", "info");
-  }
-  el.example.value = "";
-});
-el.helper.addEventListener("change", () => {
-  const h = HELPERS[el.helper.value];
-  if (h) {
-    setProgram({ setup: (el.setup.value.trim() ? el.setup.value.replace(/\s+$/, "") + "\n\n" : "") + h });
-    selectTab("setup");
-    showMessage(`Added ${el.helper.value} to Setup.`, "ok");
-  }
-  el.helper.value = "";
-});
-
-for (const t of tabs) t.addEventListener("click", () => selectTab(t.dataset.tab));
 // arrows are drawn once per step; redraw them when the visualizer panel changes size
 new ResizeObserver(() => { redrawArrows(); maybeRelayout(); applySizes(); }).observe(el.vizBody);
 applySizes();
@@ -1732,7 +1545,7 @@ el.edit.addEventListener("click", () => enterEdit({ focus: true }));
 el.solution.addEventListener("input", updateGutter);
 el.solution.addEventListener("scroll", () => { el.gutter.scrollTop = el.solution.scrollTop; });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!isBusy() && !el.visualize.disabled) visualize(); return; }
+  if (e.key === "Enter" && (e.ctrlKey || e.metaKey) && !e.defaultPrevented) { e.preventDefault(); if (!isBusy()) visualize(); return; }
   // Esc: close the inspector first; otherwise, while watching, back to the code
   if (e.key === "Escape" && inspected) { e.preventDefault(); hideInspector(); return; }
   if (e.key === "Escape" && mode === "watch" && !e.target.closest("select")) { e.preventDefault(); enterEdit({ focus: true }); return; }
@@ -1748,24 +1561,18 @@ document.addEventListener("keydown", (e) => {
   else if (steps[e.key]) { e.preventDefault(); userStep(steps[e.key]); }
 });
 initStepControls();
-if (/Mac/.test(navigator.platform)) for (const b of [el.visualize, el.caseRun]) b.dataset.mac = "1";
-
-for (const ta of [el.setup, el.solution, el.call, el.inputs]) {
-  ta.addEventListener("input", saveDraft);
-  ta.addEventListener("keydown", (e) => {
-    if (e.key === "Tab" && !e.shiftKey && ta !== el.inputs) {      // indent with 4 spaces
-      e.preventDefault();
-      const { selectionStart: s, selectionEnd: t, value } = ta;
-      ta.value = value.slice(0, s) + "    " + value.slice(t);
-      ta.selectionStart = ta.selectionEnd = s + 4;
-      saveDraft();
-    }
-  });
-}
-el.visualize.addEventListener("click", runOrStop);
-el.stop.addEventListener("click", stop);
+el.solution.addEventListener("input", saveCode);
+el.solution.addEventListener("keydown", (e) => {
+  if (e.key === "Tab" && !e.shiftKey) {      // indent with 4 spaces
+    e.preventDefault();
+    const ta = el.solution, { selectionStart: s, selectionEnd: t, value } = ta;
+    ta.value = value.slice(0, s) + "    " + value.slice(t);
+    ta.selectionStart = ta.selectionEnd = s + 4;
+    saveCode();
+    updateGutter();
+  }
+});
 el.reset.addEventListener("click", resetRuntime);
-el.importSelection.addEventListener("click", () => requestImport("selection"));
 window.addEventListener("pagehide", () => { if (iframe) iframe.remove(); clearVisualization(); });
 
 // The problem chip goes back to the LeetCode tab the code and cases came from
@@ -1781,16 +1588,11 @@ el.lcLink.addEventListener("click", async (e) => {
   }
 });
 
-el.modeToggle.addEventListener("click", (e) => {
-  const b = e.target.closest("[data-set-mode]");
-  if (b && (b.dataset.setMode === "lc") !== lcMode) setLcMode(b.dataset.setMode === "lc");
-});
 for (const t of document.querySelectorAll("[data-codeview]")) t.addEventListener("click", () => showCodeView(t.dataset.codeview));
 el.caseRun.addEventListener("click", runOrStop);
 
-const draft = loadDraft();
-setProgram(draft || EXAMPLES["Two Sum"]);
-setLcMode(false);
+el.solution.value = loadCode();
+showProblem();
 if (sourceTabId) chrome.runtime.sendMessage({ type: "describe-tab", tabId: sourceTabId }).then((r) => r && showSourceTab(r.title, r.url)).catch(() => {});
 createSandbox();
 
@@ -1798,25 +1600,20 @@ createSandbox();
 const started = (async () => {
   const last = lc.lastSlug();
   const entry = last ? await loadEntry(last) : null;
-  if (entry && lc.restore(entry)) {
-    let saved = null;
-    try { saved = localStorage.getItem(LC_MODE_KEY); } catch {}
-    setLcMode(saved === "lc");
-  }
+  if (entry && lc.restore(entry)) showProblem();
   return takePending();
 })();
 
 // Test hooks (used by the automated checks through DevTools).
 window.visualleet = {
   whenReady: () => (runtimeInfo && !current ? Promise.resolve(runtimeInfo) : new Promise((r) => waiters.ready.push(r))),
-  setProgram,
-  program,
-  run: (source, inputs) => { setProgram({ setup: "", solution: source, call: "", inputs: inputs ? inputs.join("\n") : "" }); return visualize(); },
+  // run a whole Python program as it is (no problem or test case), shown like any run
+  run: (source) => { if (IDLE.has(status) && runtimeInfo) { lastErrorLine = null; enterWatch(); } return startJob("run", { source, inputs: [] }); },
   visualize,
+  code: () => el.solution.value,
   stop,
   resetRuntime,
   probe: () => startJob("probe"),
-  importFrom: (mode, tabId) => { if (tabId) sourceTabId = tabId; return requestImport(mode); },
   sandboxStats: () => new Promise((r) => { waiters.stats.push(r); toSandbox({ type: "stats" }); }),
   status: () => status,
   message: () => el.message.textContent,
@@ -1825,9 +1622,9 @@ window.visualleet = {
   runtimeInfo: () => runtimeInfo,
   rendered: () => rendered,
   started: () => started,
-  mode: () => (lcMode ? "lc" : "manual"),
   view: () => mode,                          // "edit" | "watch"
-  setMode: (m) => setLcMode(m === "lc"),
+  opens: () => opens,                        // how many clicks on LeetCode this tab has taken
+  lastOpen: () => lastOpen,                  // the result of the latest one
   openLeetCode,
   leetcode: lc,
   verdict: () => { const v = $("case-verdict"); return v.hidden ? null : { kind: v.dataset.kind, text: v.textContent }; },

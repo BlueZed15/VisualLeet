@@ -13,17 +13,20 @@ AMBER, BLUE, CORAL = "#FFB020", "#2F6BFF", "#FF5B4A"
 
 def f(v): return f"{v:.2f}".rstrip("0").rstrip(".")
 
-# ---- marks, in a 64-unit box ----
+# ---- marks, in a 64-unit box: the X1 refined mark, a lens with three colour cells ----
 def mark_full(ink):
     return (f'<circle cx="28" cy="28" r="19" fill="none" stroke="{ink}" stroke-width="6.5"/>'
             f'<path d="M42 42L51 51" stroke="{ink}" stroke-width="7" stroke-linecap="round"/>'
-            f'<path d="M28 21.5L21.5 33M28 21.5L34.5 33" fill="none" stroke="{ink}" stroke-width="2.4" stroke-linecap="round"/>'
-            f'<circle cx="28" cy="21.5" r="4.2" fill="{AMBER}"/><circle cx="21.5" cy="33" r="4.2" fill="{BLUE}"/><circle cx="34.5" cy="33" r="4.2" fill="{CORAL}"/>')
+            f'<rect x="15.4" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{BLUE}"/>'
+            f'<rect x="24.19" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{AMBER}"/>'
+            f'<rect x="32.99" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{CORAL}"/>')
 def mark_small(ink):
     return (f'<circle cx="28" cy="28" r="19" fill="none" stroke="{ink}" stroke-width="8"/>'
             f'<path d="M42 42L51 51" stroke="{ink}" stroke-width="8.5" stroke-linecap="round"/>'
-            f'<circle cx="28" cy="21" r="5.2" fill="{AMBER}"/><circle cx="21" cy="33" r="5.2" fill="{BLUE}"/><circle cx="35" cy="33" r="5.2" fill="{CORAL}"/>')
-CENTER_FULL = (5.75 + 54.5) / 2      # bbox centre of ring + handle
+            f'<rect x="15.4" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{BLUE}"/>'
+            f'<rect x="24.19" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{AMBER}"/>'
+            f'<rect x="32.99" y="22.17" width="7.61" height="11.66" rx="2.68" fill="{CORAL}"/>')
+CENTER_FULL = 30                     # centre of the mark's 4..56 box (as in the X1 refined design)
 CENTER_SMALL = (4 + 55.25) / 2
 
 def placed(markfn, centre, ink, cx, cy, size):
@@ -32,11 +35,10 @@ def placed(markfn, centre, ink, cx, cy, size):
 
 # ---- app icons: dark rounded tile, per-size tuning ----
 # (canvas px, tile inset, corner radius, mark size, small cut?)
-SPECS = {128: (16, 22, 78, False), 48: (2, 10, 35, False), 32: (1, 7.5, 25, True), 16: (0, 3.5, 14.5, True)}
+SPECS = {128: (16, 22, 74 * 64 / 52, False), 48: (2, 10, 35 * 64 / 52, False), 32: (1, 7.5, 25, True), 16: (0, 3.5, 14.5, True)}
 for px, (inset, rx, msize, small) in SPECS.items():
     t = px - 2*inset; c = px / 2
-    hair = (f'<rect x="{f(inset+.5)}" y="{f(inset+.5)}" width="{f(t-1)}" height="{f(t-1)}" rx="{f(rx-.5)}" fill="none" stroke="#FFFFFF" stroke-opacity=".12"/>'
-            if px >= 32 else "")
+    hair = ""     # no light rim: at icon sizes it smears into a grey haze
     body = placed(mark_small if small else mark_full, CENTER_SMALL if small else CENTER_FULL, INK_LIGHT, c, c, msize)
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {px} {px}" width="{px}" height="{px}">'
            f'<rect x="{inset}" y="{inset}" width="{t}" height="{t}" rx="{rx}" fill="{INK_DARK}"/>{hair}{body}</svg>\n')
@@ -84,18 +86,26 @@ print("viewBox", vb)
 # ---- pixel-grid versions for the toolbar sizes (override the scaled ones) ----
 HAND = {
 16: (f'<rect width="16" height="16" rx="3.5" fill="{INK_DARK}"/>'
-     f'<circle cx="7" cy="7" r="4.5" fill="none" stroke="{INK_LIGHT}" stroke-width="1.6"/>'
-     f'<path d="M10.4 10.4L13 13" stroke="{INK_LIGHT}" stroke-width="2" stroke-linecap="round"/>'
-     f'<rect x="6" y="4" width="2" height="2" rx=".5" fill="{AMBER}"/>'
-     f'<rect x="4" y="7" width="2" height="2" rx=".5" fill="{BLUE}"/>'
-     f'<rect x="8" y="7" width="2" height="2" rx=".5" fill="{CORAL}"/>'),
-32: (f'<rect x="1" y="1" width="30" height="30" rx="7.5" fill="{INK_DARK}"/>'
-     f'<rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity=".12"/>'
-     f'<circle cx="15" cy="15" r="8.5" fill="none" stroke="{INK_LIGHT}" stroke-width="3"/>'
-     f'<path d="M21.5 21.5L25.5 25.5" stroke="{INK_LIGHT}" stroke-width="3.5" stroke-linecap="round"/>'
-     f'<rect x="13" y="9" width="4" height="4" rx="1.3" fill="{AMBER}"/>'
-     f'<rect x="10" y="15" width="4" height="4" rx="1.3" fill="{BLUE}"/>'
-     f'<rect x="16" y="15" width="4" height="4" rx="1.3" fill="{CORAL}"/>'),
+     f'<circle cx="7" cy="7" r="4.6" fill="none" stroke="{INK_LIGHT}" stroke-width="1.8"/>'
+     f'<path d="M10.8 10.8L13.2 13.2" stroke="{INK_LIGHT}" stroke-width="2.2" stroke-linecap="round"/>'
+     f'<rect x="4" y="5" width="2" height="4" rx=".7" fill="{BLUE}"/>'
+     f'<rect x="6" y="5" width="2" height="4" fill="{AMBER}"/>'
+     f'<rect x="8" y="5" width="2" height="4" rx=".7" fill="{CORAL}"/>'),
+# 32: the toolbar on 200% screens. 48: the chrome://extensions card, which Chrome
+# shows at 36px and so stretches 1.5x on 200% screens. Both are pixel-aligned:
+# straight edges and both edges of the ring land on whole pixels.
+32: (f'<rect width="32" height="32" rx="7.5" fill="{INK_DARK}"/>'
+     f'<circle cx="15" cy="15" r="10.5" fill="none" stroke="{INK_LIGHT}" stroke-width="3"/>'
+     f'<path d="M24.3 24.3L28 28" stroke="{INK_LIGHT}" stroke-width="3.6" stroke-linecap="round"/>'
+     f'<rect x="7" y="12" width="4" height="6" rx="1.2" fill="{BLUE}"/>'
+     f'<rect x="13" y="12" width="4" height="6" rx="1.2" fill="{AMBER}"/>'
+     f'<rect x="19" y="12" width="4" height="6" rx="1.2" fill="{CORAL}"/>'),
+48: (f'<rect x="2" y="2" width="44" height="44" rx="10" fill="{INK_DARK}"/>'
+     f'<circle cx="22" cy="22" r="12" fill="none" stroke="{INK_LIGHT}" stroke-width="4"/>'
+     f'<path d="M31.6 31.6L38 38" stroke="{INK_LIGHT}" stroke-width="4.6" stroke-linecap="round"/>'
+     f'<rect x="14" y="18" width="4" height="8" rx="1.4" fill="{BLUE}"/>'
+     f'<rect x="20" y="18" width="4" height="8" rx="1.4" fill="{AMBER}"/>'
+     f'<rect x="26" y="18" width="4" height="8" rx="1.4" fill="{CORAL}"/>'),
 }
 for px, body in HAND.items():
     open(os.path.join(out, f"icon-{px}.svg"), "w").write(

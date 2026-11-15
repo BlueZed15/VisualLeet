@@ -7,7 +7,7 @@
 
 /* legacy chrome the extension replaces (step meter, input() tab, its own help text) */
 #viz #editCodeLinkDiv, #viz #rawUserInputDiv, #viz #printOutputDocs, #viz #uiControlsPane, #viz #legendDiv,
-#viz #codeFooterDocs, #viz #curInstr, #viz #executionSliderCaption, #viz .ui-resizable-handle,
+#viz #codeFooterDocs, #viz #curInstr,
 /* step controls live in the panel header now (the buttons stay in the DOM, hidden) */
 #viz #vcrControls, #viz #executionSlider, #viz #executionSliderFooter { display: none !important; }
 
@@ -19,7 +19,7 @@
    the arrow layer inside it stays attached. */
 #viz table.visualizer { width: 100%; border-spacing: 0; }
 #viz td.vizLayoutTd { vertical-align: top; padding: 0; }
-#viz div#codeDisplayDiv, #viz #pyCodeOutputDiv, #viz #progOutputs .ui-wrapper { width: 100% !important; }
+#viz div#codeDisplayDiv, #viz #pyCodeOutputDiv { width: 100% !important; }
 #viz div#dataViz { width: 100%; }
 #viz.vlNoRun div#dataViz, #viz.vlNoRun #progOutputs { display: none !important; }   /* syntax error: nothing ran */
 #viz #codAndNav { width: 100% !important; }
@@ -29,7 +29,7 @@
 /* only the layout table's own row (child selectors: the code table's rows must stay rows) */
 #viz.vlWide table.visualizer > tbody, #viz.vlWide table.visualizer > tbody > tr, #viz.vlWide table.visualizer > tr { display: contents; }
 #viz.vlWide td#vizLayoutTdFirst { display: flex; flex-direction: column; gap: 12px; flex: none; width: var(--code-w, 460px); min-height: 0; overflow: hidden; }
-body.mode-lc #viz.vlWide td#vizLayoutTdFirst { width: var(--left-w, var(--code-w, 460px)); }
+#viz.vlWide td#vizLayoutTdFirst { width: var(--left-w, var(--code-w, 460px)); }
 #viz.vlStacked td#vizLayoutTdFirst { display: flex; flex-direction: column; gap: 12px; }
 #viz.vlStacked td#vizLayoutTdFirst .code-card { height: 340px; flex: none; }
 #viz td#vizLayoutTdSecond { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: auto;
@@ -89,7 +89,6 @@ body.mode-lc #viz.vlWide td#vizLayoutTdFirst { width: var(--left-w, var(--code-w
 #viz #progOutputs { flex: none; margin: 0; padding: 8px 12px 12px; border-top: 1px solid var(--ls-border); }
 #viz #progOutputs.vlEmpty { display: none !important; }   /* the renderer sets an inline display:block on each step */
 #viz #progOutputs::before { content: "Output"; display: block; margin: 0 0 6px 4px; color: var(--ls-text-dim); font-size: 12px; font-weight: 500; }
-#viz #progOutputs .ui-wrapper { height: auto !important; padding: 0 !important; }
 #viz #pyStdout { box-sizing: content-box; width: calc(100% - 24px) !important; min-height: 20px; max-height: 140px; padding: 6px 11px; resize: none;
   background: var(--ls-input); color: var(--ls-text); border: 1px solid var(--ls-border-input); border-radius: var(--ls-radius-control);
   font: 12.5px/20px var(--ls-font-code); overflow: auto; }

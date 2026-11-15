@@ -1,4 +1,4 @@
-// Acceptance checks for the VisualLeet extension (spec section 15).
+// Acceptance checks for the LeetScope extension.
 // Loads dist/extension-test into the installed Chrome (fresh temp profile,
 // headless by default) and drives the real UI through its test hooks.
 //
@@ -17,6 +17,7 @@ import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { PROGRAMS } from "./lib/programs.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const arg = (name, def) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : def; };
@@ -96,13 +97,8 @@ ${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\
 }
 
 const PAGES = {
-  "/selection.html": `<!doctype html><html><head><title>Selection fixture</title></head><body>
-<p>Some article text.</p>
-<pre id="code">def add(a, b):
-    return a + b
-
-print(add(2, 3))</pre></body></html>`,
-  "/problems/no-editor/": "<!doctype html><title>Loading - LeetCode</title><p>loading…</p>",
+  // a problem page that hasn't loaded its data or editor yet (the top bar is there)
+  "/problems/no-editor/": "<!doctype html><title>Loading - LeetCode</title><div id=\"ide-top-btns\"></div><p>loading…</p>",
 };
 
 // /problems/<slug>/?case=<i>&custom=<json lines>&lang=<id>
@@ -160,7 +156,7 @@ const browser = await puppeteer.launch({
 try {
   results.environment = { chrome: await browser.version(), headless: !headed, platform: `${os.type()} ${os.release()}`, cpu: os.cpus()[0].model, date: new Date().toISOString() };
   const id = await browser.installExtension(path.join(root, "dist", "extension-test"));
-  const page = await browser.newPage();
+  let page = await browser.newPage();
   const dialogs = [];
   page.on("dialog", async (d) => { dialogs.push(d.message()); await d.dismiss(); });
   page.on("pageerror", (e) => console.log("[pageerror]", e.message));
@@ -174,10 +170,10 @@ try {
   results.environment.pyodide = info.pyodide;
   check("runtime", "Packaged Python starts", !!info.python, { python: info.python, ms: results.timings.coldStartMs, wasmCompiledOnceMs: info.timings.wasmCompiledOnceMs });
 
-  const ev = (fn, ...a) => page.evaluate(fn, ...a);
-  const runParts = (parts) => ev(async (p) => { await visualleet.whenReady(); visualleet.setProgram(p); const r = await visualleet.visualize(); r.trace = visualleet.lastTrace(); return r; }, parts);
-  const run = (src, inputs) => runParts({ setup: "", solution: src, call: "", inputs: inputs ? inputs.join("\n") : "" });
-  const example = (name) => ev(async (n) => { await visualleet.whenReady(); const sel = document.getElementById("example"); sel.value = n; sel.dispatchEvent(new Event("change")); const r = await visualleet.visualize(); r.trace = visualleet.lastTrace(); return r; }, name);
+  const ev = (fn, ...a) => page.evaluate(fn, ...a);     // always the current LeetScope tab
+  // run a whole Python program (visualleet.run): the tracer and renderer checks
+  const run = (src) => ev(async (s) => { await visualleet.whenReady(); const r = await visualleet.run(s); r.trace = visualleet.lastTrace(); return r; }, src);
+  const example = (name) => run(PROGRAMS[name]);
 
   // ---------- correctness fixtures ----------
   {
@@ -271,22 +267,16 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     check("fixtures", "Run A then run B: no globals, module or output carried over", b.stdout === "False False\n" && b.metrics.interpreterRun === 1, { stdout: b.stdout, interpreterRun: b.metrics.interpreterRun });
   }
   {
-    const ok = await runParts({ setup: "", solution: 'name = input("name? ")\nprint("hi", name)', call: "", inputs: "Ada" });
-    const missing = await runParts({ setup: "", solution: 'a = input("first? ")\nb = input("second? ")\nprint(a, b)', call: "", inputs: "1" });
-    check("fixtures", "input(): supplied lines are used; running out says so", ok.stdout === "name? Ada\nhi Ada\n" && missing.status === "needs input", { ok: ok.stdout, missing: missing.status });
-  }
-  {
-    const r = await runParts({ setup: "from typing import List", solution: "class Solution:\n    def f(self, x: int) -> int:\n        return x", call: "" });
+    const r = await run('name = input("name? ")\nprint("hi", name)\n');
     const msg = await ev(() => visualleet.message());
-    check("fixtures", "Definitions without a call prompt for a test call (not run)", r.status === "rejected" && /Add a test call/.test(msg), { msg });
+    check("fixtures", "input(): reported, since LeetCode problems don't read input", r.status === "needs input" && /input\(\)/.test(msg), { status: r.status, msg });
   }
   {
     const shown = await ev(() => document.querySelector("#viz #pyCodeOutput") ? [...document.querySelectorAll("#viz #pyCodeOutput td.cod")].map((t) => t.textContent).join("\n") : "");
-    const r = await example("Two Sum");
+    await example("Two Sum");
     const code = await ev(() => [...document.querySelectorAll("#viz #pyCodeOutput td.cod")].map((t) => t.textContent.replace(/\u00a0/g, " ")).join("\n"));
-    const prog = await ev(() => visualleet.program());
-    const expected = [prog.setup, prog.solution, prog.call].map((s) => s.trimEnd()).filter(Boolean).join("\n\n");
-    check("fixtures", "Visualizer shows the exact combined program (setup + solution + call)", code.trimEnd() === expected, { lines: code.split("\n").length, firstLine: code.split("\n")[0], unused: !!shown });
+    const expected = PROGRAMS["Two Sum"].trimEnd();
+    check("fixtures", "Visualizer shows the exact program that ran", code.trimEnd() === expected, { lines: code.split("\n").length, firstLine: code.split("\n")[0], unused: !!shown });
   }
 
   // ---------- rendering & safety ----------
@@ -329,8 +319,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     await ev(() => new Promise((r) => { const t = setInterval(() => { if (visualleet.runtimeInfo() && visualleet.runtimeInfo().spareReady) { clearInterval(t); r(); } }, 50); }));
     const s = await ev(async () => {
       await visualleet.whenReady();
-      visualleet.setProgram({ setup: "", solution: "total = sum(range(10**12))", call: "", inputs: "" });
-      const p = visualleet.visualize();
+      const p = visualleet.run("total = sum(range(10**12))");
       await new Promise((r) => setTimeout(r, 500));
       const t = performance.now();
       visualleet.stop();
@@ -346,13 +335,11 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     results.timings.readyAfterStopMs = Math.round(s.readyMs);
     const stale = await ev(async () => {
       await visualleet.whenReady();
-      visualleet.setProgram({ setup: "", solution: "x = sum(range(3 * 10**6))\nprint('first')", call: "", inputs: "" });
-      const p1 = visualleet.visualize();
+      const p1 = visualleet.run("x = sum(range(3 * 10**6))\nprint('first')");
       visualleet.stop();
       const r1 = await p1;
       await visualleet.whenReady();
-      visualleet.setProgram({ setup: "", solution: "print('second')", call: "", inputs: "" });
-      const r2 = await visualleet.visualize();
+      const r2 = await visualleet.run("print('second')");
       await new Promise((r) => setTimeout(r, 1500));     // give a stale result time to (not) show up
       const out = visualleet.lastTrace().trace.slice(-1)[0].stdout;
       return { r1: r1.status, r2: r2.status, shownStdout: out };
@@ -396,47 +383,36 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
       { burstRunsOnOneInterpreter: burst.activeRuns, swappedAfterMs: Math.round(waited), nextRunInterpreterRun: nextRun.metrics.interpreterRun, spareInitErrors: burst.spareInitErrors || 0 });
   }
 
-  // ---------- imports ----------
-  const tabIdFor = (url) => ev(async (u) => (await chrome.tabs.query({ url: u }))[0]?.id, url);
-  {
-    const src = await browser.newPage();
-    await src.goto(`http://127.0.0.1:${port}/selection.html`);
-    await src.evaluate(() => { const r = document.createRange(); r.selectNodeContents(document.getElementById("code")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
-    const tabId = await tabIdFor(`http://127.0.0.1:${port}/selection.html`);
-    await page.bringToFront();
-    const res = await ev((t) => visualleet.importFrom("selection", t), tabId);
-    const prog = await ev(() => visualleet.program());
-    check("imports", "Selected text imports with line breaks intact", res.ok && prog.solution === "def add(a, b):\n    return a + b\n\nprint(add(2, 3))", { solution: prog.solution });
-    const r = await ev(async () => { const x = await visualleet.visualize(); return x; });
-    check("imports", "Imported selection runs", r.stdout === "5\n", { stdout: r.stdout });
-
-    await src.evaluate(() => getSelection().removeAllRanges());
-    await ev(() => visualleet.setProgram({ setup: "S", solution: "KEEP ME", call: "C" }));
-    const empty = await ev((t) => visualleet.importFrom("selection", t), tabId);
-    const kept = await ev(() => visualleet.program());
-    check("imports", "Empty selection: helpful message, edits kept", !empty.ok && /Nothing is selected/.test(empty.error) && kept.solution === "KEEP ME" && kept.setup === "S", { error: empty.error });
-    await src.close();
-  }
+  // ---------- LeetCode: the Visualize button on a (fixture) problem page ----------
   {
     const lc = await browser.newPage();
+    // click LeetScope's Visualize button on the page, then wait for the LeetScope tab to take it
     const open = async (pathAndQuery) => {
+      await lc.bringToFront();
       await lc.goto("https://leetcode.com" + pathAndQuery);
+      await lc.waitForSelector("#ide-top-btns #visualleet-top-button", { timeout: 5000 });
+      const before = await ev(() => visualleet.opens());
+      await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
+      const r = await ev(async (n) => {
+        for (let i = 0; i < 200 && visualleet.opens() === n; i++) await new Promise((x) => setTimeout(x, 50));
+        return visualleet.opens() === n ? { status: "not opened" } : await visualleet.lastOpen();
+      }, before);
       await page.bringToFront();
-      return ev((t) => visualleet.importFrom("leetcode", t), await tabIdFor("https://leetcode.com/*"));
+      return r;
     };
     const state = () => ev(() => ({
-      mode: visualleet.mode(), status: visualleet.status(), message: visualleet.message(), verdict: visualleet.verdict(),
+      status: visualleet.status(), message: visualleet.message(), verdict: visualleet.verdict(),
       problem: visualleet.leetcode.problem && visualleet.leetcode.problem.slug, title: document.getElementById("lc-title").textContent,
-      selected: visualleet.leetcode.currentCase() && visualleet.leetcode.currentCase().label, solution: visualleet.program().solution,
-      badge: document.getElementById("lc-badge").textContent,
+      selected: visualleet.leetcode.currentCase() && visualleet.leetcode.currentCase().label, solution: visualleet.code(),
+      checked: !!(visualleet.leetcode.entry && (visualleet.leetcode.entry.verified || visualleet.leetcode.entry.checked)),
     }));
     const globalsSeen = (trace) => [...new Set(trace.trace.flatMap((s) => Object.keys(s.globals || {})))];
 
     // one click: code + the case selected in LeetCode's Testcase panel, visualized at once
     const r1 = await open("/problems/two-sum/?case=1");
     const s1 = await state();
-    check("leetcode", "One click: the selected LeetCode case runs at once, in LeetCode mode", s1.mode === "lc" && r1.status === "complete" && s1.selected === "Example 2" && /\[1,2\]\n$/.test(r1.stdout), { status: r1.status, selected: s1.selected, stdout: r1.stdout });
-    check("leetcode", "Problem found by its name (stale __NEXT_DATA__ ignored), checked database entry", s1.problem === "two-sum" && s1.title === "1. Two Sum" && /checked/.test(s1.badge), { title: s1.title, badge: s1.badge });
+    check("leetcode", "One click on Visualize: the selected LeetCode case runs at once", r1.status === "complete" && s1.selected === "Example 2" && /\[1,2\]\n$/.test(r1.stdout), { status: r1.status, selected: s1.selected, stdout: r1.stdout });
+    check("leetcode", "Problem found by its name (stale __NEXT_DATA__ ignored), checked database entry", s1.problem === "two-sum" && s1.title === "1. Two Sum" && s1.checked, { title: s1.title, checked: s1.checked });
     check("leetcode", "Whole editor model read, including lines out of view", s1.solution === LONG_SOLUTION, { lines: s1.solution.split("\n").length });
     check("leetcode", "Example case: output compared with the expected output (✓)", s1.verdict && s1.verdict.kind === "match", s1.verdict);
     const t1 = await ev(() => visualleet.lastTrace());
@@ -475,29 +451,41 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const s4 = await state();
     check("leetcode", "Design problem (LRU Cache): operations run on the user's class, output ✓", /\[null,null,null,1,null,-1,null,-1,3,4\]\n$/.test(r4.stdout) && s4.verdict && s4.verdict.kind === "match", { stdout: r4.stdout, verdict: s4.verdict });
 
-    // the editor isn't set to Python: explained, nothing run, code kept
-    const before = (await state()).solution;
-    const cpp = await open("/problems/two-sum/?lang=cpp");
-    const s5 = await state();
-    check("leetcode", "Non-Python editor: explained, nothing run, code here kept", cpp.ok && cpp.ran === false && /Python3/.test(s5.message) && s5.solution === before, { message: s5.message.slice(0, 160) });
+    // problems found at click time are shown on the LeetCode page, next to the button
+    const toastFor = async (pathAndQuery) => {
+      await lc.bringToFront();
+      await lc.goto("https://leetcode.com" + pathAndQuery);
+      await lc.waitForSelector("#visualleet-top-button", { timeout: 5000 });
+      await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
+      return lc.waitForSelector("#leetscope-toast", { timeout: 5000 }).then(() => lc.evaluate(() => ({
+        text: document.querySelector("#leetscope-toast").textContent, action: !!document.querySelector("#leetscope-toast button + button, #leetscope-toast > button"),
+      })), () => null);
+    };
+    // the editor isn't set to Python: explained on LeetCode, nothing run, the code in LeetScope kept
+    const before = await ev(() => ({ code: visualleet.code(), opens: visualleet.opens() }));
+    const tc2 = await toastFor("/problems/two-sum/?lang=cpp");
+    const after = await ev(() => ({ code: visualleet.code(), opens: visualleet.opens() }));
+    check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened, its code kept", !!tc2 && /Python3/.test(tc2.text) && after.code === before.code && after.opens === before.opens, tc2);
+    const nd = await toastFor("/problems/not-in-the-database/");
+    check("leetcode", "Problem not in the database: explained on LeetCode itself", !!nd && /isn't supported by LeetScope/.test(nd.text), nd);
+    const none = await toastFor("/problems/no-editor/");
+    check("leetcode", "LeetCode page without data or editor: explained on LeetCode itself", !!none && /couldn't read|isn't supported|reload/i.test(none.text), none);
 
-    // not in VisualLeet's database: paste mode with a drafted call, explained
-    const nd = await open("/problems/not-in-the-database/");
-    const s6 = await state();
-    check("leetcode", "Problem not in the database: paste mode, code imported, explained", !nd.ok && nd.reason === "not-in-db" && s6.mode === "manual" && /isn't supported by LeetScope/.test(s6.message) && /def f/.test(s6.solution), { mode: s6.mode, message: s6.message.slice(0, 120) });
-
-    const none = await open("/problems/no-editor/");
-    const s7 = await state();
-    check("leetcode", "LeetCode page without data or editor: explained, nothing run", !none.ok && /couldn't read the code editor|isn't supported/.test(s7.message), { message: s7.message.slice(0, 160) });
-
-    // cases are kept per problem; the icon click's hand-off reaches a freshly opened tab
+    // cases are kept per problem; with LeetScope closed, a click opens a new tab that takes the case once
     await open("/problems/two-sum/?case=0");
     await ev(() => { visualleet.leetcode.addCase(); const box = document.querySelector("#case-fields textarea"); box.value = "[4,4]"; box.dispatchEvent(new Event("input")); });
-    const readBack = await ev((t) => chrome.runtime.sendMessage({ type: "import", mode: "leetcode", tabId: t }), await tabIdFor("https://leetcode.com/*"));
-    await ev((r) => chrome.storage.session.set({ pending: { id: "test", at: Date.now(), tabId: 0, url: "", result: r } }), readBack);
-    await page.reload();
+    await page.close();
+    await lc.bringToFront();
+    await lc.goto("https://leetcode.com/problems/two-sum/?case=0");
+    await lc.waitForSelector("#visualleet-top-button", { timeout: 5000 });
+    const opened = browser.waitForTarget((t) => t.url().startsWith(ui), { timeout: 15000 });
+    await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
+    page = await (await opened).page();
+    page.on("dialog", async (d) => { dialogs.push(d.message()); await d.dismiss(); });
+    page.on("pageerror", (e) => console.log("[pageerror]", e.message));
+    await page.waitForFunction(() => window.visualleet && visualleet.started, { timeout: 15000 });
     const handoff = await ev(async () => { const r = await visualleet.started(); return { r, cases: visualleet.leetcode.problem.cases.map((c) => [c.label, c.source]), left: (await chrome.storage.session.get("pending")).pending || null }; });
-    check("leetcode", "Icon click hand-off: a new VisualLeet tab takes the case once and visualizes it", handoff.r && handoff.r.status === "complete" && /\[0,1\]\n$/.test(handoff.r.stdout) && handoff.left === null, { status: handoff.r && handoff.r.status, left: handoff.left });
+    check("leetcode", "LeetScope closed: a click opens a new tab that takes the case once and visualizes it", handoff.r && handoff.r.status === "complete" && /\[0,1\]\n$/.test(handoff.r.stdout) && handoff.left === null, { status: handoff.r && handoff.r.status, left: handoff.left });
     check("leetcode", "The user's own cases are kept per problem across reloads", handoff.cases.some(([label, source]) => source === "yours"), { cases: handoff.cases });
 
     // after a Run, LeetCode shows "Test Result" and the Testcase panel isn't rendered
@@ -505,7 +493,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const s8 = await state();
     check("leetcode", "Selected case read while LeetCode's Testcase panel is hidden (Test Result shown)", r8.status === "complete" && s8.selected === "Example 2", { status: r8.status, selected: s8.selected, message: s8.message.slice(0, 100) });
 
-    // the Visualize button in LeetCode's top bar updates the open VisualLeet tab in place
+    // the Visualize button in LeetCode's top bar updates the open LeetScope tab in place
     await ev(() => { window.__notReloaded = true; });
     await lc.bringToFront();
     await lc.goto("https://leetcode.com/problems/two-sum/?case=2");
@@ -522,37 +510,13 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     });
     const tabsAfter = (await browser.pages()).length;
     check("leetcode", "LeetCode top bar has a Visualize button", !!button);
-    check("leetcode", "Top-bar button: the open VisualLeet tab is updated in place (no new tab, no reload)",
+    check("leetcode", "Top-bar button: the open LeetScope tab is updated in place (no new tab, no reload)",
       viaButton.selected === "Example 3" && viaButton.status === "complete" && viaButton.sameTab && tabsAfter === tabsBefore && viaButton.verdict && viaButton.verdict.kind === "match",
       Object.assign({ tabsBefore, tabsAfter }, viaButton));
-    // problems found at click time are shown on the LeetCode page, next to the button
-    const toastFor = async (pathAndQuery) => {
-      await lc.bringToFront();
-      await lc.goto("https://leetcode.com" + pathAndQuery);
-      await lc.waitForSelector("#visualleet-top-button", { timeout: 5000 });
-      await lc.evaluate(() => document.getElementById("visualleet-top-button").click());
-      return lc.waitForSelector("#leetscope-toast", { timeout: 5000 }).then(() => lc.evaluate(() => ({
-        text: document.querySelector("#leetscope-toast").textContent, action: !!document.querySelector("#leetscope-toast button + button, #leetscope-toast > button"),
-      })), () => null);
-    };
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
     check("leetcode", "Testcase tab not open: explained on LeetCode itself, no extra options", !!tc1 && /Testcase tab, and that tab isn't open/.test(tc1.text) && !tc1.action, tc1);
-    const tc2 = await toastFor("/problems/two-sum/?lang=cpp");
-    check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened", !!tc2 && /Python3/.test(tc2.text), tc2);
     await page.bringToFront();
-    await ev(() => visualleet.setMode("manual"));
     await lc.close();
-  }
-  {
-    const prot = await browser.newPage();
-    await prot.goto("chrome://version");
-    const tabId = await ev(async () => (await chrome.tabs.query({})).find((t) => !t.url)?.id);
-    await page.bringToFront();
-    await ev(() => visualleet.setProgram({ setup: "", solution: "STILL HERE", call: "" }));
-    const res = await ev((t) => visualleet.importFrom("selection", t), tabId);
-    const kept = await ev(() => visualleet.program().solution);
-    check("imports", "Protected chrome:// page: graceful refusal, edits kept", !res.ok && /can't read (that|this) page|protect/i.test(res.error) && kept === "STILL HERE", { error: res.error });
-    await prot.close();
   }
 
   // ---------- offline ----------
@@ -592,7 +556,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
   await page.close();
   await new Promise((r) => setTimeout(r, 1000));
   const workersAfter = browser.targets().filter((t) => t.type() === "worker").length;
-  check("lifecycle", "Closing the VisualLeet tab disposes its Python workers", workersAfter === 0, { workersBefore, workersAfter });
+  check("lifecycle", "Closing the LeetScope tab disposes its Python workers", workersAfter === 0, { workersBefore, workersAfter });
 
   await mkdir(outDir, { recursive: true });
 } finally {

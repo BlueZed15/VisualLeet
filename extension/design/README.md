@@ -1,32 +1,20 @@
-# VisualLeet design (dark v0.1)
+# LeetScope design files
 
-Design dashboard for the VisualLeet extension UI: dark first, IDE-like,
-LeetCode's design language with a little flair. Prototype only; nothing here
-is loaded by the extension.
+Reference material for the extension's look. None of it ships; the built
+extension uses `src/ui/` and `src/icons/`.
 
-Open it: `node extension/scripts/serve-bench.mjs`, then
-http://127.0.0.1:8765/design/index.html. The switcher (bottom right) shows
-every state; `?state=limit` etc. opens one directly.
-
-| File | What |
+| Folder | What it is |
 | --- | --- |
-| `index.html` | Dashboard: live workspace mock, tokens, components, states |
-| `tokens.css` | Colors, type, radii, spacing (the part to port first) |
-| `dashboard.css` | Components (buttons, status pill, tabs, editor, messages, placeholders, step meter) and the workspace layout |
-| `renderer-dark.css` | CSS-only dark restyle of the Python Tutor renderer (no renderer source changes) |
-| `_shared/` | Copied renderer bundle, sample traces, fake runtime (`proto.js`), screenshot script |
-| `screenshots/` | `workspace-<state>.png`, `dashboard-full.png` (`node extension/design/_shared/shoot.mjs <states>`) |
+| `handover/` | The "Signature" redesign: workspace, LeetCode button, glow, message card. `handover/README.md` has every value; `tokens.css` and `leetcode-button.css` are what `src/` uses. |
+| `brand/` | The current logo, the X1 refined mark (a lens with blue, amber and coral cells): app icons at 16, 32, 48 and 128 px, and the mark on a light background. These replace the tree mark in the handover's brand section. |
+| `logo/` | `make_logo.py`, which generates the lockup ("Leet" in Spline Sans Mono plus the dot-grid "Scope") and the icon SVGs. Needs the Spline Sans Mono 600 TTF. |
 
-## Direction
+The small icons are drawn per size rather than scaled from the 128 px one:
+16 px is hand-tuned, and 32 px (the toolbar on 200% screens) and 48 px (the
+`chrome://extensions` card, which Chrome shows at 36 px) put every straight
+edge and both edges of the ring on whole pixels. None of the icons have the
+light rim; at these sizes it blurs into a grey haze.
 
-- **Layout** (LeetCode's): 44px top bar (logo, import actions, source-page chip later, status pill right) · left column = Solution editor panel (example picker in its tab bar) over a "testcase" panel with tabs Test call / Setup / input() and an Add-helper picker · action bar (green Visualize with Ctrl+Enter hint, red-outline Stop, ghost Reset, Diagnostics toggle) · right = Visualizer panel with a step meter in its tab bar.
-- **Visualizer** uses `verticalStack: true, codeDivHeight: 250` so code sits above frames/objects in the side panel.
-- **Flair**: glowing orange `</>` logo mark, orange→gold step-meter bar, pulsing dot in busy status pills, orange current-line arrow.
-- **States**: placeholders replace the visualizer (empty, starting, running, timed out, stopped, syntax error); banners sit above a trace that is still shown (limit reached); import results are messages at the top of the visualizer panel.
-
-## Porting notes for `extension/src/ui/`
-
-- Link `tokens.css`, the component rules from `dashboard.css`, and `renderer-dark.css` (all CSP-safe: no inline script, no remote fonts).
-- Pass `{ verticalStack: true, codeDivHeight: 250 }` to `renderTrace`.
-- **Redraw arrows after anything changes height above the trace** (banner, message, panel resize): `viz.redrawConnectors()` on the next frame. Arrows are drawn once per step, so they drift otherwise.
-- Arrow colors are overridden by matching the arrow layer's stroke/fill attribute values (`#005583`, `#cccccc`); keep those in sync if `arrow-layer.ts` defaults change.
+To refresh the icons in the extension, render the `brand/icon-*.svg` files to
+PNG at 1x and copy them to `src/icons/` (`icon.svg`, the page favicon, is the
+32 px design).

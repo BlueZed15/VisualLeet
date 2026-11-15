@@ -2,7 +2,7 @@
 // (src/ui/harness.js) and writing them at build time (scripts/lib/entry-writer.mjs).
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseValue, checkValue, toPython, compareOutputs, LeetNum } from "../src/ui/leet.js";
+import { parseValue, checkValue, toPython, compareOutputs, LeetNum, describeLanguage } from "../src/ui/leet.js";
 import { fill, splitCases, resultLine } from "../src/ui/harness.js";
 import { entryFromMeta, safeName } from "../scripts/lib/entry-writer.mjs";
 
@@ -113,4 +113,13 @@ test("compares outputs like LeetCode", () => {
   assert.equal(compareOutputs("[[1,2],[1,2]]", "[[1,2],[2,1]]", { anyOrder: true }), "mismatch");
   assert.equal(compareOutputs("[[2,1],[1,2]]", "[[1,2],[2,1]]", { anyOrder: true }), "match");
   assert.ok(new LeetNum("5").isInteger);
+});
+
+test("non-Python editors are refused with an explanation; Python 2 runs with a note", () => {
+  assert.equal(describeLanguage("python3").ok, true);
+  assert.equal(describeLanguage("python3").note, "");
+  assert.equal(describeLanguage("python").ok, true);
+  assert.match(describeLanguage("python").note, /Python 2/);
+  assert.equal(describeLanguage("cpp").ok, false);
+  assert.match(describeLanguage("cpp").note, /LeetScope runs Python 3/);
 });

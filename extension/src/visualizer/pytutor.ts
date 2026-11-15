@@ -39,10 +39,10 @@
 require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/d3.v2.min.js');
 require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery-3.0.0.min.js');
 // VisualLeet: jsPlumb 1.3.10 replaced by ./arrow-layer (one SVG, batched layout reads).
-require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery-ui-1.11.4/jquery-ui.js');
-require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery-ui-1.11.4/jquery-ui.css');
-require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery.ba-bbq.js'); // contains slight pgbovine modifications
-require('../../../OnlinePythonTutor-Backup/v5-unity/js/lib/jquery.ba-dotimeout.min.js'); // for $.doTimeout
+// VisualLeet: jQuery UI (slider, resizable, draggable), BBQ and doTimeout removed.
+// LeetScope draws its own timeline and handles dragging and panning itself, so
+// the slider, the code pane's resize handle, the output box's resize grip and the
+// "Customize visualization" drag mode they powered are not used.
 require('../../../OnlinePythonTutor-Backup/v5-unity/css/pytutor');
 
 import {ArrowLayer} from './arrow-layer';
@@ -675,17 +675,6 @@ export class ExecutionVisualizer {
       this.domRoot.find('#pyCodeOutputDiv')
         .css('max-height', this.params.codeDivHeight + 'px');
     }
-
-    // enable left-right draggable pane resizer (originally from David Pritchard)
-    base.resizable({
-      handles: "e", // "east" (i.e., right)
-      minWidth: 100, //otherwise looks really goofy
-      resize: (event, ui) => {
-        this.domRoot.find("#codeDisplayDiv").css("height", "auto"); // redetermine height if necessary
-        this.navControls.renderSliderBreakpoints(this.sortedBreakpointsList); // update breakpoint display accordingly on resize
-        if (this.params.updateOutputCallback) // report size change
-          this.params.updateOutputCallback(this);
-      }});
 
     this.outputBox = new ProgramOutputBox(this, this.domRoot.find('#vizLayoutTdSecond'),
                                           this.params.embeddedMode ? '45px' : null);
@@ -3132,37 +3121,6 @@ class DataVisualizer {
       }
 
 
-      // 2020-02-06: only make draggable() if customizeVizOptionsShown
-      // (i.e., when the user has clicked "Customize visualization" so that
-      // they purposely want to customize ... we do this to be conservative
-      // so as not to rock the boat because i haven't tested draggable()
-      // widely yet)
-      if (myViz.owner.navControls.customizeVizOptionsShown) {
-        $(e).css('cursor', 'pointer') // make the cursor a hand when you hover over it
-          .draggable({
-            drag: () => {
-              // debounce to prevent excessive repaints, which can get super-slow
-              $.doTimeout('heapObjectDrag', 10, () => { // pass in milliseconds
-                console.log('drag'); // to make sure we're not adding too many callbacks
-                myViz.redrawConnectors(); // redraw all arrows whenever you drag!
-              });
-            },
-
-            start: () => {
-            },
-
-            stop: () => {
-              myViz.redrawConnectors(); // redraw all arrows when you drag stops
-
-              // unset width and height fields since those don't seem
-              // relevant and we don't want to save them in draggedCSS
-              $(e).css('width', '').css('height', '');
-
-              // save your current CSS, which has your custom position
-              $(e).data('draggedCSS', $(e).attr('style'));
-            },
-          });
-      }
     });
 
 
@@ -3998,8 +3956,7 @@ class ProgramOutputBox {
     }
     // do this only after adding outputsHTML to the DOM
     this.domRoot.find('#pyStdout').width('350px')
-                                  .height(stdoutHeight)
-                                  .resizable();
+                                  .height(stdoutHeight);
   }
 
   renderOutput(stdoutStr: string) {
@@ -4632,10 +4589,8 @@ class NavigationController {
     this.domRoot.find('#rawUserInputDiv').show();
   }
 
-  setSliderVal(v: number) {
-    // PROGRAMMATICALLY change the value, so evt.originalEvent should be undefined
-    this.domRoot.find('#executionSlider').slider('value', v);
-  }
+  // VisualLeet: no jQuery UI slider (LeetScope has its own timeline)
+  setSliderVal(v: number) {}
 
   setVcrControls(msg: string, isFirstInstr: boolean, isLastInstr: boolean) {
     var vcrControls = this.domRoot.find("#vcrControls");
@@ -4655,61 +4610,10 @@ class NavigationController {
     }
   }
 
-  setupSlider(maxSliderVal: number) {
-    assert(maxSliderVal >= 0);
-    var sliderDiv = this.domRoot.find('#executionSlider');
-    sliderDiv.slider({min: 0, max: maxSliderVal, step: 1});
-    // disable keyboard actions on the slider itself (to prevent double-firing
-    // of events), and make skinnier and taller
-    sliderDiv
-      .find(".ui-slider-handle")
-      .unbind('keydown')
-      .css('width', '0.8em')
-      .css('height', '1.4em');
+  // VisualLeet: no jQuery UI slider or breakpoint overlay (LeetScope has its own timeline)
+  setupSlider(maxSliderVal: number) {}
 
-    this.domRoot.find(".ui-widget-content").css('font-size', '0.9em');
-    this.domRoot.find('#executionSlider').bind('slide', (evt, ui) => {
-      // this is SUPER subtle. if this value was changed programmatically,
-      // then evt.originalEvent will be undefined. however, if this value
-      // was changed by a user-initiated event, then this code should be
-      // executed ...
-      if (evt.originalEvent) {
-        this.owner.renderStep(ui.value);
-      }
-    });
-  }
-
-  renderSliderBreakpoints(sortedBreakpointsList) {
-    this.domRoot.find("#executionSliderFooter").empty();
-    var w = this.domRoot.find('#executionSlider').width();
-
-    // I originally didn't want to delete and re-create this overlay every time,
-    // but if I don't do so, there are weird flickering artifacts with clearing
-    // the SVG container; so it's best to just delete and re-create the container each time
-    var sliderOverlay = this.domRootD3.select('#executionSliderFooter')
-      .append('svg')
-      .attr('id', 'sliderOverlay')
-      .attr('width', w)
-      .attr('height', 12);
-
-    var xrange = d3.scale.linear()
-      .domain([0, this.nSteps - 1])
-      .range([0, w]);
-
-    sliderOverlay.selectAll('rect')
-      .data(sortedBreakpointsList)
-      .enter().append('rect')
-      .attr('x', function(d, i) {
-        // make edge case of 0 look decent:
-        return (d === 0) ? 0 : xrange(d) - 1;
-      })
-      .attr('y', 0)
-      .attr('width', 2)
-      .attr('height', 12)
-      .style('fill', function(d) {
-         return breakpointColor;
-      });
-  }
+  renderSliderBreakpoints(sortedBreakpointsList) {}
 
   showError(msg: string) {
     if (msg) {

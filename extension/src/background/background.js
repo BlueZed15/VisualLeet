@@ -1,11 +1,9 @@
-// MV3 service worker (module). Never runs Python. Responsibilities:
-//  - toolbar click / Alt+V / the "Visualize" button VisualLeet adds to
-//    LeetCode's top bar, on a LeetCode problem: read the code, the problem
-//    and the selected test case from that page, hand them to the VisualLeet
-//    tab (the open one is reused and updated in place), and focus it;
-//  - on any other page: remember it as the source for "Import selection";
-//  - imports requested by the VisualLeet page (selection, or re-reading the
-//    LeetCode tab), validated and bounded.
+// MV3 service worker (module). Never runs Python. On a toolbar click, Alt+V
+// or the "Visualize" button LeetScope adds to LeetCode's top bar, on a
+// LeetCode problem: read the code, the problem and the selected test case
+// from that page (validated and bounded), hand them to the LeetScope tab (the
+// open one is reused and updated in place), and focus it. Problems that stop
+// the click are explained on the LeetCode page instead.
 
 import { readLeetCodePage } from "./leetcode-reader.js";
 
@@ -105,7 +103,7 @@ async function showFrom(tab) {
   await chrome.tabs.create({ url: url.toString(), index: typeof tab?.index === "number" ? tab.index + 1 : undefined });
 }
 
-// Only the VisualLeet page may ask for imports.
+// Only the LeetScope page may ask about its source tab.
 function fromOurUi(sender) {
   return sender.id === chrome.runtime.id && typeof sender.url === "string" &&
          sender.url.startsWith(chrome.runtime.getURL(UI_PATH));
@@ -113,10 +111,6 @@ function fromOurUi(sender) {
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (!fromOurUi(sender) || !msg || typeof msg !== "object" || msg.type === "visualize-page") return;
-  if (msg.type === "import" && typeof msg.tabId === "number" && (msg.mode === "selection" || msg.mode === "leetcode")) {
-    (msg.mode === "selection" ? importSelection(msg.tabId) : readLeetCode(msg.tabId)).then(sendResponse);
-    return true;   // async response
-  }
   if (msg.type === "describe-tab" && typeof msg.tabId === "number") {
     chrome.tabs.get(msg.tabId).then((t) => sendResponse({ title: t.title || "", url: t.url || "" }), () => sendResponse(null));
     return true;
@@ -136,36 +130,6 @@ function friendlyError(err) {
 
 const utf8Length = (s) => new TextEncoder().encode(s).length;
 const str = (v, max) => (typeof v === "string" ? v.slice(0, max) : "");
-
-// ---- selection ----
-
-// Runs in the page (isolated world). Returns the selected text, preserving
-// line breaks; handles selections inside text fields too.
-function readSelection() {
-  const active = document.activeElement;
-  if (active && (active.tagName === "TEXTAREA" || (active.tagName === "INPUT" && active.type === "text")) &&
-      typeof active.selectionStart === "number" && active.selectionEnd > active.selectionStart) {
-    return active.value.slice(active.selectionStart, active.selectionEnd);
-  }
-  const sel = window.getSelection();
-  return sel ? sel.toString() : "";
-}
-
-async function importSelection(tabId) {
-  let results;
-  try {
-    results = await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, func: readSelection });
-  } catch (err) {
-    return { ok: false, error: friendlyError(err) };
-  }
-  const texts = results.map((r) => (typeof r.result === "string" ? r.result : "")).filter((t) => t.trim());
-  const text = (texts[0] || "").replace(/\r\n?/g, "\n").replace(/\xa0/g, " ");
-  if (!text.trim()) {
-    return { ok: false, error: "Nothing is selected on that page. Select the code there and try again. Your current code is unchanged." };
-  }
-  if (utf8Length(text) > MAX_CODE_BYTES) return { ok: false, error: "The selection is larger than 256 KiB, which is more than LeetScope can show." };
-  return { ok: true, text };
-}
 
 // ---- LeetCode page ----
 

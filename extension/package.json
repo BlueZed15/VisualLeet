@@ -1,17 +1,18 @@
 {
-  "name": "visualleet-extension",
-  "version": "1.0.0",
-  "description": "VisualLeet Chrome extension prototype",
+  "name": "leetscope",
+  "version": "0.3.0",
+  "description": "LeetScope: step-by-step visualizations of Python LeetCode solutions, as a Chrome extension",
   "scripts": {
-    "build:renderer": "node scripts/build-renderer.mjs",
-    "bench:serve": "node scripts/serve-bench.mjs",
-    "build:baseline": "node scripts/build-renderer.mjs --baseline",
     "build:extension": "node scripts/build-extension.mjs",
     "build:extension-test": "node scripts/build-extension.mjs --test",
-    "build:extension-dev": "node scripts/build-extension.mjs --dev",
+    "test": "node --test tests/",
+    "acceptance": "node scripts/acceptance.mjs",
+    "stress": "node scripts/stress.mjs",
     "verify:db": "node scripts/verify-db.mjs",
     "check:calls": "node scripts/check-calls.mjs",
-    "stress": "node scripts/stress.mjs"
+    "build:renderer": "node scripts/build-renderer.mjs",
+    "build:baseline": "node scripts/build-renderer.mjs --baseline",
+    "bench:serve": "node scripts/serve-bench.mjs"
   },
   "author": "",
   "license": "ISC",
