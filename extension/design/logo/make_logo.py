@@ -8,7 +8,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 ttf, out = sys.argv[1], sys.argv[2]
-INK_DARK = "#18181B"; INK_LIGHT = "#F4F4F1"
+INK_DARK = "#181818"; INK_LIGHT = "#F2F2F2"
 AMBER, BLUE, CORAL = "#FFB020", "#2F6BFF", "#FF5B4A"
 
 def f(v): return f"{v:.2f}".rstrip("0").rstrip(".")

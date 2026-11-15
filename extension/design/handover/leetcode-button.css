@@ -1,0 +1,83 @@
+/* LeetScope "Visualize" button on LeetCode's own top bar (#ide-top-btns),
+   plus the glow that plays once each time LeetCode finishes a Run.
+
+   Markup the content script should build:
+
+   <span class="ls-vz-wrap">                     <- gets .ls-vz-glow for one run of the animation
+     <button id="visualleet-top-button" class="ls-vz" type="button"
+             title="Visualize the selected test case in LeetScope (Alt+V)"
+             aria-label="Visualize in LeetScope">
+       <svg class="ls-vz-mark" viewBox="2 2 56 56" aria-hidden="true">  (ring and handle use currentColor)
+         <circle cx="28" cy="28" r="19" fill="none" stroke="currentColor" stroke-width="7"/>
+         <path d="M42 42L51 51" stroke="currentColor" stroke-width="7.5" stroke-linecap="round"/>
+         <circle class="ls-vz-d1" cx="28" cy="21" r="5" fill="#FFB020"/>
+         <circle class="ls-vz-d2" cx="21" cy="33" r="5" fill="#2F6BFF"/>
+         <circle class="ls-vz-d3" cx="35" cy="33" r="5" fill="#FF5B4A"/>
+       </svg>
+       <span>Visualize</span>
+     </button>
+   </span>
+
+   Content scripts inject CSS with the page's own stylesheet rules around it,
+   so every rule below is scoped to these class names and uses !important
+   only where LeetCode's button resets would otherwise win. */
+
+.ls-vz-wrap { position: relative; display: inline-flex; border-radius: 8px; }
+
+.ls-vz {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 32px; padding: 0 12px 0 9px; box-sizing: border-box;
+  border: 0; border-radius: 8px; cursor: pointer; white-space: nowrap;
+  font: 500 14px/21px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #F2F2F2;                               /* plain white label, no amber */
+  background: #222222;                          /* matches LeetCode's dark top-bar buttons (measured) */
+  transition: background .12s ease;             /* keep it opaque: the glow haze sits behind the button */
+}
+.ls-vz:hover { background: #2B2B2B; }
+/* LeetCode light theme. LeetCode marks dark mode with class "dark" on <html>; verify on the live site. */
+html:not(.dark) .ls-vz { color: #262626; background: #F0F0F0; }
+html:not(.dark) .ls-vz:hover { background: #E6E6E6; }
+.ls-vz:focus-visible { outline: 2px solid #FFB020; outline-offset: 2px; }
+.ls-vz:disabled { cursor: default; opacity: .7; }
+.ls-vz-mark { width: 18px; height: 18px; flex: none; display: block; overflow: visible; }
+
+/* ---------- glow: a thin three-colour edge and a faint haze, two soft pulses, then gone ---------- */
+
+/* thin edge: a gradient ring cut out with a mask so it works over LeetCode's translucent button fill */
+.ls-vz-wrap::before,
+.ls-vz-wrap::after {
+  content: ""; position: absolute; pointer-events: none; opacity: 0;
+  background: linear-gradient(90deg, #4C8DFF 0%, #4C8DFF 22%, #FFB020 42%, #FFB020 58%, #FF5B4A 80%, #FF5B4A 100%);
+}
+.ls-vz-wrap::before {               /* edge */
+  inset: -1.5px; border-radius: 9.5px; padding: 1.5px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+.ls-vz-wrap::after {                /* haze, sits behind the button */
+  inset: -3px; border-radius: 11px; filter: blur(9px); z-index: -1;
+}
+
+@keyframes ls-vz-edge { 0%, 100% { opacity: 0 } 20% { opacity: .48 } 50% { opacity: .16 } 74% { opacity: .42 } }
+@keyframes ls-vz-haze { 0%, 100% { opacity: 0 } 20% { opacity: .17 } 50% { opacity: .06 } 74% { opacity: .14 } }
+@keyframes ls-vz-dot  { 0%, 100% { transform: scale(1) } 45% { transform: scale(1.25) } }
+
+.ls-vz-glow::before { animation: ls-vz-edge 2.6s ease-in-out; }
+.ls-vz-glow::after  { animation: ls-vz-haze 2.6s ease-in-out; }
+.ls-vz-glow .ls-vz-d1,
+.ls-vz-glow .ls-vz-d2,
+.ls-vz-glow .ls-vz-d3 { transform-box: fill-box; transform-origin: center; animation: ls-vz-dot .55s cubic-bezier(.3, .7, .3, 1) 2; }
+.ls-vz-glow .ls-vz-d1 { animation-delay: .15s; }
+.ls-vz-glow .ls-vz-d2 { animation-delay: .33s; }
+.ls-vz-glow .ls-vz-d3 { animation-delay: .51s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ls-vz-glow::before, .ls-vz-glow::after, .ls-vz-glow circle { animation: none !important; }
+}
+
+/* ---------- "opening" state while the LeetScope tab is being prepared ---------- */
+@keyframes ls-vz-hop { 0%, 80%, 100% { transform: translateY(0); opacity: .55 } 40% { transform: translateY(-3px); opacity: 1 } }
+.ls-vz-hop { display: inline-block; width: 4px; height: 4px; border-radius: 50%; animation: ls-vz-hop .9s ease-in-out infinite; }
+.ls-vz-hop:nth-child(1) { background: #FFB020; }
+.ls-vz-hop:nth-child(2) { background: #2F6BFF; animation-delay: .12s; }
+.ls-vz-hop:nth-child(3) { background: #FF5B4A; animation-delay: .24s; }
