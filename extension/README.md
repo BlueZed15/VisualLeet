@@ -178,3 +178,8 @@ renderer), `node scripts/serve-bench.mjs`, then
 LeetScope is built on [Python Tutor](https://pythontutor.com) by Philip Guo.
 The tracer and renderer in `src/python/` and `src/visualizer/` are forks of
 its code. Python runs on [Pyodide](https://pyodide.org).
+
+## License
+
+Proprietary, all rights reserved. See [LICENSE](../LICENSE). The Python Tutor
+forks keep their MIT notice and Pyodide keeps its MPL 2.0 license.

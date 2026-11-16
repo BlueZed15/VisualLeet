@@ -1,0 +1,31 @@
+LeetScope
+Copyright (c) 2026 The LeetScope authors. All rights reserved.
+
+This software, including its source code, design, problem database and
+documentation, is proprietary. No license is granted to copy, modify, merge,
+publish, distribute, sublicense or sell it, or to create derivative works
+from it, in whole or in part, without prior written permission from the
+copyright holders.
+
+You may install and use the published LeetScope extension for your own
+personal use. Being able to view this source code does not grant any
+further rights.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+Third-party components
+----------------------
+
+These parts are not covered by the terms above and keep their own licenses:
+
+- Python Tutor, Copyright (C) Philip Guo, MIT license.
+  OnlinePythonTutor-Backup/ is the original source. The tracer in
+  extension/src/python/ and the renderer in extension/src/visualizer/ are
+  modified forks of it and keep its copyright and permission notice.
+  See OnlinePythonTutor-Backup/LICENSE.txt (shipped in the extension as
+  LICENSE-OnlinePythonTutor.txt).
+
+- Pyodide, Mozilla Public License 2.0, shipped unmodified in
+  extension/dist/extension/vendor/pyodide/. Source: https://github.com/pyodide/pyodide

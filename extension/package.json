@@ -15,7 +15,7 @@
     "bench:serve": "node scripts/serve-bench.mjs"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "type": "module",
   "devDependencies": {
     "esbuild": "0.28.2",

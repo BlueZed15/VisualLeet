@@ -40,9 +40,15 @@ LeetCode when a Run finishes**.
 | `extension/` | LeetScope itself. [extension/README.md](extension/README.md) covers how it works, the problem database, the tests and the rules for changes. |
 | `OnlinePythonTutor-Backup/` | The original Python Tutor source, kept unchanged as the reference for LeetScope's forked tracer and renderer. The build copies its license, and the benchmarks and tracer tests compare against it. You don't need it to use the extension. |
 
-## License and credits
+## License
 
-Python Tutor is © Philip Guo, under the MIT license
-(`OnlinePythonTutor-Backup/LICENSE.txt`, shipped in the extension as
-`LICENSE-OnlinePythonTutor.txt`). Python runs on
-[Pyodide](https://pyodide.org).
+LeetScope is proprietary and closed source. Copyright (c) 2026 The LeetScope
+authors, all rights reserved. You may not copy, modify, redistribute or reuse
+this code without written permission. See [LICENSE](LICENSE).
+
+## Credits
+
+LeetScope's tracer and renderer are modified forks of Python Tutor,
+© Philip Guo, under the MIT license (`OnlinePythonTutor-Backup/LICENSE.txt`,
+shipped in the extension as `LICENSE-OnlinePythonTutor.txt`). Python runs on
+[Pyodide](https://pyodide.org) (MPL 2.0). These keep their own licenses.

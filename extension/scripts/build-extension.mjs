@@ -77,5 +77,6 @@ for (const f of PYODIDE_FILES) {
   provenance.push(`${sha}  vendor/pyodide/${f}`);
 }
 await writeFile(path.join(out, "vendor", "PROVENANCE.txt"), provenance.join("\n") + "\n");
+await cp(path.join(root, "..", "LICENSE"), path.join(out, "LICENSE.txt"));
 await cp(path.join(root, "..", "OnlinePythonTutor-Backup", "LICENSE.txt"), path.join(out, "LICENSE-OnlinePythonTutor.txt"));
 console.log("built", out);
