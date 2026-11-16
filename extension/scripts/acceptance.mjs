@@ -78,7 +78,8 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
   return `<!doctype html><html><head><title>${p.title} - LeetCode</title></head><body>
 <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { question: stale } } })}</script>
 <div class="text-title-large">${p.id}. ${p.title}</div>
-<div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
+<div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-run-button">Run</button></div><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
+<div data-e2e-locator="console-result"></div>
 <div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)</div>
 ${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
 <div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>`}
@@ -88,6 +89,10 @@ ${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\
   const code = ${JSON.stringify(code || p.code)};
   const mk = (lang, value) => ({ getLanguageId: () => lang, getValue: () => value, getValueLength: () => value.length, isDisposed: () => false });
   const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", ${JSON.stringify(panel === "text" ? all.flat().join("\n") : "")});
+  // LeetCode's Run: a verdict appears in the Test Result panel a moment later
+  let runs = 0;
+  document.querySelector('[data-e2e-locator="console-run-button"]').addEventListener("click", () =>
+    setTimeout(() => { document.querySelector('[data-e2e-locator="console-result"]').textContent = "Accepted (run " + (++runs) + ")"; }, 200));
   const node = document.getElementById("editor");
   window.monaco = { editor: {
     getModels: () => [codeModel, testModel],
@@ -513,6 +518,22 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     check("leetcode", "Top-bar button: the open LeetScope tab is updated in place (no new tab, no reload)",
       viaButton.selected === "Example 3" && viaButton.status === "complete" && viaButton.sameTab && tabsAfter === tabsBefore && viaButton.verdict && viaButton.verdict.kind === "match",
       Object.assign({ tabsBefore, tabsAfter }, viaButton));
+    // the glow when LeetCode finishes a Run, and the setting that turns it off
+    const glowAfterRun = () => lc.evaluate(async () => {
+      const wrap = document.getElementById("visualleet-top-button").parentElement;
+      wrap.classList.remove("ls-vz-glow");
+      document.querySelector('[data-e2e-locator="console-run-button"]').click();
+      for (let i = 0; i < 30; i++) { if (wrap.classList.contains("ls-vz-glow")) return true; await new Promise((r) => setTimeout(r, 50)); }
+      return false;
+    });
+    const glowDefault = await glowAfterRun();
+    await ev(() => chrome.storage.local.set({ glow: false }));
+    await new Promise((r) => setTimeout(r, 200));
+    const glowOff = await glowAfterRun();
+    await ev(() => chrome.storage.local.set({ glow: true }));
+    await new Promise((r) => setTimeout(r, 200));
+    const glowBack = await glowAfterRun();
+    check("leetcode", "Button glows when LeetCode finishes a Run; the glow setting turns it off and on", glowDefault && !glowOff && glowBack, { glowDefault, glowOff, glowBack });
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
     check("leetcode", "Testcase tab not open: explained on LeetCode itself, no extra options", !!tc1 && /Testcase tab, and that tab isn't open/.test(tc1.text) && !tc1.action, tc1);
     await page.bringToFront();

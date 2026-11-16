@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LeetScope",
   "version": "0.3.0",
-  "description": "Look inside your Python DSA solutions: step through them with a Python Tutor-style visualization. Runs entirely in your browser.",
+  "description": "See your Python LeetCode solutions run seamlessly, step by step. Built on the open source version of Python Tutor by Philip Guo.",
   "minimum_chrome_version": "120",
   "icons": {
     "16": "icons/icon-16.png",
@@ -24,6 +24,9 @@
         "default": "Alt+V"
       },
       "description": "Visualize the selected LeetCode test case"
+    },
+    "toggle-glow": {
+      "description": "Turn the Visualize button's glow on LeetCode on or off"
     }
   },
   "background": {
@@ -32,6 +35,7 @@
   },
   "permissions": [
     "activeTab",
+    "contextMenus",
     "scripting",
     "storage"
   ],

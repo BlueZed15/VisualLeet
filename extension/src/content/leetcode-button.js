@@ -106,8 +106,19 @@
   const VERDICT = /\b(Accepted|Wrong Answer|Runtime Error|Compile Error|Time Limit Exceeded|Memory Limit Exceeded|Output Limit Exceeded)\b/;
   let armed = 0;            // time of the Run press, 0 = not armed
   let lastResult = "";
+  // the user can turn the glow off (toolbar icon's right-click menu, or a shortcut they set)
+  let glowEnabled = true;
+  try {
+    chrome.storage.local.get({ glow: true }).then((v) => { glowEnabled = v.glow !== false; }, () => {});
+    chrome.storage.onChanged.addListener((changes, area) => {
+      if (area !== "local" || !changes.glow) return;
+      glowEnabled = changes.glow.newValue !== false;
+      if (!glowEnabled) document.getElementById(ID)?.parentElement?.classList.remove("ls-vz-glow");
+    });
+  } catch { /* the extension was reloaded under this page: keep the default */ }
 
   function glow() {
+    if (!glowEnabled) return;
     const wrap = document.getElementById(ID)?.parentElement;
     if (!wrap || !wrap.classList.contains("ls-vz-wrap")) return;
     wrap.classList.remove("ls-vz-glow");

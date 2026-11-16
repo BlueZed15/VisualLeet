@@ -29,6 +29,11 @@ LeetScope card, then reopen the LeetScope tab and reload LeetCode tabs.
    to delete it), and the visualizer on the right with zoom, fit and the
    playback bar (play, step, timeline, speed).
 
+The Visualize button glows briefly when one of LeetCode's own Runs finishes.
+To turn that off, right-click the LeetScope toolbar icon and untick **Glow on
+LeetCode when a Run finishes**, or assign a key to "Turn the Visualize
+button's glow on LeetCode on or off" at `chrome://extensions/shortcuts`.
+
 Problems that can't be visualized (editor not in Python, the Testcase tab not
 open, a problem not in the database) are explained in a card under the
 Visualize button on LeetCode.
@@ -41,7 +46,7 @@ source. Hitting one is reported; a partial run is never shown as complete.
 | Path | What it is |
 | --- | --- |
 | `src/manifest.json` | MV3 manifest: permissions, content script, sandbox page, CSPs |
-| `src/background/` | Service worker: toolbar icon, Alt+V, the Visualize button's requests, reading the LeetCode page (`leetcode-reader.js`) |
+| `src/background/` | Service worker: toolbar icon and its right-click glow setting, Alt+V, the Visualize button's requests, reading the LeetCode page (`leetcode-reader.js`) |
 | `src/content/` | The Visualize button on LeetCode, its glow and message card |
 | `src/ui/` | The LeetScope page. `ui.js` controller, `leetcode-mode.js` test cases, `harness.js` / `leet.js` / `leet-helpers.js` building the program from a database entry, `ui.css` workspace styles, `renderer-dark.css` the visualizer's dark styles |
 | `src/runner/` | Sandboxed runner: `sandbox.*` (active and spare Python workers, watchdog), `worker.js` (Pyodide in a blob worker) |
@@ -167,3 +172,9 @@ renderer), `node scripts/serve-bench.mjs`, then
   stretched on 200% screens. The 16 px icon is hand-tuned and the 32 and 48 px
   icons are pixel-aligned with no rim, which keeps them sharp. Chrome caches
   icons: after changing them, remove and load the unpacked extension again.
+
+## Credits
+
+LeetScope is built on [Python Tutor](https://pythontutor.com) by Philip Guo.
+The tracer and renderer in `src/python/` and `src/visualizer/` are forks of
+its code. Python runs on [Pyodide](https://pyodide.org).

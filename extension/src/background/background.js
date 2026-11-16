@@ -15,6 +15,30 @@ const PROBLEM_URL = /^https:\/\/leetcode\.(com|cn)\/problems\/[a-z0-9-]+/;
 
 chrome.action.onClicked.addListener((tab) => showFrom(tab));
 
+// ---------- glow setting ----------
+// Whether the Visualize button on LeetCode glows when a Run finishes. Stored
+// in chrome.storage.local ("glow", on by default); the content script reads
+// it. Changed from the toolbar icon's right-click menu, or with the
+// "toggle-glow" command (no default key; set one at chrome://extensions/shortcuts).
+const GLOW_MENU = "glow";
+const glowOn = async () => (await chrome.storage.local.get({ glow: true })).glow !== false;
+
+chrome.runtime.onInstalled.addListener(async () => {
+  chrome.contextMenus.removeAll(async () => {
+    chrome.contextMenus.create({ id: GLOW_MENU, title: "Glow on LeetCode when a Run finishes", type: "checkbox",
+                                 contexts: ["action"], checked: await glowOn() });
+  });
+});
+chrome.contextMenus.onClicked.addListener((info) => {
+  if (info.menuItemId === GLOW_MENU) chrome.storage.local.set({ glow: !!info.checked });
+});
+chrome.commands.onCommand.addListener(async (command) => {
+  if (command === "toggle-glow") chrome.storage.local.set({ glow: !(await glowOn()) });
+});
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === "local" && changes.glow) chrome.contextMenus.update(GLOW_MENU, { checked: changes.glow.newValue !== false }, () => void chrome.runtime.lastError);
+});
+
 // The top-bar button (content script on LeetCode): same as clicking the icon on that tab.
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (sender.id !== chrome.runtime.id || !sender.tab || !msg || msg.type !== "visualize-page") return;

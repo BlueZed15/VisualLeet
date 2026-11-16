@@ -143,12 +143,11 @@
 
 /* a pointer created on THIS step (ui.js tags it vlNewArrow; arrows are rebuilt
    every step, so it's blue again on the next step if it's unchanged):
-   orange, with dashes flowing from the variable to the object */
+   orange, with dashes flowing from the variable to the object. Flat: no glow */
 #viz .vlArrowLayer g.vlNewArrow path { stroke: var(--brand); stroke-width: 1.8px; stroke-dasharray: 6 4;
-  animation: vlFlare .6s ease-out, vlFlow 1.2s linear infinite; filter: drop-shadow(0 0 3px rgba(255,161,22,.5)); }
+  animation: vlFlow 1.2s linear infinite; }
 #viz .vlArrowLayer g.vlNewArrow polygon, #viz .vlArrowLayer g.vlNewArrow circle { fill: var(--brand); stroke: var(--brand); }
 @keyframes vlFlow { to { stroke-dashoffset: -10; } }
-@keyframes vlFlare { 0% { stroke: #ffd98f; stroke-width: 2.6px; } 100% { stroke-width: 1.8px; } }
 
 /* ---------- stage: zoom/pan/drag, hover, inspect (classes added by ui.js) ---------- */
 #viz td#vizLayoutTdSecond { cursor: grab; }
@@ -161,7 +160,7 @@
 /* arrows: an invisible wide twin under each arrow takes the hover */
 #viz .vlArrowLayer path.vlHit { stroke: transparent !important; stroke-width: 12px !important; fill: none !important; stroke-dasharray: none !important;
   animation: none !important; filter: none !important; pointer-events: stroke; cursor: pointer; }
-#viz .vlArrowLayer g.vlHover path:not(.vlHit) { stroke: #ffe3a1 !important; stroke-width: 2.8px !important; filter: drop-shadow(0 0 5px rgba(255,214,128,.85)) !important; }
+#viz .vlArrowLayer g.vlHover path:not(.vlHit) { stroke: #ffe3a1 !important; stroke-width: 2.4px !important; }
 #viz .vlArrowLayer g.vlHover polygon, #viz .vlArrowLayer g.vlHover circle { fill: #ffe3a1 !important; stroke: #ffe3a1 !important; }
 #viz td.vlHover, #viz .heapObject.vlHover > table { outline: 2px solid rgba(255,214,128,.75); outline-offset: 1px; }
 
