@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-good-people-based-on-statements",
+ "frontendId": "2151",
+ "title": "Maximum Good People Based on Statements",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "statements",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "statements = {statements}",
+ "visible": [
+  "statements"
+ ],
+ "call": "result = Solution().maximumGood(statements)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

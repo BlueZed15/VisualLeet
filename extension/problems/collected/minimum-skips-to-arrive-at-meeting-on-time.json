@@ -1,0 +1,38 @@
+{
+ "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1883",
+ "title": "Minimum Skips to Arrive at Meeting On Time",
+ "premium": false,
+ "meta": {
+  "name": "minSkips",
+  "params": [
+   {
+    "name": "dist",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "speed"
+   },
+   {
+    "type": "integer",
+    "name": "hoursBefore"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2]\n4\n2",
+  "[7,3,5,5]\n2\n10",
+  "[7,3,5,5]\n1\n10"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-cost-to-split-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2547",
+ "title": "Minimum Cost to Split an Array",
+ "premium": false,
+ "meta": {
+  "name": "minCost",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,1,2,1,3,3]\n2",
+  "[1,2,1,2,1]\n2",
+  "[1,2,1,2,1]\n5"
+ ],
+ "exampleOutputs": [
+  "8",
+  "6",
+  "10"
+ ],
+ "anyOrder": false
+}

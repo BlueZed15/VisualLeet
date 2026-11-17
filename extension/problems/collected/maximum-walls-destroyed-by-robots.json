@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-walls-destroyed-by-robots",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3661",
+ "title": "Maximum Walls Destroyed by Robots",
+ "premium": false,
+ "meta": {
+  "name": "maxWalls",
+  "params": [
+   {
+    "name": "robots",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "distance"
+   },
+   {
+    "type": "integer[]",
+    "name": "walls"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4]\n[3]\n[1,10]",
+  "[10,2]\n[5,1]\n[5,2,7]",
+  "[1,2]\n[100,1]\n[10]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

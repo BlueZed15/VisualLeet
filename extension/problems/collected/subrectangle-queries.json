@@ -1,0 +1,78 @@
+{
+ "slug": "subrectangle-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1476",
+ "title": "Subrectangle Queries",
+ "premium": false,
+ "meta": {
+  "classname": "SubrectangleQueries",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[][]",
+     "name": "rectangle"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "row1"
+     },
+     {
+      "type": "integer",
+      "name": "col1"
+     },
+     {
+      "type": "integer",
+      "name": "row2"
+     },
+     {
+      "type": "integer",
+      "name": "col2"
+     },
+     {
+      "type": "integer",
+      "name": "newValue"
+     }
+    ],
+    "name": "updateSubrectangle",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "row"
+     },
+     {
+      "type": "integer",
+      "name": "col"
+     }
+    ],
+    "name": "getValue",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"SubrectangleQueries\",\"getValue\",\"updateSubrectangle\",\"getValue\",\"getValue\",\"updateSubrectangle\",\"getValue\",\"getValue\"]\r\n[[[[1,2,1],[4,3,4],[3,2,1],[1,1,1]]],[0,2],[0,0,3,2,5],[0,2],[3,1],[3,0,3,2,10],[3,1],[0,2]]\r",
+  "[\"SubrectangleQueries\",\"getValue\",\"updateSubrectangle\",\"getValue\",\"getValue\",\"updateSubrectangle\",\"getValue\"]\r\n[[[[1,1,1],[2,2,2],[3,3,3]]],[0,0],[0,0,2,2,100],[0,0],[2,2],[1,1,2,2,20],[2,2]]\r"
+ ],
+ "exampleOutputs": [
+  "[null,1,null,5,5,null,10,5]",
+  "[null,1,null,100,100,null,20]"
+ ],
+ "anyOrder": false
+}

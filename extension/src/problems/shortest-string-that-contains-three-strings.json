@@ -1,0 +1,35 @@
+{
+ "slug": "shortest-string-that-contains-three-strings",
+ "frontendId": "2800",
+ "title": "Shortest String That Contains Three Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "string"
+  },
+  {
+   "name": "b",
+   "type": "string"
+  },
+  {
+   "name": "c",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}\nc = {c}",
+ "visible": [
+  "a",
+  "b",
+  "c"
+ ],
+ "call": "result = Solution().minimumString(a, b, c)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

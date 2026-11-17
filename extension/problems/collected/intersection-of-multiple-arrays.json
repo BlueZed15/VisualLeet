@@ -1,0 +1,28 @@
+{
+ "slug": "intersection-of-multiple-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2248",
+ "title": "Intersection of Multiple Arrays",
+ "premium": false,
+ "meta": {
+  "name": "intersection",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
+  "[[1,2,3],[4,5,6]]"
+ ],
+ "exampleOutputs": [
+  "[3,4]",
+  "[]"
+ ],
+ "anyOrder": false
+}

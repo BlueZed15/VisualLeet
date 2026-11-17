@@ -1,0 +1,30 @@
+{
+ "slug": "longest-substring-of-all-vowels-in-order",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1839",
+ "title": "Longest Substring Of All Vowels in Order",
+ "premium": false,
+ "meta": {
+  "name": "longestBeautifulSubstring",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
+  "\"aeeeiiiioooauuuaeiou\"",
+  "\"a\""
+ ],
+ "exampleOutputs": [
+  "13",
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-difference-between-adjacent-elements-in-a-circular-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3423",
+ "title": "Maximum Difference Between Adjacent Elements in a Circular Array",
+ "premium": false,
+ "meta": {
+  "name": "maxAdjacentDistance",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,4]",
+  "[-5,-10,-5]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

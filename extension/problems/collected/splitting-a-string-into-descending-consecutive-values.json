@@ -1,0 +1,30 @@
+{
+ "slug": "splitting-a-string-into-descending-consecutive-values",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1849",
+ "title": "Splitting a String Into Descending Consecutive Values",
+ "premium": false,
+ "meta": {
+  "name": "splitString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"1234\"",
+  "\"050043\"",
+  "\"9080701\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "compare-strings-by-frequency-of-the-smallest-character",
+ "frontendId": "1170",
+ "title": "Compare Strings by Frequency of the Smallest Character",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "string[]"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}\nwords = {words}",
+ "visible": [
+  "queries",
+  "words"
+ ],
+ "call": "result = Solution().numSmallerByFrequency(queries, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

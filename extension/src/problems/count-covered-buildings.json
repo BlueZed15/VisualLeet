@@ -1,0 +1,30 @@
+{
+ "slug": "count-covered-buildings",
+ "frontendId": "3531",
+ "title": "Count Covered Buildings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "buildings",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nbuildings = {buildings}",
+ "visible": [
+  "n",
+  "buildings"
+ ],
+ "call": "result = Solution().countCoveredBuildings(n, buildings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "divide-a-string-into-groups-of-size-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2138",
+ "title": "Divide a String Into Groups of Size k",
+ "premium": false,
+ "meta": {
+  "name": "divideString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "character",
+    "name": "fill"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "\"abcdefghi\"\n3\n\"x\"",
+  "\"abcdefghij\"\n3\n\"x\""
+ ],
+ "exampleOutputs": [
+  "[\"abc\",\"def\",\"ghi\"]",
+  "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
+ ],
+ "anyOrder": false
+}

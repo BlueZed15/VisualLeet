@@ -1,0 +1,32 @@
+{
+ "slug": "maximize-number-of-subsequences-in-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2207",
+ "title": "Maximize Number of Subsequences in a String",
+ "premium": false,
+ "meta": {
+  "name": "maximumSubsequenceCount",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "pattern"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"abdcdbc\"\n\"ac\"",
+  "\"aabb\"\n\"ab\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "6"
+ ],
+ "anyOrder": false
+}

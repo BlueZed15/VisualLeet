@@ -1,0 +1,30 @@
+{
+ "slug": "special-array-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3151",
+ "title": "Special Array I",
+ "premium": false,
+ "meta": {
+  "name": "isArraySpecial",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1]",
+  "[2,1,4]",
+  "[4,3,1,6]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

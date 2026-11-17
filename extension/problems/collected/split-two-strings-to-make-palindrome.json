@@ -1,0 +1,34 @@
+{
+ "slug": "split-two-strings-to-make-palindrome",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1616",
+ "title": "Split Two Strings to Make Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "checkPalindromeFormation",
+  "params": [
+   {
+    "name": "a",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "b"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"x\"\n\"y\"",
+  "\"xbdef\"\n\"xecab\"",
+  "\"ulacfd\"\n\"jizalu\""
+ ],
+ "exampleOutputs": [
+  "trueExplaination: If either a or b are palindromes the answer is true since you can split in the following way:aprefix = \"\", asuffix = \"x\"bprefix = \"\", bsuffix = \"y\"Then, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome.",
+  "false",
+  "trueExplaination: Split them at index 3:aprefix = \"ula\", asuffix = \"cfd\"bprefix = \"jiz\", bsuffix = \"alu\"Then, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
+ ],
+ "anyOrder": false
+}

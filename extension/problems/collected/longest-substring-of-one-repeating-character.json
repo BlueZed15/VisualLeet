@@ -1,0 +1,36 @@
+{
+ "slug": "longest-substring-of-one-repeating-character",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2213",
+ "title": "Longest Substring of One Repeating Character",
+ "premium": false,
+ "meta": {
+  "name": "longestRepeating",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "queryCharacters"
+   },
+   {
+    "type": "integer[]",
+    "name": "queryIndices"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"babacc\"\n\"bcb\"\n[1,3,3]",
+  "\"abyzz\"\n\"aa\"\n[2,1]"
+ ],
+ "exampleOutputs": [
+  "[3,3,4]",
+  "[2,3]"
+ ],
+ "anyOrder": false
+}

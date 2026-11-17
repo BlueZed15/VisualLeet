@@ -1,0 +1,30 @@
+{
+ "slug": "beautiful-arrangement-ii",
+ "frontendId": "667",
+ "title": "Beautiful Arrangement II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}",
+ "visible": [
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().constructArray(n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

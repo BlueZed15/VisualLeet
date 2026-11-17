@@ -1,0 +1,35 @@
+{
+ "slug": "distance-between-bus-stops",
+ "frontendId": "1184",
+ "title": "Distance Between Bus Stops",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "distance",
+   "type": "integer[]"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  },
+  {
+   "name": "destination",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "distance = {distance}\nstart = {start}\ndestination = {destination}",
+ "visible": [
+  "distance",
+  "start",
+  "destination"
+ ],
+ "call": "result = Solution().distanceBetweenBusStops(distance, start, destination)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

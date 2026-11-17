@@ -1,0 +1,30 @@
+{
+ "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+ "frontendId": "2791",
+ "title": "Count Paths That Can Form a Palindrome in a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "parent",
+   "type": "list<integer>"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "parent = {parent}\ns = {s}",
+ "visible": [
+  "parent",
+  "s"
+ ],
+ "call": "result = Solution().countPalindromePaths(parent, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

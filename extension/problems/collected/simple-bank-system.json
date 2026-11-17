@@ -1,0 +1,83 @@
+{
+ "slug": "simple-bank-system",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2043",
+ "title": "Simple Bank System",
+ "premium": false,
+ "meta": {
+  "classname": "Bank",
+  "constructor": {
+   "params": [
+    {
+     "type": "long[]",
+     "name": "balance"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "account1"
+     },
+     {
+      "type": "integer",
+      "name": "account2"
+     },
+     {
+      "type": "long",
+      "name": "money"
+     }
+    ],
+    "name": "transfer",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "account"
+     },
+     {
+      "type": "long",
+      "name": "money"
+     }
+    ],
+    "name": "deposit",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "account"
+     },
+     {
+      "type": "long",
+      "name": "money"
+     }
+    ],
+    "name": "withdraw",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Bank\",\"withdraw\",\"transfer\",\"deposit\",\"transfer\",\"withdraw\"]\n[[[10,100,20,50,30]],[3,10],[5,1,20],[5,20],[3,4,15],[10,50]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, true, true, false, false]"
+ ],
+ "anyOrder": false
+}

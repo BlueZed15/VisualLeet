@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-word-can-be-placed-in-crossword",
+ "frontendId": "2018",
+ "title": "Check if Word Can Be Placed In Crossword",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "character[][]"
+  },
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}\nword = {word}",
+ "visible": [
+  "board",
+  "word"
+ ],
+ "call": "result = Solution().placeWordInCrossword(board, word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

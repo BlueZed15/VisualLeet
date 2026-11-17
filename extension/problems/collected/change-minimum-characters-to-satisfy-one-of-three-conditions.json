@@ -1,0 +1,32 @@
+{
+ "slug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1737",
+ "title": "Change Minimum Characters to Satisfy One of Three Conditions",
+ "premium": false,
+ "meta": {
+  "name": "minCharacters",
+  "params": [
+   {
+    "name": "a",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "b"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aba\"\n\"caa\"",
+  "\"dabadd\"\n\"cda\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

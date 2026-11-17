@@ -1,0 +1,25 @@
+{
+ "slug": "beautiful-towers-i",
+ "frontendId": "2865",
+ "title": "Beautiful Towers I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "heights",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "heights = {heights}",
+ "visible": [
+  "heights"
+ ],
+ "call": "result = Solution().maximumSumOfHeights(heights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

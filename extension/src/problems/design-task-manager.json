@@ -1,0 +1,71 @@
+{
+ "slug": "design-task-manager",
+ "frontendId": "3408",
+ "title": "Design Task Manager",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "TaskManager",
+ "methods": {
+  "TaskManager": [
+   {
+    "name": "tasks",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "add": [
+   {
+    "name": "userId",
+    "type": "integer"
+   },
+   {
+    "name": "taskId",
+    "type": "integer"
+   },
+   {
+    "name": "priority",
+    "type": "integer"
+   }
+  ],
+  "edit": [
+   {
+    "name": "taskId",
+    "type": "integer"
+   },
+   {
+    "name": "newPriority",
+    "type": "integer"
+   }
+  ],
+  "rmv": [
+   {
+    "name": "taskId",
+    "type": "integer"
+   }
+  ],
+  "execTop": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = TaskManager(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

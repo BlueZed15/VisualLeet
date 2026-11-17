@@ -1,0 +1,30 @@
+{
+ "slug": "count-mentions-per-user",
+ "frontendId": "3433",
+ "title": "Count Mentions Per User",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numberOfUsers",
+   "type": "integer"
+  },
+  {
+   "name": "events",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "numberOfUsers = {numberOfUsers}\nevents = {events}",
+ "visible": [
+  "numberOfUsers",
+  "events"
+ ],
+ "call": "result = Solution().countMentions(numberOfUsers, events)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

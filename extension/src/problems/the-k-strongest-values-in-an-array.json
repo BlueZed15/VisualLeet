@@ -1,0 +1,30 @@
+{
+ "slug": "the-k-strongest-values-in-an-array",
+ "frontendId": "1471",
+ "title": "The k Strongest Values in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nk = {k}",
+ "visible": [
+  "arr",
+  "k"
+ ],
+ "call": "result = Solution().getStrongest(arr, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-pairs-satisfying-inequality",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2426",
+ "title": "Number of Pairs Satisfying Inequality",
+ "premium": false,
+ "meta": {
+  "name": "numberOfPairs",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   },
+   {
+    "type": "integer",
+    "name": "diff"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,5]\n[2,2,1]\n1",
+  "[3,-1]\n[-2,2]\n-1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

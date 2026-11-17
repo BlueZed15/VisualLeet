@@ -1,0 +1,35 @@
+{
+ "slug": "day-of-the-week",
+ "frontendId": "1185",
+ "title": "Day of the Week",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "day",
+   "type": "integer"
+  },
+  {
+   "name": "month",
+   "type": "integer"
+  },
+  {
+   "name": "year",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "day = {day}\nmonth = {month}\nyear = {year}",
+ "visible": [
+  "day",
+  "month",
+  "year"
+ ],
+ "call": "result = Solution().dayOfTheWeek(day, month, year)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

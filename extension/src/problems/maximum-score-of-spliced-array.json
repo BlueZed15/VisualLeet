@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-score-of-spliced-array",
+ "frontendId": "2321",
+ "title": "Maximum Score Of Spliced Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}",
+ "visible": [
+  "nums1",
+  "nums2"
+ ],
+ "call": "result = Solution().maximumsSplicedArray(nums1, nums2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-days-between-two-dates",
+ "frontendId": "1360",
+ "title": "Number of Days Between Two Dates",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "date1",
+   "type": "string"
+  },
+  {
+   "name": "date2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "date1 = {date1}\ndate2 = {date2}",
+ "visible": [
+  "date1",
+  "date2"
+ ],
+ "call": "result = Solution().daysBetweenDates(date1, date2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "remove-comments",
+ "frontendId": "722",
+ "title": "Remove Comments",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "source",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "source = {source}",
+ "visible": [
+  "source"
+ ],
+ "call": "result = Solution().removeComments(source)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "find-closest-person",
+ "frontendId": "3516",
+ "title": "Find Closest Person",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  },
+  {
+   "name": "z",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}\nz = {z}",
+ "visible": [
+  "x",
+  "y",
+  "z"
+ ],
+ "call": "result = Solution().findClosest(x, y, z)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

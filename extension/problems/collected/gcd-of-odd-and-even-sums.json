@@ -1,0 +1,28 @@
+{
+ "slug": "gcd-of-odd-and-even-sums",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3658",
+ "title": "GCD of Odd and Even Sums",
+ "premium": false,
+ "meta": {
+  "name": "gcdOfOddEvenSums",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "5"
+ ],
+ "exampleOutputs": [
+  "4",
+  "5"
+ ],
+ "anyOrder": false
+}

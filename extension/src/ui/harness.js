@@ -42,6 +42,8 @@ export function checkCase(entry, texts) {
       for (const [i, op] of ops.entries()) {
         const ps = i === 0 ? entry.methods[entry.className] : op !== entry.className && entry.methods[op];
         if (!ps) { errors.operations = `item ${i}: ${entry.className} has no method "${op}"`; break; }
+        // LeetCode sometimes writes [null] for a call with no arguments (e.g. Throne Inheritance)
+        if (!ps.length && args[i].length === 1 && args[i][0] === null) args[i] = [];
         if (args[i].length !== ps.length) { errors.arguments = `item ${i} (${op}): expected ${ps.length} argument${ps.length === 1 ? "" : "s"}, got ${args[i].length}`; break; }
         const bad = ps.map((p, j) => [p, checkValue(args[i][j], p.type)]).find(([, e]) => e);
         if (bad) { errors.arguments = `item ${i} (${op}), ${bad[0].name}: ${bad[1]}`; break; }

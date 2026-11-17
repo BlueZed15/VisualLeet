@@ -1,0 +1,25 @@
+{
+ "slug": "find-minimum-time-to-reach-last-room-ii",
+ "frontendId": "3342",
+ "title": "Find Minimum Time to Reach Last Room II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "moveTime",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "moveTime = {moveTime}",
+ "visible": [
+  "moveTime"
+ ],
+ "call": "result = Solution().minTimeToReach(moveTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

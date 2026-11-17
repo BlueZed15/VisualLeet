@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-longest-balanced-substring-of-a-binary-string",
+ "frontendId": "2609",
+ "title": "Find the Longest Balanced Substring of a Binary String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().findTheLongestBalancedSubstring(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

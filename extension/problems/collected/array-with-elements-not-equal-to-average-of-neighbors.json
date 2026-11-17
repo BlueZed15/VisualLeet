@@ -1,0 +1,28 @@
+{
+ "slug": "array-with-elements-not-equal-to-average-of-neighbors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1968",
+ "title": "Array With Elements Not Equal to Average of Neighbors",
+ "premium": false,
+ "meta": {
+  "name": "rearrangeArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]",
+  "[6,2,0,9,7]"
+ ],
+ "exampleOutputs": [
+  "[1,2,4,5,3]",
+  "[9,7,6,2,0]"
+ ],
+ "anyOrder": false
+}

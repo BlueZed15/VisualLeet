@@ -1,0 +1,30 @@
+{
+ "slug": "longest-unequal-adjacent-groups-subsequence-ii",
+ "frontendId": "2901",
+ "title": "Longest Unequal Adjacent Groups Subsequence II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "groups",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\ngroups = {groups}",
+ "visible": [
+  "words",
+  "groups"
+ ],
+ "call": "result = Solution().getWordsInLongestSubsequence(words, groups)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

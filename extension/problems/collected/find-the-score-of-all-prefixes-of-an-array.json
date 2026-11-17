@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-score-of-all-prefixes-of-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2640",
+ "title": "Find the Score of All Prefixes of an Array",
+ "premium": false,
+ "meta": {
+  "name": "findPrefixScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,7,5,10]",
+  "[1,1,2,4,8,16]"
+ ],
+ "exampleOutputs": [
+  "[4,10,24,36,56]",
+  "[2,4,8,16,32,64]"
+ ],
+ "anyOrder": false
+}

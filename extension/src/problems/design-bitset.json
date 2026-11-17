@@ -1,0 +1,57 @@
+{
+ "slug": "design-bitset",
+ "frontendId": "2166",
+ "title": "Design Bitset",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Bitset",
+ "methods": {
+  "Bitset": [
+   {
+    "name": "size",
+    "type": "integer"
+   }
+  ],
+  "fix": [
+   {
+    "name": "idx",
+    "type": "integer"
+   }
+  ],
+  "unfix": [
+   {
+    "name": "idx",
+    "type": "integer"
+   }
+  ],
+  "flip": [],
+  "all": [],
+  "one": [],
+  "count": [],
+  "toString": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Bitset(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

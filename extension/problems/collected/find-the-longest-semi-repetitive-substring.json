@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-longest-semi-repetitive-substring",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2730",
+ "title": "Find the Longest Semi-Repetitive Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestSemiRepetitiveSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"52233\"",
+  "\"5494\"",
+  "\"1111111\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

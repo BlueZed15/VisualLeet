@@ -1,0 +1,30 @@
+{
+ "slug": "ambiguous-coordinates",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "816",
+ "title": "Ambiguous Coordinates",
+ "premium": false,
+ "meta": {
+  "name": "ambiguousCoordinates",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"(123)\"",
+  "\"(0123)\"",
+  "\"(00011)\""
+ ],
+ "exampleOutputs": [
+  "[\"(1, 2.3)\",\"(1, 23)\",\"(1.2, 3)\",\"(12, 3)\"]",
+  "[\"(0, 1.23)\",\"(0, 12.3)\",\"(0, 123)\",\"(0.1, 2.3)\",\"(0.1, 23)\",\"(0.12, 3)\"]",
+  "[\"(0, 0.011)\",\"(0.001, 1)\"]"
+ ],
+ "anyOrder": true
+}

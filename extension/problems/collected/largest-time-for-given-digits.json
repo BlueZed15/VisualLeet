@@ -1,0 +1,28 @@
+{
+ "slug": "largest-time-for-given-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "949",
+ "title": "Largest Time for Given Digits",
+ "premium": false,
+ "meta": {
+  "name": "largestTimeFromDigits",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[5,5,5,5]"
+ ],
+ "exampleOutputs": [
+  "\"23:41\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

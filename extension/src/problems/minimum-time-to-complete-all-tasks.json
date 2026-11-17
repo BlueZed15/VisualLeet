@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-time-to-complete-all-tasks",
+ "frontendId": "2589",
+ "title": "Minimum Time to Complete All Tasks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}",
+ "visible": [
+  "tasks"
+ ],
+ "call": "result = Solution().findMinimumTime(tasks)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-deletions-to-make-array-divisible",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2344",
+ "title": "Minimum Deletions to Make Array Divisible",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "numsDivide"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,2,4,3]\n[9,6,9,3,15]",
+  "[4,3,6]\n[8,2,6,10]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

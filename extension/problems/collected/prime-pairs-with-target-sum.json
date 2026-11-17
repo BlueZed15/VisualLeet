@@ -1,0 +1,28 @@
+{
+ "slug": "prime-pairs-with-target-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2761",
+ "title": "Prime Pairs With Target Sum",
+ "premium": false,
+ "meta": {
+  "name": "findPrimePairs",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "10",
+  "2"
+ ],
+ "exampleOutputs": [
+  "[[3,7],[5,5]]",
+  "[]"
+ ],
+ "anyOrder": false
+}

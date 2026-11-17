@@ -1,0 +1,34 @@
+{
+ "slug": "check-if-a-string-can-break-another-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1433",
+ "title": "Check If a String Can Break Another String",
+ "premium": false,
+ "meta": {
+  "name": "checkIfCanBreak",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "s2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"xya\"",
+  "\"abe\"\n\"acd\"",
+  "\"leetcodee\"\n\"interview\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

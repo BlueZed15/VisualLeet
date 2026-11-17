@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+ "frontendId": "1111",
+ "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "seq",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "seq = {seq}",
+ "visible": [
+  "seq"
+ ],
+ "call": "result = Solution().maxDepthAfterSplit(seq)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

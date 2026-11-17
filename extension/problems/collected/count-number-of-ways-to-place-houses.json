@@ -1,0 +1,28 @@
+{
+ "slug": "count-number-of-ways-to-place-houses",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2320",
+ "title": "Count Number of Ways to Place Houses",
+ "premium": false,
+ "meta": {
+  "name": "countHousePlacements",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "9"
+ ],
+ "anyOrder": false
+}

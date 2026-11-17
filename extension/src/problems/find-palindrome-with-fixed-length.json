@@ -1,0 +1,30 @@
+{
+ "slug": "find-palindrome-with-fixed-length",
+ "frontendId": "2217",
+ "title": "Find Palindrome With Fixed Length",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "integer[]"
+  },
+  {
+   "name": "intLength",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}\nintLength = {intLength}",
+ "visible": [
+  "queries",
+  "intLength"
+ ],
+ "call": "result = Solution().kthPalindrome(queries, intLength)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

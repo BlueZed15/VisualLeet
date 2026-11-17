@@ -1,0 +1,34 @@
+{
+ "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2915",
+ "title": "Length of the Longest Subsequence That Sums to Target",
+ "premium": false,
+ "meta": {
+  "name": "lengthOfLongestSubsequence",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n9",
+  "[4,1,3,2,1,5]\n7",
+  "[1,1,5,4,5]\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

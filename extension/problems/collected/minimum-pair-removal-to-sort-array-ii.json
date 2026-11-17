@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-pair-removal-to-sort-array-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3510",
+ "title": "Minimum Pair Removal to Sort Array II",
+ "premium": false,
+ "meta": {
+  "name": "minimumPairRemoval",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,3,1]",
+  "[1,2,2]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

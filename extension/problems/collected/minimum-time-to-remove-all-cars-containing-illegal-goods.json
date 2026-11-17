@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-time-to-remove-all-cars-containing-illegal-goods",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2167",
+ "title": "Minimum Time to Remove All Cars Containing Illegal Goods",
+ "premium": false,
+ "meta": {
+  "name": "minimumTime",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1100101\"",
+  "\"0010\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "2"
+ ],
+ "anyOrder": false
+}

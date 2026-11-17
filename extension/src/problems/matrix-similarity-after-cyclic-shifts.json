@@ -1,0 +1,30 @@
+{
+ "slug": "matrix-similarity-after-cyclic-shifts",
+ "frontendId": "2946",
+ "title": "Matrix Similarity After Cyclic Shifts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mat",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mat = {mat}\nk = {k}",
+ "visible": [
+  "mat",
+  "k"
+ ],
+ "call": "result = Solution().areSimilar(mat, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,37 @@
+{
+ "slug": "coupon-code-validator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3606",
+ "title": "Coupon Code Validator",
+ "premium": false,
+ "meta": {
+  "name": "validateCoupons",
+  "params": [
+   {
+    "name": "code",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "businessLine"
+   },
+   {
+    "type": "boolean[]",
+    "name": "isActive"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+  "[\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"]\n[\"grocery\",\"electronics\",\"invalid\"]\n[false,true,true]"
+ ],
+ "exampleOutputs": [
+  "[\"PHARMA5\",\"SAVE20\"]",
+  "[\"ELECTRONICS_50\"]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "solve-the-equation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "640",
+ "title": "Solve the Equation",
+ "premium": false,
+ "meta": {
+  "name": "solveEquation",
+  "params": [
+   {
+    "name": "equation",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"x+5-3+x=6+x-2\"",
+  "\"x=x\"",
+  "\"2x=x\""
+ ],
+ "exampleOutputs": [
+  "\"x=2\"",
+  "\"Infinite solutions\"",
+  "\"x=0\""
+ ],
+ "anyOrder": false
+}

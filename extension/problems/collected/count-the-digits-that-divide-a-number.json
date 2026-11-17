@@ -1,0 +1,30 @@
+{
+ "slug": "count-the-digits-that-divide-a-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2520",
+ "title": "Count the Digits That Divide a Number",
+ "premium": false,
+ "meta": {
+  "name": "countDigits",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "7",
+  "121",
+  "1248"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

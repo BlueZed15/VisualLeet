@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-deletions-to-make-array-beautiful",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2216",
+ "title": "Minimum Deletions to Make Array Beautiful",
+ "premium": false,
+ "meta": {
+  "name": "minDeletion",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "nums"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2,3,5]",
+  "[1,1,2,2,3,3]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

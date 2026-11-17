@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-squares-of-special-elements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2778",
+ "title": "Sum of Squares of Special Elements ",
+ "premium": false,
+ "meta": {
+  "name": "sumOfSquares",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[2,7,1,19,18,3]"
+ ],
+ "exampleOutputs": [
+  "21",
+  "63"
+ ],
+ "anyOrder": false
+}

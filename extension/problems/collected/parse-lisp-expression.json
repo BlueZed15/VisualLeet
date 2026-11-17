@@ -1,0 +1,30 @@
+{
+ "slug": "parse-lisp-expression",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "736",
+ "title": "Parse Lisp Expression",
+ "premium": false,
+ "meta": {
+  "name": "evaluate",
+  "params": [
+   {
+    "name": "expression",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
+  "\"(let x 3 x 2 x)\"",
+  "\"(let x 1 y 2 x (add x y) (add x y))\""
+ ],
+ "exampleOutputs": [
+  "14",
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

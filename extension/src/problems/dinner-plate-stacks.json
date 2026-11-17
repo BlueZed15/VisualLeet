@@ -1,0 +1,53 @@
+{
+ "slug": "dinner-plate-stacks",
+ "frontendId": "1172",
+ "title": "Dinner Plate Stacks",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "DinnerPlates",
+ "methods": {
+  "DinnerPlates": [
+   {
+    "name": "capacity",
+    "type": "integer"
+   }
+  ],
+  "push": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "pop": [],
+  "popAtStack": [
+   {
+    "name": "index",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = DinnerPlates(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

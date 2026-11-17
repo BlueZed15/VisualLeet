@@ -1,0 +1,32 @@
+{
+ "slug": "partition-string-into-substrings-with-values-at-most-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2522",
+ "title": "Partition String Into Substrings With Values at Most K",
+ "premium": false,
+ "meta": {
+  "name": "minimumPartition",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"165462\"\n60",
+  "\"238182\"\n5"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

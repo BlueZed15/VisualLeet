@@ -1,0 +1,28 @@
+{
+ "slug": "h-index-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "275",
+ "title": "H-Index II",
+ "premium": false,
+ "meta": {
+  "name": "hIndex",
+  "params": [
+   {
+    "name": "citations",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,3,5,6]",
+  "[1,2,100]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

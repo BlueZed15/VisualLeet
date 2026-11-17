@@ -1,0 +1,25 @@
+{
+ "slug": "unique-3-digit-even-numbers",
+ "frontendId": "3483",
+ "title": "Unique 3-Digit Even Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "digits",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "digits = {digits}",
+ "visible": [
+  "digits"
+ ],
+ "call": "result = Solution().totalNumbers(digits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

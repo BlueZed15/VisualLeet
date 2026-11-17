@@ -1,0 +1,32 @@
+{
+ "slug": "count-stepping-numbers-in-range",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2801",
+ "title": "Count Stepping Numbers in Range",
+ "premium": false,
+ "meta": {
+  "name": "countSteppingNumbers",
+  "params": [
+   {
+    "name": "low",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "high"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1\"\n\"11\"",
+  "\"90\"\n\"101\""
+ ],
+ "exampleOutputs": [
+  "10",
+  "2"
+ ],
+ "anyOrder": false
+}

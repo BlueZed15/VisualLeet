@@ -1,0 +1,32 @@
+{
+ "slug": "check-if-array-is-good",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2784",
+ "title": "Check if Array is Good",
+ "premium": false,
+ "meta": {
+  "name": "isGood",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2, 1, 3]",
+  "[1, 3, 3, 2]",
+  "[1, 1]",
+  "[3, 4, 4, 1, 2, 1]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

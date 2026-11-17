@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-k-th-character-in-string-game-ii",
+ "frontendId": "3307",
+ "title": "Find the K-th Character in String Game II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "long"
+  },
+  {
+   "name": "operations",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\noperations = {operations}",
+ "visible": [
+  "k",
+  "operations"
+ ],
+ "call": "result = Solution().kthCharacter(k, operations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

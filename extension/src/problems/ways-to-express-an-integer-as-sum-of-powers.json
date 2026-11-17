@@ -1,0 +1,30 @@
+{
+ "slug": "ways-to-express-an-integer-as-sum-of-powers",
+ "frontendId": "2787",
+ "title": "Ways to Express an Integer as Sum of Powers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nx = {x}",
+ "visible": [
+  "n",
+  "x"
+ ],
+ "call": "result = Solution().numberOfWays(n, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

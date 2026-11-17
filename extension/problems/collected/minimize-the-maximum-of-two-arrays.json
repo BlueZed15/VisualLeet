@@ -1,0 +1,42 @@
+{
+ "slug": "minimize-the-maximum-of-two-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2513",
+ "title": "Minimize the Maximum of Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "minimizeSet",
+  "params": [
+   {
+    "name": "divisor1",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "divisor2"
+   },
+   {
+    "type": "integer",
+    "name": "uniqueCnt1"
+   },
+   {
+    "type": "integer",
+    "name": "uniqueCnt2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n7\n1\n3",
+  "3\n5\n2\n1",
+  "2\n4\n8\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "15"
+ ],
+ "anyOrder": false
+}

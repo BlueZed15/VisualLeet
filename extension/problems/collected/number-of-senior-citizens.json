@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-senior-citizens",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2678",
+ "title": "Number of Senior Citizens",
+ "premium": false,
+ "meta": {
+  "name": "countSeniors",
+  "params": [
+   {
+    "name": "details",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"7868190130M7522\",\"5303914400F9211\",\"9273338290F4010\"]",
+  "[\"1313579440F2036\",\"2921522980M5644\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

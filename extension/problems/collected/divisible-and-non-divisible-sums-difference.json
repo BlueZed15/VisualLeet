@@ -1,0 +1,34 @@
+{
+ "slug": "divisible-and-non-divisible-sums-difference",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2894",
+ "title": "Divisible and Non-divisible Sums Difference",
+ "premium": false,
+ "meta": {
+  "name": "differenceOfSums",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n3",
+  "5\n6",
+  "5\n1"
+ ],
+ "exampleOutputs": [
+  "19",
+  "15",
+  "-15"
+ ],
+ "anyOrder": false
+}

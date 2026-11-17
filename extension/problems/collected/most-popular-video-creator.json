@@ -1,0 +1,36 @@
+{
+ "slug": "most-popular-video-creator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2456",
+ "title": "Most Popular Video Creator",
+ "premium": false,
+ "meta": {
+  "name": "mostPopularCreator",
+  "params": [
+   {
+    "name": "creators",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "ids"
+   },
+   {
+    "type": "integer[]",
+    "name": "views"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "[\"alice\",\"bob\",\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+  "[\"alice\",\"alice\",\"alice\"]\n[\"a\",\"b\",\"c\"]\n[1,2,2]"
+ ],
+ "exampleOutputs": [
+  "[[\"alice\",\"one\"],[\"bob\",\"two\"]]",
+  "[[\"alice\",\"b\"]]"
+ ],
+ "anyOrder": true
+}

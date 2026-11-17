@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-maximum-achievable-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2769",
+ "title": "Find the Maximum Achievable Number",
+ "premium": false,
+ "meta": {
+  "name": "theMaximumAchievableX",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n1",
+  "3\n2"
+ ],
+ "exampleOutputs": [
+  "6",
+  "7"
+ ],
+ "anyOrder": false
+}

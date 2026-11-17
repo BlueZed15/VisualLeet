@@ -1,0 +1,34 @@
+{
+ "slug": "longest-subsequence-repeated-k-times",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2014",
+ "title": "Longest Subsequence Repeated k Times",
+ "premium": false,
+ "meta": {
+  "name": "longestSubsequenceRepeatedK",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"letsleetcode\"\n2",
+  "\"bb\"\n2",
+  "\"ab\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"let\"",
+  "\"b\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "contain-virus",
+ "frontendId": "749",
+ "title": "Contain Virus",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "isInfected",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "isInfected = {isInfected}",
+ "visible": [
+  "isInfected"
+ ],
+ "call": "result = Solution().containVirus(isInfected)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "find-common-elements-between-two-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2956",
+ "title": "Find Common Elements Between Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "findIntersectionValues",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,2]\n[1,2]",
+  "[4,3,2,3,1]\n[2,2,5,2,3,6]",
+  "[3,4,2,3]\n[1,5]"
+ ],
+ "exampleOutputs": [
+  "[2,1]",
+  "[3,4]",
+  "[0,0]"
+ ],
+ "anyOrder": false
+}

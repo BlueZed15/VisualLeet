@@ -1,0 +1,28 @@
+{
+ "slug": "reverse-degree-of-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3498",
+ "title": "Reverse Degree of a String",
+ "premium": false,
+ "meta": {
+  "name": "reverseDegree",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"",
+  "\"zaza\""
+ ],
+ "exampleOutputs": [
+  "148",
+  "160"
+ ],
+ "anyOrder": false
+}

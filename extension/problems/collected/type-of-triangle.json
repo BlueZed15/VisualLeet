@@ -1,0 +1,28 @@
+{
+ "slug": "type-of-triangle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3024",
+ "title": "Type of Triangle",
+ "premium": false,
+ "meta": {
+  "name": "triangleType",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[3,3,3]",
+  "[3,4,5]"
+ ],
+ "exampleOutputs": [
+  "\"equilateral\"",
+  "\"scalene\""
+ ],
+ "anyOrder": false
+}

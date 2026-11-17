@@ -1,0 +1,36 @@
+{
+ "slug": "k-divisible-elements-subarrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2261",
+ "title": "K Divisible Elements Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "countDistinct",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "p"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,3,2,2]\n2\n2",
+  "[1,2,3,4]\n4\n1"
+ ],
+ "exampleOutputs": [
+  "11",
+  "10"
+ ],
+ "anyOrder": false
+}

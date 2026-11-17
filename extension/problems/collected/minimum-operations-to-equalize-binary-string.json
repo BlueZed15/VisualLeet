@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-operations-to-equalize-binary-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3666",
+ "title": "Minimum Operations to Equalize Binary String",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"110\"\n1",
+  "\"0101\"\n3",
+  "\"101\"\n2"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,9 +1,9 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-17",
  "python": "Python 3.15.2",
  "counts": {
   "verified": 176,
-  "inputs-ok": 1350
+  "inputs-ok": 2166
  },
  "problems": {
   "contains-duplicate": {
@@ -7635,6 +7635,4086 @@
    "problems": []
   },
   "minimum-initial-energy-to-finish-tasks": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "water-and-jug-problem": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "zero-array-transformation-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-nearest-point-that-has-the-same-x-or-y-coordinate": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "take-gifts-from-the-richest-pile": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-servers-that-handled-most-number-of-requests": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "greatest-common-divisor-traversal": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "circular-array-loop": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "student-attendance-record-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "delete-columns-to-make-sorted-iii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "convert-integer-to-the-sum-of-two-no-zero-integers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-consecutive-values-you-can-make": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "coloring-a-border": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-substring-of-all-vowels-in-order": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-all-as-appears-before-all-bs": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-triangle-area": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "finding-the-users-active-minutes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "frog-position-after-t-seconds": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-strictly-increasing-or-strictly-decreasing-subarray": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-ideal-arrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-reach-a-position-after-exactly-k-steps": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "three-equal-parts": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-sum-obtained-of-any-permutation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-repeating-substring": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "vowel-spellchecker": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "merge-two-2d-arrays-by-summing-values": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "ways-to-express-an-integer-as-sum-of-powers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "append-k-integers-with-minimal-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "strictly-palindromic-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-total-number-of-colored-cells": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-white-tiles-covered-by-a-carpet": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-odd-binary-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "increasing-decreasing-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "replace-non-coprime-numbers-in-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "difference-between-element-sum-and-digit-sum-of-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-subsequence-repeated-k-times": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-deletions-to-make-array-beautiful": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-score-of-spliced-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-polygon-with-the-largest-perimeter": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "determine-if-a-cell-is-reachable-at-a-given-time": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-front-middle-back-queue": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximum-compatibility-score-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-integers-to-choose-from-a-range-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "two-out-of-three": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-value-of-an-ordered-triplet-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "super-washing-machines": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "capitalize-the-title": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "calculate-digit-sum-of-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "beautiful-arrangement-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-split-of-positive-even-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-array-end": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "print-words-vertically": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "intersection-of-multiple-arrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-index-of-a-valid-split": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-there-is-a-valid-parentheses-string-path": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "matrix-cells-in-distance-order": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "distance-between-bus-stops": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-score-after-removals-on-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-closest-number-to-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "available-captures-for-rook": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-all-k-distant-indices-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "a-number-after-a-double-reversal": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "destroying-asteroids": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "remove-letter-to-equalize-frequency": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-adjacent-swaps-to-reach-the-kth-smallest-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-weighted-subgraph-with-the-required-paths": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-largest-group": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-the-rectangle": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "decode-xored-permutation": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sort-even-and-odd-indices-independently": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-missing-non-negative-integer-after-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "neighboring-bitwise-xor": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cost-walk-in-weighted-graph": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-time-to-type-word-using-special-typewriter": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-days-without-meetings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "smallest-range-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "divide-a-string-into-groups-of-size-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "slowest-key": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-senior-citizens": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-product-after-k-increments": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-paths-with-max-score": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "split-two-strings-to-make-palindrome": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-make-all-array-elements-equal-to-1": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "get-maximum-in-generated-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reachable-nodes-with-restrictions": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-candies-you-can-get-from-boxes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-a-string-can-break-another-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "convert-the-temperature": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "rearrange-words-in-a-sentence": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-ways-to-rearrange-sticks-with-k-sticks-visible": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cost-homecoming-of-a-robot-in-a-grid": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-non-overlapping-palindrome-substrings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "alternating-groups-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-amount-of-time-to-fill-cups": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-absolute-difference-between-elements-with-constraint": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "insufficient-nodes-in-root-to-leaf-paths": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "apply-operations-to-maximize-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sliding-subarray-beauty": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "shortest-subarray-with-or-at-least-k-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-1-bordered-square": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-number-of-distinct-colors-among-the-balls": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-a-subsequence": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-unique-good-subsequences": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-number-of-distinct-integers-after-reverse-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-the-integer-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-total-damage-with-spell-casting": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "range-frequency-queries": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "circular-sentence": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "rle-iterator": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "next-greater-element-iv": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-split-a-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "the-time-when-the-network-becomes-idle": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-longest-equal-subarray": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "evaluate-the-bracket-pairs-of-a-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "complex-number-multiplication": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "compare-strings-by-frequency-of-the-smallest-character": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-adjacent-swaps-for-k-consecutive-ones": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "remove-comments": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "modify-graph-edge-weights": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-pairs-of-strings-with-concatenation-equal-to-target": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-permutations-for-di-sequence": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-pairs-in-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-k-beauty-of-a-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-building-height": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-time-for-given-digits": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-digits-that-divide-a-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "closest-dessert-cost": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "k-divisible-elements-subarrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "separate-the-digits-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-square-sum-triples": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-path-quality-of-a-graph": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-three-consecutive-integers-that-sum-to-a-given-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sort-the-students-by-their-kth-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-words-containing-character": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-subsequence-widths": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-longest-special-substring-that-occurs-thrice-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-sets-of-k-non-overlapping-line-segments": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-matrix-after-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-integers-with-even-digit-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-skiplist": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximize-the-profit-as-the-salesman": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-xor-sum-of-two-arrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-the-array-k-increasing": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "delete-greatest-value-in-each-row": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "form-largest-integer-with-digits-that-add-up-to-target": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "the-k-strongest-values-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-words-obtained-after-adding-a-letter": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-elements-with-strictly-smaller-and-greater-elements": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-length-of-string-after-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "clear-digits": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "tiling-a-rectangle-with-the-fewest-squares": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cost-of-a-path-with-special-roads": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "escape-a-large-maze": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-special-quadruplets": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-all-lonely-numbers-in-the-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-chunked-palindrome-decomposition": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-people-to-teach": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-groups-entering-a-competition": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-if-array-can-be-sorted": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimize-malware-spread-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-minimum-diameter-after-merging-two-trees": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-numbers-are-ascending-in-a-sentence": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-number-of-weeks-for-which-you-can-work": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "stone-game-viii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-subarray-sum-with-length-divisible-by-k": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "strange-printer-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-number-after-digit-swaps-by-parity": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-nesting-depth-of-two-valid-parentheses-strings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "divisible-and-non-divisible-sums-difference": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "create-sorted-array-through-instructions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-time-to-remove-all-cars-containing-illegal-goods": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-common-factors": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "zero-array-transformation-iii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-make-binary-array-elements-equal-to-one-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "detect-pattern-of-length-m-repeated-k-or-more-times": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-value-of-an-ordered-triplet-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "falling-squares": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-asterisks": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "lexicographically-smallest-string-after-applying-operations": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-all-the-integers-in-a-range-are-covered": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "replace-elements-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-convert-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-number-has-equal-digit-count-and-digit-value": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "range-product-queries-of-powers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sum-of-beauty-in-the-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "smallest-value-of-the-rearranged-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "mice-and-cheese": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-changes-to-make-binary-string-beautiful": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-deletions-to-make-string-k-special": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-power-of-k-size-subarrays-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-of-absolute-value-expression": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-latest-group-of-size-m": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-all-good-indices": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "separate-squares-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-halve-array-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-zero-request-servers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "cracking-the-safe": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "process-restricted-friend-requests": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "shortest-impossible-sequence-of-rolls": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-subarrays-with-median-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-lines-to-write-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "brace-expansion-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "subrectangle-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-a-text-editor": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximum-number-of-jumps-to-reach-the-last-index": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-palindromic-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "last-substring-in-lexicographical-order": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "array-with-elements-not-equal-to-average-of-neighbors": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "airplane-seat-assignment-probability": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-different-integers-in-a-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "make-costs-of-paths-equal-in-a-binary-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-palindrome-with-fixed-length": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "online-majority-element-in-subarray": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "count-symmetric-integers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-frequency-of-an-element-after-performing-operations-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-binary-string-has-at-most-one-segment-of-ones": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-palindromic-subsequences": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-k-th-character-in-string-game-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "reschedule-meetings-for-maximum-free-time-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-maximum-length-of-valid-subsequence-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-non-decreasing-subarray-from-two-arrays": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "shortest-cycle-in-a-graph": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-balls-in-a-box": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "three-divisors": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-reduce-an-integer-to-0": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-the-topmost-element-after-k-moves": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "grid-illumination": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "disconnect-path-in-a-binary-matrix-by-at-most-one-flip": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "cells-in-a-range-on-an-excel-sheet": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-numbers-of-function-calls-to-make-target-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-xor-after-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-number-of-ways-to-place-houses": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-special-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-substrings-with-dominant-ones": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-array-given-subset-sums": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "projection-area-of-3d-shapes": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-subsequence-in-non-increasing-order": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "simple-bank-system": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "shortest-distance-after-road-addition-queries-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "shortest-completing-word": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "fancy-sequence": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "string-compression-iii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-maximum-length-of-valid-subsequence-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximize-area-of-square-hole-in-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "row-with-maximum-ones": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-strictly-increasing-cells-in-a-matrix": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-subarrays-with-equal-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-exceed-threshold-value-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "circle-and-rectangle-overlapping": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-distance-to-the-target-element": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "task-scheduler-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-employees-who-met-the-target": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-swaps-to-make-the-binary-string-alternating": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-grid-can-be-cut-into-sections": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "invalid-transactions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-number-of-visible-points": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-multiple-of-three": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-xor-sum-of-all-pairs-bitwise-and": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "shortest-distance-to-target-string-in-a-circular-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-convert-all-elements-to-zero": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-rectangles-that-can-form-the-largest-square": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "delete-duplicate-folders-in-system": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-make-the-array-alternating": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-integers-in-intervals": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "sum-multiples": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-make-array-xor-equal-to-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-removals-to-balance-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reformat-the-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "fruits-into-baskets-iii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "largest-merge-of-two-strings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-excellent-pairs": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-k-sum-of-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-seconds-to-make-mountain-height-zero": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "second-largest-digit-in-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-prefix-and-suffix-pairs-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "total-characters-in-string-after-transformations-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "surface-area-of-3d-shapes": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-prefixes-of-a-given-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "subarray-with-elements-greater-than-varying-threshold": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "merge-similar-items": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "length-of-the-longest-valid-substring": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "make-number-of-distinct-characters-equal": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "design-bitset": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximum-difference-by-remapping-a-digit": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "destroy-sequential-targets": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "graph-connectivity-with-threshold": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-word-equals-summation-of-two-words": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-manhattan-distance-after-k-changes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "max-difference-you-can-get-from-changing-an-integer": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "replace-all-s-to-avoid-consecutive-repeating-characters": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-win-from-two-segments": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-product-matrix": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-equal-sum-of-two-arrays-after-replacing-zeros": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "largest-magic-square": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-time-to-finish-the-race": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-maximum-number-of-marked-indices": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-steps-to-make-two-strings-anagram-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-of-integers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-champion-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "lexicographically-minimum-string-after-removing-stars": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-it-is-a-good-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-additions-to-make-valid-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-total-space-wasted-with-k-resizing-operations": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "min-max-game": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-deletions-to-make-array-divisible": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-cost-to-make-all-characters-equal": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "taking-maximum-energy-from-the-mystic-dungeon": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-score-of-a-node-sequence": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-pairs-of-similar-strings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-tic-tac-toe-state": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-divisibility-array-of-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "special-array-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "special-permutations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "collect-coins-in-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "words-within-two-edits-of-dictionary": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-balanced-substring-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "print-binary-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-pairs-satisfying-inequality": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-pairs-of-interchangeable-rectangles": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longer-contiguous-segments-of-ones-than-zeros": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "convert-to-base-2": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "describe-the-painting": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-subtrees-with-max-distance-between-cities": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-whether-two-strings-are-almost-equivalent": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "rearrange-characters-to-make-target-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-food-buckets-to-feed-the-hamsters": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-substring-of-one-repeating-character": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "selling-pieces-of-wood": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-binary-tree-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-strings-can-be-made-equal-with-operations-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-x-sum-of-all-k-long-subarrays-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-number-of-beautiful-subarrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-unequal-adjacent-groups-subsequence-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "h-index-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-an-ordered-stream": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "make-array-empty": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-equal-frequency": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sum-of-digits-in-base-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "groups-of-special-equivalent-strings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "final-array-state-after-k-multiplication-operations-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-distinct-elements-after-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-rotation-with-highest-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "execution-of-all-suffix-instructions-staying-in-a-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-powerful-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "kth-smallest-instructions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-knight-tour-configuration": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-moves-to-spread-stones-over-grid": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "kth-smallest-amount-with-single-denomination-combination": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-palindrome-length-from-subsequences": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "distribute-candies-among-children-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-make-elements-in-array-distinct": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "percentage-of-letter-in-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-maximum-achievable-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "distinct-prime-factors-of-product-of-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-moves-to-clean-the-classroom": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-special-triplets": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-uncommon-subsequence-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-pairs-with-xor-in-a-range": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "time-needed-to-rearrange-a-binary-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "length-of-the-longest-alphabetical-continuous-substring": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "vowels-game-in-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "splitting-a-string-into-descending-consecutive-values": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "make-array-elements-equal-to-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "solve-the-equation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "next-greater-numerically-balanced-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-matrix-is-x-matrix": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-absolute-difference-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-number-of-rectangles-containing-each-point": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-string-is-a-prefix-of-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "divide-an-array-into-subarrays-with-minimum-cost-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-minimum-time-to-reach-last-room-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "design-movie-rental-system": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "sum-of-squares-of-special-elements": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-and-sum-of-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "movement-of-robots": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-form-subsequence-with-target-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-addition-to-make-integer-beautiful": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "gcd-sort-of-an-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-a-safe-walk-through-a-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-number-of-special-subsequences": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "the-two-sneaky-numbers-of-digitville": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "closest-nodes-queries-in-a-binary-search-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-seconds-to-equalize-a-circular-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "visit-array-positions-to-maximize-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "power-grid-maintenance": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-moves-to-convert-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "determine-if-two-events-have-conflict": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-minimum-operations-to-make-all-elements-divisible-by-three": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-good-people-based-on-statements": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "the-latest-time-to-catch-a-bus": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-it-is-possible-to-split-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-partitions-with-max-min-difference-at-most-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-all-good-strings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "k-highest-ranked-items-within-a-price-range": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-length-substring-with-two-occurrences": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-k-th-character-in-string-game-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "prime-palindrome": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "closest-room": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-separate-numbers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "all-divisions-with-the-highest-score-of-a-binary-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-kth-largest-xor-coordinate-value": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "greatest-english-letter-in-upper-and-lower-case": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "water-bottles-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "fruits-into-baskets-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "generate-a-string-with-characters-that-have-odd-counts": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "divide-an-array-into-subarrays-with-minimum-cost-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-number-of-operations-to-move-ones-to-the-end": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-original-typed-string-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "occurrences-after-bigram": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "mean-of-array-after-removing-some-elements": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "make-k-subarray-sums-equal": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "finding-mk-average": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximize-number-of-subsequences-in-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "verbal-arithmetic-puzzle": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-binary-string-after-change": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "decode-the-slanted-ciphertext": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-distances-between-same-letters": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimize-the-total-price-of-the-trips": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "random-point-in-non-overlapping-rectangles": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "count-ways-to-build-rooms-in-an-ant-colony": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "operations-on-tree": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "count-days-spent-together": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimize-the-maximum-of-two-arrays": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-deletions-on-a-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sorting-three-groups": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "faulty-keyboard": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "day-of-the-year": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "queries-on-a-permutation-with-key": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "the-earliest-and-latest-rounds-where-players-compete": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-white-tiles-after-covering-with-carpets": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "alice-and-bob-playing-flower-game": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-ways-to-partition-an-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "shortest-and-lexicographically-smallest-beautiful-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "thousand-separator": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-good-subarray-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "dinner-plate-stacks": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "smallest-k-length-subsequence-with-occurrences-of-a-letter": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-common-subpath": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximize-greatness-of-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-points-in-an-archery-competition": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-earn-points": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "the-number-of-good-subsets": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sort-matrix-by-diagonals": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "first-day-where-you-have-been-in-all-the-rooms": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "closest-equal-element-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "parse-lisp-expression": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-all-possible-stable-binary-arrays-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-minimum-amount-of-time-to-brew-potions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "mini-parser": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "groups-of-strings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "alternating-digit-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-square-free-subsets": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-original-typed-string-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-pair-removal-to-sort-array-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-swaps-to-sort-by-digit-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-element-in-an-array-after-merge-operations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-cost-to-connect-two-groups-of-points": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "largest-values-from-labels": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-segment-sum-after-removals": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reformat-date": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-sum-of-an-hourglass": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "zuma-game": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-convert-time": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-amount-of-money-robot-can-earn": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-area-of-longest-diagonal-rectangle": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-great-partitions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-maximum-number-of-elements-in-subset": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "implement-router": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "get-watched-videos-by-your-friends": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "rearrange-spaces-between-words": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-minimum-area-to-cover-all-ones-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-task-manager": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "longest-balanced-subarray-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reverse-subarray-to-maximize-array-value": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-unequal-adjacent-groups-subsequence-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "beautiful-towers-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-word": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "adjacent-increasing-subarrays-detection-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "adjacent-increasing-subarrays-detection-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-lexicographically-largest-string-from-the-box-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "node-with-highest-edge-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-maximum-number-of-string-pairs": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "smallest-missing-genetic-value-in-each-subtree": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-anagrams": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "difference-between-maximum-and-minimum-price-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "generate-random-point-in-a-circle": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "check-if-array-is-good": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "maximum-unique-subarray-sum-after-deletion": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "previous-permutation-with-one-swap": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reconstruct-a-2-row-binary-matrix": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "triples-with-bitwise-and-equal-to-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-buy-pens-and-pencils": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-number-of-ways-to-place-people-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "stone-game-ix": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sender-with-largest-word-count": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "get-biggest-three-rhombus-sums-in-a-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "ways-to-split-array-into-good-subarrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "preimage-size-of-factorial-zeroes-function": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "valid-boomerang": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "distribute-repeating-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "matrix-similarity-after-cyclic-shifts": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "type-of-triangle": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-subarrays-with-gcd-equal-to-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-value-after-replacing-with-sum-of-prime-factors": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "trionic-array-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-paths-that-can-form-a-palindrome-in-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-edge-reversals-so-every-node-is-reachable": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-lexicographically-smallest-valid-sequence": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "find-the-count-of-good-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cost-path-with-edge-reversals": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-submatrices-with-top-left-element-and-sum-less-than-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-cost-to-split-an-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-time-to-complete-all-tasks": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-number-of-special-characters-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "remove-methods-from-project": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-floored-pairs": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "apply-operations-on-array-to-maximize-sum-of-squares": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "reschedule-meetings-for-maximum-free-time-ii": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "smallest-index-with-equal-value": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "decrease-elements-to-make-array-zigzag": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-maximum-number-of-fruits-collected": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "making-file-names-unique": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "unique-3-digit-even-numbers": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "cyclically-rotating-a-grid": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "day-of-the-week": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "jump-game-ix": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-unequal-triplets-in-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "network-recovery-pathways": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-string-is-transformable-with-substring-sort-operations": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-star-sum-of-a-graph": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-square-area-by-removing-fences-from-a-field": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "transformed-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "random-flip-matrix": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "contain-virus": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-distinct-roll-sequences": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-most-frequent-vowel-and-consonant": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-total-beauty-of-the-gardens": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-make-arrays-similar": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-repetitions": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "prime-arrangements": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "apply-operations-to-make-all-array-elements-equal-to-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "furthest-point-from-origin": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-days-between-two-dates": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-authentication-manager": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximize-the-number-of-partitions-after-operations": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-covered-buildings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-string-with-lcp": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-x-sum-of-all-k-long-subarrays-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "clumsy-factorial": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-strings-can-be-made-equal-with-operations-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-missing-integer-greater-than-sequential-prefix-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-the-number-of-target-nodes-after-connecting-trees-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "walking-robot-simulation-ii": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "max-pair-sum-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-closest-person": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-different-subsequences-gcds": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "create-components-with-same-value": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-pushes-to-type-word-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-substring-with-given-hash-value": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-array-equal-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "simplified-fractions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-sum-with-exactly-k-elements": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-common-suffix-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "circular-permutation-in-binary-representation": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-value-of-a-string-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "lexicographically-smallest-permutation-greater-than-target": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "split-with-minimum-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-largest-area-of-square-inside-two-rectangles": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "best-time-to-buy-and-sell-stock-v": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "odd-string-difference": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-distinct-averages": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-sum-of-squares-of-digits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-coins-to-be-added": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-numbers-with-units-digit-k": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "process-string-with-special-operations-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-k-mirror-numbers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cost-path-with-teleportations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "display-table-of-food-orders-in-a-restaurant": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "tree-of-coprimes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "concatenate-non-zero-digits-and-multiply-by-sum-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-or": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "subarrays-distinct-element-sum-of-squares-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "can-convert-string-in-k-moves": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-consecutive-floors-without-special-floors": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-balanced-substring-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "make-the-xor-of-all-segments-equal-to-zero": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-arrays-with-k-matching-adjacent-elements": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "smallest-good-base": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "optimal-division": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-space-wasted-from-packaging": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-genetic-difference-query": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "prime-in-diagonal": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-size-subarray-in-infinite-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-partitions-with-even-sum-difference": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "powerful-integers": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-array-length-after-pair-removals": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "construct-the-minimum-bitwise-array-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "self-crossing": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "stamping-the-grid": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "neither-minimum-nor-maximum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "prime-pairs-with-target-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-groups-with-increasing-length": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-submatrices-with-equal-frequency-of-x-and-y": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-visited-cells-in-a-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "most-frequent-number-following-key-in-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-money-required-before-transactions": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "lexicographically-smallest-palindrome": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-longest-special-substring-that-occurs-thrice-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-pair-removal-to-sort-array-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-area-rectangle-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "apple-redistribution-into-boxes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sum-in-a-matrix": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "sequentially-ordinal-rank-tracker": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "number-of-beautiful-integers-in-the-range": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "subsequence-with-the-minimum-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-jumps-to-reach-end-via-prime-teleportation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "delivering-boxes-from-storage-to-ports": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-a-value-of-a-mysterious-function-closest-to-target": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-make-array-values-equal-to-k": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "moving-stones-until-consecutive-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-garden-perimeter-to-collect-enough-apples": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "best-poker-hand": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-the-number-of-special-characters-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "latest-time-by-replacing-hidden-digits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-largest-almost-missing-integer": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-absolute-distance-between-mirror-pairs": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "substring-xor-queries": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-adjacent-elements-with-the-same-color": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-number-of-groups-to-create-a-valid-assignment": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximum-difference-between-even-and-odd-frequency-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "reformat-phone-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "smallest-palindromic-rearrangement-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-xor-beauty-of-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-increasing-quadruplets": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-substring-with-maximum-cost": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "apply-operations-to-make-two-strings-equal": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-minimum-area-to-cover-all-ones-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "equal-sum-grid-partition-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-fertile-pyramids-in-a-land": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-array-concatenation-value": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-mentions-per-user": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "gcd-of-odd-and-even-sums": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-value-after-insertion": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-difference-between-even-and-odd-frequency-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "partition-string-into-substrings-with-values-at-most-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-longest-balanced-substring-of-a-binary-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-number-of-trapezoids-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "cycle-length-queries-in-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-uniform-parity-array-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "trionic-array-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "match-substring-after-replacement": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "beautiful-towers-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "binary-string-with-substrings-representing-1-to-n": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "add-minimum-number-of-rungs": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "recover-the-original-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-hours-of-training-to-win-a-competition": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-cost-to-convert-string-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "magical-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "strong-password-checker-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-subarrays-with-lcm-equal-to-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "distribute-money-to-maximum-children": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-uploaded-prefix": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximum-strength-of-a-group": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "points-that-intersect-with-cars": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "subarrays-distinct-element-sum-of-squares-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "total-characters-in-string-after-transformations-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "path-existence-queries-in-a-graph-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-missing-elements": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimize-string-length": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-impossible-or": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-number-of-vowel-strings-in-range": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-sort-a-string": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-operations-to-make-array-elements-zero": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-memory-allocator": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "minimum-number-game": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-positive-sum-subarray": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "partition-string-into-minimum-beautiful-substrings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "earliest-finish-time-for-land-and-water-rides-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-sort-a-permutation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "average-value-of-even-numbers-that-are-divisible-by-three": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-distinct-difference-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-number-with-all-set-bits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "super-palindromes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "decremental-string-concatenation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximize-spanning-tree-stability-with-upgrades": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "shortest-string-that-contains-three-strings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-a-special-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximize-the-number-of-target-nodes-after-connecting-trees-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-x-value-of-array-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-profit-from-trading-stocks-with-discounts": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "number-of-even-and-odd-bits": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-make-array-sum-divisible-by-k": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-a-string-is-an-acronym-of-words": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "length-of-longest-v-shaped-diagonal-segment": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "minimum-edge-weight-equilibrium-queries-in-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-score-of-all-prefixes-of-an-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-score-after-applying-operations-on-a-tree": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "transform-to-chessboard": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-beautiful-partitions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-minimum-time-to-reach-last-room-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "longest-even-odd-subarray-with-threshold": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-stepping-numbers-in-range": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-visited-nodes-in-a-directed-graph": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-uniform-parity-array-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "reward-top-k-students": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-number-of-balanced-permutations": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "best-time-to-buy-and-sell-stock-using-strategy": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "add-edges-to-make-degrees-of-all-nodes-even": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-lines-to-represent-a-line-chart": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-commas-in-range-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-balanced-subarray-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-degree-of-a-connected-trio-in-a-graph": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "distribute-elements-into-two-arrays-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-k-subsequences-of-a-string-with-maximum-beauty": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "construct-the-minimum-bitwise-array-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-alternating-sum-of-squares": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-number-of-groups-getting-fresh-donuts": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "booking-concert-tickets-in-groups": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "check-if-digits-are-equal-in-string-after-operations-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-number-of-computer-unlocking-permutations": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-missing-multiple-of-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-pairs-of-nodes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-valid-words-in-a-sentence": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-sum-queries": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "split-strings-by-separator": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-number-of-ways-to-place-people-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "encrypt-and-decrypt-strings": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "query-kth-smallest-trimmed-number": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-increment-operations-to-make-array-beautiful": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-skips-to-arrive-at-meeting-on-time": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sorted-gcd-pair-queries": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-xor-path-in-a-grid": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "number-of-orders-in-the-backlog": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "determine-the-minimum-sum-of-a-k-avoiding-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-active-section-with-trade-i": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "maximum-total-subarray-value-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "generate-binary-strings-without-adjacent-zeros": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-zigzag-arrays-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "longest-subsequence-with-non-zero-bitwise-xor": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-burgers-with-no-waste-of-ingredients": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "form-array-by-concatenating-subarrays-of-another-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-cuts-to-divide-a-circle": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-consecutive-integers-from-a-data-stream": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "maximize-grid-happiness": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "power-of-heroes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "remove-trailing-zeros-from-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-divisible-digit-product-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-ways-to-group-overlapping-ranges": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "closest-divisors": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "frequency-tracker": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "k-items-with-the-maximum-sum": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "distinct-echo-substrings": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "block-placement-queries": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "ambiguous-coordinates": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "construct-the-longest-new-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "adding-two-negabinary-numbers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-walls-destroyed-by-robots": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "coupon-code-validator": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "most-visited-sector-in-a-circular-track": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "total-distance-traveled": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-the-number-of-good-partitions": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-size-of-a-set-after-removals": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-enemy-forts-that-can-be-captured": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "equal-sum-grid-partition-ii": {
+   "status": "inputs-ok",
+   "examples": 4,
+   "problems": []
+  },
+  "change-minimum-characters-to-satisfy-one-of-three-conditions": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "number-of-ways-to-assign-edge-weights-i": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "check-if-word-can-be-placed-in-crossword": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-edges-in-shortest-paths": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-difference-between-adjacent-elements-in-a-circular-array": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "design-spreadsheet": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "find-the-number-of-subsequences-with-equal-gcd": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "escape-the-ghosts": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "form-smallest-number-from-two-digit-arrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-the-value-of-the-partition": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-sum-of-almost-unique-subarray": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "make-three-strings-equal": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "find-common-elements-between-two-arrays": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-imbalance-numbers-of-all-subarrays": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "earliest-finish-time-for-land-and-water-rides-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximum-k-to-sort-a-permutation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-sortable-integers": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "least-operators-to-express-number": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "minimum-number-of-operations-to-reinitialize-a-permutation": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "check-if-an-original-string-exists-given-two-encoded-strings": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "watering-plants-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-number-of-possible-root-nodes": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "collecting-chocolates": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-subarrays-with-majority-element-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-elegance-of-a-k-length-subsequence": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "sum-of-values-at-indices-with-k-set-bits": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "reverse-degree-of-a-string": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "climbing-stairs-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-ways-to-make-array-with-product": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "split-the-array-to-make-coprime-products": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "count-distinct-numbers-on-board": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "throne-inheritance": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "minimum-number-of-coins-for-fruits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-frequency-of-an-element-after-performing-operations-ii": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "maximize-value-of-function-in-a-ball-passing-game": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "smallest-stable-index-i": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-minimum-possible-sum-of-a-beautiful-array": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "find-the-longest-semi-repetitive-substring": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "length-of-the-longest-subsequence-that-sums-to-target": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-product-of-two-digits": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "filter-restaurants-by-vegan-friendly-price-and-distance": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "count-subarrays-with-majority-element-ii": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "maximum-balanced-subsequence-sum": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "building-boxes": {
+   "status": "inputs-ok",
+   "examples": 3,
+   "problems": []
+  },
+  "design-an-atm-machine": {
+   "status": "inputs-ok",
+   "examples": 1,
+   "problems": []
+  },
+  "most-popular-video-creator": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "rearrange-array-to-maximize-prefix-score": {
+   "status": "inputs-ok",
+   "examples": 2,
+   "problems": []
+  },
+  "minimum-operations-to-equalize-binary-string": {
    "status": "inputs-ok",
    "examples": 3,
    "problems": []

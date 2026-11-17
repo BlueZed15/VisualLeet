@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-groups-getting-fresh-donuts",
+ "frontendId": "1815",
+ "title": "Maximum Number of Groups Getting Fresh Donuts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "batchSize",
+   "type": "integer"
+  },
+  {
+   "name": "groups",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "batchSize = {batchSize}\ngroups = {groups}",
+ "visible": [
+  "batchSize",
+  "groups"
+ ],
+ "call": "result = Solution().maxHappyGroups(batchSize, groups)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

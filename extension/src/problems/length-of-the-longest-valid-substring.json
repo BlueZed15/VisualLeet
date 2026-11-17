@@ -1,0 +1,30 @@
+{
+ "slug": "length-of-the-longest-valid-substring",
+ "frontendId": "2781",
+ "title": "Length of the Longest Valid Substring",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "forbidden",
+   "type": "list<string>"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nforbidden = {forbidden}",
+ "visible": [
+  "word",
+  "forbidden"
+ ],
+ "call": "result = Solution().longestValidSubstring(word, forbidden)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "shortest-impossible-sequence-of-rolls",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2350",
+ "title": "Shortest Impossible Sequence of Rolls",
+ "premium": false,
+ "meta": {
+  "name": "shortestSequence",
+  "params": [
+   {
+    "name": "rolls",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,1,2,3,3,2,4,1]\n4",
+  "[1,1,2,2]\n2",
+  "[1,1,3,2,2,2,3,3]\n4"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

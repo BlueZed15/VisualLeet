@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-a-subsequence",
+ "frontendId": "1713",
+ "title": "Minimum Operations to Make a Subsequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer[]"
+  },
+  {
+   "name": "arr",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\narr = {arr}",
+ "visible": [
+  "target",
+  "arr"
+ ],
+ "call": "result = Solution().minOperations(target, arr)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

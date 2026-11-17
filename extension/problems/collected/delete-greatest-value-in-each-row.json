@@ -1,0 +1,28 @@
+{
+ "slug": "delete-greatest-value-in-each-row",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2500",
+ "title": "Delete Greatest Value in Each Row",
+ "premium": false,
+ "meta": {
+  "name": "deleteGreatestValue",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,4],[3,3,1]]",
+  "[[10]]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "10"
+ ],
+ "anyOrder": false
+}

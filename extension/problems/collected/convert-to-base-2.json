@@ -1,0 +1,30 @@
+{
+ "slug": "convert-to-base-2",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1017",
+ "title": "Convert to Base -2",
+ "premium": false,
+ "meta": {
+  "name": "baseNeg2",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3",
+  "4"
+ ],
+ "exampleOutputs": [
+  "\"110\"Explantion: (-2)2 + (-2)1 = 2",
+  "\"111\"Explantion: (-2)2 + (-2)1 + (-2)0 = 3",
+  "\"100\"Explantion: (-2)2 = 4"
+ ],
+ "anyOrder": false
+}

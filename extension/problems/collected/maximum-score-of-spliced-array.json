@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-score-of-spliced-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2321",
+ "title": "Maximum Score Of Spliced Array",
+ "premium": false,
+ "meta": {
+  "name": "maximumsSplicedArray",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[60,60,60]\n[10,90,10]",
+  "[20,40,20,70,30]\n[50,20,50,40,20]",
+  "[7,11,13]\n[1,1,1]"
+ ],
+ "exampleOutputs": [
+  "210",
+  "220",
+  "31"
+ ],
+ "anyOrder": false
+}

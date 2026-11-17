@@ -1,0 +1,35 @@
+{
+ "slug": "construct-the-longest-new-string",
+ "frontendId": "2745",
+ "title": "Construct the Longest New String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  },
+  {
+   "name": "z",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}\nz = {z}",
+ "visible": [
+  "x",
+  "y",
+  "z"
+ ],
+ "call": "result = Solution().longestString(x, y, z)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

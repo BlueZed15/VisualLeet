@@ -1,0 +1,34 @@
+{
+ "slug": "count-subtrees-with-max-distance-between-cities",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1617",
+ "title": "Count Subtrees With Max Distance Between Cities",
+ "premium": false,
+ "meta": {
+  "name": "countSubgraphsForEachDiameter",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[1,2],[2,3],[2,4]]",
+  "2\n[[1,2]]",
+  "3\n[[1,2],[2,3]]"
+ ],
+ "exampleOutputs": [
+  "[3,4,0]",
+  "[1]",
+  "[2,1]"
+ ],
+ "anyOrder": false
+}

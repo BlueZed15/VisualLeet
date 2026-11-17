@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-addition-to-make-integer-beautiful",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2457",
+ "title": "Minimum Addition to Make Integer Beautiful",
+ "premium": false,
+ "meta": {
+  "name": "makeIntegerBeautiful",
+  "params": [
+   {
+    "name": "n",
+    "type": "long"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "16\n6",
+  "467\n6",
+  "1\n1"
+ ],
+ "exampleOutputs": [
+  "4",
+  "33",
+  "0"
+ ],
+ "anyOrder": false
+}

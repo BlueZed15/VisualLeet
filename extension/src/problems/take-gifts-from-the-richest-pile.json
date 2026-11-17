@@ -1,0 +1,30 @@
+{
+ "slug": "take-gifts-from-the-richest-pile",
+ "frontendId": "2558",
+ "title": "Take Gifts From the Richest Pile",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "gifts",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "gifts = {gifts}\nk = {k}",
+ "visible": [
+  "gifts",
+  "k"
+ ],
+ "call": "result = Solution().pickGifts(gifts, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

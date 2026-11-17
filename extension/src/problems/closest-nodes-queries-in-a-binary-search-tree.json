@@ -1,0 +1,30 @@
+{
+ "slug": "closest-nodes-queries-in-a-binary-search-tree",
+ "frontendId": "2476",
+ "title": "Closest Nodes Queries in a Binary Search Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "queries",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "root = {root}\nqueries = {queries}",
+ "visible": [
+  "root",
+  "queries"
+ ],
+ "call": "result = Solution().closestNodes(root, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "solve-the-equation",
+ "frontendId": "640",
+ "title": "Solve the Equation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "equation",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "equation = {equation}",
+ "visible": [
+  "equation"
+ ],
+ "call": "result = Solution().solveEquation(equation)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

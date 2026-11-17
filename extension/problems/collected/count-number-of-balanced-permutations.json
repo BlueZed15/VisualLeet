@@ -1,0 +1,30 @@
+{
+ "slug": "count-number-of-balanced-permutations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3343",
+ "title": "Count Number of Balanced Permutations",
+ "premium": false,
+ "meta": {
+  "name": "countBalancedPermutations",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"123\"",
+  "\"112\"",
+  "\"12345\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

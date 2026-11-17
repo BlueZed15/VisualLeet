@@ -1,0 +1,30 @@
+{
+ "slug": "slowest-key",
+ "frontendId": "1629",
+ "title": "Slowest Key",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "releaseTimes",
+   "type": "integer[]"
+  },
+  {
+   "name": "keysPressed",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "releaseTimes = {releaseTimes}\nkeysPressed = {keysPressed}",
+ "visible": [
+  "releaseTimes",
+  "keysPressed"
+ ],
+ "call": "result = Solution().slowestKey(releaseTimes, keysPressed)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

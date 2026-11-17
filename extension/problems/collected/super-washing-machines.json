@@ -1,0 +1,30 @@
+{
+ "slug": "super-washing-machines",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "517",
+ "title": "Super Washing Machines",
+ "premium": false,
+ "meta": {
+  "name": "findMinMoves",
+  "params": [
+   {
+    "name": "machines",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,5]",
+  "[0,3,0]",
+  "[0,2,0]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

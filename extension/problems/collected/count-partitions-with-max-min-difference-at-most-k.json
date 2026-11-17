@@ -1,0 +1,32 @@
+{
+ "slug": "count-partitions-with-max-min-difference-at-most-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3578",
+ "title": "Count Partitions With Max-Min Difference at Most K",
+ "premium": false,
+ "meta": {
+  "name": "countPartitions",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[9,4,1,3,7]\n4",
+  "[3,3,4]\n0"
+ ],
+ "exampleOutputs": [
+  "6",
+  "2"
+ ],
+ "anyOrder": false
+}

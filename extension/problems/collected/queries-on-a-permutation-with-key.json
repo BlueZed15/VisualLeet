@@ -1,0 +1,34 @@
+{
+ "slug": "queries-on-a-permutation-with-key",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1409",
+ "title": "Queries on a Permutation With Key",
+ "premium": false,
+ "meta": {
+  "name": "processQueries",
+  "params": [
+   {
+    "name": "queries",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,2,1]\n5",
+  "[4,1,2,2]\n4",
+  "[7,5,5,8,3]\n8"
+ ],
+ "exampleOutputs": [
+  "[2,1,2,1]",
+  "[3,1,2,0]",
+  "[6,5,0,7,5]"
+ ],
+ "anyOrder": false
+}

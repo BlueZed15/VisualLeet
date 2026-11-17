@@ -1,0 +1,30 @@
+{
+ "slug": "largest-multiple-of-three",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1363",
+ "title": "Largest Multiple of Three",
+ "premium": false,
+ "meta": {
+  "name": "largestMultipleOfThree",
+  "params": [
+   {
+    "name": "digits",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[8,1,9]",
+  "[8,6,7,1,0]",
+  "[1]"
+ ],
+ "exampleOutputs": [
+  "\"981\"",
+  "\"8760\"",
+  "\"\""
+ ],
+ "anyOrder": true
+}

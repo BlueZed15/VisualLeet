@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-and-sum-of-array",
+ "frontendId": "2172",
+ "title": "Maximum AND Sum of Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "numSlots",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nnumSlots = {numSlots}",
+ "visible": [
+  "nums",
+  "numSlots"
+ ],
+ "call": "result = Solution().maximumANDSum(nums, numSlots)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

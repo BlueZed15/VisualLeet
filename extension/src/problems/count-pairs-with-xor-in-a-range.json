@@ -1,0 +1,35 @@
+{
+ "slug": "count-pairs-with-xor-in-a-range",
+ "frontendId": "1803",
+ "title": "Count Pairs With XOR in a Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nlow = {low}\nhigh = {high}",
+ "visible": [
+  "nums",
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().countPairs(nums, low, high)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

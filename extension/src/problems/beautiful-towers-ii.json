@@ -1,0 +1,25 @@
+{
+ "slug": "beautiful-towers-ii",
+ "frontendId": "2866",
+ "title": "Beautiful Towers II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "maxHeights",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "maxHeights = {maxHeights}",
+ "visible": [
+  "maxHeights"
+ ],
+ "call": "result = Solution().maximumSumOfHeights(maxHeights)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

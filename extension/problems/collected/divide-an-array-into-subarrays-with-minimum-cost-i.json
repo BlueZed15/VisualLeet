@@ -1,0 +1,30 @@
+{
+ "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3010",
+ "title": "Divide an Array Into Subarrays With Minimum Cost I",
+ "premium": false,
+ "meta": {
+  "name": "minimumCost",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,12]",
+  "[5,4,3]",
+  "[10,3,1,1]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "12",
+  "12"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-string-is-a-prefix-of-array",
+ "frontendId": "1961",
+ "title": "Check If String Is a Prefix of Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nwords = {words}",
+ "visible": [
+  "s",
+  "words"
+ ],
+ "call": "result = Solution().isPrefixString(s, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

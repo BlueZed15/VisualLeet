@@ -1,0 +1,28 @@
+{
+ "slug": "student-attendance-record-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "551",
+ "title": "Student Attendance Record I",
+ "premium": false,
+ "meta": {
+  "name": "checkRecord",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"PPALLP\"",
+  "\"PPALLL\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

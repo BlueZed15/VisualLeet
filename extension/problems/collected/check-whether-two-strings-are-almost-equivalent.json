@@ -1,0 +1,34 @@
+{
+ "slug": "check-whether-two-strings-are-almost-equivalent",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2068",
+ "title": "Check Whether Two Strings are Almost Equivalent",
+ "premium": false,
+ "meta": {
+  "name": "checkAlmostEquivalent",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"aaaa\"\n\"bccb\"",
+  "\"abcdeef\"\n\"abaaacc\"",
+  "\"cccddabba\"\n\"babababab\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

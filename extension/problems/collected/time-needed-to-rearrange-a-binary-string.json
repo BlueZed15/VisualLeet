@@ -1,0 +1,28 @@
+{
+ "slug": "time-needed-to-rearrange-a-binary-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2380",
+ "title": "Time Needed to Rearrange a Binary String",
+ "premium": false,
+ "meta": {
+  "name": "secondsToRemoveOccurrences",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"0110101\"",
+  "\"11100\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

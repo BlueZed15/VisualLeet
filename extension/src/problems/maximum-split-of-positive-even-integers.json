@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-split-of-positive-even-integers",
+ "frontendId": "2178",
+ "title": "Maximum Split of Positive Even Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "finalSum",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "finalSum = {finalSum}",
+ "visible": [
+  "finalSum"
+ ],
+ "call": "result = Solution().maximumEvenSplit(finalSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-moves-to-convert-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2027",
+ "title": "Minimum Moves to Convert String",
+ "premium": false,
+ "meta": {
+  "name": "minimumMoves",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"XXX\"",
+  "\"XXOX\"",
+  "\"OOOO\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

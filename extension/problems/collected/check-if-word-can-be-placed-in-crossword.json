@@ -1,0 +1,34 @@
+{
+ "slug": "check-if-word-can-be-placed-in-crossword",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2018",
+ "title": "Check if Word Can Be Placed In Crossword",
+ "premium": false,
+ "meta": {
+  "name": "placeWordInCrossword",
+  "params": [
+   {
+    "name": "board",
+    "type": "character[][]"
+   },
+   {
+    "type": "string",
+    "name": "word"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]\n\"abc\"",
+  "[[\" \",\"#\",\"a\"],[\" \",\"#\", \"c\"],[\" \",\"#\",\"a\"]]\n\"ac\"",
+  "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\" \",\"c\"]]\n\"ca\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

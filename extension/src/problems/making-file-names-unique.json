@@ -1,0 +1,25 @@
+{
+ "slug": "making-file-names-unique",
+ "frontendId": "1487",
+ "title": "Making File Names Unique",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "names",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "names = {names}",
+ "visible": [
+  "names"
+ ],
+ "call": "result = Solution().getFolderNames(names)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

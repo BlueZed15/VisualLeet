@@ -1,0 +1,30 @@
+{
+ "slug": "kth-smallest-instructions",
+ "frontendId": "1643",
+ "title": "Kth Smallest Instructions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "destination",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "destination = {destination}\nk = {k}",
+ "visible": [
+  "destination",
+  "k"
+ ],
+ "call": "result = Solution().kthSmallestPath(destination, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

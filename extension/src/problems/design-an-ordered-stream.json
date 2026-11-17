@@ -1,0 +1,50 @@
+{
+ "slug": "design-an-ordered-stream",
+ "frontendId": "1656",
+ "title": "Design an Ordered Stream",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "OrderedStream",
+ "methods": {
+  "OrderedStream": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "insert": [
+   {
+    "name": "idKey",
+    "type": "integer"
+   },
+   {
+    "name": "value",
+    "type": "string"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = OrderedStream(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

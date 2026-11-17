@@ -1,0 +1,30 @@
+{
+ "slug": "count-subarrays-with-majority-element-ii",
+ "frontendId": "3739",
+ "title": "Count Subarrays With Majority Element II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}",
+ "visible": [
+  "nums",
+  "target"
+ ],
+ "call": "result = Solution().countMajoritySubarrays(nums, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

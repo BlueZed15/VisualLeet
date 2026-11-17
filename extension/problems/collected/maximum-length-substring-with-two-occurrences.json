@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-length-substring-with-two-occurrences",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3090",
+ "title": "Maximum Length Substring With Two Occurrences",
+ "premium": false,
+ "meta": {
+  "name": "maximumLengthSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"bcbbbcba\"",
+  "\"aaaa\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

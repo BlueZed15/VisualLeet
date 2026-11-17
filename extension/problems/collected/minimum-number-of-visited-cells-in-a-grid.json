@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-visited-cells-in-a-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2617",
+ "title": "Minimum Number of Visited Cells in a Grid",
+ "premium": false,
+ "meta": {
+  "name": "minimumVisitedCells",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]",
+  "[[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]",
+  "[[2,1,0],[1,0,0]]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

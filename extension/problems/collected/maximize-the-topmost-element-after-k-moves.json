@@ -1,0 +1,32 @@
+{
+ "slug": "maximize-the-topmost-element-after-k-moves",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2202",
+ "title": "Maximize the Topmost Element After K Moves",
+ "premium": false,
+ "meta": {
+  "name": "maximumTop",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,2,4,0,6]\n4",
+  "[2]\n1"
+ ],
+ "exampleOutputs": [
+  "5",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "count-ways-to-make-array-with-product",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1735",
+ "title": "Count Ways to Make Array With Product",
+ "premium": false,
+ "meta": {
+  "name": "waysToFillArray",
+  "params": [
+   {
+    "name": "queries",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[2,6],[5,1],[73,660]]",
+  "[[1,1],[2,2],[3,3],[4,4],[5,5]]"
+ ],
+ "exampleOutputs": [
+  "[4,1,50734910]",
+  "[1,2,3,10,5]"
+ ],
+ "anyOrder": false
+}

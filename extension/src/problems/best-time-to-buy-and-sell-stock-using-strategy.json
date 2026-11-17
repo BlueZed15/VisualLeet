@@ -1,0 +1,35 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-using-strategy",
+ "frontendId": "3652",
+ "title": "Best Time to Buy and Sell Stock using Strategy",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  },
+  {
+   "name": "strategy",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}\nstrategy = {strategy}\nk = {k}",
+ "visible": [
+  "prices",
+  "strategy",
+  "k"
+ ],
+ "call": "result = Solution().maxProfit(prices, strategy, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

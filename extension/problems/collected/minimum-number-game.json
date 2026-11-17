@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-number-game",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2974",
+ "title": "Minimum Number Game",
+ "premium": false,
+ "meta": {
+  "name": "numberGame",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[5,4,2,3]",
+  "[2,5]"
+ ],
+ "exampleOutputs": [
+  "[3,2,5,4]",
+  "[5,2]"
+ ],
+ "anyOrder": false
+}

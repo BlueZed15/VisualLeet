@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-distance-after-road-addition-queries-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3243",
+ "title": "Shortest Distance After Road Addition Queries I",
+ "premium": false,
+ "meta": {
+  "name": "shortestDistanceAfterQueries",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "5\n[[2,4],[0,2],[0,4]]",
+  "4\n[[0,3],[0,2]]"
+ ],
+ "exampleOutputs": [
+  "[3,2,1]",
+  "[1,1]"
+ ],
+ "anyOrder": false
+}

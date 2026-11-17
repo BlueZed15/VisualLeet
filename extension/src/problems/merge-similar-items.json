@@ -1,0 +1,30 @@
+{
+ "slug": "merge-similar-items",
+ "frontendId": "2363",
+ "title": "Merge Similar Items",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "items1",
+   "type": "integer[][]"
+  },
+  {
+   "name": "items2",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "items1 = {items1}\nitems2 = {items2}",
+ "visible": [
+  "items1",
+  "items2"
+ ],
+ "call": "result = Solution().mergeSimilarItems(items1, items2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

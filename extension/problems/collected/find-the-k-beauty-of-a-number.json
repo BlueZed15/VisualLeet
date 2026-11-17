@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-k-beauty-of-a-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2269",
+ "title": "Find the K-Beauty of a Number",
+ "premium": false,
+ "meta": {
+  "name": "divisorSubstrings",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "240\n2",
+  "430043\n2"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

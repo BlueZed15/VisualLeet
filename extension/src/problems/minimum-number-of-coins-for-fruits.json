@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-coins-for-fruits",
+ "frontendId": "2944",
+ "title": "Minimum Number of Coins for Fruits",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}",
+ "visible": [
+  "prices"
+ ],
+ "call": "result = Solution().minimumCoins(prices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

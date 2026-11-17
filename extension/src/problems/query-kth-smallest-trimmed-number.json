@@ -1,0 +1,30 @@
+{
+ "slug": "query-kth-smallest-trimmed-number",
+ "frontendId": "2343",
+ "title": "Query Kth Smallest Trimmed Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "string[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nqueries = {queries}",
+ "visible": [
+  "nums",
+  "queries"
+ ],
+ "call": "result = Solution().smallestTrimmedNumbers(nums, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

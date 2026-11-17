@@ -1,0 +1,49 @@
+{
+ "slug": "generate-random-point-in-a-circle",
+ "frontendId": "478",
+ "title": "Generate Random Point in a Circle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Solution",
+ "methods": {
+  "Solution": [
+   {
+    "name": "radius",
+    "type": "double"
+   },
+   {
+    "name": "x_center",
+    "type": "double"
+   },
+   {
+    "name": "y_center",
+    "type": "double"
+   }
+  ],
+  "randPoint": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Solution(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

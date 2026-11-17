@@ -1,0 +1,30 @@
+{
+ "slug": "best-poker-hand",
+ "frontendId": "2347",
+ "title": "Best Poker Hand",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ranks",
+   "type": "integer[]"
+  },
+  {
+   "name": "suits",
+   "type": "character[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ranks = {ranks}\nsuits = {suits}",
+ "visible": [
+  "ranks",
+  "suits"
+ ],
+ "call": "result = Solution().bestHand(ranks, suits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

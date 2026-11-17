@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-moves-to-spread-stones-over-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2850",
+ "title": "Minimum Moves to Spread Stones Over Grid",
+ "premium": false,
+ "meta": {
+  "name": "minimumMoves",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,0],[1,1,1],[1,2,1]]",
+  "[[1,3,0],[1,0,0],[1,0,3]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

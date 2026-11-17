@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-adjacent-swaps-for-k-consecutive-ones",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1703",
+ "title": "Minimum Adjacent Swaps for K Consecutive Ones",
+ "premium": false,
+ "meta": {
+  "name": "minMoves",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,1,0,1]\n2",
+  "[1,0,0,0,0,0,1,1]\n3",
+  "[1,1,0,1]\n2"
+ ],
+ "exampleOutputs": [
+  "1",
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

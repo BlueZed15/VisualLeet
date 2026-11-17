@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-missing-non-negative-integer-after-operations",
+ "frontendId": "2598",
+ "title": "Smallest Missing Non-negative Integer After Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "value",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nvalue = {value}",
+ "visible": [
+  "nums",
+  "value"
+ ],
+ "call": "result = Solution().findSmallestInteger(nums, value)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

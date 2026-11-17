@@ -1,0 +1,30 @@
+{
+ "slug": "find-minimum-time-to-reach-last-room-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3342",
+ "title": "Find Minimum Time to Reach Last Room II",
+ "premium": false,
+ "meta": {
+  "name": "minTimeToReach",
+  "params": [
+   {
+    "name": "moveTime",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,4],[4,4]]",
+  "[[0,0,0,0],[0,0,0,0]]",
+  "[[0,1],[1,2]]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "6",
+  "4"
+ ],
+ "anyOrder": false
+}

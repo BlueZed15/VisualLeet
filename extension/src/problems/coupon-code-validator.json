@@ -1,0 +1,35 @@
+{
+ "slug": "coupon-code-validator",
+ "frontendId": "3606",
+ "title": "Coupon Code Validator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "code",
+   "type": "string[]"
+  },
+  {
+   "name": "businessLine",
+   "type": "string[]"
+  },
+  {
+   "name": "isActive",
+   "type": "boolean[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "code = {code}\nbusinessLine = {businessLine}\nisActive = {isActive}",
+ "visible": [
+  "code",
+  "businessLine",
+  "isActive"
+ ],
+ "call": "result = Solution().validateCoupons(code, businessLine, isActive)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

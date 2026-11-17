@@ -1,0 +1,25 @@
+{
+ "slug": "rearrange-spaces-between-words",
+ "frontendId": "1592",
+ "title": "Rearrange Spaces Between Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}",
+ "visible": [
+  "text"
+ ],
+ "call": "result = Solution().reorderSpaces(text)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

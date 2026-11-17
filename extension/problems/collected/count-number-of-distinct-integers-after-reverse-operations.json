@@ -1,0 +1,28 @@
+{
+ "slug": "count-number-of-distinct-integers-after-reverse-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2442",
+ "title": "Count Number of Distinct Integers After Reverse Operations",
+ "premium": false,
+ "meta": {
+  "name": "countDistinctIntegers",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,13,10,12,31]",
+  "[2,2,2]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1"
+ ],
+ "anyOrder": false
+}

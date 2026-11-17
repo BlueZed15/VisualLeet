@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-pairs-of-interchangeable-rectangles",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2001",
+ "title": "Number of Pairs of Interchangeable Rectangles",
+ "premium": false,
+ "meta": {
+  "name": "interchangeableRectangles",
+  "params": [
+   {
+    "name": "rectangles",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[4,8],[3,6],[10,20],[15,30]]",
+  "[[4,5],[7,8]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

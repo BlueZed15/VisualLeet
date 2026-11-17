@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-unequal-triplets-in-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2475",
+ "title": "Number of Unequal Triplets in Array",
+ "premium": false,
+ "meta": {
+  "name": "unequalTriplets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,4,2,4,3]",
+  "[1,1,1,1,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

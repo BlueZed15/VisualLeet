@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-white-tiles-covered-by-a-carpet",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2271",
+ "title": "Maximum White Tiles Covered by a Carpet",
+ "premium": false,
+ "meta": {
+  "name": "maximumWhiteTiles",
+  "params": [
+   {
+    "name": "tiles",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "carpetLen"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,5],[10,11],[12,18],[20,25],[30,32]]\n10",
+  "[[10,11],[1,1]]\n2"
+ ],
+ "exampleOutputs": [
+  "9",
+  "2"
+ ],
+ "anyOrder": false
+}

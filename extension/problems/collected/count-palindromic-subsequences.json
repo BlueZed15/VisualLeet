@@ -1,0 +1,30 @@
+{
+ "slug": "count-palindromic-subsequences",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2484",
+ "title": "Count Palindromic Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "countPalindromes",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"103301\"",
+  "\"0000000\"",
+  "\"9999900000\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "21",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,45 @@
+{
+ "slug": "minimum-weighted-subgraph-with-the-required-paths",
+ "frontendId": "2203",
+ "title": "Minimum Weighted Subgraph With the Required Paths",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "src1",
+   "type": "integer"
+  },
+  {
+   "name": "src2",
+   "type": "integer"
+  },
+  {
+   "name": "dest",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nsrc1 = {src1}\nsrc2 = {src2}\ndest = {dest}",
+ "visible": [
+  "n",
+  "edges",
+  "src1",
+  "src2",
+  "dest"
+ ],
+ "call": "result = Solution().minimumWeight(n, edges, src1, src2, dest)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

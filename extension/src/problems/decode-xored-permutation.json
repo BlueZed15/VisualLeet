@@ -1,0 +1,25 @@
+{
+ "slug": "decode-xored-permutation",
+ "frontendId": "1734",
+ "title": "Decode XORed Permutation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "encoded",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "encoded = {encoded}",
+ "visible": [
+  "encoded"
+ ],
+ "call": "result = Solution().decode(encoded)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

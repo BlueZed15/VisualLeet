@@ -1,0 +1,40 @@
+{
+ "slug": "delivering-boxes-from-storage-to-ports",
+ "frontendId": "1687",
+ "title": "Delivering Boxes from Storage to Ports",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "boxes",
+   "type": "integer[][]"
+  },
+  {
+   "name": "portsCount",
+   "type": "integer"
+  },
+  {
+   "name": "maxBoxes",
+   "type": "integer"
+  },
+  {
+   "name": "maxWeight",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "boxes = {boxes}\nportsCount = {portsCount}\nmaxBoxes = {maxBoxes}\nmaxWeight = {maxWeight}",
+ "visible": [
+  "boxes",
+  "portsCount",
+  "maxBoxes",
+  "maxWeight"
+ ],
+ "call": "result = Solution().boxDelivering(boxes, portsCount, maxBoxes, maxWeight)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

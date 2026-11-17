@@ -1,0 +1,25 @@
+{
+ "slug": "reformat-phone-number",
+ "frontendId": "1694",
+ "title": "Reformat Phone Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "number",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "number = {number}",
+ "visible": [
+  "number"
+ ],
+ "call": "result = Solution().reformatNumber(number)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

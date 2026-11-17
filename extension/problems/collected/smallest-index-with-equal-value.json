@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-index-with-equal-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2057",
+ "title": "Smallest Index With Equal Value",
+ "premium": false,
+ "meta": {
+  "name": "smallestEqual",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,2]",
+  "[4,3,2,1]",
+  "[1,2,3,4,5,6,7,8,9,0]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

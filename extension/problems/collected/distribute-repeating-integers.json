@@ -1,0 +1,34 @@
+{
+ "slug": "distribute-repeating-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1655",
+ "title": "Distribute Repeating Integers",
+ "premium": false,
+ "meta": {
+  "name": "canDistribute",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "quantity"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]\n[2]",
+  "[1,2,3,3]\n[2]",
+  "[1,1,2,2]\n[2,2]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

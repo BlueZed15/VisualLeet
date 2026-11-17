@@ -1,0 +1,28 @@
+{
+ "slug": "count-ways-to-group-overlapping-ranges",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2580",
+ "title": "Count Ways to Group Overlapping Ranges",
+ "premium": false,
+ "meta": {
+  "name": "countWays",
+  "params": [
+   {
+    "name": "ranges",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[6,10],[5,15]]",
+  "[[1,3],[10,20],[2,5],[4,8]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

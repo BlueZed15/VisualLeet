@@ -1,0 +1,25 @@
+{
+ "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+ "frontendId": "3010",
+ "title": "Divide an Array Into Subarrays With Minimum Cost I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().minimumCost(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

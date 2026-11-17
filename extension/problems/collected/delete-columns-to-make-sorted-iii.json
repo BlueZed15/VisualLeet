@@ -1,0 +1,30 @@
+{
+ "slug": "delete-columns-to-make-sorted-iii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "960",
+ "title": "Delete Columns to Make Sorted III",
+ "premium": false,
+ "meta": {
+  "name": "minDeletionSize",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"babca\",\"bbazb\"]",
+  "[\"edcba\"]",
+  "[\"ghi\",\"def\",\"abc\"]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

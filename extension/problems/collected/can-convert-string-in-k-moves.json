@@ -1,0 +1,38 @@
+{
+ "slug": "can-convert-string-in-k-moves",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1540",
+ "title": "Can Convert String in K Moves",
+ "premium": false,
+ "meta": {
+  "name": "canConvertString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "t"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"input\"\n\"ouput\"\n9",
+  "\"abc\"\n\"bcd\"\n10",
+  "\"aab\"\n\"bbb\"\n27"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

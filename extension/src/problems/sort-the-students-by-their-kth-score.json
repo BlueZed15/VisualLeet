@@ -1,0 +1,30 @@
+{
+ "slug": "sort-the-students-by-their-kth-score",
+ "frontendId": "2545",
+ "title": "Sort the Students by Their Kth Score",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "score",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "score = {score}\nk = {k}",
+ "visible": [
+  "score",
+  "k"
+ ],
+ "call": "result = Solution().sortTheStudents(score, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

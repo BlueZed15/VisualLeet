@@ -1,0 +1,30 @@
+{
+ "slug": "destroying-asteroids",
+ "frontendId": "2126",
+ "title": "Destroying Asteroids",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mass",
+   "type": "integer"
+  },
+  {
+   "name": "asteroids",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mass = {mass}\nasteroids = {asteroids}",
+ "visible": [
+  "mass",
+  "asteroids"
+ ],
+ "call": "result = Solution().asteroidsDestroyed(mass, asteroids)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

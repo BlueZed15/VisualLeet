@@ -1,0 +1,30 @@
+{
+ "slug": "words-within-two-edits-of-dictionary",
+ "frontendId": "2452",
+ "title": "Words Within Two Edits of Dictionary",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "string[]"
+  },
+  {
+   "name": "dictionary",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}\ndictionary = {dictionary}",
+ "visible": [
+  "queries",
+  "dictionary"
+ ],
+ "call": "result = Solution().twoEditWords(queries, dictionary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

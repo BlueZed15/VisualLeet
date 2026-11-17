@@ -1,0 +1,32 @@
+{
+ "slug": "vowel-spellchecker",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "966",
+ "title": "Vowel Spellchecker",
+ "premium": false,
+ "meta": {
+  "name": "spellchecker",
+  "params": [
+   {
+    "name": "wordlist",
+    "type": "string[]"
+   },
+   {
+    "name": "queries",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+  "[\"yellow\"]\n[\"YellOw\"]"
+ ],
+ "exampleOutputs": [
+  "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]",
+  "[\"yellow\"]"
+ ],
+ "anyOrder": false
+}

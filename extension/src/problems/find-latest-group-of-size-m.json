@@ -1,0 +1,30 @@
+{
+ "slug": "find-latest-group-of-size-m",
+ "frontendId": "1562",
+ "title": "Find Latest Group of Size M",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nm = {m}",
+ "visible": [
+  "arr",
+  "m"
+ ],
+ "call": "result = Solution().findLatestStep(arr, m)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -2,5 +2,9 @@
  "combine-two-tables: SQL / pandas / shell problem: nothing to visualize",
  "rising-temperature: SQL / pandas / shell problem: nothing to visualize",
  "second-highest-salary: SQL / pandas / shell problem: nothing to visualize",
- "customer-who-visited-but-did-not-make-any-transactions: SQL / pandas / shell problem: nothing to visualize"
+ "customer-who-visited-but-did-not-make-any-transactions: SQL / pandas / shell problem: nothing to visualize",
+ "guess-the-word: LeetCode marks it manual: needs a hand-written entry",
+ "implement-rand10-using-rand7: LeetCode marks it manual: needs a hand-written entry",
+ "merge-bsts-to-create-single-bst: LeetCode marks it manual: needs a hand-written entry",
+ "find-positive-integer-solution-for-a-given-equation: LeetCode marks it manual: needs a hand-written entry"
 ]

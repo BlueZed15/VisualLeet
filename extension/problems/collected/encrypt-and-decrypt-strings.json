@@ -1,0 +1,64 @@
+{
+ "slug": "encrypt-and-decrypt-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2227",
+ "title": "Encrypt and Decrypt Strings",
+ "premium": false,
+ "meta": {
+  "classname": "Encrypter",
+  "constructor": {
+   "params": [
+    {
+     "name": "keys",
+     "type": "character[]"
+    },
+    {
+     "type": "string[]",
+     "name": "values"
+    },
+    {
+     "name": "dictionary",
+     "type": "string[]"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word1"
+     }
+    ],
+    "name": "encrypt",
+    "return": {
+     "type": "string"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "word2"
+     }
+    ],
+    "name": "decrypt",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"Encrypter\",\"encrypt\",\"decrypt\"]\n[[[\"a\",\"b\",\"c\",\"d\"],[\"ei\",\"zf\",\"ei\",\"am\"],[\"abcd\",\"acbd\",\"adbc\",\"badc\",\"dacb\",\"cadb\",\"cbda\",\"abad\"]],[\"abcd\"],[\"eizfeiam\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, \"eizfeiam\", 2]"
+ ],
+ "anyOrder": false
+}

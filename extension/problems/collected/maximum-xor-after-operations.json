@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-xor-after-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2317",
+ "title": "Maximum XOR After Operations ",
+ "premium": false,
+ "meta": {
+  "name": "maximumXOR",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,4,6]",
+  "[1,2,3,9,2]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "11"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-value-of-an-ordered-triplet-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2873",
+ "title": "Maximum Value of an Ordered Triplet I",
+ "premium": false,
+ "meta": {
+  "name": "maximumTripletValue",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[12,6,1,2,7]",
+  "[1,10,3,4,19]",
+  "[1,2,3]"
+ ],
+ "exampleOutputs": [
+  "77",
+  "133",
+  "0"
+ ],
+ "anyOrder": false
+}

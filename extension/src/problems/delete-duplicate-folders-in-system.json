@@ -1,0 +1,25 @@
+{
+ "slug": "delete-duplicate-folders-in-system",
+ "frontendId": "1948",
+ "title": "Delete Duplicate Folders in System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "paths",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "paths = {paths}",
+ "visible": [
+  "paths"
+ ],
+ "call": "result = Solution().deleteDuplicateFolder(paths)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

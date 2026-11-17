@@ -32,6 +32,8 @@ const P = (...p) => path.join(root, "problems", ...p);
 const DB = (...p) => path.join(root, "src", "problems", ...p);
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
 const trimTreeNulls = (t) => String(t).replace(/(?:,\s*null)+\s*\]\s*$/, "]");
+// LeetCode writes [null] for a design call with no arguments; LeetScope builds it as []
+const emptyNullArgs = (t) => String(t).replace(/\[\s*null\s*\](?=\s*[,\]])/g, "[]");
 
 const index = readJson(DB("index.json"));
 const handwritten = readJson(P("handwritten.json")).problems;
@@ -87,7 +89,7 @@ for (const [slug, p] of Object.entries(plan)) {
       const lines = String(inp.stdout || "").replace(/\s+$/, "").split("\n");
       if (inp.exception || inp.error) problems.push(`example ${i + 1} inputs: ${inp.exception || inp.error}`);
       // a level-order tree may end in nulls that mean nothing ([1,2,null,null] is [1,2])
-      else e.echo.forEach((t, j) => { if (compareOutputs(lines[j] || "", t) !== "match" && compareOutputs(lines[j] || "", trimTreeNulls(t)) !== "match") problems.push(`example ${i + 1} box ${j + 1}: built ${lines[j]}, text was ${t}`); });
+      else e.echo.forEach((t, j) => { if (compareOutputs(lines[j] || "", t) !== "match" && compareOutputs(lines[j] || "", trimTreeNulls(t)) !== "match" && compareOutputs(lines[j] || "", emptyNullArgs(t)) !== "match") problems.push(`example ${i + 1} box ${j + 1}: built ${lines[j]}, text was ${t}`); });
     }
     const sol = results[`${slug}|${i}|solution`];
     if (sol) {

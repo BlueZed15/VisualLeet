@@ -1,0 +1,25 @@
+{
+ "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+ "frontendId": "2155",
+ "title": "All Divisions With the Highest Score of a Binary Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().maxScoreIndices(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

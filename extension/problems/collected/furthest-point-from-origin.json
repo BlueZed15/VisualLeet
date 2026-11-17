@@ -1,0 +1,30 @@
+{
+ "slug": "furthest-point-from-origin",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2833",
+ "title": "Furthest Point From Origin",
+ "premium": false,
+ "meta": {
+  "name": "furthestDistanceFromOrigin",
+  "params": [
+   {
+    "name": "moves",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"L_RL__R\"",
+  "\"_R__LL_\"",
+  "\"_______\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "5",
+  "7"
+ ],
+ "anyOrder": false
+}

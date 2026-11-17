@@ -1,0 +1,25 @@
+{
+ "slug": "invalid-transactions",
+ "frontendId": "1169",
+ "title": "Invalid Transactions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "transactions",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "transactions = {transactions}",
+ "visible": [
+  "transactions"
+ ],
+ "call": "result = Solution().invalidTransactions(transactions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "last-substring-in-lexicographical-order",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1163",
+ "title": "Last Substring in Lexicographical Order",
+ "premium": false,
+ "meta": {
+  "name": "lastSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abab\"",
+  "\"leetcode\""
+ ],
+ "exampleOutputs": [
+  "\"bab\"",
+  "\"tcode\""
+ ],
+ "anyOrder": false
+}

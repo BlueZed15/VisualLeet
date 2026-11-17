@@ -1,0 +1,30 @@
+{
+ "slug": "replace-elements-in-an-array",
+ "frontendId": "2295",
+ "title": "Replace Elements in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "operations",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\noperations = {operations}",
+ "visible": [
+  "nums",
+  "operations"
+ ],
+ "call": "result = Solution().arrayChange(nums, operations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

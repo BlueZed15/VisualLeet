@@ -1,0 +1,25 @@
+{
+ "slug": "create-sorted-array-through-instructions",
+ "frontendId": "1649",
+ "title": "Create Sorted Array through Instructions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "instructions",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "instructions = {instructions}",
+ "visible": [
+  "instructions"
+ ],
+ "call": "result = Solution().createSortedArray(instructions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

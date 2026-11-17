@@ -1,0 +1,28 @@
+{
+ "slug": "trionic-array-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3637",
+ "title": "Trionic Array I",
+ "premium": false,
+ "meta": {
+  "name": "isTrionic",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,5,4,2,6]",
+  "[2,1,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

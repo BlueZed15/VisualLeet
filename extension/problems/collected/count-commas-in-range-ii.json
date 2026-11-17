@@ -1,0 +1,28 @@
+{
+ "slug": "count-commas-in-range-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3871",
+ "title": "Count Commas in Range II",
+ "premium": false,
+ "meta": {
+  "name": "countCommas",
+  "params": [
+   {
+    "name": "n",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "1002",
+  "998"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

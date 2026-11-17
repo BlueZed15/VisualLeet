@@ -1,0 +1,38 @@
+{
+ "slug": "maximize-spanning-tree-stability-with-upgrades",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3600",
+ "title": "Maximize Spanning Tree Stability with Upgrades",
+ "premium": false,
+ "meta": {
+  "name": "maxStability",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,1,2,1],[1,2,3,0]]\n1",
+  "3\n[[0,1,4,0],[1,2,3,0],[0,2,1,0]]\n2",
+  "3\n[[0,1,1,1],[1,2,1,1],[2,0,1,1]]\n0"
+ ],
+ "exampleOutputs": [
+  "2",
+  "6",
+  "-1"
+ ],
+ "anyOrder": false
+}

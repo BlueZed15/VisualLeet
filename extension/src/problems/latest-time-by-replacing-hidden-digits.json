@@ -1,0 +1,25 @@
+{
+ "slug": "latest-time-by-replacing-hidden-digits",
+ "frontendId": "1736",
+ "title": "Latest Time by Replacing Hidden Digits",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "time",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "time = {time}",
+ "visible": [
+  "time"
+ ],
+ "call": "result = Solution().maximumTime(time)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

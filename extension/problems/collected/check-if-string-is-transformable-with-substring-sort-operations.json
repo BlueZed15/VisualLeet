@@ -1,0 +1,34 @@
+{
+ "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1585",
+ "title": "Check If String Is Transformable With Substring Sort Operations",
+ "premium": false,
+ "meta": {
+  "name": "isTransformable",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"84532\"\n\"34852\"",
+  "\"34521\"\n\"23415\"",
+  "\"12345\"\n\"12435\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

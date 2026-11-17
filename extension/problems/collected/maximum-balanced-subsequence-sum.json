@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-balanced-subsequence-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2926",
+ "title": "Maximum Balanced Subsequence Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxBalancedSubsequenceSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,3,5,6]",
+  "[5,-1,-3,8]",
+  "[-2,-1]"
+ ],
+ "exampleOutputs": [
+  "14",
+  "13",
+  "-1"
+ ],
+ "anyOrder": false
+}

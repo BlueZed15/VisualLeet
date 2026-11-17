@@ -1,0 +1,28 @@
+{
+ "slug": "groups-of-special-equivalent-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "893",
+ "title": "Groups of Special-Equivalent Strings",
+ "premium": false,
+ "meta": {
+  "name": "numSpecialEquivGroups",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]",
+  "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-beauty-in-the-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2012",
+ "title": "Sum of Beauty in the Array",
+ "premium": false,
+ "meta": {
+  "name": "sumOfBeauties",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[2,4,6,4]",
+  "[3,2,1]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

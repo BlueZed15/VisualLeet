@@ -1,0 +1,34 @@
+{
+ "slug": "check-if-it-is-possible-to-split-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2811",
+ "title": "Check if it is Possible to Split Array",
+ "premium": false,
+ "meta": {
+  "name": "canSplitArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2, 2, 1]\n4",
+  "[2, 1, 3]\n5",
+  "[2, 3, 3, 2, 3]\n6"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-pairs-of-similar-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2506",
+ "title": "Count Pairs Of Similar Strings",
+ "premium": false,
+ "meta": {
+  "name": "similarPairs",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]",
+  "[\"aabb\",\"ab\",\"ba\"]",
+  "[\"nba\",\"cba\",\"dba\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

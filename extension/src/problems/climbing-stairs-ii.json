@@ -1,0 +1,30 @@
+{
+ "slug": "climbing-stairs-ii",
+ "frontendId": "3693",
+ "title": "Climbing Stairs II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "costs",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ncosts = {costs}",
+ "visible": [
+  "n",
+  "costs"
+ ],
+ "call": "result = Solution().climbStairs(n, costs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

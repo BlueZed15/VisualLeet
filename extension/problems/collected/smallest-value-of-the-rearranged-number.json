@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-value-of-the-rearranged-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2165",
+ "title": "Smallest Value of the Rearranged Number",
+ "premium": false,
+ "meta": {
+  "name": "smallestNumber",
+  "params": [
+   {
+    "name": "num",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "310",
+  "-7605"
+ ],
+ "exampleOutputs": [
+  "103",
+  "-7650"
+ ],
+ "anyOrder": false
+}

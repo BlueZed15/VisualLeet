@@ -1,0 +1,30 @@
+{
+ "slug": "split-strings-by-separator",
+ "frontendId": "2788",
+ "title": "Split Strings by Separator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "list<string>"
+  },
+  {
+   "name": "separator",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nseparator = {separator}",
+ "visible": [
+  "words",
+  "separator"
+ ],
+ "call": "result = Solution().splitWordsBySeparator(words, separator)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

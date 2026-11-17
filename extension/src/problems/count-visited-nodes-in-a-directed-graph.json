@@ -1,0 +1,25 @@
+{
+ "slug": "count-visited-nodes-in-a-directed-graph",
+ "frontendId": "2876",
+ "title": "Count Visited Nodes in a Directed Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}",
+ "visible": [
+  "edges"
+ ],
+ "call": "result = Solution().countVisitedNodes(edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

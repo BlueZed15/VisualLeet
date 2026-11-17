@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-binary-tree-ii",
+ "frontendId": "998",
+ "title": "Maximum Binary Tree II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "val",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nval = {val}",
+ "visible": [
+  "root",
+  "val"
+ ],
+ "call": "result = Solution().insertIntoMaxTree(root, val)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-array-end",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3133",
+ "title": "Minimum Array End",
+ "premium": false,
+ "meta": {
+  "name": "minEnd",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "3\n4",
+  "2\n7"
+ ],
+ "exampleOutputs": [
+  "6",
+  "15"
+ ],
+ "anyOrder": false
+}

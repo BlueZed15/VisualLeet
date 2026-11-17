@@ -1,0 +1,29 @@
+{
+ "slug": "implement-rand10-using-rand7",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "470",
+ "title": "Implement Rand10() Using Rand7()",
+ "premium": false,
+ "meta": {
+  "name": "rand10",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "manual": true,
+  "typescriptCustomType": "function rand7(): number {\n    return Math.floor(Math.random() * (7)) + 1;\n}"
+ },
+ "exampleInputs": [
+  "1",
+  "2",
+  "3"
+ ],
+ "exampleOutputs": [
+  "[2]",
+  "[2,8]",
+  "[3,8,10]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-subsequence-in-non-increasing-order",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1403",
+ "title": "Minimum Subsequence in Non-Increasing Order",
+ "premium": false,
+ "meta": {
+  "name": "minSubsequence",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[4,3,10,9,8]",
+  "[4,4,7,6,7]"
+ ],
+ "exampleOutputs": [
+  "[10,9]",
+  "[7,7,6]"
+ ],
+ "anyOrder": false
+}

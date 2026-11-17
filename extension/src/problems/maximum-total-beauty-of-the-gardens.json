@@ -1,0 +1,45 @@
+{
+ "slug": "maximum-total-beauty-of-the-gardens",
+ "frontendId": "2234",
+ "title": "Maximum Total Beauty of the Gardens",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "flowers",
+   "type": "integer[]"
+  },
+  {
+   "name": "newFlowers",
+   "type": "long"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "full",
+   "type": "integer"
+  },
+  {
+   "name": "partial",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "flowers = {flowers}\nnewFlowers = {newFlowers}\ntarget = {target}\nfull = {full}\npartial = {partial}",
+ "visible": [
+  "flowers",
+  "newFlowers",
+  "target",
+  "full",
+  "partial"
+ ],
+ "call": "result = Solution().maximumBeauty(flowers, newFlowers, target, full, partial)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

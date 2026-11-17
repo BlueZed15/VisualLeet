@@ -1,0 +1,38 @@
+{
+ "slug": "execution-of-all-suffix-instructions-staying-in-a-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2120",
+ "title": "Execution of All Suffix Instructions Staying in a Grid",
+ "premium": false,
+ "meta": {
+  "name": "executeInstructions",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "startPos"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "3\n[0,1]\n\"RRDDLU\"",
+  "2\n[1,1]\n\"LURD\"",
+  "1\n[0,0]\n\"LRUD\""
+ ],
+ "exampleOutputs": [
+  "[1,5,4,3,1,0]",
+  "[4,1,0,0]",
+  "[0,0,0,0]"
+ ],
+ "anyOrder": false
+}

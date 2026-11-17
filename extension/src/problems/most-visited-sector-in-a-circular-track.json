@@ -1,0 +1,30 @@
+{
+ "slug": "most-visited-sector-in-a-circular-track",
+ "frontendId": "1560",
+ "title": "Most Visited Sector in  a Circular Track",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "rounds",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrounds = {rounds}",
+ "visible": [
+  "n",
+  "rounds"
+ ],
+ "call": "result = Solution().mostVisited(n, rounds)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

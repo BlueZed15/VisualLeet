@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-amount-of-money-robot-can-earn",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3418",
+ "title": "Maximum Amount of Money Robot Can Earn",
+ "premium": false,
+ "meta": {
+  "name": "maximumAmount",
+  "params": [
+   {
+    "name": "coins",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,-1],[1,-2,3],[2,-3,4]]",
+  "[[10,10,10],[10,10,10]]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "40"
+ ],
+ "anyOrder": false
+}

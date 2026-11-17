@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-sum-of-almost-unique-subarray",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2841",
+ "title": "Maximum Sum of Almost Unique Subarray",
+ "premium": false,
+ "meta": {
+  "name": "maxSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,6,7,3,1,7]\n3\n4",
+  "[5,9,9,2,4,5,4]\n1\n3",
+  "[1,2,1,2,1,2,1]\n3\n3"
+ ],
+ "exampleOutputs": [
+  "18",
+  "23",
+  "0"
+ ],
+ "anyOrder": false
+}

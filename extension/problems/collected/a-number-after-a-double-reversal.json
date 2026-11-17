@@ -1,0 +1,30 @@
+{
+ "slug": "a-number-after-a-double-reversal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2119",
+ "title": "A Number After a Double Reversal",
+ "premium": false,
+ "meta": {
+  "name": "isSameAfterReversals",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "526",
+  "1800",
+  "0"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

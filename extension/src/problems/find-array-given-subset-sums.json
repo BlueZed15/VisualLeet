@@ -1,0 +1,30 @@
+{
+ "slug": "find-array-given-subset-sums",
+ "frontendId": "1982",
+ "title": "Find Array Given Subset Sums",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "sums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nsums = {sums}",
+ "visible": [
+  "n",
+  "sums"
+ ],
+ "call": "result = Solution().recoverArray(n, sums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

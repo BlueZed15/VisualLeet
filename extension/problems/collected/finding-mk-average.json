@@ -1,0 +1,54 @@
+{
+ "slug": "finding-mk-average",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1825",
+ "title": "Finding MK Average",
+ "premium": false,
+ "meta": {
+  "classname": "MKAverage",
+  "constructor": {
+   "params": [
+    {
+     "name": "m",
+     "type": "integer"
+    },
+    {
+     "name": "k",
+     "type": "integer"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "addElement",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "calculateMKAverage",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MKAverage\",\"addElement\",\"addElement\",\"calculateMKAverage\",\"addElement\",\"calculateMKAverage\",\"addElement\",\"addElement\",\"addElement\",\"calculateMKAverage\"]\n[[3,1],[3],[1],[],[10],[],[5],[5],[5],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, -1, null, 3, null, null, null, 5]"
+ ],
+ "anyOrder": false
+}

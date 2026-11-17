@@ -1,0 +1,40 @@
+{
+ "slug": "largest-values-from-labels",
+ "frontendId": "1090",
+ "title": "Largest Values From Labels",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "values",
+   "type": "integer[]"
+  },
+  {
+   "name": "labels",
+   "type": "integer[]"
+  },
+  {
+   "name": "numWanted",
+   "type": "integer"
+  },
+  {
+   "name": "useLimit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "values = {values}\nlabels = {labels}\nnumWanted = {numWanted}\nuseLimit = {useLimit}",
+ "visible": [
+  "values",
+  "labels",
+  "numWanted",
+  "useLimit"
+ ],
+ "call": "result = Solution().largestValsFromLabels(values, labels, numWanted, useLimit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

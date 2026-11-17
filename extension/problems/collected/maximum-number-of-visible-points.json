@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-number-of-visible-points",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1610",
+ "title": "Maximum Number of Visible Points",
+ "premium": false,
+ "meta": {
+  "name": "visiblePoints",
+  "params": [
+   {
+    "name": "points",
+    "type": "list<list<integer>>"
+   },
+   {
+    "type": "integer",
+    "name": "angle"
+   },
+   {
+    "type": "list<integer>",
+    "name": "location"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2,1],[2,2],[3,3]]\n90\n[1,1]",
+  "[[2,1],[2,2],[3,4],[1,1]]\n90\n[1,1]",
+  "[[1,0],[2,1]]\n13\n[1,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

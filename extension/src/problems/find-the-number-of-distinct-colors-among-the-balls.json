@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-number-of-distinct-colors-among-the-balls",
+ "frontendId": "3160",
+ "title": "Find the Number of Distinct Colors Among the Balls",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "limit",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "limit = {limit}\nqueries = {queries}",
+ "visible": [
+  "limit",
+  "queries"
+ ],
+ "call": "result = Solution().queryResults(limit, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

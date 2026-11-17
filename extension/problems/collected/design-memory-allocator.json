@@ -1,0 +1,59 @@
+{
+ "slug": "design-memory-allocator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2502",
+ "title": "Design Memory Allocator",
+ "premium": false,
+ "meta": {
+  "classname": "Allocator",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "size"
+     },
+     {
+      "type": "integer",
+      "name": "mID"
+     }
+    ],
+    "name": "allocate",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "mID"
+     }
+    ],
+    "name": "freeMemory",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Allocator\",\"allocate\",\"allocate\",\"allocate\",\"freeMemory\",\"allocate\",\"allocate\",\"allocate\",\"freeMemory\",\"allocate\",\"freeMemory\"]\n[[10],[1,1],[1,2],[1,3],[2],[3,4],[1,1],[1,1],[1],[10,2],[7]]"
+ ],
+ "exampleOutputs": [
+  "[null, 0, 1, 2, 1, 3, 1, 6, 3, -1, 0]"
+ ],
+ "anyOrder": false
+}

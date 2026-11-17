@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-number-of-distinct-colors-among-the-balls",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3160",
+ "title": "Find the Number of Distinct Colors Among the Balls",
+ "premium": false,
+ "meta": {
+  "name": "queryResults",
+  "params": [
+   {
+    "name": "limit",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[1,4],[2,5],[1,3],[3,4]]",
+  "4\n[[0,1],[1,2],[2,2],[3,4],[4,5]]"
+ ],
+ "exampleOutputs": [
+  "[1,2,2,3]",
+  "[1,2,2,3,4]"
+ ],
+ "anyOrder": false
+}

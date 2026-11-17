@@ -1,0 +1,45 @@
+{
+ "slug": "maximum-candies-you-can-get-from-boxes",
+ "frontendId": "1298",
+ "title": "Maximum Candies You Can Get from Boxes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "status",
+   "type": "integer[]"
+  },
+  {
+   "name": "candies",
+   "type": "integer[]"
+  },
+  {
+   "name": "keys",
+   "type": "integer[][]"
+  },
+  {
+   "name": "containedBoxes",
+   "type": "integer[][]"
+  },
+  {
+   "name": "initialBoxes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "status = {status}\ncandies = {candies}\nkeys = {keys}\ncontainedBoxes = {containedBoxes}\ninitialBoxes = {initialBoxes}",
+ "visible": [
+  "status",
+  "candies",
+  "keys",
+  "containedBoxes",
+  "initialBoxes"
+ ],
+ "call": "result = Solution().maxCandies(status, candies, keys, containedBoxes, initialBoxes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,66 @@
+{
+ "slug": "throne-inheritance",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1600",
+ "title": "Throne Inheritance",
+ "premium": false,
+ "meta": {
+  "classname": "ThroneInheritance",
+  "constructor": {
+   "params": [
+    {
+     "type": "string",
+     "name": "kingName"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "parentName"
+     },
+     {
+      "type": "string",
+      "name": "childName"
+     }
+    ],
+    "name": "birth",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "name"
+     }
+    ],
+    "name": "death",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "list<string>"
+    },
+    "name": "getInheritanceOrder"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"ThroneInheritance\",\"birth\",\"birth\",\"birth\",\"birth\",\"birth\",\"birth\",\"getInheritanceOrder\",\"death\",\"getInheritanceOrder\"]\n[[\"king\"],[\"king\",\"andy\"],[\"king\",\"bob\"],[\"king\",\"catherine\"],[\"andy\",\"matthew\"],[\"bob\",\"alex\"],[\"bob\",\"asha\"],[null],[\"bob\"],[null]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, null, null, null, [\"king\", \"andy\", \"matthew\", \"bob\", \"alex\", \"asha\", \"catherine\"], null, [\"king\", \"andy\", \"matthew\", \"alex\", \"asha\", \"catherine\"]]"
+ ],
+ "anyOrder": false
+}

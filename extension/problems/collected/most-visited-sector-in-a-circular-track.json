@@ -1,0 +1,34 @@
+{
+ "slug": "most-visited-sector-in-a-circular-track",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1560",
+ "title": "Most Visited Sector in  a Circular Track",
+ "premium": false,
+ "meta": {
+  "name": "mostVisited",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "rounds"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "4\n[1,3,1,2]",
+  "2\n[2,1,2,1,2,1,2,1,2]",
+  "7\n[1,3,5,7]"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[2]",
+  "[1,2,3,4,5,6,7]"
+ ],
+ "anyOrder": false
+}

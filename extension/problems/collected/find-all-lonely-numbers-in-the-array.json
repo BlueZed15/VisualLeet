@@ -1,0 +1,28 @@
+{
+ "slug": "find-all-lonely-numbers-in-the-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2150",
+ "title": "Find All Lonely Numbers in the Array",
+ "premium": false,
+ "meta": {
+  "name": "findLonely",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[10,6,5,8]",
+  "[1,3,5,3]"
+ ],
+ "exampleOutputs": [
+  "[10,8]",
+  "[1,5]"
+ ],
+ "anyOrder": true
+}

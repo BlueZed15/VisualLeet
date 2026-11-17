@@ -1,0 +1,28 @@
+{
+ "slug": "count-the-number-of-beautiful-subarrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2588",
+ "title": "Count the Number of Beautiful Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "beautifulSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[4,3,1,2,4]",
+  "[1,10,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

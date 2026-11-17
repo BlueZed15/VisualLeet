@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-value-after-insertion",
+ "frontendId": "1881",
+ "title": "Maximum Value after Insertion",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "string"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nx = {x}",
+ "visible": [
+  "n",
+  "x"
+ ],
+ "call": "result = Solution().maxValue(n, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

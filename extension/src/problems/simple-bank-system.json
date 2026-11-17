@@ -1,0 +1,74 @@
+{
+ "slug": "simple-bank-system",
+ "frontendId": "2043",
+ "title": "Simple Bank System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Bank",
+ "methods": {
+  "Bank": [
+   {
+    "name": "balance",
+    "type": "long[]"
+   }
+  ],
+  "transfer": [
+   {
+    "name": "account1",
+    "type": "integer"
+   },
+   {
+    "name": "account2",
+    "type": "integer"
+   },
+   {
+    "name": "money",
+    "type": "long"
+   }
+  ],
+  "deposit": [
+   {
+    "name": "account",
+    "type": "integer"
+   },
+   {
+    "name": "money",
+    "type": "long"
+   }
+  ],
+  "withdraw": [
+   {
+    "name": "account",
+    "type": "integer"
+   },
+   {
+    "name": "money",
+    "type": "long"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Bank(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

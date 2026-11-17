@@ -1,0 +1,28 @@
+{
+ "slug": "convert-the-temperature",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2469",
+ "title": "Convert the Temperature",
+ "premium": false,
+ "meta": {
+  "name": "convertTemperature",
+  "params": [
+   {
+    "name": "celsius",
+    "type": "double"
+   }
+  ],
+  "return": {
+   "type": "double[]"
+  }
+ },
+ "exampleInputs": [
+  "36.50",
+  "122.11"
+ ],
+ "exampleOutputs": [
+  "[309.65000,97.70000]",
+  "[395.26000,251.79800]"
+ ],
+ "anyOrder": false
+}

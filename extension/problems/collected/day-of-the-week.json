@@ -1,0 +1,38 @@
+{
+ "slug": "day-of-the-week",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1185",
+ "title": "Day of the Week",
+ "premium": false,
+ "meta": {
+  "name": "dayOfTheWeek",
+  "params": [
+   {
+    "name": "day",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "month"
+   },
+   {
+    "type": "integer",
+    "name": "year"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "31\n8\n2019",
+  "18\n7\n1999",
+  "15\n8\n1993"
+ ],
+ "exampleOutputs": [
+  "\"Saturday\"",
+  "\"Sunday\"",
+  "\"Sunday\""
+ ],
+ "anyOrder": false
+}

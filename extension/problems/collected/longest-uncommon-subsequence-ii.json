@@ -1,0 +1,28 @@
+{
+ "slug": "longest-uncommon-subsequence-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "522",
+ "title": "Longest Uncommon Subsequence II",
+ "premium": false,
+ "meta": {
+  "name": "findLUSlength",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"aba\",\"cdc\",\"eae\"]",
+  "[\"aaa\",\"aaa\",\"aa\"]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

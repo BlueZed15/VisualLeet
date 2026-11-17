@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-missing-genetic-value-in-each-subtree",
+ "frontendId": "2003",
+ "title": "Smallest Missing Genetic Value in Each Subtree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "parents",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "parents = {parents}\nnums = {nums}",
+ "visible": [
+  "parents",
+  "nums"
+ ],
+ "call": "result = Solution().smallestMissingValueSubtree(parents, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

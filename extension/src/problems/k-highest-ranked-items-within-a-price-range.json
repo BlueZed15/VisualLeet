@@ -1,0 +1,40 @@
+{
+ "slug": "k-highest-ranked-items-within-a-price-range",
+ "frontendId": "2146",
+ "title": "K Highest Ranked Items Within a Price Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "pricing",
+   "type": "integer[]"
+  },
+  {
+   "name": "start",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\npricing = {pricing}\nstart = {start}\nk = {k}",
+ "visible": [
+  "grid",
+  "pricing",
+  "start",
+  "k"
+ ],
+ "call": "result = Solution().highestRankedKItems(grid, pricing, start, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

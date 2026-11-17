@@ -1,0 +1,25 @@
+{
+ "slug": "block-placement-queries",
+ "frontendId": "3161",
+ "title": "Block Placement Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}",
+ "visible": [
+  "queries"
+ ],
+ "call": "result = Solution().getResults(queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "neighboring-bitwise-xor",
+ "frontendId": "2683",
+ "title": "Neighboring Bitwise XOR",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "derived",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "derived = {derived}",
+ "visible": [
+  "derived"
+ ],
+ "call": "result = Solution().doesValidArrayExist(derived)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

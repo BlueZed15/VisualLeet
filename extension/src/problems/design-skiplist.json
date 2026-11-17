@@ -1,0 +1,53 @@
+{
+ "slug": "design-skiplist",
+ "frontendId": "1206",
+ "title": "Design Skiplist",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Skiplist",
+ "methods": {
+  "Skiplist": [],
+  "search": [
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "add": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "erase": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Skiplist(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

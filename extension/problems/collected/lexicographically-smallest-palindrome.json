@@ -1,0 +1,30 @@
+{
+ "slug": "lexicographically-smallest-palindrome",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2697",
+ "title": "Lexicographically Smallest Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "makeSmallestPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"egcfe\"",
+  "\"abcd\"",
+  "\"seven\""
+ ],
+ "exampleOutputs": [
+  "\"efcfe\"",
+  "\"abba\"",
+  "\"neven\""
+ ],
+ "anyOrder": false
+}

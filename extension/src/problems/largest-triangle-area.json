@@ -1,0 +1,25 @@
+{
+ "slug": "largest-triangle-area",
+ "frontendId": "812",
+ "title": "Largest Triangle Area",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().largestTriangleArea(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

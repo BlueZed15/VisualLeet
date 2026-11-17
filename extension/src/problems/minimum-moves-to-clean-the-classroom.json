@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-moves-to-clean-the-classroom",
+ "frontendId": "3568",
+ "title": "Minimum Moves to Clean the Classroom",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "classroom",
+   "type": "string[]"
+  },
+  {
+   "name": "energy",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "classroom = {classroom}\nenergy = {energy}",
+ "visible": [
+  "classroom",
+  "energy"
+ ],
+ "call": "result = Solution().minMoves(classroom, energy)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

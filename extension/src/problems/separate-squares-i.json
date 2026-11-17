@@ -1,0 +1,25 @@
+{
+ "slug": "separate-squares-i",
+ "frontendId": "3453",
+ "title": "Separate Squares I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "squares",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "squares = {squares}",
+ "visible": [
+  "squares"
+ ],
+ "call": "result = Solution().separateSquares(squares)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "ways-to-express-an-integer-as-sum-of-powers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2787",
+ "title": "Ways to Express an Integer as Sum of Powers",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWays",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n2",
+  "4\n1"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-product-of-two-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3536",
+ "title": "Maximum Product of Two Digits",
+ "premium": false,
+ "meta": {
+  "name": "maxProduct",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "31",
+  "22",
+  "124"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4",
+  "8"
+ ],
+ "anyOrder": false
+}

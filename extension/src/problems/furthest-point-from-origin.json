@@ -1,0 +1,25 @@
+{
+ "slug": "furthest-point-from-origin",
+ "frontendId": "2833",
+ "title": "Furthest Point From Origin",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "moves",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "moves = {moves}",
+ "visible": [
+  "moves"
+ ],
+ "call": "result = Solution().furthestDistanceFromOrigin(moves)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

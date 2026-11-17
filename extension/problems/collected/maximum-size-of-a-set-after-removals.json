@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-size-of-a-set-after-removals",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3002",
+ "title": "Maximum Size of a Set After Removals",
+ "premium": false,
+ "meta": {
+  "name": "maximumSetSize",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,1,2]\n[1,1,1,1]",
+  "[1,2,3,4,5,6]\n[2,3,2,3,2,3]",
+  "[1,1,2,2,3,3]\n[4,4,5,5,6,6]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "5",
+  "6"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-xor-path-in-a-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3882",
+ "title": "Minimum XOR Path in a Grid",
+ "premium": false,
+ "meta": {
+  "name": "minCost",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[3,4]]",
+  "[[6,7],[5,8]]",
+  "[[2,7,5]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "9",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimize-string-length",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2716",
+ "title": "Minimize String Length",
+ "premium": false,
+ "meta": {
+  "name": "minimizedStringLength",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aaabc\"",
+  "\"cbbd\"",
+  "\"baadccab\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

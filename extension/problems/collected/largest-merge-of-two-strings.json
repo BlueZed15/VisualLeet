@@ -1,0 +1,32 @@
+{
+ "slug": "largest-merge-of-two-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1754",
+ "title": "Largest Merge Of Two Strings",
+ "premium": false,
+ "meta": {
+  "name": "largestMerge",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"cabaa\"\n\"bcaaa\"",
+  "\"abcabc\"\n\"abdcaba\""
+ ],
+ "exampleOutputs": [
+  "\"cbcabaaaaa\"",
+  "\"abdcabcabcaba\""
+ ],
+ "anyOrder": false
+}

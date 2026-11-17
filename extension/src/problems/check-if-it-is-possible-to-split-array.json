@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-it-is-possible-to-split-array",
+ "frontendId": "2811",
+ "title": "Check if it is Possible to Split Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nm = {m}",
+ "visible": [
+  "nums",
+  "m"
+ ],
+ "call": "result = Solution().canSplitArray(nums, m)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

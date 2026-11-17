@@ -1,0 +1,35 @@
+{
+ "slug": "network-recovery-pathways",
+ "frontendId": "3620",
+ "title": "Network Recovery Pathways",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "online",
+   "type": "boolean[]"
+  },
+  {
+   "name": "k",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nonline = {online}\nk = {k}",
+ "visible": [
+  "edges",
+  "online",
+  "k"
+ ],
+ "call": "result = Solution().findMaxPathScore(edges, online, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

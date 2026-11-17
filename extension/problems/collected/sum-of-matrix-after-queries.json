@@ -1,0 +1,32 @@
+{
+ "slug": "sum-of-matrix-after-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2718",
+ "title": "Sum of Matrix After Queries",
+ "premium": false,
+ "meta": {
+  "name": "matrixSumQueries",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[0,0,1],[1,2,2],[0,2,3],[1,0,4]]",
+  "3\n[[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]"
+ ],
+ "exampleOutputs": [
+  "23",
+  "17"
+ ],
+ "anyOrder": false
+}

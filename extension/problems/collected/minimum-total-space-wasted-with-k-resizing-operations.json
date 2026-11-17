@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-total-space-wasted-with-k-resizing-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1959",
+ "title": "Minimum Total Space Wasted With K Resizing Operations",
+ "premium": false,
+ "meta": {
+  "name": "minSpaceWastedKResizing",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,20]\n0",
+  "[10,20,30]\n1",
+  "[10,20,15,30,20]\n2"
+ ],
+ "exampleOutputs": [
+  "10",
+  "10",
+  "15"
+ ],
+ "anyOrder": false
+}

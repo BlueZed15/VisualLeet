@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-deletions-on-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2430",
+ "title": "Maximum Deletions on a String",
+ "premium": false,
+ "meta": {
+  "name": "deleteString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcabcdabc\"",
+  "\"aaabaab\"",
+  "\"aaaaa\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "5"
+ ],
+ "anyOrder": false
+}

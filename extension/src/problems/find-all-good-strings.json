@@ -1,0 +1,40 @@
+{
+ "slug": "find-all-good-strings",
+ "frontendId": "1397",
+ "title": "Find All Good Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "evil",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ns1 = {s1}\ns2 = {s2}\nevil = {evil}",
+ "visible": [
+  "n",
+  "s1",
+  "s2",
+  "evil"
+ ],
+ "call": "result = Solution().findGoodStrings(n, s1, s2, evil)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

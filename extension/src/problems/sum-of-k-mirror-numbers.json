@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-k-mirror-numbers",
+ "frontendId": "2081",
+ "title": "Sum of k-Mirror Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nn = {n}",
+ "visible": [
+  "k",
+  "n"
+ ],
+ "call": "result = Solution().kMirror(k, n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

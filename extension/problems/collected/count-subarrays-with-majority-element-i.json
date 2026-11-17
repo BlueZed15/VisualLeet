@@ -1,0 +1,34 @@
+{
+ "slug": "count-subarrays-with-majority-element-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3737",
+ "title": "Count Subarrays With Majority Element I",
+ "premium": false,
+ "meta": {
+  "name": "countMajoritySubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,3]\n2",
+  "[1,1,1,1]\n1",
+  "[1,2,3]\n4"
+ ],
+ "exampleOutputs": [
+  "5",
+  "10",
+  "0"
+ ],
+ "anyOrder": false
+}

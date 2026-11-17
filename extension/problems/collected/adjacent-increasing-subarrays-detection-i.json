@@ -1,0 +1,32 @@
+{
+ "slug": "adjacent-increasing-subarrays-detection-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3349",
+ "title": "Adjacent Increasing Subarrays Detection I",
+ "premium": false,
+ "meta": {
+  "name": "hasIncreasingSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,5,7,8,9,2,3,4,3,1]\n3",
+  "[1,2,3,4,4,4,4,5,6,7]\n5"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

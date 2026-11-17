@@ -1,0 +1,34 @@
+{
+ "slug": "evaluate-the-bracket-pairs-of-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1807",
+ "title": "Evaluate the Bracket Pairs of a String",
+ "premium": false,
+ "meta": {
+  "name": "evaluate",
+  "params": [
+   {
+    "type": "string",
+    "name": "s"
+   },
+   {
+    "type": "list<list<string>>",
+    "name": "knowledge"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"(name)is(age)yearsold\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+  "\"hi(name)\"\n[[\"a\",\"b\"]]",
+  "\"(a)(a)(a)aaa\"\n[[\"a\",\"yes\"]]"
+ ],
+ "exampleOutputs": [
+  "\"bobistwoyearsold\"",
+  "\"hi?\"",
+  "\"yesyesyesaaa\""
+ ],
+ "anyOrder": false
+}

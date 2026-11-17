@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-of-distinct-elements-after-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3397",
+ "title": "Maximum Number of Distinct Elements After Operations",
+ "premium": false,
+ "meta": {
+  "name": "maxDistinctElements",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,3,3,4]\n2",
+  "[4,4,4,4]\n1"
+ ],
+ "exampleOutputs": [
+  "6",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+ "frontendId": "3007",
+ "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "long"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\nx = {x}",
+ "visible": [
+  "k",
+  "x"
+ ],
+ "call": "result = Solution().findMaximumNumber(k, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,57 @@
+{
+ "slug": "throne-inheritance",
+ "frontendId": "1600",
+ "title": "Throne Inheritance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "ThroneInheritance",
+ "methods": {
+  "ThroneInheritance": [
+   {
+    "name": "kingName",
+    "type": "string"
+   }
+  ],
+  "birth": [
+   {
+    "name": "parentName",
+    "type": "string"
+   },
+   {
+    "name": "childName",
+    "type": "string"
+   }
+  ],
+  "death": [
+   {
+    "name": "name",
+    "type": "string"
+   }
+  ],
+  "getInheritanceOrder": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = ThroneInheritance(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

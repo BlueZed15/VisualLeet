@@ -1,0 +1,28 @@
+{
+ "slug": "prime-arrangements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1175",
+ "title": "Prime Arrangements",
+ "premium": false,
+ "meta": {
+  "name": "numPrimeArrangements",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "100"
+ ],
+ "exampleOutputs": [
+  "12",
+  "682289015"
+ ],
+ "anyOrder": false
+}

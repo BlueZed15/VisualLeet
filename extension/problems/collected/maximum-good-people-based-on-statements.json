@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-good-people-based-on-statements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2151",
+ "title": "Maximum Good People Based on Statements",
+ "premium": false,
+ "meta": {
+  "name": "maximumGood",
+  "params": [
+   {
+    "name": "statements",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2,1,2],[1,2,2],[2,0,2]]",
+  "[[2,0],[0,2]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

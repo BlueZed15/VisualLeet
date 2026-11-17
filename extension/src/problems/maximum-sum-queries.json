@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-sum-queries",
+ "frontendId": "2736",
+ "title": "Maximum Sum Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nqueries = {queries}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "queries"
+ ],
+ "call": "result = Solution().maximumSumQueries(nums1, nums2, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

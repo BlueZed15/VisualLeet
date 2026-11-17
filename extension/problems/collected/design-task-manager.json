@@ -1,0 +1,87 @@
+{
+ "slug": "design-task-manager",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3408",
+ "title": "Design Task Manager",
+ "premium": false,
+ "meta": {
+  "classname": "TaskManager",
+  "constructor": {
+   "params": [
+    {
+     "type": "list<list<integer>>",
+     "name": "tasks"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "userId"
+     },
+     {
+      "type": "integer",
+      "name": "taskId"
+     },
+     {
+      "type": "integer",
+      "name": "priority"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "taskId"
+     },
+     {
+      "type": "integer",
+      "name": "newPriority"
+     }
+    ],
+    "name": "edit",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "taskId"
+     }
+    ],
+    "name": "rmv",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "execTop",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"TaskManager\",\"add\",\"edit\",\"execTop\",\"rmv\",\"add\",\"execTop\"]\n[[[[1,101,10],[2,102,20],[3,103,15]]],[4,104,5],[102,8],[],[101],[5,105,15],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, 3, null, null, 5]"
+ ],
+ "anyOrder": false
+}

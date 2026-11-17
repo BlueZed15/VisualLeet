@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-k-beauty-of-a-number",
+ "frontendId": "2269",
+ "title": "Find the K-Beauty of a Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}\nk = {k}",
+ "visible": [
+  "num",
+  "k"
+ ],
+ "call": "result = Solution().divisorSubstrings(num, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

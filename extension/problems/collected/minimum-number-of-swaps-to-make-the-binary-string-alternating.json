@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-swaps-to-make-the-binary-string-alternating",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1864",
+ "title": "Minimum Number of Swaps to Make the Binary String Alternating",
+ "premium": false,
+ "meta": {
+  "name": "minSwaps",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"111000\"",
+  "\"010\"",
+  "\"1110\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "0",
+  "-1"
+ ],
+ "anyOrder": false
+}

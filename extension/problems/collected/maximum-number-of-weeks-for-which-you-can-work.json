@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-weeks-for-which-you-can-work",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1953",
+ "title": "Maximum Number of Weeks for Which You Can Work",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWeeks",
+  "params": [
+   {
+    "name": "milestones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[5,2,1]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "7"
+ ],
+ "anyOrder": false
+}

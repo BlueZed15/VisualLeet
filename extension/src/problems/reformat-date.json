@@ -1,0 +1,25 @@
+{
+ "slug": "reformat-date",
+ "frontendId": "1507",
+ "title": "Reformat Date",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "date",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "date = {date}",
+ "visible": [
+  "date"
+ ],
+ "call": "result = Solution().reformatDate(date)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

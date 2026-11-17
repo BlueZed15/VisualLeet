@@ -1,0 +1,28 @@
+{
+ "slug": "largest-1-bordered-square",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1139",
+ "title": "Largest 1-Bordered Square",
+ "premium": false,
+ "meta": {
+  "name": "largest1BorderedSquare",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,1],[1,0,1],[1,1,1]]",
+  "[[1,1,0,0]]"
+ ],
+ "exampleOutputs": [
+  "9",
+  "1"
+ ],
+ "anyOrder": false
+}

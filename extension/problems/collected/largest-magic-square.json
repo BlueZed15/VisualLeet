@@ -1,0 +1,28 @@
+{
+ "slug": "largest-magic-square",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1895",
+ "title": "Largest Magic Square",
+ "premium": false,
+ "meta": {
+  "name": "largestMagicSquare",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[7,1,4,5,6],[2,5,1,6,4],[1,5,4,3,2],[1,2,7,3,4]]",
+  "[[5,1,3,1],[9,3,3,1],[1,3,3,8]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

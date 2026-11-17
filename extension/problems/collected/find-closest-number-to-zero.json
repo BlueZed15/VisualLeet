@@ -1,0 +1,28 @@
+{
+ "slug": "find-closest-number-to-zero",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2239",
+ "title": "Find Closest Number to Zero",
+ "premium": false,
+ "meta": {
+  "name": "findClosestNumber",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-4,-2,1,4,8]",
+  "[2,-1,1]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

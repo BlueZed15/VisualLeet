@@ -1,0 +1,44 @@
+{
+ "slug": "find-substring-with-given-hash-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2156",
+ "title": "Find Substring With Given Hash Value",
+ "premium": false,
+ "meta": {
+  "name": "subStrHash",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "power"
+   },
+   {
+    "type": "integer",
+    "name": "modulo"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "hashValue"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leetcode\"\n7\n20\n2\n0",
+  "\"fbxzaad\"\n31\n100\n3\n32"
+ ],
+ "exampleOutputs": [
+  "\"ee\"",
+  "\"fbx\""
+ ],
+ "anyOrder": false
+}

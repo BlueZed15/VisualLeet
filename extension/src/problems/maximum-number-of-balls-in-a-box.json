@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-balls-in-a-box",
+ "frontendId": "1742",
+ "title": "Maximum Number of Balls in a Box",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "lowLimit",
+   "type": "integer"
+  },
+  {
+   "name": "highLimit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "lowLimit = {lowLimit}\nhighLimit = {highLimit}",
+ "visible": [
+  "lowLimit",
+  "highLimit"
+ ],
+ "call": "result = Solution().countBalls(lowLimit, highLimit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

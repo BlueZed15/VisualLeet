@@ -1,0 +1,35 @@
+{
+ "slug": "can-convert-string-in-k-moves",
+ "frontendId": "1540",
+ "title": "Can Convert String in K Moves",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}\nk = {k}",
+ "visible": [
+  "s",
+  "t",
+  "k"
+ ],
+ "call": "result = Solution().canConvertString(s, t, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

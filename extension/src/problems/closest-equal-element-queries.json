@@ -1,0 +1,30 @@
+{
+ "slug": "closest-equal-element-queries",
+ "frontendId": "3488",
+ "title": "Closest Equal Element Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nqueries = {queries}",
+ "visible": [
+  "nums",
+  "queries"
+ ],
+ "call": "result = Solution().solveQueries(nums, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

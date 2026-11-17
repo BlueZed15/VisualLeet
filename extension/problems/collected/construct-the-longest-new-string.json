@@ -1,0 +1,36 @@
+{
+ "slug": "construct-the-longest-new-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2745",
+ "title": "Construct the Longest New String",
+ "premium": false,
+ "meta": {
+  "name": "longestString",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "y"
+   },
+   {
+    "type": "integer",
+    "name": "z"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n5\n1",
+  "3\n2\n2"
+ ],
+ "exampleOutputs": [
+  "12",
+  "14"
+ ],
+ "anyOrder": false
+}

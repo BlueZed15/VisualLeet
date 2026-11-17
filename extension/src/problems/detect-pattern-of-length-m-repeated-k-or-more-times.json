@@ -1,0 +1,35 @@
+{
+ "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+ "frontendId": "1566",
+ "title": "Detect Pattern of Length M Repeated K or More Times",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nm = {m}\nk = {k}",
+ "visible": [
+  "arr",
+  "m",
+  "k"
+ ],
+ "call": "result = Solution().containsPattern(arr, m, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

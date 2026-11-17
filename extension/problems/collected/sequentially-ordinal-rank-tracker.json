@@ -1,0 +1,49 @@
+{
+ "slug": "sequentially-ordinal-rank-tracker",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2102",
+ "title": "Sequentially Ordinal Rank Tracker",
+ "premium": false,
+ "meta": {
+  "classname": "SORTracker",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "name"
+     },
+     {
+      "type": "integer",
+      "name": "score"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "get",
+    "return": {
+     "type": "string"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"SORTracker\",\"add\",\"add\",\"get\",\"add\",\"get\",\"add\",\"get\",\"add\",\"get\",\"add\",\"get\",\"get\"]\n[[],[\"bradford\",2],[\"branford\",3],[],[\"alps\",2],[],[\"orland\",2],[],[\"orlando\",3],[],[\"alpine\",2],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, \"branford\", null, \"alps\", null, \"bradford\", null, \"bradford\", null, \"bradford\", \"orland\"]"
+ ],
+ "anyOrder": false
+}

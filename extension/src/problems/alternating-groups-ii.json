@@ -1,0 +1,30 @@
+{
+ "slug": "alternating-groups-ii",
+ "frontendId": "3208",
+ "title": "Alternating Groups II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "colors",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "colors = {colors}\nk = {k}",
+ "visible": [
+  "colors",
+  "k"
+ ],
+ "call": "result = Solution().numberOfAlternatingGroups(colors, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

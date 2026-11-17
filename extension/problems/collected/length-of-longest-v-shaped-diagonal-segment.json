@@ -1,0 +1,32 @@
+{
+ "slug": "length-of-longest-v-shaped-diagonal-segment",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3459",
+ "title": "Length of Longest V-Shaped Diagonal Segment",
+ "premium": false,
+ "meta": {
+  "name": "lenOfVDiagonal",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2,2,1,2,2],[2,0,2,2,0],[2,0,1,1,0],[1,0,2,2,2],[2,0,0,2,2]]",
+  "[[2,2,2,2,2],[2,0,2,2,0],[2,0,1,1,0],[1,0,2,2,2],[2,0,0,2,2]]",
+  "[[1,2,2,2,2],[2,2,2,2,0],[2,0,0,0,0],[0,0,2,2,2],[2,0,0,2,0]]",
+  "[[1]]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "4",
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

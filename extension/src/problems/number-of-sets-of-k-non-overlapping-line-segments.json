@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+ "frontendId": "1621",
+ "title": "Number of Sets of K Non-Overlapping Line Segments",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}",
+ "visible": [
+  "n",
+  "k"
+ ],
+ "call": "result = Solution().numberOfSets(n, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

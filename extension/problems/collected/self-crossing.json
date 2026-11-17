@@ -1,0 +1,30 @@
+{
+ "slug": "self-crossing",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "335",
+ "title": "Self Crossing",
+ "premium": false,
+ "meta": {
+  "name": "isSelfCrossing",
+  "params": [
+   {
+    "name": "distance",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,1,2]",
+  "[1,2,3,4]",
+  "[1,1,1,2,1]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

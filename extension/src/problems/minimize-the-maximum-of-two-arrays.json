@@ -1,0 +1,40 @@
+{
+ "slug": "minimize-the-maximum-of-two-arrays",
+ "frontendId": "2513",
+ "title": "Minimize the Maximum of Two Arrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "divisor1",
+   "type": "integer"
+  },
+  {
+   "name": "divisor2",
+   "type": "integer"
+  },
+  {
+   "name": "uniqueCnt1",
+   "type": "integer"
+  },
+  {
+   "name": "uniqueCnt2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "divisor1 = {divisor1}\ndivisor2 = {divisor2}\nuniqueCnt1 = {uniqueCnt1}\nuniqueCnt2 = {uniqueCnt2}",
+ "visible": [
+  "divisor1",
+  "divisor2",
+  "uniqueCnt1",
+  "uniqueCnt2"
+ ],
+ "call": "result = Solution().minimizeSet(divisor1, divisor2, uniqueCnt1, uniqueCnt2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+ "frontendId": "3635",
+ "title": "Earliest Finish Time for Land and Water Rides II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "landStartTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "landDuration",
+   "type": "integer[]"
+  },
+  {
+   "name": "waterStartTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "waterDuration",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "landStartTime = {landStartTime}\nlandDuration = {landDuration}\nwaterStartTime = {waterStartTime}\nwaterDuration = {waterDuration}",
+ "visible": [
+  "landStartTime",
+  "landDuration",
+  "waterStartTime",
+  "waterDuration"
+ ],
+ "call": "result = Solution().earliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

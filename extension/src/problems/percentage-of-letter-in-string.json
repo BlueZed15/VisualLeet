@@ -1,0 +1,30 @@
+{
+ "slug": "percentage-of-letter-in-string",
+ "frontendId": "2278",
+ "title": "Percentage of Letter in String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "letter",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nletter = {letter}",
+ "visible": [
+  "s",
+  "letter"
+ ],
+ "call": "result = Solution().percentageLetter(s, letter)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

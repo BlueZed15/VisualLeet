@@ -1,0 +1,28 @@
+{
+ "slug": "print-binary-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "655",
+ "title": "Print Binary Tree",
+ "premium": false,
+ "meta": {
+  "name": "printTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "[1,2]",
+  "[1,2,3,null,4]"
+ ],
+ "exampleOutputs": [
+  "[[\"\",\"1\",\"\"],[\"2\",\"\",\"\"]]",
+  "[[\"\",\"\",\"\",\"1\",\"\",\"\",\"\"],[\"\",\"2\",\"\",\"\",\"\",\"3\",\"\"],[\"\",\"\",\"4\",\"\",\"\",\"\",\"\"]]"
+ ],
+ "anyOrder": false
+}

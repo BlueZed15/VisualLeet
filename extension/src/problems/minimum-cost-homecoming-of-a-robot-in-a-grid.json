@@ -1,0 +1,40 @@
+{
+ "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+ "frontendId": "2087",
+ "title": "Minimum Cost Homecoming of a Robot in a Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startPos",
+   "type": "integer[]"
+  },
+  {
+   "name": "homePos",
+   "type": "integer[]"
+  },
+  {
+   "name": "rowCosts",
+   "type": "integer[]"
+  },
+  {
+   "name": "colCosts",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "startPos = {startPos}\nhomePos = {homePos}\nrowCosts = {rowCosts}\ncolCosts = {colCosts}",
+ "visible": [
+  "startPos",
+  "homePos",
+  "rowCosts",
+  "colCosts"
+ ],
+ "call": "result = Solution().minCost(startPos, homePos, rowCosts, colCosts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

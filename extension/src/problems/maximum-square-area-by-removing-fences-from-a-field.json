@@ -1,0 +1,40 @@
+{
+ "slug": "maximum-square-area-by-removing-fences-from-a-field",
+ "frontendId": "2975",
+ "title": "Maximum Square Area by Removing Fences From a Field",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "hFences",
+   "type": "integer[]"
+  },
+  {
+   "name": "vFences",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nhFences = {hFences}\nvFences = {vFences}",
+ "visible": [
+  "m",
+  "n",
+  "hFences",
+  "vFences"
+ ],
+ "call": "result = Solution().maximizeSquareArea(m, n, hFences, vFences)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

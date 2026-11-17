@@ -1,0 +1,28 @@
+{
+ "slug": "generate-binary-strings-without-adjacent-zeros",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3211",
+ "title": "Generate Binary Strings Without Adjacent Zeros",
+ "premium": false,
+ "meta": {
+  "name": "validStrings",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "1"
+ ],
+ "exampleOutputs": [
+  "[\"010\",\"011\",\"101\",\"110\",\"111\"]",
+  "[\"0\",\"1\"]"
+ ],
+ "anyOrder": true
+}

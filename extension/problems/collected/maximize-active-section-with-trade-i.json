@@ -1,0 +1,32 @@
+{
+ "slug": "maximize-active-section-with-trade-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3499",
+ "title": "Maximize Active Section with Trade I",
+ "premium": false,
+ "meta": {
+  "name": "maxActiveSectionsAfterTrade",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"01\"",
+  "\"0100\"",
+  "\"1000100\"",
+  "\"01010\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "4",
+  "7",
+  "4"
+ ],
+ "anyOrder": false
+}

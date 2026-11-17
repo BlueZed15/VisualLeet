@@ -1,0 +1,32 @@
+{
+ "slug": "find-all-good-indices",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2420",
+ "title": "Find All Good Indices",
+ "premium": false,
+ "meta": {
+  "name": "goodIndices",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,1,1,3,4,1]\n2",
+  "[2,1,1,2]\n2"
+ ],
+ "exampleOutputs": [
+  "[2,3]",
+  "[]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-prefixes-of-a-given-string",
+ "frontendId": "2255",
+ "title": "Count Prefixes of a Given String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\ns = {s}",
+ "visible": [
+  "words",
+  "s"
+ ],
+ "call": "result = Solution().countPrefixes(words, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

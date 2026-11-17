@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3007",
+ "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+ "premium": false,
+ "meta": {
+  "name": "findMaximumNumber",
+  "params": [
+   {
+    "name": "k",
+    "type": "long"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "9\n1",
+  "7\n2"
+ ],
+ "exampleOutputs": [
+  "6",
+  "9"
+ ],
+ "anyOrder": false
+}

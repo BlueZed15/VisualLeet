@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+ "frontendId": "2086",
+ "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hamsters",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "hamsters = {hamsters}",
+ "visible": [
+  "hamsters"
+ ],
+ "call": "result = Solution().minimumBuckets(hamsters)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

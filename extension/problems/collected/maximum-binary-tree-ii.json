@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-binary-tree-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "998",
+ "title": "Maximum Binary Tree II",
+ "premium": false,
+ "meta": {
+  "name": "insertIntoMaxTree",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "TreeNode"
+  }
+ },
+ "exampleInputs": [
+  "[4,1,3,null,null,2]\n5",
+  "[5,2,4,null,1]\n3",
+  "[5,2,3,null,1]\n4"
+ ],
+ "exampleOutputs": [
+  "[5,4,null,1,3,null,null,2]",
+  "[5,2,4,null,1,null,3]",
+  "[5,2,4,null,1,3]"
+ ],
+ "anyOrder": false
+}

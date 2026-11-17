@@ -1,0 +1,25 @@
+{
+ "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+ "frontendId": "2148",
+ "title": "Count Elements With Strictly Smaller and Greater Elements ",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().countElements(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

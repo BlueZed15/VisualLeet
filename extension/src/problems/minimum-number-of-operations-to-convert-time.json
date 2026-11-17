@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-operations-to-convert-time",
+ "frontendId": "2224",
+ "title": "Minimum Number of Operations to Convert Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "current",
+   "type": "string"
+  },
+  {
+   "name": "correct",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "current = {current}\ncorrect = {correct}",
+ "visible": [
+  "current",
+  "correct"
+ ],
+ "call": "result = Solution().convertTime(current, correct)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "selling-pieces-of-wood",
+ "frontendId": "2312",
+ "title": "Selling Pieces of Wood",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "prices",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nprices = {prices}",
+ "visible": [
+  "m",
+  "n",
+  "prices"
+ ],
+ "call": "result = Solution().sellingWood(m, n, prices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

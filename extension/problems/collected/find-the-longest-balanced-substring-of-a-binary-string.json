@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-longest-balanced-substring-of-a-binary-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2609",
+ "title": "Find the Longest Balanced Substring of a Binary String",
+ "premium": false,
+ "meta": {
+  "name": "findTheLongestBalancedSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"01000111\"",
+  "\"00111\"",
+  "\"111\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

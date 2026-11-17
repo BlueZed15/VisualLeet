@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-win-from-two-segments",
+ "frontendId": "2555",
+ "title": "Maximize Win From Two Segments",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prizePositions",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "prizePositions = {prizePositions}\nk = {k}",
+ "visible": [
+  "prizePositions",
+  "k"
+ ],
+ "call": "result = Solution().maximizeWin(prizePositions, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

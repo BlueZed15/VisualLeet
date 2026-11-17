@@ -1,0 +1,36 @@
+{
+ "slug": "find-the-lexicographically-smallest-valid-sequence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3302",
+ "title": "Find the Lexicographically Smallest Valid Sequence",
+ "premium": false,
+ "meta": {
+  "name": "validSequence",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"vbcca\"\n\"abc\"",
+  "\"bacdc\"\n\"abc\"",
+  "\"aaaaaa\"\n\"aaabc\"",
+  "\"abc\"\n\"ab\""
+ ],
+ "exampleOutputs": [
+  "[0,1,2]",
+  "[1,2,4]",
+  "[]",
+  "[0,1]"
+ ],
+ "anyOrder": false
+}

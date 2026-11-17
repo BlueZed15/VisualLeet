@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-absolute-difference-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1906",
+ "title": "Minimum Absolute Difference Queries",
+ "premium": false,
+ "meta": {
+  "name": "minDifference",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,4,8]\n[[0,1],[1,2],[2,3],[0,3]]",
+  "[4,5,2,2,7,10]\n[[2,3],[0,2],[0,5],[3,5]]"
+ ],
+ "exampleOutputs": [
+  "[2,1,4,1]",
+  "[-1,1,1,3]"
+ ],
+ "anyOrder": false
+}

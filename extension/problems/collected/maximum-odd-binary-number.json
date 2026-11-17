@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-odd-binary-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2864",
+ "title": "Maximum Odd Binary Number",
+ "premium": false,
+ "meta": {
+  "name": "maximumOddBinaryNumber",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"010\"",
+  "\"0101\""
+ ],
+ "exampleOutputs": [
+  "\"001\"",
+  "\"1001\""
+ ],
+ "anyOrder": false
+}

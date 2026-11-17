@@ -1,0 +1,25 @@
+{
+ "slug": "array-with-elements-not-equal-to-average-of-neighbors",
+ "frontendId": "1968",
+ "title": "Array With Elements Not Equal to Average of Neighbors",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().rearrangeArray(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

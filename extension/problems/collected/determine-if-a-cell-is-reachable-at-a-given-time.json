@@ -1,0 +1,44 @@
+{
+ "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2849",
+ "title": "Determine if a Cell Is Reachable at a Given Time",
+ "premium": false,
+ "meta": {
+  "name": "isReachableAtTime",
+  "params": [
+   {
+    "name": "sx",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "sy"
+   },
+   {
+    "type": "integer",
+    "name": "fx"
+   },
+   {
+    "type": "integer",
+    "name": "fy"
+   },
+   {
+    "type": "integer",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "2\n4\n7\n7\n6",
+  "3\n1\n7\n3\n3"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

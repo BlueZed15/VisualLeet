@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-subarrays-with-lcm-equal-to-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2470",
+ "title": "Number of Subarrays With LCM Equal to K",
+ "premium": false,
+ "meta": {
+  "name": "subarrayLCM",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,6,2,7,1]\n6",
+  "[3]\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

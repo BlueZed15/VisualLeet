@@ -1,0 +1,34 @@
+{
+ "slug": "rearrange-characters-to-make-target-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2287",
+ "title": "Rearrange Characters to Make Target String",
+ "premium": false,
+ "meta": {
+  "name": "rearrangeCharacters",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ilovecodingonleetcode\"\n\"code\"",
+  "\"abcba\"\n\"abc\"",
+  "\"abbaccaddaeea\"\n\"aaaaa\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

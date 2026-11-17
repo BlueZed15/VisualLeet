@@ -1,0 +1,28 @@
+{
+ "slug": "faulty-keyboard",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2810",
+ "title": "Faulty Keyboard",
+ "premium": false,
+ "meta": {
+  "name": "finalString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"string\"",
+  "\"poiinter\""
+ ],
+ "exampleOutputs": [
+  "\"rtsng\"",
+  "\"ponter\""
+ ],
+ "anyOrder": false
+}

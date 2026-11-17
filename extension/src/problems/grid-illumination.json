@@ -1,0 +1,35 @@
+{
+ "slug": "grid-illumination",
+ "frontendId": "1001",
+ "title": "Grid Illumination",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "lamps",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nlamps = {lamps}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "lamps",
+  "queries"
+ ],
+ "call": "result = Solution().gridIllumination(n, lamps, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

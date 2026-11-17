@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-days-between-two-dates",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1360",
+ "title": "Number of Days Between Two Dates",
+ "premium": false,
+ "meta": {
+  "name": "daysBetweenDates",
+  "params": [
+   {
+    "name": "date1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "date2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"2019-06-29\"\n\"2019-06-30\"",
+  "\"2020-01-15\"\n\"2019-12-31\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "15"
+ ],
+ "anyOrder": false
+}

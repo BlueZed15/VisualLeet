@@ -1,0 +1,30 @@
+{
+ "slug": "simplified-fractions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1447",
+ "title": "Simplified Fractions",
+ "premium": false,
+ "meta": {
+  "name": "simplifiedFractions",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "3",
+  "4"
+ ],
+ "exampleOutputs": [
+  "[\"1/2\"]",
+  "[\"1/2\",\"1/3\",\"2/3\"]",
+  "[\"1/2\",\"1/3\",\"1/4\",\"2/3\",\"3/4\"]"
+ ],
+ "anyOrder": true
+}

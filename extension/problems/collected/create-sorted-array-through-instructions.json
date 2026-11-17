@@ -1,0 +1,30 @@
+{
+ "slug": "create-sorted-array-through-instructions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1649",
+ "title": "Create Sorted Array through Instructions",
+ "premium": false,
+ "meta": {
+  "name": "createSortedArray",
+  "params": [
+   {
+    "name": "instructions",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,5,6,2]",
+  "[1,2,3,6,5,4]",
+  "[1,3,3,3,2,4,2,1,2]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

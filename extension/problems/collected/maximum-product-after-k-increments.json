@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-product-after-k-increments",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2233",
+ "title": "Maximum Product After K Increments",
+ "premium": false,
+ "meta": {
+  "name": "maximumProduct",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,4]\n5",
+  "[6,3,3,2]\n2"
+ ],
+ "exampleOutputs": [
+  "20",
+  "216"
+ ],
+ "anyOrder": false
+}

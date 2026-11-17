@@ -1,0 +1,28 @@
+{
+ "slug": "lexicographically-minimum-string-after-removing-stars",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3170",
+ "title": "Lexicographically Minimum String After Removing Stars",
+ "premium": false,
+ "meta": {
+  "name": "clearStars",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"aaba*\"",
+  "\"abc\""
+ ],
+ "exampleOutputs": [
+  "\"aab\"",
+  "\"abc\""
+ ],
+ "anyOrder": false
+}

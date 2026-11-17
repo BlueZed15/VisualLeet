@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-subarrays-with-gcd-equal-to-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2447",
+ "title": "Number of Subarrays With GCD Equal to K",
+ "premium": false,
+ "meta": {
+  "name": "subarrayGCD",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[9,3,1,2,6,3]\n3",
+  "[4]\n7"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-value-of-a-string-in-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2496",
+ "title": "Maximum Value of a String in an Array",
+ "premium": false,
+ "meta": {
+  "name": "maximumValue",
+  "params": [
+   {
+    "name": "strs",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"alic3\",\"bob\",\"3\",\"4\",\"00000\"]",
+  "[\"1\",\"01\",\"001\",\"0001\"]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

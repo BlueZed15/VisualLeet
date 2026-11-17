@@ -1,0 +1,34 @@
+{
+ "slug": "split-strings-by-separator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2788",
+ "title": "Split Strings by Separator",
+ "premium": false,
+ "meta": {
+  "name": "splitWordsBySeparator",
+  "params": [
+   {
+    "name": "words",
+    "type": "list<string>"
+   },
+   {
+    "type": "character",
+    "name": "separator"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"one.two.three\",\"four.five\",\"six\"]\n\".\"",
+  "[\"$easy$\",\"$problem$\"]\n\"$\"",
+  "[\"|||\"]\n\"|\""
+ ],
+ "exampleOutputs": [
+  "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]",
+  "[\"easy\",\"problem\"]",
+  "[]"
+ ],
+ "anyOrder": false
+}

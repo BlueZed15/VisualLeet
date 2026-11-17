@@ -1,0 +1,41 @@
+{
+ "slug": "random-point-in-non-overlapping-rectangles",
+ "frontendId": "497",
+ "title": "Random Point in Non-overlapping Rectangles",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Solution",
+ "methods": {
+  "Solution": [
+   {
+    "name": "rects",
+    "type": "integer[][]"
+   }
+  ],
+  "pick": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Solution(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

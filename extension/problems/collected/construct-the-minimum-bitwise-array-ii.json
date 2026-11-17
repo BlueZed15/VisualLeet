@@ -1,0 +1,28 @@
+{
+ "slug": "construct-the-minimum-bitwise-array-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3315",
+ "title": "Construct the Minimum Bitwise Array II",
+ "premium": false,
+ "meta": {
+  "name": "minBitwiseArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,5,7]",
+  "[11,13,31]"
+ ],
+ "exampleOutputs": [
+  "[-1,1,4,3]",
+  "[9,12,15]"
+ ],
+ "anyOrder": false
+}

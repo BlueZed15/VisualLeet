@@ -1,0 +1,25 @@
+{
+ "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+ "frontendId": "1576",
+ "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().modifyString(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

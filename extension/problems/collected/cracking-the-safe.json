@@ -1,0 +1,32 @@
+{
+ "slug": "cracking-the-safe",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "753",
+ "title": "Cracking the Safe",
+ "premium": false,
+ "meta": {
+  "name": "crackSafe",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "1\n2",
+  "2\n2"
+ ],
+ "exampleOutputs": [
+  "\"10\"",
+  "\"01100\""
+ ],
+ "anyOrder": false
+}

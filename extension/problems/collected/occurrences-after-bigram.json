@@ -1,0 +1,36 @@
+{
+ "slug": "occurrences-after-bigram",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1078",
+ "title": "Occurrences After Bigram",
+ "premium": false,
+ "meta": {
+  "name": "findOcurrences",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   },
+   {
+    "name": "first",
+    "type": "string"
+   },
+   {
+    "name": "second",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string[]"
+  }
+ },
+ "exampleInputs": [
+  "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\"",
+  "\"we will we will rock you\"\n\"we\"\n\"will\""
+ ],
+ "exampleOutputs": [
+  "[\"girl\",\"student\"]",
+  "[\"we\",\"rock\"]"
+ ],
+ "anyOrder": false
+}

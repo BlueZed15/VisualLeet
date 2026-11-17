@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-area-rectangle-ii",
+ "frontendId": "963",
+ "title": "Minimum Area Rectangle II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().minAreaFreeRect(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

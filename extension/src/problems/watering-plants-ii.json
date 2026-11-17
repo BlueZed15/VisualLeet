@@ -1,0 +1,35 @@
+{
+ "slug": "watering-plants-ii",
+ "frontendId": "2105",
+ "title": "Watering Plants II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "plants",
+   "type": "integer[]"
+  },
+  {
+   "name": "capacityA",
+   "type": "integer"
+  },
+  {
+   "name": "capacityB",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "plants = {plants}\ncapacityA = {capacityA}\ncapacityB = {capacityB}",
+ "visible": [
+  "plants",
+  "capacityA",
+  "capacityB"
+ ],
+ "call": "result = Solution().minimumRefill(plants, capacityA, capacityB)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

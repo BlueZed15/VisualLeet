@@ -1,0 +1,30 @@
+{
+ "slug": "form-largest-integer-with-digits-that-add-up-to-target",
+ "frontendId": "1449",
+ "title": "Form Largest Integer With Digits That Add up to Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cost",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "cost = {cost}\ntarget = {target}",
+ "visible": [
+  "cost",
+  "target"
+ ],
+ "call": "result = Solution().largestNumber(cost, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

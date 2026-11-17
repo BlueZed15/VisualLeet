@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-operations-to-exceed-threshold-value-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3066",
+ "title": "Minimum Operations to Exceed Threshold Value II",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,11,10,1,3]\n10",
+  "[1,1,2,4,9]\n20"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

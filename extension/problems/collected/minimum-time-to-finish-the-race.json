@@ -1,0 +1,36 @@
+{
+ "slug": "minimum-time-to-finish-the-race",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2188",
+ "title": "Minimum Time to Finish the Race",
+ "premium": false,
+ "meta": {
+  "name": "minimumFinishTime",
+  "params": [
+   {
+    "name": "tires",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "changeTime"
+   },
+   {
+    "type": "integer",
+    "name": "numLaps"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[2,3],[3,4]]\n5\n4",
+  "[[1,10],[2,2],[3,4]]\n6\n5"
+ ],
+ "exampleOutputs": [
+  "21",
+  "25"
+ ],
+ "anyOrder": false
+}

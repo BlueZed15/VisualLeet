@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-consecutive-values-you-can-make",
+ "frontendId": "1798",
+ "title": "Maximum Number of Consecutive Values You Can Make",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}",
+ "visible": [
+  "coins"
+ ],
+ "call": "result = Solution().getMaximumConsecutive(coins)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

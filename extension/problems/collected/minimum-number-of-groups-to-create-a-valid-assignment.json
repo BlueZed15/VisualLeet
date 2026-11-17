@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-groups-to-create-a-valid-assignment",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2910",
+ "title": "Minimum Number of Groups to Create a Valid Assignment",
+ "premium": false,
+ "meta": {
+  "name": "minGroupsForValidAssignment",
+  "params": [
+   {
+    "name": "balls",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,3,2,3]"
+ ],
+ "exampleOutputs": [],
+ "outputsNote": "found 2 outputs for 1 examples",
+ "anyOrder": false
+}

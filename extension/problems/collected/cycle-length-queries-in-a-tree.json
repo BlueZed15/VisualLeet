@@ -1,0 +1,32 @@
+{
+ "slug": "cycle-length-queries-in-a-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2509",
+ "title": "Cycle Length Queries in a Tree",
+ "premium": false,
+ "meta": {
+  "name": "cycleLengthQueries",
+  "params": [
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "3\n[[5,3],[4,7],[2,3]]",
+  "2\n[[1,2]]"
+ ],
+ "exampleOutputs": [
+  "[4,5,3]",
+  "[2]"
+ ],
+ "anyOrder": false
+}

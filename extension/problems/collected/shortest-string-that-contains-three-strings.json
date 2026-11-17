@@ -1,0 +1,37 @@
+{
+ "slug": "shortest-string-that-contains-three-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2800",
+ "title": "Shortest String That Contains Three Strings",
+ "premium": false,
+ "meta": {
+  "name": "minimumString",
+  "params": [
+   {
+    "name": "a",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "b"
+   },
+   {
+    "type": "string",
+    "name": "c"
+   }
+  ],
+  "return": {
+   "type": "string"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"abc\"\n\"bca\"\n\"aaa\"",
+  "\"ab\"\n\"ba\"\n\"aba\""
+ ],
+ "exampleOutputs": [
+  "\"aaabca\"",
+  "\"aba\""
+ ],
+ "anyOrder": false
+}

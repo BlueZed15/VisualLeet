@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-operations-to-reinitialize-a-permutation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1806",
+ "title": "Minimum Number of Operations to Reinitialize a Permutation",
+ "premium": false,
+ "meta": {
+  "name": "reinitializePermutation",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "4",
+  "6"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

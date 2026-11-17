@@ -1,0 +1,32 @@
+{
+ "slug": "water-bottles-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3100",
+ "title": "Water Bottles II",
+ "premium": false,
+ "meta": {
+  "name": "maxBottlesDrunk",
+  "params": [
+   {
+    "name": "numBottles",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "numExchange"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "13\n6",
+  "10\n3"
+ ],
+ "exampleOutputs": [
+  "15",
+  "13"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-path-quality-of-a-graph",
+ "frontendId": "2065",
+ "title": "Maximum Path Quality of a Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "values",
+   "type": "integer[]"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "maxTime",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "values = {values}\nedges = {edges}\nmaxTime = {maxTime}",
+ "visible": [
+  "values",
+  "edges",
+  "maxTime"
+ ],
+ "call": "result = Solution().maximalPathQuality(values, edges, maxTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

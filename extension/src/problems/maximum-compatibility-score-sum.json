@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-compatibility-score-sum",
+ "frontendId": "1947",
+ "title": "Maximum Compatibility Score Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "students",
+   "type": "integer[][]"
+  },
+  {
+   "name": "mentors",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "students = {students}\nmentors = {mentors}",
+ "visible": [
+  "students",
+  "mentors"
+ ],
+ "call": "result = Solution().maxCompatibilitySum(students, mentors)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

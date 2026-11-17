@@ -1,0 +1,32 @@
+{
+ "slug": "maximize-win-from-two-segments",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2555",
+ "title": "Maximize Win From Two Segments",
+ "premium": false,
+ "meta": {
+  "name": "maximizeWin",
+  "params": [
+   {
+    "name": "prizePositions",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2,2,3,3,5]\n2",
+  "[1,2,3,4]\n0"
+ ],
+ "exampleOutputs": [
+  "7",
+  "2"
+ ],
+ "anyOrder": false
+}

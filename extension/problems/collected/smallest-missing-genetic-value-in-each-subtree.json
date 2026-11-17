@@ -1,0 +1,34 @@
+{
+ "slug": "smallest-missing-genetic-value-in-each-subtree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2003",
+ "title": "Smallest Missing Genetic Value in Each Subtree",
+ "premium": false,
+ "meta": {
+  "name": "smallestMissingValueSubtree",
+  "params": [
+   {
+    "name": "parents",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[-1,0,0,2]\n[1,2,3,4]",
+  "[-1,0,1,0,3,3]\n[5,4,6,2,1,3]",
+  "[-1,2,3,0,2,4,1]\n[2,3,4,5,6,7,8]"
+ ],
+ "exampleOutputs": [
+  "[5,1,1,1]",
+  "[7,1,1,4,2,1]",
+  "[1,1,1,1,1,1,1]"
+ ],
+ "anyOrder": false
+}

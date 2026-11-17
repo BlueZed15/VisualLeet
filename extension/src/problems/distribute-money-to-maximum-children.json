@@ -1,0 +1,30 @@
+{
+ "slug": "distribute-money-to-maximum-children",
+ "frontendId": "2591",
+ "title": "Distribute Money to Maximum Children",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "money",
+   "type": "integer"
+  },
+  {
+   "name": "children",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "money = {money}\nchildren = {children}",
+ "visible": [
+  "money",
+  "children"
+ ],
+ "call": "result = Solution().distMoney(money, children)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "convert-integer-to-the-sum-of-two-no-zero-integers",
+ "frontendId": "1317",
+ "title": "Convert Integer to the Sum of Two No-Zero Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().getNoZeroIntegers(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

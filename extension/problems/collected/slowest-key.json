@@ -1,0 +1,33 @@
+{
+ "slug": "slowest-key",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1629",
+ "title": "Slowest Key",
+ "premium": false,
+ "meta": {
+  "name": "slowestKey",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "releaseTimes"
+   },
+   {
+    "type": "string",
+    "name": "keysPressed"
+   }
+  ],
+  "return": {
+   "type": "character"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[9,29,49,50]\n\"cbcd\"",
+  "[12,23,36,46,62]\n\"spuda\""
+ ],
+ "exampleOutputs": [
+  "\"c\"",
+  "\"a\""
+ ],
+ "anyOrder": false
+}

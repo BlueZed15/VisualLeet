@@ -1,0 +1,35 @@
+{
+ "slug": "escape-a-large-maze",
+ "frontendId": "1036",
+ "title": "Escape a Large Maze",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "blocked",
+   "type": "integer[][]"
+  },
+  {
+   "name": "source",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "blocked = {blocked}\nsource = {source}\ntarget = {target}",
+ "visible": [
+  "blocked",
+  "source",
+  "target"
+ ],
+ "call": "result = Solution().isEscapePossible(blocked, source, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

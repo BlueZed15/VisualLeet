@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-unique-good-subsequences",
+ "frontendId": "1987",
+ "title": "Number of Unique Good Subsequences",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "binary",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "binary = {binary}",
+ "visible": [
+  "binary"
+ ],
+ "call": "result = Solution().numberOfUniqueGoodSubsequences(binary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

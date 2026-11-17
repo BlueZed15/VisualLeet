@@ -1,0 +1,29 @@
+{
+ "slug": "split-with-minimum-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2578",
+ "title": "Split With Minimum Sum",
+ "premium": false,
+ "meta": {
+  "name": "splitNum",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "4325",
+  "687"
+ ],
+ "exampleOutputs": [
+  "59",
+  "75"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-lexicographically-largest-string-from-the-box-i",
+ "frontendId": "3403",
+ "title": "Find the Lexicographically Largest String From the Box I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "numFriends",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nnumFriends = {numFriends}",
+ "visible": [
+  "word",
+  "numFriends"
+ ],
+ "call": "result = Solution().answerString(word, numFriends)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "count-ways-to-make-array-with-product",
+ "frontendId": "1735",
+ "title": "Count Ways to Make Array With Product",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}",
+ "visible": [
+  "queries"
+ ],
+ "call": "result = Solution().waysToFillArray(queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

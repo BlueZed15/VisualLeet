@@ -1,0 +1,28 @@
+{
+ "slug": "decode-xored-permutation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1734",
+ "title": "Decode XORed Permutation",
+ "premium": false,
+ "meta": {
+  "name": "decode",
+  "params": [
+   {
+    "name": "encoded",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,1]",
+  "[6,5,4,6]"
+ ],
+ "exampleOutputs": [
+  "[1,2,3]",
+  "[2,4,1,5,3]"
+ ],
+ "anyOrder": false
+}

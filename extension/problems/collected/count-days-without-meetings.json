@@ -1,0 +1,34 @@
+{
+ "slug": "count-days-without-meetings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3169",
+ "title": "Count Days Without Meetings",
+ "premium": false,
+ "meta": {
+  "name": "countDays",
+  "params": [
+   {
+    "name": "days",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "meetings"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n[[5,7],[1,3],[9,10]]",
+  "5\n[[2,4],[1,3]]",
+  "6\n[[1,6]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

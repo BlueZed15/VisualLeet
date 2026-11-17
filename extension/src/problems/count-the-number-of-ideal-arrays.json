@@ -1,0 +1,30 @@
+{
+ "slug": "count-the-number-of-ideal-arrays",
+ "frontendId": "2338",
+ "title": "Count the Number of Ideal Arrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "maxValue",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nmaxValue = {maxValue}",
+ "visible": [
+  "n",
+  "maxValue"
+ ],
+ "call": "result = Solution().idealArrays(n, maxValue)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

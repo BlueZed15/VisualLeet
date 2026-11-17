@@ -1,0 +1,34 @@
+{
+ "slug": "find-kth-largest-xor-coordinate-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1738",
+ "title": "Find Kth Largest XOR Coordinate Value",
+ "premium": false,
+ "meta": {
+  "name": "kthLargestValue",
+  "params": [
+   {
+    "name": "matrix",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[5,2],[1,6]]\n1",
+  "[[5,2],[1,6]]\n2",
+  "[[5,2],[1,6]]\n3"
+ ],
+ "exampleOutputs": [
+  "7",
+  "5",
+  "4"
+ ],
+ "anyOrder": false
+}

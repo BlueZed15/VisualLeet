@@ -1,0 +1,30 @@
+{
+ "slug": "three-equal-parts",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "927",
+ "title": "Three Equal Parts",
+ "premium": false,
+ "meta": {
+  "name": "threeEqualParts",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,1,0,1]",
+  "[1,1,0,1,1]",
+  "[1,1,0,0,1]"
+ ],
+ "exampleOutputs": [
+  "[0,3]",
+  "[-1,-1]",
+  "[0,2]"
+ ],
+ "anyOrder": false
+}

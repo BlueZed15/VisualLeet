@@ -1,0 +1,32 @@
+{
+ "slug": "apply-operations-to-maximize-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2818",
+ "title": "Apply Operations to Maximize Score",
+ "premium": false,
+ "meta": {
+  "name": "maximumScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[8,3,9,3,8]\n2",
+  "[19,12,14,6,10,18]\n3"
+ ],
+ "exampleOutputs": [
+  "81",
+  "4788"
+ ],
+ "anyOrder": false
+}

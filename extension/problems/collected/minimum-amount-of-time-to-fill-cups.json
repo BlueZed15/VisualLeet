@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-amount-of-time-to-fill-cups",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2335",
+ "title": "Minimum Amount of Time to Fill Cups",
+ "premium": false,
+ "meta": {
+  "name": "fillCups",
+  "params": [
+   {
+    "name": "amount",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,2]",
+  "[5,4,4]",
+  "[5,0,0]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "7",
+  "5"
+ ],
+ "anyOrder": false
+}

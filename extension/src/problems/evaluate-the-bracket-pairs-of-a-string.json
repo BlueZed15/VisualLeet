@@ -1,0 +1,30 @@
+{
+ "slug": "evaluate-the-bracket-pairs-of-a-string",
+ "frontendId": "1807",
+ "title": "Evaluate the Bracket Pairs of a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "knowledge",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nknowledge = {knowledge}",
+ "visible": [
+  "s",
+  "knowledge"
+ ],
+ "call": "result = Solution().evaluate(s, knowledge)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "apple-redistribution-into-boxes",
+ "frontendId": "3074",
+ "title": "Apple Redistribution into Boxes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "apple",
+   "type": "integer[]"
+  },
+  {
+   "name": "capacity",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "apple = {apple}\ncapacity = {capacity}",
+ "visible": [
+  "apple",
+  "capacity"
+ ],
+ "call": "result = Solution().minimumBoxes(apple, capacity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

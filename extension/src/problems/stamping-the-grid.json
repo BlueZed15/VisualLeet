@@ -1,0 +1,35 @@
+{
+ "slug": "stamping-the-grid",
+ "frontendId": "2132",
+ "title": "Stamping the Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "stampHeight",
+   "type": "integer"
+  },
+  {
+   "name": "stampWidth",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nstampHeight = {stampHeight}\nstampWidth = {stampWidth}",
+ "visible": [
+  "grid",
+  "stampHeight",
+  "stampWidth"
+ ],
+ "call": "result = Solution().possibleToStamp(grid, stampHeight, stampWidth)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

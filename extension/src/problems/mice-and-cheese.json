@@ -1,0 +1,35 @@
+{
+ "slug": "mice-and-cheese",
+ "frontendId": "2611",
+ "title": "Mice and Cheese",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "reward1",
+   "type": "integer[]"
+  },
+  {
+   "name": "reward2",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "reward1 = {reward1}\nreward2 = {reward2}\nk = {k}",
+ "visible": [
+  "reward1",
+  "reward2",
+  "k"
+ ],
+ "call": "result = Solution().miceAndCheese(reward1, reward2, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "count-number-of-trapezoids-i",
+ "frontendId": "3623",
+ "title": "Count Number of Trapezoids I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "points = {points}",
+ "visible": [
+  "points"
+ ],
+ "call": "result = Solution().countTrapezoids(points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

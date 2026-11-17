@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-largest-area-of-square-inside-two-rectangles",
+ "frontendId": "3047",
+ "title": "Find the Largest Area of Square Inside Two Rectangles",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "bottomLeft",
+   "type": "integer[][]"
+  },
+  {
+   "name": "topRight",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "bottomLeft = {bottomLeft}\ntopRight = {topRight}",
+ "visible": [
+  "bottomLeft",
+  "topRight"
+ ],
+ "call": "result = Solution().largestSquareArea(bottomLeft, topRight)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

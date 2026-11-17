@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-genetic-difference-query",
+ "frontendId": "1938",
+ "title": "Maximum Genetic Difference Query",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "parents",
+   "type": "integer[]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "parents = {parents}\nqueries = {queries}",
+ "visible": [
+  "parents",
+  "queries"
+ ],
+ "call": "result = Solution().maxGeneticDifference(parents, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

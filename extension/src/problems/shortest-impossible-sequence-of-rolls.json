@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-impossible-sequence-of-rolls",
+ "frontendId": "2350",
+ "title": "Shortest Impossible Sequence of Rolls",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rolls",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rolls = {rolls}\nk = {k}",
+ "visible": [
+  "rolls",
+  "k"
+ ],
+ "call": "result = Solution().shortestSequence(rolls, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

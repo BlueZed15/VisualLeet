@@ -1,0 +1,35 @@
+{
+ "slug": "make-three-strings-equal",
+ "frontendId": "2937",
+ "title": "Make Three Strings Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "s3",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}\ns3 = {s3}",
+ "visible": [
+  "s1",
+  "s2",
+  "s3"
+ ],
+ "call": "result = Solution().findMinimumOperations(s1, s2, s3)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

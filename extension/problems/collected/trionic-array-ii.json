@@ -1,0 +1,28 @@
+{
+ "slug": "trionic-array-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3640",
+ "title": "Trionic Array II",
+ "premium": false,
+ "meta": {
+  "name": "maxSumTrionic",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[0,-2,-1,-3,0,2,-1]",
+  "[1,4,2,7]"
+ ],
+ "exampleOutputs": [
+  "-4",
+  "14"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-garden-perimeter-to-collect-enough-apples",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1954",
+ "title": "Minimum Garden Perimeter to Collect Enough Apples",
+ "premium": false,
+ "meta": {
+  "name": "minimumPerimeter",
+  "params": [
+   {
+    "name": "neededApples",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "13",
+  "1000000000"
+ ],
+ "exampleOutputs": [
+  "8",
+  "16",
+  "5040"
+ ],
+ "anyOrder": false
+}

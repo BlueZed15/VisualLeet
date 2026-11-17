@@ -1,0 +1,30 @@
+{
+ "slug": "previous-permutation-with-one-swap",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1053",
+ "title": "Previous Permutation With One Swap",
+ "premium": false,
+ "meta": {
+  "name": "prevPermOpt1",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,1]",
+  "[1,1,5]",
+  "[1,9,4,6,7]"
+ ],
+ "exampleOutputs": [
+  "[3,1,2]",
+  "[1,1,5]",
+  "[1,7,4,6,9]"
+ ],
+ "anyOrder": false
+}

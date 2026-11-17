@@ -1,0 +1,40 @@
+{
+ "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
+ "frontendId": "1333",
+ "title": "Filter Restaurants by Vegan-Friendly, Price and Distance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "restaurants",
+   "type": "integer[][]"
+  },
+  {
+   "name": "veganFriendly",
+   "type": "integer"
+  },
+  {
+   "name": "maxPrice",
+   "type": "integer"
+  },
+  {
+   "name": "maxDistance",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "restaurants = {restaurants}\nveganFriendly = {veganFriendly}\nmaxPrice = {maxPrice}\nmaxDistance = {maxDistance}",
+ "visible": [
+  "restaurants",
+  "veganFriendly",
+  "maxPrice",
+  "maxDistance"
+ ],
+ "call": "result = Solution().filterRestaurants(restaurants, veganFriendly, maxPrice, maxDistance)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

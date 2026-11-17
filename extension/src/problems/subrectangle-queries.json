@@ -1,0 +1,72 @@
+{
+ "slug": "subrectangle-queries",
+ "frontendId": "1476",
+ "title": "Subrectangle Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "SubrectangleQueries",
+ "methods": {
+  "SubrectangleQueries": [
+   {
+    "name": "rectangle",
+    "type": "integer[][]"
+   }
+  ],
+  "updateSubrectangle": [
+   {
+    "name": "row1",
+    "type": "integer"
+   },
+   {
+    "name": "col1",
+    "type": "integer"
+   },
+   {
+    "name": "row2",
+    "type": "integer"
+   },
+   {
+    "name": "col2",
+    "type": "integer"
+   },
+   {
+    "name": "newValue",
+    "type": "integer"
+   }
+  ],
+  "getValue": [
+   {
+    "name": "row",
+    "type": "integer"
+   },
+   {
+    "name": "col",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = SubrectangleQueries(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

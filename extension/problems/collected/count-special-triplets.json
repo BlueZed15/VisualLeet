@@ -1,0 +1,30 @@
+{
+ "slug": "count-special-triplets",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3583",
+ "title": "Count Special Triplets",
+ "premium": false,
+ "meta": {
+  "name": "specialTriplets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,3,6]",
+  "[0,1,0,0]",
+  "[8,4,2,8,4]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

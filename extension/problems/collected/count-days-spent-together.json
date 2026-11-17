@@ -1,0 +1,40 @@
+{
+ "slug": "count-days-spent-together",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2409",
+ "title": "Count Days Spent Together",
+ "premium": false,
+ "meta": {
+  "name": "countDaysTogether",
+  "params": [
+   {
+    "name": "arriveAlice",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "leaveAlice"
+   },
+   {
+    "type": "string",
+    "name": "arriveBob"
+   },
+   {
+    "type": "string",
+    "name": "leaveBob"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"",
+  "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

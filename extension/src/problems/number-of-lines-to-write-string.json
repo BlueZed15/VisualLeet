@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-lines-to-write-string",
+ "frontendId": "806",
+ "title": "Number of Lines To Write String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "widths",
+   "type": "integer[]"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "widths = {widths}\ns = {s}",
+ "visible": [
+  "widths",
+  "s"
+ ],
+ "call": "result = Solution().numberOfLines(widths, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

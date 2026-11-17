@@ -1,0 +1,28 @@
+{
+ "slug": "reverse-subarray-to-maximize-array-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1330",
+ "title": "Reverse Subarray To Maximize Array Value",
+ "premium": false,
+ "meta": {
+  "name": "maxValueAfterReverse",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,5,4]",
+  "[2,4,9,24,2,1,10]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "68"
+ ],
+ "anyOrder": false
+}

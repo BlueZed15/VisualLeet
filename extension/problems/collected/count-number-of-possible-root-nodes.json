@@ -1,0 +1,36 @@
+{
+ "slug": "count-number-of-possible-root-nodes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2581",
+ "title": "Count Number of Possible Root Nodes",
+ "premium": false,
+ "meta": {
+  "name": "rootCount",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "guesses"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,2],[1,3],[4,2]]\n[[1,3],[0,1],[1,0],[2,4]]\n3",
+  "[[0,1],[1,2],[2,3],[3,4]]\n[[1,0],[3,4],[2,1],[3,2]]\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

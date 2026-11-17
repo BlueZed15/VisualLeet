@@ -1,0 +1,40 @@
+{
+ "slug": "matrix-cells-in-distance-order",
+ "frontendId": "1030",
+ "title": "Matrix Cells in Distance Order",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rows",
+   "type": "integer"
+  },
+  {
+   "name": "cols",
+   "type": "integer"
+  },
+  {
+   "name": "rCenter",
+   "type": "integer"
+  },
+  {
+   "name": "cCenter",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rows = {rows}\ncols = {cols}\nrCenter = {rCenter}\ncCenter = {cCenter}",
+ "visible": [
+  "rows",
+  "cols",
+  "rCenter",
+  "cCenter"
+ ],
+ "call": "result = Solution().allCellsDistOrder(rows, cols, rCenter, cCenter)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

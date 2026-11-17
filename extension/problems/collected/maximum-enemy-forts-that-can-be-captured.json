@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-enemy-forts-that-can-be-captured",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2511",
+ "title": "Maximum Enemy Forts That Can Be Captured",
+ "premium": false,
+ "meta": {
+  "name": "captureForts",
+  "params": [
+   {
+    "name": "forts",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,-1,0,0,0,0,1]",
+  "[0,0,1,-1]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

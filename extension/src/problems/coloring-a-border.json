@@ -1,0 +1,40 @@
+{
+ "slug": "coloring-a-border",
+ "frontendId": "1034",
+ "title": "Coloring A Border",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  },
+  {
+   "name": "row",
+   "type": "integer"
+  },
+  {
+   "name": "col",
+   "type": "integer"
+  },
+  {
+   "name": "color",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}\nrow = {row}\ncol = {col}\ncolor = {color}",
+ "visible": [
+  "grid",
+  "row",
+  "col",
+  "color"
+ ],
+ "call": "result = Solution().colorBorder(grid, row, col, color)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

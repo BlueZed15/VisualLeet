@@ -1,0 +1,34 @@
+{
+ "slug": "sorted-gcd-pair-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3312",
+ "title": "Sorted GCD Pair Queries",
+ "premium": false,
+ "meta": {
+  "name": "gcdValues",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "long[]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,4]\n[0,2,2]",
+  "[4,4,2,1]\n[5,3,1,0]",
+  "[2,2]\n[0,0]"
+ ],
+ "exampleOutputs": [
+  "[1,2,2]",
+  "[4,2,1,1]",
+  "[2,2]"
+ ],
+ "anyOrder": false
+}

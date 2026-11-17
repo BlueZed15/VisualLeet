@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2186",
+ "title": "Minimum Number of Steps to Make Two Strings Anagram II",
+ "premium": false,
+ "meta": {
+  "name": "minSteps",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"leetcode\"\n\"coats\"",
+  "\"night\"\n\"thing\""
+ ],
+ "exampleOutputs": [
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

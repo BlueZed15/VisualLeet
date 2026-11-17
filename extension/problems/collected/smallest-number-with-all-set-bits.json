@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-number-with-all-set-bits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3370",
+ "title": "Smallest Number With All Set Bits",
+ "premium": false,
+ "meta": {
+  "name": "smallestNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "10",
+  "3"
+ ],
+ "exampleOutputs": [
+  "7",
+  "15",
+  "3"
+ ],
+ "anyOrder": false
+}

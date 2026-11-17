@@ -1,0 +1,25 @@
+{
+ "slug": "self-crossing",
+ "frontendId": "335",
+ "title": "Self Crossing",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "distance",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "distance = {distance}",
+ "visible": [
+  "distance"
+ ],
+ "call": "result = Solution().isSelfCrossing(distance)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

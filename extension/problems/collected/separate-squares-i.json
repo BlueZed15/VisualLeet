@@ -1,0 +1,28 @@
+{
+ "slug": "separate-squares-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3453",
+ "title": "Separate Squares I",
+ "premium": false,
+ "meta": {
+  "name": "separateSquares",
+  "params": [
+   {
+    "name": "squares",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0,1],[2,2,1]]",
+  "[[0,0,2],[1,1,1]]"
+ ],
+ "exampleOutputs": [
+  "1.00000",
+  "1.16667"
+ ],
+ "anyOrder": false
+}

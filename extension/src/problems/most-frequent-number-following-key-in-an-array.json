@@ -1,0 +1,30 @@
+{
+ "slug": "most-frequent-number-following-key-in-an-array",
+ "frontendId": "2190",
+ "title": "Most Frequent Number Following Key In an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "key",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nkey = {key}",
+ "visible": [
+  "nums",
+  "key"
+ ],
+ "call": "result = Solution().mostFrequent(nums, key)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

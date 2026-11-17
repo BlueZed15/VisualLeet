@@ -1,0 +1,34 @@
+{
+ "slug": "shortest-and-lexicographically-smallest-beautiful-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2904",
+ "title": "Shortest and Lexicographically Smallest Beautiful String",
+ "premium": false,
+ "meta": {
+  "name": "shortestBeautifulSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"100011001\"\n3",
+  "\"1011\"\n2",
+  "\"000\"\n1"
+ ],
+ "exampleOutputs": [
+  "\"11001\"",
+  "\"11\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

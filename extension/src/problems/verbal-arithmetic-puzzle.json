@@ -1,0 +1,30 @@
+{
+ "slug": "verbal-arithmetic-puzzle",
+ "frontendId": "1307",
+ "title": "Verbal Arithmetic Puzzle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "result",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nresult_ = {result}",
+ "visible": [
+  "words",
+  "result_"
+ ],
+ "call": "result = Solution().isSolvable(words, result_)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

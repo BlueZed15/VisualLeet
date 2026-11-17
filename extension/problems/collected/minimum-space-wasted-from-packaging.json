@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-space-wasted-from-packaging",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1889",
+ "title": "Minimum Space Wasted From Packaging",
+ "premium": false,
+ "meta": {
+  "name": "minWastedSpace",
+  "params": [
+   {
+    "name": "packages",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "boxes"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,5]\n[[4,8],[2,8]]",
+  "[2,3,5]\n[[1,4],[2,3],[3,4]]",
+  "[3,5,8,10,11,12]\n[[12],[11,9],[10,5,14]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "-1",
+  "9"
+ ],
+ "anyOrder": false
+}

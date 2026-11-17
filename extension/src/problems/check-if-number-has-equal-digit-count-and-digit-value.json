@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-number-has-equal-digit-count-and-digit-value",
+ "frontendId": "2283",
+ "title": "Check if Number Has Equal Digit Count and Digit Value",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}",
+ "visible": [
+  "num"
+ ],
+ "call": "result = Solution().digitCount(num)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

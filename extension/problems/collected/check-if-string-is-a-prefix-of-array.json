@@ -1,0 +1,32 @@
+{
+ "slug": "check-if-string-is-a-prefix-of-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1961",
+ "title": "Check If String Is a Prefix of Array",
+ "premium": false,
+ "meta": {
+  "name": "isPrefixString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string[]",
+    "name": "words"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"iloveleetcode\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+  "\"iloveleetcode\"\n[\"apples\",\"i\",\"love\",\"leetcode\"]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

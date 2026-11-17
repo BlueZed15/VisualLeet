@@ -1,0 +1,30 @@
+{
+ "slug": "falling-squares",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "699",
+ "title": "Falling Squares",
+ "premium": false,
+ "meta": {
+  "name": "fallingSquares",
+  "params": [
+   {
+    "name": "positions",
+    "type": "integer[][]",
+    "dealloc": false
+   }
+  ],
+  "return": {
+   "type": "list<integer>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,3],[6,1]]",
+  "[[100,100],[200,100]]"
+ ],
+ "exampleOutputs": [
+  "[2,5,5]",
+  "[100,100]"
+ ],
+ "anyOrder": false
+}

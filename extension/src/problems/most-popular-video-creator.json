@@ -1,0 +1,35 @@
+{
+ "slug": "most-popular-video-creator",
+ "frontendId": "2456",
+ "title": "Most Popular Video Creator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "creators",
+   "type": "string[]"
+  },
+  {
+   "name": "ids",
+   "type": "string[]"
+  },
+  {
+   "name": "views",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "creators = {creators}\nids = {ids}\nviews = {views}",
+ "visible": [
+  "creators",
+  "ids",
+  "views"
+ ],
+ "call": "result = Solution().mostPopularCreator(creators, ids, views)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

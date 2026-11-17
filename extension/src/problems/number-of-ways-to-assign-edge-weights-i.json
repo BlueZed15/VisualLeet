@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-ways-to-assign-edge-weights-i",
+ "frontendId": "3558",
+ "title": "Number of Ways to Assign Edge Weights I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}",
+ "visible": [
+  "edges"
+ ],
+ "call": "result = Solution().assignEdgeWeights(edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

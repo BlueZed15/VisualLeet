@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-cost-of-a-path-with-special-roads",
+ "frontendId": "2662",
+ "title": "Minimum Cost of a Path With Special Roads",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "start",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer[]"
+  },
+  {
+   "name": "specialRoads",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "start = {start}\ntarget = {target}\nspecialRoads = {specialRoads}",
+ "visible": [
+  "start",
+  "target",
+  "specialRoads"
+ ],
+ "call": "result = Solution().minimumCost(start, target, specialRoads)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

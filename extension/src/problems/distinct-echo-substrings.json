@@ -1,0 +1,25 @@
+{
+ "slug": "distinct-echo-substrings",
+ "frontendId": "1316",
+ "title": "Distinct Echo Substrings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}",
+ "visible": [
+  "text"
+ ],
+ "call": "result = Solution().distinctEchoSubstrings(text)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

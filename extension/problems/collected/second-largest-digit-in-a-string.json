@@ -1,0 +1,28 @@
+{
+ "slug": "second-largest-digit-in-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1796",
+ "title": "Second Largest Digit in a String",
+ "premium": false,
+ "meta": {
+  "name": "secondHighest",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"dfa12321afd\"",
+  "\"abc1111\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

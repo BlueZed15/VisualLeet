@@ -1,0 +1,32 @@
+{
+ "slug": "words-within-two-edits-of-dictionary",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2452",
+ "title": "Words Within Two Edits of Dictionary",
+ "premium": false,
+ "meta": {
+  "name": "twoEditWords",
+  "params": [
+   {
+    "name": "queries",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "dictionary"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"word\",\"note\",\"ants\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
+  "[\"yes\"]\n[\"not\"]"
+ ],
+ "exampleOutputs": [
+  "[\"word\",\"note\",\"wood\"]",
+  "[]"
+ ],
+ "anyOrder": false
+}

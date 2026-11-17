@@ -1,0 +1,25 @@
+{
+ "slug": "find-longest-special-substring-that-occurs-thrice-i",
+ "frontendId": "2981",
+ "title": "Find Longest Special Substring That Occurs Thrice I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().maximumLength(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

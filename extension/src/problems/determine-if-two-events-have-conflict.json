@@ -1,0 +1,30 @@
+{
+ "slug": "determine-if-two-events-have-conflict",
+ "frontendId": "2446",
+ "title": "Determine if Two Events Have Conflict",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "event1",
+   "type": "string[]"
+  },
+  {
+   "name": "event2",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "event1 = {event1}\nevent2 = {event2}",
+ "visible": [
+  "event1",
+  "event2"
+ ],
+ "call": "result = Solution().haveConflict(event1, event2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

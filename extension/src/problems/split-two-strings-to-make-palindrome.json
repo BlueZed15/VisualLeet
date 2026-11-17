@@ -1,0 +1,30 @@
+{
+ "slug": "split-two-strings-to-make-palindrome",
+ "frontendId": "1616",
+ "title": "Split Two Strings to Make Palindrome",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "string"
+  },
+  {
+   "name": "b",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}",
+ "visible": [
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().checkPalindromeFormation(a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

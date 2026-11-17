@@ -1,0 +1,38 @@
+{
+ "slug": "two-out-of-three",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2032",
+ "title": "Two Out of Three",
+ "premium": false,
+ "meta": {
+  "name": "twoOutOfThree",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums3"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,3,2]\n[2,3]\n[3]",
+  "[3,1]\n[2,3]\n[1,2]",
+  "[1,2,2]\n[4,3,3]\n[5]"
+ ],
+ "exampleOutputs": [
+  "[3,2]",
+  "[2,3,1]",
+  "[]"
+ ],
+ "anyOrder": true
+}

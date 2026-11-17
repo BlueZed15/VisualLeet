@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-difference-by-remapping-a-digit",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2566",
+ "title": "Maximum Difference by Remapping a Digit",
+ "premium": false,
+ "meta": {
+  "name": "minMaxDifference",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "11891",
+  "90"
+ ],
+ "exampleOutputs": [
+  "99009",
+  "99"
+ ],
+ "anyOrder": false
+}

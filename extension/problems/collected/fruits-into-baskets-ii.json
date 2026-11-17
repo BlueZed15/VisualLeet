@@ -1,0 +1,32 @@
+{
+ "slug": "fruits-into-baskets-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3477",
+ "title": "Fruits Into Baskets II",
+ "premium": false,
+ "meta": {
+  "name": "numOfUnplacedFruits",
+  "params": [
+   {
+    "name": "fruits",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "baskets"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,5]\n[3,5,4]",
+  "[3,6,1]\n[6,4,7]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "smallest-missing-multiple-of-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3718",
+ "title": "Smallest Missing Multiple of K",
+ "premium": false,
+ "meta": {
+  "name": "missingMultiple",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[8,2,3,4,6]\n2",
+  "[1,4,7,10,15]\n5"
+ ],
+ "exampleOutputs": [
+  "10",
+  "5"
+ ],
+ "anyOrder": false
+}

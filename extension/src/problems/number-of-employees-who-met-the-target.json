@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-employees-who-met-the-target",
+ "frontendId": "2798",
+ "title": "Number of Employees Who Met the Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "hours",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "hours = {hours}\ntarget = {target}",
+ "visible": [
+  "hours",
+  "target"
+ ],
+ "call": "result = Solution().numberOfEmployeesWhoMetTarget(hours, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

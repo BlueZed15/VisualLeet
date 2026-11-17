@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-a-string-is-an-acronym-of-words",
+ "frontendId": "2828",
+ "title": "Check if a String Is an Acronym of Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "list<string>"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\ns = {s}",
+ "visible": [
+  "words",
+  "s"
+ ],
+ "call": "result = Solution().isAcronym(words, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

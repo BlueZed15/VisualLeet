@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-a-special-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2844",
+ "title": "Minimum Operations to Make a Special Number",
+ "premium": false,
+ "meta": {
+  "name": "minimumOperations",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"2245047\"",
+  "\"2908305\"",
+  "\"10\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

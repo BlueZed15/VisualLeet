@@ -1,0 +1,34 @@
+{
+ "slug": "number-of-burgers-with-no-waste-of-ingredients",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1276",
+ "title": "Number of Burgers with No Waste of Ingredients",
+ "premium": false,
+ "meta": {
+  "name": "numOfBurgers",
+  "params": [
+   {
+    "name": "tomatoSlices",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "cheeseSlices"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "16\n7",
+  "17\n4",
+  "4\n17"
+ ],
+ "exampleOutputs": [
+  "[1,6]Explantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.There will be no remaining ingredients.",
+  "[]Explantion: There will be no way to use all ingredients to make small and jumbo burgers.",
+  "[]Explantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+ "frontendId": "1784",
+ "title": "Check if Binary String Has at Most One Segment of Ones",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().checkOnesSegment(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "verbal-arithmetic-puzzle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1307",
+ "title": "Verbal Arithmetic Puzzle",
+ "premium": false,
+ "meta": {
+  "name": "isSolvable",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "result"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[\"SEND\",\"MORE\"]\n\"MONEY\"",
+  "[\"SIX\",\"SEVEN\",\"SEVEN\"]\n\"TWENTY\"",
+  "[\"LEET\",\"CODE\"]\n\"POINT\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

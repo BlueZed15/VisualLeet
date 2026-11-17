@@ -1,0 +1,40 @@
+{
+ "slug": "count-the-number-of-powerful-integers",
+ "frontendId": "2999",
+ "title": "Count the Number of Powerful Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "start",
+   "type": "long"
+  },
+  {
+   "name": "finish",
+   "type": "long"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "start = {start}\nfinish = {finish}\nlimit = {limit}\ns = {s}",
+ "visible": [
+  "start",
+  "finish",
+  "limit",
+  "s"
+ ],
+ "call": "result = Solution().numberOfPowerfulInt(start, finish, limit, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

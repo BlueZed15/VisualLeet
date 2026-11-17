@@ -1,0 +1,30 @@
+{
+ "slug": "projection-area-of-3d-shapes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "883",
+ "title": "Projection Area of 3D Shapes",
+ "premium": false,
+ "meta": {
+  "name": "projectionArea",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[3,4]]",
+  "[[2]]",
+  "[[1,0],[0,2]]"
+ ],
+ "exampleOutputs": [
+  "17",
+  "5",
+  "8"
+ ],
+ "anyOrder": false
+}

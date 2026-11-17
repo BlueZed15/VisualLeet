@@ -1,0 +1,38 @@
+{
+ "slug": "lexicographically-smallest-string-after-applying-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1625",
+ "title": "Lexicographically Smallest String After Applying Operations",
+ "premium": false,
+ "meta": {
+  "name": "findLexSmallestString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "a"
+   },
+   {
+    "type": "integer",
+    "name": "b"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"5525\"\n9\n2",
+  "\"74\"\n5\n1",
+  "\"0011\"\n4\n2"
+ ],
+ "exampleOutputs": [
+  "\"2050\"",
+  "\"24\"",
+  "\"0011\""
+ ],
+ "anyOrder": true
+}

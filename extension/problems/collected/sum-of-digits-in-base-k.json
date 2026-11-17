@@ -1,0 +1,32 @@
+{
+ "slug": "sum-of-digits-in-base-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1837",
+ "title": "Sum of Digits in Base K",
+ "premium": false,
+ "meta": {
+  "name": "sumBase",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "34\n6",
+  "10\n10"
+ ],
+ "exampleOutputs": [
+  "9",
+  "1"
+ ],
+ "anyOrder": false
+}

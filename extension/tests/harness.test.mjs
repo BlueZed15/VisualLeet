@@ -88,6 +88,11 @@ test("runtime: design problems are checked against the class in the file", () =>
   assert.match(fill(e, { operations: '["LRUCache","pop"]', arguments: "[[2],[]]" }).errors.operations, /no method "pop"/);
   assert.match(fill(e, { operations: '["LRUCache","put"]', arguments: "[[2],[1]]" }).errors.arguments, /expected 2 arguments, got 1/);
   assert.match(fill(e, { operations: '["put"]', arguments: "[[1,1]]" }).errors.operations, /should start with "LRUCache"/);
+  // LeetCode writes [null] for a call with no arguments (Throne Inheritance): same as []
+  const t = entryFromMeta({ classname: "Counter", constructor: { params: [] }, methods: [{ name: "inc", params: [], return: { type: "integer" } }], systemdesign: true });
+  const nul = fill(t, { operations: '["Counter","inc","inc"]', arguments: "[[],[null],[]]" });
+  assert.ok(nul.ok, JSON.stringify(nul.errors));
+  assert.match(nul.setup, /^args = \[\[\], \[\], \[\]\]$/m);
 });
 
 test("bad values are reported per box, nothing filled", () => {

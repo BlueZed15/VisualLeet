@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-minimum-area-to-cover-all-ones-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3195",
+ "title": "Find the Minimum Area to Cover All Ones I",
+ "premium": false,
+ "meta": {
+  "name": "minimumArea",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,0],[1,0,1]]",
+  "[[0,0],[1,0]]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-maximum-number-of-marked-indices",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2576",
+ "title": "Find the Maximum Number of Marked Indices",
+ "premium": false,
+ "meta": {
+  "name": "maxNumOfMarkedIndices",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,5,2,4]",
+  "[9,2,5,4]",
+  "[7,6,8]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

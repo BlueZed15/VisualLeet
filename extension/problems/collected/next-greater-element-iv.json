@@ -1,0 +1,28 @@
+{
+ "slug": "next-greater-element-iv",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2454",
+ "title": "Next Greater Element IV",
+ "premium": false,
+ "meta": {
+  "name": "secondGreaterElement",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,0,9,6]",
+  "[3,3]"
+ ],
+ "exampleOutputs": [
+  "[9,6,6,-1,-1]",
+  "[-1,-1]"
+ ],
+ "anyOrder": false
+}

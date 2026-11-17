@@ -1,0 +1,30 @@
+{
+ "slug": "reformat-the-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1417",
+ "title": "Reformat The String",
+ "premium": false,
+ "meta": {
+  "name": "reformat",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"a0b1c2\"",
+  "\"leetcode\"",
+  "\"1229857369\""
+ ],
+ "exampleOutputs": [
+  "\"0a1b2c\"",
+  "\"\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

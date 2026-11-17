@@ -1,0 +1,30 @@
+{
+ "slug": "escape-the-ghosts",
+ "frontendId": "789",
+ "title": "Escape The Ghosts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ghosts",
+   "type": "integer[][]"
+  },
+  {
+   "name": "target",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ghosts = {ghosts}\ntarget = {target}",
+ "visible": [
+  "ghosts",
+  "target"
+ ],
+ "call": "result = Solution().escapeGhosts(ghosts, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

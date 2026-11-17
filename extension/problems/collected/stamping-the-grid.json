@@ -1,0 +1,36 @@
+{
+ "slug": "stamping-the-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2132",
+ "title": "Stamping the Grid",
+ "premium": false,
+ "meta": {
+  "name": "possibleToStamp",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "stampHeight"
+   },
+   {
+    "type": "integer",
+    "name": "stampWidth"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]]\n4\n3",
+  "[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]\n2\n2"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

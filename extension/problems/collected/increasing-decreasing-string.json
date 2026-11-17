@@ -1,0 +1,28 @@
+{
+ "slug": "increasing-decreasing-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1370",
+ "title": "Increasing Decreasing String",
+ "premium": false,
+ "meta": {
+  "name": "sortString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"aaaabbbbcccc\"",
+  "\"rat\""
+ ],
+ "exampleOutputs": [
+  "\"abccbaabccba\"",
+  "\"art\""
+ ],
+ "anyOrder": false
+}

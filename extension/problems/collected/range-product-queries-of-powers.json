@@ -1,0 +1,32 @@
+{
+ "slug": "range-product-queries-of-powers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2438",
+ "title": "Range Product Queries of Powers",
+ "premium": false,
+ "meta": {
+  "name": "productQueries",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "15\n[[0,1],[2,2],[0,3]]",
+  "2\n[[0,0]]"
+ ],
+ "exampleOutputs": [
+  "[2,4,64]",
+  "[2]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "the-latest-time-to-catch-a-bus",
+ "frontendId": "2332",
+ "title": "The Latest Time to Catch a Bus",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "buses",
+   "type": "integer[]"
+  },
+  {
+   "name": "passengers",
+   "type": "integer[]"
+  },
+  {
+   "name": "capacity",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "buses = {buses}\npassengers = {passengers}\ncapacity = {capacity}",
+ "visible": [
+  "buses",
+  "passengers",
+  "capacity"
+ ],
+ "call": "result = Solution().latestTimeCatchTheBus(buses, passengers, capacity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

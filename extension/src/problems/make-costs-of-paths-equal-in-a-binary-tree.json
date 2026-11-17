@@ -1,0 +1,30 @@
+{
+ "slug": "make-costs-of-paths-equal-in-a-binary-tree",
+ "frontendId": "2673",
+ "title": "Make Costs of Paths Equal in a Binary Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "cost",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ncost = {cost}",
+ "visible": [
+  "n",
+  "cost"
+ ],
+ "call": "result = Solution().minIncrements(n, cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

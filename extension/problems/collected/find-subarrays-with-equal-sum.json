@@ -1,0 +1,30 @@
+{
+ "slug": "find-subarrays-with-equal-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2395",
+ "title": "Find Subarrays With Equal Sum",
+ "premium": false,
+ "meta": {
+  "name": "findSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[4,2,4]",
+  "[1,2,3,4,5]",
+  "[0,0,0]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

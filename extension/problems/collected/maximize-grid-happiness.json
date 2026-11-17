@@ -1,0 +1,42 @@
+{
+ "slug": "maximize-grid-happiness",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1659",
+ "title": "Maximize Grid Happiness",
+ "premium": false,
+ "meta": {
+  "name": "getMaxGridHappiness",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer",
+    "name": "introvertsCount"
+   },
+   {
+    "type": "integer",
+    "name": "extrovertsCount"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n3\n1\n2",
+  "3\n1\n2\n1",
+  "2\n2\n4\n0"
+ ],
+ "exampleOutputs": [
+  "240",
+  "260",
+  "240"
+ ],
+ "anyOrder": false
+}

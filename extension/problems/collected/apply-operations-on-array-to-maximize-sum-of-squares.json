@@ -1,0 +1,32 @@
+{
+ "slug": "apply-operations-on-array-to-maximize-sum-of-squares",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2897",
+ "title": "Apply Operations on Array to Maximize Sum of Squares",
+ "premium": false,
+ "meta": {
+  "name": "maxSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,6,5,8]\n2",
+  "[4,5,4,7]\n3"
+ ],
+ "exampleOutputs": [
+  "261",
+  "90"
+ ],
+ "anyOrder": false
+}

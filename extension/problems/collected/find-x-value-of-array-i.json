@@ -1,0 +1,34 @@
+{
+ "slug": "find-x-value-of-array-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3524",
+ "title": "Find X Value of Array I",
+ "premium": false,
+ "meta": {
+  "name": "resultArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n3",
+  "[1,2,4,8,16,32]\n4",
+  "[1,1,2,1,1]\n2"
+ ],
+ "exampleOutputs": [
+  "[9,2,4]",
+  "[18,1,2,0]",
+  "[9,6]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-even-and-odd-bits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2595",
+ "title": "Number of Even and Odd Bits",
+ "premium": false,
+ "meta": {
+  "name": "evenOddBit",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "50",
+  "2"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[0,1]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-moves-to-clean-the-classroom",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3568",
+ "title": "Minimum Moves to Clean the Classroom",
+ "premium": false,
+ "meta": {
+  "name": "minMoves",
+  "params": [
+   {
+    "name": "classroom",
+    "type": "string[]"
+   },
+   {
+    "type": "integer",
+    "name": "energy"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"S.\", \"XL\"]\n2",
+  "[\"LS\", \"RL\"]\n4",
+  "[\"L.S\", \"RXL\"]\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

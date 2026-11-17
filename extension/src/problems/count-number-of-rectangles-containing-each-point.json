@@ -1,0 +1,30 @@
+{
+ "slug": "count-number-of-rectangles-containing-each-point",
+ "frontendId": "2250",
+ "title": "Count Number of Rectangles Containing Each Point",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rectangles",
+   "type": "integer[][]"
+  },
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rectangles = {rectangles}\npoints = {points}",
+ "visible": [
+  "rectangles",
+  "points"
+ ],
+ "call": "result = Solution().countRectangles(rectangles, points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

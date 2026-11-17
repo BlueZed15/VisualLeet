@@ -1,0 +1,59 @@
+{
+ "slug": "fancy-sequence",
+ "frontendId": "1622",
+ "title": "Fancy Sequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Fancy",
+ "methods": {
+  "Fancy": [],
+  "append": [
+   {
+    "name": "val",
+    "type": "integer"
+   }
+  ],
+  "addAll": [
+   {
+    "name": "inc",
+    "type": "integer"
+   }
+  ],
+  "multAll": [
+   {
+    "name": "m",
+    "type": "integer"
+   }
+  ],
+  "getIndex": [
+   {
+    "name": "idx",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Fancy(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

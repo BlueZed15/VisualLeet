@@ -1,0 +1,30 @@
+{
+ "slug": "distribute-repeating-integers",
+ "frontendId": "1655",
+ "title": "Distribute Repeating Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "quantity",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nquantity = {quantity}",
+ "visible": [
+  "nums",
+  "quantity"
+ ],
+ "call": "result = Solution().canDistribute(nums, quantity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

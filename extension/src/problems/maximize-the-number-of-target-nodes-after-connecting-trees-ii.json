@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+ "frontendId": "3373",
+ "title": "Maximize the Number of Target Nodes After Connecting Trees II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges1",
+   "type": "integer[][]"
+  },
+  {
+   "name": "edges2",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges1 = {edges1}\nedges2 = {edges2}",
+ "visible": [
+  "edges1",
+  "edges2"
+ ],
+ "call": "result = Solution().maxTargetNodes(edges1, edges2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

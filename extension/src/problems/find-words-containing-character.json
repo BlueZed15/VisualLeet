@@ -1,0 +1,30 @@
+{
+ "slug": "find-words-containing-character",
+ "frontendId": "2942",
+ "title": "Find Words Containing Character",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "x",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nx = {x}",
+ "visible": [
+  "words",
+  "x"
+ ],
+ "call": "result = Solution().findWordsContaining(words, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

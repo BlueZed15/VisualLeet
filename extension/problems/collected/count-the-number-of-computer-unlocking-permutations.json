@@ -1,0 +1,28 @@
+{
+ "slug": "count-the-number-of-computer-unlocking-permutations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3577",
+ "title": "Count the Number of Computer Unlocking Permutations",
+ "premium": false,
+ "meta": {
+  "name": "countPermutations",
+  "params": [
+   {
+    "name": "complexity",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[3,3,3,4,4,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

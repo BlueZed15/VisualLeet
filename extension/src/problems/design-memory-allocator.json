@@ -1,0 +1,56 @@
+{
+ "slug": "design-memory-allocator",
+ "frontendId": "2502",
+ "title": "Design Memory Allocator",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Allocator",
+ "methods": {
+  "Allocator": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "allocate": [
+   {
+    "name": "size",
+    "type": "integer"
+   },
+   {
+    "name": "mID",
+    "type": "integer"
+   }
+  ],
+  "freeMemory": [
+   {
+    "name": "mID",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Allocator(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

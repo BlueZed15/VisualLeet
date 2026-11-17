@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-time-to-type-word-using-special-typewriter",
+ "frontendId": "1974",
+ "title": "Minimum Time to Type Word Using Special Typewriter",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}",
+ "visible": [
+  "word"
+ ],
+ "call": "result = Solution().minTimeToType(word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

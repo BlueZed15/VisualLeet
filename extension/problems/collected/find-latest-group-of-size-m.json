@@ -1,0 +1,32 @@
+{
+ "slug": "find-latest-group-of-size-m",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1562",
+ "title": "Find Latest Group of Size M",
+ "premium": false,
+ "meta": {
+  "name": "findLatestStep",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,5,1,2,4]\n1",
+  "[3,1,5,4,2]\n2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

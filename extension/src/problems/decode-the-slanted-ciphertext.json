@@ -1,0 +1,30 @@
+{
+ "slug": "decode-the-slanted-ciphertext",
+ "frontendId": "2075",
+ "title": "Decode the Slanted Ciphertext",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "encodedText",
+   "type": "string"
+  },
+  {
+   "name": "rows",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "encodedText = {encodedText}\nrows = {rows}",
+ "visible": [
+  "encodedText",
+  "rows"
+ ],
+ "call": "result = Solution().decodeCiphertext(encodedText, rows)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

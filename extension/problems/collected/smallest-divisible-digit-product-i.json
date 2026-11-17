@@ -1,0 +1,32 @@
+{
+ "slug": "smallest-divisible-digit-product-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3345",
+ "title": "Smallest Divisible Digit Product I",
+ "premium": false,
+ "meta": {
+  "name": "smallestNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "10\n2",
+  "15\n3"
+ ],
+ "exampleOutputs": [
+  "10",
+  "16"
+ ],
+ "anyOrder": false
+}

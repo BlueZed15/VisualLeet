@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-operations-to-make-array-elements-zero",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3495",
+ "title": "Minimum Operations to Make Array Elements Zero",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "queries",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[2,4]]",
+  "[[2,6]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "4"
+ ],
+ "anyOrder": false
+}

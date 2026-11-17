@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-good-base",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "483",
+ "title": "Smallest Good Base",
+ "premium": false,
+ "meta": {
+  "name": "smallestGoodBase",
+  "params": [
+   {
+    "name": "n",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"13\"",
+  "\"4681\"",
+  "\"1000000000000000000\""
+ ],
+ "exampleOutputs": [
+  "\"3\"",
+  "\"8\"",
+  "\"999999999999999999\""
+ ],
+ "anyOrder": false
+}

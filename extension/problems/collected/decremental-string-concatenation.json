@@ -1,0 +1,30 @@
+{
+ "slug": "decremental-string-concatenation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2746",
+ "title": "Decremental String Concatenation",
+ "premium": false,
+ "meta": {
+  "name": "minimizeConcatenatedLength",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"aa\",\"ab\",\"bc\"]",
+  "[\"ab\",\"b\"]",
+  "[\"aaa\",\"c\",\"aba\"]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "6"
+ ],
+ "anyOrder": false
+}

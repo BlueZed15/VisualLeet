@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
+ "frontendId": "1577",
+ "title": "Number of Ways Where Square of Number Is Equal to Product of Two Numbers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}",
+ "visible": [
+  "nums1",
+  "nums2"
+ ],
+ "call": "result = Solution().numTriplets(nums1, nums2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

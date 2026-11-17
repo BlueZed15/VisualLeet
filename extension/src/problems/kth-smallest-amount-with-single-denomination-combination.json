@@ -1,0 +1,30 @@
+{
+ "slug": "kth-smallest-amount-with-single-denomination-combination",
+ "frontendId": "3116",
+ "title": "Kth Smallest Amount With Single Denomination Combination",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}\nk = {k}",
+ "visible": [
+  "coins",
+  "k"
+ ],
+ "call": "result = Solution().findKthSmallest(coins, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

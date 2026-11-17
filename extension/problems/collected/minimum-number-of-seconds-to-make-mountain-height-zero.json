@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3296",
+ "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+ "premium": false,
+ "meta": {
+  "name": "minNumberOfSeconds",
+  "params": [
+   {
+    "name": "mountainHeight",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "workerTimes"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "4\n[2,1,1]",
+  "10\n[3,2,2,4]",
+  "5\n[1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "12",
+  "15"
+ ],
+ "anyOrder": false
+}

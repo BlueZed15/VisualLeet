@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-operations-to-make-array-elements-zero",
+ "frontendId": "3495",
+ "title": "Minimum Operations to Make Array Elements Zero",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}",
+ "visible": [
+  "queries"
+ ],
+ "call": "result = Solution().minOperations(queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

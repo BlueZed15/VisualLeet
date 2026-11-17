@@ -1,0 +1,35 @@
+{
+ "slug": "reachable-nodes-with-restrictions",
+ "frontendId": "2368",
+ "title": "Reachable Nodes With Restrictions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "restricted",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nrestricted = {restricted}",
+ "visible": [
+  "n",
+  "edges",
+  "restricted"
+ ],
+ "call": "result = Solution().reachableNodes(n, edges, restricted)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

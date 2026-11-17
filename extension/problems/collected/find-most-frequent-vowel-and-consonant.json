@@ -1,0 +1,28 @@
+{
+ "slug": "find-most-frequent-vowel-and-consonant",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3541",
+ "title": "Find Most Frequent Vowel and Consonant",
+ "premium": false,
+ "meta": {
+  "name": "maxFreqSum",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"successes\"",
+  "\"aeiaeia\""
+ ],
+ "exampleOutputs": [
+  "6",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-building-height",
+ "frontendId": "1840",
+ "title": "Maximum Building Height",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "restrictions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrestrictions = {restrictions}",
+ "visible": [
+  "n",
+  "restrictions"
+ ],
+ "call": "result = Solution().maxBuilding(n, restrictions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
+ "frontendId": "1850",
+ "title": "Minimum Adjacent Swaps to Reach the Kth Smallest Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}\nk = {k}",
+ "visible": [
+  "num",
+  "k"
+ ],
+ "call": "result = Solution().getMinSwaps(num, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

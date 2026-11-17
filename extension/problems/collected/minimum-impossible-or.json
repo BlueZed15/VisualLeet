@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-impossible-or",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2568",
+ "title": "Minimum Impossible OR",
+ "premium": false,
+ "meta": {
+  "name": "minImpossibleOR",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1]",
+  "[5,3,2]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

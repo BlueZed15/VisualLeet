@@ -1,0 +1,30 @@
+{
+ "slug": "finding-the-users-active-minutes",
+ "frontendId": "1817",
+ "title": "Finding the Users Active Minutes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "logs",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "logs = {logs}\nk = {k}",
+ "visible": [
+  "logs",
+  "k"
+ ],
+ "call": "result = Solution().findingUsersActiveMinutes(logs, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

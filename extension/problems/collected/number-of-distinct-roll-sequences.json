@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-distinct-roll-sequences",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2318",
+ "title": "Number of Distinct Roll Sequences",
+ "premium": false,
+ "meta": {
+  "name": "distinctSequences",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "2"
+ ],
+ "exampleOutputs": [
+  "184",
+  "22"
+ ],
+ "anyOrder": false
+}

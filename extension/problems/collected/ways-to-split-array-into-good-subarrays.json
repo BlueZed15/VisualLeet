@@ -1,0 +1,28 @@
+{
+ "slug": "ways-to-split-array-into-good-subarrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2750",
+ "title": "Ways to Split Array Into Good Subarrays",
+ "premium": false,
+ "meta": {
+  "name": "numberOfGoodSubarraySplits",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[0,1,0,0,1]",
+  "[0,1,0]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

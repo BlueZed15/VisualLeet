@@ -1,0 +1,35 @@
+{
+ "slug": "find-servers-that-handled-most-number-of-requests",
+ "frontendId": "1606",
+ "title": "Find Servers That Handled Most Number of Requests",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "arrival",
+   "type": "integer[]"
+  },
+  {
+   "name": "load",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "k = {k}\narrival = {arrival}\nload = {load}",
+ "visible": [
+  "k",
+  "arrival",
+  "load"
+ ],
+ "call": "result = Solution().busiestServers(k, arrival, load)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

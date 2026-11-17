@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-beautiful-partitions",
+ "frontendId": "2478",
+ "title": "Number of Beautiful Partitions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "minLength",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}\nminLength = {minLength}",
+ "visible": [
+  "s",
+  "k",
+  "minLength"
+ ],
+ "call": "result = Solution().beautifulPartitions(s, k, minLength)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

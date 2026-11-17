@@ -1,0 +1,67 @@
+{
+ "slug": "booking-concert-tickets-in-groups",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2286",
+ "title": "Booking Concert Tickets in Groups",
+ "premium": false,
+ "meta": {
+  "classname": "BookMyShow",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    },
+    {
+     "type": "integer",
+     "name": "m"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "k"
+     },
+     {
+      "type": "integer",
+      "name": "maxRow"
+     }
+    ],
+    "name": "gather",
+    "return": {
+     "type": "integer[]"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "k"
+     },
+     {
+      "type": "integer",
+      "name": "maxRow"
+     }
+    ],
+    "name": "scatter",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"BookMyShow\",\"gather\",\"gather\",\"scatter\",\"scatter\"]\n[[2,5],[4,0],[2,0],[5,1],[5,1]]"
+ ],
+ "exampleOutputs": [
+  "[null, [0, 0], [], true, false]"
+ ],
+ "anyOrder": false
+}

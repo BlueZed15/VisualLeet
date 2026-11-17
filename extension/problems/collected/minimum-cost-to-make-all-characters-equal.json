@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-cost-to-make-all-characters-equal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2712",
+ "title": "Minimum Cost to Make All Characters Equal",
+ "premium": false,
+ "meta": {
+  "name": "minimumCost",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "\"0011\"",
+  "\"010101\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "9"
+ ],
+ "anyOrder": false
+}

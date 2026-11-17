@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-lines-to-represent-a-line-chart",
+ "frontendId": "2280",
+ "title": "Minimum Lines to Represent a Line Chart",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stockPrices",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stockPrices = {stockPrices}",
+ "visible": [
+  "stockPrices"
+ ],
+ "call": "result = Solution().minimumLines(stockPrices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

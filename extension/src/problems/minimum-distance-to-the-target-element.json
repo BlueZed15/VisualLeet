@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-distance-to-the-target-element",
+ "frontendId": "1848",
+ "title": "Minimum Distance to the Target Element",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\ntarget = {target}\nstart = {start}",
+ "visible": [
+  "nums",
+  "target",
+  "start"
+ ],
+ "call": "result = Solution().getMinDistance(nums, target, start)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

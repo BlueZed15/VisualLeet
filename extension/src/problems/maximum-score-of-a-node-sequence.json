@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-score-of-a-node-sequence",
+ "frontendId": "2242",
+ "title": "Maximum Score of a Node Sequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "scores",
+   "type": "integer[]"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "scores = {scores}\nedges = {edges}",
+ "visible": [
+  "scores",
+  "edges"
+ ],
+ "call": "result = Solution().maximumScore(scores, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

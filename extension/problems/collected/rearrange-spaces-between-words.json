@@ -1,0 +1,28 @@
+{
+ "slug": "rearrange-spaces-between-words",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1592",
+ "title": "Rearrange Spaces Between Words",
+ "premium": false,
+ "meta": {
+  "name": "reorderSpaces",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"  this   is  a sentence \"",
+  "\" practice   makes   perfect\""
+ ],
+ "exampleOutputs": [
+  "\"this   is   a   sentence\"",
+  "\"practice   makes   perfect \""
+ ],
+ "anyOrder": false
+}

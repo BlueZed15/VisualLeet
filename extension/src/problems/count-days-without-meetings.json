@@ -1,0 +1,30 @@
+{
+ "slug": "count-days-without-meetings",
+ "frontendId": "3169",
+ "title": "Count Days Without Meetings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "days",
+   "type": "integer"
+  },
+  {
+   "name": "meetings",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "days = {days}\nmeetings = {meetings}",
+ "visible": [
+  "days",
+  "meetings"
+ ],
+ "call": "result = Solution().countDays(days, meetings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

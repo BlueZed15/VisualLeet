@@ -1,0 +1,36 @@
+{
+ "slug": "movement-of-robots",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2731",
+ "title": "Movement of Robots",
+ "premium": false,
+ "meta": {
+  "name": "sumDistance",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   },
+   {
+    "type": "integer",
+    "name": "d"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-2,0,2]\n\"RLL\"\n3",
+  "[1,0]\n\"RL\"\n2"
+ ],
+ "exampleOutputs": [
+  "8",
+  "5"
+ ],
+ "anyOrder": false
+}

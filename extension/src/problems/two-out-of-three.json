@@ -1,0 +1,35 @@
+{
+ "slug": "two-out-of-three",
+ "frontendId": "2032",
+ "title": "Two Out of Three",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums3",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\nnums3 = {nums3}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "nums3"
+ ],
+ "call": "result = Solution().twoOutOfThree(nums1, nums2, nums3)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

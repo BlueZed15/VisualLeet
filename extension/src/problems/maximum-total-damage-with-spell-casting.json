@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-total-damage-with-spell-casting",
+ "frontendId": "3186",
+ "title": "Maximum Total Damage With Spell Casting",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "power",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "power = {power}",
+ "visible": [
+  "power"
+ ],
+ "call": "result = Solution().maximumTotalDamage(power)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

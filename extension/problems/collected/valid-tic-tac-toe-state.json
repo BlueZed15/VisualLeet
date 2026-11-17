@@ -1,0 +1,30 @@
+{
+ "slug": "valid-tic-tac-toe-state",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "794",
+ "title": "Valid Tic-Tac-Toe State",
+ "premium": false,
+ "meta": {
+  "name": "validTicTacToe",
+  "params": [
+   {
+    "name": "board",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[\"O  \",\"   \",\"   \"]",
+  "[\"XOX\",\" X \",\"   \"]",
+  "[\"XOX\",\"O O\",\"XOX\"]"
+ ],
+ "exampleOutputs": [
+  "false",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "valid-boomerang",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1037",
+ "title": "Valid Boomerang",
+ "premium": false,
+ "meta": {
+  "name": "isBoomerang",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1],[2,3],[3,2]]",
+  "[[1,1],[2,2],[3,3]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-partitions-with-even-sum-difference",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3432",
+ "title": "Count Partitions with Even Sum Difference",
+ "premium": false,
+ "meta": {
+  "name": "countPartitions",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,10,3,7,6]",
+  "[1,2,2]",
+  "[2,4,6,8]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

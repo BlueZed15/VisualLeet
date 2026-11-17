@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2400",
+ "title": "Number of Ways to Reach a Position After Exactly k Steps",
+ "premium": false,
+ "meta": {
+  "name": "numberOfWays",
+  "params": [
+   {
+    "name": "startPos",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "endPos"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n2\n3",
+  "2\n5\n10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

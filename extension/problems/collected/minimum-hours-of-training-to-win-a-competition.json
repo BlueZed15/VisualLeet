@@ -1,0 +1,40 @@
+{
+ "slug": "minimum-hours-of-training-to-win-a-competition",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2383",
+ "title": "Minimum Hours of Training to Win a Competition",
+ "premium": false,
+ "meta": {
+  "name": "minNumberOfHours",
+  "params": [
+   {
+    "name": "initialEnergy",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "initialExperience"
+   },
+   {
+    "type": "integer[]",
+    "name": "energy"
+   },
+   {
+    "type": "integer[]",
+    "name": "experience"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n3\n[1,4,3,2]\n[2,6,3,1]",
+  "2\n4\n[1]\n[3]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "0"
+ ],
+ "anyOrder": false
+}

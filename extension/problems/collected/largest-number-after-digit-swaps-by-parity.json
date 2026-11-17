@@ -1,0 +1,28 @@
+{
+ "slug": "largest-number-after-digit-swaps-by-parity",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2231",
+ "title": "Largest Number After Digit Swaps by Parity",
+ "premium": false,
+ "meta": {
+  "name": "largestInteger",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1234",
+  "65875"
+ ],
+ "exampleOutputs": [
+  "3412",
+  "87655"
+ ],
+ "anyOrder": false
+}

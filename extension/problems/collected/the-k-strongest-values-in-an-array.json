@@ -1,0 +1,34 @@
+{
+ "slug": "the-k-strongest-values-in-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1471",
+ "title": "The k Strongest Values in an Array",
+ "premium": false,
+ "meta": {
+  "name": "getStrongest",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5]\n2",
+  "[1,1,3,5,5]\n2",
+  "[6,7,11,7,6,8]\n5"
+ ],
+ "exampleOutputs": [
+  "[5,1]",
+  "[5,5]",
+  "[11,8,6,6,7]"
+ ],
+ "anyOrder": false
+}

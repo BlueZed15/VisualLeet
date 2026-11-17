@@ -1,0 +1,28 @@
+{
+ "slug": "count-the-number-of-substrings-with-dominant-ones",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3234",
+ "title": "Count the Number of Substrings With Dominant Ones",
+ "premium": false,
+ "meta": {
+  "name": "numberOfSubstrings",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"00011\"",
+  "\"101101\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "16"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-operations-to-make-the-integer-zero",
+ "frontendId": "2749",
+ "title": "Minimum Operations to Make the Integer Zero",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num1",
+   "type": "integer"
+  },
+  {
+   "name": "num2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num1 = {num1}\nnum2 = {num2}",
+ "visible": [
+  "num1",
+  "num2"
+ ],
+ "call": "result = Solution().makeTheIntegerZero(num1, num2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

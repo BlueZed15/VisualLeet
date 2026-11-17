@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-money-required-before-transactions",
+ "frontendId": "2412",
+ "title": "Minimum Money Required Before Transactions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "transactions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "transactions = {transactions}",
+ "visible": [
+  "transactions"
+ ],
+ "call": "result = Solution().minimumMoney(transactions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "the-time-when-the-network-becomes-idle",
+ "frontendId": "2039",
+ "title": "The Time When the Network Becomes Idle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "patience",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\npatience = {patience}",
+ "visible": [
+  "edges",
+  "patience"
+ ],
+ "call": "result = Solution().networkBecomesIdle(edges, patience)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

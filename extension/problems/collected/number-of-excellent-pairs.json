@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-excellent-pairs",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2354",
+ "title": "Number of Excellent Pairs",
+ "premium": false,
+ "meta": {
+  "name": "countExcellentPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,1]\n3",
+  "[5,1,1]\n10"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0"
+ ],
+ "anyOrder": false
+}

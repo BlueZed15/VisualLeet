@@ -1,0 +1,28 @@
+{
+ "slug": "construct-uniform-parity-array-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3875",
+ "title": "Construct Uniform Parity Array I",
+ "premium": false,
+ "meta": {
+  "name": "uniformArray",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,3]",
+  "[4,6]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-divisible-digit-product-i",
+ "frontendId": "3345",
+ "title": "Smallest Divisible Digit Product I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "t",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nt = {t}",
+ "visible": [
+  "n",
+  "t"
+ ],
+ "call": "result = Solution().smallestNumber(n, t)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

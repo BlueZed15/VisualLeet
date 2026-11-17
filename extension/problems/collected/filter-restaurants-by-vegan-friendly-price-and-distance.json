@@ -1,0 +1,42 @@
+{
+ "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1333",
+ "title": "Filter Restaurants by Vegan-Friendly, Price and Distance",
+ "premium": false,
+ "meta": {
+  "name": "filterRestaurants",
+  "params": [
+   {
+    "name": "restaurants",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "veganFriendly"
+   },
+   {
+    "type": "integer",
+    "name": "maxPrice"
+   },
+   {
+    "type": "integer",
+    "name": "maxDistance"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[[1,4,1,40,10],[2,8,0,50,5],[3,8,1,30,4],[4,10,0,10,3],[5,1,1,15,1]]\n1\n50\n10",
+  "[[1,4,1,40,10],[2,8,0,50,5],[3,8,1,30,4],[4,10,0,10,3],[5,1,1,15,1]]\n0\n50\n10",
+  "[[1,4,1,40,10],[2,8,0,50,5],[3,8,1,30,4],[4,10,0,10,3],[5,1,1,15,1]]\n0\n30\n3"
+ ],
+ "exampleOutputs": [
+  "[3,1,5]",
+  "[4,3,2,1,5]",
+  "[4,5]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-number-of-people-to-teach",
+ "frontendId": "1733",
+ "title": "Minimum Number of People to Teach",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "languages",
+   "type": "integer[][]"
+  },
+  {
+   "name": "friendships",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nlanguages = {languages}\nfriendships = {friendships}",
+ "visible": [
+  "n",
+  "languages",
+  "friendships"
+ ],
+ "call": "result = Solution().minimumTeachings(n, languages, friendships)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

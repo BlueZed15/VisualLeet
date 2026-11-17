@@ -1,0 +1,30 @@
+{
+ "slug": "capitalize-the-title",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2129",
+ "title": "Capitalize the Title",
+ "premium": false,
+ "meta": {
+  "name": "capitalizeTitle",
+  "params": [
+   {
+    "name": "title",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"capiTalIze tHe titLe\"",
+  "\"First leTTeR of EACH Word\"",
+  "\"i lOve leetcode\""
+ ],
+ "exampleOutputs": [
+  "\"Capitalize The Title\"",
+  "\"First Letter of Each Word\"",
+  "\"i Love Leetcode\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-common-factors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2427",
+ "title": "Number of Common Factors",
+ "premium": false,
+ "meta": {
+  "name": "commonFactors",
+  "params": [
+   {
+    "name": "a",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "b"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "12\n6",
+  "25\n30"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-v",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3573",
+ "title": "Best Time to Buy and Sell Stock V",
+ "premium": false,
+ "meta": {
+  "name": "maximumProfit",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,7,9,8,2]\r\n2\r",
+  "[12,16,19,19,8,1,19,13,9]\r\n3\r"
+ ],
+ "exampleOutputs": [
+  "14",
+  "36"
+ ],
+ "anyOrder": false
+}

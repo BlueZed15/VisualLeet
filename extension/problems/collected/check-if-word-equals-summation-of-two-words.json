@@ -1,0 +1,38 @@
+{
+ "slug": "check-if-word-equals-summation-of-two-words",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1880",
+ "title": "Check if Word Equals Summation of Two Words",
+ "premium": false,
+ "meta": {
+  "name": "isSumEqual",
+  "params": [
+   {
+    "name": "firstWord",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "secondWord"
+   },
+   {
+    "type": "string",
+    "name": "targetWord"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"acb\"\n\"cba\"\n\"cdb\"",
+  "\"aaa\"\n\"a\"\n\"aab\"",
+  "\"aaa\"\n\"a\"\n\"aaaa\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

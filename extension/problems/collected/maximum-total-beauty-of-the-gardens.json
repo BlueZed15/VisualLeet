@@ -1,0 +1,44 @@
+{
+ "slug": "maximum-total-beauty-of-the-gardens",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2234",
+ "title": "Maximum Total Beauty of the Gardens",
+ "premium": false,
+ "meta": {
+  "name": "maximumBeauty",
+  "params": [
+   {
+    "name": "flowers",
+    "type": "integer[]"
+   },
+   {
+    "type": "long",
+    "name": "newFlowers"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   },
+   {
+    "type": "integer",
+    "name": "full"
+   },
+   {
+    "type": "integer",
+    "name": "partial"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,1,1]\n7\n6\n12\n1",
+  "[2,4,5,3]\n10\n5\n2\n6"
+ ],
+ "exampleOutputs": [
+  "14",
+  "30"
+ ],
+ "anyOrder": false
+}

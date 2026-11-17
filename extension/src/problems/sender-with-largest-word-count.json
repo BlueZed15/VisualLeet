@@ -1,0 +1,30 @@
+{
+ "slug": "sender-with-largest-word-count",
+ "frontendId": "2284",
+ "title": "Sender With Largest Word Count",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "messages",
+   "type": "string[]"
+  },
+  {
+   "name": "senders",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "messages = {messages}\nsenders = {senders}",
+ "visible": [
+  "messages",
+  "senders"
+ ],
+ "call": "result = Solution().largestWordCount(messages, senders)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "execution-of-all-suffix-instructions-staying-in-a-grid",
+ "frontendId": "2120",
+ "title": "Execution of All Suffix Instructions Staying in a Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "startPos",
+   "type": "integer[]"
+  },
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nstartPos = {startPos}\ns = {s}",
+ "visible": [
+  "n",
+  "startPos",
+  "s"
+ ],
+ "call": "result = Solution().executeInstructions(n, startPos, s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

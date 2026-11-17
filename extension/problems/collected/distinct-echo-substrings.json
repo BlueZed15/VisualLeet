@@ -1,0 +1,28 @@
+{
+ "slug": "distinct-echo-substrings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1316",
+ "title": "Distinct Echo Substrings",
+ "premium": false,
+ "meta": {
+  "name": "distinctEchoSubstrings",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcabcabc\"",
+  "\"leetcodeleetcode\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

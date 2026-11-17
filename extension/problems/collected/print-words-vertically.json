@@ -1,0 +1,30 @@
+{
+ "slug": "print-words-vertically",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1324",
+ "title": "Print Words Vertically",
+ "premium": false,
+ "meta": {
+  "name": "printVertically",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"HOW ARE YOU\"",
+  "\"TO BE OR NOT TO BE\"",
+  "\"CONTEST IS COMING\""
+ ],
+ "exampleOutputs": [
+  "[\"HAY\",\"ORO\",\"WEU\"]",
+  "[\"TBONTB\",\"OEROOE\",\"   T\"]",
+  "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
+ ],
+ "anyOrder": false
+}

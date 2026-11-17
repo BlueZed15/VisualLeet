@@ -1,0 +1,32 @@
+{
+ "slug": "query-kth-smallest-trimmed-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2343",
+ "title": "Query Kth Smallest Trimmed Number",
+ "premium": false,
+ "meta": {
+  "name": "smallestTrimmedNumbers",
+  "params": [
+   {
+    "name": "nums",
+    "type": "string[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"102\",\"473\",\"251\",\"814\"]\n[[1,1],[2,3],[4,2],[1,2]]",
+  "[\"24\",\"37\",\"96\",\"04\"]\n[[2,1],[2,2]]"
+ ],
+ "exampleOutputs": [
+  "[2,2,1,0]",
+  "[3,0]"
+ ],
+ "anyOrder": false
+}

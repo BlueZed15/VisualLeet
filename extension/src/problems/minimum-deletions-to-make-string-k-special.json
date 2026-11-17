@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-deletions-to-make-string-k-special",
+ "frontendId": "3085",
+ "title": "Minimum Deletions to Make String K-Special",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nk = {k}",
+ "visible": [
+  "word",
+  "k"
+ ],
+ "call": "result = Solution().minimumDeletions(word, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

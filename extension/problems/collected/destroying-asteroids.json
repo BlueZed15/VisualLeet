@@ -1,0 +1,32 @@
+{
+ "slug": "destroying-asteroids",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2126",
+ "title": "Destroying Asteroids",
+ "premium": false,
+ "meta": {
+  "name": "asteroidsDestroyed",
+  "params": [
+   {
+    "name": "mass",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "asteroids"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "10\n[3,9,19,5,21]",
+  "5\n[4,9,23,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

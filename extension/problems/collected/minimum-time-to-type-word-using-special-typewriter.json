@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-time-to-type-word-using-special-typewriter",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1974",
+ "title": "Minimum Time to Type Word Using Special Typewriter",
+ "premium": false,
+ "meta": {
+  "name": "minTimeToType",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"",
+  "\"bza\"",
+  "\"zjpc\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "7",
+  "34"
+ ],
+ "anyOrder": false
+}

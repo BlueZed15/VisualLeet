@@ -1,0 +1,32 @@
+{
+ "slug": "find-minimum-diameter-after-merging-two-trees",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3203",
+ "title": "Find Minimum Diameter After Merging Two Trees",
+ "premium": false,
+ "meta": {
+  "name": "minimumDiameterAfterMerge",
+  "params": [
+   {
+    "name": "edges1",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[0,2],[0,3]]\n[[0,1]]",
+  "[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]\n[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "5"
+ ],
+ "anyOrder": false
+}

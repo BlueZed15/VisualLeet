@@ -1,0 +1,34 @@
+{
+ "slug": "process-string-with-special-operations-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3614",
+ "title": "Process String with Special Operations II",
+ "premium": false,
+ "meta": {
+  "name": "processStr",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "long",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "character"
+  }
+ },
+ "exampleInputs": [
+  "\"a#b%*\"\n1",
+  "\"cd%#*#\"\n3",
+  "\"z*#\"\n0"
+ ],
+ "exampleOutputs": [
+  "\"a\"",
+  "\"d\"",
+  "\".\""
+ ],
+ "anyOrder": false
+}

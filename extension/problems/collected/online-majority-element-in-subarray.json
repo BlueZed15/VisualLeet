@@ -1,0 +1,51 @@
+{
+ "slug": "online-majority-element-in-subarray",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1157",
+ "title": "Online Majority Element In Subarray",
+ "premium": false,
+ "meta": {
+  "classname": "MajorityChecker",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "arr"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     },
+     {
+      "type": "integer",
+      "name": "threshold"
+     }
+    ],
+    "name": "query",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"MajorityChecker\",\"query\",\"query\",\"query\"]\n[[[1,1,2,2,1,1]],[0,5,4],[0,3,3],[2,3,2]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, -1, 2]"
+ ],
+ "anyOrder": false
+}

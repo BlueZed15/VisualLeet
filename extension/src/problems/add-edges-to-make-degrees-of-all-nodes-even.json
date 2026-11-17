@@ -1,0 +1,30 @@
+{
+ "slug": "add-edges-to-make-degrees-of-all-nodes-even",
+ "frontendId": "2508",
+ "title": "Add Edges to Make Degrees of All Nodes Even",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}",
+ "visible": [
+  "n",
+  "edges"
+ ],
+ "call": "result = Solution().isPossible(n, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

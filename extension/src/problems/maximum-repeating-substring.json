@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-repeating-substring",
+ "frontendId": "1668",
+ "title": "Maximum Repeating Substring",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sequence",
+   "type": "string"
+  },
+  {
+   "name": "word",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sequence = {sequence}\nword = {word}",
+ "visible": [
+  "sequence",
+  "word"
+ ],
+ "call": "result = Solution().maxRepeating(sequence, word)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

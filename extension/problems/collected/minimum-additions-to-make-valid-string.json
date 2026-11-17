@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-additions-to-make-valid-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2645",
+ "title": "Minimum Additions to Make Valid String",
+ "premium": false,
+ "meta": {
+  "name": "addMinimum",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"b\"",
+  "\"aaa\"",
+  "\"abc\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

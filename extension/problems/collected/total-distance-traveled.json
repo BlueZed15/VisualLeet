@@ -1,0 +1,32 @@
+{
+ "slug": "total-distance-traveled",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2739",
+ "title": "Total Distance Traveled",
+ "premium": false,
+ "meta": {
+  "name": "distanceTraveled",
+  "params": [
+   {
+    "name": "mainTank",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "additionalTank"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n10",
+  "1\n2"
+ ],
+ "exampleOutputs": [
+  "60",
+  "10"
+ ],
+ "anyOrder": false
+}

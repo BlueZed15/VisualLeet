@@ -1,0 +1,28 @@
+{
+ "slug": "airplane-seat-assignment-probability",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1227",
+ "title": "Airplane Seat Assignment Probability",
+ "premium": false,
+ "meta": {
+  "name": "nthPersonGetsNthSeat",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "1.00000",
+  "0.50000"
+ ],
+ "anyOrder": false
+}

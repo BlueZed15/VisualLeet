@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-operations-to-make-the-integer-zero",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2749",
+ "title": "Minimum Operations to Make the Integer Zero",
+ "premium": false,
+ "meta": {
+  "name": "makeTheIntegerZero",
+  "params": [
+   {
+    "name": "num1",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "num2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n-2",
+  "5\n7"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

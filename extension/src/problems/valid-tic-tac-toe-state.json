@@ -1,0 +1,25 @@
+{
+ "slug": "valid-tic-tac-toe-state",
+ "frontendId": "794",
+ "title": "Valid Tic-Tac-Toe State",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}",
+ "visible": [
+  "board"
+ ],
+ "call": "result = Solution().validTicTacToe(board)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

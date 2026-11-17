@@ -1,0 +1,25 @@
+{
+ "slug": "check-if-numbers-are-ascending-in-a-sentence",
+ "frontendId": "2042",
+ "title": "Check if Numbers Are Ascending in a Sentence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().areNumbersAscending(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

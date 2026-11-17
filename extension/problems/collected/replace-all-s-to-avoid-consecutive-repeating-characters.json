@@ -1,0 +1,29 @@
+{
+ "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1576",
+ "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+ "premium": false,
+ "meta": {
+  "name": "modifyString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"?zs\"",
+  "\"ubv?w\""
+ ],
+ "exampleOutputs": [
+  "\"azs\"",
+  "\"ubvaw\""
+ ],
+ "anyOrder": false
+}

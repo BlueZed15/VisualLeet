@@ -1,0 +1,25 @@
+{
+ "slug": "display-table-of-food-orders-in-a-restaurant",
+ "frontendId": "1418",
+ "title": "Display Table of Food Orders in a Restaurant",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "orders",
+   "type": "list<list<string>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "orders = {orders}",
+ "visible": [
+  "orders"
+ ],
+ "call": "result = Solution().displayTable(orders)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

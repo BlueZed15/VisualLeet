@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-ways-to-buy-pens-and-pencils",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2240",
+ "title": "Number of Ways to Buy Pens and Pencils",
+ "premium": false,
+ "meta": {
+  "name": "waysToBuyPensPencils",
+  "params": [
+   {
+    "name": "total",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "cost1"
+   },
+   {
+    "type": "integer",
+    "name": "cost2"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "20\n10\n5",
+  "5\n10\n10"
+ ],
+ "exampleOutputs": [
+  "9",
+  "1"
+ ],
+ "anyOrder": false
+}

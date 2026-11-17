@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-white-tiles-covered-by-a-carpet",
+ "frontendId": "2271",
+ "title": "Maximum White Tiles Covered by a Carpet",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tiles",
+   "type": "integer[][]"
+  },
+  {
+   "name": "carpetLen",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tiles = {tiles}\ncarpetLen = {carpetLen}",
+ "visible": [
+  "tiles",
+  "carpetLen"
+ ],
+ "call": "result = Solution().maximumWhiteTiles(tiles, carpetLen)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

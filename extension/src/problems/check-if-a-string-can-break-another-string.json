@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-a-string-can-break-another-string",
+ "frontendId": "1433",
+ "title": "Check If a String Can Break Another String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}",
+ "visible": [
+  "s1",
+  "s2"
+ ],
+ "call": "result = Solution().checkIfCanBreak(s1, s2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

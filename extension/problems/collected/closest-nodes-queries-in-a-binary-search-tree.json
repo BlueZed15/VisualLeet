@@ -1,0 +1,32 @@
+{
+ "slug": "closest-nodes-queries-in-a-binary-search-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2476",
+ "title": "Closest Nodes Queries in a Binary Search Tree",
+ "premium": false,
+ "meta": {
+  "name": "closestNodes",
+  "params": [
+   {
+    "name": "root",
+    "type": "TreeNode"
+   },
+   {
+    "type": "list<integer>",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  }
+ },
+ "exampleInputs": [
+  "[6,2,13,1,4,9,15,null,null,null,null,null,null,14]\n[2,5,16]",
+  "[4,null,9]\n[3]"
+ ],
+ "exampleOutputs": [
+  "[[2,2],[4,6],[15,-1]]",
+  "[[-1,4]]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "reconstruct-a-2-row-binary-matrix",
+ "frontendId": "1253",
+ "title": "Reconstruct a 2-Row Binary Matrix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "upper",
+   "type": "integer"
+  },
+  {
+   "name": "lower",
+   "type": "integer"
+  },
+  {
+   "name": "colsum",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "upper = {upper}\nlower = {lower}\ncolsum = {colsum}",
+ "visible": [
+  "upper",
+  "lower",
+  "colsum"
+ ],
+ "call": "result = Solution().reconstructMatrix(upper, lower, colsum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

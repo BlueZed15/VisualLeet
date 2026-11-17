@@ -1,0 +1,32 @@
+{
+ "slug": "distribute-money-to-maximum-children",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2591",
+ "title": "Distribute Money to Maximum Children",
+ "premium": false,
+ "meta": {
+  "name": "distMoney",
+  "params": [
+   {
+    "name": "money",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "children"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "20\n3",
+  "16\n2"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

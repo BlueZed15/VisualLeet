@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-numbers-of-function-calls-to-make-target-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1558",
+ "title": "Minimum Numbers of Function Calls to Make Target Array",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,5]",
+  "[2,2]",
+  "[4,2,5]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

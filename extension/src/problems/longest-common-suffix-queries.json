@@ -1,0 +1,30 @@
+{
+ "slug": "longest-common-suffix-queries",
+ "frontendId": "3093",
+ "title": "Longest Common Suffix Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "wordsContainer",
+   "type": "string[]"
+  },
+  {
+   "name": "wordsQuery",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "wordsContainer = {wordsContainer}\nwordsQuery = {wordsQuery}",
+ "visible": [
+  "wordsContainer",
+  "wordsQuery"
+ ],
+ "call": "result = Solution().stringIndices(wordsContainer, wordsQuery)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

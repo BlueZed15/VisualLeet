@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-orders-in-the-backlog",
+ "frontendId": "1801",
+ "title": "Number of Orders in the Backlog",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "orders",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "orders = {orders}",
+ "visible": [
+  "orders"
+ ],
+ "call": "result = Solution().getNumberOfBacklogOrders(orders)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "find-servers-that-handled-most-number-of-requests",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1606",
+ "title": "Find Servers That Handled Most Number of Requests",
+ "premium": false,
+ "meta": {
+  "name": "busiestServers",
+  "params": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "arrival"
+   },
+   {
+    "type": "integer[]",
+    "name": "load"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "3\n[1,2,3,4,5]\n[5,2,3,3,3]",
+  "3\n[1,2,3,4]\n[1,2,1,2]",
+  "3\n[1,2,3]\n[10,12,11]"
+ ],
+ "exampleOutputs": [
+  "[1]",
+  "[0]",
+  "[0,1,2]"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "k-divisible-elements-subarrays",
+ "frontendId": "2261",
+ "title": "K Divisible Elements Subarrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "p",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}\np = {p}",
+ "visible": [
+  "nums",
+  "k",
+  "p"
+ ],
+ "call": "result = Solution().countDistinct(nums, k, p)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

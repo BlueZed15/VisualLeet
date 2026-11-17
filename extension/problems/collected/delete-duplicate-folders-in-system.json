@@ -1,0 +1,30 @@
+{
+ "slug": "delete-duplicate-folders-in-system",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1948",
+ "title": "Delete Duplicate Folders in System",
+ "premium": false,
+ "meta": {
+  "name": "deleteDuplicateFolder",
+  "params": [
+   {
+    "name": "paths",
+    "type": "list<list<string>>"
+   }
+  ],
+  "return": {
+   "type": "list<list<string>>"
+  }
+ },
+ "exampleInputs": [
+  "[[\"a\"],[\"c\"],[\"d\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"d\",\"a\"]]",
+  "[[\"a\"],[\"c\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"a\",\"b\",\"x\"],[\"a\",\"b\",\"x\",\"y\"],[\"w\"],[\"w\",\"y\"]]",
+  "[[\"a\",\"b\"],[\"c\",\"d\"],[\"c\"],[\"a\"]]"
+ ],
+ "exampleOutputs": [
+  "[[\"d\"],[\"d\",\"a\"]]",
+  "[[\"c\"],[\"c\",\"b\"],[\"a\"],[\"a\",\"b\"]]",
+  "[[\"c\"],[\"c\",\"d\"],[\"a\"],[\"a\",\"b\"]]"
+ ],
+ "anyOrder": true
+}

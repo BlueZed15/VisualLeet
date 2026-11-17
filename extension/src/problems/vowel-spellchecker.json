@@ -1,0 +1,30 @@
+{
+ "slug": "vowel-spellchecker",
+ "frontendId": "966",
+ "title": "Vowel Spellchecker",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "wordlist",
+   "type": "string[]"
+  },
+  {
+   "name": "queries",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "wordlist = {wordlist}\nqueries = {queries}",
+ "visible": [
+  "wordlist",
+  "queries"
+ ],
+ "call": "result = Solution().spellchecker(wordlist, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

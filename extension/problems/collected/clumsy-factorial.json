@@ -1,0 +1,28 @@
+{
+ "slug": "clumsy-factorial",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1006",
+ "title": "Clumsy Factorial",
+ "premium": false,
+ "meta": {
+  "name": "clumsy",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "10"
+ ],
+ "exampleOutputs": [
+  "7",
+  "12"
+ ],
+ "anyOrder": false
+}

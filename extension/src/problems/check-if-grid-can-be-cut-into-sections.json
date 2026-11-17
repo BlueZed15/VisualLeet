@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-grid-can-be-cut-into-sections",
+ "frontendId": "3394",
+ "title": "Check if Grid can be Cut into Sections",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "rectangles",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nrectangles = {rectangles}",
+ "visible": [
+  "n",
+  "rectangles"
+ ],
+ "call": "result = Solution().checkValidCuts(n, rectangles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

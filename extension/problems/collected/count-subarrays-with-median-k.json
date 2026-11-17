@@ -1,0 +1,32 @@
+{
+ "slug": "count-subarrays-with-median-k",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2488",
+ "title": "Count Subarrays With Median K",
+ "premium": false,
+ "meta": {
+  "name": "countSubarrays",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,1,4,5]\n4",
+  "[2,3,1]\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

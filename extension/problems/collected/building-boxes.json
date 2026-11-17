@@ -1,0 +1,30 @@
+{
+ "slug": "building-boxes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1739",
+ "title": "Building Boxes",
+ "premium": false,
+ "meta": {
+  "name": "minimumBoxes",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3",
+  "4",
+  "10"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

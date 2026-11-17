@@ -1,0 +1,30 @@
+{
+ "slug": "add-minimum-number-of-rungs",
+ "frontendId": "1936",
+ "title": "Add Minimum Number of Rungs",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rungs",
+   "type": "integer[]"
+  },
+  {
+   "name": "dist",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "rungs = {rungs}\ndist = {dist}",
+ "visible": [
+  "rungs",
+  "dist"
+ ],
+ "call": "result = Solution().addRungs(rungs, dist)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-array-length-after-pair-removals",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2856",
+ "title": "Minimum Array Length After Pair Removals",
+ "premium": false,
+ "meta": {
+  "name": "minLengthAfterRemovals",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[1,1,2,2,3,3]",
+  "[1000000000,1000000000]",
+  "[2,3,4,4,4]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "0",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

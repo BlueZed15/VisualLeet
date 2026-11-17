@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1505",
+ "title": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+ "premium": false,
+ "meta": {
+  "name": "minInteger",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"4321\"\n4",
+  "\"100\"\n1",
+  "\"36789\"\n1000"
+ ],
+ "exampleOutputs": [
+  "\"1342\"",
+  "\"010\"",
+  "\"36789\""
+ ],
+ "anyOrder": false
+}

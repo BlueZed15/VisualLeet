@@ -1,0 +1,30 @@
+{
+ "slug": "make-k-subarray-sums-equal",
+ "frontendId": "2607",
+ "title": "Make K-Subarray Sums Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arr",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "arr = {arr}\nk = {k}",
+ "visible": [
+  "arr",
+  "k"
+ ],
+ "call": "result = Solution().makeSubKSumEqual(arr, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

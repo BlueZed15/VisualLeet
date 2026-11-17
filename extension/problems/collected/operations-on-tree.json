@@ -1,0 +1,79 @@
+{
+ "slug": "operations-on-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1993",
+ "title": "Operations on Tree",
+ "premium": false,
+ "meta": {
+  "classname": "LockingTree",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "parent"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     },
+     {
+      "type": "integer",
+      "name": "user"
+     }
+    ],
+    "name": "lock",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     },
+     {
+      "type": "integer",
+      "name": "user"
+     }
+    ],
+    "name": "unlock",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     },
+     {
+      "type": "integer",
+      "name": "user"
+     }
+    ],
+    "name": "upgrade",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"LockingTree\",\"lock\",\"unlock\",\"unlock\",\"lock\",\"upgrade\",\"lock\"]\n[[[-1,0,0,1,1,2,2]],[2,2],[2,3],[2,2],[4,5],[0,1],[0,1]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, false, true, true, true, false]"
+ ],
+ "anyOrder": false
+}

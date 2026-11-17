@@ -1,0 +1,35 @@
+{
+ "slug": "divide-a-string-into-groups-of-size-k",
+ "frontendId": "2138",
+ "title": "Divide a String Into Groups of Size k",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "fill",
+   "type": "character"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}\nfill = {fill}",
+ "visible": [
+  "s",
+  "k",
+  "fill"
+ ],
+ "call": "result = Solution().divideString(s, k, fill)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

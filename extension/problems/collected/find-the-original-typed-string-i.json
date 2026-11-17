@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-original-typed-string-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3330",
+ "title": "Find the Original Typed String I",
+ "premium": false,
+ "meta": {
+  "name": "possibleStringCount",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abbcccc\"",
+  "\"abcd\"",
+  "\"aaaa\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "1",
+  "4"
+ ],
+ "anyOrder": false
+}

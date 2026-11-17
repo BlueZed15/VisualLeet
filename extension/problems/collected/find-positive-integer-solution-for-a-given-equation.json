@@ -1,0 +1,34 @@
+{
+ "slug": "find-positive-integer-solution-for-a-given-equation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1237",
+ "title": "Find Positive Integer Solution for a Given Equation",
+ "premium": false,
+ "meta": {
+  "name": "findSolution",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "z"
+   }
+  ],
+  "return": {
+   "type": "list<list<integer>>"
+  },
+  "manual": true,
+  "typescriptCustomType": "class CustomFunction {\n    num: number;\n    constructor(x: number) {\n        this.num = x;\n    }\n\n    f(x: number, y: number): number {\n        switch (this.num) {\n            case 1 : return x + y;\n            case 2 : return x * y;\n            case 3 : return x * x + y;\n            case 4 : return x + y * y;\n            case 5 : return x * x + y * y;\n            case 6 : return (x + y) * (x + y);\n            case 7 : return x * x * x + y * y * y;\n            case 8 : return x * x * y;\n            case 9 : return x * y * y;\n        }\n        return 0;\n    }\n};"
+ },
+ "exampleInputs": [
+  "1\n5",
+  "2\n5"
+ ],
+ "exampleOutputs": [
+  "[[1,4],[2,3],[3,2],[4,1]]",
+  "[[1,5],[5,1]]"
+ ],
+ "anyOrder": true
+}

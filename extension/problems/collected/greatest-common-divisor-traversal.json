@@ -1,0 +1,30 @@
+{
+ "slug": "greatest-common-divisor-traversal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2709",
+ "title": "Greatest Common Divisor Traversal",
+ "premium": false,
+ "meta": {
+  "name": "canTraverseAllPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,6]",
+  "[3,9,5]",
+  "[4,3,12,8]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

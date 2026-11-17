@@ -1,0 +1,28 @@
+{
+ "slug": "split-the-array-to-make-coprime-products",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2584",
+ "title": "Split the Array to Make Coprime Products",
+ "premium": false,
+ "meta": {
+  "name": "findValidSplit",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,7,8,15,3,5]",
+  "[4,7,15,8,3,5]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

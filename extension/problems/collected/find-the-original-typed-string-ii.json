@@ -1,0 +1,34 @@
+{
+ "slug": "find-the-original-typed-string-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3333",
+ "title": "Find the Original Typed String II",
+ "premium": false,
+ "meta": {
+  "name": "possibleStringCount",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabbccdd\"\n7",
+  "\"aabbccdd\"\n8",
+  "\"aaabbb\"\n3"
+ ],
+ "exampleOutputs": [
+  "5",
+  "1",
+  "8"
+ ],
+ "anyOrder": false
+}

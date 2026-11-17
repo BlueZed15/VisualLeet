@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-value-after-insertion",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1881",
+ "title": "Maximum Value after Insertion",
+ "premium": false,
+ "meta": {
+  "name": "maxValue",
+  "params": [
+   {
+    "name": "n",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"99\"\n9",
+  "\"-13\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"999\"",
+  "\"-123\""
+ ],
+ "anyOrder": false
+}

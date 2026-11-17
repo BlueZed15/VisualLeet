@@ -1,0 +1,40 @@
+{
+ "slug": "frog-position-after-t-seconds",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1377",
+ "title": "Frog Position After T Seconds",
+ "premium": false,
+ "meta": {
+  "name": "frogPosition",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer",
+    "name": "t"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n2\n4",
+  "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n1\n7"
+ ],
+ "exampleOutputs": [
+  "0.16666666666666666",
+  "0.3333333333333333"
+ ],
+ "anyOrder": false
+}

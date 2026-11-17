@@ -1,0 +1,34 @@
+{
+ "slug": "number-of-ways-to-earn-points",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2585",
+ "title": "Number of Ways to Earn Points",
+ "premium": false,
+ "meta": {
+  "name": "waysToReachTarget",
+  "params": [
+   {
+    "name": "target",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "types"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6\n[[6,1],[3,2],[2,3]]",
+  "5\n[[50,1],[50,2],[50,5]]",
+  "18\n[[6,1],[3,2],[2,3]]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

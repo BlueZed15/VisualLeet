@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-points-in-an-archery-competition",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2212",
+ "title": "Maximum Points in an Archery Competition",
+ "premium": false,
+ "meta": {
+  "name": "maximumBobPoints",
+  "params": [
+   {
+    "name": "numArrows",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "aliceArrows"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "9\n[1,1,0,1,0,0,2,1,0,1,2,0]",
+  "3\n[0,0,1,0,0,0,0,0,0,0,0,2]"
+ ],
+ "exampleOutputs": [
+  "[0,0,0,0,1,1,0,0,1,2,3,1]",
+  "[0,0,0,0,0,0,0,0,1,1,1,0]"
+ ],
+ "anyOrder": false
+}

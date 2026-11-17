@@ -1,0 +1,28 @@
+{
+ "slug": "count-square-sum-triples",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1925",
+ "title": "Count Square Sum Triples",
+ "premium": false,
+ "meta": {
+  "name": "countTriples",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "10"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4"
+ ],
+ "anyOrder": false
+}

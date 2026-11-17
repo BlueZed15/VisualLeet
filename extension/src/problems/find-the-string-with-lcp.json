@@ -1,0 +1,25 @@
+{
+ "slug": "find-the-string-with-lcp",
+ "frontendId": "2573",
+ "title": "Find the String with LCP",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "lcp",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "lcp = {lcp}",
+ "visible": [
+  "lcp"
+ ],
+ "call": "result = Solution().findTheString(lcp)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

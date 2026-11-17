@@ -1,0 +1,45 @@
+{
+ "slug": "find-substring-with-given-hash-value",
+ "frontendId": "2156",
+ "title": "Find Substring With Given Hash Value",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "power",
+   "type": "integer"
+  },
+  {
+   "name": "modulo",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "hashValue",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\npower = {power}\nmodulo = {modulo}\nk = {k}\nhashValue = {hashValue}",
+ "visible": [
+  "s",
+  "power",
+  "modulo",
+  "k",
+  "hashValue"
+ ],
+ "call": "result = Solution().subStrHash(s, power, modulo, k, hashValue)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

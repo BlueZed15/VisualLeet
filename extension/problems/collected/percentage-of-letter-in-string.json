@@ -1,0 +1,32 @@
+{
+ "slug": "percentage-of-letter-in-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2278",
+ "title": "Percentage of Letter in String",
+ "premium": false,
+ "meta": {
+  "name": "percentageLetter",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "character",
+    "name": "letter"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"foobar\"\n\"o\"",
+  "\"jjjj\"\n\"k\""
+ ],
+ "exampleOutputs": [
+  "33",
+  "0"
+ ],
+ "anyOrder": false
+}

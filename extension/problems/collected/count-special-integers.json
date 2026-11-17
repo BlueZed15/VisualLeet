@@ -1,0 +1,30 @@
+{
+ "slug": "count-special-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2376",
+ "title": "Count Special Integers",
+ "premium": false,
+ "meta": {
+  "name": "countSpecialNumbers",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "20",
+  "5",
+  "135"
+ ],
+ "exampleOutputs": [
+  "19",
+  "5",
+  "110"
+ ],
+ "anyOrder": false
+}

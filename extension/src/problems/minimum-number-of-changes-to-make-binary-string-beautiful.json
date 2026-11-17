@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-changes-to-make-binary-string-beautiful",
+ "frontendId": "2914",
+ "title": "Minimum Number of Changes to Make Binary String Beautiful",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().minChanges(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

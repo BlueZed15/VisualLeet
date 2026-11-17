@@ -1,0 +1,32 @@
+{
+ "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2829",
+ "title": "Determine the Minimum Sum of a k-avoiding Array",
+ "premium": false,
+ "meta": {
+  "name": "minimumSum",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n4",
+  "2\n6"
+ ],
+ "exampleOutputs": [
+  "18",
+  "3"
+ ],
+ "anyOrder": false
+}

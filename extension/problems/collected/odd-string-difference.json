@@ -1,0 +1,28 @@
+{
+ "slug": "odd-string-difference",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2451",
+ "title": "Odd String Difference",
+ "premium": false,
+ "meta": {
+  "name": "oddString",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"adc\",\"wzy\",\"abc\"]",
+  "[\"aaa\",\"bob\",\"ccc\",\"ddd\"]"
+ ],
+ "exampleOutputs": [
+  "\"abc\"",
+  "\"bob\""
+ ],
+ "anyOrder": false
+}

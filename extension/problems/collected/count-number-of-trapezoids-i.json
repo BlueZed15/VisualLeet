@@ -1,0 +1,28 @@
+{
+ "slug": "count-number-of-trapezoids-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3623",
+ "title": "Count Number of Trapezoids I",
+ "premium": false,
+ "meta": {
+  "name": "countTrapezoids",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,0],[2,0],[3,0],[2,2],[3,2]]",
+  "[[0,0],[1,0],[0,1],[2,1]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-genetic-difference-query",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1938",
+ "title": "Maximum Genetic Difference Query",
+ "premium": false,
+ "meta": {
+  "name": "maxGeneticDifference",
+  "params": [
+   {
+    "name": "parents",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[-1,0,1,1]\n[[0,2],[3,2],[2,5]]",
+  "[3,7,-1,2,0,7,0,2]\n[[4,6],[1,15],[0,5]]"
+ ],
+ "exampleOutputs": [
+  "[2,3,7]",
+  "[6,14,7]"
+ ],
+ "anyOrder": false
+}

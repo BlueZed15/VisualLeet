@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-rotation-with-highest-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "798",
+ "title": "Smallest Rotation with Highest Score",
+ "premium": false,
+ "meta": {
+  "name": "bestRotation",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1,4,0]",
+  "[1,3,0,2,4]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

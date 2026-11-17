@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-cost-to-connect-two-groups-of-points",
+ "frontendId": "1595",
+ "title": "Minimum Cost to Connect Two Groups of Points",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "cost",
+   "type": "list<list<integer>>"
+  }
+ ],
+ "helpers": [],
+ "setup": "cost = {cost}",
+ "visible": [
+  "cost"
+ ],
+ "call": "result = Solution().connectTwoGroups(cost)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-sum-of-almost-unique-subarray",
+ "frontendId": "2841",
+ "title": "Maximum Sum of Almost Unique Subarray",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nm = {m}\nk = {k}",
+ "visible": [
+  "nums",
+  "m",
+  "k"
+ ],
+ "call": "result = Solution().maxSum(nums, m, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

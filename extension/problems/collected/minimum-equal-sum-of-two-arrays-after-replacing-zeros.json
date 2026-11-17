@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-equal-sum-of-two-arrays-after-replacing-zeros",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2918",
+ "title": "Minimum Equal Sum of Two Arrays After Replacing Zeros",
+ "premium": false,
+ "meta": {
+  "name": "minSum",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,2,0,1,0]\n[6,5,0]",
+  "[2,0,2,0]\n[1,4]"
+ ],
+ "exampleOutputs": [
+  "12",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "the-time-when-the-network-becomes-idle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2039",
+ "title": "The Time When the Network Becomes Idle",
+ "premium": false,
+ "meta": {
+  "name": "networkBecomesIdle",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "patience"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,2]]\n[0,2,1]",
+  "[[0,1],[0,2],[1,2]]\n[0,10,10]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "3"
+ ],
+ "anyOrder": false
+}

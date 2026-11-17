@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-unique-good-subsequences",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1987",
+ "title": "Number of Unique Good Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "numberOfUniqueGoodSubsequences",
+  "params": [
+   {
+    "name": "binary",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"001\"",
+  "\"11\"",
+  "\"101\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

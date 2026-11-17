@@ -1,0 +1,30 @@
+{
+ "slug": "lexicographically-smallest-permutation-greater-than-target",
+ "frontendId": "3720",
+ "title": "Lexicographically Smallest Permutation Greater Than Target",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\ntarget = {target}",
+ "visible": [
+  "s",
+  "target"
+ ],
+ "call": "result = Solution().lexGreaterPermutation(s, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-weeks-for-which-you-can-work",
+ "frontendId": "1953",
+ "title": "Maximum Number of Weeks for Which You Can Work",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "milestones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "milestones = {milestones}",
+ "visible": [
+  "milestones"
+ ],
+ "call": "result = Solution().numberOfWeeks(milestones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

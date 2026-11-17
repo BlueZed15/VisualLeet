@@ -1,0 +1,40 @@
+{
+ "slug": "count-the-repetitions",
+ "frontendId": "466",
+ "title": "Count The Repetitions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "n1",
+   "type": "integer"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "n2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\nn1 = {n1}\ns2 = {s2}\nn2 = {n2}",
+ "visible": [
+  "s1",
+  "n1",
+  "s2",
+  "n2"
+ ],
+ "call": "result = Solution().getMaxRepetitions(s1, n1, s2, n2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

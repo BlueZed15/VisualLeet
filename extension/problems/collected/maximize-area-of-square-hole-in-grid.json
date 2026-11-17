@@ -1,0 +1,42 @@
+{
+ "slug": "maximize-area-of-square-hole-in-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2943",
+ "title": "Maximize Area of Square Hole in Grid",
+ "premium": false,
+ "meta": {
+  "name": "maximizeSquareHoleArea",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   },
+   {
+    "type": "integer[]",
+    "name": "hBars"
+   },
+   {
+    "type": "integer[]",
+    "name": "vBars"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n1\n[2,3]\n[2]",
+  "1\n1\n[2]\n[2]",
+  "2\n3\n[2,3]\n[2,4]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

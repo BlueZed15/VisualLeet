@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-split-of-positive-even-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2178",
+ "title": "Maximum Split of Positive Even Integers",
+ "premium": false,
+ "meta": {
+  "name": "maximumEvenSplit",
+  "params": [
+   {
+    "name": "finalSum",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "list<long>"
+  }
+ },
+ "exampleInputs": [
+  "12",
+  "7",
+  "28"
+ ],
+ "exampleOutputs": [
+  "[2,4,6]",
+  "[]",
+  "[6,8,2,12]"
+ ],
+ "anyOrder": true
+}

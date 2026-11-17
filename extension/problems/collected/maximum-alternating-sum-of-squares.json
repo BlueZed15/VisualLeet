@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-alternating-sum-of-squares",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3727",
+ "title": "Maximum Alternating Sum of Squares",
+ "premium": false,
+ "meta": {
+  "name": "maxAlternatingSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[1,-1,2,-2,3,-3]"
+ ],
+ "exampleOutputs": [
+  "12",
+  "16"
+ ],
+ "anyOrder": true
+}

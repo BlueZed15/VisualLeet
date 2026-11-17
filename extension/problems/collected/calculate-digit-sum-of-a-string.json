@@ -1,0 +1,32 @@
+{
+ "slug": "calculate-digit-sum-of-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2243",
+ "title": "Calculate Digit Sum of a String",
+ "premium": false,
+ "meta": {
+  "name": "digitSum",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"11111222223\"\n3",
+  "\"00000000\"\n3"
+ ],
+ "exampleOutputs": [
+  "\"135\"",
+  "\"000\""
+ ],
+ "anyOrder": false
+}

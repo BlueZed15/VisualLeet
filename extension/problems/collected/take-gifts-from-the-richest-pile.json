@@ -1,0 +1,32 @@
+{
+ "slug": "take-gifts-from-the-richest-pile",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2558",
+ "title": "Take Gifts From the Richest Pile",
+ "premium": false,
+ "meta": {
+  "name": "pickGifts",
+  "params": [
+   {
+    "name": "gifts",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[25,64,9,4,100]\n4",
+  "[1,1,1,1]\n4"
+ ],
+ "exampleOutputs": [
+  "29",
+  "4"
+ ],
+ "anyOrder": false
+}

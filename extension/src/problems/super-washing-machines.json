@@ -1,0 +1,25 @@
+{
+ "slug": "super-washing-machines",
+ "frontendId": "517",
+ "title": "Super Washing Machines",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "machines",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "machines = {machines}",
+ "visible": [
+  "machines"
+ ],
+ "call": "result = Solution().findMinMoves(machines)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

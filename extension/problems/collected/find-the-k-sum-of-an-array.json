@@ -1,0 +1,32 @@
+{
+ "slug": "find-the-k-sum-of-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2386",
+ "title": "Find the K-Sum of an Array",
+ "premium": false,
+ "meta": {
+  "name": "kSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,-2]\n5",
+  "[1,-2,3,4,-10,12]\n16"
+ ],
+ "exampleOutputs": [
+  "2",
+  "10"
+ ],
+ "anyOrder": false
+}

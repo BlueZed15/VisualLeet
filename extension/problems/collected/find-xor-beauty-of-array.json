@@ -1,0 +1,28 @@
+{
+ "slug": "find-xor-beauty-of-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2527",
+ "title": "Find Xor-Beauty of Array",
+ "premium": false,
+ "meta": {
+  "name": "xorBeauty",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,4]",
+  "[15,45,20,2,34,35,5,44,32,30]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "34"
+ ],
+ "anyOrder": false
+}

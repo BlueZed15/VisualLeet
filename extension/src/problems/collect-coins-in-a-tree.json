@@ -1,0 +1,30 @@
+{
+ "slug": "collect-coins-in-a-tree",
+ "frontendId": "2603",
+ "title": "Collect Coins in a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[]"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}\nedges = {edges}",
+ "visible": [
+  "coins",
+  "edges"
+ ],
+ "call": "result = Solution().collectTheCoins(coins, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

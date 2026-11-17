@@ -1,0 +1,25 @@
+{
+ "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+ "frontendId": "2996",
+ "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().missingInteger(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "find-the-substring-with-maximum-cost",
+ "frontendId": "2606",
+ "title": "Find the Substring With Maximum Cost",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "chars",
+   "type": "string"
+  },
+  {
+   "name": "vals",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nchars = {chars}\nvals = {vals}",
+ "visible": [
+  "s",
+  "chars",
+  "vals"
+ ],
+ "call": "result = Solution().maximumCostSubstring(s, chars, vals)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

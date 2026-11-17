@@ -1,0 +1,28 @@
+{
+ "slug": "triples-with-bitwise-and-equal-to-zero",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "982",
+ "title": "Triples with Bitwise AND Equal To Zero",
+ "premium": false,
+ "meta": {
+  "name": "countTriplets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,3]",
+  "[0,0,0]"
+ ],
+ "exampleOutputs": [
+  "12",
+  "27"
+ ],
+ "anyOrder": false
+}

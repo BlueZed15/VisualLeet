@@ -1,0 +1,28 @@
+{
+ "slug": "strictly-palindromic-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2396",
+ "title": "Strictly Palindromic Number",
+ "premium": false,
+ "meta": {
+  "name": "isStrictlyPalindromic",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "9",
+  "4"
+ ],
+ "exampleOutputs": [
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "count-days-spent-together",
+ "frontendId": "2409",
+ "title": "Count Days Spent Together",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "arriveAlice",
+   "type": "string"
+  },
+  {
+   "name": "leaveAlice",
+   "type": "string"
+  },
+  {
+   "name": "arriveBob",
+   "type": "string"
+  },
+  {
+   "name": "leaveBob",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "arriveAlice = {arriveAlice}\nleaveAlice = {leaveAlice}\narriveBob = {arriveBob}\nleaveBob = {leaveBob}",
+ "visible": [
+  "arriveAlice",
+  "leaveAlice",
+  "arriveBob",
+  "leaveBob"
+ ],
+ "call": "result = Solution().countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

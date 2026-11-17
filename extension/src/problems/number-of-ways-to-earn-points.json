@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-earn-points",
+ "frontendId": "2585",
+ "title": "Number of Ways to Earn Points",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "target",
+   "type": "integer"
+  },
+  {
+   "name": "types",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "target = {target}\ntypes = {types}",
+ "visible": [
+  "target",
+  "types"
+ ],
+ "call": "result = Solution().waysToReachTarget(target, types)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "maximize-value-of-function-in-a-ball-passing-game",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2836",
+ "title": "Maximize Value of Function in a Ball Passing Game",
+ "premium": false,
+ "meta": {
+  "name": "getMaxFunctionValue",
+  "params": [
+   {
+    "name": "receiver",
+    "type": "list<integer>"
+   },
+   {
+    "type": "long",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,0,1]\n4",
+  "[1,1,1,2,3]\n3"
+ ],
+ "exampleOutputs": [
+  "6",
+  "10"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-stepping-numbers-in-range",
+ "frontendId": "2801",
+ "title": "Count Stepping Numbers in Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "low",
+   "type": "string"
+  },
+  {
+   "name": "high",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "low = {low}\nhigh = {high}",
+ "visible": [
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().countSteppingNumbers(low, high)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

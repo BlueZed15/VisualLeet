@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-or",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2680",
+ "title": "Maximum OR",
+ "premium": false,
+ "meta": {
+  "name": "maximumOr",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[12,9]\n1",
+  "[8,1,2]\n2"
+ ],
+ "exampleOutputs": [
+  "30",
+  "35"
+ ],
+ "anyOrder": false
+}

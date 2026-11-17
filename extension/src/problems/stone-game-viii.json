@@ -1,0 +1,25 @@
+{
+ "slug": "stone-game-viii",
+ "frontendId": "1872",
+ "title": "Stone Game VIII",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().stoneGameVIII(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

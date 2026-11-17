@@ -1,0 +1,25 @@
+{
+ "slug": "construct-the-rectangle",
+ "frontendId": "492",
+ "title": "Construct the Rectangle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "area",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "area = {area}",
+ "visible": [
+  "area"
+ ],
+ "call": "result = Solution().constructRectangle(area)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

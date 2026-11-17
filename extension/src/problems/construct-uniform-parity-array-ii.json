@@ -1,0 +1,25 @@
+{
+ "slug": "construct-uniform-parity-array-ii",
+ "frontendId": "3876",
+ "title": "Construct Uniform Parity Array II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}",
+ "visible": [
+  "nums1"
+ ],
+ "call": "result = Solution().uniformArray(nums1)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

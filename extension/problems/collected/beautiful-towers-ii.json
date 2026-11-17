@@ -1,0 +1,30 @@
+{
+ "slug": "beautiful-towers-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2866",
+ "title": "Beautiful Towers II",
+ "premium": false,
+ "meta": {
+  "name": "maximumSumOfHeights",
+  "params": [
+   {
+    "name": "maxHeights",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[5,3,4,1,1]",
+  "[6,5,3,9,2,7]",
+  "[3,2,5,5,2,3]"
+ ],
+ "exampleOutputs": [
+  "13",
+  "22",
+  "18"
+ ],
+ "anyOrder": false
+}

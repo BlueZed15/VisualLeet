@@ -1,0 +1,36 @@
+{
+ "slug": "maximum-consecutive-floors-without-special-floors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2274",
+ "title": "Maximum Consecutive Floors Without Special Floors",
+ "premium": false,
+ "meta": {
+  "name": "maxConsecutive",
+  "params": [
+   {
+    "name": "bottom",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "top"
+   },
+   {
+    "type": "integer[]",
+    "name": "special"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n9\n[4,6]",
+  "6\n8\n[7,6,8]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-number-of-groups-with-increasing-length",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2790",
+ "title": "Maximum Number of Groups With Increasing Length",
+ "premium": false,
+ "meta": {
+  "name": "maxIncreasingGroups",
+  "params": [
+   {
+    "name": "usageLimits",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,5]",
+  "[2,1,2]",
+  "[1,1]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

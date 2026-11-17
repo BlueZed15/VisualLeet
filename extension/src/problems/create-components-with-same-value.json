@@ -1,0 +1,30 @@
+{
+ "slug": "create-components-with-same-value",
+ "frontendId": "2440",
+ "title": "Create Components With Same Value",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nedges = {edges}",
+ "visible": [
+  "nums",
+  "edges"
+ ],
+ "call": "result = Solution().componentValue(nums, edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

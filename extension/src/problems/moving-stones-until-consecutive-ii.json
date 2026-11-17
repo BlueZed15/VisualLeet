@@ -1,0 +1,25 @@
+{
+ "slug": "moving-stones-until-consecutive-ii",
+ "frontendId": "1040",
+ "title": "Moving Stones Until Consecutive II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "stones",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "stones = {stones}",
+ "visible": [
+  "stones"
+ ],
+ "call": "result = Solution().numMovesStonesII(stones)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

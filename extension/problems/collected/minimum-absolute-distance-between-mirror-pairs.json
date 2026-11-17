@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-absolute-distance-between-mirror-pairs",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3761",
+ "title": "Minimum Absolute Distance Between Mirror Pairs",
+ "premium": false,
+ "meta": {
+  "name": "minMirrorPairDistance",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[12,21,45,33,54]",
+  "[120,21]",
+  "[21,120]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "1",
+  "-1"
+ ],
+ "anyOrder": false
+}

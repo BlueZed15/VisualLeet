@@ -1,0 +1,30 @@
+{
+ "slug": "contain-virus",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "749",
+ "title": "Contain Virus",
+ "premium": false,
+ "meta": {
+  "name": "containVirus",
+  "params": [
+   {
+    "name": "isInfected",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]",
+  "[[1,1,1],[1,0,1],[1,1,1]]",
+  "[[1,1,1,0,0,0,0,0,0],[1,0,1,0,1,1,1,1,1],[1,1,1,0,0,0,0,0,0]]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "4",
+  "13"
+ ],
+ "anyOrder": false
+}

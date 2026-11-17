@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-cuts-to-divide-a-circle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2481",
+ "title": "Minimum Cuts to Divide a Circle",
+ "premium": false,
+ "meta": {
+  "name": "numberOfCuts",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

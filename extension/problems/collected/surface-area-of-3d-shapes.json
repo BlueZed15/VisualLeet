@@ -1,0 +1,30 @@
+{
+ "slug": "surface-area-of-3d-shapes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "892",
+ "title": "Surface Area of 3D Shapes",
+ "premium": false,
+ "meta": {
+  "name": "surfaceArea",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2],[3,4]]",
+  "[[1,1,1],[1,0,1],[1,1,1]]",
+  "[[2,2,2],[2,1,2],[2,2,2]]"
+ ],
+ "exampleOutputs": [
+  "34",
+  "32",
+  "46"
+ ],
+ "anyOrder": false
+}

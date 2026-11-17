@@ -1,0 +1,38 @@
+{
+ "slug": "match-substring-after-replacement",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2301",
+ "title": "Match Substring After Replacement",
+ "premium": false,
+ "meta": {
+  "name": "matchReplacement",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "sub"
+   },
+   {
+    "type": "character[][]",
+    "name": "mappings"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"fool3e7bar\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+  "\"fooleetbar\"\n\"f00l\"\n[[\"o\",\"0\"]]",
+  "\"Fool33tbaR\"\n\"leetd\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

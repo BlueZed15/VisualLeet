@@ -1,0 +1,30 @@
+{
+ "slug": "form-array-by-concatenating-subarrays-of-another-array",
+ "frontendId": "1764",
+ "title": "Form Array by Concatenating Subarrays of Another Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "groups",
+   "type": "integer[][]"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "groups = {groups}\nnums = {nums}",
+ "visible": [
+  "groups",
+  "nums"
+ ],
+ "call": "result = Solution().canChoose(groups, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

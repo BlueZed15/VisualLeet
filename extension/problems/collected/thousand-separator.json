@@ -1,0 +1,28 @@
+{
+ "slug": "thousand-separator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1556",
+ "title": "Thousand Separator",
+ "premium": false,
+ "meta": {
+  "name": "thousandSeparator",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "987",
+  "1234"
+ ],
+ "exampleOutputs": [
+  "\"987\"",
+  "\"1.234\""
+ ],
+ "anyOrder": false
+}

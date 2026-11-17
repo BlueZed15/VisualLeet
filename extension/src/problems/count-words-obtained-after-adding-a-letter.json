@@ -1,0 +1,30 @@
+{
+ "slug": "count-words-obtained-after-adding-a-letter",
+ "frontendId": "2135",
+ "title": "Count Words Obtained After Adding a Letter",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "startWords",
+   "type": "string[]"
+  },
+  {
+   "name": "targetWords",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "startWords = {startWords}\ntargetWords = {targetWords}",
+ "visible": [
+  "startWords",
+  "targetWords"
+ ],
+ "call": "result = Solution().wordCount(startWords, targetWords)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

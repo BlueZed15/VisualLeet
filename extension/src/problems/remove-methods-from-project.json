@@ -1,0 +1,35 @@
+{
+ "slug": "remove-methods-from-project",
+ "frontendId": "3310",
+ "title": "Remove Methods From Project",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "invocations",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nk = {k}\ninvocations = {invocations}",
+ "visible": [
+  "n",
+  "k",
+  "invocations"
+ ],
+ "call": "result = Solution().remainingMethods(n, k, invocations)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

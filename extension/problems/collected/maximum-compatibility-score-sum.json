@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-compatibility-score-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1947",
+ "title": "Maximum Compatibility Score Sum",
+ "premium": false,
+ "meta": {
+  "name": "maxCompatibilitySum",
+  "params": [
+   {
+    "name": "students",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "mentors"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1,0],[1,0,1],[0,0,1]]\n[[1,0,0],[0,0,1],[1,1,0]]",
+  "[[0,0],[0,0],[0,0]]\n[[1,1],[1,1],[1,1]]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "0"
+ ],
+ "anyOrder": false
+}

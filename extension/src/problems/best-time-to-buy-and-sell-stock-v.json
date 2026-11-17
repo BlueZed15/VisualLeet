@@ -1,0 +1,30 @@
+{
+ "slug": "best-time-to-buy-and-sell-stock-v",
+ "frontendId": "3573",
+ "title": "Best Time to Buy and Sell Stock V",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prices",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "prices = {prices}\nk = {k}",
+ "visible": [
+  "prices",
+  "k"
+ ],
+ "call": "result = Solution().maximumProfit(prices, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

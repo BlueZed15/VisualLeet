@@ -1,0 +1,30 @@
+{
+ "slug": "distribute-candies-among-children-ii",
+ "frontendId": "2929",
+ "title": "Distribute Candies Among Children II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nlimit = {limit}",
+ "visible": [
+  "n",
+  "limit"
+ ],
+ "call": "result = Solution().distributeCandies(n, limit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

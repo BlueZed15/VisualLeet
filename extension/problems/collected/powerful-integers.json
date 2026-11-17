@@ -1,0 +1,36 @@
+{
+ "slug": "powerful-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "970",
+ "title": "Powerful Integers",
+ "premium": false,
+ "meta": {
+  "name": "powerfulIntegers",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   },
+   {
+    "name": "y",
+    "type": "integer"
+   },
+   {
+    "name": "bound",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "2\n3\n10",
+  "3\n5\n15"
+ ],
+ "exampleOutputs": [
+  "[2,3,4,5,7,9,10]",
+  "[2,4,6,8,10,14]"
+ ],
+ "anyOrder": true
+}

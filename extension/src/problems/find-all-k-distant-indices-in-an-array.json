@@ -1,0 +1,35 @@
+{
+ "slug": "find-all-k-distant-indices-in-an-array",
+ "frontendId": "2200",
+ "title": "Find All K-Distant Indices in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "key",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nkey = {key}\nk = {k}",
+ "visible": [
+  "nums",
+  "key",
+  "k"
+ ],
+ "call": "result = Solution().findKDistantIndices(nums, key, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

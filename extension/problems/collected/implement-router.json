@@ -1,0 +1,80 @@
+{
+ "slug": "implement-router",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3508",
+ "title": "Implement Router",
+ "premium": false,
+ "meta": {
+  "classname": "Router",
+  "constructor": {
+   "params": [
+    {
+     "name": "memoryLimit",
+     "type": "integer"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "source"
+     },
+     {
+      "type": "integer",
+      "name": "destination"
+     },
+     {
+      "type": "integer",
+      "name": "timestamp"
+     }
+    ],
+    "return": {
+     "type": "boolean"
+    },
+    "name": "addPacket"
+   },
+   {
+    "params": [],
+    "name": "forwardPacket",
+    "return": {
+     "type": "integer[]"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "destination"
+     },
+     {
+      "type": "integer",
+      "name": "startTime"
+     },
+     {
+      "type": "integer",
+      "name": "endTime"
+     }
+    ],
+    "name": "getCount",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]",
+  "[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, true, true, false, true, true, [2, 5, 90], true, 1]",
+  "[null, true, [7, 4, 90], []]"
+ ],
+ "anyOrder": false
+}

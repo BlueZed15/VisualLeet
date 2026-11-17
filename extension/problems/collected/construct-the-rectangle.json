@@ -1,0 +1,30 @@
+{
+ "slug": "construct-the-rectangle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "492",
+ "title": "Construct the Rectangle",
+ "premium": false,
+ "meta": {
+  "name": "constructRectangle",
+  "params": [
+   {
+    "name": "area",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "37",
+  "122122"
+ ],
+ "exampleOutputs": [
+  "[2,2]",
+  "[37,1]",
+  "[427,286]"
+ ],
+ "anyOrder": false
+}

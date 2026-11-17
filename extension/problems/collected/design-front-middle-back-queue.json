@@ -1,0 +1,83 @@
+{
+ "slug": "design-front-middle-back-queue",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1670",
+ "title": "Design Front Middle Back Queue",
+ "premium": false,
+ "meta": {
+  "classname": "FrontMiddleBackQueue",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "pushFront",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "pushMiddle",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "pushBack",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "popFront",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "popMiddle",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "popBack",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"FrontMiddleBackQueue\",\"pushFront\",\"pushBack\",\"pushMiddle\",\"pushMiddle\",\"popFront\",\"popMiddle\",\"popMiddle\",\"popBack\",\"popFront\"]\n[[],[1],[2],[3],[4],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, null, 1, 3, 4, 2, -1]"
+ ],
+ "anyOrder": false
+}

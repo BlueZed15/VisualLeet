@@ -1,0 +1,55 @@
+{
+ "slug": "rle-iterator",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "900",
+ "title": "RLE Iterator",
+ "premium": false,
+ "meta": {
+  "classname": "RLEIterator",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "encoding"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "next",
+    "params": [
+     {
+      "type": "integer",
+      "name": "n"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[3,8,0,9,2,5]],[2],[1],[1],[2]]"
+ ],
+ "exampleOutputs": [
+  "[null, 8, 8, 5, -1]"
+ ],
+ "anyOrder": false
+}

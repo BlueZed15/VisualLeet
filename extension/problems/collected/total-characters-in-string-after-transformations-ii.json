@@ -1,0 +1,36 @@
+{
+ "slug": "total-characters-in-string-after-transformations-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3337",
+ "title": "Total Characters in String After Transformations II",
+ "premium": false,
+ "meta": {
+  "name": "lengthAfterTransformations",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "t"
+   },
+   {
+    "type": "list<integer>",
+    "name": "nums"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcyy\"\n2\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]",
+  "\"azbk\"\n1\n[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "8"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "optimal-division",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "553",
+ "title": "Optimal Division",
+ "premium": false,
+ "meta": {
+  "name": "optimalDivision",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[1000,100,10,2]",
+  "[2,3,4]"
+ ],
+ "exampleOutputs": [
+  "\"1000/(100/10/2)\"",
+  "\"2/(3/4)\""
+ ],
+ "anyOrder": false
+}

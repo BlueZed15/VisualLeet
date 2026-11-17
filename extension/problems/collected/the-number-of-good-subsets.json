@@ -1,0 +1,28 @@
+{
+ "slug": "the-number-of-good-subsets",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1994",
+ "title": "The Number of Good Subsets",
+ "premium": false,
+ "meta": {
+  "name": "numberOfGoodSubsets",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[4,2,3,15]"
+ ],
+ "exampleOutputs": [
+  "6",
+  "5"
+ ],
+ "anyOrder": false
+}

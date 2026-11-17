@@ -1,0 +1,36 @@
+{
+ "slug": "the-latest-time-to-catch-a-bus",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2332",
+ "title": "The Latest Time to Catch a Bus",
+ "premium": false,
+ "meta": {
+  "name": "latestTimeCatchTheBus",
+  "params": [
+   {
+    "name": "buses",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "passengers"
+   },
+   {
+    "type": "integer",
+    "name": "capacity"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,20]\n[2,17,18,19]\n2",
+  "[20,30,10]\n[19,13,26,4,25,11,21]\n2"
+ ],
+ "exampleOutputs": [
+  "16",
+  "20"
+ ],
+ "anyOrder": false
+}

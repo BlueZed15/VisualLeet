@@ -1,0 +1,40 @@
+{
+ "slug": "count-the-repetitions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "466",
+ "title": "Count The Repetitions",
+ "premium": false,
+ "meta": {
+  "name": "getMaxRepetitions",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "name": "n1",
+    "type": "integer"
+   },
+   {
+    "name": "s2",
+    "type": "string"
+   },
+   {
+    "name": "n2",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"acb\"\n4\n\"ab\"\n2",
+  "\"acb\"\n1\n\"acb\"\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

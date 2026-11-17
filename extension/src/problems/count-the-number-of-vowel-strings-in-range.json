@@ -1,0 +1,35 @@
+{
+ "slug": "count-the-number-of-vowel-strings-in-range",
+ "frontendId": "2586",
+ "title": "Count the Number of Vowel Strings in Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\nleft = {left}\nright = {right}",
+ "visible": [
+  "words",
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().vowelStrings(words, left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

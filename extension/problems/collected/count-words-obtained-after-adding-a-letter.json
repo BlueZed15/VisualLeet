@@ -1,0 +1,32 @@
+{
+ "slug": "count-words-obtained-after-adding-a-letter",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2135",
+ "title": "Count Words Obtained After Adding a Letter",
+ "premium": false,
+ "meta": {
+  "name": "wordCount",
+  "params": [
+   {
+    "name": "startWords",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "targetWords"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
+  "[\"ab\",\"a\"]\n[\"abc\",\"abcd\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

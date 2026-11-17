@@ -1,0 +1,34 @@
+{
+ "slug": "maximize-sum-of-squares-of-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3723",
+ "title": "Maximize Sum of Squares of Digits",
+ "premium": false,
+ "meta": {
+  "name": "maxSumOfSquares",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "sum"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "2\n3",
+  "2\n17",
+  "1\n10"
+ ],
+ "exampleOutputs": [
+  "\"30\"",
+  "\"98\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

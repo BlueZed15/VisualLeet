@@ -1,0 +1,38 @@
+{
+ "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2554",
+ "title": "Maximum Number of Integers to Choose From a Range I",
+ "premium": false,
+ "meta": {
+  "name": "maxCount",
+  "params": [
+   {
+    "name": "banned",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer",
+    "name": "maxSum"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,6,5]\n5\n6",
+  "[1,2,3,4,5,6,7]\n8\n1",
+  "[11]\n7\n50"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "7"
+ ],
+ "anyOrder": false
+}

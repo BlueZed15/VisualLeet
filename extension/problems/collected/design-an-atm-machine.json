@@ -1,0 +1,50 @@
+{
+ "slug": "design-an-atm-machine",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2241",
+ "title": "Design an ATM Machine",
+ "premium": false,
+ "meta": {
+  "classname": "ATM",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer[]",
+      "name": "banknotesCount"
+     }
+    ],
+    "name": "deposit",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "amount"
+     }
+    ],
+    "name": "withdraw",
+    "return": {
+     "type": "integer[]"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"ATM\",\"deposit\",\"withdraw\",\"deposit\",\"withdraw\",\"withdraw\"]\n[[],[[0,0,1,2,1]],[600],[[0,1,0,1,1]],[600],[550]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]"
+ ],
+ "anyOrder": false
+}

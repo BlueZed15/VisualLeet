@@ -1,0 +1,31 @@
+{
+ "slug": "count-number-of-special-subsequences",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1955",
+ "title": "Count Number of Special Subsequences",
+ "premium": false,
+ "meta": {
+  "name": "countSpecialSubsequences",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "[0,1,2,2]",
+  "[2,2,0,0]",
+  "[0,1,2,0,1,2]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "7"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "longest-common-suffix-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3093",
+ "title": "Longest Common Suffix Queries",
+ "premium": false,
+ "meta": {
+  "name": "stringIndices",
+  "params": [
+   {
+    "name": "wordsContainer",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "wordsQuery"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"abcd\",\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+  "[\"abcdefgh\",\"poiuygh\",\"ghghgh\"]\n[\"gh\",\"acbfgh\",\"acbfegh\"]"
+ ],
+ "exampleOutputs": [
+  "[1,1,1]",
+  "[2,0,2]"
+ ],
+ "anyOrder": false
+}

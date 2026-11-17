@@ -1,0 +1,71 @@
+{
+ "slug": "design-movie-rental-system",
+ "frontendId": "1912",
+ "title": "Design Movie Rental System",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MovieRentingSystem",
+ "methods": {
+  "MovieRentingSystem": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "entries",
+    "type": "integer[][]"
+   }
+  ],
+  "search": [
+   {
+    "name": "movie",
+    "type": "integer"
+   }
+  ],
+  "rent": [
+   {
+    "name": "shop",
+    "type": "integer"
+   },
+   {
+    "name": "movie",
+    "type": "integer"
+   }
+  ],
+  "drop": [
+   {
+    "name": "shop",
+    "type": "integer"
+   },
+   {
+    "name": "movie",
+    "type": "integer"
+   }
+  ],
+  "report": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MovieRentingSystem(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

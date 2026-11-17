@@ -1,0 +1,35 @@
+{
+ "slug": "longest-substring-of-one-repeating-character",
+ "frontendId": "2213",
+ "title": "Longest Substring of One Repeating Character",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "queryCharacters",
+   "type": "string"
+  },
+  {
+   "name": "queryIndices",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nqueryCharacters = {queryCharacters}\nqueryIndices = {queryIndices}",
+ "visible": [
+  "s",
+  "queryCharacters",
+  "queryIndices"
+ ],
+ "call": "result = Solution().longestRepeating(s, queryCharacters, queryIndices)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

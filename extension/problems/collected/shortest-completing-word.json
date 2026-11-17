@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-completing-word",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "748",
+ "title": "Shortest Completing Word",
+ "premium": false,
+ "meta": {
+  "name": "shortestCompletingWord",
+  "params": [
+   {
+    "name": "licensePlate",
+    "type": "string"
+   },
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+  "\"1s3 456\"\n[\"looks\",\"pest\",\"stew\",\"show\"]"
+ ],
+ "exampleOutputs": [
+  "\"steps\"",
+  "\"pest\""
+ ],
+ "anyOrder": false
+}

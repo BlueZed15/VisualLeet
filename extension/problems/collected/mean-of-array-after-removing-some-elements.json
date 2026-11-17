@@ -1,0 +1,30 @@
+{
+ "slug": "mean-of-array-after-removing-some-elements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1619",
+ "title": "Mean of Array After Removing Some Elements",
+ "premium": false,
+ "meta": {
+  "name": "trimMean",
+  "params": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]",
+  "[6,2,7,5,1,2,0,3,10,2,5,0,5,5,0,8,7,6,8,0]",
+  "[6,0,7,0,7,5,7,8,3,4,0,7,8,1,6,8,1,1,2,4,8,1,9,5,4,3,8,5,10,8,6,6,1,0,6,10,8,2,3,4]"
+ ],
+ "exampleOutputs": [
+  "2.00000",
+  "4.00000",
+  "4.77778"
+ ],
+ "anyOrder": false
+}

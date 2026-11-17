@@ -1,0 +1,71 @@
+{
+ "slug": "design-spreadsheet",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3484",
+ "title": "Design Spreadsheet",
+ "premium": false,
+ "meta": {
+  "classname": "Spreadsheet",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "rows"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "cell"
+     },
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "name": "setCell",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "cell"
+     }
+    ],
+    "name": "resetCell",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "formula"
+     }
+    ],
+    "name": "getValue",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Spreadsheet\",\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]\n[[3],[\"=5+7\"],[\"A1\",10],[\"=A1+6\"],[\"B2\",15],[\"=A1+B2\"],[\"A1\"],[\"=A1+B2\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, 12, null, 16, null, 25, null, 15]"
+ ],
+ "anyOrder": false
+}

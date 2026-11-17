@@ -1,0 +1,35 @@
+{
+ "slug": "closest-dessert-cost",
+ "frontendId": "1774",
+ "title": "Closest Dessert Cost",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "baseCosts",
+   "type": "integer[]"
+  },
+  {
+   "name": "toppingCosts",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "baseCosts = {baseCosts}\ntoppingCosts = {toppingCosts}\ntarget = {target}",
+ "visible": [
+  "baseCosts",
+  "toppingCosts",
+  "target"
+ ],
+ "call": "result = Solution().closestCost(baseCosts, toppingCosts, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

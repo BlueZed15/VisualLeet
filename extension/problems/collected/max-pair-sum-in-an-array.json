@@ -1,0 +1,30 @@
+{
+ "slug": "max-pair-sum-in-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2815",
+ "title": "Max Pair Sum in an Array",
+ "premium": false,
+ "meta": {
+  "name": "maxSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[112,131,411]",
+  "[2536,1613,3366,162]",
+  "[51,71,17,24,42]"
+ ],
+ "exampleOutputs": [
+  "-1",
+  "5902",
+  "88"
+ ],
+ "anyOrder": false
+}

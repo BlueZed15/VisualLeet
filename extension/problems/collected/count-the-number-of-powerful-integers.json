@@ -1,0 +1,42 @@
+{
+ "slug": "count-the-number-of-powerful-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2999",
+ "title": "Count the Number of Powerful Integers",
+ "premium": false,
+ "meta": {
+  "name": "numberOfPowerfulInt",
+  "params": [
+   {
+    "name": "start",
+    "type": "long"
+   },
+   {
+    "type": "long",
+    "name": "finish"
+   },
+   {
+    "type": "integer",
+    "name": "limit"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "1\n6000\n4\n\"124\"",
+  "15\n215\n6\n\"10\"",
+  "1000\n2000\n4\n\"3000\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

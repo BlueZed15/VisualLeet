@@ -1,0 +1,66 @@
+{
+ "slug": "frequency-tracker",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2671",
+ "title": "Frequency Tracker",
+ "premium": false,
+ "meta": {
+  "classname": "FrequencyTracker",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "number"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "number"
+     }
+    ],
+    "name": "deleteOne",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "frequency"
+     }
+    ],
+    "name": "hasFrequency",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"FrequencyTracker\",\"add\",\"add\",\"hasFrequency\"]\n[[],[3],[3],[2]]",
+  "[\"FrequencyTracker\",\"add\",\"deleteOne\",\"hasFrequency\"]\n[[],[1],[1],[1]]",
+  "[\"FrequencyTracker\",\"hasFrequency\",\"add\",\"hasFrequency\"]\n[[],[2],[3],[1]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, true]",
+  "[null, null, null, false]",
+  "[null, false, null, true]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-matrix-after-queries",
+ "frontendId": "2718",
+ "title": "Sum of Matrix After Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "queries"
+ ],
+ "call": "result = Solution().matrixSumQueries(n, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

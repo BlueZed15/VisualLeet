@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-amount-of-time-to-fill-cups",
+ "frontendId": "2335",
+ "title": "Minimum Amount of Time to Fill Cups",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "amount",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "amount = {amount}",
+ "visible": [
+  "amount"
+ ],
+ "call": "result = Solution().fillCups(amount)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

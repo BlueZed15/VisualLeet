@@ -1,0 +1,56 @@
+{
+ "slug": "random-point-in-non-overlapping-rectangles",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "497",
+ "title": "Random Point in Non-overlapping Rectangles",
+ "premium": false,
+ "meta": {
+  "classname": "Solution",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "name": "rects",
+     "type": "integer[][]"
+    },
+    {
+     "type": "integer",
+     "name": "rectsSize",
+     "lang": "c",
+     "value": "size_1"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "pick",
+    "params": [],
+    "return": {
+     "type": "integer[]"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"Solution\",\"pick\",\"pick\",\"pick\",\"pick\",\"pick\"]\n[[[[-2,-2,1,1],[2,2,4,6]]],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]"
+ ],
+ "anyOrder": false
+}

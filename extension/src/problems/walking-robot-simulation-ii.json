@@ -1,0 +1,52 @@
+{
+ "slug": "walking-robot-simulation-ii",
+ "frontendId": "2069",
+ "title": "Walking Robot Simulation II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Robot",
+ "methods": {
+  "Robot": [
+   {
+    "name": "width",
+    "type": "integer"
+   },
+   {
+    "name": "height",
+    "type": "integer"
+   }
+  ],
+  "step": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "getPos": [],
+  "getDir": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Robot(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

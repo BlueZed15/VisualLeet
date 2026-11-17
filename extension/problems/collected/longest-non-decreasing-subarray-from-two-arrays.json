@@ -1,0 +1,34 @@
+{
+ "slug": "longest-non-decreasing-subarray-from-two-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2771",
+ "title": "Longest Non-decreasing Subarray From Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "maxNonDecreasingLength",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,1]\n[1,2,1]",
+  "[1,3,2,1]\n[2,2,3,4]",
+  "[1,1]\n[2,2]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

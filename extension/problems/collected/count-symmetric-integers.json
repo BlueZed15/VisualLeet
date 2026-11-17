@@ -1,0 +1,32 @@
+{
+ "slug": "count-symmetric-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2843",
+ "title": "  Count Symmetric Integers",
+ "premium": false,
+ "meta": {
+  "name": "countSymmetricIntegers",
+  "params": [
+   {
+    "name": "low",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "high"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n100",
+  "1200\n1230"
+ ],
+ "exampleOutputs": [
+  "9",
+  "4"
+ ],
+ "anyOrder": false
+}

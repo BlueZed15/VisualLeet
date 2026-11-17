@@ -1,0 +1,28 @@
+{
+ "slug": "prime-in-diagonal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2614",
+ "title": "Prime In Diagonal",
+ "premium": false,
+ "meta": {
+  "name": "diagonalPrime",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[1,2,3],[5,6,7],[9,10,11]]",
+  "[[1,2,3],[5,17,7],[9,11,10]]"
+ ],
+ "exampleOutputs": [
+  "11",
+  "17"
+ ],
+ "anyOrder": false
+}

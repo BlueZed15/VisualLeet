@@ -1,0 +1,45 @@
+{
+ "slug": "modify-graph-edge-weights",
+ "frontendId": "2699",
+ "title": "Modify Graph Edge Weights",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "source",
+   "type": "integer"
+  },
+  {
+   "name": "destination",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nsource = {source}\ndestination = {destination}\ntarget = {target}",
+ "visible": [
+  "n",
+  "edges",
+  "source",
+  "destination",
+  "target"
+ ],
+ "call": "result = Solution().modifiedGraphEdges(n, edges, source, destination, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

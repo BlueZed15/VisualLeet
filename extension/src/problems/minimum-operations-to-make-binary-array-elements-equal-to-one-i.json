@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-i",
+ "frontendId": "3191",
+ "title": "Minimum Operations to Make Binary Array Elements Equal to One I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}",
+ "visible": [
+  "nums"
+ ],
+ "call": "result = Solution().minOperations(nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

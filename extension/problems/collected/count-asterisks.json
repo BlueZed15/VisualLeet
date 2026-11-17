@@ -1,0 +1,30 @@
+{
+ "slug": "count-asterisks",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2315",
+ "title": "Count Asterisks",
+ "premium": false,
+ "meta": {
+  "name": "countAsterisks",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"l|*e*et|c**o|*de|\"",
+  "\"iamprogrammer\"",
+  "\"yo|uar|e**|b|e***au|tifu|l\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "5"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "zuma-game",
+ "frontendId": "488",
+ "title": "Zuma Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "board",
+   "type": "string"
+  },
+  {
+   "name": "hand",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "board = {board}\nhand = {hand}",
+ "visible": [
+  "board",
+  "hand"
+ ],
+ "call": "result = Solution().findMinStep(board, hand)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "zero-array-transformation-iii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3362",
+ "title": "Zero Array Transformation III",
+ "premium": false,
+ "meta": {
+  "name": "maxRemoval",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,0,2]\n[[0,2],[0,2],[1,1]]",
+  "[1,1,1,1]\n[[1,3],[0,2],[1,3],[1,2]]",
+  "[1,2,3,4]\n[[0,3]]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

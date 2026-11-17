@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-distinct-averages",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2465",
+ "title": "Number of Distinct Averages",
+ "premium": false,
+ "meta": {
+  "name": "distinctAverages",
+  "params": [
+   {
+    "type": "integer[]",
+    "name": "nums"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[4,1,4,0,3,5]",
+  "[1,100]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "find-nearest-point-that-has-the-same-x-or-y-coordinate",
+ "frontendId": "1779",
+ "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  },
+  {
+   "name": "points",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}\npoints = {points}",
+ "visible": [
+  "x",
+  "y",
+  "points"
+ ],
+ "call": "result = Solution().nearestValidPoint(x, y, points)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

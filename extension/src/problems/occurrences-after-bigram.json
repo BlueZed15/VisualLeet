@@ -1,0 +1,35 @@
+{
+ "slug": "occurrences-after-bigram",
+ "frontendId": "1078",
+ "title": "Occurrences After Bigram",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  },
+  {
+   "name": "first",
+   "type": "string"
+  },
+  {
+   "name": "second",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}\nfirst = {first}\nsecond = {second}",
+ "visible": [
+  "text",
+  "first",
+  "second"
+ ],
+ "call": "result = Solution().findOcurrences(text, first, second)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,45 @@
+{
+ "slug": "reward-top-k-students",
+ "frontendId": "2512",
+ "title": "Reward Top K Students",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "positive_feedback",
+   "type": "string[]"
+  },
+  {
+   "name": "negative_feedback",
+   "type": "string[]"
+  },
+  {
+   "name": "report",
+   "type": "string[]"
+  },
+  {
+   "name": "student_id",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "positive_feedback = {positive_feedback}\nnegative_feedback = {negative_feedback}\nreport = {report}\nstudent_id = {student_id}\nk = {k}",
+ "visible": [
+  "positive_feedback",
+  "negative_feedback",
+  "report",
+  "student_id",
+  "k"
+ ],
+ "call": "result = Solution().topStudents(positive_feedback, negative_feedback, report, student_id, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

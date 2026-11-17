@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-cost-walk-in-weighted-graph",
+ "frontendId": "3108",
+ "title": "Minimum Cost Walk in Weighted Graph",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "query",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nquery = {query}",
+ "visible": [
+  "n",
+  "edges",
+  "query"
+ ],
+ "call": "result = Solution().minimumCost(n, edges, query)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

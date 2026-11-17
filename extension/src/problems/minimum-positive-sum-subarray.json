@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-positive-sum-subarray",
+ "frontendId": "3364",
+ "title": "Minimum Positive Sum Subarray ",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "l",
+   "type": "integer"
+  },
+  {
+   "name": "r",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nl = {l}\nr = {r}",
+ "visible": [
+  "nums",
+  "l",
+  "r"
+ ],
+ "call": "result = Solution().minimumSumSubarray(nums, l, r)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-edge-weight-equilibrium-queries-in-a-tree",
+ "frontendId": "2846",
+ "title": "Minimum Edge Weight Equilibrium Queries in a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "edges",
+  "queries"
+ ],
+ "call": "result = Solution().minOperationsQueries(n, edges, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

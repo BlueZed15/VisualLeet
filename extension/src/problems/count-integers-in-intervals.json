@@ -1,0 +1,46 @@
+{
+ "slug": "count-integers-in-intervals",
+ "frontendId": "2276",
+ "title": "Count Integers in Intervals",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "CountIntervals",
+ "methods": {
+  "CountIntervals": [],
+  "add": [
+   {
+    "name": "left",
+    "type": "integer"
+   },
+   {
+    "name": "right",
+    "type": "integer"
+   }
+  ],
+  "count": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = CountIntervals(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

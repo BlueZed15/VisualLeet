@@ -1,0 +1,25 @@
+{
+ "slug": "longer-contiguous-segments-of-ones-than-zeros",
+ "frontendId": "1869",
+ "title": "Longer Contiguous Segments of Ones than Zeros",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().checkZeroOnes(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

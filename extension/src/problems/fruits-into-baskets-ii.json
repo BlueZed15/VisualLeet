@@ -1,0 +1,30 @@
+{
+ "slug": "fruits-into-baskets-ii",
+ "frontendId": "3477",
+ "title": "Fruits Into Baskets II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "fruits",
+   "type": "integer[]"
+  },
+  {
+   "name": "baskets",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "fruits = {fruits}\nbaskets = {baskets}",
+ "visible": [
+  "fruits",
+  "baskets"
+ ],
+ "call": "result = Solution().numOfUnplacedFruits(fruits, baskets)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

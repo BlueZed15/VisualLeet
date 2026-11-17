@@ -1,0 +1,30 @@
+{
+ "slug": "longest-chunked-palindrome-decomposition",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1147",
+ "title": "Longest Chunked Palindrome Decomposition",
+ "premium": false,
+ "meta": {
+  "name": "longestDecomposition",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ghiabcdefhelloadamhelloabcdefghi\"",
+  "\"merchant\"",
+  "\"antaprezatepzapreanta\""
+ ],
+ "exampleOutputs": [
+  "7",
+  "1",
+  "11"
+ ],
+ "anyOrder": false
+}

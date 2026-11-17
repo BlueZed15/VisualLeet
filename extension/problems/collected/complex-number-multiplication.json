@@ -1,0 +1,32 @@
+{
+ "slug": "complex-number-multiplication",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "537",
+ "title": "Complex Number Multiplication",
+ "premium": false,
+ "meta": {
+  "name": "complexNumberMultiply",
+  "params": [
+   {
+    "name": "num1",
+    "type": "string"
+   },
+   {
+    "name": "num2",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1+1i\"\n\"1+1i\"",
+  "\"1+-1i\"\n\"1+-1i\""
+ ],
+ "exampleOutputs": [
+  "\"0+2i\"",
+  "\"0+-2i\""
+ ],
+ "anyOrder": false
+}

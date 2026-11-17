@@ -1,0 +1,32 @@
+{
+ "slug": "count-prefixes-of-a-given-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2255",
+ "title": "Count Prefixes of a Given String",
+ "premium": false,
+ "meta": {
+  "name": "countPrefixes",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\"]\n\"abc\"",
+  "[\"a\",\"a\"]\n\"aa\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "design-bitset",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2166",
+ "title": "Design Bitset",
+ "premium": false,
+ "meta": {
+  "classname": "Bitset",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "size"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "idx"
+     }
+    ],
+    "name": "fix",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "idx"
+     }
+    ],
+    "name": "unfix",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "flip",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "all",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [],
+    "name": "one",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [],
+    "name": "count",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [],
+    "name": "toString",
+    "return": {
+     "type": "string"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true,
+  "manual": false
+ },
+ "exampleInputs": [
+  "[\"Bitset\",\"fix\",\"fix\",\"flip\",\"all\",\"unfix\",\"flip\",\"one\",\"unfix\",\"count\",\"toString\"]\n[[5],[3],[1],[],[],[0],[],[],[0],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]"
+ ],
+ "anyOrder": false
+}

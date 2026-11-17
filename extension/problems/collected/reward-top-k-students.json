@@ -1,0 +1,44 @@
+{
+ "slug": "reward-top-k-students",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2512",
+ "title": "Reward Top K Students",
+ "premium": false,
+ "meta": {
+  "name": "topStudents",
+  "params": [
+   {
+    "name": "positive_feedback",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "negative_feedback"
+   },
+   {
+    "type": "string[]",
+    "name": "report"
+   },
+   {
+    "type": "integer[]",
+    "name": "student_id"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+  "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is not studious\",\"the student is smart\"]\n[1,2]\n2"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[2,1]"
+ ],
+ "anyOrder": false
+}

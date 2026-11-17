@@ -1,0 +1,32 @@
+{
+ "slug": "sum-of-values-at-indices-with-k-set-bits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2859",
+ "title": "Sum of Values at Indices With K Set Bits",
+ "premium": false,
+ "meta": {
+  "name": "sumIndicesWithKSetBits",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,10,1,5,2]\n1",
+  "[4,3,2,1]\n2"
+ ],
+ "exampleOutputs": [
+  "13",
+  "1"
+ ],
+ "anyOrder": false
+}

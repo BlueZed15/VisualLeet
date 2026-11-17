@@ -1,0 +1,40 @@
+{
+ "slug": "path-existence-queries-in-a-graph-i",
+ "frontendId": "3532",
+ "title": "Path Existence Queries in a Graph I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "maxDiff",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nnums = {nums}\nmaxDiff = {maxDiff}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "nums",
+  "maxDiff",
+  "queries"
+ ],
+ "call": "result = Solution().pathExistenceQueries(n, nums, maxDiff, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

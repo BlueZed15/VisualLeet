@@ -1,0 +1,30 @@
+{
+ "slug": "smallest-palindromic-rearrangement-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3517",
+ "title": "Smallest Palindromic Rearrangement I",
+ "premium": false,
+ "meta": {
+  "name": "smallestPalindrome",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"z\"",
+  "\"babab\"",
+  "\"daccad\""
+ ],
+ "exampleOutputs": [
+  "\"z\"",
+  "\"abbba\"",
+  "\"acddca\""
+ ],
+ "anyOrder": false
+}

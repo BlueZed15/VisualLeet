@@ -1,0 +1,30 @@
+{
+ "slug": "count-the-number-of-good-partitions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2963",
+ "title": "Count the Number of Good Partitions",
+ "premium": false,
+ "meta": {
+  "name": "numberOfGoodPartitions",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4]",
+  "[1,1,1,1]",
+  "[1,2,1,3]"
+ ],
+ "exampleOutputs": [
+  "8",
+  "1",
+  "2"
+ ],
+ "anyOrder": false
+}

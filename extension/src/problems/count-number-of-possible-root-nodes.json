@@ -1,0 +1,35 @@
+{
+ "slug": "count-number-of-possible-root-nodes",
+ "frontendId": "2581",
+ "title": "Count Number of Possible Root Nodes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "guesses",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nguesses = {guesses}\nk = {k}",
+ "visible": [
+  "edges",
+  "guesses",
+  "k"
+ ],
+ "call": "result = Solution().rootCount(edges, guesses, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

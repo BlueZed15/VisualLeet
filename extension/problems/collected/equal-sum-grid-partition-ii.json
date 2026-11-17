@@ -1,0 +1,32 @@
+{
+ "slug": "equal-sum-grid-partition-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3548",
+ "title": "Equal Sum Grid Partition II",
+ "premium": false,
+ "meta": {
+  "name": "canPartitionGrid",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[1,4],[2,3]]",
+  "[[1,2],[3,4]]",
+  "[[1,2,4],[2,3,5]]",
+  "[[4,1,8],[3,2,6]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

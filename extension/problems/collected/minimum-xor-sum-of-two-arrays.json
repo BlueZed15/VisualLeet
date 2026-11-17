@@ -1,0 +1,32 @@
+{
+ "slug": "minimum-xor-sum-of-two-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1879",
+ "title": "Minimum XOR Sum of Two Arrays",
+ "premium": false,
+ "meta": {
+  "name": "minimumXORSum",
+  "params": [
+   {
+    "name": "nums1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "nums2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2]\n[2,3]",
+  "[1,0,3]\n[5,3,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "8"
+ ],
+ "anyOrder": false
+}

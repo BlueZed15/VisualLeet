@@ -1,0 +1,28 @@
+{
+ "slug": "count-largest-group",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1399",
+ "title": "Count Largest Group",
+ "premium": false,
+ "meta": {
+  "name": "countLargestGroup",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "13",
+  "2"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

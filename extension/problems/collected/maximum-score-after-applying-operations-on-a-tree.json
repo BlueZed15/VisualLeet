@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-score-after-applying-operations-on-a-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2925",
+ "title": "Maximum Score After Applying Operations on a Tree",
+ "premium": false,
+ "meta": {
+  "name": "maximumScoreAfterOperations",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer[]",
+    "name": "values"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[0,2],[0,3],[2,4],[4,5]]\n[5,2,5,2,1,1]",
+  "[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]\n[20,10,9,7,4,3,5]"
+ ],
+ "exampleOutputs": [
+  "11",
+  "40"
+ ],
+ "anyOrder": false
+}

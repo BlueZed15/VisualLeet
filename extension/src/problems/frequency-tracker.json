@@ -1,0 +1,53 @@
+{
+ "slug": "frequency-tracker",
+ "frontendId": "2671",
+ "title": "Frequency Tracker",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "FrequencyTracker",
+ "methods": {
+  "FrequencyTracker": [],
+  "add": [
+   {
+    "name": "number",
+    "type": "integer"
+   }
+  ],
+  "deleteOne": [
+   {
+    "name": "number",
+    "type": "integer"
+   }
+  ],
+  "hasFrequency": [
+   {
+    "name": "frequency",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = FrequencyTracker(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

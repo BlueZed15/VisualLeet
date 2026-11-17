@@ -1,0 +1,45 @@
+{
+ "slug": "maximum-profit-from-trading-stocks-with-discounts",
+ "frontendId": "3562",
+ "title": "Maximum Profit from Trading Stocks with Discounts",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "present",
+   "type": "integer[]"
+  },
+  {
+   "name": "future",
+   "type": "integer[]"
+  },
+  {
+   "name": "hierarchy",
+   "type": "integer[][]"
+  },
+  {
+   "name": "budget",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\npresent = {present}\nfuture = {future}\nhierarchy = {hierarchy}\nbudget = {budget}",
+ "visible": [
+  "n",
+  "present",
+  "future",
+  "hierarchy",
+  "budget"
+ ],
+ "call": "result = Solution().maxProfit(n, present, future, hierarchy, budget)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

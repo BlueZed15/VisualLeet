@@ -1,0 +1,42 @@
+{
+ "slug": "coloring-a-border",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1034",
+ "title": "Coloring A Border",
+ "premium": false,
+ "meta": {
+  "name": "colorBorder",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   },
+   {
+    "name": "row",
+    "type": "integer"
+   },
+   {
+    "name": "col",
+    "type": "integer"
+   },
+   {
+    "name": "color",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[1,1],[1,2]]\n0\n0\n3",
+  "[[1,2,2],[2,3,2]]\n0\n1\n3",
+  "[[1,1,1],[1,1,1],[1,1,1]]\n1\n1\n2"
+ ],
+ "exampleOutputs": [
+  "[[3,3],[3,2]]",
+  "[[1,3,3],[2,3,3]]",
+  "[[2,2,2],[2,1,2],[2,2,2]]"
+ ],
+ "anyOrder": false
+}

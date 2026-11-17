@@ -1,0 +1,28 @@
+{
+ "slug": "clear-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3174",
+ "title": "Clear Digits",
+ "premium": false,
+ "meta": {
+  "name": "clearDigits",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abc\"",
+  "\"cb34\""
+ ],
+ "exampleOutputs": [
+  "\"abc\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

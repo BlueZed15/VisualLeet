@@ -1,0 +1,35 @@
+{
+ "slug": "find-all-possible-stable-binary-arrays-i",
+ "frontendId": "3129",
+ "title": "Find All Possible Stable Binary Arrays I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "zero",
+   "type": "integer"
+  },
+  {
+   "name": "one",
+   "type": "integer"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "zero = {zero}\none = {one}\nlimit = {limit}",
+ "visible": [
+  "zero",
+  "one",
+  "limit"
+ ],
+ "call": "result = Solution().numberOfStableArrays(zero, one, limit)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

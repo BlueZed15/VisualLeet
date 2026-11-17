@@ -1,0 +1,28 @@
+{
+ "slug": "sum-of-floored-pairs",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1862",
+ "title": "Sum of Floored Pairs",
+ "premium": false,
+ "meta": {
+  "name": "sumOfFlooredPairs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,5,9]",
+  "[7,7,7,7,7,7,7]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "49"
+ ],
+ "anyOrder": false
+}

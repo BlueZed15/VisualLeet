@@ -1,0 +1,32 @@
+{
+ "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2840",
+ "title": "Check if Strings Can be Made Equal With Operations II",
+ "premium": false,
+ "meta": {
+  "name": "checkStrings",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "s2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"abcdba\"\n\"cabdab\"",
+  "\"abe\"\n\"bea\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

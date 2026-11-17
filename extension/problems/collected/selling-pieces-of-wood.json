@@ -1,0 +1,36 @@
+{
+ "slug": "selling-pieces-of-wood",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2312",
+ "title": "Selling Pieces of Wood",
+ "premium": false,
+ "meta": {
+  "name": "sellingWood",
+  "params": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "prices"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "3\n5\n[[1,4,2],[2,2,7],[2,1,3]]",
+  "4\n6\n[[3,2,10],[1,4,2],[4,1,3]]"
+ ],
+ "exampleOutputs": [
+  "19",
+  "32"
+ ],
+ "anyOrder": false
+}

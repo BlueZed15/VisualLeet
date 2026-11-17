@@ -1,0 +1,40 @@
+{
+ "slug": "reschedule-meetings-for-maximum-free-time-i",
+ "frontendId": "3439",
+ "title": "Reschedule Meetings for Maximum Free Time I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "eventTime",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "startTime",
+   "type": "integer[]"
+  },
+  {
+   "name": "endTime",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "eventTime = {eventTime}\nk = {k}\nstartTime = {startTime}\nendTime = {endTime}",
+ "visible": [
+  "eventTime",
+  "k",
+  "startTime",
+  "endTime"
+ ],
+ "call": "result = Solution().maxFreeTime(eventTime, k, startTime, endTime)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

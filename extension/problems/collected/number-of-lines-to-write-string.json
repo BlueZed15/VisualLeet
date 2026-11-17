@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-lines-to-write-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "806",
+ "title": "Number of Lines To Write String",
+ "premium": false,
+ "meta": {
+  "name": "numberOfLines",
+  "params": [
+   {
+    "name": "widths",
+    "type": "integer[]"
+   },
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\n\"abcdefghijklmnopqrstuvwxyz\"",
+  "[4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\n\"bbbcccdddaaa\""
+ ],
+ "exampleOutputs": [
+  "[3,60]",
+  "[2,4]"
+ ],
+ "anyOrder": false
+}

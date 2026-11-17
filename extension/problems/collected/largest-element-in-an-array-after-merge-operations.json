@@ -1,0 +1,28 @@
+{
+ "slug": "largest-element-in-an-array-after-merge-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2789",
+ "title": "Largest Element in an Array after Merge Operations",
+ "premium": false,
+ "meta": {
+  "name": "maxArrayValue",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,7,9,3]",
+  "[5,3,3]"
+ ],
+ "exampleOutputs": [
+  "21",
+  "11"
+ ],
+ "anyOrder": false
+}

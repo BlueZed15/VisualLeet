@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-operations-to-convert-number",
+ "frontendId": "2059",
+ "title": "Minimum Operations to Convert Number",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "start",
+   "type": "integer"
+  },
+  {
+   "name": "goal",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nstart = {start}\ngoal = {goal}",
+ "visible": [
+  "nums",
+  "start",
+  "goal"
+ ],
+ "call": "result = Solution().minimumOperations(nums, start, goal)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

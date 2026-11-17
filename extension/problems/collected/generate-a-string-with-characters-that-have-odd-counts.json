@@ -1,0 +1,30 @@
+{
+ "slug": "generate-a-string-with-characters-that-have-odd-counts",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1374",
+ "title": "Generate a String With Characters That Have Odd Counts",
+ "premium": false,
+ "meta": {
+  "name": "generateTheString",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "2",
+  "7"
+ ],
+ "exampleOutputs": [
+  "\"pppz\"",
+  "\"xy\"",
+  "\"holasss\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-space-wasted-from-packaging",
+ "frontendId": "1889",
+ "title": "Minimum Space Wasted From Packaging",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "packages",
+   "type": "integer[]"
+  },
+  {
+   "name": "boxes",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "packages = {packages}\nboxes = {boxes}",
+ "visible": [
+  "packages",
+  "boxes"
+ ],
+ "call": "result = Solution().minWastedSpace(packages, boxes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

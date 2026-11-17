@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-value-of-the-partition",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2740",
+ "title": "Find the Value of the Partition",
+ "premium": false,
+ "meta": {
+  "name": "findValueOfPartition",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,3,2,4]",
+  "[100,1,10]"
+ ],
+ "exampleOutputs": [
+  "1",
+  "9"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-area-of-longest-diagonal-rectangle",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3000",
+ "title": "Maximum Area of Longest Diagonal Rectangle",
+ "premium": false,
+ "meta": {
+  "name": "areaOfMaxDiagonal",
+  "params": [
+   {
+    "name": "dimensions",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[9,3],[8,6]]",
+  "[[3,4],[4,3]]"
+ ],
+ "exampleOutputs": [
+  "48",
+  "12"
+ ],
+ "anyOrder": false
+}

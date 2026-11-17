@@ -1,0 +1,35 @@
+{
+ "slug": "maximize-spanning-tree-stability-with-upgrades",
+ "frontendId": "3600",
+ "title": "Maximize Spanning Tree Stability with Upgrades",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nk = {k}",
+ "visible": [
+  "n",
+  "edges",
+  "k"
+ ],
+ "call": "result = Solution().maxStability(n, edges, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

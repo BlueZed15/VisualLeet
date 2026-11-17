@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-numbers-are-ascending-in-a-sentence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2042",
+ "title": "Check if Numbers Are Ascending in a Sentence",
+ "premium": false,
+ "meta": {
+  "name": "areNumbersAscending",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"1 box has 3 blue 4 red 6 green and 12 yellow marbles\"",
+  "\"hello world 5 x 5\"",
+  "\"sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

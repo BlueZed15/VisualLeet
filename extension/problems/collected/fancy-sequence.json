@@ -1,0 +1,74 @@
+{
+ "slug": "fancy-sequence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1622",
+ "title": "Fancy Sequence",
+ "premium": false,
+ "meta": {
+  "classname": "Fancy",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "append",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "inc"
+     }
+    ],
+    "name": "addAll",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "m"
+     }
+    ],
+    "name": "multAll",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "idx"
+     }
+    ],
+    "name": "getIndex",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[2],[3],[7],[2],[0],[3],[10],[2],[0],[1],[2]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, null, 10, null, null, null, 26, 34, 20]"
+ ],
+ "anyOrder": false
+}

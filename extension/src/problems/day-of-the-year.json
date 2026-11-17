@@ -1,0 +1,25 @@
+{
+ "slug": "day-of-the-year",
+ "frontendId": "1154",
+ "title": "Day of the Year",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "date",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "date = {date}",
+ "visible": [
+  "date"
+ ],
+ "call": "result = Solution().dayOfYear(date)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

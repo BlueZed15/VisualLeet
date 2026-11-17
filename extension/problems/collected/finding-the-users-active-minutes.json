@@ -1,0 +1,32 @@
+{
+ "slug": "finding-the-users-active-minutes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1817",
+ "title": "Finding the Users Active Minutes",
+ "premium": false,
+ "meta": {
+  "name": "findingUsersActiveMinutes",
+  "params": [
+   {
+    "name": "logs",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[0,5],[1,2],[0,2],[0,5],[1,3]]\n5",
+  "[[1,1],[2,2],[2,3]]\n4"
+ ],
+ "exampleOutputs": [
+  "[0,2,0,0,0]",
+  "[1,1,0,0]"
+ ],
+ "anyOrder": false
+}

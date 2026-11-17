@@ -1,0 +1,30 @@
+{
+ "slug": "total-distance-traveled",
+ "frontendId": "2739",
+ "title": "Total Distance Traveled",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mainTank",
+   "type": "integer"
+  },
+  {
+   "name": "additionalTank",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "mainTank = {mainTank}\nadditionalTank = {additionalTank}",
+ "visible": [
+  "mainTank",
+  "additionalTank"
+ ],
+ "call": "result = Solution().distanceTraveled(mainTank, additionalTank)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

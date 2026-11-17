@@ -1,0 +1,28 @@
+{
+ "slug": "power-of-heroes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2681",
+ "title": "Power of Heroes",
+ "premium": false,
+ "meta": {
+  "name": "sumOfPower",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,1,4]",
+  "[1,1,1]"
+ ],
+ "exampleOutputs": [
+  "141",
+  "7"
+ ],
+ "anyOrder": false
+}

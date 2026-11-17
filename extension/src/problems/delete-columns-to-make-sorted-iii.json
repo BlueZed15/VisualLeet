@@ -1,0 +1,25 @@
+{
+ "slug": "delete-columns-to-make-sorted-iii",
+ "frontendId": "960",
+ "title": "Delete Columns to Make Sorted III",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "strs = {strs}",
+ "visible": [
+  "strs"
+ ],
+ "call": "result = Solution().minDeletionSize(strs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

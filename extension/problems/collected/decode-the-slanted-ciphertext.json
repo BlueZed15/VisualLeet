@@ -1,0 +1,34 @@
+{
+ "slug": "decode-the-slanted-ciphertext",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2075",
+ "title": "Decode the Slanted Ciphertext",
+ "premium": false,
+ "meta": {
+  "name": "decodeCiphertext",
+  "params": [
+   {
+    "name": "encodedText",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "rows"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"ch   ie   pr\"\n3",
+  "\"iveo    eed   l te   olc\"\n4",
+  "\"coding\"\n1"
+ ],
+ "exampleOutputs": [
+  "\"cipher\"",
+  "\"i love leetcode\"",
+  "\"coding\""
+ ],
+ "anyOrder": false
+}

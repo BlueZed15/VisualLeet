@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-changes-to-make-binary-string-beautiful",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2914",
+ "title": "Minimum Number of Changes to Make Binary String Beautiful",
+ "premium": false,
+ "meta": {
+  "name": "minChanges",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1001\"",
+  "\"10\"",
+  "\"0000\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

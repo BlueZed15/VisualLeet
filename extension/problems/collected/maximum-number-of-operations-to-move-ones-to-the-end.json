@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-operations-to-move-ones-to-the-end",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3228",
+ "title": "Maximum Number of Operations to Move Ones to the End",
+ "premium": false,
+ "meta": {
+  "name": "maxOperations",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1001101\"",
+  "\"00111\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "0"
+ ],
+ "anyOrder": false
+}

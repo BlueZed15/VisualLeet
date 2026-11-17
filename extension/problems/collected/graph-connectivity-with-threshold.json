@@ -1,0 +1,38 @@
+{
+ "slug": "graph-connectivity-with-threshold",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1627",
+ "title": "Graph Connectivity With Threshold",
+ "premium": false,
+ "meta": {
+  "name": "areConnected",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "threshold"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "list<boolean>"
+  }
+ },
+ "exampleInputs": [
+  "6\n2\n[[1,4],[2,5],[3,6]]",
+  "6\n0\n[[4,5],[3,4],[3,2],[2,6],[1,3]]",
+  "5\n1\n[[4,5],[4,5],[3,2],[2,3],[3,4]]"
+ ],
+ "exampleOutputs": [
+  "[false,false,true]",
+  "[true,true,true,true,true]",
+  "[false,false,false,false,false]"
+ ],
+ "anyOrder": false
+}

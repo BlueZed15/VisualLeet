@@ -1,0 +1,30 @@
+{
+ "slug": "count-fertile-pyramids-in-a-land",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2088",
+ "title": "Count Fertile Pyramids in a Land",
+ "premium": false,
+ "meta": {
+  "name": "countPyramids",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,1,0],[1,1,1,1]]",
+  "[[1,1,1],[1,1,1]]",
+  "[[1,1,1,1,0],[1,1,1,1,1],[1,1,1,1,1],[0,1,0,0,1]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "13"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "count-total-number-of-colored-cells",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2579",
+ "title": "Count Total Number of Colored Cells",
+ "premium": false,
+ "meta": {
+  "name": "coloredCells",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "2"
+ ],
+ "exampleOutputs": [
+  "1",
+  "5"
+ ],
+ "anyOrder": false
+}

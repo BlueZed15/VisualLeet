@@ -1,0 +1,25 @@
+{
+ "slug": "node-with-highest-edge-score",
+ "frontendId": "2374",
+ "title": "Node With Highest Edge Score",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}",
+ "visible": [
+  "edges"
+ ],
+ "call": "result = Solution().edgeScore(edges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

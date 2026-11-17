@@ -1,0 +1,32 @@
+{
+ "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2791",
+ "title": "Count Paths That Can Form a Palindrome in a Tree",
+ "premium": false,
+ "meta": {
+  "name": "countPalindromePaths",
+  "params": [
+   {
+    "name": "parent",
+    "type": "list<integer>"
+   },
+   {
+    "type": "string",
+    "name": "s"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[-1,0,0,1,1,2]\n\"acaabc\"",
+  "[-1,0,0,0,0]\n\"aaaaa\""
+ ],
+ "exampleOutputs": [
+  "8",
+  "10"
+ ],
+ "anyOrder": false
+}

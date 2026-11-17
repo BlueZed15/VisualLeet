@@ -1,0 +1,25 @@
+{
+ "slug": "count-ways-to-build-rooms-in-an-ant-colony",
+ "frontendId": "1916",
+ "title": "Count Ways to Build Rooms in an Ant Colony",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "prevRoom",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "prevRoom = {prevRoom}",
+ "visible": [
+  "prevRoom"
+ ],
+ "call": "result = Solution().waysToBuildRooms(prevRoom)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

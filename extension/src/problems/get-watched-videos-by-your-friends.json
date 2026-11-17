@@ -1,0 +1,40 @@
+{
+ "slug": "get-watched-videos-by-your-friends",
+ "frontendId": "1311",
+ "title": "Get Watched Videos by Your Friends",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "watchedVideos",
+   "type": "list<list<string>>"
+  },
+  {
+   "name": "friends",
+   "type": "integer[][]"
+  },
+  {
+   "name": "id",
+   "type": "integer"
+  },
+  {
+   "name": "level",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "watchedVideos = {watchedVideos}\nfriends = {friends}\nid_ = {id}\nlevel = {level}",
+ "visible": [
+  "watchedVideos",
+  "friends",
+  "id_",
+  "level"
+ ],
+ "call": "result = Solution().watchedVideosByFriends(watchedVideos, friends, id_, level)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

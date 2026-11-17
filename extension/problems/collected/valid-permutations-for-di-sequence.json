@@ -1,0 +1,28 @@
+{
+ "slug": "valid-permutations-for-di-sequence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "903",
+ "title": "Valid Permutations for DI Sequence",
+ "premium": false,
+ "meta": {
+  "name": "numPermsDISequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"DID\"",
+  "\"D\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "1"
+ ],
+ "anyOrder": false
+}

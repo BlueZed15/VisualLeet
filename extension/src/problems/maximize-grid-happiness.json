@@ -1,0 +1,40 @@
+{
+ "slug": "maximize-grid-happiness",
+ "frontendId": "1659",
+ "title": "Maximize Grid Happiness",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "introvertsCount",
+   "type": "integer"
+  },
+  {
+   "name": "extrovertsCount",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "m = {m}\nn = {n}\nintrovertsCount = {introvertsCount}\nextrovertsCount = {extrovertsCount}",
+ "visible": [
+  "m",
+  "n",
+  "introvertsCount",
+  "extrovertsCount"
+ ],
+ "call": "result = Solution().getMaxGridHappiness(m, n, introvertsCount, extrovertsCount)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

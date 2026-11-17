@@ -1,0 +1,36 @@
+{
+ "slug": "find-x-sum-of-all-k-long-subarrays-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3318",
+ "title": "Find X-Sum of All K-Long Subarrays I",
+ "premium": false,
+ "meta": {
+  "name": "findXSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,2,2,3,4,2,3]\n6\n2",
+  "[3,8,7,8,7,5]\n2\n2"
+ ],
+ "exampleOutputs": [
+  "[6,10,12]",
+  "[11,15,15,15,12]"
+ ],
+ "anyOrder": false
+}

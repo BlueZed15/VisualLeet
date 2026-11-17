@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-number-has-equal-digit-count-and-digit-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2283",
+ "title": "Check if Number Has Equal Digit Count and Digit Value",
+ "premium": false,
+ "meta": {
+  "name": "digitCount",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"1210\"",
+  "\"030\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

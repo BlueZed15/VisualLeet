@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-all-as-appears-before-all-bs",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2124",
+ "title": "Check if All A's Appears Before All B's",
+ "premium": false,
+ "meta": {
+  "name": "checkString",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"aaabbb\"",
+  "\"abab\"",
+  "\"bbb\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

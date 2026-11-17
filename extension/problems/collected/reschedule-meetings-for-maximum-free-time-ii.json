@@ -1,0 +1,40 @@
+{
+ "slug": "reschedule-meetings-for-maximum-free-time-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3440",
+ "title": "Reschedule Meetings for Maximum Free Time II",
+ "premium": false,
+ "meta": {
+  "name": "maxFreeTime",
+  "params": [
+   {
+    "name": "eventTime",
+    "type": "integer"
+   },
+   {
+    "type": "integer[]",
+    "name": "startTime"
+   },
+   {
+    "type": "integer[]",
+    "name": "endTime"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5\n[1,3]\n[2,5]",
+  "10\n[0,7,9]\n[1,8,10]",
+  "10\n[0,3,7,9]\n[1,4,8,10]",
+  "5\n[0,1,2,3,4]\n[1,2,3,4,5]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "7",
+  "6",
+  "0"
+ ],
+ "anyOrder": false
+}

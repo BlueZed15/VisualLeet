@@ -1,0 +1,32 @@
+{
+ "slug": "circular-permutation-in-binary-representation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1238",
+ "title": "Circular Permutation in Binary Representation",
+ "premium": false,
+ "meta": {
+  "name": "circularPermutation",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "start"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "2\n3",
+  "3\n2"
+ ],
+ "exampleOutputs": [
+  "[3,2,0,1]",
+  "[2,6,7,5,4,0,1,3]"
+ ],
+ "anyOrder": false
+}

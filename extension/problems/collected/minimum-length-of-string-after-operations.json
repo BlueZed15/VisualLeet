@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-length-of-string-after-operations",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3223",
+ "title": "Minimum Length of String After Operations",
+ "premium": false,
+ "meta": {
+  "name": "minimumLength",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abaacbcbb\"",
+  "\"aa\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-viii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1872",
+ "title": "Stone Game VIII",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameVIII",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[-1,2,-3,4,-5]",
+  "[7,-6,5,10,5,-2,-6]",
+  "[-10,-12]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "13",
+  "-22"
+ ],
+ "anyOrder": false
+}

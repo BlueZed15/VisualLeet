@@ -1,0 +1,28 @@
+{
+ "slug": "string-compression-iii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3163",
+ "title": "String Compression III",
+ "premium": false,
+ "meta": {
+  "name": "compressedString",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"abcde\"",
+  "\"aaaaaaaaaaaaaabb\""
+ ],
+ "exampleOutputs": [
+  "\"1a1b1c1d1e\"",
+  "\"9a5a2b\""
+ ],
+ "anyOrder": false
+}

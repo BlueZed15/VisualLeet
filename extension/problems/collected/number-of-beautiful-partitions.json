@@ -1,0 +1,38 @@
+{
+ "slug": "number-of-beautiful-partitions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2478",
+ "title": "Number of Beautiful Partitions",
+ "premium": false,
+ "meta": {
+  "name": "beautifulPartitions",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "minLength"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"23542185131\"\n3\n2",
+  "\"23542185131\"\n3\n3",
+  "\"3312958\"\n3\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1",
+  "1"
+ ],
+ "anyOrder": false
+}

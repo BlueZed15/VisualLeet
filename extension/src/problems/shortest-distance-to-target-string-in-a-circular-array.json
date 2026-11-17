@@ -1,0 +1,35 @@
+{
+ "slug": "shortest-distance-to-target-string-in-a-circular-array",
+ "frontendId": "2515",
+ "title": "Shortest Distance to Target String in a Circular Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "words",
+   "type": "string[]"
+  },
+  {
+   "name": "target",
+   "type": "string"
+  },
+  {
+   "name": "startIndex",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "words = {words}\ntarget = {target}\nstartIndex = {startIndex}",
+ "visible": [
+  "words",
+  "target",
+  "startIndex"
+ ],
+ "call": "result = Solution().closestTarget(words, target, startIndex)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

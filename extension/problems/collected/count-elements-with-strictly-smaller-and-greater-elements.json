@@ -1,0 +1,28 @@
+{
+ "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2148",
+ "title": "Count Elements With Strictly Smaller and Greater Elements ",
+ "premium": false,
+ "meta": {
+  "name": "countElements",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[11,7,2,15]",
+  "[-3,3,3,90]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2"
+ ],
+ "anyOrder": false
+}

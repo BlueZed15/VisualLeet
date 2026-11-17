@@ -1,0 +1,35 @@
+{
+ "slug": "match-substring-after-replacement",
+ "frontendId": "2301",
+ "title": "Match Substring After Replacement",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "sub",
+   "type": "string"
+  },
+  {
+   "name": "mappings",
+   "type": "character[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nsub = {sub}\nmappings = {mappings}",
+ "visible": [
+  "s",
+  "sub",
+  "mappings"
+ ],
+ "call": "result = Solution().matchReplacement(s, sub, mappings)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

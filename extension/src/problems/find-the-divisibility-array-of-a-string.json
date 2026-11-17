@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-divisibility-array-of-a-string",
+ "frontendId": "2575",
+ "title": "Find the Divisibility Array of a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nm = {m}",
+ "visible": [
+  "word",
+  "m"
+ ],
+ "call": "result = Solution().divisibilityArray(word, m)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

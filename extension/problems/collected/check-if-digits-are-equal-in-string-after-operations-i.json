@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-digits-are-equal-in-string-after-operations-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3461",
+ "title": "Check If Digits Are Equal in String After Operations I",
+ "premium": false,
+ "meta": {
+  "name": "hasSameDigits",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"3902\"",
+  "\"34789\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

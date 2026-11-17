@@ -1,0 +1,25 @@
+{
+ "slug": "strange-printer-ii",
+ "frontendId": "1591",
+ "title": "Strange Printer II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "targetGrid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "targetGrid = {targetGrid}",
+ "visible": [
+  "targetGrid"
+ ],
+ "call": "result = Solution().isPrintable(targetGrid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

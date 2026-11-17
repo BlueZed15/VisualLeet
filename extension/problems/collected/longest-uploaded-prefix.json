@@ -1,0 +1,50 @@
+{
+ "slug": "longest-uploaded-prefix",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2424",
+ "title": "Longest Uploaded Prefix",
+ "premium": false,
+ "meta": {
+  "classname": "LUPrefix",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "video"
+     }
+    ],
+    "name": "upload",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "return": {
+     "type": "integer"
+    },
+    "name": "longest"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"LUPrefix\",\"upload\",\"longest\",\"upload\",\"longest\",\"upload\",\"longest\"]\n[[4],[3],[],[1],[],[2],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, 0, null, 1, null, 3]"
+ ],
+ "anyOrder": false
+}

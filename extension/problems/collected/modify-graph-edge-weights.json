@@ -1,0 +1,46 @@
+{
+ "slug": "modify-graph-edge-weights",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2699",
+ "title": "Modify Graph Edge Weights",
+ "premium": false,
+ "meta": {
+  "name": "modifiedGraphEdges",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer",
+    "name": "source"
+   },
+   {
+    "type": "integer",
+    "name": "destination"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "5\n[[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]]\n0\n1\n5",
+  "3\n[[0,1,-1],[0,2,5]]\n0\n2\n6",
+  "4\n[[1,0,4],[1,2,3],[2,3,5],[0,3,-1]]\n0\n2\n6"
+ ],
+ "exampleOutputs": [
+  "[[4,1,1],[2,0,1],[0,3,3],[4,3,1]]",
+  "[]",
+  "[[1,0,4],[1,2,3],[2,3,5],[0,3,1]]"
+ ],
+ "anyOrder": true
+}

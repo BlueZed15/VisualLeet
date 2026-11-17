@@ -1,0 +1,28 @@
+{
+ "slug": "node-with-highest-edge-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2374",
+ "title": "Node With Highest Edge Score",
+ "premium": false,
+ "meta": {
+  "name": "edgeScore",
+  "params": [
+   {
+    "name": "edges",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,0,0,0,0,7,7,5]",
+  "[2,0,0,2]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "0"
+ ],
+ "anyOrder": false
+}

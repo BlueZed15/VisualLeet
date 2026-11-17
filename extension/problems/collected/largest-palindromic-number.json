@@ -1,0 +1,28 @@
+{
+ "slug": "largest-palindromic-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2384",
+ "title": "Largest Palindromic Number",
+ "premium": false,
+ "meta": {
+  "name": "largestPalindromic",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"444947137\"",
+  "\"00009\""
+ ],
+ "exampleOutputs": [
+  "\"7449447\"",
+  "\"9\""
+ ],
+ "anyOrder": false
+}

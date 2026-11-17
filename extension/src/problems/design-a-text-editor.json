@@ -1,0 +1,59 @@
+{
+ "slug": "design-a-text-editor",
+ "frontendId": "2296",
+ "title": "Design a Text Editor",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "TextEditor",
+ "methods": {
+  "TextEditor": [],
+  "addText": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "deleteText": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "cursorLeft": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "cursorRight": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = TextEditor(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

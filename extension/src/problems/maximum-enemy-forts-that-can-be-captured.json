@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-enemy-forts-that-can-be-captured",
+ "frontendId": "2511",
+ "title": "Maximum Enemy Forts That Can Be Captured",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "forts",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "forts = {forts}",
+ "visible": [
+  "forts"
+ ],
+ "call": "result = Solution().captureForts(forts)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

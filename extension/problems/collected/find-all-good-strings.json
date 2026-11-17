@@ -1,0 +1,42 @@
+{
+ "slug": "find-all-good-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1397",
+ "title": "Find All Good Strings",
+ "premium": false,
+ "meta": {
+  "name": "findGoodStrings",
+  "params": [
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "string",
+    "name": "s1"
+   },
+   {
+    "type": "string",
+    "name": "s2"
+   },
+   {
+    "type": "string",
+    "name": "evil"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n\"aa\"\n\"da\"\n\"b\"",
+  "8\n\"leetcode\"\n\"leetgoes\"\n\"leet\"",
+  "2\n\"gx\"\n\"gz\"\n\"x\""
+ ],
+ "exampleOutputs": [
+  "51",
+  "0",
+  "2"
+ ],
+ "anyOrder": false
+}

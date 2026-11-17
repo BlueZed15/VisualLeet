@@ -1,0 +1,32 @@
+{
+ "slug": "subsequence-with-the-minimum-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2565",
+ "title": "Subsequence With the Minimum Score",
+ "premium": false,
+ "meta": {
+  "name": "minimumScore",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "t"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abacaba\"\n\"bzaa\"",
+  "\"cde\"\n\"xyz\""
+ ],
+ "exampleOutputs": [
+  "1",
+  "3"
+ ],
+ "anyOrder": false
+}

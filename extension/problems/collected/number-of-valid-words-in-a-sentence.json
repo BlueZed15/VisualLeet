@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-valid-words-in-a-sentence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2047",
+ "title": "Number of Valid Words in a Sentence",
+ "premium": false,
+ "meta": {
+  "name": "countValidWords",
+  "params": [
+   {
+    "name": "sentence",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"cat and  dog\"",
+  "\"!this  1-s b8d!\"",
+  "\"alice and  bob are playing stone-game10\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "5"
+ ],
+ "anyOrder": false
+}

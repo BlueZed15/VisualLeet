@@ -1,0 +1,32 @@
+{
+ "slug": "longest-unequal-adjacent-groups-subsequence-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2900",
+ "title": "Longest Unequal Adjacent Groups Subsequence I",
+ "premium": false,
+ "meta": {
+  "name": "getLongestSubsequence",
+  "params": [
+   {
+    "type": "string[]",
+    "name": "words"
+   },
+   {
+    "type": "integer[]",
+    "name": "groups"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"c\"]\n[0]",
+  "[\"d\"]\n[1]"
+ ],
+ "exampleOutputs": [
+  "[\"e\",\"b\"]",
+  "[\"a\",\"b\",\"c\"]"
+ ],
+ "anyOrder": false
+}

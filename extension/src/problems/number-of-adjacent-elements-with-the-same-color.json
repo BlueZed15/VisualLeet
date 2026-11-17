@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-adjacent-elements-with-the-same-color",
+ "frontendId": "2672",
+ "title": "Number of Adjacent Elements With the Same Color",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "queries"
+ ],
+ "call": "result = Solution().colorTheArray(n, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

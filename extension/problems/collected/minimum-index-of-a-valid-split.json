@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-index-of-a-valid-split",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2780",
+ "title": "Minimum Index of a Valid Split",
+ "premium": false,
+ "meta": {
+  "name": "minimumIndex",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,2,2]",
+  "[2,1,3,1,1,1,7,1,2,1]",
+  "[3,3,3,3,7,2,2]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-beautiful-integers-in-the-range",
+ "frontendId": "2827",
+ "title": "Number of Beautiful Integers in the Range",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "low = {low}\nhigh = {high}\nk = {k}",
+ "visible": [
+  "low",
+  "high",
+  "k"
+ ],
+ "call": "result = Solution().numberOfBeautifulIntegers(low, high, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

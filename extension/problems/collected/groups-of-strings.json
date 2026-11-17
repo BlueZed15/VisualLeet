@@ -1,0 +1,28 @@
+{
+ "slug": "groups-of-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2157",
+ "title": "Groups of Strings",
+ "premium": false,
+ "meta": {
+  "name": "groupStrings",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"a\",\"b\",\"ab\",\"cde\"]",
+  "[\"a\",\"ab\",\"abc\"]"
+ ],
+ "exampleOutputs": [
+  "[2,3]",
+  "[1,3]"
+ ],
+ "anyOrder": false
+}

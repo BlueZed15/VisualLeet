@@ -1,0 +1,51 @@
+{
+ "slug": "finding-mk-average",
+ "frontendId": "1825",
+ "title": "Finding MK Average",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "MKAverage",
+ "methods": {
+  "MKAverage": [
+   {
+    "name": "m",
+    "type": "integer"
+   },
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "addElement": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "calculateMKAverage": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = MKAverage(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

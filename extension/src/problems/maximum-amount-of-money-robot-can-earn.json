@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-amount-of-money-robot-can-earn",
+ "frontendId": "3418",
+ "title": "Maximum Amount of Money Robot Can Earn",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}",
+ "visible": [
+  "coins"
+ ],
+ "call": "result = Solution().maximumAmount(coins)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

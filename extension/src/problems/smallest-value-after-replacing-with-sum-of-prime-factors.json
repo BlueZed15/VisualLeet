@@ -1,0 +1,25 @@
+{
+ "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+ "frontendId": "2507",
+ "title": "Smallest Value After Replacing With Sum of Prime Factors",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}",
+ "visible": [
+  "n"
+ ],
+ "call": "result = Solution().smallestValue(n)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

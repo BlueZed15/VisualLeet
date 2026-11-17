@@ -1,0 +1,30 @@
+{
+ "slug": "longest-balanced-substring-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3714",
+ "title": "Longest Balanced Substring II",
+ "premium": false,
+ "meta": {
+  "name": "longestBalanced",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abbac\"",
+  "\"aabcc\"",
+  "\"aba\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "3",
+  "2"
+ ],
+ "anyOrder": false
+}

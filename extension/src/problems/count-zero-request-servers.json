@@ -1,0 +1,40 @@
+{
+ "slug": "count-zero-request-servers",
+ "frontendId": "2747",
+ "title": "Count Zero Request Servers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "logs",
+   "type": "integer[][]"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nlogs = {logs}\nx = {x}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "logs",
+  "x",
+  "queries"
+ ],
+ "call": "result = Solution().countServers(n, logs, x, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

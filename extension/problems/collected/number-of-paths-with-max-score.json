@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-paths-with-max-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1301",
+ "title": "Number of Paths with Max Score",
+ "premium": false,
+ "meta": {
+  "name": "pathsWithMaxScore",
+  "params": [
+   {
+    "name": "board",
+    "type": "list<string>"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"E3283\",\"47715\",\"31479\",\"X1X32\",\"721XS\"]",
+  "[\"E8X84\",\"98635\",\"24233\",\"X64X3\",\"281XS\"]",
+  "[\"E3231\",\"3X588\",\"X2715\",\"94342\",\"6X82S\"]"
+ ],
+ "exampleOutputs": [
+  "[7,1]",
+  "[4,2]",
+  "[0,0]"
+ ],
+ "anyOrder": false
+}

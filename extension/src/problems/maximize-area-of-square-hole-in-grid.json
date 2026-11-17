@@ -1,0 +1,40 @@
+{
+ "slug": "maximize-area-of-square-hole-in-grid",
+ "frontendId": "2943",
+ "title": "Maximize Area of Square Hole in Grid",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  },
+  {
+   "name": "hBars",
+   "type": "integer[]"
+  },
+  {
+   "name": "vBars",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nm = {m}\nhBars = {hBars}\nvBars = {vBars}",
+ "visible": [
+  "n",
+  "m",
+  "hBars",
+  "vBars"
+ ],
+ "call": "result = Solution().maximizeSquareHoleArea(n, m, hBars, vBars)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

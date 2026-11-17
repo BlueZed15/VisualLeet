@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-there-is-a-valid-parentheses-string-path",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2267",
+ "title": " Check if There Is a Valid Parentheses String Path",
+ "premium": false,
+ "meta": {
+  "name": "hasValidPath",
+  "params": [
+   {
+    "name": "grid",
+    "type": "character[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
+  "[[\")\",\")\"],[\"(\",\"(\"]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

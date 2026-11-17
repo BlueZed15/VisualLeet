@@ -1,0 +1,30 @@
+{
+ "slug": "queries-on-a-permutation-with-key",
+ "frontendId": "1409",
+ "title": "Queries on a Permutation With Key",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "queries",
+   "type": "integer[]"
+  },
+  {
+   "name": "m",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "queries = {queries}\nm = {m}",
+ "visible": [
+  "queries",
+  "m"
+ ],
+ "call": "result = Solution().processQueries(queries, m)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

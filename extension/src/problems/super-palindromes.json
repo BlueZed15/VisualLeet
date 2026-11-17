@@ -1,0 +1,30 @@
+{
+ "slug": "super-palindromes",
+ "frontendId": "906",
+ "title": "Super Palindromes",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "left",
+   "type": "string"
+  },
+  {
+   "name": "right",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "left = {left}\nright = {right}",
+ "visible": [
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().superpalindromesInRange(left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

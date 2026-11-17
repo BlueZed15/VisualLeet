@@ -1,0 +1,36 @@
+{
+ "slug": "count-the-number-of-vowel-strings-in-range",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2586",
+ "title": "Count the Number of Vowel Strings in Range",
+ "premium": false,
+ "meta": {
+  "name": "vowelStrings",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "integer",
+    "name": "left"
+   },
+   {
+    "type": "integer",
+    "name": "right"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"are\",\"amy\",\"u\"]\n0\n2",
+  "[\"hey\",\"aeo\",\"mu\",\"ooo\",\"artro\"]\n1\n4"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

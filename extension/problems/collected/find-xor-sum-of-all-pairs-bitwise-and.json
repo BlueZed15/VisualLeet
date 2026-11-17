@@ -1,0 +1,32 @@
+{
+ "slug": "find-xor-sum-of-all-pairs-bitwise-and",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1835",
+ "title": "Find XOR Sum of All Pairs Bitwise AND",
+ "premium": false,
+ "meta": {
+  "name": "getXORSum",
+  "params": [
+   {
+    "name": "arr1",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer[]",
+    "name": "arr2"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n[6,5]",
+  "[12]\n[4]"
+ ],
+ "exampleOutputs": [
+  "0",
+  "4"
+ ],
+ "anyOrder": false
+}

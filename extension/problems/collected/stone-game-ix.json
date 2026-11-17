@@ -1,0 +1,30 @@
+{
+ "slug": "stone-game-ix",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2029",
+ "title": "Stone Game IX",
+ "premium": false,
+ "meta": {
+  "name": "stoneGameIX",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,1]",
+  "[2]",
+  "[5,1,2,4,3]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

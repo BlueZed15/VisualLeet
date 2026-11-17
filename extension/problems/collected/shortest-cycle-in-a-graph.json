@@ -1,0 +1,32 @@
+{
+ "slug": "shortest-cycle-in-a-graph",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2608",
+ "title": "Shortest Cycle in a Graph",
+ "premium": false,
+ "meta": {
+  "name": "findShortestCycle",
+  "params": [
+   {
+    "type": "integer",
+    "name": "n"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "7\n[[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]",
+  "4\n[[0,1],[0,2]]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

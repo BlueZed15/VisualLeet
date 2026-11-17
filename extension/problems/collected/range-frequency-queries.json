@@ -1,0 +1,51 @@
+{
+ "slug": "range-frequency-queries",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2080",
+ "title": "Range Frequency Queries",
+ "premium": false,
+ "meta": {
+  "classname": "RangeFreqQuery",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer[]",
+     "name": "arr"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     },
+     {
+      "type": "integer",
+      "name": "value"
+     }
+    ],
+    "name": "query",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"RangeFreqQuery\",\"query\",\"query\"]\n[[[12,33,4,56,22,2,34,33,22,12,34,56]],[1,2,4],[0,11,33]]"
+ ],
+ "exampleOutputs": [
+  "[null, 1, 2]"
+ ],
+ "anyOrder": false
+}

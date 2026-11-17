@@ -1,0 +1,25 @@
+{
+ "slug": "parse-lisp-expression",
+ "frontendId": "736",
+ "title": "Parse Lisp Expression",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "expression",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "expression = {expression}",
+ "visible": [
+  "expression"
+ ],
+ "call": "result = Solution().evaluate(expression)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

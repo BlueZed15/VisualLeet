@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1111",
+ "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+ "premium": false,
+ "meta": {
+  "name": "maxDepthAfterSplit",
+  "params": [
+   {
+    "name": "seq",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "\"(()())\"",
+  "\"()(())()\""
+ ],
+ "exampleOutputs": [
+  "[0,1,1,1,1,0]",
+  "[0,0,0,1,1,0,1,1]"
+ ],
+ "anyOrder": false
+}

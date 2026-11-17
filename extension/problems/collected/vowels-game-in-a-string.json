@@ -1,0 +1,28 @@
+{
+ "slug": "vowels-game-in-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3227",
+ "title": "Vowels Game in a String",
+ "premium": false,
+ "meta": {
+  "name": "doesAliceWin",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"leetcoder\"",
+  "\"bbcd\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

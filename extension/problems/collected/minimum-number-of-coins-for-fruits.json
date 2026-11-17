@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-coins-for-fruits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2944",
+ "title": "Minimum Number of Coins for Fruits",
+ "premium": false,
+ "meta": {
+  "name": "minimumCoins",
+  "params": [
+   {
+    "name": "prices",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,2]",
+  "[1,10,1,1]",
+  "[26,18,6,12,49,7,45,45]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "39"
+ ],
+ "anyOrder": false
+}

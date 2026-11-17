@@ -1,0 +1,34 @@
+{
+ "slug": "sum-of-k-mirror-numbers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2081",
+ "title": "Sum of k-Mirror Numbers",
+ "premium": false,
+ "meta": {
+  "name": "kMirror",
+  "params": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "n"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "2\n5",
+  "3\n7",
+  "7\n17"
+ ],
+ "exampleOutputs": [
+  "25",
+  "499",
+  "20379000"
+ ],
+ "anyOrder": false
+}

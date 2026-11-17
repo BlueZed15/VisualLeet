@@ -1,0 +1,30 @@
+{
+ "slug": "subarray-with-elements-greater-than-varying-threshold",
+ "frontendId": "2334",
+ "title": "Subarray With Elements Greater Than Varying Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nthreshold = {threshold}",
+ "visible": [
+  "nums",
+  "threshold"
+ ],
+ "call": "result = Solution().validSubarraySize(nums, threshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

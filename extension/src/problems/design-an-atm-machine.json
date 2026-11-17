@@ -1,0 +1,47 @@
+{
+ "slug": "design-an-atm-machine",
+ "frontendId": "2241",
+ "title": "Design an ATM Machine",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "ATM",
+ "methods": {
+  "ATM": [],
+  "deposit": [
+   {
+    "name": "banknotesCount",
+    "type": "integer[]"
+   }
+  ],
+  "withdraw": [
+   {
+    "name": "amount",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = ATM(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

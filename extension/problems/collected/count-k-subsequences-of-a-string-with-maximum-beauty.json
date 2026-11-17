@@ -1,0 +1,32 @@
+{
+ "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2842",
+ "title": "Count K-Subsequences of a String With Maximum Beauty",
+ "premium": false,
+ "meta": {
+  "name": "countKSubsequencesWithMaxBeauty",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"bcca\"\n2",
+  "\"abbcd\"\n4"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+ "frontendId": "2842",
+ "title": "Count K-Subsequences of a String With Maximum Beauty",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nk = {k}",
+ "visible": [
+  "s",
+  "k"
+ ],
+ "call": "result = Solution().countKSubsequencesWithMaxBeauty(s, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "make-array-empty",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2659",
+ "title": "Make Array Empty",
+ "premium": false,
+ "meta": {
+  "name": "countOperationsToEmptyArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,4,-1]",
+  "[1,2,4,3]",
+  "[1,2,3]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "5",
+  "3"
+ ],
+ "anyOrder": false
+}

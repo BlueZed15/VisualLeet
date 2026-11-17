@@ -1,0 +1,28 @@
+{
+ "slug": "find-three-consecutive-integers-that-sum-to-a-given-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2177",
+ "title": "Find Three Consecutive Integers That Sum to a Given Number",
+ "premium": false,
+ "meta": {
+  "name": "sumOfThree",
+  "params": [
+   {
+    "name": "num",
+    "type": "long"
+   }
+  ],
+  "return": {
+   "type": "long[]"
+  }
+ },
+ "exampleInputs": [
+  "33",
+  "4"
+ ],
+ "exampleOutputs": [
+  "[10,11,12]",
+  "[]"
+ ],
+ "anyOrder": false
+}

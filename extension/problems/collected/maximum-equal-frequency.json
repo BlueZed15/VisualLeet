@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-equal-frequency",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1224",
+ "title": "Maximum Equal Frequency",
+ "premium": false,
+ "meta": {
+  "name": "maxEqualFreq",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,2,1,1,5,3,3,5]",
+  "[1,1,1,2,2,2,3,3,3,4,4,4,5]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "13"
+ ],
+ "anyOrder": false
+}

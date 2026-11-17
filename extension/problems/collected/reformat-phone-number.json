@@ -1,0 +1,30 @@
+{
+ "slug": "reformat-phone-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1694",
+ "title": "Reformat Phone Number",
+ "premium": false,
+ "meta": {
+  "name": "reformatNumber",
+  "params": [
+   {
+    "name": "number",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"1-23-45 6\"",
+  "\"123 4-567\"",
+  "\"123 4-5678\""
+ ],
+ "exampleOutputs": [
+  "\"123-456\"",
+  "\"123-45-67\"",
+  "\"123-456-78\""
+ ],
+ "anyOrder": false
+}

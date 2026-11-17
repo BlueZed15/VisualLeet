@@ -1,0 +1,35 @@
+{
+ "slug": "sliding-subarray-beauty",
+ "frontendId": "2653",
+ "title": "Sliding Subarray Beauty",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}\nx = {x}",
+ "visible": [
+  "nums",
+  "k",
+  "x"
+ ],
+ "call": "result = Solution().getSubarrayBeauty(nums, k, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

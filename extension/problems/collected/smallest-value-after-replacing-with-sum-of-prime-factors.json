@@ -1,0 +1,28 @@
+{
+ "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2507",
+ "title": "Smallest Value After Replacing With Sum of Prime Factors",
+ "premium": false,
+ "meta": {
+  "name": "smallestValue",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "15",
+  "3"
+ ],
+ "exampleOutputs": [
+  "5",
+  "3"
+ ],
+ "anyOrder": false
+}

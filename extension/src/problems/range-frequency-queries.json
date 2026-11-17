@@ -1,0 +1,54 @@
+{
+ "slug": "range-frequency-queries",
+ "frontendId": "2080",
+ "title": "Range Frequency Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "RangeFreqQuery",
+ "methods": {
+  "RangeFreqQuery": [
+   {
+    "name": "arr",
+    "type": "integer[]"
+   }
+  ],
+  "query": [
+   {
+    "name": "left",
+    "type": "integer"
+   },
+   {
+    "name": "right",
+    "type": "integer"
+   },
+   {
+    "name": "value",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = RangeFreqQuery(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

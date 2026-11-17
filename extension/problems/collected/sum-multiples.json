@@ -1,0 +1,30 @@
+{
+ "slug": "sum-multiples",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2652",
+ "title": "Sum Multiples",
+ "premium": false,
+ "meta": {
+  "name": "sumOfMultiples",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "7",
+  "10",
+  "9"
+ ],
+ "exampleOutputs": [
+  "21",
+  "40",
+  "30"
+ ],
+ "anyOrder": false
+}

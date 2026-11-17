@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2472",
+ "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+ "premium": false,
+ "meta": {
+  "name": "maxPalindromes",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abaccdbbd\"\n3",
+  "\"adbcda\"\n2"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

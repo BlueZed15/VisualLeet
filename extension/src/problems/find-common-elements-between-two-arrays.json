@@ -1,0 +1,30 @@
+{
+ "slug": "find-common-elements-between-two-arrays",
+ "frontendId": "2956",
+ "title": "Find Common Elements Between Two Arrays",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}",
+ "visible": [
+  "nums1",
+  "nums2"
+ ],
+ "call": "result = Solution().findIntersectionValues(nums1, nums2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

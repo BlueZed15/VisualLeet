@@ -1,0 +1,32 @@
+{
+ "slug": "super-palindromes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "906",
+ "title": "Super Palindromes",
+ "premium": false,
+ "meta": {
+  "name": "superpalindromesInRange",
+  "params": [
+   {
+    "name": "left",
+    "type": "string"
+   },
+   {
+    "name": "right",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"4\"\n\"1000\"",
+  "\"1\"\n\"2\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "circular-array-loop",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "457",
+ "title": "Circular Array Loop",
+ "premium": false,
+ "meta": {
+  "name": "circularArrayLoop",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[2,-1,1,2,2]",
+  "[-1,-2,-3,-4,-5,6]",
+  "[1,-1,5,1,4]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

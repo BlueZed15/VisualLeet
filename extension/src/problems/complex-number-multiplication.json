@@ -1,0 +1,30 @@
+{
+ "slug": "complex-number-multiplication",
+ "frontendId": "537",
+ "title": "Complex Number Multiplication",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num1",
+   "type": "string"
+  },
+  {
+   "name": "num2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "num1 = {num1}\nnum2 = {num2}",
+ "visible": [
+  "num1",
+  "num2"
+ ],
+ "call": "result = Solution().complexNumberMultiply(num1, num2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

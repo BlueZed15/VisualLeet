@@ -1,0 +1,28 @@
+{
+ "slug": "points-that-intersect-with-cars",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2848",
+ "title": "Points That Intersect With Cars",
+ "premium": false,
+ "meta": {
+  "name": "numberOfPoints",
+  "params": [
+   {
+    "name": "nums",
+    "type": "list<list<integer>>"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[[3,6],[1,5],[4,7]]",
+  "[[1,3],[5,8]]"
+ ],
+ "exampleOutputs": [
+  "7",
+  "7"
+ ],
+ "anyOrder": false
+}

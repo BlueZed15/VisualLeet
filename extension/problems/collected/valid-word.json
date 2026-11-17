@@ -1,0 +1,30 @@
+{
+ "slug": "valid-word",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3136",
+ "title": "Valid Word",
+ "premium": false,
+ "meta": {
+  "name": "isValid",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"234Adas\"",
+  "\"b3\"",
+  "\"a3$e\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

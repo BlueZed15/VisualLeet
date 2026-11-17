@@ -1,0 +1,30 @@
+{
+ "slug": "prime-palindrome",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "866",
+ "title": "Prime Palindrome",
+ "premium": false,
+ "meta": {
+  "name": "primePalindrome",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "6",
+  "8",
+  "13"
+ ],
+ "exampleOutputs": [
+  "7",
+  "11",
+  "101"
+ ],
+ "anyOrder": false
+}

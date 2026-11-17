@@ -1,0 +1,55 @@
+{
+ "slug": "circle-and-rectangle-overlapping",
+ "frontendId": "1401",
+ "title": "Circle and Rectangle Overlapping",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "radius",
+   "type": "integer"
+  },
+  {
+   "name": "xCenter",
+   "type": "integer"
+  },
+  {
+   "name": "yCenter",
+   "type": "integer"
+  },
+  {
+   "name": "x1",
+   "type": "integer"
+  },
+  {
+   "name": "y1",
+   "type": "integer"
+  },
+  {
+   "name": "x2",
+   "type": "integer"
+  },
+  {
+   "name": "y2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "radius = {radius}\nxCenter = {xCenter}\nyCenter = {yCenter}\nx1 = {x1}\ny1 = {y1}\nx2 = {x2}\ny2 = {y2}",
+ "visible": [
+  "radius",
+  "xCenter",
+  "yCenter",
+  "x1",
+  "y1",
+  "x2",
+  "y2"
+ ],
+ "call": "result = Solution().checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

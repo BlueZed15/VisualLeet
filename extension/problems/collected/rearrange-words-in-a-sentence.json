@@ -1,0 +1,27 @@
+{
+ "slug": "rearrange-words-in-a-sentence",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1451",
+ "title": "Rearrange Words in a Sentence",
+ "premium": false,
+ "meta": {
+  "name": "arrangeWords",
+  "params": [
+   {
+    "name": "text",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"Leetcode is cool\"",
+  "\"Keep calm and code on\"",
+  "\"To be or not to be\""
+ ],
+ "exampleOutputs": [],
+ "outputsNote": "found 5 outputs for 3 examples",
+ "anyOrder": false
+}

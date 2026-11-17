@@ -1,0 +1,30 @@
+{
+ "slug": "neighboring-bitwise-xor",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2683",
+ "title": "Neighboring Bitwise XOR",
+ "premium": false,
+ "meta": {
+  "name": "doesValidArrayExist",
+  "params": [
+   {
+    "name": "derived",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,0]",
+  "[1,1]",
+  "[1,0]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

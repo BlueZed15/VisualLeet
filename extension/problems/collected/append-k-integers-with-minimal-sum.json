@@ -1,0 +1,32 @@
+{
+ "slug": "append-k-integers-with-minimal-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2195",
+ "title": "Append K Integers With Minimal Sum",
+ "premium": false,
+ "meta": {
+  "name": "minimalKSum",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,25,10,25]\n2",
+  "[5,6]\n6"
+ ],
+ "exampleOutputs": [
+  "5",
+  "25"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "visit-array-positions-to-maximize-score",
+ "frontendId": "2786",
+ "title": "Visit Array Positions to Maximize Score",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nx = {x}",
+ "visible": [
+  "nums",
+  "x"
+ ],
+ "call": "result = Solution().maxScore(nums, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

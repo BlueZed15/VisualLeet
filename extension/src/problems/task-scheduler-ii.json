@@ -1,0 +1,30 @@
+{
+ "slug": "task-scheduler-ii",
+ "frontendId": "2365",
+ "title": "Task Scheduler II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tasks",
+   "type": "integer[]"
+  },
+  {
+   "name": "space",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tasks = {tasks}\nspace = {space}",
+ "visible": [
+  "tasks",
+  "space"
+ ],
+ "call": "result = Solution().taskSchedulerII(tasks, space)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

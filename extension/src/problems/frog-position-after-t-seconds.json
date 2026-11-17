@@ -1,0 +1,40 @@
+{
+ "slug": "frog-position-after-t-seconds",
+ "frontendId": "1377",
+ "title": "Frog Position After T Seconds",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "t",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nt = {t}\ntarget = {target}",
+ "visible": [
+  "n",
+  "edges",
+  "t",
+  "target"
+ ],
+ "call": "result = Solution().frogPosition(n, edges, t, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

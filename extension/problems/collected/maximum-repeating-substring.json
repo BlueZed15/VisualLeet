@@ -1,0 +1,34 @@
+{
+ "slug": "maximum-repeating-substring",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1668",
+ "title": "Maximum Repeating Substring",
+ "premium": false,
+ "meta": {
+  "name": "maxRepeating",
+  "params": [
+   {
+    "name": "sequence",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"ababc\"\n\"ab\"",
+  "\"ababc\"\n\"ba\"",
+  "\"ababc\"\n\"ac\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-sum-obtained-of-any-permutation",
+ "frontendId": "1589",
+ "title": "Maximum Sum Obtained of Any Permutation",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "requests",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nrequests = {requests}",
+ "visible": [
+  "nums",
+  "requests"
+ ],
+ "call": "result = Solution().maxSumRangeQuery(nums, requests)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

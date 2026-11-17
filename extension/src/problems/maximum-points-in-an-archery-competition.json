@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-points-in-an-archery-competition",
+ "frontendId": "2212",
+ "title": "Maximum Points in an Archery Competition",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numArrows",
+   "type": "integer"
+  },
+  {
+   "name": "aliceArrows",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "numArrows = {numArrows}\naliceArrows = {aliceArrows}",
+ "visible": [
+  "numArrows",
+  "aliceArrows"
+ ],
+ "call": "result = Solution().maximumBobPoints(numArrows, aliceArrows)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

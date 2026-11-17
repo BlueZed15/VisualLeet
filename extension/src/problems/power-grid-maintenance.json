@@ -1,0 +1,35 @@
+{
+ "slug": "power-grid-maintenance",
+ "frontendId": "3607",
+ "title": "Power Grid Maintenance",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "c",
+   "type": "integer"
+  },
+  {
+   "name": "connections",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "c = {c}\nconnections = {connections}\nqueries = {queries}",
+ "visible": [
+  "c",
+  "connections",
+  "queries"
+ ],
+ "call": "result = Solution().processQueries(c, connections, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "total-characters-in-string-after-transformations-ii",
+ "frontendId": "3337",
+ "title": "Total Characters in String After Transformations II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "t",
+   "type": "integer"
+  },
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nt = {t}\nnums = {nums}",
+ "visible": [
+  "s",
+  "t",
+  "nums"
+ ],
+ "call": "result = Solution().lengthAfterTransformations(s, t, nums)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

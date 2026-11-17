@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-separate-numbers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1977",
+ "title": "Number of Ways to Separate Numbers",
+ "premium": false,
+ "meta": {
+  "name": "numberOfCombinations",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"327\"",
+  "\"094\"",
+  "\"0\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "0"
+ ],
+ "anyOrder": false
+}

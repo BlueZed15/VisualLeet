@@ -1,0 +1,32 @@
+{
+ "slug": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1604",
+ "title": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
+ "premium": false,
+ "meta": {
+  "name": "alertNames",
+  "params": [
+   {
+    "name": "keyName",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "keyTime"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "[\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"]\n[\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
+  "[\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"]\n[\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]"
+ ],
+ "exampleOutputs": [
+  "[\"daniel\"]",
+  "[\"bob\"]"
+ ],
+ "anyOrder": false
+}

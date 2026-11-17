@@ -1,0 +1,47 @@
+{
+ "slug": "find-consecutive-integers-from-a-data-stream",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2526",
+ "title": "Find Consecutive Integers from a Data Stream",
+ "premium": false,
+ "meta": {
+  "classname": "DataStream",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "value"
+    },
+    {
+     "name": "k",
+     "type": "integer"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "consec",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"DataStream\",\"consec\",\"consec\",\"consec\",\"consec\"]\n[[4,3],[4],[4],[4],[3]]"
+ ],
+ "exampleOutputs": [
+  "[null, false, false, true, false]"
+ ],
+ "anyOrder": false
+}

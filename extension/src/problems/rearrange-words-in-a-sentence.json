@@ -1,0 +1,25 @@
+{
+ "slug": "rearrange-words-in-a-sentence",
+ "frontendId": "1451",
+ "title": "Rearrange Words in a Sentence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}",
+ "visible": [
+  "text"
+ ],
+ "call": "result = Solution().arrangeWords(text)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

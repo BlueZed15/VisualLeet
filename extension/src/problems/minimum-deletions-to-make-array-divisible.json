@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-deletions-to-make-array-divisible",
+ "frontendId": "2344",
+ "title": "Minimum Deletions to Make Array Divisible",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "numsDivide",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nnumsDivide = {numsDivide}",
+ "visible": [
+  "nums",
+  "numsDivide"
+ ],
+ "call": "result = Solution().minOperations(nums, numsDivide)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

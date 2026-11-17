@@ -1,0 +1,28 @@
+{
+ "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3702",
+ "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+ "premium": false,
+ "meta": {
+  "name": "longestSubsequence",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]",
+  "[2,3,4]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

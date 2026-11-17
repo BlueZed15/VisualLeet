@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-value-of-function-in-a-ball-passing-game",
+ "frontendId": "2836",
+ "title": "Maximize Value of Function in a Ball Passing Game",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "receiver",
+   "type": "list<integer>"
+  },
+  {
+   "name": "k",
+   "type": "long"
+  }
+ ],
+ "helpers": [],
+ "setup": "receiver = {receiver}\nk = {k}",
+ "visible": [
+  "receiver",
+  "k"
+ ],
+ "call": "result = Solution().getMaxFunctionValue(receiver, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

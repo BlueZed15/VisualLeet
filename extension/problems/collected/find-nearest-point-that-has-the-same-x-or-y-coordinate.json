@@ -1,0 +1,38 @@
+{
+ "slug": "find-nearest-point-that-has-the-same-x-or-y-coordinate",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1779",
+ "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+ "premium": false,
+ "meta": {
+  "name": "nearestValidPoint",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "y"
+   },
+   {
+    "type": "integer[][]",
+    "name": "points"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n4\n[[1,2],[3,1],[2,4],[2,3],[4,4]]",
+  "3\n4\n[[3,4]]",
+  "3\n4\n[[2,3]]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "minimum-operations-to-convert-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2059",
+ "title": "Minimum Operations to Convert Number",
+ "premium": false,
+ "meta": {
+  "name": "minimumOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "start"
+   },
+   {
+    "type": "integer",
+    "name": "goal"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[2,4,12]\n2\n12",
+  "[3,5,7]\n0\n-4",
+  "[2,8,16]\n0\n1"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "-1"
+ ],
+ "anyOrder": true
+}

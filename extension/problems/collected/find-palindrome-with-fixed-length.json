@@ -1,0 +1,32 @@
+{
+ "slug": "find-palindrome-with-fixed-length",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2217",
+ "title": "Find Palindrome With Fixed Length",
+ "premium": false,
+ "meta": {
+  "name": "kthPalindrome",
+  "params": [
+   {
+    "name": "queries",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "intLength"
+   }
+  ],
+  "return": {
+   "type": "long[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,5,90]\n3",
+  "[2,4,6]\n4"
+ ],
+ "exampleOutputs": [
+  "[101,111,121,131,141,999]",
+  "[1111,1331,1551]"
+ ],
+ "anyOrder": false
+}

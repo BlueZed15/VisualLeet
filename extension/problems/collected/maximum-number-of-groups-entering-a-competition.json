@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-number-of-groups-entering-a-competition",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2358",
+ "title": "Maximum Number of Groups Entering a Competition",
+ "premium": false,
+ "meta": {
+  "name": "maximumGroups",
+  "params": [
+   {
+    "name": "grades",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[10,6,12,7,3,5]",
+  "[8,8]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "1"
+ ],
+ "anyOrder": false
+}

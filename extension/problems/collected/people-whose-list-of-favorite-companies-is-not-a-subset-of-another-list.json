@@ -1,0 +1,30 @@
+{
+ "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1452",
+ "title": "People Whose List of Favorite Companies Is Not a Subset of Another List",
+ "premium": false,
+ "meta": {
+  "name": "peopleIndexes",
+  "params": [
+   {
+    "type": "list<list<string>>",
+    "name": "favoriteCompanies"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
+  "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
+  "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]"
+ ],
+ "exampleOutputs": [
+  "[0,1,4]",
+  "[0,1]",
+  "[0,1,2,3]"
+ ],
+ "anyOrder": false
+}

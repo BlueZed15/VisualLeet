@@ -1,0 +1,30 @@
+{
+ "slug": "gcd-sort-of-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1998",
+ "title": "GCD Sort of an Array",
+ "premium": false,
+ "meta": {
+  "name": "gcdSort",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[7,21,3]",
+  "[5,2,6,2]",
+  "[10,5,9,3,15]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "trueWe can sort [10,5,9,3,15] by performing the following operations:- Swap 10 and 15 because gcd(10,15) = 5. nums = [15,5,9,3,10]- Swap 15 and 3 because gcd(15,3) = 3. nums = [3,5,9,15,10]- Swap 10 and 15 because gcd(10,15) = 5. nums = [3,5,9,10,15]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "check-if-word-equals-summation-of-two-words",
+ "frontendId": "1880",
+ "title": "Check if Word Equals Summation of Two Words",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "firstWord",
+   "type": "string"
+  },
+  {
+   "name": "secondWord",
+   "type": "string"
+  },
+  {
+   "name": "targetWord",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "firstWord = {firstWord}\nsecondWord = {secondWord}\ntargetWord = {targetWord}",
+ "visible": [
+  "firstWord",
+  "secondWord",
+  "targetWord"
+ ],
+ "call": "result = Solution().isSumEqual(firstWord, secondWord, targetWord)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

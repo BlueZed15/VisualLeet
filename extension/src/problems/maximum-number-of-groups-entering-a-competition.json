@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-groups-entering-a-competition",
+ "frontendId": "2358",
+ "title": "Maximum Number of Groups Entering a Competition",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grades",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grades = {grades}",
+ "visible": [
+  "grades"
+ ],
+ "call": "result = Solution().maximumGroups(grades)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

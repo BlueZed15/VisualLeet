@@ -1,0 +1,30 @@
+{
+ "slug": "latest-time-by-replacing-hidden-digits",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1736",
+ "title": "Latest Time by Replacing Hidden Digits",
+ "premium": false,
+ "meta": {
+  "name": "maximumTime",
+  "params": [
+   {
+    "name": "time",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"2?:?0\"",
+  "\"0?:3?\"",
+  "\"1?:22\""
+ ],
+ "exampleOutputs": [
+  "\"23:50\"",
+  "\"09:39\"",
+  "\"19:22\""
+ ],
+ "anyOrder": false
+}

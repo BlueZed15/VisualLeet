@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+ "frontendId": "1883",
+ "title": "Minimum Skips to Arrive at Meeting On Time",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dist",
+   "type": "integer[]"
+  },
+  {
+   "name": "speed",
+   "type": "integer"
+  },
+  {
+   "name": "hoursBefore",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "dist = {dist}\nspeed = {speed}\nhoursBefore = {hoursBefore}",
+ "visible": [
+  "dist",
+  "speed",
+  "hoursBefore"
+ ],
+ "call": "result = Solution().minSkips(dist, speed, hoursBefore)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "maximum-manhattan-distance-after-k-changes",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3443",
+ "title": "Maximum Manhattan Distance After K Changes",
+ "premium": false,
+ "meta": {
+  "name": "maxDistance",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"NWSE\"\n1",
+  "\"NSWWEW\"\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "6"
+ ],
+ "anyOrder": false
+}

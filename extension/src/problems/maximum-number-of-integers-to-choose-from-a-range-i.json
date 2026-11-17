@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+ "frontendId": "2554",
+ "title": "Maximum Number of Integers to Choose From a Range I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "banned",
+   "type": "integer[]"
+  },
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "maxSum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "banned = {banned}\nn = {n}\nmaxSum = {maxSum}",
+ "visible": [
+  "banned",
+  "n",
+  "maxSum"
+ ],
+ "call": "result = Solution().maxCount(banned, n, maxSum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

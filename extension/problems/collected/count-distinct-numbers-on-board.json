@@ -1,0 +1,28 @@
+{
+ "slug": "count-distinct-numbers-on-board",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2549",
+ "title": "Count Distinct Numbers on Board",
+ "premium": false,
+ "meta": {
+  "name": "distinctIntegers",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "5",
+  "3"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2"
+ ],
+ "anyOrder": false
+}

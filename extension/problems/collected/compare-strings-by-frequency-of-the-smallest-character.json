@@ -1,0 +1,32 @@
+{
+ "slug": "compare-strings-by-frequency-of-the-smallest-character",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1170",
+ "title": "Compare Strings by Frequency of the Smallest Character",
+ "premium": false,
+ "meta": {
+  "name": "numSmallerByFrequency",
+  "params": [
+   {
+    "name": "queries",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "words"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[\"cbd\"]\n[\"zaaaz\"]",
+  "[\"bbb\",\"cc\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]"
+ ],
+ "exampleOutputs": [
+  "[1]",
+  "[1,2]"
+ ],
+ "anyOrder": false
+}

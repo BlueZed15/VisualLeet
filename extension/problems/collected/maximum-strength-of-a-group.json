@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-strength-of-a-group",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2708",
+ "title": "Maximum Strength of a Group",
+ "premium": false,
+ "meta": {
+  "name": "maxStrength",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[3,-1,-5,2,5,-9]",
+  "[-4,-5,-4]"
+ ],
+ "exampleOutputs": [
+  "1350",
+  "20"
+ ],
+ "anyOrder": false
+}

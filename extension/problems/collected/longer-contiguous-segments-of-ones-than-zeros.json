@@ -1,0 +1,30 @@
+{
+ "slug": "longer-contiguous-segments-of-ones-than-zeros",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1869",
+ "title": "Longer Contiguous Segments of Ones than Zeros",
+ "premium": false,
+ "meta": {
+  "name": "checkZeroOnes",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"1101\"",
+  "\"111000\"",
+  "\"110100010\""
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "false"
+ ],
+ "anyOrder": false
+}

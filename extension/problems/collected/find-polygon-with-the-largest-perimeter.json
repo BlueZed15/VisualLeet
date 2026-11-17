@@ -1,0 +1,30 @@
+{
+ "slug": "find-polygon-with-the-largest-perimeter",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2971",
+ "title": "Find Polygon With the Largest Perimeter",
+ "premium": false,
+ "meta": {
+  "name": "largestPerimeter",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[5,5,5]",
+  "[1,12,1,2,5,50,3]",
+  "[5,5,50]"
+ ],
+ "exampleOutputs": [
+  "15",
+  "12",
+  "-1"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "apply-operations-to-make-two-strings-equal",
+ "frontendId": "2896",
+ "title": "Apply Operations to Make Two Strings Equal",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s1",
+   "type": "string"
+  },
+  {
+   "name": "s2",
+   "type": "string"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s1 = {s1}\ns2 = {s2}\nx = {x}",
+ "visible": [
+  "s1",
+  "s2",
+  "x"
+ ],
+ "call": "result = Solution().minOperations(s1, s2, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

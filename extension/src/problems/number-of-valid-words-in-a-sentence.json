@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-valid-words-in-a-sentence",
+ "frontendId": "2047",
+ "title": "Number of Valid Words in a Sentence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "sentence",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "sentence = {sentence}",
+ "visible": [
+  "sentence"
+ ],
+ "call": "result = Solution().countValidWords(sentence)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

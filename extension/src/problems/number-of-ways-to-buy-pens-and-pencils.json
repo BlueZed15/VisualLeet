@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-ways-to-buy-pens-and-pencils",
+ "frontendId": "2240",
+ "title": "Number of Ways to Buy Pens and Pencils",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "total",
+   "type": "integer"
+  },
+  {
+   "name": "cost1",
+   "type": "integer"
+  },
+  {
+   "name": "cost2",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "total = {total}\ncost1 = {cost1}\ncost2 = {cost2}",
+ "visible": [
+  "total",
+  "cost1",
+  "cost2"
+ ],
+ "call": "result = Solution().waysToBuyPensPencils(total, cost1, cost2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

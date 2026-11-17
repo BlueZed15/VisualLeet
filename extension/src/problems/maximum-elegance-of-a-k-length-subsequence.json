@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-elegance-of-a-k-length-subsequence",
+ "frontendId": "2813",
+ "title": "Maximum Elegance of a K-Length Subsequence",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "items",
+   "type": "integer[][]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "items = {items}\nk = {k}",
+ "visible": [
+  "items",
+  "k"
+ ],
+ "call": "result = Solution().findMaximumElegance(items, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

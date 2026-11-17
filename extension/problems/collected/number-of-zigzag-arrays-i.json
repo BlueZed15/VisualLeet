@@ -1,0 +1,36 @@
+{
+ "slug": "number-of-zigzag-arrays-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3699",
+ "title": "Number of ZigZag Arrays I",
+ "premium": false,
+ "meta": {
+  "name": "zigZagArrays",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "l"
+   },
+   {
+    "type": "integer",
+    "name": "r"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n4\n5",
+  "3\n1\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "10"
+ ],
+ "anyOrder": false
+}

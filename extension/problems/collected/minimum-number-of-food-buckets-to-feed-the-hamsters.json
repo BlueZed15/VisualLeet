@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2086",
+ "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+ "premium": false,
+ "meta": {
+  "name": "minimumBuckets",
+  "params": [
+   {
+    "name": "hamsters",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"H..H\"",
+  "\".H.H.\"",
+  "\".HHH.\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "-1"
+ ],
+ "anyOrder": false
+}

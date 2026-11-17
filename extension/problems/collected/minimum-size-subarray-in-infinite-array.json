@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-size-subarray-in-infinite-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2875",
+ "title": "Minimum Size Subarray in Infinite Array",
+ "premium": false,
+ "meta": {
+  "name": "minSizeSubarray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "target"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3]\n5",
+  "[1,1,1,2,3]\n4",
+  "[2,4,6,8]\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "-1"
+ ],
+ "anyOrder": false
+}

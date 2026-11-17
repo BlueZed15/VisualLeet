@@ -1,0 +1,25 @@
+{
+ "slug": "convert-the-temperature",
+ "frontendId": "2469",
+ "title": "Convert the Temperature",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "celsius",
+   "type": "double"
+  }
+ ],
+ "helpers": [],
+ "setup": "celsius = {celsius}",
+ "visible": [
+  "celsius"
+ ],
+ "call": "result = Solution().convertTemperature(celsius)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

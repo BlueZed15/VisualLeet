@@ -1,0 +1,32 @@
+{
+ "slug": "length-of-the-longest-valid-substring",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2781",
+ "title": "Length of the Longest Valid Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestValidSubstring",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   },
+   {
+    "type": "list<string>",
+    "name": "forbidden"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"cbaaaabc\"\n[\"aaa\",\"cb\"]",
+  "\"leetcode\"\n[\"de\",\"le\",\"e\"]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "4"
+ ],
+ "anyOrder": false
+}

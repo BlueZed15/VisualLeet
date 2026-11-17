@@ -1,0 +1,31 @@
+{
+ "slug": "closest-divisors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1362",
+ "title": "Closest Divisors",
+ "premium": false,
+ "meta": {
+  "name": "closestDivisors",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "8",
+  "123",
+  "999"
+ ],
+ "exampleOutputs": [
+  "[3,3]",
+  "[5,25]",
+  "[40,25]"
+ ],
+ "anyOrder": true
+}

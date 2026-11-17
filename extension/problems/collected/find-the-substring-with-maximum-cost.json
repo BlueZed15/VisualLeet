@@ -1,0 +1,36 @@
+{
+ "slug": "find-the-substring-with-maximum-cost",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2606",
+ "title": "Find the Substring With Maximum Cost",
+ "premium": false,
+ "meta": {
+  "name": "maximumCostSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "chars"
+   },
+   {
+    "type": "integer[]",
+    "name": "vals"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"adaa\"\n\"d\"\n[-1000]",
+  "\"abc\"\n\"abc\"\n[-1,-1,-1]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "check-if-all-the-integers-in-a-range-are-covered",
+ "frontendId": "1893",
+ "title": "Check if All the Integers in a Range Are Covered",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ranges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "left",
+   "type": "integer"
+  },
+  {
+   "name": "right",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "ranges = {ranges}\nleft = {left}\nright = {right}",
+ "visible": [
+  "ranges",
+  "left",
+  "right"
+ ],
+ "call": "result = Solution().isCovered(ranges, left, right)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

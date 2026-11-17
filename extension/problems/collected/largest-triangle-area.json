@@ -1,0 +1,28 @@
+{
+ "slug": "largest-triangle-area",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "812",
+ "title": "Largest Triangle Area",
+ "premium": false,
+ "meta": {
+  "name": "largestTriangleArea",
+  "params": [
+   {
+    "name": "points",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "double"
+  }
+ },
+ "exampleInputs": [
+  "[[0,0],[0,1],[1,0],[0,2],[2,0]]",
+  "[[1,0],[0,0],[0,1]]"
+ ],
+ "exampleOutputs": [
+  "2.00000",
+  "0.50000"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-sortable-integers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3886",
+ "title": "Sum of Sortable Integers",
+ "premium": false,
+ "meta": {
+  "name": "sortableIntegers",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[3,1,2]",
+  "[7,6,5]",
+  "[5,8]"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "sort-the-students-by-their-kth-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2545",
+ "title": "Sort the Students by Their Kth Score",
+ "premium": false,
+ "meta": {
+  "name": "sortTheStudents",
+  "params": [
+   {
+    "name": "score",
+    "type": "integer[][]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer[][]"
+  }
+ },
+ "exampleInputs": [
+  "[[10,6,9,1],[7,5,11,2],[4,8,3,15]]\n2",
+  "[[3,4],[5,6]]\n0"
+ ],
+ "exampleOutputs": [
+  "[[7,5,11,2],[10,6,9,1],[4,8,3,15]]",
+  "[[5,6],[3,4]]"
+ ],
+ "anyOrder": false
+}

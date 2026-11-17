@@ -1,0 +1,32 @@
+{
+ "slug": "sender-with-largest-word-count",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2284",
+ "title": "Sender With Largest Word Count",
+ "premium": false,
+ "meta": {
+  "name": "largestWordCount",
+  "params": [
+   {
+    "name": "messages",
+    "type": "string[]"
+   },
+   {
+    "type": "string[]",
+    "name": "senders"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+  "[\"How is leetcode for everyone\",\"Leetcode is useful for practice\"]\n[\"Bob\",\"Charlie\"]"
+ ],
+ "exampleOutputs": [
+  "\"Alice\"",
+  "\"Charlie\""
+ ],
+ "anyOrder": false
+}

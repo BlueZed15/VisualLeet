@@ -1,0 +1,33 @@
+{
+ "slug": "water-and-jug-problem",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "365",
+ "title": "Water and Jug Problem",
+ "premium": false,
+ "meta": {
+  "name": "canMeasureWater",
+  "params": [
+   {
+    "name": "x",
+    "type": "integer"
+   },
+   {
+    "name": "y",
+    "type": "integer"
+   },
+   {
+    "name": "target",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "3\n5\n4"
+ ],
+ "exampleOutputs": [],
+ "outputsNote": "found 3 outputs for 1 examples",
+ "anyOrder": false
+}

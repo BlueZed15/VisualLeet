@@ -1,0 +1,28 @@
+{
+ "slug": "find-the-array-concatenation-value",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2562",
+ "title": "Find the Array Concatenation Value",
+ "premium": false,
+ "meta": {
+  "name": "findTheArrayConcVal",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[7,52,2,4]",
+  "[5,14,13,8,12]"
+ ],
+ "exampleOutputs": [
+  "596",
+  "673"
+ ],
+ "anyOrder": false
+}

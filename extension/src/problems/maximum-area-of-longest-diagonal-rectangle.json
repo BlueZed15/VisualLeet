@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-area-of-longest-diagonal-rectangle",
+ "frontendId": "3000",
+ "title": "Maximum Area of Longest Diagonal Rectangle",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "dimensions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "dimensions = {dimensions}",
+ "visible": [
+  "dimensions"
+ ],
+ "call": "result = Solution().areaOfMaxDiagonal(dimensions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "visit-array-positions-to-maximize-score",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2786",
+ "title": "Visit Array Positions to Maximize Score",
+ "premium": false,
+ "meta": {
+  "name": "maxScore",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[2,3,6,1,9,2]\n5",
+  "[2,4,6,8]\n3"
+ ],
+ "exampleOutputs": [
+  "13",
+  "20"
+ ],
+ "anyOrder": false
+}

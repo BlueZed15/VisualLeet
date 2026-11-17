@@ -1,0 +1,35 @@
+{
+ "slug": "final-array-state-after-k-multiplication-operations-i",
+ "frontendId": "3264",
+ "title": "Final Array State After K Multiplication Operations I",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  },
+  {
+   "name": "multiplier",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nk = {k}\nmultiplier = {multiplier}",
+ "visible": [
+  "nums",
+  "k",
+  "multiplier"
+ ],
+ "call": "result = Solution().getFinalState(nums, k, multiplier)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "count-the-number-of-ideal-arrays",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2338",
+ "title": "Count the Number of Ideal Arrays",
+ "premium": false,
+ "meta": {
+  "name": "idealArrays",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "maxValue"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "2\n5",
+  "5\n3"
+ ],
+ "exampleOutputs": [
+  "10",
+  "11"
+ ],
+ "anyOrder": false
+}

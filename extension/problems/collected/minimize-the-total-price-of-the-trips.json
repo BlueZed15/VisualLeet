@@ -1,0 +1,40 @@
+{
+ "slug": "minimize-the-total-price-of-the-trips",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2646",
+ "title": "Minimize the Total Price of the Trips",
+ "premium": false,
+ "meta": {
+  "name": "minimumTotalPrice",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "edges"
+   },
+   {
+    "type": "integer[]",
+    "name": "price"
+   },
+   {
+    "type": "integer[][]",
+    "name": "trips"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[0,1],[1,2],[1,3]]\n[2,2,10,6]\n[[0,3],[2,1],[2,3]]",
+  "2\n[[0,1]]\n[2,2]\n[[0,0]]"
+ ],
+ "exampleOutputs": [
+  "23",
+  "1"
+ ],
+ "anyOrder": false
+}

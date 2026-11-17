@@ -1,0 +1,25 @@
+{
+ "slug": "minimum-number-of-groups-to-create-a-valid-assignment",
+ "frontendId": "2910",
+ "title": "Minimum Number of Groups to Create a Valid Assignment",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "balls",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "balls = {balls}",
+ "visible": [
+  "balls"
+ ],
+ "call": "result = Solution().minGroupsForValidAssignment(balls)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

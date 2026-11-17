@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-money-required-before-transactions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2412",
+ "title": "Minimum Money Required Before Transactions",
+ "premium": false,
+ "meta": {
+  "name": "minimumMoney",
+  "params": [
+   {
+    "name": "transactions",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[[2,1],[5,0],[4,2]]",
+  "[[3,0],[0,3]]"
+ ],
+ "exampleOutputs": [
+  "10",
+  "3"
+ ],
+ "anyOrder": true
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maximize-number-of-subsequences-in-a-string",
+ "frontendId": "2207",
+ "title": "Maximize Number of Subsequences in a String",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "text",
+   "type": "string"
+  },
+  {
+   "name": "pattern",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "text = {text}\npattern = {pattern}",
+ "visible": [
+  "text",
+  "pattern"
+ ],
+ "call": "result = Solution().maximumSubsequenceCount(text, pattern)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

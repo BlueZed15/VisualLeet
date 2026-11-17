@@ -1,0 +1,30 @@
+{
+ "slug": "largest-merge-of-two-strings",
+ "frontendId": "1754",
+ "title": "Largest Merge Of Two Strings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word1",
+   "type": "string"
+  },
+  {
+   "name": "word2",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "word1 = {word1}\nword2 = {word2}",
+ "visible": [
+  "word1",
+  "word2"
+ ],
+ "call": "result = Solution().largestMerge(word1, word2)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

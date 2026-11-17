@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-time-to-finish-the-race",
+ "frontendId": "2188",
+ "title": "Minimum Time to Finish the Race",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "tires",
+   "type": "integer[][]"
+  },
+  {
+   "name": "changeTime",
+   "type": "integer"
+  },
+  {
+   "name": "numLaps",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "tires = {tires}\nchangeTime = {changeTime}\nnumLaps = {numLaps}",
+ "visible": [
+  "tires",
+  "changeTime",
+  "numLaps"
+ ],
+ "call": "result = Solution().minimumFinishTime(tires, changeTime, numLaps)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

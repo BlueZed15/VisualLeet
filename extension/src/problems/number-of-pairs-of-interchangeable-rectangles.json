@@ -1,0 +1,25 @@
+{
+ "slug": "number-of-pairs-of-interchangeable-rectangles",
+ "frontendId": "2001",
+ "title": "Number of Pairs of Interchangeable Rectangles",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rectangles",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rectangles = {rectangles}",
+ "visible": [
+  "rectangles"
+ ],
+ "call": "result = Solution().interchangeableRectangles(rectangles)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "check-if-it-is-a-good-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1250",
+ "title": "Check If It Is a Good Array",
+ "premium": false,
+ "meta": {
+  "name": "isGoodArray",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[12,5,7,23]",
+  "[29,6,10]",
+  "[3,6]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

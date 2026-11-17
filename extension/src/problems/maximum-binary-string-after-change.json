@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-binary-string-after-change",
+ "frontendId": "1702",
+ "title": "Maximum Binary String After Change",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "binary",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "binary = {binary}",
+ "visible": [
+  "binary"
+ ],
+ "call": "result = Solution().maximumBinaryString(binary)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

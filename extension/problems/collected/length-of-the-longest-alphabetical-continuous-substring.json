@@ -1,0 +1,28 @@
+{
+ "slug": "length-of-the-longest-alphabetical-continuous-substring",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2414",
+ "title": "Length of the Longest Alphabetical Continuous Substring",
+ "premium": false,
+ "meta": {
+  "name": "longestContinuousSubstring",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abacaba\"",
+  "\"abcde\""
+ ],
+ "exampleOutputs": [
+  "2",
+  "5"
+ ],
+ "anyOrder": false
+}

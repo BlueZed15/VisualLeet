@@ -1,0 +1,29 @@
+{
+ "slug": "mini-parser",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "385",
+ "title": "Mini Parser",
+ "premium": false,
+ "meta": {
+  "name": "deserialize",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "NestedInteger"
+  },
+  "manual": false
+ },
+ "exampleInputs": [
+  "\"324\"",
+  "\"[123,[456,[789]]]\""
+ ],
+ "exampleOutputs": [
+  "324",
+  "[123,[456,[789]]]"
+ ],
+ "anyOrder": false
+}

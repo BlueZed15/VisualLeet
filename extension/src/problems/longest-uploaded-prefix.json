@@ -1,0 +1,47 @@
+{
+ "slug": "longest-uploaded-prefix",
+ "frontendId": "2424",
+ "title": "Longest Uploaded Prefix",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "LUPrefix",
+ "methods": {
+  "LUPrefix": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "upload": [
+   {
+    "name": "video",
+    "type": "integer"
+   }
+  ],
+  "longest": []
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = LUPrefix(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

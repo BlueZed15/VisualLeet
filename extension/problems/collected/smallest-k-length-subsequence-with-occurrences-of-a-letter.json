@@ -1,0 +1,42 @@
+{
+ "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2030",
+ "title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+ "premium": false,
+ "meta": {
+  "name": "smallestSubsequence",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "character",
+    "name": "letter"
+   },
+   {
+    "type": "integer",
+    "name": "repetition"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"leet\"\n3\n\"e\"\n1",
+  "\"leetcode\"\n4\n\"e\"\n2",
+  "\"bb\"\n2\n\"b\"\n2"
+ ],
+ "exampleOutputs": [
+  "\"eet\"",
+  "\"ecde\"",
+  "\"bb\""
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "count-integers-with-even-digit-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2180",
+ "title": "Count Integers With Even Digit Sum",
+ "premium": false,
+ "meta": {
+  "name": "countEven",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "4",
+  "30"
+ ],
+ "exampleOutputs": [
+  "2",
+  "14"
+ ],
+ "anyOrder": false
+}

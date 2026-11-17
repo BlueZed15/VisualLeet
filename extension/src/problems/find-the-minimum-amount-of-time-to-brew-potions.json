@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-minimum-amount-of-time-to-brew-potions",
+ "frontendId": "3494",
+ "title": "Find the Minimum Amount of Time to Brew Potions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "skill",
+   "type": "integer[]"
+  },
+  {
+   "name": "mana",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "skill = {skill}\nmana = {mana}",
+ "visible": [
+  "skill",
+  "mana"
+ ],
+ "call": "result = Solution().minTime(skill, mana)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

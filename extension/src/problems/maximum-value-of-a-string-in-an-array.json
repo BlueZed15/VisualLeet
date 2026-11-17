@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-value-of-a-string-in-an-array",
+ "frontendId": "2496",
+ "title": "Maximum Value of a String in an Array",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "strs",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "strs = {strs}",
+ "visible": [
+  "strs"
+ ],
+ "call": "result = Solution().maximumValue(strs)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

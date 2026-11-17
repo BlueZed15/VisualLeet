@@ -1,0 +1,35 @@
+{
+ "slug": "number-of-pairs-satisfying-inequality",
+ "frontendId": "2426",
+ "title": "Number of Pairs Satisfying Inequality",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums1",
+   "type": "integer[]"
+  },
+  {
+   "name": "nums2",
+   "type": "integer[]"
+  },
+  {
+   "name": "diff",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums1 = {nums1}\nnums2 = {nums2}\ndiff = {diff}",
+ "visible": [
+  "nums1",
+  "nums2",
+  "diff"
+ ],
+ "call": "result = Solution().numberOfPairs(nums1, nums2, diff)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "insufficient-nodes-in-root-to-leaf-paths",
+ "frontendId": "1080",
+ "title": "Insufficient Nodes in Root to Leaf Paths",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "root",
+   "type": "TreeNode"
+  },
+  {
+   "name": "limit",
+   "type": "integer"
+  }
+ ],
+ "helpers": [
+  "TreeNode"
+ ],
+ "setup": "root = {root}\nlimit = {limit}",
+ "visible": [
+  "root",
+  "limit"
+ ],
+ "call": "result = Solution().sufficientSubset(root, limit)\nprint(leet_str(tree_values(result)))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

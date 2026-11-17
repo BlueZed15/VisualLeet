@@ -1,0 +1,40 @@
+{
+ "slug": "k-items-with-the-maximum-sum",
+ "frontendId": "2600",
+ "title": "K Items With the Maximum Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "numOnes",
+   "type": "integer"
+  },
+  {
+   "name": "numZeros",
+   "type": "integer"
+  },
+  {
+   "name": "numNegOnes",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "numOnes = {numOnes}\nnumZeros = {numZeros}\nnumNegOnes = {numNegOnes}\nk = {k}",
+ "visible": [
+  "numOnes",
+  "numZeros",
+  "numNegOnes",
+  "k"
+ ],
+ "call": "result = Solution().kItemsWithMaximumSum(numOnes, numZeros, numNegOnes, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

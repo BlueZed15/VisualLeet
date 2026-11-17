@@ -1,0 +1,40 @@
+{
+ "slug": "k-items-with-the-maximum-sum",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2600",
+ "title": "K Items With the Maximum Sum",
+ "premium": false,
+ "meta": {
+  "name": "kItemsWithMaximumSum",
+  "params": [
+   {
+    "name": "numOnes",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "numZeros"
+   },
+   {
+    "type": "integer",
+    "name": "numNegOnes"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "3\n2\n0\n2",
+  "3\n2\n0\n4"
+ ],
+ "exampleOutputs": [
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

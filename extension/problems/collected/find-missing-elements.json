@@ -1,0 +1,30 @@
+{
+ "slug": "find-missing-elements",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3731",
+ "title": "Find Missing Elements",
+ "premium": false,
+ "meta": {
+  "name": "findMissingElements",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[1,4,2,5]",
+  "[7,8,6,9]",
+  "[5,1]"
+ ],
+ "exampleOutputs": [
+  "[3]",
+  "[]",
+  "[2,3,4]"
+ ],
+ "anyOrder": false
+}

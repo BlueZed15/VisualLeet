@@ -1,0 +1,49 @@
+{
+ "slug": "count-integers-in-intervals",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2276",
+ "title": "Count Integers in Intervals",
+ "premium": false,
+ "meta": {
+  "classname": "CountIntervals",
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "left"
+     },
+     {
+      "type": "integer",
+      "name": "right"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "count",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"CountIntervals\",\"add\",\"add\",\"count\",\"add\",\"count\"]\n[[],[2,3],[7,10],[],[5,8],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, 6, null, 8]"
+ ],
+ "anyOrder": false
+}

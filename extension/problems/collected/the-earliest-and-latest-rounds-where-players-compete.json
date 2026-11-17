@@ -1,0 +1,36 @@
+{
+ "slug": "the-earliest-and-latest-rounds-where-players-compete",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1900",
+ "title": "The Earliest and Latest Rounds Where Players Compete",
+ "premium": false,
+ "meta": {
+  "name": "earliestAndLatest",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "firstPlayer"
+   },
+   {
+    "type": "integer",
+    "name": "secondPlayer"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "11\n2\n4",
+  "5\n1\n5"
+ ],
+ "exampleOutputs": [
+  "[3,4]",
+  "[1,1]"
+ ],
+ "anyOrder": false
+}

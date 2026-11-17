@@ -1,0 +1,25 @@
+{
+ "slug": "count-ways-to-group-overlapping-ranges",
+ "frontendId": "2580",
+ "title": "Count Ways to Group Overlapping Ranges",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "ranges",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "ranges = {ranges}",
+ "visible": [
+  "ranges"
+ ],
+ "call": "result = Solution().countWays(ranges)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

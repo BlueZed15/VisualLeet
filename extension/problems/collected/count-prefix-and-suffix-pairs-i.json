@@ -1,0 +1,30 @@
+{
+ "slug": "count-prefix-and-suffix-pairs-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3042",
+ "title": "Count Prefix and Suffix Pairs I",
+ "premium": false,
+ "meta": {
+  "name": "countPrefixSuffixPairs",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"a\",\"aba\",\"ababa\",\"aa\"]",
+  "[\"pa\",\"papa\",\"ma\",\"mama\"]",
+  "[\"abab\",\"ab\"]"
+ ],
+ "exampleOutputs": [
+  "4",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

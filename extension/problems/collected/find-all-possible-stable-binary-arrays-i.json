@@ -1,0 +1,38 @@
+{
+ "slug": "find-all-possible-stable-binary-arrays-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3129",
+ "title": "Find All Possible Stable Binary Arrays I",
+ "premium": false,
+ "meta": {
+  "name": "numberOfStableArrays",
+  "params": [
+   {
+    "name": "zero",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "one"
+   },
+   {
+    "type": "integer",
+    "name": "limit"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1\n1\n2",
+  "1\n2\n1",
+  "3\n3\n2"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "14"
+ ],
+ "anyOrder": false
+}

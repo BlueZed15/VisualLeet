@@ -1,0 +1,30 @@
+{
+ "slug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
+ "frontendId": "1737",
+ "title": "Change Minimum Characters to Satisfy One of Three Conditions",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "a",
+   "type": "string"
+  },
+  {
+   "name": "b",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "a = {a}\nb = {b}",
+ "visible": [
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().minCharacters(a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

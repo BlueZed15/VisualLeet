@@ -1,0 +1,35 @@
+{
+ "slug": "difference-between-maximum-and-minimum-price-sum",
+ "frontendId": "2538",
+ "title": "Difference Between Maximum and Minimum Price Sum",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "price",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nedges = {edges}\nprice = {price}",
+ "visible": [
+  "n",
+  "edges",
+  "price"
+ ],
+ "call": "result = Solution().maxOutput(n, edges, price)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

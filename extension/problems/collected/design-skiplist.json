@@ -1,0 +1,63 @@
+{
+ "slug": "design-skiplist",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1206",
+ "title": "Design Skiplist",
+ "premium": false,
+ "meta": {
+  "classname": "Skiplist",
+  "maxbytesperline": 160000,
+  "constructor": {
+   "params": []
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "target"
+     }
+    ],
+    "name": "search",
+    "return": {
+     "type": "boolean"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "add",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "erase",
+    "return": {
+     "type": "boolean"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Skiplist\",\"add\",\"add\",\"add\",\"search\",\"add\",\"search\",\"erase\",\"erase\",\"search\"]\n[[],[1],[2],[3],[0],[4],[1],[0],[1],[1]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, false, null, true, false, true, false]"
+ ],
+ "anyOrder": false
+}

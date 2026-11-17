@@ -1,0 +1,32 @@
+{
+ "slug": "taking-maximum-energy-from-the-mystic-dungeon",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3147",
+ "title": "Taking Maximum Energy From the Mystic Dungeon",
+ "premium": false,
+ "meta": {
+  "name": "maximumEnergy",
+  "params": [
+   {
+    "name": "energy",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[5,2,-10,-5,1]\n3",
+  "[-2,-3,-1]\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "-1"
+ ],
+ "anyOrder": false
+}

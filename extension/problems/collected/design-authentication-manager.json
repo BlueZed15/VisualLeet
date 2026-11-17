@@ -1,0 +1,75 @@
+{
+ "slug": "design-authentication-manager",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1797",
+ "title": "Design Authentication Manager",
+ "premium": false,
+ "meta": {
+  "classname": "AuthenticationManager",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "timeToLive"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "tokenId"
+     },
+     {
+      "type": "integer",
+      "name": "currentTime"
+     }
+    ],
+    "name": "generate",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "string",
+      "name": "tokenId"
+     },
+     {
+      "type": "integer",
+      "name": "currentTime"
+     }
+    ],
+    "name": "renew",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "currentTime"
+     }
+    ],
+    "name": "countUnexpiredTokens",
+    "return": {
+     "type": "integer"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"AuthenticationManager\",\"renew\",\"generate\",\"countUnexpiredTokens\",\"generate\",\"renew\",\"renew\",\"countUnexpiredTokens\"]\n[[5],[\"aaa\",1],[\"aaa\",2],[6],[\"bbb\",7],[\"aaa\",8],[\"bbb\",10],[15]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, 1, null, null, null, 0]"
+ ],
+ "anyOrder": false
+}

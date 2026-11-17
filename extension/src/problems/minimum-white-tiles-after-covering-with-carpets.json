@@ -1,0 +1,35 @@
+{
+ "slug": "minimum-white-tiles-after-covering-with-carpets",
+ "frontendId": "2209",
+ "title": "Minimum White Tiles After Covering With Carpets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "floor",
+   "type": "string"
+  },
+  {
+   "name": "numCarpets",
+   "type": "integer"
+  },
+  {
+   "name": "carpetLen",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "floor = {floor}\nnumCarpets = {numCarpets}\ncarpetLen = {carpetLen}",
+ "visible": [
+  "floor",
+  "numCarpets",
+  "carpetLen"
+ ],
+ "call": "result = Solution().minimumWhiteTiles(floor, numCarpets, carpetLen)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "next-greater-numerically-balanced-number",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2048",
+ "title": "Next Greater Numerically Balanced Number",
+ "premium": false,
+ "meta": {
+  "name": "nextBeautifulNumber",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "1",
+  "1000",
+  "3000"
+ ],
+ "exampleOutputs": [
+  "22",
+  "1333",
+  "3133"
+ ],
+ "anyOrder": false
+}

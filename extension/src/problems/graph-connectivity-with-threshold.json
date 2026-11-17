@@ -1,0 +1,35 @@
+{
+ "slug": "graph-connectivity-with-threshold",
+ "frontendId": "1627",
+ "title": "Graph Connectivity With Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nthreshold = {threshold}\nqueries = {queries}",
+ "visible": [
+  "n",
+  "threshold",
+  "queries"
+ ],
+ "call": "result = Solution().areConnected(n, threshold, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

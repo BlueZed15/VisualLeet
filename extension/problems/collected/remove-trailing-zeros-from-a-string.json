@@ -1,0 +1,28 @@
+{
+ "slug": "remove-trailing-zeros-from-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2710",
+ "title": "Remove Trailing Zeros From a String",
+ "premium": false,
+ "meta": {
+  "name": "removeTrailingZeros",
+  "params": [
+   {
+    "name": "num",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"51230100\"",
+  "\"123\""
+ ],
+ "exampleOutputs": [
+  "\"512301\"",
+  "\"123\""
+ ],
+ "anyOrder": false
+}

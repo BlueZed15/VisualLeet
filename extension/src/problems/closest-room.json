@@ -1,0 +1,30 @@
+{
+ "slug": "closest-room",
+ "frontendId": "1847",
+ "title": "Closest Room",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "rooms",
+   "type": "integer[][]"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "rooms = {rooms}\nqueries = {queries}",
+ "visible": [
+  "rooms",
+  "queries"
+ ],
+ "call": "result = Solution().closestRoom(rooms, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

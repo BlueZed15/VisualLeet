@@ -1,0 +1,36 @@
+{
+ "slug": "apply-operations-to-make-two-strings-equal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2896",
+ "title": "Apply Operations to Make Two Strings Equal",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "s1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "s2"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"1100011000\"\n\"0101001010\"\n2",
+  "\"10110\"\n\"00011\"\n4"
+ ],
+ "exampleOutputs": [
+  "4",
+  "-1"
+ ],
+ "anyOrder": false
+}

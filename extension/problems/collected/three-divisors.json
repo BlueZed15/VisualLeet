@@ -1,0 +1,28 @@
+{
+ "slug": "three-divisors",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1952",
+ "title": "Three Divisors",
+ "premium": false,
+ "meta": {
+  "name": "isThree",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "2",
+  "4"
+ ],
+ "exampleOutputs": [
+  "falseExplantion: 2 has only two divisors: 1 and 2.",
+  "trueExplantion: 4 has three divisors: 1, 2, and 4."
+ ],
+ "anyOrder": false
+}

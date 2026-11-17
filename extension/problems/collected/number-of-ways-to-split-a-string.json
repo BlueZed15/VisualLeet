@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-ways-to-split-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1573",
+ "title": "Number of Ways to Split a String",
+ "premium": false,
+ "meta": {
+  "name": "numWays",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"10101\"",
+  "\"1001\"",
+  "\"0000\""
+ ],
+ "exampleOutputs": [
+  "4",
+  "0",
+  "3"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-operations-to-reduce-an-integer-to-0",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2571",
+ "title": "Minimum Operations to Reduce an Integer to 0",
+ "premium": false,
+ "meta": {
+  "name": "minOperations",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "39",
+  "54"
+ ],
+ "exampleOutputs": [
+  "3",
+  "3"
+ ],
+ "anyOrder": false
+}

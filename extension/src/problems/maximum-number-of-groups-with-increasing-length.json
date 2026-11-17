@@ -1,0 +1,25 @@
+{
+ "slug": "maximum-number-of-groups-with-increasing-length",
+ "frontendId": "2790",
+ "title": "Maximum Number of Groups With Increasing Length",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "usageLimits",
+   "type": "list<integer>"
+  }
+ ],
+ "helpers": [],
+ "setup": "usageLimits = {usageLimits}",
+ "visible": [
+  "usageLimits"
+ ],
+ "call": "result = Solution().maxIncreasingGroups(usageLimits)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

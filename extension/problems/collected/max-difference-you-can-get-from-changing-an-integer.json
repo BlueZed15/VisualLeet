@@ -1,0 +1,28 @@
+{
+ "slug": "max-difference-you-can-get-from-changing-an-integer",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1432",
+ "title": "Max Difference You Can Get From Changing an Integer",
+ "premium": false,
+ "meta": {
+  "name": "maxDiff",
+  "params": [
+   {
+    "name": "num",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "555",
+  "9"
+ ],
+ "exampleOutputs": [
+  "888",
+  "8"
+ ],
+ "anyOrder": false
+}

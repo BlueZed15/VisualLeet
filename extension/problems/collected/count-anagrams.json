@@ -1,0 +1,28 @@
+{
+ "slug": "count-anagrams",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2514",
+ "title": "Count Anagrams",
+ "premium": false,
+ "meta": {
+  "name": "countAnagrams",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"too hot\"",
+  "\"aa\""
+ ],
+ "exampleOutputs": [
+  "18",
+  "1"
+ ],
+ "anyOrder": false
+}

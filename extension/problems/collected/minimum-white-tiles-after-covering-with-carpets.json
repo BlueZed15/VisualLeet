@@ -1,0 +1,36 @@
+{
+ "slug": "minimum-white-tiles-after-covering-with-carpets",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2209",
+ "title": "Minimum White Tiles After Covering With Carpets",
+ "premium": false,
+ "meta": {
+  "name": "minimumWhiteTiles",
+  "params": [
+   {
+    "name": "floor",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "numCarpets"
+   },
+   {
+    "type": "integer",
+    "name": "carpetLen"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"10110101\"\n2\n2",
+  "\"11111\"\n2\n3"
+ ],
+ "exampleOutputs": [
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

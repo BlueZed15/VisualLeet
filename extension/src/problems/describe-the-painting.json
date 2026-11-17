@@ -1,0 +1,25 @@
+{
+ "slug": "describe-the-painting",
+ "frontendId": "1943",
+ "title": "Describe the Painting",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "segments",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "segments = {segments}",
+ "visible": [
+  "segments"
+ ],
+ "call": "result = Solution().splitPainting(segments)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

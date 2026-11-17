@@ -1,0 +1,32 @@
+{
+ "slug": "task-scheduler-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2365",
+ "title": "Task Scheduler II",
+ "premium": false,
+ "meta": {
+  "name": "taskSchedulerII",
+  "params": [
+   {
+    "name": "tasks",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "space"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,1,2,3,1]\n3",
+  "[5,8,8,5]\n2"
+ ],
+ "exampleOutputs": [
+  "9",
+  "6"
+ ],
+ "anyOrder": false
+}

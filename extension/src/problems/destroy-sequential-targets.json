@@ -1,0 +1,30 @@
+{
+ "slug": "destroy-sequential-targets",
+ "frontendId": "2453",
+ "title": "Destroy Sequential Targets",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "space",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nspace = {space}",
+ "visible": [
+  "nums",
+  "space"
+ ],
+ "call": "result = Solution().destroyTargets(nums, space)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

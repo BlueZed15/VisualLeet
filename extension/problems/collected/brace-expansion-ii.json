@@ -1,0 +1,28 @@
+{
+ "slug": "brace-expansion-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1096",
+ "title": "Brace Expansion II",
+ "premium": false,
+ "meta": {
+  "name": "braceExpansionII",
+  "params": [
+   {
+    "name": "expression",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "list<string>"
+  }
+ },
+ "exampleInputs": [
+  "\"{a,b}{c,{d,e}}\"",
+  "\"{{a,z},a{b,c},{ab,z}}\""
+ ],
+ "exampleOutputs": [
+  "[\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]",
+  "[\"a\",\"ab\",\"ac\",\"z\"]"
+ ],
+ "anyOrder": false
+}

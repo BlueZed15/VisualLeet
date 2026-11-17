@@ -1,0 +1,30 @@
+{
+ "slug": "find-the-original-typed-string-ii",
+ "frontendId": "3333",
+ "title": "Find the Original Typed String II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "word",
+   "type": "string"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "word = {word}\nk = {k}",
+ "visible": [
+  "word",
+  "k"
+ ],
+ "call": "result = Solution().possibleStringCount(word, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

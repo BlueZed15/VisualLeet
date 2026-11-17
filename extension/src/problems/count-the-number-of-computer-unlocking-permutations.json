@@ -1,0 +1,25 @@
+{
+ "slug": "count-the-number-of-computer-unlocking-permutations",
+ "frontendId": "3577",
+ "title": "Count the Number of Computer Unlocking Permutations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "complexity",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "complexity = {complexity}",
+ "visible": [
+  "complexity"
+ ],
+ "call": "result = Solution().countPermutations(complexity)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

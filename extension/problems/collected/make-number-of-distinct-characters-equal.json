@@ -1,0 +1,34 @@
+{
+ "slug": "make-number-of-distinct-characters-equal",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2531",
+ "title": "Make Number of Distinct Characters Equal",
+ "premium": false,
+ "meta": {
+  "name": "isItPossible",
+  "params": [
+   {
+    "name": "word1",
+    "type": "string"
+   },
+   {
+    "type": "string",
+    "name": "word2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "\"ac\"\n\"b\"",
+  "\"abcc\"\n\"aab\"",
+  "\"abcde\"\n\"fghij\""
+ ],
+ "exampleOutputs": [
+  "false",
+  "true",
+  "true"
+ ],
+ "anyOrder": false
+}

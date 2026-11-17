@@ -1,0 +1,34 @@
+{
+ "slug": "find-a-safe-walk-through-a-grid",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3286",
+ "title": "Find a Safe Walk Through a Grid",
+ "premium": false,
+ "meta": {
+  "name": "findSafeWalk",
+  "params": [
+   {
+    "name": "grid",
+    "type": "list<list<integer>>"
+   },
+   {
+    "type": "integer",
+    "name": "health"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]\n1",
+  "[[0,1,1,0,0,0],[1,0,1,0,0,0],[0,1,1,1,0,1],[0,0,1,0,1,0]]\n3",
+  "[[1,1,1],[1,0,1],[1,1,1]]\n5"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

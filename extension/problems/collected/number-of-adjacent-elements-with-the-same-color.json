@@ -1,0 +1,32 @@
+{
+ "slug": "number-of-adjacent-elements-with-the-same-color",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2672",
+ "title": "Number of Adjacent Elements With the Same Color",
+ "premium": false,
+ "meta": {
+  "name": "colorTheArray",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer[][]",
+    "name": "queries"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "4\n[[0,2],[1,2],[3,1],[1,1],[2,1]]",
+  "1\n[[0,100000]]"
+ ],
+ "exampleOutputs": [
+  "[0,1,1,0,2]",
+  "[0]"
+ ],
+ "anyOrder": false
+}

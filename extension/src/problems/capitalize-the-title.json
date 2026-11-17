@@ -1,0 +1,25 @@
+{
+ "slug": "capitalize-the-title",
+ "frontendId": "2129",
+ "title": "Capitalize the Title",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "title",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "title = {title}",
+ "visible": [
+  "title"
+ ],
+ "call": "result = Solution().capitalizeTitle(title)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

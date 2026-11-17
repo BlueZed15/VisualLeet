@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3629",
+ "title": "Minimum Jumps to Reach End via Prime Teleportation",
+ "premium": false,
+ "meta": {
+  "name": "minJumps",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,4,6]",
+  "[2,3,4,7,9]",
+  "[4,6,5,8]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "3"
+ ],
+ "anyOrder": false
+}

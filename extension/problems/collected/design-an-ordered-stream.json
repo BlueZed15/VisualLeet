@@ -1,0 +1,47 @@
+{
+ "slug": "design-an-ordered-stream",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1656",
+ "title": "Design an Ordered Stream",
+ "premium": false,
+ "meta": {
+  "classname": "OrderedStream",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "n"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "idKey"
+     },
+     {
+      "type": "string",
+      "name": "value"
+     }
+    ],
+    "name": "insert",
+    "return": {
+     "type": "list<string>"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"OrderedStream\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]\n[[5],[3,\"ccccc\"],[1,\"aaaaa\"],[2,\"bbbbb\"],[5,\"eeeee\"],[4,\"ddddd\"]]"
+ ],
+ "exampleOutputs": [
+  "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]"
+ ],
+ "anyOrder": false
+}

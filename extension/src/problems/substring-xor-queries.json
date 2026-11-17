@@ -1,0 +1,30 @@
+{
+ "slug": "substring-xor-queries",
+ "frontendId": "2564",
+ "title": "Substring XOR Queries",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "queries",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\nqueries = {queries}",
+ "visible": [
+  "s",
+  "queries"
+ ],
+ "call": "result = Solution().substringXorQueries(s, queries)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

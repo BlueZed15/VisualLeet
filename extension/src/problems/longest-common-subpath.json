@@ -1,0 +1,30 @@
+{
+ "slug": "longest-common-subpath",
+ "frontendId": "1923",
+ "title": "Longest Common Subpath",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "paths",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\npaths = {paths}",
+ "visible": [
+  "n",
+  "paths"
+ ],
+ "call": "result = Solution().longestCommonSubpath(n, paths)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

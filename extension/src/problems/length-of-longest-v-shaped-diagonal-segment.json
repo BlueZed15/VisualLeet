@@ -1,0 +1,25 @@
+{
+ "slug": "length-of-longest-v-shaped-diagonal-segment",
+ "frontendId": "3459",
+ "title": "Length of Longest V-Shaped Diagonal Segment",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "grid",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "grid = {grid}",
+ "visible": [
+  "grid"
+ ],
+ "call": "result = Solution().lenOfVDiagonal(grid)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

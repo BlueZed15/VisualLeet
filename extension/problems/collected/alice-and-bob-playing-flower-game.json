@@ -1,0 +1,32 @@
+{
+ "slug": "alice-and-bob-playing-flower-game",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3021",
+ "title": "Alice and Bob Playing Flower Game",
+ "premium": false,
+ "meta": {
+  "name": "flowerGame",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "m"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "3\n2",
+  "1\n1"
+ ],
+ "exampleOutputs": [
+  "3",
+  "0"
+ ],
+ "anyOrder": false
+}

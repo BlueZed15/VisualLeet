@@ -1,0 +1,30 @@
+{
+ "slug": "maximum-score-after-applying-operations-on-a-tree",
+ "frontendId": "2925",
+ "title": "Maximum Score After Applying Operations on a Tree",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "edges",
+   "type": "integer[][]"
+  },
+  {
+   "name": "values",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "edges = {edges}\nvalues = {values}",
+ "visible": [
+  "edges",
+  "values"
+ ],
+ "call": "result = Solution().maximumScoreAfterOperations(edges, values)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

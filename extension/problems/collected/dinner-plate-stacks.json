@@ -1,0 +1,62 @@
+{
+ "slug": "dinner-plate-stacks",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1172",
+ "title": "Dinner Plate Stacks",
+ "premium": false,
+ "meta": {
+  "classname": "DinnerPlates",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "capacity"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "val"
+     }
+    ],
+    "name": "push",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "pop",
+    "return": {
+     "type": "integer"
+    }
+   },
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "index"
+     }
+    ],
+    "return": {
+     "type": "integer"
+    },
+    "name": "popAtStack"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"DinnerPlates\",\"push\",\"push\",\"push\",\"push\",\"push\",\"popAtStack\",\"push\",\"push\",\"popAtStack\",\"popAtStack\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[2],[1],[2],[3],[4],[5],[0],[20],[21],[0],[2],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, null, null, null, 2, null, null, 20, 21, 5, 4, 3, 1, -1]"
+ ],
+ "anyOrder": false
+}

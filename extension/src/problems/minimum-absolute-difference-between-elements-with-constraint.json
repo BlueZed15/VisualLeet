@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-absolute-difference-between-elements-with-constraint",
+ "frontendId": "2817",
+ "title": "Minimum Absolute Difference Between Elements With Constraint",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "list<integer>"
+  },
+  {
+   "name": "x",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nx = {x}",
+ "visible": [
+  "nums",
+  "x"
+ ],
+ "call": "result = Solution().minAbsoluteDifference(nums, x)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

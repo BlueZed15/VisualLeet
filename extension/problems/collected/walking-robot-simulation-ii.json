@@ -1,0 +1,61 @@
+{
+ "slug": "walking-robot-simulation-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2069",
+ "title": "Walking Robot Simulation II",
+ "premium": false,
+ "meta": {
+  "classname": "Robot",
+  "constructor": {
+   "params": [
+    {
+     "type": "integer",
+     "name": "width"
+    },
+    {
+     "name": "height",
+     "type": "integer"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "params": [
+     {
+      "type": "integer",
+      "name": "num"
+     }
+    ],
+    "name": "step",
+    "return": {
+     "type": "void"
+    }
+   },
+   {
+    "params": [],
+    "name": "getPos",
+    "return": {
+     "type": "integer[]"
+    }
+   },
+   {
+    "params": [],
+    "name": "getDir",
+    "return": {
+     "type": "string"
+    }
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  },
+  "systemdesign": true
+ },
+ "exampleInputs": [
+  "[\"Robot\",\"step\",\"step\",\"getPos\",\"getDir\",\"step\",\"step\",\"step\",\"getPos\",\"getDir\"]\n[[6,3],[2],[2],[],[],[2],[1],[4],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]"
+ ],
+ "anyOrder": false
+}

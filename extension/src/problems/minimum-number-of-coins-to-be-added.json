@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-coins-to-be-added",
+ "frontendId": "2952",
+ "title": "Minimum Number of Coins to be Added",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "coins",
+   "type": "integer[]"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "coins = {coins}\ntarget = {target}",
+ "visible": [
+  "coins",
+  "target"
+ ],
+ "call": "result = Solution().minimumAddedCoins(coins, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "powerful-integers",
+ "frontendId": "970",
+ "title": "Powerful Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  },
+  {
+   "name": "bound",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}\nbound = {bound}",
+ "visible": [
+  "x",
+  "y",
+  "bound"
+ ],
+ "call": "result = Solution().powerfulIntegers(x, y, bound)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

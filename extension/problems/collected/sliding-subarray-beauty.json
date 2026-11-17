@@ -1,0 +1,38 @@
+{
+ "slug": "sliding-subarray-beauty",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2653",
+ "title": "Sliding Subarray Beauty",
+ "premium": false,
+ "meta": {
+  "name": "getSubarrayBeauty",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,-1,-3,-2,3]\n3\n2",
+  "[-1,-2,-3,-4,-5]\n2\n2",
+  "[-3,1,2,-3,0,-3]\n2\n1"
+ ],
+ "exampleOutputs": [
+  "[-1,-2,-2]",
+  "[-1,-2,-3,-4]",
+  "[-3,0,-3,-3,-3]"
+ ],
+ "anyOrder": false
+}

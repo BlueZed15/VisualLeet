@@ -1,0 +1,25 @@
+{
+ "slug": "brace-expansion-ii",
+ "frontendId": "1096",
+ "title": "Brace Expansion II",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "expression",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "expression = {expression}",
+ "visible": [
+  "expression"
+ ],
+ "call": "result = Solution().braceExpansionII(expression)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

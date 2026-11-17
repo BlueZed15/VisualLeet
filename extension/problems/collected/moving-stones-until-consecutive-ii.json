@@ -1,0 +1,28 @@
+{
+ "slug": "moving-stones-until-consecutive-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1040",
+ "title": "Moving Stones Until Consecutive II",
+ "premium": false,
+ "meta": {
+  "name": "numMovesStonesII",
+  "params": [
+   {
+    "name": "stones",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[7,4,9]",
+  "[6,5,4,3,10]"
+ ],
+ "exampleOutputs": [
+  "[1,2]",
+  "[2,3]"
+ ],
+ "anyOrder": false
+}

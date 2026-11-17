@@ -1,0 +1,35 @@
+{
+ "slug": "maximum-walls-destroyed-by-robots",
+ "frontendId": "3661",
+ "title": "Maximum Walls Destroyed by Robots",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "robots",
+   "type": "integer[]"
+  },
+  {
+   "name": "distance",
+   "type": "integer[]"
+  },
+  {
+   "name": "walls",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "robots = {robots}\ndistance = {distance}\nwalls = {walls}",
+ "visible": [
+  "robots",
+  "distance",
+  "walls"
+ ],
+ "call": "result = Solution().maxWalls(robots, distance, walls)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

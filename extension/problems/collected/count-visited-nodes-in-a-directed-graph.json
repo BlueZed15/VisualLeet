@@ -1,0 +1,28 @@
+{
+ "slug": "count-visited-nodes-in-a-directed-graph",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2876",
+ "title": "Count Visited Nodes in a Directed Graph",
+ "premium": false,
+ "meta": {
+  "name": "countVisitedNodes",
+  "params": [
+   {
+    "name": "edges",
+    "type": "list<integer>"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,0,0]",
+  "[1,2,3,4,0]"
+ ],
+ "exampleOutputs": [
+  "[3,3,3,4]",
+  "[5,5,5,5,5]"
+ ],
+ "anyOrder": false
+}

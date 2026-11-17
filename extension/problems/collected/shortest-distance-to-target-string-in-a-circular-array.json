@@ -1,0 +1,38 @@
+{
+ "slug": "shortest-distance-to-target-string-in-a-circular-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2515",
+ "title": "Shortest Distance to Target String in a Circular Array",
+ "premium": false,
+ "meta": {
+  "name": "closestTarget",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   },
+   {
+    "type": "string",
+    "name": "target"
+   },
+   {
+    "type": "integer",
+    "name": "startIndex"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n1",
+  "[\"a\",\"b\",\"leetcode\"]\n\"leetcode\"\n0",
+  "[\"i\",\"eat\",\"leetcode\"]\n\"ate\"\n0"
+ ],
+ "exampleOutputs": [
+  "1",
+  "1",
+  "-1"
+ ],
+ "anyOrder": false
+}

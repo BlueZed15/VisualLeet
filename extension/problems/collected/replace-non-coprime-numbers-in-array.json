@@ -1,0 +1,28 @@
+{
+ "slug": "replace-non-coprime-numbers-in-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2197",
+ "title": "Replace Non-Coprime Numbers in Array",
+ "premium": false,
+ "meta": {
+  "name": "replaceNonCoprimes",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<integer>"
+  }
+ },
+ "exampleInputs": [
+  "[6,4,3,2,7,6,2]",
+  "[2,2,1,1,3,3,3]"
+ ],
+ "exampleOutputs": [
+  "[12,7,6]",
+  "[2,1,1,3]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,69 @@
+{
+ "slug": "implement-router",
+ "frontendId": "3508",
+ "title": "Implement Router",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "Router",
+ "methods": {
+  "Router": [
+   {
+    "name": "memoryLimit",
+    "type": "integer"
+   }
+  ],
+  "addPacket": [
+   {
+    "name": "source",
+    "type": "integer"
+   },
+   {
+    "name": "destination",
+    "type": "integer"
+   },
+   {
+    "name": "timestamp",
+    "type": "integer"
+   }
+  ],
+  "forwardPacket": [],
+  "getCount": [
+   {
+    "name": "destination",
+    "type": "integer"
+   },
+   {
+    "name": "startTime",
+    "type": "integer"
+   },
+   {
+    "name": "endTime",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = Router(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

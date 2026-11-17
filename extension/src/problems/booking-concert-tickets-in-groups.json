@@ -1,0 +1,64 @@
+{
+ "slug": "booking-concert-tickets-in-groups",
+ "frontendId": "2286",
+ "title": "Booking Concert Tickets in Groups",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "design",
+ "className": "BookMyShow",
+ "methods": {
+  "BookMyShow": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "name": "m",
+    "type": "integer"
+   }
+  ],
+  "gather": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "maxRow",
+    "type": "integer"
+   }
+  ],
+  "scatter": [
+   {
+    "name": "k",
+    "type": "integer"
+   },
+   {
+    "name": "maxRow",
+    "type": "integer"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "name": "operations",
+   "type": "string[]"
+  },
+  {
+   "name": "arguments",
+   "type": "design-args"
+  }
+ ],
+ "helpers": [
+  "run_ops"
+ ],
+ "visible": [
+  "ops",
+  "args"
+ ],
+ "call": "obj = BookMyShow(*args[0])\nout = [None] + run_ops(obj, ops[1:], args[1:])\nprint(leet_str(out))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

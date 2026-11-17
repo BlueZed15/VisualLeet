@@ -1,0 +1,30 @@
+{
+ "slug": "greatest-english-letter-in-upper-and-lower-case",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2309",
+ "title": "Greatest English Letter in Upper and Lower Case",
+ "premium": false,
+ "meta": {
+  "name": "greatestLetter",
+  "params": [
+   {
+    "name": "s",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"lEeTcOdE\"",
+  "\"arRAzFif\"",
+  "\"AbCdEfGhIjK\""
+ ],
+ "exampleOutputs": [
+  "\"E\"",
+  "\"R\"",
+  "\"\""
+ ],
+ "anyOrder": false
+}

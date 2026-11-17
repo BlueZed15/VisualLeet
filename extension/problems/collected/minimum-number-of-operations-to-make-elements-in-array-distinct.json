@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3396",
+ "title": "Minimum Number of Operations to Make Elements in Array Distinct",
+ "premium": false,
+ "meta": {
+  "name": "minimumOperations",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,3,4,2,3,3,5,7]",
+  "[4,5,6,4,4]",
+  "[6,7,8,9]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "2",
+  "0"
+ ],
+ "anyOrder": false
+}

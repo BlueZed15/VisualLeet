@@ -1,0 +1,28 @@
+{
+ "slug": "maximum-binary-string-after-change",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1702",
+ "title": "Maximum Binary String After Change",
+ "premium": false,
+ "meta": {
+  "name": "maximumBinaryString",
+  "params": [
+   {
+    "name": "binary",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "\"000110\"",
+  "\"01\""
+ ],
+ "exampleOutputs": [
+  "\"111011\"",
+  "\"01\""
+ ],
+ "anyOrder": false
+}

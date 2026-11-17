@@ -1,0 +1,61 @@
+{
+ "slug": "random-flip-matrix",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "519",
+ "title": "Random Flip Matrix",
+ "premium": false,
+ "meta": {
+  "classname": "Solution",
+  "maxbytesperline": 200000,
+  "constructor": {
+   "params": [
+    {
+     "name": "m",
+     "type": "integer"
+    },
+    {
+     "name": "n",
+     "type": "integer"
+    }
+   ]
+  },
+  "methods": [
+   {
+    "name": "flip",
+    "params": [],
+    "return": {
+     "type": "integer[]"
+    }
+   },
+   {
+    "name": "reset",
+    "params": [],
+    "return": {
+     "type": "void"
+    }
+   }
+  ],
+  "systemdesign": true,
+  "params": [
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   },
+   {
+    "name": "inputs",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "list<String>",
+   "dealloc": true
+  }
+ },
+ "exampleInputs": [
+  "[\"Solution\",\"flip\",\"flip\",\"flip\",\"reset\",\"flip\"]\n[[3,1],[],[],[],[],[]]"
+ ],
+ "exampleOutputs": [
+  "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]"
+ ],
+ "anyOrder": false
+}

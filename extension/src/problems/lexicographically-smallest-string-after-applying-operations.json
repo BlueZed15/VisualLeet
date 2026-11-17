@@ -1,0 +1,35 @@
+{
+ "slug": "lexicographically-smallest-string-after-applying-operations",
+ "frontendId": "1625",
+ "title": "Lexicographically Smallest String After Applying Operations",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": true,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  },
+  {
+   "name": "a",
+   "type": "integer"
+  },
+  {
+   "name": "b",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}\na = {a}\nb = {b}",
+ "visible": [
+  "s",
+  "a",
+  "b"
+ ],
+ "call": "result = Solution().findLexSmallestString(s, a, b)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "minimum-deletions-to-make-string-k-special",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3085",
+ "title": "Minimum Deletions to Make String K-Special",
+ "premium": false,
+ "meta": {
+  "name": "minimumDeletions",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aabcaba\"\n0",
+  "\"dabdcbdcdcd\"\n2",
+  "\"aaabaaa\"\n2"
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

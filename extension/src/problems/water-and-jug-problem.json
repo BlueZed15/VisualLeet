@@ -1,0 +1,35 @@
+{
+ "slug": "water-and-jug-problem",
+ "frontendId": "365",
+ "title": "Water and Jug Problem",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "x",
+   "type": "integer"
+  },
+  {
+   "name": "y",
+   "type": "integer"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "x = {x}\ny = {y}\ntarget = {target}",
+ "visible": [
+  "x",
+  "y",
+  "target"
+ ],
+ "call": "result = Solution().canMeasureWater(x, y, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

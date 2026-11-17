@@ -1,0 +1,32 @@
+{
+ "slug": "collecting-chocolates",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2735",
+ "title": "Collecting Chocolates",
+ "premium": false,
+ "meta": {
+  "name": "minCost",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "x"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "[20,1,15]\n5",
+  "[1,2,3]\n4"
+ ],
+ "exampleOutputs": [
+  "13",
+  "6"
+ ],
+ "anyOrder": false
+}

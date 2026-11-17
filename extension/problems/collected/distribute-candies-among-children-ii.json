@@ -1,0 +1,32 @@
+{
+ "slug": "distribute-candies-among-children-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2929",
+ "title": "Distribute Candies Among Children II",
+ "premium": false,
+ "meta": {
+  "name": "distributeCandies",
+  "params": [
+   {
+    "name": "n",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "limit"
+   }
+  ],
+  "return": {
+   "type": "long"
+  }
+ },
+ "exampleInputs": [
+  "5\n2",
+  "3\n3"
+ ],
+ "exampleOutputs": [
+  "3",
+  "10"
+ ],
+ "anyOrder": false
+}

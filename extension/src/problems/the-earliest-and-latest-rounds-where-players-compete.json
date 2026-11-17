@@ -1,0 +1,35 @@
+{
+ "slug": "the-earliest-and-latest-rounds-where-players-compete",
+ "frontendId": "1900",
+ "title": "The Earliest and Latest Rounds Where Players Compete",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "integer"
+  },
+  {
+   "name": "firstPlayer",
+   "type": "integer"
+  },
+  {
+   "name": "secondPlayer",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\nfirstPlayer = {firstPlayer}\nsecondPlayer = {secondPlayer}",
+ "visible": [
+  "n",
+  "firstPlayer",
+  "secondPlayer"
+ ],
+ "call": "result = Solution().earliestAndLatest(n, firstPlayer, secondPlayer)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

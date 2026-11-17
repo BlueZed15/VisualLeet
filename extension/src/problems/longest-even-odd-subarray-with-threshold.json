@@ -1,0 +1,30 @@
+{
+ "slug": "longest-even-odd-subarray-with-threshold",
+ "frontendId": "2760",
+ "title": "Longest Even Odd Subarray With Threshold",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "nums",
+   "type": "integer[]"
+  },
+  {
+   "name": "threshold",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "nums = {nums}\nthreshold = {threshold}",
+ "visible": [
+  "nums",
+  "threshold"
+ ],
+ "call": "result = Solution().longestAlternatingSubarray(nums, threshold)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

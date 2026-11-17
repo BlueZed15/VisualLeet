@@ -1,0 +1,30 @@
+{
+ "slug": "number-of-different-integers-in-a-string",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1805",
+ "title": "Number of Different Integers in a String",
+ "premium": false,
+ "meta": {
+  "name": "numDifferentIntegers",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"a123bc34d8ef34\"",
+  "\"leet1234code234\"",
+  "\"a1b01c001\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "2",
+  "1"
+ ],
+ "anyOrder": false
+}

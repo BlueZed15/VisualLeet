@@ -1,0 +1,30 @@
+{
+ "slug": "count-the-number-of-special-characters-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3120",
+ "title": "Count the Number of Special Characters I",
+ "premium": false,
+ "meta": {
+  "name": "numberOfSpecialChars",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"aaAbcBC\"",
+  "\"abc\"",
+  "\"abBCab\""
+ ],
+ "exampleOutputs": [
+  "3",
+  "0",
+  "1"
+ ],
+ "anyOrder": false
+}

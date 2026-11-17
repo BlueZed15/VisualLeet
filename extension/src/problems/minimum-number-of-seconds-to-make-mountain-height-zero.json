@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+ "frontendId": "3296",
+ "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "mountainHeight",
+   "type": "integer"
+  },
+  {
+   "name": "workerTimes",
+   "type": "integer[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "mountainHeight = {mountainHeight}\nworkerTimes = {workerTimes}",
+ "visible": [
+  "mountainHeight",
+  "workerTimes"
+ ],
+ "call": "result = Solution().minNumberOfSeconds(mountainHeight, workerTimes)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

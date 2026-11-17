@@ -1,0 +1,30 @@
+{
+ "slug": "find-maximum-number-of-string-pairs",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2744",
+ "title": "Find Maximum Number of String Pairs",
+ "premium": false,
+ "meta": {
+  "name": "maximumNumberOfStringPairs",
+  "params": [
+   {
+    "name": "words",
+    "type": "string[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[\"cd\",\"ac\",\"dc\",\"ca\",\"zz\"]",
+  "[\"ab\",\"ba\",\"cc\"]",
+  "[\"aa\",\"ab\"]"
+ ],
+ "exampleOutputs": [
+  "2",
+  "1",
+  "0"
+ ],
+ "anyOrder": false
+}

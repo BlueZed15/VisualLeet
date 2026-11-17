@@ -1,0 +1,28 @@
+{
+ "slug": "minimum-number-of-pushes-to-type-word-i",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "3014",
+ "title": "Minimum Number of Pushes to Type Word I",
+ "premium": false,
+ "meta": {
+  "name": "minimumPushes",
+  "params": [
+   {
+    "name": "word",
+    "type": "string"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "\"abcde\"",
+  "\"xycdefghij\""
+ ],
+ "exampleOutputs": [
+  "5",
+  "12"
+ ],
+ "anyOrder": false
+}

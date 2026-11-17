@@ -1,0 +1,30 @@
+{
+ "slug": "row-with-maximum-ones",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2643",
+ "title": "Row With Maximum Ones",
+ "premium": false,
+ "meta": {
+  "name": "rowAndMaximumOnes",
+  "params": [
+   {
+    "type": "integer[][]",
+    "name": "mat"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[[0,1],[1,0]]",
+  "[[0,0,0],[0,1,1]]",
+  "[[0,0],[1,1],[0,0]]"
+ ],
+ "exampleOutputs": [
+  "[0,1]",
+  "[1,2]",
+  "[1,2]"
+ ],
+ "anyOrder": false
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "kth-smallest-instructions",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1643",
+ "title": "Kth Smallest Instructions",
+ "premium": false,
+ "meta": {
+  "name": "kthSmallestPath",
+  "params": [
+   {
+    "name": "destination",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "k"
+   }
+  ],
+  "return": {
+   "type": "string"
+  }
+ },
+ "exampleInputs": [
+  "[2,3]\n1",
+  "[2,3]\n2",
+  "[2,3]\n3"
+ ],
+ "exampleOutputs": [
+  "\"HHHVV\"",
+  "\"HHVHV\"",
+  "\"HHVVH\""
+ ],
+ "anyOrder": false
+}

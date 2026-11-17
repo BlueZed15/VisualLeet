@@ -1,0 +1,28 @@
+{
+ "slug": "check-if-matrix-is-x-matrix",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2319",
+ "title": "Check if Matrix Is X-Matrix",
+ "premium": false,
+ "meta": {
+  "name": "checkXMatrix",
+  "params": [
+   {
+    "name": "grid",
+    "type": "integer[][]"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "[[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]",
+  "[[5,7,0],[0,3,1],[0,5,0]]"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false"
+ ],
+ "anyOrder": false
+}

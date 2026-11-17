@@ -1,0 +1,32 @@
+{
+ "slug": "most-frequent-number-following-key-in-an-array",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2190",
+ "title": "Most Frequent Number Following Key In an Array",
+ "premium": false,
+ "meta": {
+  "name": "mostFrequent",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   },
+   {
+    "type": "integer",
+    "name": "key"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,100,200,1,100]\n1",
+  "[2,2,2,2,3]\n2"
+ ],
+ "exampleOutputs": [
+  "100",
+  "2"
+ ],
+ "anyOrder": false
+}

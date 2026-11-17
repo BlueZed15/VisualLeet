@@ -1,0 +1,28 @@
+{
+ "slug": "subarrays-distinct-element-sum-of-squares-ii",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "2916",
+ "title": "Subarrays Distinct Element Sum of Squares II",
+ "premium": false,
+ "meta": {
+  "name": "sumCounts",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[1,2,1]\r",
+  "[2,2]\r"
+ ],
+ "exampleOutputs": [
+  "15",
+  "3"
+ ],
+ "anyOrder": false
+}

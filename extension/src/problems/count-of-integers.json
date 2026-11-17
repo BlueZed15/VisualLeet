@@ -1,0 +1,40 @@
+{
+ "slug": "count-of-integers",
+ "frontendId": "2719",
+ "title": "Count of Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num1",
+   "type": "string"
+  },
+  {
+   "name": "num2",
+   "type": "string"
+  },
+  {
+   "name": "min_sum",
+   "type": "integer"
+  },
+  {
+   "name": "max_sum",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num1 = {num1}\nnum2 = {num2}\nmin_sum = {min_sum}\nmax_sum = {max_sum}",
+ "visible": [
+  "num1",
+  "num2",
+  "min_sum",
+  "max_sum"
+ ],
+ "call": "result = Solution().count(num1, num2, min_sum, max_sum)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

@@ -1,0 +1,54 @@
+{
+ "slug": "circle-and-rectangle-overlapping",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1401",
+ "title": "Circle and Rectangle Overlapping",
+ "premium": false,
+ "meta": {
+  "name": "checkOverlap",
+  "params": [
+   {
+    "name": "radius",
+    "type": "integer"
+   },
+   {
+    "type": "integer",
+    "name": "xCenter"
+   },
+   {
+    "type": "integer",
+    "name": "yCenter"
+   },
+   {
+    "type": "integer",
+    "name": "x1"
+   },
+   {
+    "type": "integer",
+    "name": "y1"
+   },
+   {
+    "type": "integer",
+    "name": "x2"
+   },
+   {
+    "type": "integer",
+    "name": "y2"
+   }
+  ],
+  "return": {
+   "type": "boolean"
+  }
+ },
+ "exampleInputs": [
+  "1\n0\n0\n1\n-1\n3\n1",
+  "1\n1\n1\n1\n-3\n2\n-1",
+  "1\n0\n0\n-1\n0\n0\n1"
+ ],
+ "exampleOutputs": [
+  "true",
+  "false",
+  "true"
+ ],
+ "anyOrder": false
+}

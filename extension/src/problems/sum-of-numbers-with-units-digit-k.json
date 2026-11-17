@@ -1,0 +1,30 @@
+{
+ "slug": "sum-of-numbers-with-units-digit-k",
+ "frontendId": "2310",
+ "title": "Sum of Numbers With Units Digit K",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "num",
+   "type": "integer"
+  },
+  {
+   "name": "k",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "num = {num}\nk = {k}",
+ "visible": [
+  "num",
+  "k"
+ ],
+ "call": "result = Solution().minimumNumbers(num, k)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

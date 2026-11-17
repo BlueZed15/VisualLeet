@@ -1,0 +1,34 @@
+{
+ "slug": "adding-two-negabinary-numbers",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1073",
+ "title": "Adding Two Negabinary Numbers",
+ "premium": false,
+ "meta": {
+  "name": "addNegabinary",
+  "params": [
+   {
+    "name": "arr1",
+    "type": "integer[]"
+   },
+   {
+    "name": "arr2",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer[]"
+  }
+ },
+ "exampleInputs": [
+  "[1,1,1,1,1]\n[1,0,1]",
+  "[0]\n[0]",
+  "[0]\n[1]"
+ ],
+ "exampleOutputs": [
+  "[1,0,0,0,0]",
+  "[0]",
+  "[1]"
+ ],
+ "anyOrder": false
+}

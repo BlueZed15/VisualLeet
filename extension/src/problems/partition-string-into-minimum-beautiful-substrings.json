@@ -1,0 +1,25 @@
+{
+ "slug": "partition-string-into-minimum-beautiful-substrings",
+ "frontendId": "2767",
+ "title": "Partition String Into Minimum Beautiful Substrings",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "s",
+   "type": "string"
+  }
+ ],
+ "helpers": [],
+ "setup": "s = {s}",
+ "visible": [
+  "s"
+ ],
+ "call": "result = Solution().minimumBeautifulSubstrings(s)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

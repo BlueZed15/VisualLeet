@@ -1,0 +1,30 @@
+{
+ "slug": "minimum-addition-to-make-integer-beautiful",
+ "frontendId": "2457",
+ "title": "Minimum Addition to Make Integer Beautiful",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "n",
+   "type": "long"
+  },
+  {
+   "name": "target",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "n = {n}\ntarget = {target}",
+ "visible": [
+  "n",
+  "target"
+ ],
+ "call": "result = Solution().makeIntegerBeautiful(n, target)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

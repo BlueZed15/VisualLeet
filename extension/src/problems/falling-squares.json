@@ -1,0 +1,25 @@
+{
+ "slug": "falling-squares",
+ "frontendId": "699",
+ "title": "Falling Squares",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "positions",
+   "type": "integer[][]"
+  }
+ ],
+ "helpers": [],
+ "setup": "positions = {positions}",
+ "visible": [
+  "positions"
+ ],
+ "call": "result = Solution().fallingSquares(positions)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

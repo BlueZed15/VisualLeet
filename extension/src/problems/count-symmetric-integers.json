@@ -1,0 +1,30 @@
+{
+ "slug": "count-symmetric-integers",
+ "frontendId": "2843",
+ "title": "  Count Symmetric Integers",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "low",
+   "type": "integer"
+  },
+  {
+   "name": "high",
+   "type": "integer"
+  }
+ ],
+ "helpers": [],
+ "setup": "low = {low}\nhigh = {high}",
+ "visible": [
+  "low",
+  "high"
+ ],
+ "call": "result = Solution().countSymmetricIntegers(low, high)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

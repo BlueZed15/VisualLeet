@@ -1,0 +1,30 @@
+{
+ "slug": "shortest-completing-word",
+ "frontendId": "748",
+ "title": "Shortest Completing Word",
+ "category": "Most liked",
+ "premium": false,
+ "anyOrder": false,
+ "multipleAnswers": false,
+ "kind": "template",
+ "boxes": [
+  {
+   "name": "licensePlate",
+   "type": "string"
+  },
+  {
+   "name": "words",
+   "type": "string[]"
+  }
+ ],
+ "helpers": [],
+ "setup": "licensePlate = {licensePlate}\nwords = {words}",
+ "visible": [
+  "licensePlate",
+  "words"
+ ],
+ "call": "result = Solution().shortestCompletingWord(licensePlate, words)\nprint(leet_str(result))",
+ "source": "written from LeetCode's signature",
+ "verified": false,
+ "checked": "inputs"
+}

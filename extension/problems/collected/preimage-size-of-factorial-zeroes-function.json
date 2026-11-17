@@ -1,0 +1,30 @@
+{
+ "slug": "preimage-size-of-factorial-zeroes-function",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "793",
+ "title": "Preimage Size of Factorial Zeroes Function",
+ "premium": false,
+ "meta": {
+  "name": "preimageSizeFZF",
+  "params": [
+   {
+    "name": "k",
+    "type": "integer"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "0",
+  "5",
+  "3"
+ ],
+ "exampleOutputs": [
+  "5",
+  "0",
+  "5"
+ ],
+ "anyOrder": false
+}

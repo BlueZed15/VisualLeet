@@ -1,0 +1,28 @@
+{
+ "slug": "number-of-different-subsequences-gcds",
+ "source": "leetcode.com, collected 2026-11-17",
+ "frontendId": "1819",
+ "title": "Number of Different Subsequences GCDs",
+ "premium": false,
+ "meta": {
+  "name": "countDifferentSubsequenceGCDs",
+  "params": [
+   {
+    "name": "nums",
+    "type": "integer[]"
+   }
+  ],
+  "return": {
+   "type": "integer"
+  }
+ },
+ "exampleInputs": [
+  "[6,10,3]",
+  "[5,15,40,5,6]"
+ ],
+ "exampleOutputs": [
+  "5",
+  "7"
+ ],
+ "anyOrder": false
+}
