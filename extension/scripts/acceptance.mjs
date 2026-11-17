@@ -65,7 +65,7 @@ const PROBLEMS = {
   },
 };
 
-function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false, panel = "boxes" } = {}) {
+function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false, panel = "boxes", tabStyle = "live", boxes: withBoxes = true, dup = false } = {}) {
   const p = PROBLEMS[slug];
   const names = p.meta.systemdesign ? ["operations", "arguments"] : p.meta.params.map((x) => x.name);
   const all = cases || p.examples.map(([input]) => input.split("\n"));
@@ -73,8 +73,15 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
     `<p><strong class="example">Example ${i + 1}:</strong></p>\n<pre><strong>Input:</strong> ${input.replace(/\n/g, ", ")}\n<strong>Output:</strong> ${output}\n<strong>Explanation:</strong> because.\n</pre>\n`).join("");
   const question = { titleSlug: slug, questionFrontendId: p.id, questionTitle: p.title, isPaidOnly: false, metaData: JSON.stringify(p.meta), exampleTestcaseList: p.examples.map(([i]) => i), content };
   const stale = { titleSlug: "some-other-problem", metaData: "{}", exampleTestcaseList: [] };
-  const tabs = all.map((_, i) => `<button data-e2e-locator="console-testcase-tag" class="tab ${i === selected ? "bg-fill-3" : "bg-transparent"}">Case ${i + 1}</button>`).join("");
-  const boxes = names.map((n, j) => `<div class="flex flex-col">${p.meta.systemdesign ? "" : `<div>${n} =</div>`}<div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
+  // case tabs as LeetCode marks them on first load: only the selected one has a background class
+  // (checked on leetcode.com 2026-11-17); tabStyle "old": the others say bg-transparent, as after a click
+  const tabClass = (on) => tabStyle === "old" ? `tab ${on ? "bg-fill-3" : "bg-transparent"}`
+    : `font-medium items-center whitespace-nowrap inline-flex ${on ? "bg-fill-3 dark:bg-dark-fill-3 hover:bg-fill-2" : "hover:bg-fill-2 dark:hover:bg-dark-fill-2 text-label-2"}`;
+  const tabs = all.map((_, i) => `<button data-e2e-locator="console-testcase-tag" class="${tabClass(i === selected)}">Case ${i + 1}</button>`).join("");
+  const boxesOf = (k) => names.map((n, j) => `<div class="flex flex-col">${p.meta.systemdesign ? "" : `<div>${n} =</div>`}<div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[k][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
+  // boxes=0: no input boxes (the case comes from the tabs and raw lines); dup=1: a hidden
+  // second set of boxes for another case, as a page can keep after a Run
+  const boxes = (withBoxes ? boxesOf(selected) : "") + (dup ? `<div style="display:none">${boxesOf(selected ? 0 : 1)}</div>` : "");
   return `<!doctype html><html><head><title>${p.title} - LeetCode</title></head><body>
 <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { question: stale } } })}</script>
 <div class="text-title-large">${p.id}. ${p.title}</div>
@@ -114,7 +121,8 @@ function problemPage(url) {
   const p = PROBLEMS[m[1]];
   let cases = p.examples.map(([input]) => input.split("\n"));
   if (q.get("custom")) cases = cases.concat([JSON.parse(q.get("custom"))]);
-  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1", panel: q.get("panel") || "boxes" });
+  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1", panel: q.get("panel") || "boxes",
+    tabStyle: q.get("tabs") || "live", boxes: q.get("boxes") !== "0", dup: q.get("dup") === "1" });
 }
 
 const serve = (req, res) => {
@@ -501,6 +509,17 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const r8 = await open("/problems/two-sum/?case=1&hidden=1");
     const s8 = await state();
     check("leetcode", "Selected case read while LeetCode's Testcase panel is hidden (Test Result shown)", r8.status === "complete" && s8.selected === "Example 2", { status: r8.status, selected: s8.selected, message: s8.message.slice(0, 100) });
+    // the selected tab, as LeetCode marks it today and as it used to, when there are no boxes to read
+    const r9 = await open("/problems/two-sum/?case=2&boxes=0");
+    const s9 = await state();
+    const r10 = await open("/problems/two-sum/?case=1&boxes=0&tabs=old");
+    const s10 = await state();
+    check("leetcode", "Selected tab found from LeetCode's tab marking (today's and the old one)", r9.status === "complete" && s9.selected === "Example 3" && r10.status === "complete" && s10.selected === "Example 2",
+      { today: [r9.status, s9.selected], old: [r10.status, s10.selected] });
+    // a hidden second set of boxes (another case) doesn't win over the one on screen
+    const r11 = await open("/problems/two-sum/?case=1&dup=1");
+    const s11 = await state();
+    check("leetcode", "Case on screen read even with a hidden second set of boxes in the page", r11.status === "complete" && s11.selected === "Example 2", { status: r11.status, selected: s11.selected });
 
     // the Visualize button in LeetCode's top bar updates the open LeetScope tab in place
     await ev(() => { window.__notReloaded = true; });

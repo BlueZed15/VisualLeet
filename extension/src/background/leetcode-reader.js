@@ -15,7 +15,7 @@
 //    window.__NEXT_DATA__ only describes the first page loaded, so the slug
 //    must match;
 //  - Testcase panel: case tabs are button[data-e2e-locator=console-testcase-tag]
-//    (the selected one is not "bg-transparent"); the selected case shows one
+//    (the selected one has the class "bg-fill-3"); the selected case shows one
 //    contenteditable box per argument, labelled "name ="; a CodeMirror
 //    (.cm-content) holds every case as raw lines.
 export async function readLeetCodePage() {
@@ -100,7 +100,11 @@ export async function readLeetCodePage() {
   for (let i = 0; i < 15 && !findTabs().length && !findBoxes().length; i++) await new Promise((r) => setTimeout(r, 100));
   const tabs = findTabs();
   out.caseCount = tabs.length;
-  out.selectedIndex = tabs.length ? tabs.findIndex((b) => !/\bbg-transparent\b/.test(b.className)) : -1;
+  // the selected tab: LeetCode gives it the bg-fill-3 class (a whole class, not
+  // hover:bg-fill-3). The others say bg-transparent only after a tab was clicked
+  // (checked on leetcode.com 2026-11-17), so that is just the fallback.
+  out.selectedIndex = tabs.findIndex((b) => b.classList.contains("bg-fill-3") || b.getAttribute("aria-selected") === "true");
+  if (out.selectedIndex < 0 && tabs.length) out.selectedIndex = tabs.findIndex((b) => !b.classList.contains("bg-transparent"));
   if (tabs.length === 1) out.selectedIndex = 0;
 
   // the panel that holds the case tabs/boxes: only look for its raw editor in there
@@ -114,6 +118,9 @@ export async function readLeetCodePage() {
   // (design problems have none)
   const fields = [];
   let boxes = findBoxes();
+  // more than one set in the page (a hidden copy, e.g. after a Run): the one on screen
+  const shown = boxes.filter((b) => b.offsetParent !== null);
+  if (shown.length && shown.length < boxes.length) boxes = shown;
   if (!boxes.length && panel) boxes = Array.from(panel.querySelectorAll('[contenteditable="true"]')).filter((b) => !b.closest(".cm-editor"));
   for (const box of boxes) {
     const holder = box.parentElement && box.parentElement.parentElement;
