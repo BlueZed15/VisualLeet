@@ -87,7 +87,11 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
 <div class="text-title-large">${p.id}. ${p.title}</div>
 <div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-run-button">Run</button></div><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
 <div data-e2e-locator="console-result"></div>
-<div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)</div>
+<div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)<div class="monaco-editor"><span>result = </span><span>Solution()</span></div></div>
+${panel !== "result" ? "" : `<div id="test-result"><div>Wrong Answer</div>
+<div class="flex">${all.map((_, i) => `<div class="${tabClass(i === selected)}">Case ${i + 1}</div>`).join("")}</div>
+<div>Input</div><div class="space-y-2">${names.map((n, j) => `<div class="rounded-lg"><div class="text-xs">${n} =</div><div class="font-menlo">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div>`).join("")}</div>
+<div>Output</div><div class="rounded-lg"><div class="font-menlo">[]</div></div><div>Expected</div><div class="rounded-lg"><div class="font-menlo">[0,1]</div></div></div>`}
 ${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
 <div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>`}
 <script>
@@ -516,6 +520,11 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const s10 = await state();
     check("leetcode", "Selected tab found from LeetCode's tab marking (today's and the old one)", r9.status === "complete" && s9.selected === "Example 3" && r10.status === "complete" && s10.selected === "Example 2",
       { today: [r9.status, s9.selected], old: [r10.status, s10.selected] });
+    // after a Run LeetCode shows Test Result and removes the Testcase panel: the case comes from Test Result
+    const r12 = await open("/problems/two-sum/?case=1&panel=result");
+    const s12 = await state();
+    check("leetcode", "After a Run (Test Result shown, no Testcase panel): the selected case is read from Test Result and runs", r12.status === "complete" && s12.selected === "Example 2" && /\[1,2\]\n$/.test(r12.stdout || ""),
+      { status: r12.status, selected: s12.selected, stdout: r12.stdout, message: s12.message.slice(0, 120) });
     // a hidden second set of boxes (another case) doesn't win over the one on screen
     const r11 = await open("/problems/two-sum/?case=1&dup=1");
     const s11 = await state();

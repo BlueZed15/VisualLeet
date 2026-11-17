@@ -130,6 +130,22 @@ export async function readLeetCodePage() {
     const text = lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(box);
     fields.push({ name: label ? label[1] : "", text: text.replace(/\xa0/g, " ").replace(/\n+$/, "") });
   }
+  // No Testcase panel: LeetCode removes it while Test Result is shown (after a Run).
+  // Test Result shows the selected case's inputs too, each as a "name =" label over
+  // its value. Read those (on screen, outside the code editor and LeetScope's card).
+  if (!fields.length) {
+    const seen = new Set();
+    for (const el of document.querySelectorAll("div, span, label")) {
+      if (el.children.length || !/^\s*[A-Za-z_]\w*\s*=\s*$/.test(el.textContent) || el.offsetParent === null) continue;
+      if (el.closest(".monaco-editor, .cm-editor, #leetscope-toast")) continue;
+      const valueEl = el.nextElementSibling || (el.parentElement && el.parentElement.nextElementSibling);
+      const name = el.textContent.replace(/[\s=]/g, "");
+      if (!valueEl || seen.has(name)) continue;
+      seen.add(name);
+      fields.push({ name, text: textOf(valueEl).replace(/\xa0/g, " ").trim() });
+    }
+    if (fields.length) out.caseFrom = "test-result";
+  }
   if (fields.length) out.selectedCase = fields;
 
   // every case as raw lines (one line per input), from the panel's own editor
