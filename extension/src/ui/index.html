@@ -28,6 +28,7 @@
     <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-report" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4.5L17 13H5"/></symbol>
     <symbol id="i-line-arrow" viewBox="0 0 15 12"><path d="M1 4.2h7.2V1.2L14 6l-5.8 4.8V7.8H1z" fill="currentColor"/></symbol>
   </svg>
 
@@ -42,6 +43,7 @@
       </a>
     </div>
     <div class="top-right">
+      <button id="report-open" class="icon-btn" type="button" title="Report a problem" aria-label="Report a problem" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-report"/></svg></button>
       <button id="reset" class="icon-btn" type="button" title="Restart the Python runtime" aria-label="Restart the Python runtime"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
       <button id="diag-toggle" class="icon-btn" type="button" title="Show diagnostics" aria-label="Diagnostics" aria-pressed="false"><svg aria-hidden="true"><use href="#i-diagnostics"/></svg></button>
     </div>
@@ -159,6 +161,32 @@
       <button id="diag-close" class="icon-btn" type="button" title="Hide diagnostics" aria-label="Hide diagnostics"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
     </div>
   </main>
+
+  <!-- Report a problem: opens LeetScope's Google Form, prefilled (report.js) -->
+  <dialog id="report" class="report" aria-labelledby="report-title">
+    <form id="report-form" method="dialog">
+      <div class="report-head">
+        <h2 id="report-title">Report a problem</h2>
+        <button id="report-close" class="icon-btn" type="button" title="Close" aria-label="Close"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <label class="report-field"><span>What went wrong?</span>
+        <textarea id="report-msg" rows="4" required maxlength="2000" placeholder="What you did, what you expected, and what happened instead."></textarea>
+      </label>
+      <label class="report-field"><span>What could LeetScope do better? <span class="report-opt">optional</span></span>
+        <textarea id="report-improve" rows="2" maxlength="2000"></textarea>
+      </label>
+      <div class="report-details">
+        <div class="report-sub">Added to your report</div>
+        <pre id="report-details"></pre>
+        <label class="report-check"><input id="report-code" type="checkbox"> Include my code <span id="report-code-note" class="report-opt"></span></label>
+      </div>
+      <p class="report-note">This opens LeetScope's report form on Google Forms with all of this filled in. Nothing is sent until you press Submit there.</p>
+      <div class="report-actions">
+        <button id="report-cancel" class="text-btn" type="button">Cancel</button>
+        <button id="report-send" class="report-send" type="submit">Continue to the form</button>
+      </div>
+    </form>
+  </dialog>
 
   <script src="../visualizer/renderer.js"></script>
   <script type="module" src="ui.js"></script>

@@ -343,3 +343,28 @@ body.resizing #viz { pointer-events: none; }
 #viz .code-card, #viz .lc-panel, #viz .viz-head, #viz .player-bar, #viz .message {
   font-family: var(--ls-font-ui); font-size: 13px; line-height: 1.5; }
 #viz .code-head, #viz .viz-head, #viz .case-result { line-height: normal; }
+
+/* ---------- report a problem (report.js) ---------- */
+.report { width: min(460px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--ls-border-control); border-radius: var(--ls-radius-panel);
+  background: var(--ls-panel); color: var(--ls-text-strong); font: 13px/1.5 var(--ls-font-ui); }
+.report::backdrop { background: rgba(0, 0, 0, .55); }
+.report form { display: flex; flex-direction: column; gap: 12px; padding: 14px 16px 16px; }
+.report-head { display: flex; align-items: center; justify-content: space-between; }
+.report-head h2 { margin: 0; font-size: 14px; font-weight: 600; }
+.report-field { display: flex; flex-direction: column; gap: 6px; color: var(--ls-text); font-size: 12px; font-weight: 500; }
+.report-field textarea { width: 100%; resize: vertical; padding: 8px 10px; border-radius: var(--ls-radius-control); border: 1px solid var(--ls-border-input);
+  background: var(--ls-input); color: var(--ls-text-strong); font: 13px/1.5 var(--ls-font-ui); outline: none; }
+.report-field textarea:focus { border-color: #3a3a3a; }
+.report-field textarea::placeholder { color: var(--ls-text-faint); }
+.report-opt { color: var(--ls-text-faint); font-weight: 400; }
+.report-details { padding: 10px 12px; border-radius: var(--ls-radius-control); background: var(--ls-chip); }
+.report-sub { color: var(--ls-text-dim); font-size: 11.5px; margin-bottom: 4px; }
+.report-details pre { margin: 0 0 8px; white-space: pre-wrap; word-break: break-word; color: var(--ls-text-muted); font: 11.5px/1.6 var(--ls-font-code); }
+.report-check { display: flex; align-items: center; gap: 7px; color: var(--ls-text); font-size: 12px; cursor: pointer; }
+.report-check input { margin: 0; accent-color: var(--ls-amber); }
+.report-check:has(input:disabled) { opacity: .5; cursor: default; }
+.report-note { margin: 0; color: var(--ls-text-dim); font-size: 12px; }
+.report-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.report-send { height: 30px; padding: 0 14px; border: 0; border-radius: var(--ls-radius-control); background: var(--ls-text-strong); color: #111;
+  font-size: 12px; font-weight: 600; cursor: pointer; transition: background-color .15s; }
+.report-send:hover { background: #fff; }

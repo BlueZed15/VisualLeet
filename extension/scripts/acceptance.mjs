@@ -538,6 +538,29 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     await new Promise((r) => setTimeout(r, 200));
     const glowBack = await glowAfterRun();
     check("leetcode", "Button glows when LeetCode finishes a Run; the glow setting turns it off and on", glowDefault && !glowOff && glowBack, { glowDefault, glowOff, glowBack });
+    // Report a problem: the panel shows what it adds, then opens the prefilled Google Form
+    const report = await ev(async () => {
+      const opened = [];
+      const realOpen = window.open;
+      window.open = (url) => { opened.push(url); return null; };
+      document.getElementById("report-open").click();
+      const dlg = document.getElementById("report");
+      const shownOpen = dlg.open, details = document.getElementById("report-details").textContent;
+      document.getElementById("report-send").click();                 // empty message: stays open
+      const blocked = dlg.open && !opened.length;
+      document.getElementById("report-msg").value = "The arrows look wrong";
+      document.getElementById("report-code").checked = true;
+      document.getElementById("report-send").click();
+      await new Promise((r) => setTimeout(r, 100));
+      window.open = realOpen;
+      const q = opened[0] ? new URL(opened[0]).searchParams : null;
+      return { shownOpen, blocked, closed: !dlg.open, details, host: opened[0] && new URL(opened[0]).host,
+               what: q && q.get("entry.326955045"), code: visualleet.code() };
+    });
+    check("leetcode", "Report a problem: shows the details it adds, needs a message, opens the prefilled Google Form",
+      report.shownOpen && report.blocked && report.closed && report.host === "docs.google.com" && /Problem: .*\(two-sum\)/.test(report.details) &&
+      report.what && report.what.startsWith("The arrows look wrong\n\n--- Details ---\nProblem:") && /--- Code( \(first 3000 characters\))? ---\n/.test(report.what) && report.what.includes(" ---\n" + report.code.slice(0, 40)),
+      { shownOpen: report.shownOpen, blocked: report.blocked, closed: report.closed, host: report.host, details: report.details });
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
     check("leetcode", "Testcase tab not open: explained on LeetCode itself, no extra options", !!tc1 && /Testcase tab, and that tab isn't open/.test(tc1.text) && !tc1.action, tc1);
     await page.bringToFront();

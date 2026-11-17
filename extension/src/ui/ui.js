@@ -6,6 +6,7 @@
 import { createLeetCodeMode } from "./leetcode-mode.js";
 import { resultLine } from "./harness.js";
 import { describeLanguage } from "./leet.js";
+import { initReport } from "./report.js";
 
 const PROTOCOL = 1;
 const LIMITS = { wallMs: 10000, maxTraceBytes: 10 * 1024 * 1024 };
@@ -1533,6 +1534,24 @@ function showDiag(on) {
   redrawArrows();          // the panels above shrank or grew
 }
 el.diagToggle.addEventListener("click", () => showDiag(el.diagStrip.hidden));
+// Report a problem: what the report adds, shown to the user before they send it
+initReport({ getDetails: () => {
+  const pr = lc.problem;
+  // what LeetScope is showing (a message, or a run's error), not the welcome text
+  const shown = [el.message.textContent, ...[...el.vizBody.querySelectorAll(".ph-title, .ph-body")]
+    .filter((n) => n.offsetParent && !n.closest("#lc-empty")).map((n) => n.textContent)]
+    .map((t) => t.trim().replace(/\.$/, "")).filter(Boolean).join(". ").slice(0, 600);
+  const chrome = (/Chrome\/([\d.]+)/.exec(navigator.userAgent) || [])[1] || "unknown";
+  const lines = [
+    `Problem: ${pr ? `${pr.title || pr.slug} (${pr.slug})` : "none open"}`,
+    `LeetScope: ${globalThis.chrome?.runtime?.getManifest?.().version || "unknown"}`,
+    `Chrome: ${chrome}`,
+    `Python: ${runtimeInfo ? runtimeInfo.python : "not started"}`,
+    `Status: ${status}`,
+  ];
+  if (shown) lines.push(`Last message: ${shown}`);
+  return { text: lines.join("\n"), code: pr ? el.solution.value : "" };
+} });
 $("diag-close").addEventListener("click", () => showDiag(false));
 $("play").addEventListener("click", () => setPlaying(!playTimer));
 $("speed").addEventListener("click", (e) => {
