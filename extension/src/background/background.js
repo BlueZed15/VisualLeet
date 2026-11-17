@@ -6,6 +6,9 @@
 // the click are explained on the LeetCode page instead.
 
 import { readLeetCodePage } from "./leetcode-reader.js";
+import { describeLanguage } from "../ui/leet.js";
+
+const NO_EDITOR = "LeetScope couldn't read LeetCode's code editor. The page may still be loading. Wait a moment and click Visualize again.";
 
 const UI_PATH = "ui/index.html";
 const MAX_CODE_BYTES = 256 * 1024;
@@ -61,11 +64,9 @@ async function problemEntry(slug) {
  *  Returns { text, action? } for a message on the LeetCode page, or null. */
 async function clickProblem(r) {
   if (!r.ok) return { text: r.error || "LeetScope couldn't read this page. Reload it and click Visualize again." };
-  if (!/^python3?$/.test(r.language || "")) {
-    return { text: r.language ? `LeetCode’s editor is set to ${r.language}. LeetScope runs Python 3. Switch the editor to Python3 and click Visualize again.`
-                              : "LeetScope couldn't read the code editor. The page may still be loading. Wait a moment and click Visualize again." };
-  }
-  if (!r.code) return { text: "LeetScope couldn't read the code editor. The page may still be loading. Wait a moment and click Visualize again." };
+  if (!r.language || !r.code) return { text: NO_EDITOR };
+  const lang = describeLanguage(r.language);
+  if (!lang.ok) return { text: lang.note };
   const entry = await problemEntry(r.slug);
   if (!entry) return { text: `"${r.title || r.slug}" isn't supported by LeetScope yet. Support for more problems is on the way.` };
   // the selected test case: its boxes, or its lines in the raw list of cases
@@ -194,9 +195,9 @@ async function readLeetCode(tabId) {
       ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0,
           markers: Array.isArray(r.testcaseFound.markers) ? r.testcaseFound.markers.filter((x) => typeof x === "string").slice(0, 12).map((x) => x.slice(0, 60)) : [] } : null,
   };
-  if (!out.slug) return { ok: false, error: "LeetScope couldn't tell which problem this page is. Reload it and try again." };
+  if (!out.slug) return { ok: false, error: "LeetScope couldn't tell which LeetCode problem this page is. Reload the page and try again." };
   if (typeof r.code === "string") {
-    if (utf8Length(r.code) > MAX_CODE_BYTES) return { ok: false, error: "The code in the editor is larger than 256 KiB, which is more than LeetScope can show." };
+    if (utf8Length(r.code) > MAX_CODE_BYTES) return { ok: false, error: "The code in LeetCode's code editor is larger than 256 KiB, which is more than LeetScope can show." };
     out.code = r.code.replace(/\r\n?/g, "\n");
   }
   return out;

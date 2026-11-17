@@ -115,11 +115,12 @@ test("compares outputs like LeetCode", () => {
   assert.ok(new LeetNum("5").isInteger);
 });
 
-test("non-Python editors are refused with an explanation; Python 2 runs with a note", () => {
+test("only Python3 runs; other languages and Python 2 are refused with an explanation", () => {
   assert.equal(describeLanguage("python3").ok, true);
   assert.equal(describeLanguage("python3").note, "");
-  assert.equal(describeLanguage("python").ok, true);
-  assert.match(describeLanguage("python").note, /Python 2/);
+  assert.equal(describeLanguage("python").ok, false);
+  assert.match(describeLanguage("python").note, /set to Python, which is Python 2.*Choose Python3 in the language menu above LeetCode's code editor/);
   assert.equal(describeLanguage("cpp").ok, false);
-  assert.match(describeLanguage("cpp").note, /LeetScope runs Python 3/);
+  assert.match(describeLanguage("cpp").note, /^LeetCode's code editor is set to C\+\+\. LeetScope runs Python 3\./);
+  assert.match(describeLanguage("").note, /an unknown language/);
 });

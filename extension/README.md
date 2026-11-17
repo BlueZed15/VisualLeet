@@ -34,7 +34,8 @@ To turn that off, right-click the LeetScope toolbar icon and untick **Glow on
 LeetCode when a Run finishes**, or assign a key to "Turn the Visualize
 button's glow on LeetCode on or off" at `chrome://extensions/shortcuts`.
 
-Problems that can't be visualized (editor not in Python, the Testcase tab not
+Problems that can't be visualized (LeetCode's editor not set to Python3, including
+LeetCode's "Python", which is Python 2; the Testcase tab not
 open, a problem not in the database) are explained in a card under the
 Visualize button on LeetCode.
 

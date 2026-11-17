@@ -193,9 +193,18 @@ export function compareOutputs(actual, expected, { anyOrder = false } = {}) {
   return "mismatch";
 }
 
-// The LeetCode editor's language: LeetScope runs Python 3 ("python" is LeetCode's Python 2).
-const PY_LANGS = new Set(["python3", "python"]);
+// The language of LeetCode's code editor. LeetScope runs Python 3, so only
+// "python3" works; "python" is LeetCode's Python 2. Names as in LeetCode's language menu.
+const LANG_NAMES = {
+  python: "Python", cpp: "C++", java: "Java", c: "C", csharp: "C#", javascript: "JavaScript",
+  typescript: "TypeScript", php: "PHP", swift: "Swift", kotlin: "Kotlin", dart: "Dart", golang: "Go", go: "Go",
+  ruby: "Ruby", scala: "Scala", rust: "Rust", racket: "Racket", erlang: "Erlang", elixir: "Elixir",
+};
+/** Shared by the message on LeetCode (background) and LeetScope's fallback (ui). */
 export function describeLanguage(languageId) {
-  if (PY_LANGS.has(languageId)) return { ok: true, note: languageId === "python" ? "This editor is set to Python 2. LeetScope runs Python 3. Most solutions work, but Python 2 syntax such as print statements won't." : "" };
-  return { ok: false, note: `The LeetCode editor is set to ${languageId || "an unknown language"}. LeetScope runs Python 3. Switch the editor to Python3 and click Visualize again. Your code here is unchanged.` };
+  if (languageId === "python3") return { ok: true, note: "" };
+  const name = LANG_NAMES[languageId] || languageId || "an unknown language";
+  const what = languageId === "python" ? "Python, which is Python 2" : name;
+  return { ok: false, note: `LeetCode's code editor is set to ${what}. LeetScope runs Python 3. ` +
+    "Choose Python3 in the language menu above LeetCode's code editor, then click Visualize again." };
 }

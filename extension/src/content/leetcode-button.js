@@ -60,7 +60,7 @@
         if (r && r.ok === false && r.error) b.title = r.error;
       } catch (e) {
         // the extension was reloaded: this page's script is orphaned
-        b.title = "LeetScope was updated. Reload this page to use this button.";
+        b.title = "LeetScope was updated. Reload this LeetCode page to use the Visualize button.";
       } finally {
         setTimeout(() => { text.removeAttribute("style"); text.textContent = "Visualize"; b.style.minWidth = b.style.justifyContent = ""; b.classList.remove("ls-vz-opening"); b.disabled = false; }, Math.max(0, 600 - (Date.now() - started)));
       }

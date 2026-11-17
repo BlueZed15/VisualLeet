@@ -1020,7 +1020,7 @@ window.addEventListener("message", (e) => {
       break;
     }
     case "init-error":
-      setStatus("failed", "Python failed to start. Press the restart button in the top bar to try again.");
+      setStatus("failed", "Python failed to start. Press the restart button in LeetScope's top bar to try again.");
       finishJob({ status: "failed", message: m.message });
       break;
     case "result":
@@ -1391,7 +1391,7 @@ function startJob(kind, extra = {}, info = {}) {
 // Your code + the call from the problem's database file; the inputs are built
 // by hidden setup, which runs untraced.
 function visualize(opts = {}) {
-  if (!lc.problem) { showMessage("Open a problem on LeetCode and click Visualize to load it here.", "info"); return Promise.resolve({ status: "rejected" }); }
+  if (!lc.problem) { showMessage("Open a problem on LeetCode and click Visualize to load it into LeetScope.", "info"); return Promise.resolve({ status: "rejected" }); }
   const g = lc.program();
   if (!g.ok) {
     showCodeView("code");
@@ -1480,9 +1480,9 @@ async function openLeetCode(res, { autoRun = false } = {}) {
   const notes = [loaded.note];
   let runnable = true;
   // never run older code in place of what the click was meant to show
-  if (!res.code) { notes.push("LeetScope couldn't read the code editor on LeetCode. The page may still be loading. Your code here is unchanged, and you can press Run to run it."); runnable = false; }
-  else if (!lang.ok) { notes.push(lang.note); runnable = false; }
-  else { el.solution.value = res.code; saveCode(); updateGutter(); if (lang.note) notes.push(lang.note); }
+  if (!res.code) { notes.push("LeetScope couldn't read LeetCode's code editor. The page may still be loading. The code in LeetScope is unchanged, and you can press Run to run it."); runnable = false; }
+  else if (!lang.ok) { notes.push(lang.note + " The code in LeetScope is unchanged."); runnable = false; }
+  else { el.solution.value = res.code; saveCode(); updateGutter(); }
   const note = notes.filter(Boolean).join("\n");
   enterEdit();
   showMessage(note, "info");

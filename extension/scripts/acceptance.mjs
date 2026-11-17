@@ -470,7 +470,11 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const before = await ev(() => ({ code: visualleet.code(), opens: visualleet.opens() }));
     const tc2 = await toastFor("/problems/two-sum/?lang=cpp");
     const after = await ev(() => ({ code: visualleet.code(), opens: visualleet.opens() }));
-    check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened, its code kept", !!tc2 && /Python3/.test(tc2.text) && after.code === before.code && after.opens === before.opens, tc2);
+    check("leetcode", "Non-Python editor: explained on LeetCode itself, LeetScope not opened, its code kept", !!tc2 && /set to C\+\+\..*Choose Python3/.test(tc2.text) && after.code === before.code && after.opens === before.opens, tc2);
+    // LeetCode's "Python" is Python 2: the same, asking for Python3
+    const tcPy2 = await toastFor("/problems/two-sum/?lang=python");
+    const afterPy2 = await ev(() => ({ code: visualleet.code(), opens: visualleet.opens() }));
+    check("leetcode", "Python 2 editor: explained on LeetCode itself (choose Python3), LeetScope not opened", !!tcPy2 && /Python, which is Python 2.*Choose Python3/.test(tcPy2.text) && afterPy2.code === before.code && afterPy2.opens === before.opens, tcPy2);
     const nd = await toastFor("/problems/not-in-the-database/");
     check("leetcode", "Problem not in the database: explained on LeetCode itself", !!nd && /isn't supported by LeetScope/.test(nd.text), nd);
     const none = await toastFor("/problems/no-editor/");
