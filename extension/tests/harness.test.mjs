@@ -131,8 +131,8 @@ test("only Python3 runs; other languages and Python 2 are refused with an explan
 });
 
 test("test case messages: neither tab, Test Result unreadable, Testcase empty or wrong count", () => {
-  assert.match(caseProblem({ from: "", inputs: 0, empty: 0 }, 2), /^LeetScope reads the test case from LeetCode's Testcase tab, or from Test Result after you press Run, and neither is showing one\. .*or press Run, then click Visualize again\.$/);
-  assert.match(caseProblem(null, 2), /neither is showing one/);
+  assert.equal(caseProblem({ from: "", inputs: 0, empty: 0 }, 2), "No test case found. Pick one in the Testcase tab or press Run, then click Visualize again.");
+  assert.match(caseProblem(null, 2), /^No test case found\./);
   assert.match(caseProblem({ from: "test-result", inputs: 2, empty: 1 }, 2), /^LeetScope couldn't read the input values in LeetCode's Test Result\. Open the Testcase tab, select the case, and click Visualize again\.$/);
   assert.match(caseProblem({ from: "test-result", inputs: 3, empty: 0 }, 2), /found 3 inputs in LeetCode's Test Result, and this problem takes 2 inputs\./);
   assert.match(caseProblem({ from: "testcase", inputs: 2, empty: 1 }, 2), /Testcase tab has an empty input\. Fill it in/);

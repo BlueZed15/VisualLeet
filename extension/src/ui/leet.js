@@ -217,8 +217,7 @@ export function caseProblem(found, n) {
   const f = found || { from: "", inputs: 0, empty: 0 };
   const takes = `this problem takes ${n} input${n === 1 ? "" : "s"}`;
   if (!f.inputs) {
-    return "LeetScope reads the test case from LeetCode's Testcase tab, or from Test Result after you press Run, and neither is showing one. " +
-           "Open the Testcase tab below LeetCode's code editor and select a case, or press Run, then click Visualize again.";
+    return "No test case found. Pick one in the Testcase tab or press Run, then click Visualize again.";
   }
   if (f.from === "test-result") {
     return (f.empty ? "LeetScope couldn't read the input values in LeetCode's Test Result. "

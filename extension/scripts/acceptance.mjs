@@ -579,7 +579,7 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
       report.what && report.what.startsWith("The arrows look wrong\n\n--- Details ---\nProblem:") && /--- Code( \(first 3000 characters\))? ---\n/.test(report.what) && report.what.includes(" ---\n" + report.code.slice(0, 40)),
       { shownOpen: report.shownOpen, blocked: report.blocked, closed: report.closed, host: report.host, details: report.details });
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
-    check("leetcode", "Neither Testcase nor Test Result showing a case: explained on LeetCode itself (open Testcase or press Run)", !!tc1 && /Testcase tab, or from Test Result after you press Run, and neither is showing one/.test(tc1.text) && !tc1.action, tc1);
+    check("leetcode", "Neither Testcase nor Test Result showing a case: explained on LeetCode itself (open Testcase or press Run)", !!tc1 && /No test case found\. Pick one in the Testcase tab or press Run/.test(tc1.text) && !tc1.action, tc1);
     const tcEmpty = await toastFor("/problems/two-sum/?empty=1");
     check("leetcode", "An empty input in LeetCode's Testcase tab: explained on LeetCode, nothing run", !!tcEmpty && /Testcase tab has an empty input/.test(tcEmpty.text), tcEmpty);
     const trEmpty = await toastFor("/problems/two-sum/?empty=1&panel=result");
