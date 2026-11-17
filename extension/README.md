@@ -19,11 +19,12 @@ LeetScope card, then reopen the LeetScope tab and reload LeetCode tabs.
 
 ## Using it
 
-1. Open a LeetCode problem with the editor set to **Python3** and pick a case
-   in LeetCode's **Testcase** tab.
+1. Open a LeetCode problem with the editor set to **Python3**. Select a case in
+   LeetCode's **Testcase** tab, or press LeetCode's **Run** and select a case in
+   **Test Result**.
 2. Click **Visualize** in LeetCode's top bar, the LeetScope toolbar icon, or
-   press **Alt+V**. LeetScope reads your code and that case, then opens (or
-   reuses) its tab and plays the run.
+   press **Alt+V**. LeetScope reads your code and the case on screen, then opens
+   (or reuses) its tab and plays the run.
 3. The workspace: your code on the left (**Your code / Call / Setup**), the
    test cases under it (Case 1, 2, …, **+** adds one, hover a case you added
    to delete it), and the visualizer on the right with zoom, fit and the
@@ -40,8 +41,8 @@ the last message, and your code if you tick the box). Nothing is sent until you
 press Submit on the form.
 
 Problems that can't be visualized (LeetCode's editor not set to Python3, including
-LeetCode's "Python", which is Python 2; the Testcase tab not
-open, a problem not in the database) are explained in a card under the
+LeetCode's "Python", which is Python 2; no test case on screen in the Testcase
+or Test Result tab; a problem not in the database) are explained in a card under the
 Visualize button on LeetCode.
 
 Limits: 1,500 steps, 10 s, 64 KiB of printed output, 10 MiB trace, 256 KiB of
@@ -166,7 +167,8 @@ renderer), `node scripts/serve-bench.mjs`, then
   renderer's table, which sets Verdana; `ui.css` sets the design's font back.
 - LeetCode's own CSS resets buttons, so the Visualize button's styles are
   scoped to its id. LeetCode only renders the Testcase panel while its tab is
-  open. After in-app navigation `window.__NEXT_DATA__` still describes the
+  open, and removes it while Test Result is shown, so the reader takes the case
+  from whichever of the two is on screen (`leetcode-reader.js`). After in-app navigation `window.__NEXT_DATA__` still describes the
   first problem; the reader uses `window.next.router.components`.
 - `pyodide` requests files with `URL` objects, so the worker's fetch override
   handles both strings and URLs. Chrome forces HTTPS for leetcode.com, so test

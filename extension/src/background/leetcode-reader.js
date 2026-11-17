@@ -2,22 +2,24 @@
 // on a toolbar click / shortcut). Read-only. Must be self-contained: Chrome
 // serializes this one function into the page.
 //
-// Returns everything VisualLeet needs to visualize what the user is looking
-// at: the problem (slug, title, LeetCode's signature metadata, examples with
-// expected outputs), the code in the editor, and the test case currently
-// selected in LeetCode's Testcase panel. The background worker validates and
-// bounds the result; nothing here is trusted.
+// Returns what LeetScope needs to visualize what the user is looking at: the
+// problem (slug, title, LeetCode's signature metadata, examples with expected
+// outputs), the code in the editor, and the inputs of the test case on screen.
+// The background worker validates and bounds the result; nothing here is trusted.
 //
-// Page facts this relies on (checked on leetcode.com, 2026-11-14):
+// The test case comes from one of two places, whichever LeetCode is showing:
+//  - the Testcase tab: one box per input (data-e2e-locator=console-testcase-input),
+//    each labelled "name =" (design problems have no labels);
+//  - the Test Result tab, after a Run: LeetCode removes the Testcase panel then,
+//    and shows the selected case's inputs as "name =" over the value, each in
+//    its own box.
+//
+// Page facts this relies on (checked on leetcode.com, 2026-11-17):
 //  - window.monaco: the code editor's model (+ a plaintext model);
 //  - the problem's data object (titleSlug, metaData, exampleTestcaseList,
 //    content) lives in window.next.router.components after in-app navigation;
 //    window.__NEXT_DATA__ only describes the first page loaded, so the slug
-//    must match;
-//  - Testcase panel: case tabs are button[data-e2e-locator=console-testcase-tag]
-//    (the selected one has the class "bg-fill-3"); the selected case shows one
-//    contenteditable box per argument, labelled "name ="; a CodeMirror
-//    (.cm-content) holds every case as raw lines.
+//    must match.
 export async function readLeetCodePage() {
   const out = { ok: false };
   const host = location.hostname;
@@ -90,77 +92,48 @@ export async function readLeetCodePage() {
     if (model) { out.code = model.getValue(); out.language = model.getLanguageId(); }
   }
 
-  // ---- the test cases in LeetCode's Testcase panel ----
-  // Read structure, not rendered text: the panel may be collapsed, or behind
-  // "Test Result" after a Run; it's still in the page then, but innerText
-  // runs "nums =" into the value and the raw lines into each other.
+  // ---- the test case on screen ----
+  const shown = (el) => el.offsetParent !== null;
+  const clean = (t) => String(t || "").replace(/\xa0/g, " ").replace(/\n+$/, "").trim();
+  const LABEL = /^\s*([A-Za-z_]\w*)\s*=\s*$/;
+
+  // 1. the Testcase tab: its input boxes, in order, with their "name =" labels.
   // LeetCode builds the panel after the editor: wait for it briefly.
-  const findTabs = () => Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-tag"]'));
-  const findBoxes = () => Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-input"]'));
-  for (let i = 0; i < 15 && !findTabs().length && !findBoxes().length; i++) await new Promise((r) => setTimeout(r, 100));
-  const tabs = findTabs();
-  out.caseCount = tabs.length;
-  // the selected tab: LeetCode gives it the bg-fill-3 class (a whole class, not
-  // hover:bg-fill-3). The others say bg-transparent only after a tab was clicked
-  // (checked on leetcode.com 2026-11-17), so that is just the fallback.
-  out.selectedIndex = tabs.findIndex((b) => b.classList.contains("bg-fill-3") || b.getAttribute("aria-selected") === "true");
-  if (out.selectedIndex < 0 && tabs.length) out.selectedIndex = tabs.findIndex((b) => !b.classList.contains("bg-transparent"));
-  if (tabs.length === 1) out.selectedIndex = 0;
-
-  // the panel that holds the case tabs/boxes: only look for its raw editor in there
-  // (a signed-in page can have other CodeMirror editors, e.g. Notes)
-  const anchor = tabs[0] || findBoxes()[0] || null;
-  let panel = anchor;
-  while (panel && panel.parentElement && !panel.querySelector(".cm-content") && !/flexlayout__(tab|layout)\b/.test(panel.className || "")) panel = panel.parentElement;
-  const textOf = (el) => (el.offsetParent !== null ? el.innerText : el.textContent) || "";
-
-  // the selected case: one box per input, in order; the "name =" label is optional
-  // (design problems have none)
-  const fields = [];
-  let boxes = findBoxes();
-  // more than one set in the page (a hidden copy, e.g. after a Run): the one on screen
-  const shown = boxes.filter((b) => b.offsetParent !== null);
-  if (shown.length && shown.length < boxes.length) boxes = shown;
-  if (!boxes.length && panel) boxes = Array.from(panel.querySelectorAll('[contenteditable="true"]')).filter((b) => !b.closest(".cm-editor"));
-  for (const box of boxes) {
+  const findBoxes = () => Array.from(document.querySelectorAll('[data-e2e-locator="console-testcase-input"]')).filter(shown);
+  for (let i = 0; i < 15 && !findBoxes().length; i++) await new Promise((r) => setTimeout(r, 100));
+  const fields = findBoxes().map((box) => {
     const holder = box.parentElement && box.parentElement.parentElement;
     const labelEl = holder ? Array.from(holder.children).find((c) => !c.contains(box)) : null;
-    const label = /^\s*([A-Za-z_]\w*)\s*=\s*$/.exec(labelEl ? labelEl.textContent : "");
+    const label = LABEL.exec(labelEl ? labelEl.textContent : "");
     const lines = box.querySelectorAll("div, p");
-    const text = lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(box);
-    fields.push({ name: label ? label[1] : "", text: text.replace(/\xa0/g, " ").replace(/\n+$/, "") });
-  }
-  // No Testcase panel: LeetCode removes it while Test Result is shown (after a Run).
-  // Test Result shows the selected case's inputs too, each as a "name =" label over
-  // its value. Read those (on screen, outside the code editor and LeetScope's card).
+    const text = lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : box.innerText;
+    return { name: label ? label[1] : "", text: clean(text) };
+  });
+  if (fields.length) out.caseFrom = "testcase";
+
+  // 2. else the Test Result tab: each "name =" label on screen (not in the code
+  // editor or LeetScope's card) and its value: the lines after the label in the
+  // smallest box around it that holds more than the label, up to the next label
   if (!fields.length) {
     const seen = new Set();
     for (const el of document.querySelectorAll("div, span, label")) {
-      if (el.children.length || !/^\s*[A-Za-z_]\w*\s*=\s*$/.test(el.textContent) || el.offsetParent === null) continue;
-      if (el.closest(".monaco-editor, .cm-editor, #leetscope-toast")) continue;
-      const valueEl = el.nextElementSibling || (el.parentElement && el.parentElement.nextElementSibling);
-      const name = el.textContent.replace(/[\s=]/g, "");
-      if (!valueEl || seen.has(name)) continue;
-      seen.add(name);
-      fields.push({ name, text: textOf(valueEl).replace(/\xa0/g, " ").trim() });
+      const m = !el.children.length && LABEL.exec(el.textContent);
+      if (!m || seen.has(m[1]) || !shown(el) || el.closest(".monaco-editor, .cm-editor, #leetscope-toast")) continue;
+      let box = el.parentElement;
+      while (box && clean(box.innerText) === clean(el.textContent)) box = box.parentElement;
+      if (!box) continue;
+      const lines = clean(box.innerText).split("\n");
+      const at = lines.findIndex((l) => { const x = LABEL.exec(l); return x && x[1] === m[1]; });
+      if (at < 0) continue;
+      const end = lines.findIndex((l, i) => i > at && LABEL.test(l));
+      seen.add(m[1]);
+      fields.push({ name: m[1], text: clean(lines.slice(at + 1, end < 0 ? undefined : end).join("\n")) });
     }
     if (fields.length) out.caseFrom = "test-result";
   }
-  if (fields.length) out.selectedCase = fields;
-
-  // every case as raw lines (one line per input), from the panel's own editor
-  const raw = (panel && panel.querySelector(".cm-content")) || (document.querySelectorAll(".cm-content").length === 1 ? document.querySelector(".cm-content") : null);
-  if (raw) {
-    const lines = raw.querySelectorAll(".cm-line");
-    out.rawCases = (lines.length ? Array.from(lines).map((l) => l.textContent).join("\n") : textOf(raw)).replace(/\xa0/g, " ");
-  }
-  // what was found, for the message if the case can't be matched to the inputs
-  out.testcaseFound = {
-    tabs: tabs.length, boxes: fields.length, rawLines: out.rawCases ? out.rawCases.split("\n").filter((l) => l.trim()).length : 0,
-    // page markers near the test cases, to diagnose a LeetCode layout this reader doesn't know
-    markers: Array.from(new Set(Array.from(document.querySelectorAll("[data-e2e-locator]")).map((e) => e.getAttribute("data-e2e-locator"))
-      .filter((v) => /test|case|console|input/i.test(v)))).slice(0, 12),
-  };
+  // a case is only usable when every input has a value
+  if (fields.length && fields.every((f) => f.text)) out.selectedCase = fields;
+  out.caseFound = { from: out.caseFrom || "", inputs: fields.length, empty: fields.filter((f) => !f.text).length };
 
   out.ok = true;
   return out;

@@ -31,13 +31,12 @@ const LONG_SOLUTION = ["class Solution:", "    def twoSum(self, nums: List[int],
   .concat(["        for i, n in enumerate(nums):", "            if target - n in seen:", "                return [seen[target - n], i]", "            seen[n] = i"]).join("\n");
 
 // Fake LeetCode problem pages with the structure the live site has
-// (checked on leetcode.com, 2026-11-14): the problem's data object in
+// (checked on leetcode.com): the problem's data object in
 // window.next.router.components (window.__NEXT_DATA__ is stale after in-app
 // navigation, so here it describes another problem), window.monaco with the
-// code model (the editor only renders a few lines), and the Testcase panel:
-// case tabs (button[data-e2e-locator=console-testcase-tag], the selected one
-// not "bg-transparent"), one contenteditable box per argument under a
-// "name =" label, and a CodeMirror holding every case as raw lines.
+// code model (the editor only renders a few lines), and the test case either in
+// the Testcase tab (one box per argument under a "name =" label) or, after a Run,
+// in Test Result (LeetCode removes the Testcase panel then; checked 2026-11-17).
 const PROBLEMS = {
   "two-sum": {
     title: "Two Sum", id: "1",
@@ -65,7 +64,7 @@ const PROBLEMS = {
   },
 };
 
-function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, hidden = false, panel = "boxes", tabStyle = "live", boxes: withBoxes = true, dup = false } = {}) {
+function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, panel = "testcase", empty = false } = {}) {
   const p = PROBLEMS[slug];
   const names = p.meta.systemdesign ? ["operations", "arguments"] : p.meta.params.map((x) => x.name);
   const all = cases || p.examples.map(([input]) => input.split("\n"));
@@ -73,33 +72,31 @@ function fakeLeetCode(slug, { language = "python3", code, cases, selected = 0, h
     `<p><strong class="example">Example ${i + 1}:</strong></p>\n<pre><strong>Input:</strong> ${input.replace(/\n/g, ", ")}\n<strong>Output:</strong> ${output}\n<strong>Explanation:</strong> because.\n</pre>\n`).join("");
   const question = { titleSlug: slug, questionFrontendId: p.id, questionTitle: p.title, isPaidOnly: false, metaData: JSON.stringify(p.meta), exampleTestcaseList: p.examples.map(([i]) => i), content };
   const stale = { titleSlug: "some-other-problem", metaData: "{}", exampleTestcaseList: [] };
-  // case tabs as LeetCode marks them on first load: only the selected one has a background class
-  // (checked on leetcode.com 2026-11-17); tabStyle "old": the others say bg-transparent, as after a click
-  const tabClass = (on) => tabStyle === "old" ? `tab ${on ? "bg-fill-3" : "bg-transparent"}`
-    : `font-medium items-center whitespace-nowrap inline-flex ${on ? "bg-fill-3 dark:bg-dark-fill-3 hover:bg-fill-2" : "hover:bg-fill-2 dark:hover:bg-dark-fill-2 text-label-2"}`;
-  const tabs = all.map((_, i) => `<button data-e2e-locator="console-testcase-tag" class="${tabClass(i === selected)}">Case ${i + 1}</button>`).join("");
-  const boxesOf = (k) => names.map((n, j) => `<div class="flex flex-col">${p.meta.systemdesign ? "" : `<div>${n} =</div>`}<div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${(all[k][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div></div>`).join("");
-  // boxes=0: no input boxes (the case comes from the tabs and raw lines); dup=1: a hidden
-  // second set of boxes for another case, as a page can keep after a Run
-  const boxes = (withBoxes ? boxesOf(selected) : "") + (dup ? `<div style="display:none">${boxesOf(selected ? 0 : 1)}</div>` : "");
+  const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const value = (j) => (empty && j === 0 ? "" : all[selected][j] || "");
+  const caseTabs = (attrs) => all.map((_, i) => `<div ${attrs} class="font-medium inline-flex ${i === selected ? "bg-fill-3" : "hover:bg-fill-2"}">Case ${i + 1}</div>`).join("");
+  // the Testcase tab: case tabs, one labelled box per input, and LeetCode's raw editor of every case
+  const testcase = `<div id="testcase">${caseTabs('data-e2e-locator="console-testcase-tag"')}<div class="space-y-4">${names.map((n, j) =>
+    `<div class="flex flex-col">${p.meta.systemdesign ? "" : `<div>${n} =</div>`}<div class="w-full"><div contenteditable="true" data-e2e-locator="console-testcase-input">${esc(value(j))}</div></div></div>`).join("")}</div>
+<div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${esc(l)}</div>`).join("")}</div></div></div>`;
+  // Test Result after a Run (LeetCode removes the Testcase panel then): the selected case's
+  // inputs, each label and value in one box, the value nested apart from the label
+  const result = `<div id="test-result"><div>Wrong Answer</div><div class="flex">${caseTabs("")}</div>
+<div>Input</div><div class="space-y-2">${names.map((n, j) => `<div class="rounded-lg"><div class="flex"><div class="text-xs">${n} =</div></div><div><div class="font-menlo">${esc(value(j))}</div></div></div>`).join("")}</div>
+<div>Output</div><div class="rounded-lg"><div class="font-menlo">[]</div></div><div>Expected</div><div class="rounded-lg"><div class="font-menlo">[0,1]</div></div></div>`;
   return `<!doctype html><html><head><title>${p.title} - LeetCode</title></head><body>
 <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { question: stale } } })}</script>
 <div class="text-title-large">${p.id}. ${p.title}</div>
 <div id="ide-top-btns" class="relative flex gap-2"><div><button data-e2e-locator="console-run-button">Run</button></div><div><button data-e2e-locator="console-submit-button">Submit</button></div></div>
 <div data-e2e-locator="console-result"></div>
 <div id="editor" style="height:60px;overflow:hidden">(editor shows only a few lines)<div class="monaco-editor"><span>result = </span><span>Solution()</span></div></div>
-${panel !== "result" ? "" : `<div id="test-result"><div>Wrong Answer</div>
-<div class="flex">${all.map((_, i) => `<div class="${tabClass(i === selected)}">Case ${i + 1}</div>`).join("")}</div>
-<div>Input</div><div class="space-y-2">${names.map((n, j) => `<div class="rounded-lg"><div class="text-xs">${n} =</div><div class="font-menlo">${(all[selected][j] || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div></div>`).join("")}</div>
-<div>Output</div><div class="rounded-lg"><div class="font-menlo">[]</div></div><div>Expected</div><div class="rounded-lg"><div class="font-menlo">[0,1]</div></div></div>`}
-${panel !== "boxes" ? "" : `<div id="testcase"${hidden ? " style=\"display:none\"" : ""}>${tabs}<div class="space-y-4">${boxes}</div>
-<div class="cm-editor"><div class="cm-content" contenteditable="true">${all.flat().map((l) => `<div class="cm-line">${l.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`).join("")}</div></div></div>`}
+${panel === "testcase" ? testcase : panel === "result" ? result : ""}
 <script>
   window.__NEXT_DATA__ = JSON.parse(document.getElementById("__NEXT_DATA__").textContent);
   window.next = ${JSON.stringify({ router: { components: { "/problems/[slug]/[[...tab]]": { props: { pageProps: { dehydratedState: { queries: [{ state: { data: { question } } }] } } } } } } })};
   const code = ${JSON.stringify(code || p.code)};
   const mk = (lang, value) => ({ getLanguageId: () => lang, getValue: () => value, getValueLength: () => value.length, isDisposed: () => false });
-  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", ${JSON.stringify(panel === "text" ? all.flat().join("\n") : "")});
+  const codeModel = mk(${JSON.stringify(language)}, code), testModel = mk("plaintext", "");
   // LeetCode's Run: a verdict appears in the Test Result panel a moment later
   let runs = 0;
   document.querySelector('[data-e2e-locator="console-run-button"]').addEventListener("click", () =>
@@ -117,7 +114,7 @@ const PAGES = {
   "/problems/no-editor/": "<!doctype html><title>Loading - LeetCode</title><div id=\"ide-top-btns\"></div><p>loading…</p>",
 };
 
-// /problems/<slug>/?case=<i>&custom=<json lines>&lang=<id>
+// /problems/<slug>/?case=<i>&custom=<json lines>&lang=<id>&panel=testcase|result|none&empty=1
 function problemPage(url) {
   const m = /^\/problems\/([a-z0-9-]+)\/$/.exec(url.pathname);
   if (!m || !PROBLEMS[m[1]]) return null;
@@ -125,8 +122,7 @@ function problemPage(url) {
   const p = PROBLEMS[m[1]];
   let cases = p.examples.map(([input]) => input.split("\n"));
   if (q.get("custom")) cases = cases.concat([JSON.parse(q.get("custom"))]);
-  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), hidden: q.get("hidden") === "1", panel: q.get("panel") || "boxes",
-    tabStyle: q.get("tabs") || "live", boxes: q.get("boxes") !== "0", dup: q.get("dup") === "1" });
+  return fakeLeetCode(m[1], { language: q.get("lang") || "python3", cases, selected: Number(q.get("case") || 0), panel: q.get("panel") || "testcase", empty: q.get("empty") === "1" });
 }
 
 const serve = (req, res) => {
@@ -442,7 +438,9 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     const r2 = await open(`/problems/two-sum/?case=3&custom=${encodeURIComponent(JSON.stringify(["[1,5,9]", "10"]))}`);
     const s2 = await state();
     const s2cases = await ev(() => visualleet.leetcode.problem.cases.map((c) => c.label));
-    check("leetcode", "All LeetCode cases imported (examples once, the custom one as \"LeetCode 4\"); the selected one runs; no verdict without an expected output", s2.selected === "LeetCode 4" && JSON.stringify(s2cases) === JSON.stringify(["Example 1", "Example 2", "Example 3", "LeetCode 4"]) && /\[0,2\]\n$/.test(r2.stdout) && s2.verdict && s2.verdict.kind === "output", { selected: s2.selected, cases: s2cases, stdout: r2.stdout, verdict: s2.verdict });
+    const s2source = await ev(() => document.getElementById("case-source")?.textContent || "");
+    check("leetcode", "A custom case selected in LeetCode's Testcase tab: added after the examples and run; no verdict without an expected output", s2.selected === "From LeetCode" && JSON.stringify(s2cases) === JSON.stringify(["Example 1", "Example 2", "Example 3", "From LeetCode"]) && /\[0,2\]\n$/.test(r2.stdout) && s2.verdict && s2.verdict.kind === "output",
+      { selected: s2.selected, cases: s2cases, stdout: r2.stdout, verdict: s2.verdict, source: s2source });
 
     // a bad value is caught per box before running
     const bad = await ev(async () => {
@@ -510,25 +508,16 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
     check("leetcode", "The user's own cases are kept per problem across reloads", handoff.cases.some(([label, source]) => source === "yours"), { cases: handoff.cases });
 
     // after a Run, LeetCode shows "Test Result" and the Testcase panel isn't rendered
-    const r8 = await open("/problems/two-sum/?case=1&hidden=1");
+    // after a Run, LeetCode shows Test Result and removes the Testcase panel: the case comes from Test Result
+    const r8 = await open("/problems/two-sum/?case=1&panel=result");
     const s8 = await state();
-    check("leetcode", "Selected case read while LeetCode's Testcase panel is hidden (Test Result shown)", r8.status === "complete" && s8.selected === "Example 2", { status: r8.status, selected: s8.selected, message: s8.message.slice(0, 100) });
-    // the selected tab, as LeetCode marks it today and as it used to, when there are no boxes to read
-    const r9 = await open("/problems/two-sum/?case=2&boxes=0");
+    check("leetcode", "After a Run (Test Result shown, no Testcase panel): the case selected there is read and runs", r8.status === "complete" && s8.selected === "Example 2" && /\[1,2\]\n$/.test(r8.stdout || ""),
+      { status: r8.status, selected: s8.selected, stdout: r8.stdout, message: s8.message.slice(0, 120) });
+    const r9 = await open(`/problems/two-sum/?case=3&panel=result&custom=${encodeURIComponent(JSON.stringify(["[1,5,9]", "10"]))}`);
     const s9 = await state();
-    const r10 = await open("/problems/two-sum/?case=1&boxes=0&tabs=old");
-    const s10 = await state();
-    check("leetcode", "Selected tab found from LeetCode's tab marking (today's and the old one)", r9.status === "complete" && s9.selected === "Example 3" && r10.status === "complete" && s10.selected === "Example 2",
-      { today: [r9.status, s9.selected], old: [r10.status, s10.selected] });
-    // after a Run LeetCode shows Test Result and removes the Testcase panel: the case comes from Test Result
-    const r12 = await open("/problems/two-sum/?case=1&panel=result");
-    const s12 = await state();
-    check("leetcode", "After a Run (Test Result shown, no Testcase panel): the selected case is read from Test Result and runs", r12.status === "complete" && s12.selected === "Example 2" && /\[1,2\]\n$/.test(r12.stdout || ""),
-      { status: r12.status, selected: s12.selected, stdout: r12.stdout, message: s12.message.slice(0, 120) });
-    // a hidden second set of boxes (another case) doesn't win over the one on screen
-    const r11 = await open("/problems/two-sum/?case=1&dup=1");
-    const s11 = await state();
-    check("leetcode", "Case on screen read even with a hidden second set of boxes in the page", r11.status === "complete" && s11.selected === "Example 2", { status: r11.status, selected: s11.selected });
+    const s9source = await ev(() => document.getElementById("case-source")?.textContent || "");
+    check("leetcode", "A custom case from Test Result is added as \"From LeetCode\", labelled as coming from Test Result, and runs", r9.status === "complete" && s9.selected === "From LeetCode" && /Test Result/.test(s9source) && /\[0,2\]\n$/.test(r9.stdout || ""),
+      { status: r9.status, selected: s9.selected, source: s9source });
 
     // the Visualize button in LeetCode's top bar updates the open LeetScope tab in place
     await ev(() => { window.__notReloaded = true; });
@@ -590,7 +579,11 @@ print(c.most_common(1), list(q), dict(dd), smallest, arr, fib(10))
       report.what && report.what.startsWith("The arrows look wrong\n\n--- Details ---\nProblem:") && /--- Code( \(first 3000 characters\))? ---\n/.test(report.what) && report.what.includes(" ---\n" + report.code.slice(0, 40)),
       { shownOpen: report.shownOpen, blocked: report.blocked, closed: report.closed, host: report.host, details: report.details });
     const tc1 = await toastFor("/problems/two-sum/?panel=none");
-    check("leetcode", "Testcase tab not open: explained on LeetCode itself, no extra options", !!tc1 && /Testcase tab, and that tab isn't open/.test(tc1.text) && !tc1.action, tc1);
+    check("leetcode", "Neither Testcase nor Test Result showing a case: explained on LeetCode itself (open Testcase or press Run)", !!tc1 && /Testcase tab, or from Test Result after you press Run, and neither is showing one/.test(tc1.text) && !tc1.action, tc1);
+    const tcEmpty = await toastFor("/problems/two-sum/?empty=1");
+    check("leetcode", "An empty input in LeetCode's Testcase tab: explained on LeetCode, nothing run", !!tcEmpty && /Testcase tab has an empty input/.test(tcEmpty.text), tcEmpty);
+    const trEmpty = await toastFor("/problems/two-sum/?empty=1&panel=result");
+    check("leetcode", "Test Result with a value LeetScope can't read: explained on LeetCode, asks for the Testcase tab", !!trEmpty && /couldn't read the input values in LeetCode's Test Result.*Open the Testcase tab/.test(trEmpty.text), trEmpty);
     await page.bringToFront();
     await lc.close();
   }

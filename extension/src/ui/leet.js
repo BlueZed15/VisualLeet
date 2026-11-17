@@ -208,3 +208,23 @@ export function describeLanguage(languageId) {
   return { ok: false, note: `LeetCode's code editor is set to ${what}. LeetScope runs Python 3. ` +
     "Choose Python3 in the language menu above LeetCode's code editor, then click Visualize again." };
 }
+
+/** Why the test case on screen can't be used. LeetScope reads it from LeetCode's
+ *  Testcase tab, or from Test Result after a Run (background/leetcode-reader.js).
+ *  `found` is the reader's { from, inputs, empty }; `n` the problem's input count.
+ *  Shared by the message on LeetCode and the LeetScope tab's fallback. */
+export function caseProblem(found, n) {
+  const f = found || { from: "", inputs: 0, empty: 0 };
+  const takes = `this problem takes ${n} input${n === 1 ? "" : "s"}`;
+  if (!f.inputs) {
+    return "LeetScope reads the test case from LeetCode's Testcase tab, or from Test Result after you press Run, and neither is showing one. " +
+           "Open the Testcase tab below LeetCode's code editor and select a case, or press Run, then click Visualize again.";
+  }
+  if (f.from === "test-result") {
+    return (f.empty ? "LeetScope couldn't read the input values in LeetCode's Test Result. "
+                    : `LeetScope found ${f.inputs} input${f.inputs === 1 ? "" : "s"} in LeetCode's Test Result, and ${takes}. `) +
+           "Open the Testcase tab, select the case, and click Visualize again.";
+  }
+  if (f.empty) return "The selected case in LeetCode's Testcase tab has an empty input. Fill it in, then click Visualize again.";
+  return `The selected case in LeetCode's Testcase tab has ${f.inputs} input${f.inputs === 1 ? "" : "s"}, and ${takes}. Select the case again and click Visualize.`;
+}

@@ -1146,7 +1146,7 @@ function onResult(m) {
     if (crashed) lc.judge(null, `No result. Your code raised ${(failEntry.exception_msg || last.exception_msg || "an error").split("\n")[0]}${failEntry.line ? ` (line ${failEntry.line})` : ""}.`);
     else if (final !== "complete") lc.judge(null, "No result. The run stopped before your code returned.");
     else lc.judge(resultLine(last.stdout));
-    // a note from reading LeetCode (e.g. "couldn't read the Testcase panel") stays visible
+    // a note from reading LeetCode (e.g. no test case on screen) stays visible
     if (!msg && current.info.note) { msg = current.info.note; kind = "info"; }
   }
   setStatus(final, msg, kind);
@@ -1461,7 +1461,7 @@ function showCodeView(name) {
 
 /**
  * Show what was read from a LeetCode problem page: its code, its database
- * entry and test cases, the case selected in LeetCode's Testcase panel.
+ * entry and test cases, the case on screen in LeetCode (Testcase tab, or Test Result after a Run).
  * Plays it right away when everything checks out (one click).
  */
 async function openLeetCode(res, { autoRun = false } = {}) {

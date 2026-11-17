@@ -5,7 +5,7 @@
 // State is saved per problem in localStorage, so cases survive reloads.
 
 import { fill, splitCases } from "./harness.js";
-import { parseValue, compareOutputs } from "./leet.js";
+import { parseValue, compareOutputs, caseProblem } from "./leet.js";
 
 const KEY = "visualleet.lc.v1.";            // + slug
 const LAST_KEY = "visualleet.lc.v1:last";
@@ -42,36 +42,25 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
     }).filter(Boolean);
     const yours = saved && saved.cases ? saved.cases.filter((c) => c.source === "yours") : [];
 
-    // every case in LeetCode's Testcase panel (one raw line per input); the
-    // ones that aren't examples become "LeetCode n" cases
+    // the case on screen in LeetCode (its Testcase tab, or Test Result after a
+    // Run): its inputs by name, or in order when they have no labels (design problems)
     const names = entry.boxes.map((x) => x.name);
-    const lcAll = r.rawCases ? splitCases(entry, r.rawCases) : [];
     const cases = [...examples];
-    lcAll.forEach((texts, i) => {
-      if (!examples.some((e) => sameTexts(entry, e.texts, texts))) cases.push({ id: "lc" + (i + 1), label: `LeetCode ${i + 1}`, source: "leetcode", texts });
-    });
-
-    // the case selected there: its boxes (by name, or in order when they have
-    // no labels, as in design problems), else its raw lines
     let lc = null;
     const fields = r.selectedCase || [];
     if (fields.length === names.length) {
       lc = {};
       const byName = names.every((n) => fields.some((f) => f.name === n));
       names.forEach((n, i) => { lc[n] = byName ? fields.find((f) => f.name === n).text : fields[i].text; });
-    } else if (r.selectedIndex >= 0 && lcAll[r.selectedIndex]) {
-      lc = lcAll[r.selectedIndex];
     }
     let selectedId = examples.length ? examples[0].id : null;
     let note = "";
     if (lc) {
       const same = cases.find((c) => sameTexts(entry, c.texts, lc));
       if (same) selectedId = same.id;
-      else { cases.push({ id: "lc", label: "From LeetCode", source: "leetcode", texts: lc }); selectedId = "lc"; }
+      else { cases.push({ id: "lc", label: "From LeetCode", source: "leetcode", from: r.caseFrom || "testcase", texts: lc }); selectedId = "lc"; }
     } else {
-      const f = r.testcaseFound || {};
-      note = "LeetScope couldn't read the selected test case from LeetCode, so Case 1 is shown.";
-      console.info("LeetScope: selected case not found", `${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${names.length} input${names.length === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines`);
+      note = caseProblem(r.caseFound, names.length) + " Case 1 is shown for now.";
     }
     cases.push(...yours);
     if (!cases.length) cases.push({ id: "c" + counter++, label: "Case 1", source: "yours", texts: Object.fromEntries(names.map((n) => [n, ""])) });
@@ -132,7 +121,7 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       // every tab reads "Case N" by position, like LeetCode's own Testcase panel
       // (where a case came from is shown under its inputs)
       b.append("Case ", Object.assign(document.createElement("span"), { className: "case-num", textContent: String(i + 1) }));
-      if (c.source === "leetcode") b.title = "The case that was selected in LeetCode's Testcase panel";
+      if (c.source === "leetcode") b.title = "The case you had selected on LeetCode";
       b.addEventListener("click", () => { const changed = c.id !== p.selectedId; select(c.id); if (changed) onSelect(c.id); });
       if (c.source === "example") return b;
       // your own cases (and LeetCode's): an × at the top right on hover deletes it, like LeetCode
@@ -185,7 +174,8 @@ export function createLeetCodeMode(el, { onChange = () => {}, onSelect = () => {
       el.fields.append(wrap);
     }
     el.fields.querySelectorAll("textarea").forEach(autosize);
-    el.source.textContent = { example: "From LeetCode", leetcode: "From your LeetCode Testcase tab", yours: "Added by you" }[c.source] || "";
+    el.source.textContent = c.source === "leetcode" ? (c.from === "test-result" ? "From LeetCode's Test Result" : "From LeetCode's Testcase tab")
+      : { example: "From LeetCode", yours: "Added by you" }[c.source] || "";
     setVerdict(null);
     check();
   }

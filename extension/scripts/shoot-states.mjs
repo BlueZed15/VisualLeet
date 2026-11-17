@@ -29,7 +29,7 @@ const LONG = "x = sum(range(10**10))\nprint(x)\n";     // a native loop: only St
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // what a click on a LeetCode problem page hands over (as the page reader returns it)
-const fromPage = (slug, extra) => Object.assign({ ok: true, slug, language: "python3", selectedIndex: 0, selectedCase: [] }, extra);
+const fromPage = (slug, extra) => Object.assign({ ok: true, slug, language: "python3", caseFrom: "testcase", selectedCase: [] }, extra);
 const twoSum = fromPage("two-sum", {
   title: "Two Sum", frontendId: "1", anyOrder: true,
   exampleInputs: ["[2,7,11,15]\n9", "[3,2,4]\n6", "[3,3]\n6"], exampleOutputs: ["[0,1]", "[1,2]", "[0,1]"],
@@ -43,6 +43,8 @@ const reverseList = fromPage("reverse-linked-list", {
 const lruCache = fromPage("lru-cache", {
   title: "LRU Cache", frontendId: "146",
   exampleInputs: ['["LRUCache","put","put","get","put","get","put","get","get","get"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]'], exampleOutputs: ["[null,null,null,1,null,-1,null,-1,3,4]"],
+  // a design problem's boxes have no "name =" labels
+  selectedCase: [{ name: "", text: '["LRUCache","put","put","get","put","get","put","get","get","get"]' }, { name: "", text: "[[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]" }],
   code: "class LRUCache:\n    def __init__(self, capacity: int):\n        self.cap = capacity\n        self.data = OrderedDict()\n\n    def get(self, key: int) -> int:\n        if key not in self.data:\n            return -1\n        self.data.move_to_end(key)\n        return self.data[key]\n\n    def put(self, key: int, value: int) -> None:\n        self.data[key] = value\n        self.data.move_to_end(key)\n        if len(self.data) > self.cap:\n            self.data.popitem(last=False)",
 });
 
@@ -74,7 +76,7 @@ try {
   await ev(() => visualleet.whenReady());
   await shot("no-problem");
 
-  await open(Object.assign({}, twoSum, { selectedIndex: 1, selectedCase: [{ name: "nums", text: "[3,2,4]" }, { name: "target", text: "6" }] }), 9);
+  await open(Object.assign({}, twoSum, { selectedCase: [{ name: "nums", text: "[3,2,4]" }, { name: "target", text: "6" }] }), 9);
   await shot("lc-two-sum-match");
 
   await ev(() => document.getElementById("diag-toggle").click());

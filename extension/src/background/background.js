@@ -6,7 +6,7 @@
 // the click are explained on the LeetCode page instead.
 
 import { readLeetCodePage } from "./leetcode-reader.js";
-import { describeLanguage } from "../ui/leet.js";
+import { describeLanguage, caseProblem } from "../ui/leet.js";
 
 const NO_EDITOR = "LeetScope couldn't read LeetCode's code editor. The page may still be loading. Wait a moment and click Visualize again.";
 
@@ -69,23 +69,12 @@ async function clickProblem(r) {
   if (!lang.ok) return { text: lang.note };
   const entry = await problemEntry(r.slug);
   if (!entry) return { text: `"${r.title || r.slug}" isn't supported by LeetScope yet. Support for more problems is on the way.` };
-  // the selected test case: its boxes, or its lines in the raw list of cases
+  // the test case on screen: LeetCode's Testcase tab, or Test Result after a Run
   const n = entry.boxes.length;
-  const lines = (r.rawCases || "").split("\n").filter((l) => l.trim()).length;
-  const found = r.selectedCase.length === n || (r.selectedIndex >= 0 && (r.selectedIndex + 1) * n <= lines);
-  if (found) return null;
-  const f = r.testcaseFound || {};
-  return {
-    // nothing of the Testcase panel in the page: LeetCode only renders it while its tab is
-    // open (before a first Run, the Test Result tab replaces it entirely)
-    text: !f.tabs && !f.boxes && !f.rawLines
-      ? "LeetScope reads your test case from LeetCode's Testcase tab, and that tab isn't open. Open the Testcase tab below the editor, select a case, and click Visualize again."
-      : "LeetScope couldn't match the selected test case to this problem's inputs. Select the case again in LeetCode's Testcase tab and click Visualize.",
-    // what the page reader saw, for debugging (shown in the service worker's console, not in the card)
-    detail: `found ${f.tabs || 0} case tabs, ${f.boxes || 0} input boxes for ${n} input${n === 1 ? "" : "s"}, ${f.rawLines || 0} raw lines` +
-      `${f.markers && f.markers.length ? "; page markers: " + f.markers.join(", ") : ""}`,
-  };
+  if (r.selectedCase.length === n) return null;
+  return { text: caseProblem(r.caseFound, n) };
 }
+
 
 // Show a message next to the Visualize button on the LeetCode page (content script).
 async function tellPage(tabId, problem) {
@@ -185,15 +174,15 @@ async function readLeetCode(tabId) {
     anyOrder: r.anyOrder === true,
     paidOnly: r.paidOnly === true,
     language: str(r.language, 40),
-    selectedIndex: Number.isInteger(r.selectedIndex) ? r.selectedIndex : -1,
     selectedCase: Array.isArray(r.selectedCase)
       ? r.selectedCase.filter((f) => f && typeof f.name === "string" && typeof f.text === "string").slice(0, 30)
           .map((f) => ({ name: f.name.slice(0, 60), text: f.text.slice(0, MAX_TEXT) }))
       : [],
-    rawCases: str(r.rawCases, 1024 * 1024),
-    testcaseFound: r.testcaseFound && typeof r.testcaseFound === "object"
-      ? { tabs: Number(r.testcaseFound.tabs) || 0, boxes: Number(r.testcaseFound.boxes) || 0, rawLines: Number(r.testcaseFound.rawLines) || 0,
-          markers: Array.isArray(r.testcaseFound.markers) ? r.testcaseFound.markers.filter((x) => typeof x === "string").slice(0, 12).map((x) => x.slice(0, 60)) : [] } : null,
+    caseFrom: r.caseFrom === "testcase" || r.caseFrom === "test-result" ? r.caseFrom : "",
+    caseFound: r.caseFound && typeof r.caseFound === "object"
+      ? { from: r.caseFound.from === "testcase" || r.caseFound.from === "test-result" ? r.caseFound.from : "",
+          inputs: Math.min(Number(r.caseFound.inputs) || 0, 99), empty: Math.min(Number(r.caseFound.empty) || 0, 99) }
+      : { from: "", inputs: 0, empty: 0 },
   };
   if (!out.slug) return { ok: false, error: "LeetScope couldn't tell which LeetCode problem this page is. Reload the page and try again." };
   if (typeof r.code === "string") {
