@@ -61,7 +61,7 @@ async function problemEntry(slug) {
 }
 
 /** Problems that stop a click on LeetCode, checked before leaving the page.
- *  Returns { text, action? } for a message on the LeetCode page, or null. */
+ *  Returns { text } for a message on the LeetCode page, or null. */
 async function clickProblem(r) {
   if (!r.ok) return { text: r.error || "LeetScope couldn't read this page. Reload it and click Visualize again." };
   if (!r.language || !r.code) return { text: NO_EDITOR };
@@ -75,12 +75,9 @@ async function clickProblem(r) {
   return { text: caseProblem(r.caseFound, n) };
 }
 
-
 // Show a message next to the Visualize button on the LeetCode page (content script).
 async function tellPage(tabId, problem) {
-  if (problem.detail) console.info("LeetScope:", problem.text, "|", problem.detail);
-  const { detail, ...shown } = problem;
-  try { await chrome.tabs.sendMessage(tabId, Object.assign({ type: "leetscope-toast" }, shown)); return true; } catch { return false; }
+  try { await chrome.tabs.sendMessage(tabId, { type: "leetscope-toast", text: problem.text }); return true; } catch { return false; }
 }
 
 async function showFrom(tab) {
